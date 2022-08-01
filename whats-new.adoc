@@ -27,6 +27,30 @@ summary: 了解 Cloud Manager 平台中的云服务的最新变更。有关详�
 
 
 
+=== 2022年7月31日
+
+
+
+==== 连接器3.9.21
+
+* 我们引入了一种新方法来发现您尚未在Cloud Manager中管理的现有云资源。
++
+在Canvas上、*我的商机*选项卡提供了一个集中位置、用于发现您可以添加到Cloud Manager中的现有资源、以便在混合多云中实现一致的数据服务和操作。
+
++
+在此初始版本中、"我的商机"可让您发现AWS帐户中现有的ONTAP 文件系统FSX。
+
++
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["了解如何利用"我的商机"发现适用于ONTAP 的FSx"^]
+
+* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 === 2022年7月15日
 
 
@@ -85,19 +109,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2
 
 
 
-=== 2022年6月28日
-
-
-
-==== 使用NetApp凭据登录
-
-当新用户注册到Cloud Central时、他们现在可以选择*使用NetApp*登录选项以使用其NetApp支持站点凭据登录。这是输入电子邮件地址和密码的替代方法。
-
-
-NOTE: 使用电子邮件地址和密码的现有登录需要继续使用该登录方法。注册的新用户可以使用"Log in with NetApp"选项。
-
-
-
 == Azure NetApp Files
 
 
@@ -152,6 +163,19 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
+=== 2022年7月31日
+
+* 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"]
+
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"]。
+
+
+
+
 === 2022年7月3日
 
 * 现在、您可以选择一个或多个可用性区域HA部署模式。
@@ -175,22 +199,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-set
 在创建适用于 ONTAP 的 FSX 工作环境时，您现在必须提供一个 IAM 角色的 ARN ， Cloud Manager 可以使用此 ARN 来创建适用于 ONTAP 的 FSX 工作环境。您以前需要提供 AWS 访问密钥。
 
 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为适用于 ONTAP 的 FSX 设置权限"]。
-
-
-
-=== 2021 年 10 月 31 日
-
-
-
-==== 使用 Cloud Manager API 创建 iSCSI 卷
-
-您可以使用 Cloud Manager API 为适用于 ONTAP 的 FSX 创建 iSCSI 卷，并在您的工作环境中对其进行管理。
-
-
-
-==== 创建卷时选择卷单元
-
-您可以 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["创建卷时，请选择卷单位（ GiB 或 TiB ）"] 在适用于 ONTAP 的 FSX 中。
 
 
 
@@ -358,6 +366,43 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-
 
 
 
+=== 2022年8月7日(1.15版)
+
+
+
+==== Data sense可识别来自新西兰的五种新类型的个人数据
+
+Data sense可以识别包含以下类型数据的文件并对其进行分类：
+
+* 新西兰银行帐号
+* 新西兰司机的许可证编号
+* 新西兰IRD编号(税务ID)
+* 新西兰NHI (国家健康指数)编号 
+* 新西兰的护照编号
+
+
+link:reference-private-data-categories.html#types-of-personal-data["查看 Data sense 可以在您的数据中识别的所有类型的个人数据"]。
+
+
+
+==== 能够添加痕迹文件以指示文件移动的原因
+
+使用数据感知功能将源文件移动到NFS共享时、现在可以将痕迹文件保留在移动文件的位置。痕迹文件可帮助用户了解文件从其原始位置移动的原因。对于每个移动的文件、系统会在源位置`<filename>-breadcrumb-<date>.txt`创建一个痕迹文件、以显示文件移动位置以及文件移动用户。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["了解更多信息。"^]。
+
+
+
+==== 在您的目录中找到的个人数据和敏感的个人数据显示在调查结果中
+
+现在、"数据调查"页面将显示在您的目录(文件夹和共享)中找到的个人数据和敏感个人数据的结果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-files-that-contain-personal-data["请参见此处的示例"^]。
+
+
+
+==== 查看已成功分类的卷、分段等数量的状态
+
+查看Data sense正在扫描的各个存储库(卷、存储分段等)时、现在您可以查看已"映射"的存储库数量以及已"分类"的存储库数量。由于正在对所有数据执行完整的AI标识、因此分类所需时间更长。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["请参见如何查看此信息"^]。
+
+
+
 === 2022年7月6日(1.14版)
 
 
@@ -430,41 +475,56 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-=== 2022年5月11日(1.12.1版)
-
-
-
-==== 增加了对扫描Google Drive帐户中数据的支持
-
-现在、您可以将Google Drive帐户添加到Data sense中、以便扫描这些Google Drive帐户中的文档和文件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-google-drive.html["了解如何扫描Google Drive帐户"]。
-
-除了文档、工作表和幻灯片之外、Data sense还可以识别以下Google文件类型中的个人身份信息(Personal Identifiable Information、PiII) https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-files["现有文件类型"]。
-
-
-
-==== 已将目录级别视图添加到数据调查页面
-
-除了查看和筛选所有文件和数据库中的数据之外、现在您还可以在"数据调查"页面中根据文件夹和共享中的所有数据查看和筛选数据。将为扫描的CIFS和NFS共享以及OneDrive、SharePoint和Google Drive文件夹的目录编制索引。现在、您可以在目录级别查看权限并管理数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["了解如何为扫描的数据选择目录视图"]。
-
-
-
-==== 展开组以显示有权访问文件的用户/成员
-
-现在、您可以在Data sense权限功能中查看有权访问文件的用户和组列表。可以展开每个组以显示组中的用户列表。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files["了解如何查看对文件具有读取和/或写入权限的用户和组"]。
-
-
-
-==== 数据调查页面添加了两个新的筛选器
-
-* 通过"目录类型"筛选器、您可以细化数据以仅查看文件夹或共享。结果将显示在新的*目录*选项卡中。
-* 通过"用户/组权限"筛选器、您可以列出特定用户或组具有读取和/或写入权限的文件、文件夹和共享。您可以选择多个用户和/或组名称-或输入部分名称。电话
-
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"]。
-
-
-
 == Cloud Sync
+
+
+
+=== 2022年7月31日
+
+
+
+==== Google Drive
+
+现在、您可以将NFS服务器或SMB服务器中的数据同步到Google Drive。支持将"我的驱动器"和"共享驱动器"作为目标。
+
+在创建包含Google Drive的同步关系之前、您需要设置一个具有所需权限和私钥的服务帐户。 https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive["了解有关Google Drive要求的更多信息"]。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
+
+
+
+==== 其他Azure Data Lake支持
+
+Cloud Sync 现在支持Azure数据湖存储第2代的其他同步关系：
+
+* Amazon S3到Azure数据湖存储第2代
+* IBM Cloud Object Storage到Azure Data Lake Storage Gen2
+* StorageGRID 到Azure数据湖存储第2代
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
+
+
+
+==== 设置同步关系的新方法
+
+我们添加了其他方法、可以直接从Cloud Manager的Canvas设置同步关系。
+
+
+
+===== 拖放
+
+现在、您可以通过将一个工作环境拖放到另一个工作环境之上、从Canvas设置同步关系。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["显示Cloud Manager中通知中心的屏幕截图。"]
+
+
+
+===== 右侧面板设置
+
+现在、您可以通过从"画布"中选择工作环境、然后从右侧面板中选择同步选项、为Azure Blob存储或Google Cloud存储设置同步关系。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["显示Cloud Manager中通知中心的屏幕截图。"]
 
 
 
@@ -478,7 +538,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 在创建包含Azure数据湖的同步关系时、您需要为Cloud Sync 提供存储帐户连接字符串。它必须是常规连接字符串、而不是共享访问签名(SAS)。
 
-link:reference-supported-relationships.html["查看支持的同步关系列表"]。
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
 
 
 
@@ -503,7 +563,7 @@ link:reference-supported-relationships.html["查看支持的同步关系列表"]
 - pubsub.topics.setIamPolicy
 - storage.buckets.update
 ----
-link:task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
 
 
 
@@ -545,7 +605,7 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 ----
 这些权限会自动添加到您创建的任何新数据代理中。
 
-link:task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
 
 
 
@@ -566,53 +626,6 @@ link:task-creating-relationships.html#settings["了解有关持续同步设置�
 
 
 如果Azure Blob是目标、而源是Azure Blob或与S3兼容的端点(S3、StorageGRID 或IBM云对象存储)、则支持这些选项。
-
-
-
-=== 2022年5月1日
-
-
-
-==== 同步超时
-
-现在、可以为同步关系使用新的*同步超时*设置。通过此设置、您可以定义在指定的小时数或天数内未完成数据同步时、Cloud Sync 是否应取消数据同步。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["了解有关更改同步关系设置的更多信息"]。
-
-
-
-==== 通知
-
-现在、可以为同步关系使用新的*通知*设置。通过此设置、您可以选择是否在Cloud Manager的通知中心接收Cloud Sync 通知。您可以为成功的数据同步、失败的数据同步和已取消的数据同步启用通知。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-notification-center.png["显示Cloud Manager中通知中心的屏幕截图。"]
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#changing-the-settings-for-a-sync-relationship["了解有关更改同步关系设置的更多信息"]。
-
-
-
-=== 2022 年 4 月 3 日
-
-
-
-==== 数据代理组增强功能
-
-我们对数据代理组进行了多项增强：
-
-* 现在，您可以将数据代理移动到新的或现有的组。
-* 现在，您可以更新数据代理的代理配置。
-* 最后，您还可以删除数据代理组。
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["了解如何管理数据代理组"]。
-
-
-
-==== 信息板筛选器
-
-现在，您可以筛选 " 同步信息板 " 的内容，以便更轻松地查找与特定状态匹配的同步关系。例如，您可以筛选状态为失败的同步关系
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-sync-filter.png["显示信息板顶部按同步筛选状态选项的屏幕截图。"]
 
 
 
@@ -668,6 +681,64 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering
 
 
 
+=== 2022年7月31日
+
+连接器3.9.21版引入了以下更改。
+
+
+
+==== MTEKM许可证
+
+现在、运行9.11.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。
+
+使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["了解如何使用NetApp加密解决方案对卷进行加密"]。
+
+
+
+==== 代理服务器
+
+现在、Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为在出站Internet连接不可用于发送AutoSupport 消息时将Connector用作代理服务器。
+
+AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。
+
+唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
+
+
+
+==== 更改充电方法
+
+现在、您可以更改使用基于容量的许可的Cloud Volumes ONTAP 系统的收费方法。例如、如果您使用Essentials软件包部署了Cloud Volumes ONTAP 系统、则可以在业务需求发生变化时将其更改为"Professional软件包"。此功能可从Digital Wallet获得。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何更改充电方法"]。
+
+
+
+==== 安全组增强功能
+
+现在、在创建Cloud Volumes ONTAP 工作环境时、您可以通过用户界面选择是希望预定义的安全组仅允许选定网络(建议)内的流量、还是允许所有网络内的流量。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["屏幕截图显示了在选择安全组时工作环境向导中提供的允许流量范围选项。"]
+
+
+
+=== 2022年7月18日
+
+
+
+==== Azure中的新许可包
+
+通过Azure Marketplace订阅付费时、Azure中的Cloud Volumes ONTAP 可使用两个基于容量的新许可包：
+
+* *优化*：单独为已配置的容量和I/O操作付费
+* *边缘缓存*：许可 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache"^]
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["了解有关这些许可包的更多信息"]。
+
+
+
 === 2022年7月3日
 
 连接器3.9.20版引入了以下更改。
@@ -686,7 +757,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 现在、Cloud Manager可在通过用户界面创建Cloud Volumes ONTAP 工作环境时支持Amazon EBS弹性卷功能。使用GP3或IO1磁盘时、弹性卷功能默认处于启用状态。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。
 
-link:concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
 
 
 
@@ -711,186 +782,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTAP
 现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-
-
-=== 2022年6月7日
-
-连接器3.9.19版引入了以下更改。
-
-
-
-==== Cloud Volumes ONTAP 9.11.1
-
-Cloud Manager现在可以部署和管理Cloud Volumes ONTAP 9.11.1、其中包括对新功能的支持以及其他云提供商区域的支持。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
-
-
-
-==== 新建高级视图
-
-如果您需要对Cloud Volumes ONTAP 执行高级管理、可以使用ONTAP 系统管理器来执行此操作、该管理器是随ONTAP 系统提供的一个管理界面。我们直接在Cloud Manager中提供了System Manager界面、因此您无需离开Cloud Manager进行高级管理。
-
-此高级视图可作为Cloud Volumes ONTAP 9.10.0及更高版本的预览版提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
-
-link:task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
-
-
-
-==== 支持Amazon EBS弹性卷
-
-Cloud Volumes ONTAP 聚合支持Amazon EBS弹性卷功能、可提高性能并增加容量、同时支持Cloud Manager根据需要自动增加底层磁盘容量。
-
-从_new_ Cloud Volumes ONTAP 9.11.0系统以及GP3和IO1 EBS磁盘类型开始、可支持弹性卷。
-
-link:concept-aws-elastic-volumes.html["了解有关支持弹性卷的更多信息"]。
-
-请注意、要支持弹性卷、需要为Connector提供新的AWS权限：
-
-[source, json]
-----
-"ec2:DescribeVolumesModifications",
-"ec2:ModifyVolume",
-----
-请务必为您添加到Cloud Manager的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
-
-
-
-==== 支持在共享AWS子网中部署HA对
-
-Cloud Volumes ONTAP 9.11.1支持AWS VPC共享。通过此版本的Connector、您可以在使用API时在AWS共享子网中部署HA对。
-
-link:task-deploy-aws-shared-vpc.html["了解如何在共享子网中部署HA对"]。
-
-
-
-==== 使用服务端点时网络访问受限
-
-现在、当使用vNet服务端点在Cloud Volumes ONTAP 和存储帐户之间建立连接时、Cloud Manager会限制网络访问。如果禁用Azure Private Link连接、Cloud Manager将使用服务端点。
-
-link:task-enabling-private-link.html["了解有关使用Cloud Volumes ONTAP 连接Azure专用链路的更多信息"]。
-
-
-
-==== 支持在Google Cloud中创建Storage VM
-
-从9.11.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持多个Storage VM。从此版本的Connector开始、您可以通过Cloud Manager使用API在Google Cloud中的Cloud Volumes ONTAP HA对上创建Storage VM。
-
-要支持创建Storage VM、需要为Connector提供新的Google Cloud权限：
-
-[source, yaml]
-----
-- compute.instanceGroups.get
-- compute.addresses.get
-----
-请注意、您必须使用ONTAP 命令行界面或系统管理器在单节点系统上创建Storage VM。
-
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["详细了解Google Cloud中的Storage VM限制"^]
-* link:task-managing-svms-gcp.html["了解如何在Google Cloud中为Cloud Volumes ONTAP 创建提供数据的Storage VM"]
-
-
-
-
-=== 2022年5月2日
-
-连接器3.9.18版引入了以下变更。
-
-
-
-==== Cloud Volumes ONTAP 9.11.0
-
-Cloud Manager现在可以部署和管理Cloud Volumes ONTAP 9.11.0。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-==== 调解器升级增强功能
-
-当Cloud Manager升级HA对的调解器时、它现在会先验证新的调解器映像是否可用、然后再删除启动磁盘。此更改可确保调解器在升级过程失败时能够继续成功运行。
-
-
-
-==== 已删除K8s选项卡
-
-先前已弃用K8s选项卡、现已将其删除。如果要将Kubernetes与Cloud Volumes ONTAP 结合使用、可以将受管Kubernetes集群添加到Canvas中、作为一个用于高级数据管理的工作环境。
-
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["了解Cloud Manager中的Kubernetes数据管理"^]
-
-
-
-==== Azure中的年度合同
-
-Essentials和Professional软件包现在可通过一份年度合同在Azure中提供。您可以联系NetApp销售代表购买年度合同。此合同在Azure Marketplace中以私人优惠形式提供。
-
-在NetApp与您共享私人优惠后、您可以在创建工作环境期间从Azure Marketplace订阅年度计划。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["了解有关许可的更多信息"]。
-
-
-
-==== S3 Glacier即时检索
-
-现在、您可以将分层数据存储在Amazon S3 Glacier即时检索存储类中。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["了解如何更改分层数据的存储类"]。
-
-
-
-==== Connector需要新的AWS权限
-
-现在、在单个可用性区域(AZ)中部署HA对时、创建AWS分布放置组需要以下权限：
-
-[source, json]
-----
-"ec2:DescribePlacementGroups",
-"iam:GetRolePolicy",
-----
-现在、要优化Cloud Manager创建布局组的方式、需要这些权限。
-
-请务必为您添加到Cloud Manager的每组AWS凭据提供这些权限。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["查看AWS的最新Connector策略"^]。
-
-
-
-==== 全新Google Cloud区域支持
-
-从9.10.1版开始、以下Google Cloud地区现在支持Cloud Volumes ONTAP ：
-
-* 新德里(亚洲-南2)
-* 墨尔本(澳大利亚南部2)
-* 米兰(欧洲-西部8)—仅限单节点
-* 圣地亚哥(南美洲-西1)—仅限单节点
-
-
-https://cloud.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTAP 支持的区域的完整列表"^]
-
-
-
-==== 在Google Cloud中支持n2-standard-16
-
-从9.10.1版开始、Google Cloud中的Cloud Volumes ONTAP 现在支持n2-standard-16计算机类型。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["在Google Cloud中查看支持的Cloud Volumes ONTAP 配置"^]
-
-
-
-==== Google Cloud防火墙策略增强功能
-
-* 在Google Cloud中创建Cloud Volumes ONTAP HA对时、Cloud Manager现在将在VPC中显示所有现有防火墙策略。
-+
-以前、Cloud Manager不会在VPC-1、VPC-2或VPC-3中显示任何没有目标标记的策略。
-
-* 在Google Cloud中创建Cloud Volumes ONTAP 单节点系统时、您现在可以选择是希望预定义的防火墙策略仅允许选定VPC (建议)内的流量、还是允许所有VPC内的流量。
-
-
-
-
-==== Google Cloud服务帐户增强功能
-
-当您选择要与Cloud Volumes ONTAP 结合使用的Google云服务帐户时、Cloud Manager现在会显示与每个服务帐户关联的电子邮件地址。通过查看电子邮件地址、可以更轻松地区分同名服务帐户。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["服务帐户字段的屏幕截图"]
 
 
 
@@ -948,6 +839,38 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+=== 2022年7月25日(2.0版)
+
+此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["已修复的问题"]。
+
+
+
+==== 通过Azure Marketplace为全局文件缓存提供基于容量的新许可模式
+
+新的"Edge Cache"许可证具有与"CVO专业版"许可证相同的功能、但也支持全局文件缓存。在Azure中部署新Cloud Volumes ONTAP 系统时、您将看到此选项。您有权为Cloud Volumes ONTAP 系统上配置的每个3 TiB容量部署一个全局文件缓存边缘系统。应至少配置30 TiB。GFC License Manager服务已得到增强、可提供基于容量的许可。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["了解有关Edge Cache许可证包的更多信息。"]
+
+
+
+==== 现在、全局文件缓存已与Cloud Insights 集成
+
+NetApp Cloud Insights (CI)可全面了解您的基础架构和应用程序。现在、全局文件缓存已与CI集成在一起、可全面查看所有边缘和核心；监控实例上运行的进程。将各种全局文件缓存指标推送到CI、以便在CI信息板上提供完整的概述。
+
+https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信息。"]
+
+
+
+==== 许可证管理服务器已进行了增强、可在限制性极高的环境中运行
+
+在许可证配置期间、许可证管理服务器(LMS)应能够访问Internet、以便从NetApp/Zuora收集许可详细信息。配置成功后、尽管环境受限、但LMS仍可继续在脱机模式下工作并提供许可功能。
+
+
+
+==== Optimus中的Edge Sync UI已进行了增强、可在协调者Edge上显示已连接客户端的列表
+
+
+
 === 2022年6月23日(版本1.3.1)
 
 可从获取适用于1.3.1版的Global File Cache Edge软件 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["此页面"]。此版本可修复中所述的问题 https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["已修复的问题"]。
@@ -972,43 +895,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
-=== 2021 年 12 月 17 日（版本 1.2.0 ）
-
-
-
-==== OpenSSL 模块已升级到 1.1.1l 版。
-
-这是最新版本，更安全。此模块用于在 GFC Edge 和 GFC 核心之间进行安全通信。
-
-
-
-==== 日志记录基础架构已得到增强。
-
-
-
-=== 2021 年 6 月 9 日（版本 1.1.0 ）
-
-
-
-==== 已添加 " 边缘同步 " 功能。
-
-此功能可使远程办公室的多个边缘保持同步，并且数据始终处于缓存 / 预热状态。在一个 Edge 上刷新 / 提取文件时，将更新和缓存参与 Edge Sync 的所有边缘上的同一文件。请参见中的第 8.4 节 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^] 了解详细信息。
-
-
-
-==== OpenSSL 模块已升级到 1.1.1k 版。
-
-这是最新版本，更安全。此模块用于在 GFC Edge 和 GFC 核心之间进行安全通信。
-
-
-
-==== 已更新许可证注册页面。
-
-现在， GFC 许可证注册页面将显示通过 NetApp 订阅激活的许可证数量。
-
-
-
 == Kubernetes
+
+
+
+=== 2022年7月31日
+
+* 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
+* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]现在、您可以：
++
+** 指定块存储的文件系统类型(fstype)
+** 为块和文件存储提供存储经济性
+
+
+
 
 
 
@@ -1029,18 +929,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 === 2022年6月6日
 
 Cloud Manager现在支持将Amazon FSX for ONTAP 用作后端存储。
-
-
-
-=== 2022年5月4日
-
-
-
-==== 拖放以添加存储类
-
-现在、您可以将Kubernetes集群拖放到Cloud Volumes ONTAP 工作环境中、以便直接从Canvas添加存储类。
-
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
 
 
 
@@ -1138,6 +1026,22 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年8月7日
+
+
+
+==== 用于显示集群上的安全漏洞的新面板
+
+"存储系统漏洞"面板显示了Active IQ 数字顾问工具在每个ONTAP 集群上发现的高、中和低安全漏洞的总数。应立即查看高漏洞、以确保您的系统不会受到攻击。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities["有关详细信息，请访问此处"]。
+
+
+
+==== 新面板可显示不可变的扫描文件
+
+"关键数据不可移动性"面板显示了工作环境中使用ONTAP SnapLock 技术在WORM存储上受到保护、不会被修改和删除的项数。这样、您就可以查看有多少数据具有不可变的副本、以便更好地了解针对勒索软件的备份和恢复计划。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["有关详细信息，请访问此处"]。
+
+
+
 === 2022年6月12日
 
 
@@ -1164,7 +1068,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
-==== 用于跟踪 ONTAP 环境安全性强化情况的新面板。
+==== 用于跟踪ONTAP 环境安全性强化情况的新面板
 
 一个新面板_harden your ONTAP Environments_可 提供ONTAP 系统中某些设置的状态、用于根据跟踪部署的安全性 https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf["《适用于 ONTAP 系统的 NetApp 安全加固指南》"^] 和 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["ONTAP 防勒索软件功能"^] 主动检测异常活动并发出警告。
 
@@ -1172,29 +1076,29 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
-==== 新面板可显示如何使用 Cloud Backup 保护不同类别的数据。
+==== 新面板可显示如何使用Cloud Backup保护不同类别的数据
 
 此全新的_Backup Status_面板显示了在因勒索软件攻击而需要恢复时、您最重要的数据类别的备份程度如何全面。此数据直观地展示了 Cloud Backup 在环境中备份的特定类别项目数量。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data["有关详细信息，请访问此处"]。
 
 
 
-=== 2022 年 3 月 15 日
-
-
-
-==== 用于跟踪业务关键型数据的权限状态的新面板
-
-新的"业务关键型数据权限分析"面板可显示对您的业务至关重要的数据的权限状态。这样，您就可以快速评估业务关键型数据的保护情况。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data["有关详细信息，请访问此处"]。
-
-
-
-==== 现在， " 打开权限 " 区域包括 OneDrive 和 SharePoint 帐户
-
-现在，勒索软件保护信息板中的 " 打开权限 " 区域包含对 OneDrive 帐户和 SharePoint 帐户中正在扫描的文件的现有权限。
-
-
-
 == Replication
+
+
+
+=== 2022年7月31日
+
+
+
+==== FSX for ONTAP 作为数据源
+
+现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：
+
+* 适用于 ONTAP 的 Amazon FSX
+* 内部 ONTAP 集群
+
+
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["了解如何设置数据复制"]。
 
 
 
