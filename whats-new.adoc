@@ -248,6 +248,16 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年8月18日
+
+
+
+==== 添加了保护Cloud原生 应用程序数据的支持
+
+Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。Cloud Manager中启用的适用于应用程序的Cloud Backup可为驻留在Amazon FSx for NetApp ONTAP 上的Oracle数据库提供高效、应用程序一致且基于策略的备份和还原。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["了解更多信息。"^]。
+
+
+
 === 2022年8月16日
 
 
@@ -262,9 +272,15 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 我们增加了保护备份文件免遭删除和勒索软件攻击的功能
 
-Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。
+Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
+请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html#set-up-s3-permissions["如有必要、请参见如何添加这些权限"^]。
+
+
+
+==== Cloud Backup现在支持使用自定义SnapMirror标签创建的策略
+
+以前、Cloud Backup仅支持预定义的SnapMirror标签、例如每小时、每天、每周、每小时和每年。现在、Cloud Backup可以发现包含您使用System Manager或CLI创建的自定义SnapMirror标签的SnapMirror策略。这些新标签会显示在Cloud Backup UI中、您可以使用所选的SnapMirror标签将卷备份到云中。
 
 
 
@@ -276,7 +292,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-
 
 ==== 拖放以启用Cloud Backup to Azure Blob和Google Cloud Storage
 
-如果 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google Cloud 存储"^] 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 集群或Cloud Volumes ONTAP 系统(安装在Azure或GCP中)拖动到工作环境中以启动备份设置向导。
+如果 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google Cloud 存储"^] 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 或Cloud Volumes ONTAP 工作环境(安装在Azure或GCP中)拖动到目标上以启动备份设置向导。
 
 Amazon S3存储分段已具有此功能。
 
@@ -405,6 +421,12 @@ link:reference-private-data-categories.html#types-of-personal-data["查看 Data 
 ==== 查看已成功分类的卷、分段等数量的状态
 
 查看Data sense正在扫描的各个存储库(卷、存储分段等)时、现在您可以查看已"映射"的存储库数量以及已"分类"的存储库数量。由于正在对所有数据执行完整的AI标识、因此分类所需时间更长。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["请参见如何查看此信息"^]。
+
+
+
+==== 现在、您可以添加Data sense在数据中标识的自定义模式
+
+您可以使用自定义正则表达式(regex)添加个人模式来标识数据中的特定信息。该正则表达式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#creating-custom-personal-data-identifiers-using-a-regex["了解更多信息。"^]。
 
 
 
@@ -905,6 +927,15 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 === 2022年7月31日
 
 * 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aws.html["AWS 中 Kubernetes 集群的要求"]
+
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-aks.html["Azure 中 Kubernetes 集群的要求"]
+
++
+link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
+
 * 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]现在、您可以：
 +
 ** 指定块存储的文件系统类型(fstype)

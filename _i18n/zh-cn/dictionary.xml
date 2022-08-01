@@ -482,14 +482,27 @@
   <block id="df69045929c0c3d81d05d291d9a65cdf" category="inline-link">如有必要、请参见如何添加这些权限</block>
   <block id="0d686592bdbc5c86f2ba1c8248bc44da" category="paragraph">请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件(2022年8月)部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。<block ref="0ebb6015b7a8d1b3b67f8b17b057acd1" category="inline-link-rx"></block>。</block>
   <block id="2f176cfab68c991edad2596ce5f71c26" category="section-title">我们增加了保护备份文件免遭删除和勒索软件攻击的功能</block>
-  <block id="0a3404862f01e82bee84db8919a15819" category="paragraph">Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。</block>
   <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">详细了解如何使用DataLock和勒索软件保护来保护备份</block>
-  <block id="6dd6bb59703afa0fa4c54bab99ad8d4c" category="paragraph"><block ref="fe4d56bff61ff0408b8d5349d9b6a033" category="inline-link-rx"></block>。</block>
   <block id="a50aef84191a2a8583dff3169f0e9722" category="section-title">对ONTAP 系统的备份策略进行了更多改进</block>
   <block id="49ed93361b6144f58f401017aa6361d0" category="paragraph">某些备份策略页面经过重新设计、可以更轻松地查看每个ONTAP 集群中的卷可用的所有备份策略。这样可以更轻松地查看可用策略的详细信息、以便您可以在卷上应用最佳策略。</block>
   <block id="c386ae49c48be8bcc2fbd19ab4807c0a" category="section-title">拖放以启用Cloud Backup to Azure Blob和Google Cloud Storage</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="inline-link">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud 存储</block>
-  <block id="b58db1afa291d3cbd84b014051cca4d9" category="paragraph">如果<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> 或<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 集群或Cloud Volumes ONTAP 系统(安装在Azure或GCP中)拖动到工作环境中以启动备份设置向导。</block>
   <block id="b6f2e1a880ce20ab3d1039056746fa33" category="paragraph">Amazon S3存储分段已具有此功能。</block>
+  <block id="15471566ffb385e256937957990dd60d" category="section-title">2022年8月18日</block>
+  <block id="d583f1393e45db7abf2dbb15da48eaad" category="section-title">添加了保护Cloud原生 应用程序数据的支持</block>
+  <block id="82aa9a316dbbb378e25972999e35a45b" category="paragraph">Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。Cloud Manager中启用的适用于应用程序的Cloud Backup可为驻留在Amazon FSx for NetApp ONTAP 上的Oracle数据库提供高效、应用程序一致且基于策略的备份和还原。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
+  <block id="e7f0bd203723dde56c408349b772431e" category="paragraph">Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
+  <block id="4a13f748ffea2bf384ee164062e7e17f" category="paragraph">请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。<block ref="b51546833a3c96ab5b8c4e49b196cd94" category="inline-link-rx"></block>。</block>
+  <block id="9fa4d73f6f3d752a69adeebba1959edb" category="section-title">Cloud Backup现在支持使用自定义SnapMirror标签创建的策略</block>
+  <block id="387856638678798c3ffb0e38b39170c6" category="paragraph">以前、Cloud Backup仅支持预定义的SnapMirror标签、例如每小时、每天、每周、每小时和每年。现在、Cloud Backup可以发现包含您使用System Manager或CLI创建的自定义SnapMirror标签的SnapMirror策略。这些新标签会显示在Cloud Backup UI中、您可以使用所选的SnapMirror标签将卷备份到云中。</block>
+  <block id="1c630f0a83d0317db1fef94fb4dac579" category="paragraph">如果<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> 或<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 或Cloud Volumes ONTAP 工作环境(安装在Azure或GCP中)拖动到目标上以启动备份设置向导。</block>
+  <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">现在、您可以添加Data sense在数据中标识的自定义模式</block>
+  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自定义正则表达式(regex)添加个人模式来标识数据中的特定信息。该正则表达式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
+  <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS 中 Kubernetes 集群的要求</block>
+  <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
+  <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Azure 中 Kubernetes 集群的要求</block>
+  <block id="8a7acc1f3e4ade2ee389a4e59f39bf28" category="paragraph"><block ref="8a7acc1f3e4ade2ee389a4e59f39bf28" category="inline-link-macro-rx"></block></block>
+  <block id="b6511d823d5fc5c8c219b52663e32c20" category="inline-link-macro">Google Cloud 中的 Kubernetes 集群的要求</block>
+  <block id="2bdb06b2a7060e3efbb60c6fdf551284" category="paragraph"><block ref="2bdb06b2a7060e3efbb60c6fdf551284" category="inline-link-macro-rx"></block></block>
 </blocks>
