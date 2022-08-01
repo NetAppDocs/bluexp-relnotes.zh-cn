@@ -109,13 +109,6 @@
   <block id="199090bb5d58df554b18a5cb68acb0b7" category="section-title">Cloud Tiering 已完全符合 ONTAP Select 系统的要求</block>
   <block id="a74220a8acc78d1041352afb305af18f" category="paragraph">除了对 AFF 和 FAS 系统中的数据进行分层之外，现在您还可以将 ONTAP Select 系统中的非活动数据分层到云存储。</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
-  <block id="99c3c55ceb085b94e53d8b7984863037" category="section-title">Cloud Tiering BYOL 许可证取代了 FabricPool 许可证</block>
-  <block id="2817937e51c403b4b9929eaa298b82dd" category="paragraph">对于使用 Cloud Tiering 服务的 Cloud Manager 中支持的分层配置，现在提供了一个新的 * 云分层 * 许可证。这是一个浮动许可证，您可以跨多个内部 ONTAP 集群使用。您过去可能使用的 * FabricPool * 许可证仅适用于 不支持的配置。</block>
-  <block id="54b8200ba1ce85a7ad931e091de0ed98" category="inline-link">了解有关全新 Cloud Tiering 许可证的更多信息</block>
-  <block id="34a4923a0f84a1bc223389cfed6e2b62" category="paragraph"><block ref="3054f156a0693c67de0611c0445f676e" category="inline-link-rx"></block>。</block>
-  <block id="24263383a842093a8c2b6b9b8a88989d" category="section-title">将内部 ONTAP 集群中的非活动数据分层到与 S3 兼容的对象存储</block>
-  <block id="59e10c49329cd1a0a55e4a0d27f6a584" category="inline-link">请参见如何将数据分层到与 S3 兼容的对象存储</block>
-  <block id="df94b79ab63138be1c03382ae20c338d" category="paragraph">现在，您可以将非活动数据分层到使用简单存储服务（ Simple Storage Service ， S3 ）协议的任何对象存储服务。<block ref="26932bf166134e05b1ade0d7ecb1b6d8" category="inline-link-rx"></block>。</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020 年 9 月 9 日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支持适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="9e376b2341c224a05e31bf464f6a9a2c" category="paragraph">现在，您可以直接从 Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service ：</block>
@@ -489,4 +482,10 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">FSX for ONTAP 作为数据源</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">内部 ONTAP 集群</block>
+  <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">2022年8月3日</block>
+  <block id="059c9f6829260507f53186d7191b058c" category="section-title">可以为集群中的其他聚合配置其他对象存储</block>
+  <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">详细了解新的对象存储功能。</block>
+  <block id="e13d7be0c5a4bf2f3e8d1dd04f69dd41" category="paragraph">Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加新的对象存储、将多个对象存储连接到聚合以进行FabricPool 镜像、交换主对象存储和镜像对象存储、删除与聚合的对象存储连接等。<block ref="4f404ee3f4c3295f701ed8b17cef66df" category="inline-link-rx"></block></block>
+  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">为MetroCluster 配置提供云分层许可证支持</block>
+  <block id="141c7c6c3afeeb8d968939161f64f8d2" category="paragraph">现在、可以与MetroCluster 配置中的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
 </blocks>
