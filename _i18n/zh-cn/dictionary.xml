@@ -163,18 +163,7 @@
   <block id="6b6f87c741f6734b4908d03d2c21e449" category="paragraph">SnapCenter 服务 1.0.1 将 Apache Log4j 从 2.9.1 版升级到 2.17 版，以解决以下漏洞： CVE-2021-44228 ， CVE-2021-4104 和 CVE-2021-45105 。</block>
   <block id="ae1f9a5afbc7e02967d7f7e643135d82" category="paragraph">SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 服务 UI 中的版本显示集群为 1.0.1.1251 或更高版本。</block>
   <block id="9081c0430b4e4fcf1f0dd042e7c0ca60" category="inline-image-macro">显示Cloud Manager中通知中心的屏幕截图。</block>
-  <block id="49644953fd4e9612a9842d17bef5e79b" category="section-title">2022年5月2日</block>
-  <block id="403f4772d715b69d553d3568ca523be0" category="section-title">现在、Google Cloud Storage中的备份文件支持搜索和还原</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">请参见如何使用搜索和放大器还原卷和文件</block>
-  <block id="c84eb78e4a1957b6b0aa50908d89949f" category="paragraph">4月份、在AWS中存储备份文件的用户开始使用"搜索和还原"方法来还原卷和文件。现在、将备份文件存储在Google Cloud Storage中的用户可以使用此功能。<block ref="c9d4c1d19223377e15b82823d41fa44a" category="inline-link-rx"></block>。</block>
-  <block id="1dc3a9d2d46d5247757ad692a1dda8d4" category="section-title">配置要自动应用于Kubernetes集群中新创建的卷的备份策略</block>
-  <block id="fd875d3cd25e36f42ac27fb4f3449a8e" category="section-title">Cloud Backup现在需要获得许可证、才能在工作环境中激活</block>
-  <block id="75c0e3b9776c1472c507114bf7a7a1cf" category="paragraph">在Cloud Backup中实施许可的方式方面、有一些变化：</block>
-  <block id="e84f7761b10b99ddca7152e4bb801dd6" category="list-text">您必须先从云提供商处注册PAYGO Marketplace订阅、或者从NetApp购买BYOL许可证、然后才能激活Cloud Backup。</block>
-  <block id="6902b4bfe7e77a50b544384d4b87d579" category="list-text">30天免费试用版仅在使用云提供商提供的PAYGO订阅时可用、而在使用BYOL许可证时不可用。</block>
-  <block id="013bf9b0d5295922582e97a69409b714" category="list-text">免费试用从Marketplace订阅开始的那一天开始。例如、如果在对Cloud Volumes ONTAP 系统使用Marketplace订阅30天之后激活免费试用、则Cloud Backup试用将不可用。</block>
-  <block id="caf9c5028f987d64131bfc8e9f4bd0ed" category="inline-link">详细了解可用的许可模式</block>
-  <block id="ecd035ede918d91432ba5203669d96bd" category="paragraph"><block ref="7226e404226609d8e6a7fa892651e74a" category="inline-link-rx"></block>。</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">查看支持的区域的完整列表</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
@@ -203,7 +192,6 @@
   <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">全局文件缓存许可证管理服务器(LMS)服务已进行增强、可自动检测代理设置。这样可以实现无缝配置。</block>
   <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">2022年6月7日</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">了解Cloud Volumes ONTAP 增强功能</block>
-  <block id="35902f649443d8dd6c5f04595fff3035" category="paragraph">如果您在激活Cloud Backup后向Kubernetes集群添加了新的永久性卷、则在过去、您需要记住为这些卷配置备份。现在、您可以选择将自动应用于新创建的卷的策略。在为新Kubernetes集群激活Cloud Backup时、此选项可在设置向导中使用。</block>
   <block id="62ee9336109ed1c4538423613b856682" category="section-title">2022年6月6日</block>
   <block id="c20246791a0594003975011a29aae438" category="section-title">持续同步</block>
   <block id="ade9a1db23f7d605ed4e98f520c46b00" category="paragraph">通过新设置、您可以持续将源S3存储分段中的更改同步到目标。</block>
@@ -488,4 +476,20 @@
   <block id="e13d7be0c5a4bf2f3e8d1dd04f69dd41" category="paragraph">Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加新的对象存储、将多个对象存储连接到聚合以进行FabricPool 镜像、交换主对象存储和镜像对象存储、删除与聚合的对象存储连接等。<block ref="4f404ee3f4c3295f701ed8b17cef66df" category="inline-link-rx"></block></block>
   <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">为MetroCluster 配置提供云分层许可证支持</block>
   <block id="141c7c6c3afeeb8d968939161f64f8d2" category="paragraph">现在、可以与MetroCluster 配置中的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
+  <block id="80ebda6d6ef4b796a7797ba0d73d8fc4" category="section-title">2022年8月16日</block>
+  <block id="5f98181f93bdb66aed67b6ec6ca0e6a1" category="section-title">现在、Azure Blob中的备份文件支持搜索和还原</block>
+  <block id="3cc0a32f0024bbcc0e74c0ca7c01b4ca" category="paragraph">现在、将备份文件存储在Azure Blob存储中的用户可以使用"搜索和还原"方法还原卷和文件。<block ref="2505b78b897ef0dc1c5d1783874239f2" category="inline-link-rx"></block>。</block>
+  <block id="df69045929c0c3d81d05d291d9a65cdf" category="inline-link">如有必要、请参见如何添加这些权限</block>
+  <block id="0d686592bdbc5c86f2ba1c8248bc44da" category="paragraph">请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件(2022年8月)部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。<block ref="0ebb6015b7a8d1b3b67f8b17b057acd1" category="inline-link-rx"></block>。</block>
+  <block id="2f176cfab68c991edad2596ce5f71c26" category="section-title">我们增加了保护备份文件免遭删除和勒索软件攻击的功能</block>
+  <block id="0a3404862f01e82bee84db8919a15819" category="paragraph">Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。</block>
+  <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">详细了解如何使用DataLock和勒索软件保护来保护备份</block>
+  <block id="6dd6bb59703afa0fa4c54bab99ad8d4c" category="paragraph"><block ref="fe4d56bff61ff0408b8d5349d9b6a033" category="inline-link-rx"></block>。</block>
+  <block id="a50aef84191a2a8583dff3169f0e9722" category="section-title">对ONTAP 系统的备份策略进行了更多改进</block>
+  <block id="49ed93361b6144f58f401017aa6361d0" category="paragraph">某些备份策略页面经过重新设计、可以更轻松地查看每个ONTAP 集群中的卷可用的所有备份策略。这样可以更轻松地查看可用策略的详细信息、以便您可以在卷上应用最佳策略。</block>
+  <block id="c386ae49c48be8bcc2fbd19ab4807c0a" category="section-title">拖放以启用Cloud Backup to Azure Blob和Google Cloud Storage</block>
+  <block id="52745271323ee9ea30e3a37d0338d118" category="inline-link">Azure Blob</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud 存储</block>
+  <block id="b58db1afa291d3cbd84b014051cca4d9" category="paragraph">如果<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> 或<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 集群或Cloud Volumes ONTAP 系统(安装在Azure或GCP中)拖动到工作环境中以启动备份设置向导。</block>
+  <block id="b6f2e1a880ce20ab3d1039056746fa33" category="paragraph">Amazon S3存储分段已具有此功能。</block>
 </blocks>

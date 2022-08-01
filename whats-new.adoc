@@ -248,6 +248,40 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年8月16日
+
+
+
+==== 现在、Azure Blob中的备份文件支持搜索和还原
+
+现在、将备份文件存储在Azure Blob存储中的用户可以使用"搜索和还原"方法还原卷和文件。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["请参见如何使用搜索和放大器还原卷和文件"^]。
+
+请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件(2022年8月)部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-azure.html#verify-or-add-permissions-to-the-connector["如有必要、请参见如何添加这些权限"^]。
+
+
+
+==== 我们增加了保护备份文件免遭删除和勒索软件攻击的功能
+
+Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
+
+
+
+==== 对ONTAP 系统的备份策略进行了更多改进
+
+某些备份策略页面经过重新设计、可以更轻松地查看每个ONTAP 集群中的卷可用的所有备份策略。这样可以更轻松地查看可用策略的详细信息、以便您可以在卷上应用最佳策略。
+
+
+
+==== 拖放以启用Cloud Backup to Azure Blob和Google Cloud Storage
+
+如果 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["Azure Blob"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html["Google Cloud 存储"^] 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 集群或Cloud Volumes ONTAP 系统(安装在Azure或GCP中)拖动到工作环境中以启动备份设置向导。
+
+Amazon S3存储分段已具有此功能。
+
+
+
 === 2022年7月13日
 
 
@@ -330,35 +364,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-da
 ==== Cloud Backup API现在可用于管理备份和还原操作
 
 这些API可从获取 https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。请参见 link:api-backup-restore.html["此页面"] 有关API的概述。
-
-
-
-=== 2022年5月2日
-
-
-
-==== 现在、Google Cloud Storage中的备份文件支持搜索和还原
-
-4月份、在AWS中存储备份文件的用户开始使用"搜索和还原"方法来还原卷和文件。现在、将备份文件存储在Google Cloud Storage中的用户可以使用此功能。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#prerequisites-2["请参见如何使用搜索和放大器还原卷和文件"]。
-
-
-
-==== 配置要自动应用于Kubernetes集群中新创建的卷的备份策略
-
-如果您在激活Cloud Backup后向Kubernetes集群添加了新的永久性卷、则在过去、您需要记住为这些卷配置备份。现在、您可以选择将自动应用于新创建的卷的策略。在为新Kubernetes集群激活Cloud Backup时、此选项可在设置向导中使用。
-
-
-
-==== Cloud Backup现在需要获得许可证、才能在工作环境中激活
-
-在Cloud Backup中实施许可的方式方面、有一些变化：
-
-* 您必须先从云提供商处注册PAYGO Marketplace订阅、或者从NetApp购买BYOL许可证、然后才能激活Cloud Backup。
-* 30天免费试用版仅在使用云提供商提供的PAYGO订阅时可用、而在使用BYOL许可证时不可用。
-* 免费试用从Marketplace订阅开始的那一天开始。例如、如果在对Cloud Volumes ONTAP 系统使用Marketplace订阅30天之后激活免费试用、则Cloud Backup试用将不可用。
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-licensing-cloud-backup.html["详细了解可用的许可模式"]。
 
 
 
