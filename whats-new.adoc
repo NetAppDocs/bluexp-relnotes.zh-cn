@@ -27,6 +27,25 @@ summary: 了解 Cloud Manager 平台中的云服务的最新变更。有关详�
 
 
 
+=== 2022年9月18日
+
+
+
+==== 连接器3.9.22
+
+* 我们通过添加一个_in-product guides_来增强了连接器部署向导、该指南提供了满足连接器安装的最低要求的步骤：权限、身份验证和网络连接。
+* 现在、您可以直接从*支持信息板*中的Cloud Manager创建NetApp支持案例。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["了解如何创建案例"]。
+
+* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 === 2022年7月31日
 
 
@@ -163,6 +182,12 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
+=== 2022年9月18日
+
+您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+
+
+
 === 2022年7月31日
 
 * 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
@@ -187,18 +212,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx
 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["设置 IAM 角色"]
 
 
-
-
-
-=== 2022 年 2 月 27 日
-
-
-
-==== 承担 IAM 角色
-
-在创建适用于 ONTAP 的 FSX 工作环境时，您现在必须提供一个 IAM 角色的 ARN ， Cloud Manager 可以使用此 ARN 来创建适用于 ONTAP 的 FSX 工作环境。您以前需要提供 AWS 访问密钥。
-
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["了解如何为适用于 ONTAP 的 FSX 设置权限"]。
 
 
 
@@ -248,6 +261,42 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年9月19日
+
+
+
+==== 可以为StorageGRID 系统中的备份文件配置DataLock和勒索软件保护
+
+上一版本针对存储在Amazon S3存储分段中的备份引入了_DataLock和勒索软件保护_。此版本扩展了对StorageGRID 系统中存储的备份文件的支持。如果集群使用的是ONTAP 9.11.1或更高版本、而StorageGRID 系统运行的是11.6.0.3或更高版本、则可以使用此新的备份策略选项。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
+
+请注意、您需要运行的Connector软件版本为3.9.22或更高版本。连接器必须安装在您的内部环境中、并且可以安装在可访问Internet或不可访问Internet的站点中。
+
+
+
+==== 现在、您可以从备份文件中进行文件夹级还原
+
+现在、如果您需要访问某个备份文件(目录或共享)中的所有文件、则可以从该文件还原该文件夹。与还原整个卷相比、还原文件夹的效率要高得多。此功能可用于使用浏览和还原方法以及搜索和还原方法执行还原操作。此时、您只能选择和还原单个文件夹、并且只会还原该文件夹中的文件、而不会还原子文件夹或子文件夹中的文件。
+
+
+
+==== 现在、可以从已移至归档存储的备份中进行文件级还原
+
+过去、您只能从已移至归档存储的备份文件还原卷(仅限AWS和Azure)。现在、您可以从这些归档备份文件还原单个文件和文件夹。此功能可用于使用浏览和还原方法以及搜索和还原方法执行还原操作。
+
+
+
+==== 现在、文件级还原提供了覆盖原始源文件的选项
+
+过去、还原到原始卷的文件始终会作为前缀为"Restore_<file_name>"的新文件进行还原。现在、您可以选择在将源文件还原到卷上的原始位置时覆盖此源文件。此功能可用于使用浏览和还原方法以及搜索和还原方法执行还原操作。
+
+
+
+==== 拖放以启用云备份到StorageGRID 系统
+
+如果 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["StorageGRID"^] 备份目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动备份设置向导。
+
+
+
 === 2022年8月18日
 
 
@@ -255,10 +304,6 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 ==== 添加了保护Cloud原生 应用程序数据的支持
 
 Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。Cloud Manager中启用的适用于应用程序的Cloud Backup可为驻留在Amazon FSx for NetApp ONTAP 上的Oracle数据库提供高效、应用程序一致且基于策略的备份和还原。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["了解更多信息。"^]。
-
-
-
-=== 2022年8月16日
 
 
 
@@ -319,67 +364,6 @@ Amazon S3存储分段已具有此功能。
 * 现在可以按年计划进行备份。对于年度备份、默认保留值为1、但如果要访问前几年的许多备份文件、您可以更改此值。
 * 您可以为备份策略命名、以便使用更具描述性的文本来标识策略。
 
-
-
-
-=== 2022年6月14日
-
-
-
-==== 增加了对在无法访问Internet的站点中备份内部ONTAP 集群数据的支持
-
-如果您的内部ONTAP 集群位于无法访问Internet的站点中、也称为非公开站点或脱机站点、则现在您可以使用Cloud Backup将卷数据备份到同一站点中的NetApp StorageGRID 系统。此功能还要求在脱机站点中部署Cloud Manager Connector (版本3.9.19或更高版本)。
-
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["请参见如何在脱机站点中安装Connector"]。https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["了解如何将ONTAP 数据备份到脱机站点中的StorageGRID"]。
-
-
-
-=== 2022年6月8日
-
-
-
-==== 适用于虚拟机的Cloud Backup 1.1.0现已正式上市
-
-您可以通过将适用于VMware vSphere的SnapCenter 插件与Cloud Manager集成来保护虚拟机上的数据。您可以将数据存储库备份到云、并将虚拟机轻松还原回适用于VMware vSphere的内部部署SnapCenter 插件。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-vm-data.html["了解有关保护虚拟机到云的更多信息"]。
-
-
-
-==== ONTAP 浏览和还原功能不需要云还原实例
-
-以前从S3和Blob存储执行文件级浏览和还原操作需要一个单独的Cloud Restore实例/虚拟机。此实例在不使用时关闭、但在还原文件时仍会增加一些时间和成本。此功能已被一个免费容器所取代、此容器可在需要时部署在Connector上。它具有以下优势：
-
-* 文件级还原操作不会增加成本
-* 文件级还原操作速度更快
-* 支持在内部安装Connector时从云中对文件执行浏览和还原操作
-
-
-请注意、如果您先前使用了Cloud Restore实例/VM、则该实例/VM将自动删除。Cloud Backup进程将每天运行一次、以删除所有旧的Cloud Restore实例。此更改是完全透明的—不会对数据产生任何影响、您也不会注意到备份或还原作业发生了任何更改。
-
-
-
-==== 浏览并还原对Google Cloud和StorageGRID 存储中文件的支持
-
-现在、通过添加用于浏览和还原操作的容器(如上所述)、可以从存储在Google Cloud和StorageGRID 系统中的备份文件执行文件还原操作。现在、浏览和还原可用于在所有公有 云提供商之间以及从StorageGRID 还原文件。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-browse-restore["请参见如何使用浏览和放大功能；还原ONTAP 备份中的卷和文件"]。
-
-
-
-==== 拖放以启用Cloud Backup到S3存储
-
-如果用于备份的Amazon S3目标作为工作环境存在于Canvas上、则可以将本地ONTAP 集群或Cloud Volumes ONTAP 系统(安装在AWS中)拖动到Amazon S3工作环境中以启动设置向导。
-
-
-
-==== 自动将备份策略应用于Kubernetes集群中新创建的卷
-
-如果您在激活Cloud Backup后向Kubernetes集群添加了新的永久性卷、则在过去、您需要记住为这些卷配置备份。现在、您可以选择将自动应用于新创建的卷的策略 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-kubernetes.html#setting-a-backup-policy-to-be-assigned-to-new-volumes["从_Backup Settings_页面"] 适用于已激活Cloud Backup的集群。
-
-
-
-==== Cloud Backup API现在可用于管理备份和还原操作
-
-这些API可从获取 https://docs.netapp.com/us-en/cloud-manager-automation/cbs/overview.html[]。请参见 link:api-backup-restore.html["此页面"] 有关API的概述。
 
 
 
@@ -653,6 +637,24 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2022年9月19日
+
+
+
+==== 分层向导允许使用AWS PrivateLink安全连接到S3存储
+
+在先前版本中、通过VPC端点将集群连接到S3存储分段的安全方式非常耗时。现在、您可以按照前提步骤进行操作 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["使用VPC端点接口为系统配置专用连接"]、然后、您可以在"网络连接"页面的分层设置向导期间选择PrivateLink。
+
+https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["查看将非活动数据分层到Amazon S3的要求和步骤"]。
+
+
+
+==== 拖放以启用Amazon S3的Cloud Tiering
+
+如果Amazon S3分层目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动分层设置向导。
+
+
+
 === 2022年8月3日
 
 
@@ -676,22 +678,6 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 ==== 为其他集群配置提供Cloud Tiering许可证支持
 
 现在、可以与分层镜像配置(不包括MetroCluster 配置)中的集群以及分层到IBM云对象存储的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["请参见如何许可和配置这些类型的集群。"]
-
-
-
-=== 2022 年 4 月 4 日
-
-
-
-==== Amazon S3 Glacier 即时检索存储类现已推出
-
-设置 Cloud Tiering 时，现在您可以配置生命周期规则，以便在一定天数后将非活动数据从 _Standard_ 存储类过渡到 _Glacier 即时检索 _ 。这将有助于降低 AWS 基础架构成本。 https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["请参见支持的S3存储类。"]
-
-
-
-==== Cloud Tiering 已完全符合 ONTAP Select 系统的要求
-
-除了对 AFF 和 FAS 系统中的数据进行分层之外，现在您还可以将 ONTAP Select 系统中的非活动数据分层到云存储。
 
 
 
@@ -917,6 +903,16 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 
 
+=== 2022年9月18日
+
+现在、您可以将自管理的OpenShift集群导入到Cloud Manager中。
+
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-openshift.html["OpenShift中的Kubernetes集群的要求"]
+* link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-add-openshift.html["将OpenShift集群添加到Cloud Manager"]
+
+
+
+
 === 2022年7月31日
 
 * 使用存储类中新的`监视`动词以及备份和还原YAML配置、Cloud Manager现在可以监控Kubernetes集群中对集群后端所做的更改、并在集群上配置了自动备份的情况下自动为新的永久性卷启用备份。
@@ -929,12 +925,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 +
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kubernetes-reqs-gke.html["Google Cloud 中的 Kubernetes 集群的要求"]
 
-* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]现在、您可以：
-+
-** 指定块存储的文件系统类型(fstype)
-** 为块和文件存储提供存储经济性
-
-
+* 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块存储指定文件系统类型(fstype)。
 
 
 
@@ -950,12 +941,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage
 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
 
 
-
-
-
-=== 2022年6月6日
-
-Cloud Manager现在支持将Amazon FSX for ONTAP 用作后端存储。
 
 
 
@@ -1011,6 +996,30 @@ AWS 和 Azure 的政府区域也支持监控服务。
 
 
 
+=== 2022年9月18日
+
+连接器3.9.22版引入了以下更改。
+
+
+
+==== 新的"概述"页面
+
+我们引入了一个新的"概述"页面、用于提供有关内部ONTAP 集群的关键详细信息。例如、您现在可以查看存储效率、容量分布和系统信息等详细信息。
+
+您还可以查看有关与其他NetApp云服务集成的详细信息、这些服务支持数据分层、数据复制和备份。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["显示内部ONTAP 集群的\"概述\"页面的屏幕截图。"]
+
+
+
+==== 重新设计的卷页面
+
+我们重新设计了卷页面、以提供集群上卷的摘要。此摘要将显示卷的总数、已配置容量、已用容量和预留容量以及分层数据的数量。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["显示内部ONTAP 集群的卷页面的屏幕截图。"]
+
+
+
 === 2022年6月7日
 
 连接器3.9.19版引入了以下更改。
@@ -1023,7 +1032,7 @@ AWS 和 Azure 的政府区域也支持监控服务。
 
 对于运行9.10.0或更高版本的内部ONTAP 集群、此高级视图为预览视图。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
-link:task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
 
 
 
@@ -1036,16 +1045,6 @@ link:task-administer-advanced-view.html["了解有关高级视图的更多信息
 现在，您可以查看内部 ONTAP 集群的清单及其硬件和服务合同到期日期。此外，我们还提供了有关这些集群的其他详细信息。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["请参见如何查看此重要的内部集群信息"]。您需要为集群创建一个 NetApp 支持站点帐户（ NSS ），并且需要将 NSS 凭据附加到您的 Cloud Manager 帐户。
-
-
-
-=== 2022 年 1 月 11 日
-
-
-
-==== 您添加到内部 ONTAP 集群上的卷的标记可以与标记服务结合使用。
-
-添加到卷的标记现在与应用程序模板服务的标记功能相关联，该功能有助于您组织和简化资源管理。
 
 
 
@@ -1102,6 +1101,18 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 == Replication
+
+
+
+=== 2022年9月18日
+
+
+
+==== 适用于ONTAP 到Cloud Volumes ONTAP 的FSX
+
+现在、您可以将适用于ONTAP 的Amazon FSx文件系统中的数据复制到Cloud Volumes ONTAP。
+
+https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["了解如何设置数据复制"]。
 
 
 
