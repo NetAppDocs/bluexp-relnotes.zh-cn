@@ -84,50 +84,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 
 
-=== 2022年7月3日
-
-
-
-==== 连接器3.9.20
-
-* 我们引入了一种新方法来导航到Cloud Manager界面中不断增长的功能列表。现在、将鼠标悬停在左侧面板上即可轻松找到所有熟悉的Cloud Manager功能。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-navigation.png["显示Cloud Manager中新的左侧导航菜单的屏幕截图。"]
-
-* 现在、您可以将Cloud Manager配置为通过电子邮件发送通知、这样、即使您未登录到系统、您也可以了解重要的系统活动。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["了解有关监控帐户中操作的更多信息"]。
-
-* Cloud Manager现在支持Azure Blob存储和Google Cloud Storage作为工作环境、类似于Amazon S3支持。
-+
-在Azure或Google Cloud中安装Connector后、Cloud Manager现在会自动发现您的Azure订阅中的Azure Blob存储或安装了Connector的项目中的Google Cloud Storage的相关信息。Cloud Manager将对象存储显示为一个工作环境、您可以打开该环境以查看更多详细信息。
-
-+
-下面是Azure Blob工作环境的示例：
-
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-azure-blob-details.png["显示Azure Blob工作环境的屏幕截图、您可以在其中查看有关存储帐户的详细信息的简要概述。"]
-
-* 我们重新设计了Amazon S3工作环境的资源页面、提供了有关S3存储分段的更多详细信息、例如容量、加密详细信息等。
-* 现在、以下Google Cloud地区支持Connector：
-+
-** 马德里(欧洲-西南1)
-** 巴黎(欧洲-西部9)
-** 华沙(欧洲中部2)
-
-
-* 现在、Azure West US 3区域支持Connector。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
-* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["了解Cloud Volumes ONTAP 增强功能"^]
-
-
-
-
-
 == Azure NetApp Files
 
 
@@ -685,6 +641,45 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 
 
 
+=== 2022年9月18日
+
+连接器3.9.22版引入了以下更改。
+
+
+
+==== 数字电子钱包增强功能
+
+* 现在、"数字电子钱包"将显示您的帐户中Cloud Volumes ONTAP 系统的优化I/O许可包和已配置WORM容量的摘要。
++
+这些详细信息可以帮助您更好地了解如何为您付费以及是否需要购买额外容量。
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
+
+* 现在、您可以从一种充电方法更改为优化充电方法。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何更改充电方法"]。
+
+
+
+
+
+==== 优化成本和性能
+
+现在、您可以直接从Canvas优化Cloud Volumes ONTAP 系统的成本和性能。
+
+选择工作环境后、您可以选择*优化成本和性能*选项来更改Cloud Volumes ONTAP 的实例类型。选择规模较小的实例有助于降低成本、而更改到规模较大的实例则有助于优化性能。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["选择工作环境后、可从\"画布\"中查看优化成本与性能选项的屏幕截图。"]
+
+
+
+==== AutoSupport 通知
+
+现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、Cloud Manager将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
+
+
+
 === 2022年7月31日
 
 连接器3.9.21版引入了以下更改。
@@ -743,52 +738,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 
 
-=== 2022年7月3日
-
-连接器3.9.20版引入了以下更改。
-
-
-
-==== 数字电子钱包
-
-现在、Digital Wallet将按许可包显示您帐户中的总已用容量和已用容量。这有助于您了解如何为您付费以及是否需要购买额外容量。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["屏幕截图显示了基于容量的许可证的\"数字电子钱包\"页面。此页面概述了您帐户中的已用容量、然后按许可包细分已用容量。"]
-
-
-
-==== 弹性卷增强功能
-
-现在、Cloud Manager可在通过用户界面创建Cloud Volumes ONTAP 工作环境时支持Amazon EBS弹性卷功能。使用GP3或IO1磁盘时、弹性卷功能默认处于启用状态。您可以根据存储需求选择初始容量、并在部署Cloud Volumes ONTAP 后进行修改。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["了解有关在AWS中支持弹性卷的更多信息"]。
-
-
-
-==== AWS中的ONTAP S3许可证
-
-现在、在AWS中运行版本9.11.0或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
-
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-
-
-==== 新增Azure Cloud区域支持
-
-从9.10.1版开始、Azure West US 3区域现在支持Cloud Volumes ONTAP。
-
-https://cloud.netapp.com/cloud-volumes-global-regions["查看Cloud Volumes ONTAP 支持的区域的完整列表"^]
-
-
-
-==== Azure中的ONTAP S3许可证
-
-现在、在Azure中运行版本9.9.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统中提供了ONTAP S3许可证。
-
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
-
-
-
 == 适用于 GCP 的 Cloud Volumes Service
 
 
@@ -836,6 +785,20 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解
 https://docs.netapp.com/us-en/cloud-manager-compute/concept-compute.html["了解有关计算服务的更多信息"]。
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/media/screenshot_compute_dashboard.gif["显示 Cloud Manager 中 \" 成本分析 \" 页面的屏幕截图。"]
+
+
+
+== E系列系统
+
+
+
+=== 2022年9月18日
+
+
+
+==== 支持E系列
+
+现在、您可以直接从Cloud Manager发现E系列存储系统。通过发现E系列系统、您可以全面了解混合多云中的数据。
 
 
 
@@ -1144,18 +1107,6 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 
 
-=== 2021 年 5 月 5 日
-
-
-
-==== 界面经过重新设计
-
-我们重新设计了 " 复制 " 选项卡，以便于使用，并与 Cloud Manager 用户界面的当前外观相匹配。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-replication/main/media/replication.gif["Cloud Manager 中重新设计的复制选项卡的屏幕截图，其中显示了卷关系列表。"]
-
-
-
 == SnapCenter 服务
 
 
@@ -1169,3 +1120,17 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-replication/mai
 SnapCenter 服务 1.0.1 将 Apache Log4j 从 2.9.1 版升级到 2.17 版，以解决以下漏洞： CVE-2021-44228 ， CVE-2021-4104 和 CVE-2021-45105 。
 
 SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 服务 UI 中的版本显示集群为 1.0.1.1251 或更高版本。
+
+
+
+== StorageGRID
+
+
+
+=== 2022年9月18日
+
+
+
+==== 支持StorageGRID
+
+现在、您可以直接从Cloud Manager发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。
