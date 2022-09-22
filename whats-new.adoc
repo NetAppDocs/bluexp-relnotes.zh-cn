@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud' 
 summary: 了解 Cloud Manager 平台中的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。 
 ---
 = Cloud Manager 中的最新更改
@@ -249,7 +249,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 拖放以启用云备份到StorageGRID 系统
 
-如果 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html["StorageGRID"^] 备份目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动备份设置向导。
+如果 https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID"^] 备份目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动Cloud Backup设置向导。
 
 
 
