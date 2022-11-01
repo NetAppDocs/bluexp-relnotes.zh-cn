@@ -153,13 +153,6 @@
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager现在支持AWS GovCloud帐户身份验证。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">设置 IAM 角色</block>
   <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
-  <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
-  <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">策略更改</block>
-  <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">我们通过直接在文档中添加Cloud Manager策略来更新文档。这意味着您现在可以查看Connector和Cloud Volumes ONTAP 所需的权限以及说明如何设置这些权限的步骤。以前可以从NetApp支持站点上的页面访问这些策略。</block>
-  <block id="28f37fc0eb4fe20ff92020d4d8d46b8d" category="inline-link-macro">以下示例显示了用于创建Connector的AWS IAM角色权限</block>
-  <block id="49056d93dd3cd3fc9129ebadcf6877e0" category="inline-link-macro">查看Cloud Manager的权限摘要</block>
-  <block id="2c6996f5a98ca1cbcfa64873c18f13e9" category="paragraph"><block ref="077586b4338f7fc9c66e0ae0e2365a30" category="inline-link-rx"></block>。</block>
-  <block id="2533820d9e3e679d169b5decdbf29c60" category="paragraph">我们还创建了一个页面、用于提供指向每个策略的链接。<block ref="3bc30da5781f88e99acbb8ce33011928" category="inline-link-rx"></block>。</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="01f2c0e19d8bbd614814f0651e7feec1" category="section-title">连接器3.9.21</block>
   <block id="1beb197487d0f07564b924071751aa36" category="list-text">我们引入了一种新方法来发现您尚未在Cloud Manager中管理的现有云资源。</block>
@@ -508,4 +501,22 @@
   <block id="ff3a8dd75b4d3881ab0fc4ce17301af8" category="section-title">2022年11月7日</block>
   <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">新面板可显示您的整体勒索软件保护得分和建议的操作</block>
   <block id="2dad48bc5cb886ca6327e125bc6c853d" category="paragraph">这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。勒索软件保护得分面板显示了整体得分以及存在潜在问题的网络安全领域。"建议的操作"面板列出了您可以采取哪些潜在操作来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题描述 、以便您可以在必要时应用这些操作。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
+  <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
+  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。</block>
+  <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
+  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
+  <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
+  <block id="2325f561a20765def93d682f14cae306" category="paragraph">连接器3.9.23版引入了以下更改。</block>
+  <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">在Azure中移动资源组</block>
+  <block id="ea55da5ec5028d99103c938ded49761c" category="paragraph">现在、您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。</block>
+  <block id="6c2dc09b272a4aed6d56a3438a190129" category="inline-link-macro">移动资源组</block>
+  <block id="d015054d89d4ecbe893f21f5ab9700c0" category="paragraph">有关详细信息，请参见 <block ref="8d94a006f1853b408e5763a514426526" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6a2ac7b66db8e93b936023f17401626" category="section-title">NDMP副本认证</block>
+  <block id="c348c640ca478b45f3a3d9e14bb0695b" category="paragraph">NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。</block>
+  <block id="ab5a83d8e39547c5fb30a1fda984aebb" category="inline-link">NDMP 配置概述</block>
+  <block id="e4b4f60ab9fe08116659a5e12d6db4a8" category="paragraph">有关如何配置和使用NDMP的信息、请参见<block ref="9c57f7cf04e123991a3c88e286feb189" category="inline-link-rx"></block>。</block>
+  <block id="5e7de773a189ac8974753f9ce70a3dc5" category="section-title">支持Azure的受管磁盘加密</block>
+  <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。</block>
+  <block id="e76c0365dfa8d6b43992d790f582e6c4" category="inline-link">设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥</block>
+  <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">有关此新功能的详细信息、请参见<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
 </blocks>

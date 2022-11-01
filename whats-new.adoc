@@ -33,6 +33,24 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 
 
 
+=== 2022年11月6日
+
+
+
+==== 连接器3.9.23
+
+* 您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。
++
+https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_nov-2022/task-manage-subscriptions.html["了解如何管理您的订阅"^]
+
+* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 === 2022年11月1日
 
 现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["了解如何管理 NSS 帐户"^]
@@ -79,20 +97,6 @@ https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-work
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["了解Cloud Volumes ONTAP 增强功能"^]
 
 
-
-
-
-=== 2022年7月15日
-
-
-
-==== 策略更改
-
-我们通过直接在文档中添加Cloud Manager策略来更新文档。这意味着您现在可以查看Connector和Cloud Volumes ONTAP 所需的权限以及说明如何设置这些权限的步骤。以前可以从NetApp支持站点上的页面访问这些策略。
-
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["以下示例显示了用于创建Connector的AWS IAM角色权限"]。
-
-我们还创建了一个页面、用于提供指向每个策略的链接。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["查看Cloud Manager的权限摘要"]。
 
 
 
@@ -745,6 +749,36 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 2022年11月6日
+
+连接器3.9.23版引入了以下更改。
+
+
+
+==== 在Azure中移动资源组
+
+现在、您可以在同一Azure订阅中将工作环境从一个资源组移动到Azure中的其他资源组。
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["移动资源组"]。
+
+
+
+==== NDMP副本认证
+
+NDMP-copy现已通过认证、可与云卷ONTAP 配合使用。
+
+有关如何配置和使用NDMP的信息、请参见 https://docs.netapp.com/us-en/ontap/ndmp/index.html["NDMP 配置概述"]。
+
+
+
+==== 支持Azure的受管磁盘加密
+
+添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。
+
+有关此新功能的详细信息、请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥"]。
 
 
 
