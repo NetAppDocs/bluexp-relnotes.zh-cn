@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud' 
-summary: 了解 Cloud Manager 平台中的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp' 
+summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。 
 ---
-= Cloud Manager 中的最新更改
+= BlueXP中的最新变更
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -17,13 +17,25 @@ summary: 了解 Cloud Manager 平台中的云服务的最新变更。有关详�
 
 
 [role="lead"]
-了解 Cloud Manager 平台中的云服务的最新变更。有关详细信息，请转到 link:release-notes-index.html["完整的发行说明"] 针对每个服务。
+了解作为BlueXP平台(以前称为Cloud Manager)一部分的云服务的最新变更。有关详细信息，请转到 link:release-notes-index.html["完整的发行说明"] 针对每个服务。
+
+
+
+== BlueXP简介
+
+Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com/us-en/cloud-manager-family/concept-overview.html["了解有关BlueXP的更多信息"^]
 
 
 
 == 管理功能
 
-本节介绍与 Cloud Manager 管理功能相关的新功能：帐户，连接器，云提供商凭据等。
+本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2022年11月1日
+
+现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["了解如何管理 NSS 帐户"^]
 
 
 
@@ -214,6 +226,32 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 == 云备份
+
+
+
+=== 2022年9月28日
+
+
+
+==== Cloud Backup for Applications的增强功能
+
+* 支持Google Cloud Provider (GCP)和StorageGRID 备份应用程序一致的快照
+* 创建自定义策略
+* 支持归档存储
+* 备份SAP HANA应用程序
+* 备份VMware环境中的Oracle和SQL应用程序
+* 从内部二级存储备份应用程序
+* 停用备份
+* 取消注册SnapCenter 服务器
+
+
+
+
+==== 适用于虚拟机的Cloud Backup增强功能
+
+* 支持StorageGRID 备份一个或多个数据存储库
+* 创建自定义策略
+
 
 
 
@@ -440,6 +478,36 @@ Data sense可以识别和分类包含来自印第安纳、纽约和德克萨斯�
 
 
 
+=== 2022年10月30日
+
+
+
+==== 从Microsoft Azure持续同步
+
+现在、支持使用Azure数据代理从源Azure存储分段到云存储的持续同步设置。
+
+初始数据同步后、Cloud Sync 将侦听源Azure存储分段上的更改、并在发生更改时持续同步目标。从Azure存储分段同步到Azure Blob存储、CIFS、Google云存储、IBM云对象存储、NFS和StorageGRID 时、可以使用此设置。
+
+要使用此设置、Azure数据代理需要一个自定义角色和以下权限：
+
+[source, json]
+----
+'Microsoft.Storage/storageAccounts/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
+'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
+'Microsoft.EventGrid/systemTopics/read',
+'Microsoft.EventGrid/systemTopics/write',
+'Microsoft.EventGrid/systemTopics/delete',
+'Microsoft.EventGrid/eventSubscriptions/write',
+'Microsoft.Storage/storageAccounts/write'
+----
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
+
+
+
 === 2022年9月4日
 
 
@@ -476,7 +544,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 
 现在、您可以通过电子邮件接收Cloud Sync 通知。
 
-要通过电子邮件接收通知、您需要在同步关系上启用*通知*设置、然后在Cloud Manager中配置警报和通知设置。
+要通过电子邮件接收通知、您需要在同步关系上启用*通知*设置、然后在BlueXP中配置警报和通知设置。
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["了解如何设置通知"]。
 
@@ -511,7 +579,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 ==== 设置同步关系的新方法
 
-我们添加了其他方法、可以直接从Cloud Manager的Canvas设置同步关系。
+我们添加了更多直接从BlueXP的Canvas设置同步关系的方法。
 
 
 
@@ -519,7 +587,7 @@ https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationshi
 
 现在、您可以通过将一个工作环境拖放到另一个工作环境之上、从Canvas设置同步关系。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["显示Cloud Manager中通知中心的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["显示BlueXP中通知中心的屏幕截图。"]
 
 
 
@@ -527,7 +595,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media
 
 现在、您可以通过从"画布"中选择工作环境、然后从右侧面板中选择同步选项、为Azure Blob存储或Google Cloud存储设置同步关系。
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["显示Cloud Manager中通知中心的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["显示BlueXP中通知中心的屏幕截图。"]
 
 
 
@@ -682,7 +750,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 ==== AutoSupport 通知
 
-现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、Cloud Manager将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
+现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、BlueXP将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
 
 
 
@@ -704,7 +772,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 ==== 代理服务器
 
-现在、Cloud Manager会自动将您的Cloud Volumes ONTAP 系统配置为在出站Internet连接不可用于发送AutoSupport 消息时将Connector用作代理服务器。
+现在、如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。
 
 AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。
 
@@ -754,7 +822,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 ==== 支持适用于 Google Cloud 的 Cloud Volumes Service
 
-现在，您可以直接从 Cloud Manager 管理适用于 Google Cloud 的 Cloud Volumes Service ：
+现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：
 
 * 设置和创建工作环境
 * 为 Linux 和 UNIX 客户端创建和管理 NFSv3 和 NFSv4.1 卷
@@ -794,6 +862,20 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+== Digital Advisor
+
+
+
+=== 2022年11月1日
+
+Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并增强了登录体验。
+
+在BlueXP中访问Digital Advisor时、系统会提示您输入NetApp 支持站点 凭据、以便您可以查看与系统相关的数据。您登录时使用的NSS帐户仅与您的用户登录关联。它不会与您的NetApp帐户中的任何其他用户关联。
+
+有关Digital Advisor与BlueXP集成的详细信息、请访问 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]
+
+
+
 == E系列系统
 
 
@@ -804,11 +886,43 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 ==== 支持E系列
 
-现在、您可以直接从Cloud Manager发现E系列存储系统。通过发现E系列系统、您可以全面了解混合多云中的数据。
+现在、您可以直接从BlueXP发现E系列存储系统。通过发现E系列系统、您可以全面了解混合多云中的数据。
 
 
 
 == 全局文件缓存
+
+
+
+=== 2022年10月24日(2.1版)
+
+此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["此页面"]。
+
+
+
+==== 全局文件缓存现在可用于任意数量的许可证
+
+之前至少需要10个许可证或30 TB的存储空间、但这一要求已被删除。每3 TB存储将颁发一个全局文件缓存许可证。
+
+
+
+==== 添加了对使用脱机许可证管理服务器的支持
+
+如果LMS没有Internet连接、无法使用许可证源验证许可证、则脱机或非公开站点的许可证管理服务器(License Management Server、LMS)最有用。在初始配置期间、需要Internet连接和许可证源连接。配置后、LMS实例可能会变暗。所有边缘/核心都应与LMS建立连接、以便持续验证许可证。
+
+
+
+==== 边缘实例可以支持其他并发用户
+
+一个全局文件缓存边缘实例可以为每个专用物理边缘实例最多500个用户提供服务、而对于专用虚拟部署、最多可为300个用户提供服务。过去、最大用户数分别为400和200。
+
+
+
+==== 经过增强的Optimus PSMs可配置云许可
+
+
+
+==== 增强了Optimus UI (边缘配置)中的Edge Sync功能、可显示所有已连接的客户端
 
 
 
@@ -828,7 +942,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 ==== 现在、全局文件缓存已与Cloud Insights 集成
 
-NetApp Cloud Insights (CI)可全面了解您的基础架构和应用程序。现在、全局文件缓存已与CI集成在一起、可全面查看所有边缘和核心；监控实例上运行的进程。将各种全局文件缓存指标推送到CI、以便在CI信息板上提供完整的概述。
+NetApp Cloud Insights (CI)可全面了解您的基础架构和应用程序。现在、全局文件缓存已与CI集成在一起、可全面查看所有边缘和核心；监控实例上运行的进程。将各种全局文件缓存指标推送到CI、以便在CI信息板上提供完整的概述。请参见中的第11章 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]
 
 https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信息。"]
 
@@ -850,25 +964,13 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 
 
-=== 2022年5月19日(版本1.3.0)
-
-可从获取1.3.0版的全局文件缓存边缘软件 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["此页面"]。
-
-
-
-==== 新的元数据边缘同步功能
-
-此"元数据边缘同步"功能使用边缘同步功能作为其核心框架。仅更新所有已订阅边缘上的元数据信息、并在边缘计算机上创建文件/文件夹。
-
-
-
-==== License Manager Service增强功能
-
-全局文件缓存许可证管理服务器(LMS)服务已进行增强、可自动检测代理设置。这样可以实现无缝配置。
-
-
-
 == Kubernetes
+
+
+
+=== 2022年10月30日
+
+时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
 
 
 
@@ -899,65 +1001,9 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 
-=== 2022年7月3日
-
-* 如果使用Trident操作员部署了Astra Trident、则现在可以使用Cloud Manager升级到最新版本的Astra Trident。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["安装和管理Astra Trident"]
-
-* 现在、您可以将Kubernetes集群拖放到AWS FSX for ONTAP 工作环境中、以便直接从Canvas添加存储类。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["添加存储类"]
-
-
-
-
-
 == 监控
 
-
-
-=== 2021 年 8 月 1 日
-
-
-
-==== 更改为采集单元名称
-
-我们将采集单元实例的默认名称更改为 CloudInsights AU-_UUID_ ，以便此名称更具描述性（ UUID 是生成的哈希）。
-
-当您在 Cloud Volumes ONTAP 工作环境中启用监控服务时， Cloud Manager 会部署此实例。
-
-
-
-=== 2021 年 5 月 5 日
-
-
-
-==== 支持现有租户
-
-现在，您可以在 Cloud Volumes ONTAP 工作环境中启用监控服务，即使您已有 Cloud Insights 租户也是如此。
-
-
-
-==== 免费试用过渡
-
-启用监控服务后， Cloud Manager 将免费试用 Cloud Insights 。在第 29 天，您的计划将自动从试用版过渡到 https://docs.netapp.com/us-en/cloudinsights/concept_subscribing_to_cloud_insights.html#editions["基本版本"^]。
-
-
-
-=== 2021 年 2 月 9 日
-
-
-
-==== 支持 Azure
-
-现在，适用于 Azure 的 Cloud Volumes ONTAP 支持监控服务。
-
-
-
-==== 在政府区域提供支持
-
-AWS 和 Azure 的政府区域也支持监控服务。
+监控服务已于2022年11月1日停用。现在、您可以从导航菜单中选择*洞察力>可观察性*来找到指向Cloud Insights 的直接链接。
 
 
 
@@ -1115,17 +1161,7 @@ https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.ht
 
 == SnapCenter 服务
 
-
-
-=== 2021 年 12 月 21 日
-
-
-
-==== Apache Log4j 漏洞的修复
-
-SnapCenter 服务 1.0.1 将 Apache Log4j 从 2.9.1 版升级到 2.17 版，以解决以下漏洞： CVE-2021-44228 ， CVE-2021-4104 和 CVE-2021-45105 。
-
-SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 服务 UI 中的版本显示集群为 1.0.1.1251 或更高版本。
+SnapCenter 服务已于2022年11月1日停用。
 
 
 
@@ -1139,4 +1175,4 @@ SnapCenter 服务集群应自动更新到最新版本。您应确保 SnapCenter 
 
 ==== 支持StorageGRID
 
-现在、您可以直接从Cloud Manager发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。
+现在、您可以直接从BlueXP发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。

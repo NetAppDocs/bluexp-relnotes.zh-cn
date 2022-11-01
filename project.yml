@@ -11,17 +11,17 @@ settings:
   langs: zh-cn,us-en,ja-jp,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: Cloud Manager 发行说明
+  - title: BlueXP发行说明
     url: "/index.html"
   - title: 最近更改
     url: "/whats-new.html"
-  - title: 发行说明索引
+  - title: BlueXP索引
     url: "/release-notes-index.html"
 homepage:
   tiles:
   - title: 新增功能
     links:
-    - title: Cloud Manager 中的最新更改
+    - title: BlueXP中的最新变更
       url: whats-new.html
   - title: 发行说明（按服务）
     links:
@@ -31,11 +31,11 @@ homepage:
     links:
     - title: NetApp 社区
       url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Cloud Central 博客
+    - title: BlueXP网站博客
       url: https://cloud.netapp.com/blog
     - title: 云网络研讨会
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 所有 Cloud Manager 文档
+  sidebar_label: 所有BlueXP文档
