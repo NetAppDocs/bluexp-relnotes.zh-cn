@@ -274,7 +274,6 @@
   <block id="387856638678798c3ffb0e38b39170c6" category="paragraph">以前、Cloud Backup仅支持预定义的SnapMirror标签、例如每小时、每天、每周、每小时和每年。现在、Cloud Backup可以发现包含您使用System Manager或CLI创建的自定义SnapMirror标签的SnapMirror策略。这些新标签会显示在Cloud Backup UI中、您可以使用所选的SnapMirror标签将卷备份到云中。</block>
   <block id="1c630f0a83d0317db1fef94fb4dac579" category="paragraph">如果<block ref="a3c3477c66a633d03b9d52df95b2c874" category="inline-link-rx"></block> 或<block ref="d8758b85898e795623db75e4c1372f83" category="inline-link-rx"></block> 备份目标作为工作环境存在于Canvas上、您可以将本地ONTAP 或Cloud Volumes ONTAP 工作环境(安装在Azure或GCP中)拖动到目标上以启动备份设置向导。</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">现在、您可以添加Data sense在数据中标识的自定义模式</block>
-  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自定义正则表达式(regex)添加个人模式来标识数据中的特定信息。该正则表达式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS 中 Kubernetes 集群的要求</block>
   <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Azure 中 Kubernetes 集群的要求</block>
@@ -459,7 +458,6 @@
   <block id="bddf21f18c4ffad2268ebfc0d565c03c" category="section-title">Cloud Backup现在可用于归档源系统上不再需要的卷</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">了解如何操作</block>
   <block id="429c129d466e9cdbc94da5ebfd639734" category="paragraph">现在、您可以删除卷的备份关系。如果您希望停止创建新备份文件并删除源卷、但保留所有现有备份文件、则可以使用此功能提供归档机制。这样、您就可以在将来根据需要从备份文件还原卷、同时从源存储系统中清除空间。<block ref="96e512d167a0d6d287f83a8e9bfbf6a3" category="inline-link-rx"></block>。</block>
-  <block id="a2718b7c4580fe65399ac1bb8757a3eb" category="section-title">添加了支持功能、可以通过电子邮件或通知中心接收Cloud Backup警报</block>
   <block id="ac067f034fd3624f1244abb6d3755efe" category="paragraph">Cloud Backup已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示Cloud Backup通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。可以将此电子邮件发送给需要了解备份和还原活动的任何收件人。<block ref="74389894cb83c627291d11e2dde62faa" category="inline-link-rx"></block>。</block>
   <block id="d07fed7e54302c401452d86813f74fdb" category="section-title">通过新的高级设置页面、您可以更改集群级别的备份设置</block>
   <block id="711d5dadc0f2641aef64c8697fec3458" category="paragraph">通过此新页面、您可以更改在为每个ONTAP 系统激活Cloud Backup时设置的多个集群级别备份设置。您还可以修改应用为"默认"备份设置的某些设置。您可以更改的一整套备份设置包括：</block>
@@ -472,9 +470,6 @@
   <block id="33e5226a6b178bab9e22b761cbda6440" category="list-text">连接到对象存储的ONTAP IP空间(如果激活期间选择不正确)</block>
   <block id="7b95d23b6b30b69ed07a2e15017d99e3" category="inline-link">了解有关管理集群级别备份设置的更多信息</block>
   <block id="057c181e6c21fad200a862461add5a03" category="paragraph"><block ref="344cf4f459ea1c1e24d6bef144dcb178" category="inline-link-rx"></block>。</block>
-  <block id="ce00affaec3d960c7f7c7e5d24960872" category="section-title">现在、在使用内部部署连接器时、您可以使用搜索和还原从公有 云还原备份文件</block>
-  <block id="1906d6d9c8dc27b6ff13fd620f717374" category="paragraph">在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。</block>
-  <block id="08eac10f0e32578e8c9f3ee4629f84d3" category="paragraph">目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。StorageGRID 系统不支持搜索和还原-在这种情况下、您必须使用浏览和还原。</block>
   <block id="f4f4c174196d45dbc07ae62740f92b92" category="section-title">已更新作业监控页面</block>
   <block id="213f79d27d3a76a68080f2d948105d7e" category="inline-link">作业监控页面</block>
   <block id="92e275cf9354b2e79f6ecadafa52a965" category="paragraph">已对进行了以下更新<block ref="2aba02720d116e26596d478ca3ace389" category="inline-link-rx"></block>：</block>
@@ -486,14 +481,11 @@
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。</block>
   <block id="ef63a877f0594c057f824f4327169a39" category="list-text">支持Google Cloud Platform (GCP)和StorageGRID 备份应用程序一致的快照</block>
   <block id="3f3ac5f6857788bfe6b27f406afcffa5" category="paragraph">Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。在BlueXP中启用的适用于应用程序的云备份可为驻留在Amazon FSX for NetApp ONTAP 上的Oracle数据库提供高效、一致且基于策略的备份和还原。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
-  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日(1.17版)</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支持扫描SharePoint内部部署帐户</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部署帐户(SharePoint Server)。如果您需要在自己的服务器上或无法访问Internet的站点上安装SharePoint、现在可以让Data sense扫描这些帐户中的用户文件。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能够重新扫描多个目录(文件夹或共享)</block>
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">现在、您可以立即重新扫描多个目录(文件夹或共享)、以便在系统中反映所做的更改。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">可以添加其他内部"扫描程序"节点来扫描特定数据源</block>
-  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">如果您在内部位置安装了Data sense、并且发现扫描数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。例如、如果您意识到一个数据源中的数据量在1年后增加了三倍、则可以添加一个新的扫描程序节点来协助进行数据扫描。</block>
-  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。</block>
@@ -504,7 +496,6 @@
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
-  <block id="ee0a02cf5f32853f4619caef4f31ab4e" category="paragraph"><block ref="ee0a02cf5f32853f4619caef4f31ab4e" category="inline-link-rx"></block></block>
   <block id="9fcd0a1eb1b488b623812d42567ce2d8" category="paragraph"><block ref="9fcd0a1eb1b488b623812d42567ce2d8" category="inline-link-rx"></block></block>
   <block id="2325f561a20765def93d682f14cae306" category="paragraph">连接器3.9.23版引入了以下更改。</block>
   <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">在Azure中移动资源组</block>
@@ -519,4 +510,19 @@
   <block id="a09181ba1488df77bf9950cb483e97e8" category="paragraph">添加了一个新的Azure权限、现在允许您在创建时对所有受管磁盘进行加密。</block>
   <block id="e76c0365dfa8d6b43992d790f582e6c4" category="inline-link">设置 Cloud Volumes ONTAP 以在 Azure 中使用客户管理的密钥</block>
   <block id="7343d251ecc72fc362a0ce85cf11a9fe" category="paragraph">有关此新功能的详细信息、请参见<block ref="91da0725d8642ccf887bde4d4604033e" category="inline-link-rx"></block>。</block>
+  <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
+  <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">添加了通过电子邮件和通知中心接收Cloud Backup警报的支持</block>
+  <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">现在、您可以在使用内部部署连接器时使用搜索和还原来还原备份文件</block>
+  <block id="2bcad5b21af9172c1d623bc274dbe4c1" category="paragraph">在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持将备份从StorageGRID 系统还原到内部ONTAP 系统。</block>
+  <block id="18cddedef625cde24d34d1b2bb64fb96" category="paragraph">目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。</block>
+  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日(1.17版)</block>
+  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您在内部位置安装了Data sense、并且发现扫描某些数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点并将其分配给扫描这些数据源。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。</block>
+  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">请参见如何安装扫描程序节点以扫描其他数据源</block>
+  <block id="232acd7f039f2650674c20301305634d" category="paragraph">如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
+  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">现在、内部安装程序会在开始安装之前执行预检查</block>
+  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系统上安装Data sense时、安装程序会在开始实际安装之前检查系统是否满足所有必要的要求(CPU、RAM、容量、网络等)。这有助于在*之前*花费时间进行安装时发现问题。</block>
+  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以通过两种方式添加自定义"个人数据"、Data sense将在未来扫描中识别这些数据。这样、您就可以全面了解潜在敏感数据在所有组织文件中的位置。</block>
+  <block id="db40121770270b95c73895598e6343b2" category="list-text">您可以从文本文件添加自定义关键字。</block>
+  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用正则表达式(regex)添加个人模式。</block>
+  <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">这些关键字和模式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
 </blocks>
