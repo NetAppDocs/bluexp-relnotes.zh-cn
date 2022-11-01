@@ -114,10 +114,7 @@
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">了解如何设置数据复制</block>
   <block id="1e56755e05ec049b30c49b9d53744ca1" category="paragraph"><block ref="0337e364432fca0f343e5f2660661b77" category="inline-link-rx"></block>。</block>
   <block id="a2824b49f1c7526bf0e925b86c7b293c" category="inline-link">请参见如何使用搜索和放大器还原卷和文件</block>
-  <block id="d3e8cd2e370974f27de1b310b4aa8cb3" category="section-title">2022年5月3日</block>
-  <block id="a74300b6b08791dda4f54d473a58e17a" category="section-title">为其他集群配置提供Cloud Tiering许可证支持</block>
   <block id="afacb33ad65bcd63eb15aeba04b4aed0" category="inline-link">请参见如何许可和配置这些类型的集群。</block>
-  <block id="4675a948ea93098e22976c0848737e1a" category="paragraph">现在、可以与分层镜像配置(不包括MetroCluster 配置)中的集群以及分层到IBM云对象存储的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。<block ref="4e8c6c7f1b8cf8bbca1bc62528b46ae2" category="inline-link-rx"></block></block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">查看可用于调查数据的所有筛选器的列表</block>
   <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">全新Google Cloud区域支持</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">此页面</block>
@@ -129,13 +126,6 @@
   <block id="5549a52d6578bcb66138c7319ef4ea11" category="paragraph">如果您需要对ONTAP 内部集群执行高级管理、可以使用ONTAP 系统管理器执行此操作、该管理接口随ONTAP 系统提供。我们直接在Cloud Manager中提供了System Manager界面、因此您无需离开Cloud Manager进行高级管理。</block>
   <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">对于运行9.10.0或更高版本的内部ONTAP 集群、此高级视图为预览视图。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。</block>
   <block id="f303a87fe6efba259b752f5a9e11064b" category="inline-link-macro">了解有关高级视图的更多信息</block>
-  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
-  <block id="ee4612ccbf2c1a0b8e01a1dc2992487f" category="section-title">现在、系统将跟踪ONTAP Storage VM的NAS文件系统审核状态</block>
-  <block id="9e0f0ecbfec67c585b4269b113f30ee3" category="paragraph">如果工作环境中启用了文件系统审核的Storage VM少于40%、则会向_Cyber Resilience Map_添加警报。您可以在_harden your ONTAP environment_面板中查看未跟踪SMB和NFS事件并将其记录到审核日志中的确切SVM数。然后、您可以决定是否对这些SVM启用审核。</block>
-  <block id="9f8d82fd59d602cd8a59ae988c97d5e6" category="section-title">现在、如果您的卷未启用机载反勒索软件、则会显示警报</block>
-  <block id="5e75c953b6169be120d3ab03b8f54b15" category="paragraph">先前在_harden your ONTAP Environments_panel中为内部ONTAP 系统报告了此信息、 但现在、当在40%以下的卷中启用了机载反勒索软件功能时、_Cyber Resilience Map_中会报告一条警报、因此您可以在信息板中查看此信息。</block>
-  <block id="cc1796d3f81dc9429436a972e383c713" category="section-title">现在、可跟踪适用于ONTAP 系统的FSX以启用卷快照</block>
-  <block id="e59924af0c76a1072bb2a4cb349960b8" category="paragraph">现在、增强ONTAP 环境_面板可提供适用于ONTAP 系统的FSx上卷的Snapshot副本状态。如果不到40%的卷受快照保护、您还会在_Cyber Resilience Map_中收到警报。</block>
   <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日(版本1.3.1)</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">已修复的问题</block>
   <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">可从获取适用于1.3.1版的Global File Cache Edge软件<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修复中所述的问题<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
@@ -163,29 +153,6 @@
   <block id="1d83e69fc7f9ed326713517b984b155b" category="list-text">Cloud Manager现在支持AWS GovCloud帐户身份验证。</block>
   <block id="d8a56d983b91f097e5ba55dd03a18509" category="inline-link-macro">设置 IAM 角色</block>
   <block id="9c2f60af941e19d70429b4a59debeeb9" category="paragraph"><block ref="9c2f60af941e19d70429b4a59debeeb9" category="inline-link-macro-rx"></block></block>
-  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日(1.14版)</block>
-  <block id="45b5235b8c737e18e646514c30664517" category="section-title">现在、您可以查看有权访问目录的用户和组</block>
-  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">了解如何查看有权访问文件夹和文件共享的用户和组</block>
-  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">过去、您可以查看为单个文件授予的打开权限类型。现在、您可以查看有权访问目录(文件夹和文件共享)的所有用户或组的列表及其权限类型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
-  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以"暂停"扫描存储库、以暂时停止扫描某些内容</block>
-  <block id="1c32547b30cc36869742df049964326d" category="inline-link">请参见如何暂停和恢复扫描</block>
-  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暂停扫描意味着Data sense不会对卷或存储分段的任何添加或更改执行未来扫描、但系统中仍会显示所有当前结果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
-  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">Data sense可识别来自另外三种状态的美国驾驶证数据</block>
-  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data sense可以识别和分类包含来自印第安纳、纽约和德克萨斯州的驾驶执照数据的文件。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">现在、策略将返回与搜索条件匹配的目录</block>
-  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">了解有关创建策略的更多信息</block>
-  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">过去、在创建自定义策略时、结果会显示与搜索条件匹配的文件。现在、结果还会显示与查询匹配的目录(文件夹和文件共享)。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
-  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">目前、数据感知一次最多可移动100、000个文件</block>
-  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">请参见如何使用Data sense移动文件</block>
-  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您计划使用Data sense将文件从扫描的数据源移动到NFS共享、则最大文件数已增加到100、000个。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
-  <block id="02e3f175b6b6db384cc8a9f19dfd8b6a" category="section-title">2022年7月13日</block>
-  <block id="f2c95e400c19071fbcd562467ddc48b3" category="section-title">添加了对备份SnapLock 企业卷的支持</block>
-  <block id="e5fff8c021afd86e8d7cd1a5b82dec8e" category="paragraph">现在、您可以使用云备份将SnapLock 企业卷备份到公有 和私有云。此功能要求您的ONTAP 系统运行的是ONTAP 9.11.1或更高版本。但是、目前不支持SnapLock 合规性卷。</block>
-  <block id="975ab611b7133feabb2a325e663f8347" category="section-title">现在、您可以在使用内部部署连接器时在公有 云中创建备份文件</block>
-  <block id="8d2224260491150c834f946712c069a0" category="paragraph">过去、您需要将Connector部署在与创建备份文件相同的云提供商中。现在、您可以使用内部部署的Connector创建备份文件、将本地ONTAP 系统备份到Amazon S3、Azure Blob和Google云存储。(在StorageGRID 系统上创建备份文件时、始终需要使用内部连接器。)</block>
-  <block id="f42fcdabb7c9a7075b26292ed8cb7a23" category="section-title">在为ONTAP 系统创建备份策略时、还可以使用其他功能</block>
-  <block id="cd359ec6a578adbdedd6582f88b84401" category="list-text">现在可以按年计划进行备份。对于年度备份、默认保留值为1、但如果要访问前几年的许多备份文件、您可以更改此值。</block>
-  <block id="42a0fcc08cab0bf2248dfca3aecd8ec9" category="list-text">您可以为备份策略命名、以便使用更具描述性的文本来标识策略。</block>
   <block id="a334cff76a53c8f9b93a01e24c56c9e5" category="section-title">2022年7月15日</block>
   <block id="fd07056b3157389b873051e9d2dd6d40" category="section-title">策略更改</block>
   <block id="4c2e66937d2d8ba8680502b29c20f843" category="paragraph">我们通过直接在文档中添加Cloud Manager策略来更新文档。这意味着您现在可以查看Connector和Cloud Volumes ONTAP 所需的权限以及说明如何设置这些权限的步骤。以前可以从NetApp支持站点上的页面访问这些策略。</block>
@@ -308,7 +275,6 @@
   <block id="b6f2e1a880ce20ab3d1039056746fa33" category="paragraph">Amazon S3存储分段已具有此功能。</block>
   <block id="15471566ffb385e256937957990dd60d" category="section-title">2022年8月18日</block>
   <block id="d583f1393e45db7abf2dbb15da48eaad" category="section-title">添加了保护Cloud原生 应用程序数据的支持</block>
-  <block id="82aa9a316dbbb378e25972999e35a45b" category="paragraph">Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。Cloud Manager中启用的适用于应用程序的Cloud Backup可为驻留在Amazon FSx for NetApp ONTAP 上的Oracle数据库提供高效、应用程序一致且基于策略的备份和还原。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
   <block id="e7f0bd203723dde56c408349b772431e" category="paragraph">Cloud Backup现在支持对象锁定、用于进行勒索软件安全备份。如果您的集群使用的是ONTAP 9.11.1或更高版本、而您的备份目标是Amazon S3、则现在可以使用一个名为_DataLock和勒索软件保护_的新备份策略选项。DataLock可防止您的备份文件被修改或删除、勒索软件保护功能会扫描您的备份文件、以查找您的备份文件遭到勒索软件攻击的证据。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
   <block id="4a13f748ffea2bf384ee164062e7e17f" category="paragraph">请注意、要使用此功能、需要在Connector角色中添加其他权限。使用3.9.21版软件部署的Connector包含这些权限。如果您使用早期版本部署了Connector、则需要手动添加权限。<block ref="b51546833a3c96ab5b8c4e49b196cd94" category="inline-link-rx"></block>。</block>
   <block id="9fa4d73f6f3d752a69adeebba1959edb" category="section-title">Cloud Backup现在支持使用自定义SnapMirror标签创建的策略</block>
@@ -443,7 +409,6 @@
   <block id="929fa09ef9d24654b353f312638ca6e6" category="paragraph">现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。<block ref="abba285888ca54da9f89054b7e57f270" category="inline-link-rx"></block></block>
   <block id="2d96aa84884717fd77e4906d82c73ddc" category="section-title">2022年9月28日</block>
   <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Cloud Backup for Applications的增强功能</block>
-  <block id="2e73884f73c53eee3aea96494fd4ff16" category="list-text">支持Google Cloud Provider (GCP)和StorageGRID 备份应用程序一致的快照</block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="list-text">创建自定义策略</block>
   <block id="eaec67d5f8f719a2f05b5ded5dc4ce60" category="list-text">支持归档存储</block>
   <block id="37976e53c610f9f37f8310aaacc3323e" category="list-text">备份SAP HANA应用程序</block>
@@ -485,7 +450,6 @@
   <block id="19df80e08f82de8a5a9df23c1e7c6b96" category="paragraph">此版本提供了以下列出的新功能。此外、它还修复了中所述的问题<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
   <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">《 NetApp 全局文件缓存用户指南》</block>
   <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights (CI)可全面了解您的基础架构和应用程序。现在、全局文件缓存已与CI集成在一起、可全面查看所有边缘和核心；监控实例上运行的进程。将各种全局文件缓存指标推送到CI、以便在CI信息板上提供完整的概述。请参见中的第11章<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
-  <block id="6fc9f5ba6febd413f8f3db3fdd777f58" category="section-title">2022年10月30日</block>
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">时间 <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>、现在、您可以为块或文件系统存储启用存储类经济性。</block>
   <block id="7e69e168ccaec126378a9fc9829b1a86" category="paragraph">监控服务已于2022年11月1日停用。现在、您可以从导航菜单中选择*洞察力&gt;可观察性*来找到指向Cloud Insights 的直接链接。</block>
   <block id="7c82794438729fe23f8c0939342ab8fb" category="section-title">SnapCenter 服务</block>
@@ -494,4 +458,54 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXP索引</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">BlueXP网站博客</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
+  <block id="733947b9c31fd162b40f0854f88a98f0" category="section-title">2022年11月2日</block>
+  <block id="4e1bedfa5acb9fc8467640ea1dcaece3" category="section-title">能够将旧Snapshot副本导出到基线备份文件</block>
+  <block id="ae268c326c8c4dacd9c1078313ddd2ba" category="paragraph">如果工作环境中的卷具有与备份计划标签匹配的任何本地Snapshot副本(例如、每日、每周等)、则可以将这些历史快照作为备份文件导出到对象存储。这样、您可以通过将旧的Snapshot副本移动到基线备份副本中来初始化云中的备份。</block>
+  <block id="649d79e860fd8eae7a579da7093b467e" category="inline-link">高级设置页面</block>
+  <block id="baf7d965b78ce781f897df564be4d675" category="paragraph">在为您的工作环境激活Cloud Backup时、此选项可用。您也可以稍后在中更改此设置<block ref="88d25b1a851fc3767825406ea8de456d" category="inline-link-rx"></block>。</block>
+  <block id="bddf21f18c4ffad2268ebfc0d565c03c" category="section-title">Cloud Backup现在可用于归档源系统上不再需要的卷</block>
+  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link">了解如何操作</block>
+  <block id="429c129d466e9cdbc94da5ebfd639734" category="paragraph">现在、您可以删除卷的备份关系。如果您希望停止创建新备份文件并删除源卷、但保留所有现有备份文件、则可以使用此功能提供归档机制。这样、您就可以在将来根据需要从备份文件还原卷、同时从源存储系统中清除空间。<block ref="96e512d167a0d6d287f83a8e9bfbf6a3" category="inline-link-rx"></block>。</block>
+  <block id="a2718b7c4580fe65399ac1bb8757a3eb" category="section-title">添加了支持功能、可以通过电子邮件或通知中心接收Cloud Backup警报</block>
+  <block id="ac067f034fd3624f1244abb6d3755efe" category="paragraph">Cloud Backup已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示Cloud Backup通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。可以将此电子邮件发送给需要了解备份和还原活动的任何收件人。<block ref="74389894cb83c627291d11e2dde62faa" category="inline-link-rx"></block>。</block>
+  <block id="d07fed7e54302c401452d86813f74fdb" category="section-title">通过新的高级设置页面、您可以更改集群级别的备份设置</block>
+  <block id="711d5dadc0f2641aef64c8697fec3458" category="paragraph">通过此新页面、您可以更改在为每个ONTAP 系统激活Cloud Backup时设置的多个集群级别备份设置。您还可以修改应用为"默认"备份设置的某些设置。您可以更改的一整套备份设置包括：</block>
+  <block id="54ce718c77c15316f9e58b5cae74c251" category="list-text">为ONTAP 系统授予访问对象存储权限的存储密钥</block>
+  <block id="78d9e3520f8237fb4916ac392c73a1cd" category="list-text">分配用于将备份上传到对象存储的网络带宽</block>
+  <block id="dee0e1f435efb0ec8a8d1ccf48b11274" category="list-text">未来卷的自动备份设置(和策略)</block>
+  <block id="b4cd50ce088e504eda51f33f2ab7eb47" category="list-text">归档存储类(仅限AWS)</block>
+  <block id="45ae6f10458e4cca2d17200124fa1c20" category="list-text">初始基线备份文件中是否包含历史Snapshot副本</block>
+  <block id="81db226b4b2fef2e7c216cbb14e7d89c" category="list-text">是否从源系统中删除"每年"快照</block>
+  <block id="33e5226a6b178bab9e22b761cbda6440" category="list-text">连接到对象存储的ONTAP IP空间(如果激活期间选择不正确)</block>
+  <block id="7b95d23b6b30b69ed07a2e15017d99e3" category="inline-link">了解有关管理集群级别备份设置的更多信息</block>
+  <block id="057c181e6c21fad200a862461add5a03" category="paragraph"><block ref="344cf4f459ea1c1e24d6bef144dcb178" category="inline-link-rx"></block>。</block>
+  <block id="ce00affaec3d960c7f7c7e5d24960872" category="section-title">现在、在使用内部部署连接器时、您可以使用搜索和还原从公有 云还原备份文件</block>
+  <block id="1906d6d9c8dc27b6ff13fd620f717374" category="paragraph">在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。</block>
+  <block id="08eac10f0e32578e8c9f3ee4629f84d3" category="paragraph">目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。StorageGRID 系统不支持搜索和还原-在这种情况下、您必须使用浏览和还原。</block>
+  <block id="f4f4c174196d45dbc07ae62740f92b92" category="section-title">已更新作业监控页面</block>
+  <block id="213f79d27d3a76a68080f2d948105d7e" category="inline-link">作业监控页面</block>
+  <block id="92e275cf9354b2e79f6ecadafa52a965" category="paragraph">已对进行了以下更新<block ref="2aba02720d116e26596d478ca3ace389" category="inline-link-rx"></block>：</block>
+  <block id="5b839de8a8e7b5f30407c5dc2cfdabd2" category="list-text">您可以使用"workload"列筛选页面以查看以下备份服务的作业：卷、应用程序、虚拟机和Kubernetes。</block>
+  <block id="a2ed310c63a1aba1225315fe5f7f60ee" category="list-text">如果要查看特定备份作业的这些详细信息、可以为"用户名"和"作业类型"添加新列。</block>
+  <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">"作业详细信息"页面将显示为完成主作业而正在运行的所有子作业。</block>
+  <block id="dbe9251780901a4775188539e940cce0" category="list-text">此页面每15分钟自动刷新一次、以便您始终可以看到最新的作业状态结果。您可以单击*刷新*按钮立即更新此页面。</block>
+  <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWS跨帐户备份增强功能</block>
+  <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。</block>
+  <block id="ef63a877f0594c057f824f4327169a39" category="list-text">支持Google Cloud Platform (GCP)和StorageGRID 备份应用程序一致的快照</block>
+  <block id="3f3ac5f6857788bfe6b27f406afcffa5" category="paragraph">Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。在BlueXP中启用的适用于应用程序的云备份可为驻留在Amazon FSX for NetApp ONTAP 上的Oracle数据库提供高效、一致且基于策略的备份和还原。<block ref="5774010e75c0af5301ef0cfe74198590" category="inline-link-rx"></block>。</block>
+  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日(1.17版)</block>
+  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支持扫描SharePoint内部部署帐户</block>
+  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部署帐户(SharePoint Server)。如果您需要在自己的服务器上或无法访问Internet的站点上安装SharePoint、现在可以让Data sense扫描这些帐户中的用户文件。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
+  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能够重新扫描多个目录(文件夹或共享)</block>
+  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">现在、您可以立即重新扫描多个目录(文件夹或共享)、以便在系统中反映所做的更改。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">可以添加其他内部"扫描程序"节点来扫描特定数据源</block>
+  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">如果您在内部位置安装了Data sense、并且发现扫描数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。例如、如果您意识到一个数据源中的数据量在1年后增加了三倍、则可以添加一个新的扫描程序节点来协助进行数据扫描。</block>
+  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。</block>
+  <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
+  <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层</block>
+  <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。</block>
+  <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
+  <block id="ff3a8dd75b4d3881ab0fc4ce17301af8" category="section-title">2022年11月7日</block>
+  <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">新面板可显示您的整体勒索软件保护得分和建议的操作</block>
+  <block id="2dad48bc5cb886ca6327e125bc6c853d" category="paragraph">这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。勒索软件保护得分面板显示了整体得分以及存在潜在问题的网络安全领域。"建议的操作"面板列出了您可以采取哪些潜在操作来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题描述 、以便您可以在必要时应用这些操作。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
 </blocks>

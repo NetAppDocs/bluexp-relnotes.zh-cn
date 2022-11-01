@@ -229,13 +229,80 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年11月2日
+
+
+
+==== 能够将旧Snapshot副本导出到基线备份文件
+
+如果工作环境中的卷具有与备份计划标签匹配的任何本地Snapshot副本(例如、每日、每周等)、则可以将这些历史快照作为备份文件导出到对象存储。这样、您可以通过将旧的Snapshot副本移动到基线备份副本中来初始化云中的备份。
+
+在为您的工作环境激活Cloud Backup时、此选项可用。您也可以稍后在中更改此设置 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["高级设置页面"]。
+
+
+
+==== Cloud Backup现在可用于归档源系统上不再需要的卷
+
+现在、您可以删除卷的备份关系。如果您希望停止创建新备份文件并删除源卷、但保留所有现有备份文件、则可以使用此功能提供归档机制。这样、您就可以在将来根据需要从备份文件还原卷、同时从源存储系统中清除空间。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["了解如何操作"]。
+
+
+
+==== 添加了支持功能、可以通过电子邮件或通知中心接收Cloud Backup警报
+
+Cloud Backup已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示Cloud Backup通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。可以将此电子邮件发送给需要了解备份和还原活动的任何收件人。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["了解如何操作"]。
+
+
+
+==== 通过新的高级设置页面、您可以更改集群级别的备份设置
+
+通过此新页面、您可以更改在为每个ONTAP 系统激活Cloud Backup时设置的多个集群级别备份设置。您还可以修改应用为"默认"备份设置的某些设置。您可以更改的一整套备份设置包括：
+
+* 为ONTAP 系统授予访问对象存储权限的存储密钥
+* 分配用于将备份上传到对象存储的网络带宽
+* 未来卷的自动备份设置(和策略)
+* 归档存储类(仅限AWS)
+* 初始基线备份文件中是否包含历史Snapshot副本
+* 是否从源系统中删除"每年"快照
+* 连接到对象存储的ONTAP IP空间(如果激活期间选择不正确)
+
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["了解有关管理集群级别备份设置的更多信息"]。
+
+
+
+==== 现在、在使用内部部署连接器时、您可以使用搜索和还原从公有 云还原备份文件
+
+在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。
+
+目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。StorageGRID 系统不支持搜索和还原-在这种情况下、您必须使用浏览和还原。
+
+
+
+==== 已更新作业监控页面
+
+已对进行了以下更新 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["作业监控页面"]：
+
+* 您可以使用"workload"列筛选页面以查看以下备份服务的作业：卷、应用程序、虚拟机和Kubernetes。
+* 如果要查看特定备份作业的这些详细信息、可以为"用户名"和"作业类型"添加新列。
+* "作业详细信息"页面将显示为完成主作业而正在运行的所有子作业。
+* 此页面每15分钟自动刷新一次、以便您始终可以看到最新的作业状态结果。您可以单击*刷新*按钮立即更新此页面。
+
+
+
+
+==== AWS跨帐户备份增强功能
+
+如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。
+
+
+
 === 2022年9月28日
 
 
 
 ==== Cloud Backup for Applications的增强功能
 
-* 支持Google Cloud Provider (GCP)和StorageGRID 备份应用程序一致的快照
+* 支持Google Cloud Platform (GCP)和StorageGRID 备份应用程序一致的快照
 * 创建自定义策略
 * 支持归档存储
 * 备份SAP HANA应用程序
@@ -297,7 +364,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 添加了保护Cloud原生 应用程序数据的支持
 
-Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。Cloud Manager中启用的适用于应用程序的Cloud Backup可为驻留在Amazon FSx for NetApp ONTAP 上的Oracle数据库提供高效、应用程序一致且基于策略的备份和还原。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["了解更多信息。"^]。
+Cloud Backup for Applications是一种基于SaaS的服务、可为在NetApp Cloud Storage上运行的应用程序提供数据保护功能。在BlueXP中启用的适用于应用程序的云备份可为驻留在Amazon FSX for NetApp ONTAP 上的Oracle数据库提供高效、一致且基于策略的备份和还原。https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-protect-cloud-app-data-to-cloud.html["了解更多信息。"^]。
 
 
 
@@ -337,31 +404,31 @@ Amazon S3存储分段已具有此功能。
 
 
 
-=== 2022年7月13日
-
-
-
-==== 添加了对备份SnapLock 企业卷的支持
-
-现在、您可以使用云备份将SnapLock 企业卷备份到公有 和私有云。此功能要求您的ONTAP 系统运行的是ONTAP 9.11.1或更高版本。但是、目前不支持SnapLock 合规性卷。
-
-
-
-==== 现在、您可以在使用内部部署连接器时在公有 云中创建备份文件
-
-过去、您需要将Connector部署在与创建备份文件相同的云提供商中。现在、您可以使用内部部署的Connector创建备份文件、将本地ONTAP 系统备份到Amazon S3、Azure Blob和Google云存储。(在StorageGRID 系统上创建备份文件时、始终需要使用内部连接器。)
-
-
-
-==== 在为ONTAP 系统创建备份策略时、还可以使用其他功能
-
-* 现在可以按年计划进行备份。对于年度备份、默认保留值为1、但如果要访问前几年的许多备份文件、您可以更改此值。
-* 您可以为备份策略命名、以便使用更具描述性的文本来标识策略。
-
-
-
-
 == 云数据感知
+
+
+
+=== 2022年11月7日(1.17版)
+
+
+
+==== 支持扫描SharePoint内部部署帐户
+
+Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部署帐户(SharePoint Server)。如果您需要在自己的服务器上或无法访问Internet的站点上安装SharePoint、现在可以让Data sense扫描这些帐户中的用户文件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["了解更多信息。"^]。
+
+
+
+==== 能够重新扫描多个目录(文件夹或共享)
+
+现在、您可以立即重新扫描多个目录(文件夹或共享)、以便在系统中反映所做的更改。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["请参见如何重新扫描目录"^]。
+
+
+
+==== 可以添加其他内部"扫描程序"节点来扫描特定数据源
+
+如果您在内部位置安装了Data sense、并且发现扫描数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。例如、如果您意识到一个数据源中的数据量在1年后增加了三倍、则可以添加一个新的扫描程序节点来协助进行数据扫描。
+
+如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。
 
 
 
@@ -437,40 +504,6 @@ link:reference-private-data-categories.html#types-of-personal-data["查看 Data 
 ==== 现在、您可以添加Data sense在数据中标识的自定义模式
 
 您可以使用自定义正则表达式(regex)添加个人模式来标识数据中的特定信息。该正则表达式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#creating-custom-personal-data-identifiers-using-a-regex["了解更多信息。"^]。
-
-
-
-=== 2022年7月6日(1.14版)
-
-
-
-==== 现在、您可以查看有权访问目录的用户和组
-
-过去、您可以查看为单个文件授予的打开权限类型。现在、您可以查看有权访问目录(文件夹和文件共享)的所有用户或组的列表及其权限类型。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["了解如何查看有权访问文件夹和文件共享的用户和组"]。
-
-
-
-==== 您可以"暂停"扫描存储库、以暂时停止扫描某些内容
-
-暂停扫描意味着Data sense不会对卷或存储分段的任何添加或更改执行未来扫描、但系统中仍会显示所有当前结果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["请参见如何暂停和恢复扫描"]。
-
-
-
-==== Data sense可识别来自另外三种状态的美国驾驶证数据
-
-Data sense可以识别和分类包含来自印第安纳、纽约和德克萨斯州的驾驶执照数据的文件。 link:reference-private-data-categories.html#types-of-personal-data["查看 Data sense 可以在您的数据中识别的所有类型的个人数据"]。
-
-
-
-==== 现在、策略将返回与搜索条件匹配的目录
-
-过去、在创建自定义策略时、结果会显示与搜索条件匹配的文件。现在、结果还会显示与查询匹配的目录(文件夹和文件共享)。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["了解有关创建策略的更多信息"]。
-
-
-
-==== 目前、数据感知一次最多可移动100、000个文件
-
-如果您计划使用Data sense将文件从扫描的数据源移动到NFS共享、则最大文件数已增加到100、000个。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["请参见如何使用Data sense移动文件"]。
 
 
 
@@ -661,6 +694,16 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2022年11月6日
+
+
+
+==== 拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层
+
+如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。
+
+
+
 === 2022年9月19日
 
 
@@ -698,16 +741,6 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 ==== 为MetroCluster 配置提供云分层许可证支持
 
 现在、可以与MetroCluster 配置中的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["请参见如何许可和配置这些类型的集群。"]
-
-
-
-=== 2022年5月3日
-
-
-
-==== 为其他集群配置提供Cloud Tiering许可证支持
-
-现在、可以与分层镜像配置(不包括MetroCluster 配置)中的集群以及分层到IBM云对象存储的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["请参见如何许可和配置这些类型的集群。"]
 
 
 
@@ -968,7 +1001,7 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 
 
-=== 2022年10月30日
+=== 2022年11月6日
 
 时间 link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
 
@@ -1067,6 +1100,16 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+=== 2022年11月7日
+
+
+
+==== 新面板可显示您的整体勒索软件保护得分和建议的操作
+
+这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。勒索软件保护得分面板显示了整体得分以及存在潜在问题的网络安全领域。"建议的操作"面板列出了您可以采取哪些潜在操作来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题描述 、以便您可以在必要时应用这些操作。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
+
+
+
 === 2022年9月6日
 
 
@@ -1090,28 +1133,6 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 ==== 新面板可显示不可变的扫描文件
 
 "关键数据不可移动性"面板显示了工作环境中使用ONTAP SnapLock 技术在WORM存储上受到保护、不会被修改和删除的项数。这样、您就可以查看有多少数据具有不可变的副本、以便更好地了解针对勒索软件的备份和恢复计划。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock["有关详细信息，请访问此处"^]。
-
-
-
-=== 2022年6月12日
-
-
-
-==== 现在、系统将跟踪ONTAP Storage VM的NAS文件系统审核状态
-
-如果工作环境中启用了文件系统审核的Storage VM少于40%、则会向_Cyber Resilience Map_添加警报。您可以在_harden your ONTAP environment_面板中查看未跟踪SMB和NFS事件并将其记录到审核日志中的确切SVM数。然后、您可以决定是否对这些SVM启用审核。
-
-
-
-==== 现在、如果您的卷未启用机载反勒索软件、则会显示警报
-
-先前在_harden your ONTAP Environments_panel中为内部ONTAP 系统报告了此信息、 但现在、当在40%以下的卷中启用了机载反勒索软件功能时、_Cyber Resilience Map_中会报告一条警报、因此您可以在信息板中查看此信息。
-
-
-
-==== 现在、可跟踪适用于ONTAP 系统的FSX以启用卷快照
-
-现在、增强ONTAP 环境_面板可提供适用于ONTAP 系统的FSx上卷的Snapshot副本状态。如果不到40%的卷受快照保护、您还会在_Cyber Resilience Map_中收到警报。
 
 
 
