@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。 
 ---
 = BlueXP中的最新变更
@@ -30,6 +30,24 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2022年12月4日
+
+
+
+==== 连接器3.9.24
+
+* 我们已将BlueXP控制台的URL更新为 https://console.bluexp.netapp.com[]
+* 现在、Google Cloud以色列区域支持Connector。
+* 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["了解Cloud Volumes ONTAP 增强功能"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["了解ONTAP 内部集群增强功能"^]
+
+
+
 
 
 
@@ -276,7 +294,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 
 ==== 现在、您可以在使用内部部署连接器时使用搜索和还原来还原备份文件
 
-在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持将备份从StorageGRID 系统还原到内部ONTAP 系统。
+在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持立即将备份从StorageGRID 系统还原到内部ONTAP 系统。
 
 目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。
 
@@ -764,6 +782,24 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 
 
 
+=== 2022年12月4日
+
+连接器3.9.24版引入了以下更改。
+
+
+
+==== 现在、在创建Cloud Volumes ONTAP 期间、可以使用WORM +云备份
+
+现在、在Cloud Volumes ONTAP 创建过程中、可以同时激活一次写入、多次读取(WORM)和云备份功能。
+
+
+
+==== 现在、Google Cloud支持以色列地区
+
+现在、适用于Cloud Volumes ONTAP 的Google Cloud以及适用于Cloud Volumes ONTAP 9.11.1 P3及更高版本的Connector均支持以色列地区。
+
+
+
 === 2022年11月6日
 
 连接器3.9.23版引入了以下更改。
@@ -830,64 +866,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 ==== AutoSupport 通知
 
 现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、BlueXP将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。
-
-
-
-=== 2022年7月31日
-
-连接器3.9.21版引入了以下更改。
-
-
-
-==== MTEKM许可证
-
-现在、运行9.11.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。
-
-使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["了解如何使用NetApp加密解决方案对卷进行加密"]。
-
-
-
-==== 代理服务器
-
-现在、如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。
-
-AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。
-
-唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。
-
-
-
-==== 更改充电方法
-
-现在、您可以更改使用基于容量的许可的Cloud Volumes ONTAP 系统的收费方法。例如、如果您使用Essentials软件包部署了Cloud Volumes ONTAP 系统、则可以在业务需求发生变化时将其更改为"Professional软件包"。此功能可从Digital Wallet获得。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何更改充电方法"]。
-
-
-
-==== 安全组增强功能
-
-现在、在创建Cloud Volumes ONTAP 工作环境时、您可以通过用户界面选择是希望预定义的安全组仅允许选定网络(建议)内的流量、还是允许所有网络内的流量。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["屏幕截图显示了在选择安全组时工作环境向导中提供的允许流量范围选项。"]
-
-
-
-=== 2022年7月18日
-
-
-
-==== Azure中的新许可包
-
-通过Azure Marketplace订阅付费时、Azure中的Cloud Volumes ONTAP 可使用两个基于容量的新许可包：
-
-* *优化*：单独为已配置的容量和I/O操作付费
-* *边缘缓存*：许可 https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud Volumes Edge Cache"^]
-
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["了解有关这些许可包的更多信息"]。
 
 
 
@@ -1090,6 +1068,30 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 
+=== 2022年12月4日
+
+连接器3.9.24版引入了以下更改。
+
+
+
+==== 发现内部ONTAP 集群的新方式
+
+现在、您无需使用Connector即可直接发现内部ONTAP 集群。此选项仅支持通过System Manager进行集群管理。您无法在此类工作环境中启用任何BlueXP数据服务。
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["详细了解此发现和管理选项"]。
+
+
+
+==== FlexGroup 卷
+
+对于通过连接器发现的内部ONTAP 集群、BlueXP中的标准视图现在会显示通过System Manager或ONTAP 命令行界面创建的FlexGroup 卷。您还可以通过克隆这些卷、编辑其设置、删除这些卷等方式来管理这些卷。
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["在内部ONTAP 集群的卷页面上显示FlexGroup 卷的屏幕截图。"]
+
+BlueXP不支持创建FlexGroup 卷。您需要继续使用System Manager或命令行界面创建FlexGroup 卷。
+
+
+
 === 2022年9月18日
 
 连接器3.9.22版引入了以下更改。
@@ -1130,29 +1132,17 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 
 
-=== 2022 年 2 月 27 日
-
-
-
-==== 数字电子邮件中提供了一个 " 内部部署 ONTAP " 选项卡。
-
-现在，您可以查看内部 ONTAP 集群的清单及其硬件和服务合同到期日期。此外，我们还提供了有关这些集群的其他详细信息。
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html#viewing-cluster-information-and-contract-details["请参见如何查看此重要的内部集群信息"]。您需要为集群创建一个 NetApp 支持站点帐户（ NSS ），并且需要将 NSS 凭据附加到您的 Cloud Manager 帐户。
-
-
-
 == 勒索软件保护
 
 
 
-=== 2022年11月7日
+=== 2022年11月13日
 
 
 
 ==== 新面板可显示您的整体勒索软件保护得分和建议的操作
 
-这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。勒索软件保护得分面板显示了整体得分以及存在潜在问题的网络安全领域。"建议的操作"面板列出了您可以采取哪些潜在操作来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题描述 、以便您可以在必要时应用这些操作。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
+这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
 
 
 

@@ -49,7 +49,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="f7d121e2a54c62002dd74f6b9dac8069" category="inline-link">Cloud Volumes ONTAP 发行说明</block>
   <block id="ca138f4890a80dcb981add74fa328598" category="list-text"><block ref="ca138f4890a80dcb981add74fa328598" category="inline-link-rx"></block></block>
-  <block id="ba26e4556a0f160834687982b0479336" category="section-title">2022 年 2 月 27 日</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">支持卷模板</block>
   <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">通过新的应用程序模板服务，您可以为 Azure NetApp Files 设置卷模板。此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如，容量池，大小，协议，卷应驻留的 vNet 和子网等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。</block>
@@ -105,10 +104,6 @@
   <block id="b70ff2217d4c493d72369bc7013d42a1" category="paragraph"><block ref="0d930208c139fddb05408afa8bb5cf71" category="inline-link-rx"></block>。</block>
   <block id="6ae18045fc1ab0bf7898b13f3ef31c9a" category="inline-image-macro">显示 Cloud Manager 中 " 成本分析 " 页面的屏幕截图。</block>
   <block id="dfe5d33062cb5ad4c4036bb7e93ff63e" category="paragraph"><block ref="dfe5d33062cb5ad4c4036bb7e93ff63e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f25694bb9bc00e8fcfcc1a3c65dd482b" category="section-title">数字电子邮件中提供了一个 " 内部部署 ONTAP " 选项卡。</block>
-  <block id="d3f07c4c7baf0c60bc64c1cdc48732af" category="paragraph">现在，您可以查看内部 ONTAP 集群的清单及其硬件和服务合同到期日期。此外，我们还提供了有关这些集群的其他详细信息。</block>
-  <block id="184ca21b83c54a7ba12f9b1077ccb494" category="inline-link">请参见如何查看此重要的内部集群信息</block>
-  <block id="a70e816a0245e4c041fe696bc068fde8" category="paragraph"><block ref="cdf49294fa22fe97f3cd9774fbb3d925" category="inline-link-rx"></block>。您需要为集群创建一个 NetApp 支持站点帐户（ NSS ），并且需要将 NSS 凭据附加到您的 Cloud Manager 帐户。</block>
   <block id="6c88f9e17d9019e00177d64f9db55d2e" category="section-title">支持适用于 ONTAP 的 Amazon FSX</block>
   <block id="59dfc17500b1e0b8d1824eb8b1413080" category="paragraph">现在，您可以将数据从 Cloud Volumes ONTAP 系统或内部 ONTAP 集群复制到适用于 ONTAP 的 Amazon FSX 文件系统。</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">了解如何设置数据复制</block>
@@ -204,31 +199,8 @@
   <block id="bf283dfa54b095b3eda8812752b158f9" category="section-title">右侧面板设置</block>
   <block id="79074218529972fce8a6ccab7f00095d" category="paragraph">现在、您可以通过从"画布"中选择工作环境、然后从右侧面板中选择同步选项、为Azure Blob存储或Google Cloud存储设置同步关系。</block>
   <block id="9fffb7017709a369d0e0ce563839fee2" category="paragraph"><block ref="74635618081bc819b4c328f5ee049800" category="inline-link-rx"></block>。</block>
-  <block id="5d95d03306d738eddc1fcb7b61b6151a" category="paragraph">连接器3.9.21版引入了以下更改。</block>
-  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKM许可证</block>
-  <block id="6412f38167d8bd5882b37955a102350e" category="paragraph">现在、运行9.11.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。</block>
-  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。</block>
-  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">了解如何使用NetApp加密解决方案对卷进行加密</block>
-  <block id="58d699d73838a8f3d0660e52bb5df744" category="paragraph"><block ref="c9a99e5900c97d829a142b9eef78ba06" category="inline-link-rx"></block>。</block>
-  <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">代理服务器</block>
-  <block id="80f5caa6fde5a9410197e8753e6f4625" category="paragraph">AutoSupport 会主动监控系统的运行状况，并向 NetApp 技术支持发送消息。</block>
-  <block id="5fc25795a93f92bfee952eef3220d9e5" category="paragraph">唯一的要求是确保Connector的安全组允许通过端口3128进行_inbound_连接。部署Connector后、您需要打开此端口。</block>
-  <block id="b69737a8aa6d54e160fd215ef53825b5" category="section-title">更改充电方法</block>
-  <block id="2ce6294ffa35428110be8d048560952f" category="paragraph">现在、您可以更改使用基于容量的许可的Cloud Volumes ONTAP 系统的收费方法。例如、如果您使用Essentials软件包部署了Cloud Volumes ONTAP 系统、则可以在业务需求发生变化时将其更改为"Professional软件包"。此功能可从Digital Wallet获得。</block>
   <block id="63b54c0d3b4fb8e35270bfdf7b2bdcbb" category="inline-link">了解如何更改充电方法</block>
   <block id="41bfdfd8eb98d1c3acb217f5420b6818" category="paragraph"><block ref="895cb871a858d35efad6129a7ae888ab" category="inline-link-rx"></block>。</block>
-  <block id="41b5565824d562a55cfa454b5b57da3d" category="section-title">安全组增强功能</block>
-  <block id="68519dd54d9e3922e66ec5b7a67c39e0" category="paragraph">现在、在创建Cloud Volumes ONTAP 工作环境时、您可以通过用户界面选择是希望预定义的安全组仅允许选定网络(建议)内的流量、还是允许所有网络内的流量。</block>
-  <block id="2261cc540df38326c53234c3d2d87794" category="inline-image-macro">屏幕截图显示了在选择安全组时工作环境向导中提供的允许流量范围选项。</block>
-  <block id="4c4a915707766fae320a6c1004e2969d" category="paragraph"><block ref="4c4a915707766fae320a6c1004e2969d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb8e43d2f95cb40206b28ff3def0b89c" category="section-title">2022年7月18日</block>
-  <block id="98ec171ea5a9061794734313fc3bfc8a" category="section-title">Azure中的新许可包</block>
-  <block id="84b9d69f0957a24ce7fbed46c5b0ab12" category="paragraph">通过Azure Marketplace订阅付费时、Azure中的Cloud Volumes ONTAP 可使用两个基于容量的新许可包：</block>
-  <block id="99c581fb257fff513bc65272d605290f" category="list-text">*优化*：单独为已配置的容量和I/O操作付费</block>
-  <block id="e4bdb4038975db929f91098fe2d7ec12" category="inline-link">Cloud Volumes Edge Cache</block>
-  <block id="acc34707a7642d8ca31b72c25ca50920" category="list-text">*边缘缓存*：许可<block ref="1bc1fd590dd203d9bb10cdd372d8de71" category="inline-link-rx"></block></block>
-  <block id="2d66a0b2e45838b2ebcec83efd6c765c" category="inline-link">了解有关这些许可包的更多信息</block>
-  <block id="ee76810836e6a3bb9dd07dfba26221a1" category="paragraph"><block ref="ddf7de7bfe14bcbf78a072c21440c1a8" category="inline-link-rx"></block>。</block>
   <block id="a207f0479f1471fc5336b474cf75c28a" category="section-title">2022年7月25日(2.0版)</block>
   <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">通过Azure Marketplace为全局文件缓存提供基于容量的新许可模式</block>
   <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">新的"Edge Cache"许可证具有与"CVO专业版"许可证相同的功能、但也支持全局文件缓存。在Azure中部署新Cloud Volumes ONTAP 系统时、您将看到此选项。您有权为Cloud Volumes ONTAP 系统上配置的每个3 TiB容量部署一个全局文件缓存边缘系统。应至少配置30 TiB。GFC License Manager服务已得到增强、可提供基于容量的许可。</block>
@@ -421,7 +393,6 @@
   <block id="05d87278ff5c6195179e1954eecb9a4f" category="paragraph"><block ref="05d87278ff5c6195179e1954eecb9a4f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="779ddd312a3a36e145a7bb3229e99a4a" category="paragraph"><block ref="779ddd312a3a36e145a7bb3229e99a4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a8757c8fbb4c1997c5641cf6e4a7489" category="paragraph">现在、如果Cloud Volumes ONTAP 系统无法发送AutoSupport 消息、BlueXP将生成通知。此通知包含一个指向说明的链接、可用于对网络问题进行故障排除。</block>
-  <block id="dd8fbb56db547f79b2c75bf3b4e493be" category="paragraph">现在、如果无法通过出站Internet连接发送AutoSupport 消息、则BlueXP会自动将Cloud Volumes ONTAP 系统配置为使用Connector作为代理服务器。</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：</block>
   <block id="f079f17b0940258743d34e7b771c715f" category="section-title">Digital Advisor</block>
   <block id="a979b908e61b4f4e9d00d64a346ac569" category="paragraph">Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并增强了登录体验。</block>
@@ -490,9 +461,7 @@
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="ff3a8dd75b4d3881ab0fc4ce17301af8" category="section-title">2022年11月7日</block>
   <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">新面板可显示您的整体勒索软件保护得分和建议的操作</block>
-  <block id="2dad48bc5cb886ca6327e125bc6c853d" category="paragraph">这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。勒索软件保护得分面板显示了整体得分以及存在潜在问题的网络安全领域。"建议的操作"面板列出了您可以采取哪些潜在操作来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题描述 、以便您可以在必要时应用这些操作。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
@@ -513,7 +482,6 @@
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">添加了通过电子邮件和通知中心接收Cloud Backup警报的支持</block>
   <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">现在、您可以在使用内部部署连接器时使用搜索和还原来还原备份文件</block>
-  <block id="2bcad5b21af9172c1d623bc274dbe4c1" category="paragraph">在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持将备份从StorageGRID 系统还原到内部ONTAP 系统。</block>
   <block id="18cddedef625cde24d34d1b2bb64fb96" category="paragraph">目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。</block>
   <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日(1.17版)</block>
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您在内部位置安装了Data sense、并且发现扫描某些数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点并将其分配给扫描这些数据源。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。</block>
@@ -525,4 +493,30 @@
   <block id="db40121770270b95c73895598e6343b2" category="list-text">您可以从文本文件添加自定义关键字。</block>
   <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用正则表达式(regex)添加个人模式。</block>
   <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">这些关键字和模式将添加到Data sense已使用的现有预定义模式中、其结果将显示在"Personal Patterns"部分下。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
+  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
+  <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">连接器3.9.24</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">我们已将BlueXP控制台的URL更新为<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
+  <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">现在、Google Cloud以色列区域支持Connector。</block>
+  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。</block>
+  <block id="242cf97b6ce4408dde25722d6b0e37f9" category="list-text"><block ref="242cf97b6ce4408dde25722d6b0e37f9" category="inline-link-rx"></block></block>
+  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">了解ONTAP 内部集群增强功能</block>
+  <block id="4703fae8488338a7ad69a5cd4347caf3" category="list-text"><block ref="4703fae8488338a7ad69a5cd4347caf3" category="inline-link-rx"></block></block>
+  <block id="8f6062f059e26f94975a36f6a5efcc4b" category="paragraph">在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持立即将备份从StorageGRID 系统还原到内部ONTAP 系统。</block>
+  <block id="612111851a1740ab34a9d35045621084" category="paragraph">连接器3.9.24版引入了以下更改。</block>
+  <block id="afb589d73d8814d7f9075b4db6f76911" category="section-title">现在、在创建Cloud Volumes ONTAP 期间、可以使用WORM +云备份</block>
+  <block id="4d0c93d7ce5ce6f6010669f660c38d43" category="paragraph">现在、在Cloud Volumes ONTAP 创建过程中、可以同时激活一次写入、多次读取(WORM)和云备份功能。</block>
+  <block id="4d9d8c1f4a4820e4fe54b4e7d8733a68" category="section-title">现在、Google Cloud支持以色列地区</block>
+  <block id="4ff0d60c5d06bf54def05888e62a6d9e" category="paragraph">现在、适用于Cloud Volumes ONTAP 的Google Cloud以及适用于Cloud Volumes ONTAP 9.11.1 P3及更高版本的Connector均支持以色列地区。</block>
+  <block id="bad2ca9843e053dbde9d0f5cf2f18a7b" category="section-title">发现内部ONTAP 集群的新方式</block>
+  <block id="d69d6ceca70ae4e3b7cf6949930f5168" category="paragraph">现在、您无需使用Connector即可直接发现内部ONTAP 集群。此选项仅支持通过System Manager进行集群管理。您无法在此类工作环境中启用任何BlueXP数据服务。</block>
+  <block id="336404297eaddf0051e1d62c3d3bb48e" category="inline-link">详细了解此发现和管理选项</block>
+  <block id="7b755afb39a1416600c762f9fe472d98" category="paragraph"><block ref="72c8a0f1bc00bb52f3d78997feb64e77" category="inline-link-rx"></block>。</block>
+  <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="section-title">FlexGroup 卷</block>
+  <block id="3fb631a563e0a478dc6771d75c7f7094" category="paragraph">对于通过连接器发现的内部ONTAP 集群、BlueXP中的标准视图现在会显示通过System Manager或ONTAP 命令行界面创建的FlexGroup 卷。您还可以通过克隆这些卷、编辑其设置、删除这些卷等方式来管理这些卷。</block>
+  <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">在内部ONTAP 集群的卷页面上显示FlexGroup 卷的屏幕截图。</block>
+  <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP不支持创建FlexGroup 卷。您需要继续使用System Manager或命令行界面创建FlexGroup 卷。</block>
+  <block id="8c40ca85ff5a42317cb1f23a7d716ecc" category="section-title">2022年11月13日</block>
+  <block id="1ec4de7af8ab7de00ed7d13a3182054f" category="paragraph">这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
 </blocks>
