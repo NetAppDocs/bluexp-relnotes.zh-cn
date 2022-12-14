@@ -167,7 +167,6 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">FSX for ONTAP 作为数据源</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">内部 ONTAP 集群</block>
-  <block id="9ca61d0605df8b23ed36445fbf3f2f6a" category="inline-link">详细了解如何使用DataLock和勒索软件保护来保护备份</block>
   <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">AWS 中 Kubernetes 集群的要求</block>
   <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
   <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Azure 中 Kubernetes 集群的要求</block>
@@ -190,33 +189,10 @@
   <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">现在、您可以通过电子邮件接收Cloud Sync 通知。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">了解如何设置通知</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
-  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日(1.16版)</block>
-  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能够立即重新扫描存储库以反映文件中的更改</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">请参见如何重新扫描目录</block>
-  <block id="45b58068004d744461935c2aae409c04" category="paragraph">如果您需要立即重新扫描特定存储库以使更改反映在系统中、则可以选择该存储库并重新扫描它。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
-  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">在"数据调查"页面中为数据感知扫描状态添加了新的筛选器</block>
-  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">使用"分析状态"筛选器可以列出处于数据感知扫描特定阶段的文件。您可以选择一个选项来显示要扫描的*正在等待首次扫描*、正在扫描的*已完成*、*正在等待重新扫描*或*已失败*文件的列表。</block>
-  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
-  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">现在、数据主体被视为扫描中"个人数据"的一部分</block>
-  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">Data sense现在可将数据主题视为合规性信息板中显示的个人结果的一部分。此外、在"调查"页面中执行搜索时、您可以选择"个人数据"下的"数据主体"、以便仅查看包含数据主体的文件。</block>
-  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">现在、数据感知痕迹文件被视为扫描中"类别"的一部分</block>
-  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">详细了解如何创建痕迹文件</block>
-  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">Data sense现在可将痕迹文件识别为合规性信息板中显示的类别的一部分。这些文件是Data sense在将文件从源位置移动到NFS共享时创建的。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
-  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在"调查"页面中执行搜索时、您可以选择"类别"下的"数据感知痕迹"、以便仅查看数据感知痕迹文件。</block>
-  <block id="8c70b531876f0aad87de3df8d9049545" category="section-title">2022年9月6日</block>
-  <block id="4f400ad3636bf9ccb8a232e152ae3a56" category="section-title">新面板可显示在集群上检测到的勒索软件意外事件</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">单击此处了解更多信息</block>
-  <block id="2cadd98d70cc36a0982305ace71488f2" category="paragraph">"_勒索 软件意外事件"面板显示了您的系统上发生的勒索软件攻击。目前支持运行自主勒索软件保护(ARP)的内部ONTAP 集群。ARP利用NAS (NFS和SMB)环境中的工作负载分析主动检测并警告可能指示勒索软件攻击的异常活动。<block ref="a8b3634a0c7a594234502955588cc1db" category="inline-link-rx"></block>。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
-  <block id="4b60b47d2569a6a3e984e451c382fbdb" category="section-title">可以为StorageGRID 系统中的备份文件配置DataLock和勒索软件保护</block>
-  <block id="f2c9e54745387d4204d350aaf464ef16" category="paragraph">上一版本针对存储在Amazon S3存储分段中的备份引入了_DataLock和勒索软件保护_。此版本扩展了对StorageGRID 系统中存储的备份文件的支持。如果集群使用的是ONTAP 9.11.1或更高版本、而StorageGRID 系统运行的是11.6.0.3或更高版本、则可以使用此新的备份策略选项。<block ref="3f7eaa3e30bb5eb7a46ecb7c423ee7ad" category="inline-link-rx"></block>。</block>
-  <block id="7db81221e474d169032014280bbe8e36" category="paragraph">请注意、您需要运行的Connector软件版本为3.9.22或更高版本。连接器必须安装在您的内部环境中、并且可以安装在可访问Internet或不可访问Internet的站点中。</block>
-  <block id="dfa4dbaa7b53b80d828eeac39da445d5" category="section-title">现在、您可以从备份文件中进行文件夹级还原</block>
-  <block id="08c716b38dc966a670cdf75da8f3f86d" category="section-title">现在、可以从已移至归档存储的备份中进行文件级还原</block>
-  <block id="b0e03676724b8b6468356ef104a66e4f" category="section-title">现在、文件级还原提供了覆盖原始源文件的选项</block>
-  <block id="f3e2c168c189da079b62c6ff6558a640" category="paragraph">过去、还原到原始卷的文件始终会作为前缀为"Restore_&lt;file_name&gt;"的新文件进行还原。现在、您可以选择在将源文件还原到卷上的原始位置时覆盖此源文件。此功能可用于使用浏览和还原方法以及搜索和还原方法执行还原操作。</block>
-  <block id="736c2dbf2aa9f4b08b97a4f719b3cf5e" category="section-title">拖放以启用云备份到StorageGRID 系统</block>
   <block id="392d70ca39f31f10bd637936769788df" category="inline-link">StorageGRID</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">使用VPC端点接口为系统配置专用连接</block>
   <block id="33e030edd0380c3b2d743ec2f989598c" category="paragraph">在先前版本中、通过VPC端点将集群连接到S3存储分段的安全方式非常耗时。现在、您可以按照前提步骤进行操作<block ref="fb4b1250ed3d38b3a9447c7c732436c8" category="inline-link-rx"></block>、然后、您可以在"网络连接"页面的分层设置向导期间选择PrivateLink。</block>
@@ -250,9 +226,6 @@
   <block id="ead28cedb204ded1899ad9065642764d" category="list-text"><block ref="ead28cedb204ded1899ad9065642764d" category="inline-link-rx"></block></block>
   <block id="30b77b282030e8985671bcc89e3e4d74" category="inline-link">设置和管理</block>
   <block id="10dc3609faa5a0e06b693aa9833bf1aa" category="list-text"><block ref="10dc3609faa5a0e06b693aa9833bf1aa" category="inline-link-rx"></block></block>
-  <block id="201e1c2515e9474bbcf720fb750a48c0" category="paragraph">现在、如果您需要访问某个备份文件(目录或共享)中的所有文件、则可以从该文件还原该文件夹。与还原整个卷相比、还原文件夹的效率要高得多。在使用ONTAP 9.11.1或更高版本时、可以使用浏览和还原方法以及搜索和还原方法执行还原操作。此时、您只能选择和还原单个文件夹、并且只会还原该文件夹中的文件、而不会还原子文件夹或子文件夹中的文件。</block>
-  <block id="092186aa28f6e357cce0ba979d549724" category="paragraph">过去、您只能从已移至归档存储的备份文件还原卷(仅限AWS和Azure)。现在、您可以从这些归档备份文件还原单个文件。在使用ONTAP 9.11.1或更高版本时、可以使用浏览和还原方法以及搜索和还原方法执行还原操作。</block>
-  <block id="01fa460d0b4e6c77f9b145e51a76fbd6" category="paragraph">如果<block ref="81ffc4823c79c3e10cfa644aead6e93c" category="inline-link-rx"></block> 备份目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动Cloud Backup设置向导。</block>
   <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">通过分层向导、您可以在分层到S3存储时配置AWS PrivateLink</block>
   <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">选择删除MetroCluster 配置中的镜像对象存储时的分层行为</block>
   <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">从MetroCluster 配置中删除镜像对象存储时、系统会提示您是否也要删除主对象存储。您可以选择保持主对象存储附加到聚合、也可以选择将其删除。</block>
@@ -344,7 +317,6 @@
   <block id="5b839de8a8e7b5f30407c5dc2cfdabd2" category="list-text">您可以使用"workload"列筛选页面以查看以下备份服务的作业：卷、应用程序、虚拟机和Kubernetes。</block>
   <block id="a2ed310c63a1aba1225315fe5f7f60ee" category="list-text">如果要查看特定备份作业的这些详细信息、可以为"用户名"和"作业类型"添加新列。</block>
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">"作业详细信息"页面将显示为完成主作业而正在运行的所有子作业。</block>
-  <block id="dbe9251780901a4775188539e940cce0" category="list-text">此页面每15分钟自动刷新一次、以便您始终可以看到最新的作业状态结果。您可以单击*刷新*按钮立即更新此页面。</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWS跨帐户备份增强功能</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。</block>
   <block id="ef63a877f0594c057f824f4327169a39" category="list-text">支持Google Cloud Platform (GCP)和StorageGRID 备份应用程序一致的快照</block>
@@ -445,7 +417,6 @@
   <block id="88094c6c8ad963e6131e3c23988917d4" category="list-text">支持使用连接和复制方法还原Oracle数据库</block>
   <block id="7d6f6d1efeae8c573a74a091cc119cb9" category="list-text">支持Oracle 21c</block>
   <block id="35d9afe1e1e85a29b0de625fd2a9a44a" category="list-text">支持克隆云本机Oracle数据库</block>
-  <block id="2b02d4e6e1f394b4dc9da1cac8c404a3" category="section-title">Cloud Backup增强功能</block>
   <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">虚拟机</block>
   <block id="c2452add37f94598e06d237edc68078b" category="list-text">从内部二级存储备份虚拟机</block>
   <block id="8e21c62b69b7c01b40ec93ceb9c4b5cd" category="list-text">支持Google Cloud Platform (GCP)备份一个或多个数据存储库</block>
@@ -499,4 +470,26 @@
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">了解有关此选项的更多信息。</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
   <block id="b28a6eb89824dac30a69244f881f75b8" category="paragraph">"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
+  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
+  <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">能够将旧备份文件从StorageGRID 系统移动到AWS S3归档存储</block>
+  <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">现在、您可以将旧备份文件从StorageGRID 系统分层到AWS S3中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。您可以选择将备份分层到AWS S3 Glacier或S3 Glacier深度归档存储。</block>
+  <block id="481c6a107a47fcbb610d4e79b7d8bc01" category="paragraph">如果集群使用的是ONTAP 9.12.1或更高版本、而StorageGRID 系统使用的是11.3或更高版本、则可以使用此功能。<block ref="ba1010a667c53f122912d421bb932c28" category="inline-link-rx"></block>。</block>
+  <block id="5baabb9bbca503ea382779d0fce7e9c5" category="section-title">可以在Google Cloud上为数据加密选择您自己由客户管理的密钥</block>
+  <block id="d42d3ab595b05475b681bcec25a25c6b" category="paragraph">将数据从ONTAP 系统备份到Google云存储时、现在您可以在激活向导中选择自己的客户管理的数据加密密钥、而不是使用默认的Google管理的加密密钥。只需先设置客户管理的加密密钥、然后在激活Cloud Backup时输入详细信息即可。</block>
+  <block id="b9395c2030b2a8ad48d31ad52bd9f6e9" category="section-title">服务帐户不再需要"存储管理员"角色来在Google Cloud Storage中创建备份</block>
+  <block id="d7cf6019b64afefeee4361ce4c22ce30" category="inline-link">请参见如何准备用于备份的Google Cloud存储</block>
+  <block id="121b4934193e6ec77a35338afd1028bb" category="paragraph">在早期版本中、支持Cloud Backup访问Google Cloud Storage存储分段的服务帐户需要"存储管理员"角色。现在、您可以创建一个自定义角色、并为该服务帐户分配一组经过精简的权限。<block ref="cdc0823dc4910df979845484c27cfc1d" category="inline-link-rx"></block>。</block>
+  <block id="fe1757784884bfcaf0ca6254fb7fa44e" category="section-title">能够以.csv报告的形式下载作业监控结果页面</block>
+  <block id="5ae1400b4fd16294ac8af42e98d8a9ed" category="inline-link">请参见如何生成作业监控报告</block>
+  <block id="c8a0a8bdcaf1f25cbadde68224d6591d" category="paragraph">筛选"作业监控"页面以显示您感兴趣的作业和操作后、现在可以生成并下载该数据的.csv文件。然后、您可以分析这些信息、或者将报告发送给组织中的其他人员。<block ref="f54dc22fe93134a0b2767a291dba51f5" category="inline-link-rx"></block>。</block>
+  <block id="4f4a2e17ef7aa2669f99a3748377015f" category="list-text">此页面每15分钟自动刷新一次、以便您始终可以看到最新的作业状态结果。您可以单击*刷新*按钮立即更新此页面。</block>
+  <block id="91edc807a7157b7f0159521433ea5b0f" category="section-title">2023年1月9日(1.19版)</block>
+  <block id="738f7059231d5fe5c1e22879f52682fd" category="section-title">数据调查页面提供了三个新筛选器</block>
+  <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">可以使用新筛选器细化数据调查页面中显示的结果：</block>
+  <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">"Number of users with access"筛选器显示了哪些文件和文件夹对一定数量的用户开放。您可以选择一个数字范围来细化结果、例如、查看51-100个用户可访问哪些文件。</block>
+  <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">现在、"创建时间"、"发现时间"、"上次修改时间"和"上次访问时间"筛选器允许您创建自定义日期范围、而不是仅选择预定义的天数范围。例如、您可以查找"创建时间"为"超过6个月"或"最近10天"内"上次修改"日期的文件。</block>
+  <block id="e2abff3453b8cf47fe2cb0886e10722b" category="list-text">现在、您可以使用"文件路径"筛选器指定要从筛选的查询结果中排除的路径。如果输入包含和排除某些数据的路径、则Data sense会首先查找包含的路径中的所有文件、然后从排除的路径中删除文件、并显示结果。</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="4e499a708b699475cdaf2e23cd596d11" category="section-title">添加了通过电子邮件和通知中心接收勒索软件保护警报的支持</block>
+  <block id="53bccb80a99ecb6d22ac23a5d83a662e" category="paragraph">勒索软件保护已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示勒索软件保护通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。此电子邮件可发送给需要了解勒索软件警报的任何收件人。<block ref="4b31f56f66b4ac96107c1c8a3ca6ad6e" category="inline-link-rx"></block>。</block>
 </blocks>

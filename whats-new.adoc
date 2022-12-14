@@ -187,6 +187,36 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年1月9日
+
+
+
+==== 能够将旧备份文件从StorageGRID 系统移动到AWS S3归档存储
+
+现在、您可以将旧备份文件从StorageGRID 系统分层到AWS S3中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。您可以选择将备份分层到AWS S3 Glacier或S3 Glacier深度归档存储。
+
+如果集群使用的是ONTAP 9.12.1或更高版本、而StorageGRID 系统使用的是11.3或更高版本、则可以使用此功能。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["单击此处了解更多信息"]。
+
+
+
+==== 可以在Google Cloud上为数据加密选择您自己由客户管理的密钥
+
+将数据从ONTAP 系统备份到Google云存储时、现在您可以在激活向导中选择自己的客户管理的数据加密密钥、而不是使用默认的Google管理的加密密钥。只需先设置客户管理的加密密钥、然后在激活Cloud Backup时输入详细信息即可。
+
+
+
+==== 服务帐户不再需要"存储管理员"角色来在Google Cloud Storage中创建备份
+
+在早期版本中、支持Cloud Backup访问Google Cloud Storage存储分段的服务帐户需要"存储管理员"角色。现在、您可以创建一个自定义角色、并为该服务帐户分配一组经过精简的权限。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["请参见如何准备用于备份的Google Cloud存储"]。
+
+
+
+==== 能够以.csv报告的形式下载作业监控结果页面
+
+筛选"作业监控"页面以显示您感兴趣的作业和操作后、现在可以生成并下载该数据的.csv文件。然后、您可以分析这些信息、或者将报告发送给组织中的其他人员。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["请参见如何生成作业监控报告"]。
+
+
+
 === 2022年12月19日
 
 
@@ -214,7 +244,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
-==== Cloud Backup增强功能
+==== 适用于虚拟机的Cloud Backup增强功能
 
 * 虚拟机
 +
@@ -365,43 +395,24 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 
 
 
-=== 2022年9月19日
-
-
-
-==== 可以为StorageGRID 系统中的备份文件配置DataLock和勒索软件保护
-
-上一版本针对存储在Amazon S3存储分段中的备份引入了_DataLock和勒索软件保护_。此版本扩展了对StorageGRID 系统中存储的备份文件的支持。如果集群使用的是ONTAP 9.11.1或更高版本、而StorageGRID 系统运行的是11.6.0.3或更高版本、则可以使用此新的备份策略选项。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
-
-请注意、您需要运行的Connector软件版本为3.9.22或更高版本。连接器必须安装在您的内部环境中、并且可以安装在可访问Internet或不可访问Internet的站点中。
-
-
-
-==== 现在、您可以从备份文件中进行文件夹级还原
-
-现在、如果您需要访问某个备份文件(目录或共享)中的所有文件、则可以从该文件还原该文件夹。与还原整个卷相比、还原文件夹的效率要高得多。在使用ONTAP 9.11.1或更高版本时、可以使用浏览和还原方法以及搜索和还原方法执行还原操作。此时、您只能选择和还原单个文件夹、并且只会还原该文件夹中的文件、而不会还原子文件夹或子文件夹中的文件。
-
-
-
-==== 现在、可以从已移至归档存储的备份中进行文件级还原
-
-过去、您只能从已移至归档存储的备份文件还原卷(仅限AWS和Azure)。现在、您可以从这些归档备份文件还原单个文件。在使用ONTAP 9.11.1或更高版本时、可以使用浏览和还原方法以及搜索和还原方法执行还原操作。
-
-
-
-==== 现在、文件级还原提供了覆盖原始源文件的选项
-
-过去、还原到原始卷的文件始终会作为前缀为"Restore_<file_name>"的新文件进行还原。现在、您可以选择在将源文件还原到卷上的原始位置时覆盖此源文件。此功能可用于使用浏览和还原方法以及搜索和还原方法执行还原操作。
-
-
-
-==== 拖放以启用云备份到StorageGRID 系统
-
-如果 https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["StorageGRID"^] 备份目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动Cloud Backup设置向导。
-
-
-
 == 云数据感知
+
+
+
+=== 2023年1月9日(1.19版)
+
+
+
+==== 数据调查页面提供了三个新筛选器
+
+可以使用新筛选器细化数据调查页面中显示的结果：
+
+* "Number of users with access"筛选器显示了哪些文件和文件夹对一定数量的用户开放。您可以选择一个数字范围来细化结果、例如、查看51-100个用户可访问哪些文件。
+* 现在、"创建时间"、"发现时间"、"上次修改时间"和"上次访问时间"筛选器允许您创建自定义日期范围、而不是仅选择预定义的天数范围。例如、您可以查找"创建时间"为"超过6个月"或"最近10天"内"上次修改"日期的文件。
+* 现在、您可以使用"文件路径"筛选器指定要从筛选的查询结果中排除的路径。如果输入包含和排除某些数据的路径、则Data sense会首先查找包含的路径中的所有文件、然后从排除的路径中删除文件、并显示结果。
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"]。
 
 
 
@@ -454,38 +465,6 @@ Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部�
 ==== 现在、内部安装程序会在开始安装之前执行预检查
 
 在Linux系统上安装Data sense时、安装程序会在开始实际安装之前检查系统是否满足所有必要的要求(CPU、RAM、容量、网络等)。这有助于在*之前*花费时间进行安装时发现问题。
-
-
-
-=== 2022年9月6日(1.16版)
-
-
-
-==== 能够立即重新扫描存储库以反映文件中的更改
-
-如果您需要立即重新扫描特定存储库以使更改反映在系统中、则可以选择该存储库并重新扫描它。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["请参见如何重新扫描目录"^]。
-
-
-
-==== 在"数据调查"页面中为数据感知扫描状态添加了新的筛选器
-
-使用"分析状态"筛选器可以列出处于数据感知扫描特定阶段的文件。您可以选择一个选项来显示要扫描的*正在等待首次扫描*、正在扫描的*已完成*、*正在等待重新扫描*或*已失败*文件的列表。
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"^]。
-
-
-
-==== 现在、数据主体被视为扫描中"个人数据"的一部分
-
-Data sense现在可将数据主题视为合规性信息板中显示的个人结果的一部分。此外、在"调查"页面中执行搜索时、您可以选择"个人数据"下的"数据主体"、以便仅查看包含数据主体的文件。
-
-
-
-==== 现在、数据感知痕迹文件被视为扫描中"类别"的一部分
-
-Data sense现在可将痕迹文件识别为合规性信息板中显示的类别的一部分。这些文件是Data sense在将文件从源位置移动到NFS共享时创建的。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["详细了解如何创建痕迹文件"^]。
-
-此外、在"调查"页面中执行搜索时、您可以选择"类别"下的"数据感知痕迹"、以便仅查看数据感知痕迹文件。
 
 
 
@@ -1091,6 +1070,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 2023年1月9日
+
+
+
+==== 添加了通过电子邮件和通知中心接收勒索软件保护警报的支持
+
+勒索软件保护已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示勒索软件保护通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。此电子邮件可发送给需要了解勒索软件警报的任何收件人。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["了解如何操作"]。
+
+
+
 === 2022年12月11日
 
 
@@ -1114,16 +1103,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 ==== 新面板可显示您的整体勒索软件保护得分和建议的操作
 
 "_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
-
-
-
-=== 2022年9月6日
-
-
-
-==== 新面板可显示在集群上检测到的勒索软件意外事件
-
-"_勒索 软件意外事件"面板显示了您的系统上发生的勒索软件攻击。目前支持运行自主勒索软件保护(ARP)的内部ONTAP 集群。ARP利用NAS (NFS和SMB)环境中的工作负载分析主动检测并警告可能指示勒索软件攻击的异常活动。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems["单击此处了解更多信息"^]。
 
 
 
