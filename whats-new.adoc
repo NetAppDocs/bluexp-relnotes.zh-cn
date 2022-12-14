@@ -33,6 +33,18 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 
 
 
+=== 2023年1月1日
+
+
+
+==== 连接器3.9.25
+
+此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
 === 2022年12月4日
 
 
@@ -129,39 +141,6 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
-=== 2022年9月18日
-
-您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
-
-
-
-=== 2022年7月31日
-
-* 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"]
-
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"] 创建适用于ONTAP 的FSX工作环境后的任何时间。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"]。
-
-
-
-
-=== 2022年7月3日
-
-* 现在、您可以选择一个或多个可用性区域HA部署模式。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["创建适用于 ONTAP 的 FSX 工作环境"]
-
-* Cloud Manager现在支持AWS GovCloud帐户身份验证。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html#set-up-the-iam-role["设置 IAM 角色"]
-
-
-
-
-
 == 应用程序模板
 
 
@@ -208,13 +187,72 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2022年12月19日
+
+
+
+==== Cloud Backup for Applications的增强功能
+
+* SAP HANA数据库
++
+** 支持基于策略备份和还原驻留在Azure NetApp Files (ANF)上的SAP HANA数据库
+** 支持自定义策略
+
+
+* Oracle数据库
++
+** 添加主机并自动部署插件
+** 支持自定义策略
+** 支持基于策略备份、还原和克隆Cloud Volumes ONTAP 上的Oracle数据库
+** 支持基于策略备份和还原驻留在Amazon FSX for NetApp ONTAP 上的Oracle数据库
+** 支持使用连接和复制方法还原Oracle数据库
+** 支持Oracle 21c
+** 支持克隆云本机Oracle数据库
+
+
+
+
+
+
+==== Cloud Backup增强功能
+
+* 虚拟机
++
+** 从内部二级存储备份虚拟机
+** 支持自定义策略
+** 支持Google Cloud Platform (GCP)备份一个或多个数据存储库
+** 支持低成本云存储、例如Glacier、Deep Glacier和Azure Archive
+
+
+
+
+
+
 === 2022年12月6日
 
 
 
-==== 支持Google归档存储类
+==== 所需的Connector出站Internet访问端点更改
 
-备份文件最初是在Google标准存储类中创建的。现在、您可以选择在一定天数后将旧备份分层到Google Archive存储、以便进一步优化成本。
+由于Cloud Backup发生了更改、您需要更改以下连接器端点才能成功执行Cloud Backup操作：
+
+[cols="50,50"]
+|===
+| 旧端点 | 新端点 
+
+
+| https://cloudmanager.cloud.netapp.com | https://api.bluexp.netapp.com 
+
+
+| https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
+|===
+请查看的完整端点列表 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
+
+
+
+==== 支持在UI中选择Google Archival存储类
+
+备份文件最初是在Google标准存储类中创建的。现在、您可以使用Cloud Backup UI在一定天数后将旧备份分层到Google Archive存储、以便进一步优化成本。
 
 目前、使用ONTAP 9.12.1或更高版本的内部ONTAP 集群支持此功能。目前、此功能不适用于Cloud Volumes ONTAP 系统。
 
@@ -222,7 +260,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 支持FlexGroup 卷
 
-Cloud Backup现在支持FlexGroup 卷。使用ONTAP 9.12.1或更高版本时、您可以将FlexGroup 卷备份到公有 和私有云存储。如果您的工作环境包含FlexVol 和FlexGroup 卷、则在更新ONTAP 软件后、您可以备份这些系统上的任何FlexGroup 卷。
+Cloud Backup现在支持备份和还原FlexGroup 卷。使用ONTAP 9.12.1或更高版本时、您可以将FlexGroup 卷备份到公有 和私有云存储。如果您的工作环境包含FlexVol 和FlexGroup 卷、则在更新ONTAP 软件后、您可以备份这些系统上的任何FlexGroup 卷。
 
 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#supported-volumes["请参见支持的卷类型的完整列表"]。
 
@@ -377,12 +415,12 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 
 * 现在、在内部主机上开始安装之前、系统会检查一些其他前提条件。这有助于确保主机系统已完全准备好安装Data sense软件：
 +
-** 测试/var/lib/docker、/tmp和/opt上是否有足够的空间
+** 测试上是否有足够的空间 `/var/lib/docker`， `/tmp`，和 `/opt`
 ** 测试所有所需文件夹上的相关权限
 
 
 * 现在、在配置页面中、工作环境部分将显示_Working Environment ID_和_扫描 程序组_名称。如果您计划使用多个Data sense主机来提供额外的处理能力来扫描数据源、则需要了解工作环境ID。
-* 在配置页面中、一个新部分将显示您设置的扫描程序组以及每个组中的扫描程序节点。
+* 此外、在配置页面中、还会显示一个新部分、其中显示了您设置的扫描程序组以及每个组中的扫描程序节点。
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["了解有关在一台主机服务器和多台主机上安装Data sense的更多信息"]。
@@ -452,6 +490,28 @@ Data sense现在可将痕迹文件识别为合规性信息板中显示的类别�
 
 
 == Cloud Sync
+
+
+
+=== 2023年1月3日
+
+
+
+==== 在UI上显示数据代理本地配置
+
+现在有一个*显示配置*选项、可用于使用户在用户界面上查看每个数据代理的本地配置。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["了解有关管理数据代理组的更多信息"]。
+
+
+
+==== 升级到Azure和Google Cloud数据代理操作系统
+
+Azure和Google Cloud中的数据代理操作系统已升级到Rocky Linux 9.0。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-azure.html#details-about-the-data-broker-vm["详细了解Azure中的数据代理实例"]。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance["详细了解Google Cloud中的数据代理实例"]。
 
 
 
@@ -662,6 +722,28 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2022年12月6日
+
+
+
+==== 所需的Connector出站Internet访问端点更改
+
+由于Cloud Tiering发生了变化、您需要更改以下连接器端点才能成功执行Cloud Tiering操作：
+
+[cols="50,50"]
+|===
+| 旧端点 | 新端点 
+
+
+| https://cloudmanager.cloud.netapp.com | https://api.bluexp.netapp.com 
+
+
+| https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
+|===
+请查看的完整端点列表 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
+
+
+
 === 2022年11月6日
 
 
@@ -696,23 +778,41 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
-=== 2022年8月3日
-
-
-
-==== 可以为集群中的其他聚合配置其他对象存储
-
-Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加新的对象存储、将多个对象存储连接到聚合以进行FabricPool 镜像、交换主对象存储和镜像对象存储、删除与聚合的对象存储连接等。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["详细了解新的对象存储功能。"]
-
-
-
-==== 为MetroCluster 配置提供云分层许可证支持
-
-现在、可以与MetroCluster 配置中的集群共享云分层许可证。在这些情况下、您不再需要使用已弃用的FabricPool 许可证。这样可以更轻松地在更多集群上使用"浮动"云分层许可证。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["请参见如何许可和配置这些类型的集群。"]
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2023年1月1日
+
+连接器3.9.25版引入了以下更改。
+
+
+
+==== Google Cloud提供许可包
+
+在Google云市场中、Cloud Volumes ONTAP 可以通过按需购买或按年订立的合同获得经过优化且基于边缘缓存容量的许可包。
+
+请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Cloud Volumes ONTAP 许可"^]。
+
+
+
+==== Cloud Volumes ONTAP 的默认配置
+
+新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。
+
+有关随Cloud Volumes ONTAP 自动安装的ONTAP 功能许可证的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Cloud Volumes ONTAP 的默认配置"^]。
+
+
+
+=== 2022年12月15日
+
+
+
+==== Cloud Volumes ONTAP 9.12.0
+
+现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -722,39 +822,9 @@ Cloud Tiering UI为对象存储配置添加了一组新页面。您可以添加�
 
 ==== Cloud Volumes ONTAP 9.12.1
 
-现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
+现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。
 
-
-
-=== 2022年12月4日
-
-连接器3.9.24版引入了以下更改。
-
-
-
-==== 现在、在创建Cloud Volumes ONTAP 期间、可以使用WORM +云备份
-
-现在、在Cloud Volumes ONTAP 创建过程中、可以同时激活一次写入、多次读取(WORM)和云备份功能。
-
-
-
-==== 现在、Google Cloud支持以色列地区
-
-现在、适用于Cloud Volumes ONTAP 的Google Cloud以及适用于Cloud Volumes ONTAP 9.11.1 P3及更高版本的Connector均支持以色列地区。
-
-
-
-=== 2022年11月15日
-
-连接器3.9.23版引入了以下更改。
-
-
-
-==== GCP中的ONTAP S3许可证
-
-现在、在Google云平台中运行9.12.1或更高版本的新Cloud Volumes ONTAP 系统和现有系统上均包含ONTAP S3许可证。
-
-https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["了解如何在 ONTAP 中配置和管理 S3 对象存储服务"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
 
 
 
@@ -957,6 +1027,18 @@ link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/requirements/kuberne
 
 
 
+=== 2023年1月1日
+
+
+
+==== 保存ONTAP 凭据
+
+当您打开在未使用连接器的情况下直接发现的内部ONTAP 工作环境时、现在可以选择保存ONTAP 集群凭据、这样您就无需在每次打开工作环境时都输入这些凭据。
+
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["了解有关此选项的更多信息。"]
+
+
+
 === 2022年12月4日
 
 连接器3.9.24版引入了以下更改。
@@ -1005,22 +1087,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
-=== 2022年6月7日
-
-连接器3.9.19版引入了以下更改。
-
-
-
-==== 新建高级视图
-
-如果您需要对ONTAP 内部集群执行高级管理、可以使用ONTAP 系统管理器执行此操作、该管理接口随ONTAP 系统提供。我们直接在Cloud Manager中提供了System Manager界面、因此您无需离开Cloud Manager进行高级管理。
-
-对于运行9.10.0或更高版本的内部ONTAP 集群、此高级视图为预览视图。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advanced-view.html["了解有关高级视图的更多信息"]。
-
-
-
 == 勒索软件保护
 
 
@@ -1047,7 +1113,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-administer-advance
 
 ==== 新面板可显示您的整体勒索软件保护得分和建议的操作
 
-这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
+"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
 
 
 
