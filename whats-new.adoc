@@ -33,6 +33,54 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 
 
 
+=== 2023年2月5日
+
+
+
+==== 连接器3.9.26
+
+* 现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。单击*下一步*后、BlueXP将提示您使用与您的登录关联的身份验证方法进行身份验证：
++
+** NetApp云凭据的密码
+** 联合身份凭据
+** 您的NetApp 支持站点 凭据
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXP登录页面的屏幕截图、系统会提示您输入电子邮件地址。"]
+
+* 如果您是BlueXP的新用户、并且已有NetApp 支持站点 (NSS)凭据、则可以跳过注册页面并直接在登录页面中输入您的电子邮件地址。BlueXP将在此首次登录过程中为您注册。
+* 从云提供商的市场订阅BlueXP后、您可以选择将一个帐户的现有订阅替换为新订阅。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["显示BlueXP帐户订阅分配的屏幕截图。"]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["了解如何关联AWS订阅"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["了解如何关联Azure订阅"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["了解如何关联Google Cloud订阅"]
+
+
+* 如果您的Connector已关闭14天或更长时间、BlueXP将立即通知您。
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["了解BlueXP通知"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["了解连接器为何应保持运行"]
+
+
+* 我们更新了Google Cloud的连接器策略、其中包括在Cloud Volumes ONTAP HA对上创建和管理Storage VM所需的权限：
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["查看Connector的Google Cloud权限"]。
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 === 2023年1月1日
 
 
@@ -60,30 +108,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 
 
-
-
-
-=== 2022年11月6日
-
-
-
-==== 连接器3.9.23
-
-* 您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["了解如何管理您的订阅"^]
-
-* 此版本的连接器还包括Cloud Volumes ONTAP 增强功能。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["了解Cloud Volumes ONTAP 增强功能"^]
-
-
-
-
-
-=== 2022年11月1日
-
-现在、当与您的帐户关联的刷新令牌在3个月后过期时、Cloud Manager将提示您更新与您的NetApp 支持站点 帐户关联的凭据。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["了解如何管理 NSS 帐户"^]
 
 
 
@@ -499,6 +523,39 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-on
 
 
 
+=== 2023年2月5日
+
+
+
+==== 对Azure数据湖存储第2代、ONTAP S3存储和NFS的其他支持
+
+Cloud Sync 现在支持为ONTAP S3存储和NFS建立其他同步关系：
+
+* ONTAP S3存储到NFS
+* NFS到ONTAP S3存储
+
+
+Cloud Sync 还支持将Azure数据湖存储第2代作为源和目标、以便：
+
+* NFS 服务器
+* SMB 服务器
+* ONTAP S3 存储
+* StorageGRID
+* IBM 云对象存储
+
+
+https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["了解有关支持的同步关系的更多信息"]。
+
+
+
+==== 升级到Amazon Web Services数据代理操作系统
+
+AWS数据代理的操作系统已升级到Amazon Linux 2022。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["详细了解AWS中的数据代理实例"]。
+
+
+
 === 2023年1月3日
 
 
@@ -788,6 +845,36 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
+=== 2023年2月5日
+
+连接器3.9.26版引入了以下更改。
+
+
+
+==== 在AWS中创建放置组
+
+现在、可以通过AWS HA单可用性区域(AZ)部署创建放置组、并使用新的配置设置。现在、您可以选择绕过失败的放置组创建、并允许AWS HA单AZ部署成功完成。
+
+有关如何配置放置组创建设置的详细信息、请参见 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["为AWS HA Single AZ配置放置组创建"^]。
+
+
+
+==== 专用DNS区域配置更新
+
+现在、您可以使用新的配置设置、以便在使用Azure专用链路时避免在专用DNS区域和虚拟网络之间创建链路。默认情况下、创建处于启用状态。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["向BlueXP提供有关Azure私有DNS的详细信息"^]
+
+
+
+==== WORM存储和数据分层
+
+现在、在创建Cloud Volumes ONTAP 9.8或更高版本系统时、您可以同时启用数据分层和WORM存储。通过使用WORM存储启用数据分层、您可以将数据分层到云中的对象存储。
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["了解WORM存储。"^]
+
+
+
 === 2023年1月1日
 
 连接器3.9.25版引入了以下更改。
@@ -819,18 +906,6 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9120-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-=== 2022年12月8日
-
-
-
-==== Cloud Volumes ONTAP 9.12.1
-
-现在、BlueXP可以部署和管理Cloud Volumes ONTAP 9.12.1、其中包括对新功能的支持以及其他云提供商区域的支持。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]
 
 
 
