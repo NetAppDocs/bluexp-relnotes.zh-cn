@@ -187,7 +187,6 @@
   <block id="2a6aa0e8585b387718e871db90f1a32e" category="paragraph">现在、您可以通过电子邮件接收Cloud Sync 通知。</block>
   <block id="e6694f6134fb0186a17db662ced006d0" category="inline-link">了解如何设置通知</block>
   <block id="f7ae9f1fb8f4b7044457ebf35058b088" category="paragraph"><block ref="8365080032c57ac637a7cb1d0af196ae" category="inline-link-rx"></block>。</block>
-  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">请参见如何重新扫描目录</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">单击此处了解更多信息</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
@@ -307,16 +306,10 @@
   <block id="bcce731a4ced178ba1457a0965f1a878" category="list-text">"作业详细信息"页面将显示为完成主作业而正在运行的所有子作业。</block>
   <block id="95bdcffb51de388c8d204ebc69a73e61" category="section-title">AWS跨帐户备份增强功能</block>
   <block id="ae3795f53c6086a9639e4652dbff318b" category="paragraph">如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。</block>
-  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支持扫描SharePoint内部部署帐户</block>
-  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部署帐户(SharePoint Server)。如果您需要在自己的服务器上或无法访问Internet的站点上安装SharePoint、现在可以让Data sense扫描这些帐户中的用户文件。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
-  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能够重新扫描多个目录(文件夹或共享)</block>
-  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">现在、您可以立即重新扫描多个目录(文件夹或共享)、以便在系统中反映所做的更改。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
-  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">可以添加其他内部"扫描程序"节点来扫描特定数据源</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">2022年11月6日</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="7c16758604271d7ef3055d0e5962ec82" category="section-title">新面板可显示您的整体勒索软件保护得分和建议的操作</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">连接器3.9.23</block>
   <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">您的BlueXP PAYGO订阅和年度合同现在可从Digital Wallet查看和管理。</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">了解如何管理您的订阅</block>
@@ -325,12 +318,6 @@
   <block id="d977c6f6b61d0f35299ae86a391a8a57" category="section-title">添加了通过电子邮件和通知中心接收Cloud Backup警报的支持</block>
   <block id="49b6fd5ed6bda6ec09a46ece6a679207" category="section-title">现在、您可以在使用内部部署连接器时使用搜索和还原来还原备份文件</block>
   <block id="18cddedef625cde24d34d1b2bb64fb96" category="paragraph">目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。</block>
-  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日(1.17版)</block>
-  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您在内部位置安装了Data sense、并且发现扫描某些数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点并将其分配给扫描这些数据源。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。</block>
-  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">请参见如何安装扫描程序节点以扫描其他数据源</block>
-  <block id="232acd7f039f2650674c20301305634d" category="paragraph">如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
-  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">现在、内部安装程序会在开始安装之前执行预检查</block>
-  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系统上安装Data sense时、安装程序会在开始实际安装之前检查系统是否满足所有必要的要求(CPU、RAM、容量、网络等)。这有助于在*之前*花费时间进行安装时发现问题。</block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">2022年12月4日</block>
   <block id="9a37fbeb5352e14f2a53fe349c60ad58" category="section-title">连接器3.9.24</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
@@ -351,7 +338,6 @@
   <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">在内部ONTAP 集群的卷页面上显示FlexGroup 卷的屏幕截图。</block>
   <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP不支持创建FlexGroup 卷。您需要继续使用System Manager或命令行界面创建FlexGroup 卷。</block>
-  <block id="8c40ca85ff5a42317cb1f23a7d716ecc" category="section-title">2022年11月13日</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
   <block id="738d31d37e16df450b2af9540e98c7d4" category="paragraph">目前、使用ONTAP 9.12.1或更高版本的内部ONTAP 集群支持此功能。目前、此功能不适用于Cloud Volumes ONTAP 系统。</block>
   <block id="4547c4a9db890b3449aca4e706555007" category="section-title">支持FlexGroup 卷</block>
@@ -456,7 +442,6 @@
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">当您打开在未使用连接器的情况下直接发现的内部ONTAP 工作环境时、现在可以选择保存ONTAP 集群凭据、这样您就无需在每次打开工作环境时都输入这些凭据。</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">了解有关此选项的更多信息。</block>
   <block id="b269330dc42e4f7fc82bba99c0dd5fd7" category="paragraph"><block ref="b269330dc42e4f7fc82bba99c0dd5fd7" category="inline-link-rx"></block></block>
-  <block id="b28a6eb89824dac30a69244f881f75b8" category="paragraph">"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。<block ref="020baa7d67cad4299bb33f9b5861968a" category="inline-link-rx"></block>。</block>
   <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023年1月9日</block>
   <block id="b17d2155a07524d0e8a3d1eb73a257c3" category="section-title">能够将旧备份文件从StorageGRID 系统移动到AWS S3归档存储</block>
   <block id="76592785cd14862cf74d11289e50ed92" category="paragraph">现在、您可以将旧备份文件从StorageGRID 系统分层到AWS S3中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。您可以选择将备份分层到AWS S3 Glacier或S3 Glacier深度归档存储。</block>
@@ -505,4 +490,29 @@
   <block id="897d994d4d024883042e664eba152417" category="list-text">您现在可以： <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
   <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
   <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">您现在可以： <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
+  <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日(版本1.20)</block>
+  <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">能够将基于策略的通知电子邮件发送到任何电子邮件地址</block>
+  <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">在早期版本的Cloud Data sense中、当某些关键策略返回结果时、您可以向帐户中的BlueXP用户发送电子邮件警报。通过此功能、您可以在未联机时收到通知以保护数据。现在、您还可以将策略中的电子邮件警报发送给不在您的BlueXP帐户中的任何其他用户、最多20个电子邮件地址。</block>
+  <block id="01111213f34b03537871696a29c018fa" category="inline-link">了解有关根据策略结果发送电子邮件警报的更多信息</block>
+  <block id="78f271269524c3df01d3ea41bb6702bb" category="paragraph"><block ref="d67cffea398d88e5b23de3d6e657ce99" category="inline-link-rx"></block>。</block>
+  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">现在、您可以添加Data sense将从UI中识别的个人模式</block>
+  <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">Data sense能够添加自定义的"个人数据"、Data sense将在未来的扫描中识别此数据一段时间。但是、您需要登录到Data sense Linux主机并使用命令行添加自定义模式。在此版本中、Data sense UI可以使用regex添加个人模式、因此可以轻松地添加和编辑这些自定义模式。</block>
+  <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">了解有关从Data sense UI添加自定义模式的更多信息</block>
+  <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
+  <block id="84c8adf32e115baa72ae8b3a8f822476" category="section-title">能够使用Data sense移动1500万个文件</block>
+  <block id="ce5fbe7b662ddb049a74e9f53fbb248d" category="inline-link">了解有关使用Data sense移动源文件的更多信息</block>
+  <block id="ba15bcd4f08736ac348b497a16e4692c" category="paragraph">过去、Data sense最多可以将100、000个源文件移动到任何NFS共享。现在、一次最多可以移动1500万个文件。<block ref="40c227e71c831207540f496880532db6" category="inline-link-rx"></block>。</block>
+  <block id="e25a297a27416e76c1a8e01af56d07ed" category="section-title">能够查看有权访问SharePoint Online文件的用户数量</block>
+  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">筛选器"可访问的用户数"现在支持存储在SharePoint Online存储库中的文件。过去仅支持CIFS共享上的文件。请注意、目前不会在此筛选器中计入非基于Active Directory的SharePoint组。</block>
+  <block id="cab6c5a0928827eecbe652fb21944075" category="section-title">已将新的"部分成功"状态添加到"操作状态"面板中</block>
+  <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">请参见如何查看操作状态面板</block>
+  <block id="8c01977ad1276f1ec21ee04cc193f1e3" category="paragraph">新的"部分成功"状态表示数据感知操作已完成、某些项失败、某些项成功、例如、在移动或删除100个文件时。此外、"已完成"状态已重命名为"成功"。过去、"已完成"状态可能会列出成功和失败的操作。现在、"成功"状态意味着对所有项目执行的所有操作都成功。<block ref="fcc1d764ae2299a747d914333deb15cf" category="inline-link-rx"></block>。</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
+  <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">能够定义策略来确定您认为业务关键型的数据</block>
+  <block id="8fd9b1ab36b743c5caaee60cb0ffb46a" category="paragraph">勒索软件保护新增了一个业务关键型数据页面。通过此页面、您可以查看在Cloud Data sense中定义的所有策略。您可以选择确定对您的业务至关重要的数据的策略、以便勒索软件保护信息板和其他勒索软件面板根据您最重要的数据反映潜在问题。</block>
+  <block id="32f6be7f4e5713fdc38188d3ef348a70" category="paragraph">如果您尚未为勒索软件保护服务激活任何此类策略、"建议操作"面板将显示一个名为"配置业务关键型数据"的新建议操作。</block>
+  <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">了解有关业务关键型数据页面的更多信息</block>
+  <block id="f77caa23f512ad7c5c38882b9a13b6db" category="paragraph"><block ref="d9564f80e250011b85c05664d779bbef" category="inline-link-rx"></block>。</block>
+  <block id="1e189efdd1c21e1702b4e4a48e6a3815" category="section-title">勒索软件保护已从"保护"类别转移到"监管"类别</block>
+  <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">现在、您可以从BlueXP左侧导航菜单中选择*监管&gt;勒索软件保护*来访问此服务。</block>
 </blocks>

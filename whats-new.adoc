@@ -406,6 +406,44 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 
 
 
+=== 2023年2月5日(版本1.20)
+
+
+
+==== 能够将基于策略的通知电子邮件发送到任何电子邮件地址
+
+在早期版本的Cloud Data sense中、当某些关键策略返回结果时、您可以向帐户中的BlueXP用户发送电子邮件警报。通过此功能、您可以在未联机时收到通知以保护数据。现在、您还可以将策略中的电子邮件警报发送给不在您的BlueXP帐户中的任何其他用户、最多20个电子邮件地址。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["了解有关根据策略结果发送电子邮件警报的更多信息"]。
+
+
+
+==== 现在、您可以添加Data sense将从UI中识别的个人模式
+
+Data sense能够添加自定义的"个人数据"、Data sense将在未来的扫描中识别此数据一段时间。但是、您需要登录到Data sense Linux主机并使用命令行添加自定义模式。在此版本中、Data sense UI可以使用regex添加个人模式、因此可以轻松地添加和编辑这些自定义模式。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["了解有关从Data sense UI添加自定义模式的更多信息"^]。
+
+
+
+==== 能够使用Data sense移动1500万个文件
+
+过去、Data sense最多可以将100、000个源文件移动到任何NFS共享。现在、一次最多可以移动1500万个文件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["了解有关使用Data sense移动源文件的更多信息"]。
+
+
+
+==== 能够查看有权访问SharePoint Online文件的用户数量
+
+筛选器"可访问的用户数"现在支持存储在SharePoint Online存储库中的文件。过去仅支持CIFS共享上的文件。请注意、目前不会在此筛选器中计入非基于Active Directory的SharePoint组。
+
+
+
+==== 已将新的"部分成功"状态添加到"操作状态"面板中
+
+新的"部分成功"状态表示数据感知操作已完成、某些项失败、某些项成功、例如、在移动或删除100个文件时。此外、"已完成"状态已重命名为"成功"。过去、"已完成"状态可能会列出成功和失败的操作。现在、"成功"状态意味着对所有项目执行的所有操作都成功。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["请参见如何查看操作状态面板"]。
+
+
+
 === 2023年1月9日(1.19版)
 
 
@@ -454,36 +492,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["了解有关在一台主机服务器和多台主机上安装Data sense的更多信息"]。
-
-
-
-=== 2022年11月13日(1.17版)
-
-
-
-==== 支持扫描SharePoint内部部署帐户
-
-Data sense现在可以同时扫描SharePoint Online帐户和SharePoint内部部署帐户(SharePoint Server)。如果您需要在自己的服务器上或无法访问Internet的站点上安装SharePoint、现在可以让Data sense扫描这些帐户中的用户文件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["了解更多信息。"^]。
-
-
-
-==== 能够重新扫描多个目录(文件夹或共享)
-
-现在、您可以立即重新扫描多个目录(文件夹或共享)、以便在系统中反映所做的更改。这样、您可以优先重新扫描某些数据、而不是重新扫描其他数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["请参见如何重新扫描目录"^]。
-
-
-
-==== 可以添加其他内部"扫描程序"节点来扫描特定数据源
-
-如果您在内部位置安装了Data sense、并且发现扫描某些数据源需要更多的扫描处理能力、则可以添加更多的"扫描程序"节点并将其分配给扫描这些数据源。您可以在安装管理器节点后立即添加扫描程序节点、也可以稍后添加扫描程序节点。
-
-如有必要、可以将扫描程序节点安装在物理上更接近要扫描的数据源的主机系统上。扫描程序节点与数据的距离越近、越好、因为它可以在扫描数据时尽可能地减少网络延迟。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["请参见如何安装扫描程序节点以扫描其他数据源"^]。
-
-
-
-==== 现在、内部安装程序会在开始安装之前执行预检查
-
-在Linux系统上安装Data sense时、安装程序会在开始实际安装之前检查系统是否满足所有必要的要求(CPU、RAM、容量、网络等)。这有助于在*之前*花费时间进行安装时发现问题。
 
 
 
@@ -1093,6 +1101,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 2023年2月5日
+
+
+
+==== 能够定义策略来确定您认为业务关键型的数据
+
+勒索软件保护新增了一个业务关键型数据页面。通过此页面、您可以查看在Cloud Data sense中定义的所有策略。您可以选择确定对您的业务至关重要的数据的策略、以便勒索软件保护信息板和其他勒索软件面板根据您最重要的数据反映潜在问题。
+
+如果您尚未为勒索软件保护服务激活任何此类策略、"建议操作"面板将显示一个名为"配置业务关键型数据"的新建议操作。
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html["了解有关业务关键型数据页面的更多信息"^]。
+
+
+
+==== 勒索软件保护已从"保护"类别转移到"监管"类别
+
+现在、您可以从BlueXP左侧导航菜单中选择*监管>勒索软件保护*来访问此服务。
+
+
+
 === 2023年1月9日
 
 
@@ -1116,16 +1144,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 您可以在UI中选择这些操作、然后按照工作流解决底层问题。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["请参见所有建议操作的列表"]。
-
-
-
-=== 2022年11月13日
-
-
-
-==== 新面板可显示您的整体勒索软件保护得分和建议的操作
-
-"_勒索 软件保护得分"面板显示了整体得分以及存在潜在问题的网络安全领域。"_Recommended Actions_"面板列出了您可以采取哪些潜在措施来提高您对勒索软件攻击的抵御能力、并提供了一个链接来调查问题、以便您可以在必要时应用这些措施。这两个新面板协同工作、共同确定您的数据对勒索软件攻击的恢复能力、以及您可以采取哪些措施来提高您的得分。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions["单击此处了解更多信息"^]。
 
 
 
