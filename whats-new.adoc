@@ -236,6 +236,52 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年2月6日
+
+
+
+==== 能够将旧备份文件从StorageGRID 系统移动到Azure归档存储
+
+现在、您可以将旧备份文件从StorageGRID 系统分层到Azure中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。
+
+如果您的内部集群使用的是ONTAP 9.12.1或更高版本、而StorageGRID 系统使用的是11.4或更高版本、则可以使用此功能。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["单击此处了解更多信息"^]。
+
+
+
+==== 可以为Azure Blob中的备份文件配置DataLock和勒索软件保护
+
+现在、存储在Azure Blob中的备份文件支持DataLock和勒索软件保护。如果您的Cloud Volumes ONTAP 或内部ONTAP 系统运行的是ONTAP 9.12.1或更高版本、现在您可以锁定备份文件并对其进行扫描、以检测可能的勒索软件。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
+
+
+
+==== 备份和还原FlexGroup 卷增强功能
+
+* 现在、您可以在还原FlexGroup 卷时选择多个聚合。在上一版本中、您只能选择一个聚合。
+* 现在、Cloud Volumes ONTAP 系统支持FlexGroup 卷还原。在上一个版本中、您只能还原到内部ONTAP 系统。
+
+
+
+
+==== Cloud Volumes ONTAP 系统可以将较早的备份移动到Google归档存储
+
+备份文件最初是在Google标准存储类中创建的。现在、您可以使用Cloud Backup将旧备份分层到Google Archive存储、以进一步优化成本。上一版本仅在内部ONTAP 集群中支持此功能—现在支持在Google Cloud中部署的Cloud Volumes ONTAP 系统。
+
+
+
+==== 现在、您可以通过卷还原操作选择要还原卷数据的SVM
+
+现在、您可以将卷数据还原到ONTAP 集群中的不同Storage VM。过去无法选择Storage VM。
+
+
+
+==== 增强了对MetroCluster 配置中卷的支持
+
+现在、如果使用的是ONTAP 9.12.1 GA或更高版本、则在MetroCluster 配置中连接到主系统时、支持备份。整个备份配置将传输到二级系统、以便在切换后自动继续备份到云。
+
+https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["有关详细信息、请参见备份限制"]。
+
+
+
 === 2023年1月9日
 
 
@@ -359,73 +405,6 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-=== 2022年11月2日
-
-
-
-==== 能够将旧Snapshot副本导出到基线备份文件
-
-如果工作环境中的卷具有与备份计划标签匹配的任何本地Snapshot副本(例如、每日、每周等)、则可以将这些历史快照作为备份文件导出到对象存储。这样、您可以通过将旧的Snapshot副本移动到基线备份副本中来初始化云中的备份。
-
-在为您的工作环境激活Cloud Backup时、此选项可用。您也可以稍后在中更改此设置 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["高级设置页面"]。
-
-
-
-==== Cloud Backup现在可用于归档源系统上不再需要的卷
-
-现在、您可以删除卷的备份关系。如果您希望停止创建新备份文件并删除源卷、但保留所有现有备份文件、则可以使用此功能提供归档机制。这样、您就可以在将来根据需要从备份文件还原卷、同时从源存储系统中清除空间。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-volume-backup-relationships["了解如何操作"]。
-
-
-
-==== 添加了通过电子邮件和通知中心接收Cloud Backup警报的支持
-
-Cloud Backup已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示Cloud Backup通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。可以将此电子邮件发送给需要了解备份和还原活动的任何收件人。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#use-the-job-monitor-to-view-backup-and-restore-job-status["了解如何操作"]。
-
-
-
-==== 通过新的高级设置页面、您可以更改集群级别的备份设置
-
-通过此新页面、您可以更改在为每个ONTAP 系统激活Cloud Backup时设置的多个集群级别备份设置。您还可以修改应用为"默认"备份设置的某些设置。您可以更改的一整套备份设置包括：
-
-* 为ONTAP 系统授予访问对象存储权限的存储密钥
-* 分配用于将备份上传到对象存储的网络带宽
-* 未来卷的自动备份设置(和策略)
-* 归档存储类(仅限AWS)
-* 初始基线备份文件中是否包含历史Snapshot副本
-* 是否从源系统中删除"每年"快照
-* 连接到对象存储的ONTAP IP空间(如果激活期间选择不正确)
-
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-settings-ontap.html["了解有关管理集群级别备份设置的更多信息"]。
-
-
-
-==== 现在、您可以在使用内部部署连接器时使用搜索和还原来还原备份文件
-
-在先前版本中、增加了在内部部署连接器时向公有 云创建备份文件的支持。在此版本中、我们仍支持在您的内部部署Connector时使用搜索和还原从Amazon S3或Azure Blob还原备份。搜索和还原还支持立即将备份从StorageGRID 系统还原到内部ONTAP 系统。
-
-目前、在使用搜索和还原从Google Cloud Storage还原备份时、必须在Google Cloud Platform中部署Connector。
-
-
-
-==== 已更新作业监控页面
-
-已对进行了以下更新 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html["作业监控页面"]：
-
-* 您可以使用"workload"列筛选页面以查看以下备份服务的作业：卷、应用程序、虚拟机和Kubernetes。
-* 如果要查看特定备份作业的这些详细信息、可以为"用户名"和"作业类型"添加新列。
-* "作业详细信息"页面将显示为完成主作业而正在运行的所有子作业。
-* 此页面每15分钟自动刷新一次、以便您始终可以看到最新的作业状态结果。您可以单击*刷新*按钮立即更新此页面。
-
-
-
-
-==== AWS跨帐户备份增强功能
-
-如果要对Cloud Volumes ONTAP 备份使用与源卷不同的AWS帐户、则必须在BlueXP中添加目标AWS帐户凭据、并且必须将权限"S3：PutBucketPolicy"和"S3：PutBucketOwnershipControls"添加到为BlueXP提供权限的IAM角色中。过去、您需要在AWS控制台中配置许多设置、而不再需要这样做。
-
-
-
 == 云数据感知
 
 
@@ -438,7 +417,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backup-se
 
 在早期版本的Cloud Data sense中、当某些关键策略返回结果时、您可以向帐户中的BlueXP用户发送电子邮件警报。通过此功能、您可以在未联机时收到通知以保护数据。现在、您还可以将策略中的电子邮件警报发送给不在您的BlueXP帐户中的任何其他用户、最多20个电子邮件地址。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["了解有关根据策略结果发送电子邮件警报的更多信息"]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["了解有关根据策略结果发送电子邮件警报的更多信息"]。
 
 
 
@@ -487,7 +466,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 * 现在、您可以使用"文件路径"筛选器指定要从筛选的查询结果中排除的路径。如果输入包含和排除某些数据的路径、则Data sense会首先查找包含的路径中的所有文件、然后从排除的路径中删除文件、并显示结果。
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"]。
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"]。
 
 
 
@@ -789,7 +768,7 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
-==== 所需的Connector出站Internet访问端点更改
+==== 连接器出站Internet访问端点更改
 
 由于Cloud Tiering发生了变化、您需要更改以下连接器端点才能成功执行Cloud Tiering操作：
 
