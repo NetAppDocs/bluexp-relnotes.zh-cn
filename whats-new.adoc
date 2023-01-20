@@ -141,6 +141,31 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
+=== 2023年1月1日
+
+现在、您可以选择启用 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["自动容量管理"^] 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。
+
+
+
+=== 2022年9月18日
+
+您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+
+
+
+=== 2022年7月31日
+
+* 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
++
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"^]
+
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"^] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"^]。
+
+
+
+
 == 应用程序模板
 
 

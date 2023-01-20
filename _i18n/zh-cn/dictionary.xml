@@ -491,4 +491,18 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
   <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">数据感知功能可以识别包含日语个人编号(也称为"我的编号")的文件并对其进行分类。这包括"个人"和"公司我的号码"。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
+  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">2023年1月1日</block>
+  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">自动容量管理</block>
+  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">现在、您可以选择启用 <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。</block>
+  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">更改存储容量和IOPS</block>
+  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">您现在可以： <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="dd15e63d013ad6e70302caae66b83f6d" category="list-text">如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。</block>
+  <block id="6ebe96f0162b363fd765e000afd1c4f0" category="inline-link-macro">利用"我的商机"发现适用于ONTAP 的FSX</block>
+  <block id="a83471208430f7fbd0630757d97c5142" category="paragraph"><block ref="a83471208430f7fbd0630757d97c5142" category="inline-link-macro-rx"></block></block>
+  <block id="e2399171d04de4904bc9ceb3e1c97260" category="inline-link-macro">更改吞吐量容量</block>
+  <block id="6cd901297cf29a4b459f2cc11e68c6d6" category="list-text">您现在可以： <block ref="697a0d5ee189fb6da3b3bef50626dd94" category="inline-link-macro-rx"></block> 创建适用于ONTAP 的FSX工作环境后的任何时间。</block>
+  <block id="7699be7c50b8640b313d71cce9004797" category="inline-link-macro">复制和同步数据</block>
+  <block id="897d994d4d024883042e664eba152417" category="list-text">您现在可以： <block ref="df556429a26e71fbf9e095a790447f2b" category="inline-link-macro-rx"></block> 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。</block>
+  <block id="42c82b44ceecde8407f75a70409e2aec" category="inline-link-macro">使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷</block>
+  <block id="cf648eb1e2c8b4986628f39a529b68f1" category="list-text">您现在可以： <block ref="7c9b88630e88eb3d402b9bbec2515bca" category="inline-link-macro-rx"></block>。</block>
 </blocks>
