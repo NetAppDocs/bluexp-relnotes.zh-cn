@@ -17,7 +17,7 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关�
 
 
 [role="lead"]
-了解作为BlueXP平台(以前称为Cloud Manager)一部分的云服务的最新变更。有关详细信息，请转到 link:release-notes-index.html["完整的发行说明"] 针对每个服务。
+了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到 link:release-notes-index.html["完整的发行说明"] 针对每个服务。
 
 
 
@@ -30,6 +30,46 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2023年3月5日
+
+
+
+==== 连接器3.9.27
+
+* 现在、您可以在BlueXP控制台中进行搜索。此时、您可以使用搜索功能来查找BlueXP服务和功能。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["控制台顶部提供的BlueXP搜索的屏幕截图。"]
+
+* 您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["了解如何管理支持案例"]。
+
+* 现在、运行Red Hat Enterprise Linux 8.7的主机支持Connector。
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["查看 Connector 的系统要求"]。
+
+* 现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。此类部署不支持任何其他BlueXP服务、但Digital Wallet除外。
++
+云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
+
++
+要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["开始使用Cloud Volumes ONTAP"^]
+
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
 
 
 
@@ -93,24 +133,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 
 
-=== 2022年12月4日
-
-
-
-==== 连接器3.9.24
-
-* 我们已将BlueXP控制台的URL更新为 https://console.bluexp.netapp.com[]
-* 现在、Google Cloud以色列区域支持Connector。
-* 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
-+
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["了解Cloud Volumes ONTAP 增强功能"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["了解ONTAP 内部集群增强功能"^]
-
-
-
-
-
-
 == Azure NetApp Files
 
 
@@ -165,6 +187,12 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
+=== 2023年3月5日
+
+文档中对用户界面进行了改进、并更新了屏幕截图。
+
+
+
 === 2023年1月1日
 
 现在、您可以选择启用 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["自动容量管理"^] 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。
@@ -174,19 +202,6 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 === 2022年9月18日
 
 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-storage-capacity-and-IOPS["更改存储容量和IOPS"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
-
-
-
-=== 2022年7月31日
-
-* 如果您之前已向Cloud Manager提供AWS凭据、则新的*我的商机*功能可以自动发现并建议使用Cloud Manager添加和管理ONTAP 文件系统的FSX。您还可以通过*我的商机*选项卡查看可用的数据服务。
-+
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["利用"我的商机"发现适用于ONTAP 的FSX"^]
-
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#change-throughput-capacity["更改吞吐量容量"^] 创建适用于ONTAP 的FSX工作环境后的任何时间。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["复制和同步数据"^] 使用FSX for ONTAP 作为源的内部和其他FSX for ONTAP 系统。
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["使用Cloud Manager在适用于ONTAP 的FSX中创建iSCSI卷"^]。
-
 
 
 
@@ -328,7 +343,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-
 
 * SAP HANA数据库
 +
-** 支持基于策略备份和还原驻留在Azure NetApp Files (ANF)上的SAP HANA数据库
+** 支持基于策略备份和还原驻留在Azure NetApp Files 上的SAP HANA数据库
 ** 支持自定义策略
 
 
@@ -764,6 +779,16 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2023年3月5日
+
+
+
+==== 现在、您可以为卷生成分层报告
+
+您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。Cloud Tiering会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["请参见如何下载分层报告"]。
+
+
+
 === 2022年12月6日
 
 
@@ -793,30 +818,6 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 ==== 拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层
 
 如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。
-
-
-
-=== 2022年9月19日
-
-
-
-==== 通过分层向导、您可以在分层到S3存储时配置AWS PrivateLink
-
-在先前版本中、通过VPC端点将集群连接到S3存储分段的安全方式非常耗时。现在、您可以按照前提步骤进行操作 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["使用VPC端点接口为系统配置专用连接"]、然后、您可以在"网络连接"页面的分层设置向导期间选择PrivateLink。
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["查看将非活动数据分层到Amazon S3的要求和步骤"]。
-
-
-
-==== 拖放以启用Amazon S3的Cloud Tiering
-
-如果Amazon S3分层目标作为工作环境存在于Canvas上、您可以将内部ONTAP 工作环境拖动到目标上以启动分层设置向导。
-
-
-
-==== 选择删除MetroCluster 配置中的镜像对象存储时的分层行为
-
-从MetroCluster 配置中删除镜像对象存储时、系统会提示您是否也要删除主对象存储。您可以选择保持主对象存储附加到聚合、也可以选择将其删除。
 
 
 
@@ -1041,6 +1042,14 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 
 == Kubernetes
+
+
+
+=== 2023年3月5日
+
+* BlueXP中的Kubernetes现在支持Astra Trident 23.01。
+* 文档中对用户界面进行了改进、并更新了屏幕截图。
+
 
 
 
