@@ -288,14 +288,6 @@
   <block id="2750ec6dc42d79b24b9902d41543b6fd" category="paragraph"><block ref="0b2b94d5062b1eb6747bf9cb58e01b77" category="inline-link-rx"></block>。</block>
   <block id="d1c49eec91984b5c0c7c8ff6998bb65d" category="section-title">能够将数据从备份还原到Cloud Volumes ONTAP 系统上的特定聚合</block>
   <block id="e674451efff1f119cf056a3e852d4483" category="paragraph">在早期版本中、只有在将数据还原到内部ONTAP 系统时、才能选择聚合。现在、在将数据还原到Cloud Volumes ONTAP 系统时、此功能有效。</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">2022年12月11日(1.18版)</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">内部安装增强功能</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">内部Data sense安装增加了以下增强功能：</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">现在、在内部主机上开始安装之前、系统会检查一些其他前提条件。这有助于确保主机系统已完全准备好安装Data sense软件：</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">测试所有所需文件夹上的相关权限</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">现在、在配置页面中、工作环境部分将显示_Working Environment ID_和_扫描 程序组_名称。如果您计划使用多个Data sense主机来提供额外的处理能力来扫描数据源、则需要了解工作环境ID。</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">了解有关在一台主机服务器和多台主机上安装Data sense的更多信息</block>
-  <block id="7d11de825f5fb48a0194c3826f7e2322" category="paragraph"><block ref="6aec5abc0a91e6bbae2064cb8f81d2dd" category="inline-link-rx"></block>。</block>
   <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022年12月11日</block>
   <block id="9709c6ba9ff4b10cb5ec3f4f956d3226" category="section-title">按名称筛选目录</block>
   <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">现在、可以为同步关系使用一个新的*排除目录名称*设置。用户最多可以从其同步中筛选出15个目录名称。默认情况下、不包括.copy-ofovert、.snapshot、~snapshot目录。</block>
@@ -308,13 +300,6 @@
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">了解有关支持的同步关系的更多信息</block>
   <block id="623dda645e4d20988b8c1d61423da14e" category="paragraph"><block ref="f9c4f71cab183e7ba62e68df19c3dfe9" category="inline-link-rx"></block>。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">了解此版本 Cloud Volumes ONTAP 中的新增功能</block>
-  <block id="fe9c9f72fd091b4ebc4d0686a2dccdc6" category="section-title">2022年12月11日</block>
-  <block id="ff1a552e36acc064f2353128cc8cae7e" category="section-title">已向"勒索软件保护分数"面板添加新的建议操作</block>
-  <block id="3a3306a02dc91a314c088887bca99ae6" category="paragraph">现在、针对存储系统上发现的以下勒索软件保护问题、我们会显示两个新的建议操作：</block>
-  <block id="ac70ac84684b450ac1ec25740da08f6f" category="list-text">_reduce permissions for X sensitive items with broad_-已在数据源中找到具有打开权限的敏感文件</block>
-  <block id="e536c956b5336f840fdf1f34295e7626" category="list-text">_Patch X open CVE across Y data sources_—在您的ONTAP 系统上发现未修补的CVE</block>
-  <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">请参见所有建议操作的列表</block>
-  <block id="2887af3281ffddb6374ef4f66b57c7d5" category="paragraph">您可以在UI中选择这些操作、然后按照工作流解决底层问题。<block ref="ed823e4f932da1d207b551c7d7ca0450" category="inline-link-rx"></block>。</block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">2023年1月1日</block>
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">连接器3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。</block>
@@ -348,8 +333,6 @@
   <block id="e3a84cf85e2ede3f349ff73485707901" category="section-title">支持在UI中选择Google Archival存储类</block>
   <block id="862c6bfd630667f5b535d9741b4f08fc" category="paragraph">备份文件最初是在Google标准存储类中创建的。现在、您可以使用Cloud Backup UI在一定天数后将旧备份分层到Google Archive存储、以便进一步优化成本。</block>
   <block id="f337eb9be5f215d07b89436adc58d486" category="paragraph">Cloud Backup现在支持备份和还原FlexGroup 卷。使用ONTAP 9.12.1或更高版本时、您可以将FlexGroup 卷备份到公有 和私有云存储。如果您的工作环境包含FlexVol 和FlexGroup 卷、则在更新ONTAP 软件后、您可以备份这些系统上的任何FlexGroup 卷。</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">测试上是否有足够的空间<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>，<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>，和<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">此外、在配置页面中、还会显示一个新部分、其中显示了您设置的扫描程序组以及每个组中的扫描程序节点。</block>
   <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023年1月3日</block>
   <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">在UI上显示数据代理本地配置</block>
   <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">现在有一个*显示配置*选项、可用于使用户在用户界面上查看每个数据代理的本地配置。</block>
@@ -420,7 +403,6 @@
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">能够将基于策略的通知电子邮件发送到任何电子邮件地址</block>
   <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">在早期版本的Cloud Data sense中、当某些关键策略返回结果时、您可以向帐户中的BlueXP用户发送电子邮件警报。通过此功能、您可以在未联机时收到通知以保护数据。现在、您还可以将策略中的电子邮件警报发送给不在您的BlueXP帐户中的任何其他用户、最多20个电子邮件地址。</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">了解有关根据策略结果发送电子邮件警报的更多信息</block>
-  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">现在、您可以添加Data sense将从UI中识别的个人模式</block>
   <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">Data sense能够添加自定义的"个人数据"、Data sense将在未来的扫描中识别此数据一段时间。但是、您需要登录到Data sense Linux主机并使用命令行添加自定义模式。在此版本中、Data sense UI可以使用regex添加个人模式、因此可以轻松地添加和编辑这些自定义模式。</block>
   <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">了解有关从Data sense UI添加自定义模式的更多信息</block>
   <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
@@ -547,4 +529,47 @@
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">请参见如何下载分层报告</block>
   <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。Cloud Tiering会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXP中的Kubernetes现在支持Astra Trident 23.01。</block>
+  <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日(1.21版)</block>
+  <block id="7cc6aa730dc07100bcd50ee1f4fbfd19" category="section-title">可通过Data sense UI添加您自己的自定义类别的新功能</block>
+  <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">预定义的类别</block>
+  <block id="e9b59b0856829e5de68c6c48d7bf751a" category="paragraph">现在、您可以使用Data sense添加自己的自定义类别、以便Data sense可以识别适合这些类别的文件。数据感知具有许多功能<block ref="de03089a629f50d7fb2223d1c9b484a6" category="inline-link-rx"></block>、因此、您可以通过此功能添加自定义类别、以确定您的组织独有的信息在您的数据中的位置。</block>
+  <block id="4aedc0068ab1ebb9a68cd09e40502224" category="paragraph"><block ref="29977fc02ca1e575e657cf5a87ae1883" category="inline-link-rx"></block>。</block>
+  <block id="0cfe3d251c44c584db4827f5eac474f3" category="section-title">现在、您可以从Data sense UI添加自定义关键字</block>
+  <block id="675cae3035897ece265ad5535f76321b" category="paragraph">Data sense能够添加自定义关键字、Data sense会在未来的扫描中识别这些关键字一段时间。但是、您需要登录到Data sense Linux主机并使用命令行界面添加关键字。在此版本中、可以在Data sense UI中添加自定义关键字、从而可以轻松地添加和编辑这些关键字。</block>
+  <block id="3c12577975025d20be661bf1079d0923" category="inline-link">了解有关从Data sense UI添加自定义关键字的更多信息</block>
+  <block id="5e505948799cd73b45f70a049da0e41a" category="paragraph"><block ref="ef53a029e403771b20a22fa95fad2aaa" category="inline-link-rx"></block>。</block>
+  <block id="146d89b210b39f6767f51058456d0756" category="section-title">能够在更改"上次访问时间"时使用数据感知*不*扫描文件</block>
+  <block id="a295dd857506727c4c246759c7a474d3" category="paragraph">默认情况下、如果Data sense没有足够的"写入"权限、则系统不会扫描卷中的文件、因为Data sense无法将"上次访问时间"还原为原始时间戳。但是、如果您不关心上次访问时间是否重置为文件中的原始时间、则可以在配置页面中覆盖此行为、以便Data sense可以扫描卷而不考虑权限。</block>
+  <block id="b6bc23c7fd42c2dda40fd1667ea26c94" category="paragraph">除了此功能之外、还添加了名为"扫描分析事件"的新筛选器、以便您可以查看因Data sense无法还原上次访问时间而未分类的文件、或者即使Data sense无法还原上次访问时间也已分类的文件。</block>
+  <block id="b498fa3614efad3784e7b196a75f0744" category="inline-link">详细了解"上次访问时间戳"以及Data sense所需的权限</block>
+  <block id="fdcb05c5040512d32e3c0eb54cd81fdb" category="paragraph"><block ref="094f0faa5796fc52325373d032f76ea7" category="inline-link-rx"></block>。</block>
+  <block id="7abfe7c481a0b29f8cf39a89e86de868" category="section-title">Data sense可识别三种新类型的个人数据</block>
+  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">Data sense可以识别包含以下类型数据的文件并对其进行分类：</block>
+  <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="list-text">博茨瓦纳身份卡(Omang)编号</block>
+  <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="list-text">博茨瓦纳的护照编号</block>
+  <block id="ff3bab043a00af2e37e7dcaf393aea61" category="list-text">新加坡国家注册身份卡(NRIC)</block>
+  <block id="1e95bdda0b00306da0fc13aa5272c14f" category="paragraph"><block ref="fbd66eb529b6064c128e443473612523" category="inline-link-rx"></block>。</block>
+  <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">更新了目录的功能</block>
+  <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">现在、数据调查报告的"轻型CSV报告"选项包括目录中的信息。</block>
+  <block id="b2755be94249995adeed2a28b31a7393" category="list-text">"上次访问"时间筛选器现在可显示文件和目录的上次访问时间。</block>
+  <block id="013efea19f002683e016d90789038d6e" category="section-title">安装增强功能</block>
+  <block id="7b335a4581e4988d6ea3f8d6f1235a87" category="list-text">Data sense可以安装在运行CentOS Stream 8的Linux主机上。</block>
+  <block id="1a62d65b23b4f298f3e1310266bbfad4" category="list-text">对于无法访问Internet的站点(非公开站点)、Data sense安装程序现在会执行预检查、以确保您的系统和网络要求已满足、以便成功安装。</block>
+  <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">安装审核日志文件现已保存；它们将写入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
+  <block id="9a8e487c18ad9b8cacca43174094061d" category="section-title">现在、您可以从Data sense UI添加个人模式</block>
+  <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">连接器3.9.27版引入了以下更改。</block>
+  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Azure支持16 TiB和32 Tib</block>
+  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">Cloud Volumes ONTAP 现在支持16 TiB和32 TiB磁盘大小、用于在Azure中的受管磁盘上运行的高可用性部署。</block>
+  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Azure中支持的磁盘大小</block>
+  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">了解更多信息<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>。</block>
+  <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">MTEKM许可证</block>
+  <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">现在、运行9.12.1 GA或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。</block>
+  <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。</block>
+  <block id="6b8afb72156ec7e5aff9808d22a9eb10" category="inline-link">了解如何使用NetApp加密解决方案对卷进行加密</block>
+  <block id="bc912dd00b6301509fad22d6a376560d" category="paragraph"><block ref="532112271454bf057b0a2415bb119744" category="inline-link-rx"></block>。</block>
+  <block id="93616689ecb546d3ff1261cf76e33109" category="section-title">支持无Internet环境 </block>
+  <block id="28f5f7b773a8085f5db45145fb774c27" category="paragraph">现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。 </block>
+  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
+  <block id="b20988b483bceb3fb63077025a07d023" category="section-title">新增了一个勒索软件恢复信息板、可帮助您的系统从攻击中恢复</block>
+  <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。此时、您可以通过恢复操作将损坏的卷替换为未受勒索软件影响的Snapshot副本。<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>。</block>
 </blocks>

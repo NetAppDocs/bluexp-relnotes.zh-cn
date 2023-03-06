@@ -424,6 +424,66 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
+=== 2023年3月7日(1.21版)
+
+
+
+==== 可通过Data sense UI添加您自己的自定义类别的新功能
+
+现在、您可以使用Data sense添加自己的自定义类别、以便Data sense可以识别适合这些类别的文件。数据感知具有许多功能 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["预定义的类别"]、因此、您可以通过此功能添加自定义类别、以确定您的组织独有的信息在您的数据中的位置。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["了解更多信息。"^]。
+
+
+
+==== 现在、您可以从Data sense UI添加自定义关键字
+
+Data sense能够添加自定义关键字、Data sense会在未来的扫描中识别这些关键字一段时间。但是、您需要登录到Data sense Linux主机并使用命令行界面添加关键字。在此版本中、可以在Data sense UI中添加自定义关键字、从而可以轻松地添加和编辑这些关键字。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["了解有关从Data sense UI添加自定义关键字的更多信息"^]。
+
+
+
+==== 能够在更改"上次访问时间"时使用数据感知*不*扫描文件
+
+默认情况下、如果Data sense没有足够的"写入"权限、则系统不会扫描卷中的文件、因为Data sense无法将"上次访问时间"还原为原始时间戳。但是、如果您不关心上次访问时间是否重置为文件中的原始时间、则可以在配置页面中覆盖此行为、以便Data sense可以扫描卷而不考虑权限。
+
+除了此功能之外、还添加了名为"扫描分析事件"的新筛选器、以便您可以查看因Data sense无法还原上次访问时间而未分类的文件、或者即使Data sense无法还原上次访问时间也已分类的文件。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["详细了解"上次访问时间戳"以及Data sense所需的权限"]。
+
+
+
+==== Data sense可识别三种新类型的个人数据
+
+Data sense可以识别包含以下类型数据的文件并对其进行分类：
+
+* 博茨瓦纳身份卡(Omang)编号
+* 博茨瓦纳的护照编号
+* 新加坡国家注册身份卡(NRIC)
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看 Data sense 可以在您的数据中识别的所有类型的个人数据"]。
+
+
+
+==== 更新了目录的功能
+
+* 现在、数据调查报告的"轻型CSV报告"选项包括目录中的信息。
+* "上次访问"时间筛选器现在可显示文件和目录的上次访问时间。
+
+
+
+
+==== 安装增强功能
+
+* Data sense可以安装在运行CentOS Stream 8的Linux主机上。
+* 对于无法访问Internet的站点(非公开站点)、Data sense安装程序现在会执行预检查、以确保您的系统和网络要求已满足、以便成功安装。
+* 安装审核日志文件现已保存；它们将写入 `/ops/netapp/install_logs`。
+
+
+
+
 === 2023年2月5日(版本1.20)
 
 
@@ -436,7 +496,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 
 
-==== 现在、您可以添加Data sense将从UI中识别的个人模式
+==== 现在、您可以从Data sense UI添加个人模式
 
 Data sense能够添加自定义的"个人数据"、Data sense将在未来的扫描中识别此数据一段时间。但是、您需要登录到Data sense Linux主机并使用命令行添加自定义模式。在此版本中、Data sense UI可以使用regex添加个人模式、因此可以轻松地添加和编辑这些自定义模式。
 
@@ -488,28 +548,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.htm
 ==== 数据感知可以标识日语个人编号
 
 数据感知功能可以识别包含日语个人编号(也称为"我的编号")的文件并对其进行分类。这包括"个人"和"公司我的号码"。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看 Data sense 可以在您的数据中识别的所有类型的个人数据"]。
-
-
-
-=== 2022年12月11日(1.18版)
-
-
-
-==== 内部安装增强功能
-
-内部Data sense安装增加了以下增强功能：
-
-* 现在、在内部主机上开始安装之前、系统会检查一些其他前提条件。这有助于确保主机系统已完全准备好安装Data sense软件：
-+
-** 测试上是否有足够的空间 `/var/lib/docker`， `/tmp`，和 `/opt`
-** 测试所有所需文件夹上的相关权限
-
-
-* 现在、在配置页面中、工作环境部分将显示_Working Environment ID_和_扫描 程序组_名称。如果您计划使用多个Data sense主机来提供额外的处理能力来扫描数据源、则需要了解工作环境ID。
-* 此外、在配置页面中、还会显示一个新部分、其中显示了您设置的扫描程序组以及每个组中的扫描程序节点。
-
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["了解有关在一台主机服务器和多台主机上安装Data sense的更多信息"]。
 
 
 
@@ -822,6 +860,41 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 2023年3月5日
+
+连接器3.9.27版引入了以下更改。
+
+
+
+==== Azure支持16 TiB和32 Tib
+
+Cloud Volumes ONTAP 现在支持16 TiB和32 TiB磁盘大小、用于在Azure中的受管磁盘上运行的高可用性部署。
+
+了解更多信息 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Azure中支持的磁盘大小"^]。
+
+
+
+==== MTEKM许可证
+
+现在、运行9.12.1 GA或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。
+
+使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["了解如何使用NetApp加密解决方案对卷进行加密"^]。
+
+
+
+==== 支持无Internet环境 
+
+现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。 
+
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
+
 
 
 
@@ -1164,6 +1237,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 
 
+=== 2023年3月7日
+
+
+
+==== 新增了一个勒索软件恢复信息板、可帮助您的系统从攻击中恢复
+
+勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。此时、您可以通过恢复操作将损坏的卷替换为未受勒索软件影响的Snapshot副本。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-ransomware-recovery.html["了解更多信息。"]。
+
+
+
 === 2023年2月5日
 
 
@@ -1191,22 +1274,6 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 ==== 添加了通过电子邮件和通知中心接收勒索软件保护警报的支持
 
 勒索软件保护已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示勒索软件保护通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。此电子邮件可发送给需要了解勒索软件警报的任何收件人。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["了解如何操作"]。
-
-
-
-=== 2022年12月11日
-
-
-
-==== 已向"勒索软件保护分数"面板添加新的建议操作
-
-现在、针对存储系统上发现的以下勒索软件保护问题、我们会显示两个新的建议操作：
-
-* _reduce permissions for X sensitive items with broad_-已在数据源中找到具有打开权限的敏感文件
-* _Patch X open CVE across Y data sources_—在您的ONTAP 系统上发现未修补的CVE
-
-
-您可以在UI中选择这些操作、然后按照工作流解决底层问题。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["请参见所有建议操作的列表"]。
 
 
 
