@@ -226,8 +226,6 @@
   <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">Cloud Manager已于2022年11月1日重命名为BlueXP。<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
-  <block id="89d500a3ace67f6d47edb61231336589" category="section-title">Cloud Backup for Applications的增强功能</block>
-  <block id="e75ce95021f32383e6a928c1b242bc34" category="section-title">适用于虚拟机的Cloud Backup增强功能</block>
   <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
   <block id="5c7d084f950ad8af7d03c171b38bbaba" category="section-title">从Microsoft Azure持续同步</block>
   <block id="e4c664e7de05c9b6f33c4dc4c5e8c120" category="paragraph">现在、支持使用Azure数据代理从源Azure存储分段到云存储的持续同步设置。</block>
@@ -282,12 +280,6 @@
   <block id="aa60f08e9c5a748d9b57c0e7689a43f5" category="paragraph"><block ref="aa60f08e9c5a748d9b57c0e7689a43f5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP不支持创建FlexGroup 卷。您需要继续使用System Manager或命令行界面创建FlexGroup 卷。</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
-  <block id="738d31d37e16df450b2af9540e98c7d4" category="paragraph">目前、使用ONTAP 9.12.1或更高版本的内部ONTAP 集群支持此功能。目前、此功能不适用于Cloud Volumes ONTAP 系统。</block>
-  <block id="4547c4a9db890b3449aca4e706555007" category="section-title">支持FlexGroup 卷</block>
-  <block id="cce3f2ac0edcb49693caf11399223d89" category="inline-link">请参见支持的卷类型的完整列表</block>
-  <block id="2750ec6dc42d79b24b9902d41543b6fd" category="paragraph"><block ref="0b2b94d5062b1eb6747bf9cb58e01b77" category="inline-link-rx"></block>。</block>
-  <block id="d1c49eec91984b5c0c7c8ff6998bb65d" category="section-title">能够将数据从备份还原到Cloud Volumes ONTAP 系统上的特定聚合</block>
-  <block id="e674451efff1f119cf056a3e852d4483" category="paragraph">在早期版本中、只有在将数据还原到内部ONTAP 系统时、才能选择聚合。现在、在将数据还原到Cloud Volumes ONTAP 系统时、此功能有效。</block>
   <block id="5912630061434e78e733b8d5e5e3dc88" category="section-title">2022年12月11日</block>
   <block id="9709c6ba9ff4b10cb5ec3f4f956d3226" category="section-title">按名称筛选目录</block>
   <block id="43b44f78e255d05aac846a6181095cd6" category="paragraph">现在、可以为同步关系使用一个新的*排除目录名称*设置。用户最多可以从其同步中筛选出15个目录名称。默认情况下、不包括.copy-ofovert、.snapshot、~snapshot目录。</block>
@@ -304,22 +296,6 @@
   <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">连接器3.9.25</block>
   <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">此版本的连接器包含Cloud Volumes ONTAP 增强功能和错误修复。</block>
   <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
-  <block id="e29eef6ae64d545134f2b42984845a94" category="section-title">2022年12月19日</block>
-  <block id="0a286ad90f3a25f45e443367036a8789" category="list-text">SAP HANA数据库</block>
-  <block id="d5a365014bbbc5172b423043fb2a2501" category="list-text">支持自定义策略</block>
-  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracle数据库</block>
-  <block id="aa6dc7e308fa4a4875c447c8e7fa4a19" category="list-text">添加主机并自动部署插件</block>
-  <block id="defa9120f4acf33ddb7a4e571c70938b" category="list-text">支持基于策略备份、还原和克隆Cloud Volumes ONTAP 上的Oracle数据库</block>
-  <block id="2c35eeb424b768876f1774567e7bf2f5" category="list-text">支持基于策略备份和还原驻留在Amazon FSX for NetApp ONTAP 上的Oracle数据库</block>
-  <block id="88094c6c8ad963e6131e3c23988917d4" category="list-text">支持使用连接和复制方法还原Oracle数据库</block>
-  <block id="7d6f6d1efeae8c573a74a091cc119cb9" category="list-text">支持Oracle 21c</block>
-  <block id="35d9afe1e1e85a29b0de625fd2a9a44a" category="list-text">支持克隆云本机Oracle数据库</block>
-  <block id="137f19e6e2dc1219f33553b812627bc2" category="list-text">虚拟机</block>
-  <block id="c2452add37f94598e06d237edc68078b" category="list-text">从内部二级存储备份虚拟机</block>
-  <block id="8e21c62b69b7c01b40ec93ceb9c4b5cd" category="list-text">支持Google Cloud Platform (GCP)备份一个或多个数据存储库</block>
-  <block id="6480beff3c438303fc8c6d8b4009f381" category="list-text">支持低成本云存储、例如Glacier、Deep Glacier和Azure Archive</block>
-  <block id="73358bf2a9d2d2c32dbbab5b76681d7f" category="section-title">所需的Connector出站Internet访问端点更改</block>
-  <block id="06c42f4f82e29b4e90570ef70b538ed4" category="paragraph">由于Cloud Backup发生了更改、您需要更改以下连接器端点才能成功执行Cloud Backup操作：</block>
   <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">旧端点</block>
   <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">新端点</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com</block>
@@ -330,9 +306,6 @@
   <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure 酒店</block>
   <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">请查看的完整端点列表<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>，<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>或<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> 云环境。</block>
-  <block id="e3a84cf85e2ede3f349ff73485707901" category="section-title">支持在UI中选择Google Archival存储类</block>
-  <block id="862c6bfd630667f5b535d9741b4f08fc" category="paragraph">备份文件最初是在Google标准存储类中创建的。现在、您可以使用Cloud Backup UI在一定天数后将旧备份分层到Google Archive存储、以便进一步优化成本。</block>
-  <block id="f337eb9be5f215d07b89436adc58d486" category="paragraph">Cloud Backup现在支持备份和还原FlexGroup 卷。使用ONTAP 9.12.1或更高版本时、您可以将FlexGroup 卷备份到公有 和私有云存储。如果您的工作环境包含FlexVol 和FlexGroup 卷、则在更新ONTAP 软件后、您可以备份这些系统上的任何FlexGroup 卷。</block>
   <block id="bfc6fe3f8d2577420634f29daac2cfe3" category="section-title">2023年1月3日</block>
   <block id="2ce75b34222d130ea74078b75eb79cc0" category="section-title">在UI上显示数据代理本地配置</block>
   <block id="88dcb8d0dd987f4f5606df5981050a8d" category="paragraph">现在有一个*显示配置*选项、可用于使用户在用户界面上查看每个数据代理的本地配置。</block>
@@ -354,10 +327,6 @@
   <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">新的Cloud Volumes ONTAP 部署不再包括多租户加密密钥管理(MTEKM)许可证。</block>
   <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Cloud Volumes ONTAP 的默认配置</block>
   <block id="a8e8ca53febeb9bd58edbc0647eb9a34" category="paragraph">有关随Cloud Volumes ONTAP 自动安装的ONTAP 功能许可证的详细信息、请参见 <block ref="79578e78303d1a240e8fa9c178a9de63" category="inline-link-macro-rx"></block>。</block>
-  <block id="97145bbcb02af5e728740b1d40bd2046" category="section-title">2022年12月15日</block>
-  <block id="bf748f930fa11e46773ff6f7b815e480" category="section-title">Cloud Volumes ONTAP 9.12.0</block>
-  <block id="80df4292f7c986dbd0920bb576487060" category="paragraph">现在、BlueXP可以在AWS和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.0。</block>
-  <block id="64885a300b31929a1b0ea6b5a20128d3" category="paragraph"><block ref="065aa84d514cfdc6fc00d8cb3eaf6ec4" category="inline-link-rx"></block>。</block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">保存ONTAP 凭据</block>
   <block id="6a28e623eb98d9eb0799ab2c472620f3" category="paragraph">当您打开在未使用连接器的情况下直接发现的内部ONTAP 工作环境时、现在可以选择保存ONTAP 集群凭据、这样您就无需在每次打开工作环境时都输入这些凭据。</block>
   <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">了解有关此选项的更多信息。</block>
@@ -524,7 +493,6 @@
   <block id="37e16775c1bede9551f227ccaca87974" category="paragraph"><block ref="37e16775c1bede9551f227ccaca87974" category="inline-link-rx"></block></block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">文档中对用户界面进行了改进、并更新了屏幕截图。</block>
-  <block id="fcdf1a1b46f3b7e8ad6ff82010438a90" category="list-text">支持基于策略备份和还原驻留在Azure NetApp Files 上的SAP HANA数据库</block>
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">现在、您可以为卷生成分层报告</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">请参见如何下载分层报告</block>
   <block id="10607665fc9de51ae2bf29927d3673b9" category="paragraph">您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。Cloud Tiering会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
@@ -577,4 +545,24 @@
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">能够从BlueXP添加新存储分段</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">了解如何添加新的Amazon S3存储分段</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
+  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">现在、您可以通过Connector从BlueXP添加和管理Amazon S3存储分段。</block>
+  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">了解如何从BlueXP在AWS帐户中添加新的Amazon S3存储分段</block>
+  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>。</block>
+  <block id="01e76ab0dacc58799dc14adbdc705ac7" category="section-title">2023年3月9日</block>
+  <block id="35203f05692d5cc102a5525bf4de9733" category="section-title">文件夹级别的还原操作现在包括所有子文件夹和文件</block>
+  <block id="5463242c7cc34f92b5dbbf1ab6d87188" category="paragraph">过去、在还原文件夹时、只会还原该文件夹中的文件、而不会还原子文件夹或子文件夹中的文件。现在、如果您使用的是ONTAP 9.13.0或更高版本、则会还原选定文件夹中的所有子文件夹和文件。如果顶级文件夹中有多个嵌套文件夹、则可以节省大量时间和资金。</block>
+  <block id="bbe776d643f3b0568f3c2fa216a50124" category="section-title">能够在非公开站点中备份Cloud Volumes ONTAP 系统中的数据</block>
+  <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">将 Cloud Volumes ONTAP 数据备份到 Amazon S3</block>
+  <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">将Cloud Volumes ONTAP 数据备份到Azure Blob</block>
+  <block id="aef1b3252b7a5b85dab7066cccc19b52" category="paragraph">现在、您可以将数据从AWS和Azure商业区域中安装的Cloud Volumes ONTAP 系统备份到Amazon S3或Azure Blob。这要求您在商业区域的Linux主机上安装连接器、并在该主机上部署Cloud Volumes ONTAP 系统。请参见 <block ref="31e49e13e812c331f506a2a8e6b7ad22" category="inline-link-macro-rx"></block> 和 <block ref="ab5c78f08c8780b598ee1d4de19230ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="463ed6b78b2c95e39ecc10ee3195e921" category="section-title">作业监控器提供了高级筛选功能、可用于查找特定的备份或还原作业</block>
+  <block id="1cdf820a77c583c660d65df7b1ca03b8" category="inline-link">请参见如何使用高级筛选器</block>
+  <block id="aa3492539222da5bc85fd5614f489f71" category="paragraph">作业监控页面添加了高级筛选功能、因此您可以按时间、工作负载(卷、应用程序、虚拟机或Kubernetes)搜索备份和还原作业。 作业类型、状态、工作环境和Storage VM。您还可以输入自由文本来搜索任何资源、例如"application_3"。 <block ref="f726054cf0d935cd51c2a5edb3b3fd0c" category="inline-link-rx"></block>。</block>
+  <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">用于AWS数据代理的EBS加密</block>
+  <block id="8663378959352a24f27c3d250a37cf3d" category="paragraph">现在、您可以使用帐户中的KMS密钥对AWS数据代理卷进行加密。</block>
+  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">了解有关在AWS中创建数据代理的更多信息</block>
+  <block id="d44d7e95c5eca613daa8fef0c12530ae" category="paragraph"><block ref="0c0a23f9985774f63451c32bdf4cbdeb" category="inline-link-rx"></block>。</block>
+  <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
+  <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。</block>
+  <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>。</block>
 </blocks>
