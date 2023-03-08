@@ -572,4 +572,9 @@
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">新增了一个勒索软件恢复信息板、可帮助您的系统从攻击中恢复</block>
   <block id="aa31096585d7d55e20d8a7b196ea1a2a" category="paragraph">勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。此时、您可以通过恢复操作将损坏的卷替换为未受勒索软件影响的Snapshot副本。<block ref="736cade400f507ba8b7ce738b709d6e6" category="inline-link-rx"></block>。</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3存储</block>
+  <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
+  <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">能够从BlueXP添加新存储分段</block>
+  <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">了解如何添加新的Amazon S3存储分段</block>
+  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
 </blocks>
