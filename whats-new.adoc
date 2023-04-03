@@ -229,8 +229,8 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 === 2023年4月2日
 
-* 9a2a26c33c1a0f6b14b7bb3a214dbaf0
-* 9af9b754c1d16f271c1e6f4b1b2c4f4d
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["在适用于ONTAP 的FSX上创建FlexGroup"^] 卷、以便在集群中分布卷数据。
+* IOPS限制会增加、以允许手动或自动配置、最高可达160、000次。
 
 
 
@@ -550,29 +550,29 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.htm
 
 
 
-=== c7326baf2ea51b61fafa4f4680d916c0
+=== 2023年4月2日
 
 
 
-==== 9c305cf5f9f8051acc945eda0fc8a1be
+==== 对Azure Data Lake Storage Gen2关系的其他支持
 
-61babc330ca2ea0af752965dd3965d41
+现在、您可以使用Azure Data Lake Storage Gen2作为源和目标创建同步关系、其中包括以下内容：
 
 * Azure NetApp Files
 * 适用于 ONTAP 的 Amazon FSX
 * Cloud Volumes ONTAP
-* a37b0a91d7c4d8ac6ce924a7f8e1ce5a
+* 内部ONTAP
 
 
 https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["了解有关支持的同步关系的更多信息"]。
 
 
 
-==== ad5a82acd30f0d971a29fdb4632bd7d4
+==== 按完整路径筛选目录
 
-b7395f4da221ab7779cce11224436fb3
+除了按名称筛选目录之外、您现在还可以按目录的完整路径进行筛选。
 
-c73e2e476b1a94d1d032f8e0828dcd20
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关排除目录设置的更多信息"]。
 
 
 
@@ -904,42 +904,42 @@ d4a0c23b533adffe42d63c23035edd5c
 
 === 2023年4月3日
 
-2dfd965acb2426b281b13a70df99c06b
+连接器3.9.28版引入了以下更改。
 
 
 
-==== 671e2a59b2bfa852def9660bf14badde
+==== 数字电子钱包增强功能
 
-d3ab2a9ddd985032aa120324e6da3710
+现在、"数字电子钱包"将显示您随Marketplace Private优惠购买的许可容量。
 
-41ed2f596edd466ead9a03a4cdcb3b22
-
-
-
-==== 6ee7d527518e93562cc9e691d20fb1d5
-
-ac14eb6382fa5b619966ba72622ecd3f
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
 
 
 
-==== 231ea98554191e640c216736796158d5
+==== 支持在创建卷期间添加注释
 
-1cc55fcb982bea0e8f241a1271bda985
-
-23fbfdbb598644432ab089fa6e533405
+在此版本中、您可以在使用API创建Cloud Volumes ONTAP FlexGroup 卷或FlexVol 卷时进行注释。
 
 
 
-==== 6fff4762fc0aeb74dd0a918683c157ae
+==== 为Cloud Volumes ONTAP 概述、卷和聚合页面重新设计了BlueXP用户界面
 
-8d40e6e8379382ee39fba2c4a1cb5629
+现在、BlueXP对Cloud Volumes ONTAP 概述、卷和聚合页面的用户界面进行了重新设计。基于区块的设计可在每个区块中提供更全面的信息、从而提供更好的用户体验。
+
+image:screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。"]
 
 
-NOTE: 905d8520d584560b3995118b2a01f6c2
 
-ce46ac36501bd1de8616d715ef7ee1c2
+==== 可通过Cloud Volumes ONTAP 查看FlexGroup 卷
 
-acef74218ad5e199582b5c76062e5559
+现在、可以通过BlueXP中重新设计的卷磁贴查看直接通过CLI或System Manager创建的FlexGroup 卷。与为FlexVol 卷提供的信息相同、BlueXP可通过专用的"卷"图块提供有关已创建FlexGroup 卷的详细信息。
+
+
+NOTE: 目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。
+
+image:screenshot-show-flexgroup-volume.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["了解有关查看已创建的FlexGroup 卷的更多信息。"^]
 
 
 
@@ -1165,7 +1165,7 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 === 2023年4月2日
 
-* ffb0a040d2831585e0b568e5514270de
+* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-manage-trident.html["卸载Astra Trident"] 使用Trident操作员或BlueXP安装的。
 * 文档中对用户界面进行了改进、并更新了屏幕截图。
 
 
