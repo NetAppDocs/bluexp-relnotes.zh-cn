@@ -65,7 +65,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的�
 转到*设置>凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。
 
 +
-551a80734187b23f5368b6a5609f3de3
+link:task-manage-user-credentials.html["了解如何管理用户凭据"]。
 
 * 现在、您可以在创建支持案例或更新现有支持案例的案例备注时上传附件。
 +
@@ -850,6 +850,22 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2023年4月3日
+
+
+
+==== 2e79231a13ecf62585403e20da2dea4a
+
+d4a0c23b533adffe42d63c23035edd5c
+
+
+
+==== 66a0b4752150538292b81c073ca0b83b
+
+10d9a166ad36cdda1e0585914ac18d5f
+
+
+
 === 2023年3月5日
 
 
@@ -879,16 +895,6 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 | https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
 |===
 请查看的完整端点列表 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
-
-
-
-=== 2022年11月6日
-
-
-
-==== 拖放以启用对Azure Blob、Google Cloud Storage和StorageGRID 的云分层
-
-如果Azure Blob、Google Cloud Storage或StorageGRID 分层目标作为工作环境存在于Canvas上、则可以将本地ONTAP 工作环境拖动到目标上以启动分层设置向导。
 
 
 
