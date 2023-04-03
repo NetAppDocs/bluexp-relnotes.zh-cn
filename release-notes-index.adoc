@@ -47,7 +47,9 @@ permalink: release-notes-index.html
 * https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud Sync"^]
 * https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["云分层"^]
 * https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["计算"^]
+* https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["经济效率"^]
 * https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["全局文件缓存"^]
+* https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["运营故障恢复能力"^]
 * https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["勒索软件保护"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replication"^]
 
