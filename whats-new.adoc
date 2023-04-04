@@ -33,6 +33,26 @@ Cloud Manager已于2022年11月1日重命名为BlueXP。 https://docs.netapp.com
 
 
 
+=== 2023年4月4日
+
+
+
+==== 部署模式
+
+借助BlueXP _deployment modes_、您可以根据业务和安全要求使用BlueXP。您可以选择三种模式：
+
+* 标准模式
+* 受限模式
+* 私有模式
+
+
+link:concept-modes.html["详细了解这些部署模式"]。
+
+
+NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可以在创建帐户时启用受限模式。稍后无法启用或禁用它。
+
+
+
 === 2023年4月3日
 
 
@@ -65,7 +85,7 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的�
 转到*设置>凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。
 
 +
-link:task-manage-user-credentials.html["了解如何管理用户凭据"]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["了解如何管理用户凭据"]。
 
 * 现在、您可以在创建支持案例或更新现有支持案例的案例备注时上传附件。
 +
@@ -120,54 +140,6 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["了解�
 * 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["了解Cloud Volumes ONTAP 增强功能"^]
-
-
-
-
-
-=== 2023年2月5日
-
-
-
-==== 连接器3.9.26
-
-* 现在、在*登录*页面上、系统会提示您输入与您的登录关联的电子邮件地址。单击*下一步*后、BlueXP将提示您使用与您的登录关联的身份验证方法进行身份验证：
-+
-** NetApp云凭据的密码
-** 联合身份凭据
-** 您的NetApp 支持站点 凭据
-
-
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["BlueXP登录页面的屏幕截图、系统会提示您输入电子邮件地址。"]
-
-* 如果您是BlueXP的新用户、并且已有NetApp 支持站点 (NSS)凭据、则可以跳过注册页面并直接在登录页面中输入您的电子邮件地址。BlueXP将在此首次登录过程中为您注册。
-* 从云提供商的市场订阅BlueXP后、您可以选择将一个帐户的现有订阅替换为新订阅。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["显示BlueXP帐户订阅分配的屏幕截图。"]
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["了解如何关联AWS订阅"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["了解如何关联Azure订阅"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["了解如何关联Google Cloud订阅"]
-
-
-* 如果您的Connector已关闭14天或更长时间、BlueXP将立即通知您。
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["了解BlueXP通知"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["了解连接器为何应保持运行"]
-
-
-* 我们更新了Google Cloud的连接器策略、其中包括在Cloud Volumes ONTAP HA对上创建和管理Storage VM所需的权限：
-+
-compute.instances.updateNetworkInterface
-
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["查看Connector的Google Cloud权限"]。
-
-* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["了解Cloud Volumes ONTAP 增强功能"^]
 
 
 
@@ -307,6 +279,37 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 
 
+=== 2023年4月4日
+
+
+
+==== 能够在"受限"模式下将数据从Cloud Volumes ONTAP 系统备份到云
+
+现在、您可以在"受限"模式下备份AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统中的数据。这要求您首先在"受限"商业区域安装Connector。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
+
+
+
+==== 可以使用API将内部ONTAP 卷备份到ONTAP S3
+
+f25c47eb7d9f3c638d89723bee6d2360
+
+
+
+==== 可以将Azure存储帐户的分区冗余方面从LRS更改为ZRS
+
+默认情况下、在从Cloud Volumes ONTAP 系统创建到Azure存储的备份时、Cloud Backup会为Blob容器配置本地冗余(LRS)以实现成本优化。如果要在不同分区之间复制数据、可以将此设置更改为区域冗余(ZRS)。请参见的Microsoft说明 https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["更改存储帐户的复制方式"^]。
+
+
+
+==== 作业监控的增强功能
+
+* 对于运行ONTAP 9.13.1或更高版本的内部ONTAP 系统、用户启动的备份和还原操作以及系统启动的作业(例如持续备份操作)现在均可在*作业监控*选项卡中找到。早期的ONTAP 版本将仅显示用户启动的作业。
+* 除了可以下载CSV文件以报告所有作业之外、现在您还可以下载单个作业的JSON文件并查看其详细信息。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["了解更多信息。"]。
+* 添加了两个新的备份作业警报："Scheduled job failure"和"Restore job completes but with warnings"。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["查看Cloud Backup可以发送的所有警报"]。
+
+
+
+
 === 2023年3月9日
 
 
@@ -319,7 +322,7 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 能够在非公开站点中备份Cloud Volumes ONTAP 系统中的数据
 
-现在、您可以将数据从AWS和Azure商业区域中安装的Cloud Volumes ONTAP 系统备份到Amazon S3或Azure Blob。这要求您在商业区域的Linux主机上安装连接器、并在该主机上部署Cloud Volumes ONTAP 系统。请参见 link:task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 link:task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
+现在、您可以将数据从AWS和Azure商业区域中安装的Cloud Volumes ONTAP 系统备份到Amazon S3或Azure Blob。这要求您在商业区域的Linux主机上安装连接器、并在该主机上部署Cloud Volumes ONTAP 系统。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
 
 
 
@@ -377,45 +380,29 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-=== 2023年1月9日
-
-
-
-==== 能够将旧备份文件从StorageGRID 系统移动到AWS S3归档存储
-
-现在、您可以将旧备份文件从StorageGRID 系统分层到AWS S3中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。您可以选择将备份分层到AWS S3 Glacier或S3 Glacier深度归档存储。
-
-如果您的内部集群使用的是ONTAP 9.12.1或更高版本、而StorageGRID 系统使用的是11.3或更高版本、则可以使用此功能。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["单击此处了解更多信息"]。
-
-
-
-==== 可以在Google Cloud上为数据加密选择您自己由客户管理的密钥
-
-将数据从ONTAP 系统备份到Google云存储时、现在您可以在激活向导中选择自己的客户管理的数据加密密钥、而不是使用默认的Google管理的加密密钥。只需先在Google中设置客户管理的加密密钥、然后在激活Cloud Backup时输入详细信息。
-
-
-
-==== 服务帐户不再需要"存储管理员"角色来在Google Cloud Storage中创建备份
-
-在早期版本中、支持Cloud Backup访问Google Cloud Storage存储分段的服务帐户需要"存储管理员"角色。现在、您可以创建一个自定义角色、并为该服务帐户分配一组经过精简的权限。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["请参见如何准备用于备份的Google Cloud存储"]。
-
-
-
-==== 增加了对在无法访问Internet的站点中使用搜索和还原还原还原数据的支持
-
-如果您要将数据从内部ONTAP 集群备份到无法访问Internet的站点(也称为非公开站点或脱机站点)中的StorageGRID 、则现在可以根据需要使用搜索和还原选项还原数据。此功能要求在脱机站点中部署BlueXP Connector (3.9.25或更高版本)。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["请参见如何使用搜索和放大器还原ONTAP 数据"]。https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["请参见如何在脱机站点中安装Connector"]。
-
-
-
-==== 能够以.csv报告的形式下载作业监控结果页面
-
-筛选"作业监控"页面以显示您感兴趣的作业和操作后、现在可以生成并下载该数据的.csv文件。然后、您可以分析这些信息、或者将报告发送给组织中的其他人员。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["请参见如何生成作业监控报告"]。
-
-
-
 == 云数据感知
+
+
+
+=== 2023年4月3日(1.22版)
+
+
+
+==== 新的数据发现评估报告
+
+数据发现评估报告对扫描环境进行了深入分析、以突出显示系统的发现结果、并显示关注领域和可能的修复步骤。本报告的目标是提高对数据治理问题、数据安全风险以及数据集数据合规性差距的认识。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["请参见如何生成和使用数据发现评估报告"]。
+
+
+
+==== 能够在云中较小的实例上部署Data sense
+
+在AWS环境中从BlueXP Connector部署Data sense时、现在您可以从两种较小的实例类型中进行选择、而不是从默认实例中选择。如果您要扫描小型环境、这可以帮助您节省云成本。但是、使用较小的实例时会存在一些限制。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["请参见可用的实例类型和限制"]。
+
+
+
+==== 现在、您可以使用独立脚本测试Linux系统是否符合安装Data sense的条件
+
+如果您要在运行Data sense安装的情况下验证Linux系统是否满足所有前提条件、您可以下载一个单独的脚本、该脚本仅用于测试这些前提条件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["了解如何检查Linux主机是否已准备好安装Data sense"]。
 
 
 
@@ -514,35 +501,6 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 ==== 已将新的"部分成功"状态添加到"操作状态"面板中
 
 新的"部分成功"状态表示数据感知操作已完成、某些项失败、某些项成功、例如、在移动或删除100个文件时。此外、"已完成"状态已重命名为"成功"。过去、"已完成"状态可能会列出成功和失败的操作。现在、"成功"状态意味着对所有项目执行的所有操作都成功。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["请参见如何查看操作状态面板"]。
-
-
-
-=== 2023年1月9日(1.19版)
-
-
-
-==== 可以查看包含敏感数据且过于宽松的文件图表
-
-"监管"信息板添加了一个新的"敏感数据和宽权限"区域、用于为包含敏感数据(包括敏感和敏感个人数据)且过于宽松的文件提供热图。这样可以帮助您了解敏感数据可能存在哪些风险。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["了解更多信息。"]。
-
-
-
-==== 数据调查页面提供了三个新筛选器
-
-可以使用新筛选器细化数据调查页面中显示的结果：
-
-* "Number of users with access"筛选器显示了哪些文件和文件夹对一定数量的用户开放。您可以选择一个数字范围来细化结果、例如、查看51-100个用户可访问哪些文件。
-* 现在、"创建时间"、"发现时间"、"上次修改时间"和"上次访问时间"筛选器允许您创建自定义日期范围、而不是仅选择预定义的天数范围。例如、您可以查找"创建时间"为"超过6个月"或"最近10天"内"上次修改"日期的文件。
-* 现在、您可以使用"文件路径"筛选器指定要从筛选的查询结果中排除的路径。如果输入包含和排除某些数据的路径、则Data sense会首先查找包含的路径中的所有文件、然后从排除的路径中删除文件、并显示结果。
-
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["查看可用于调查数据的所有筛选器的列表"]。
-
-
-
-==== 数据感知可以标识日语个人编号
-
-数据感知功能可以识别包含日语个人编号(也称为"我的编号")的文件并对其进行分类。这包括"个人"和"公司我的号码"。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看 Data sense 可以在您的数据中识别的所有类型的个人数据"]。
 
 
 
@@ -1299,6 +1257,20 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2023年4月3日
+
+
+
+==== 为帮助保护您的数据免受勒索软件攻击而建议的新操作
+
+* "备份数据源中的业务关键型文件"的新建议操作确定了如何使用Cloud Backup备份卷来保护最重要的数据类别。如果您因勒索软件攻击而需要恢复任何数据、这一点非常重要。此建议会将您重定向到Cloud Backup界面、以便在必要的卷上启用备份。
+* "启用数据源的网络存储配置"的新建议操作可确定是否启用了六项有助于保护数据安全的ONTAP 功能。您应在所有内部ONTAP 和Cloud Volumes ONTAP 系统上启用这些功能。
+
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["请参见所有建议操作的列表"]。
+
+
+
 === 2023年3月7日
 
 
@@ -1326,16 +1298,6 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 ==== 勒索软件保护已从"保护"类别转移到"监管"类别
 
 现在、您可以从BlueXP左侧导航菜单中选择*监管>勒索软件保护*来访问此服务。
-
-
-
-=== 2023年1月9日
-
-
-
-==== 添加了通过电子邮件和通知中心接收勒索软件保护警报的支持
-
-勒索软件保护已集成到BlueXP通知服务中。您可以通过单击BlueXP菜单栏中的通知铃来显示勒索软件保护通知。此外、您还可以将BlueXP配置为通过电子邮件发送警报通知、以便即使未登录到系统、您也可以了解重要的系统活动。此电子邮件可发送给需要了解勒索软件警报的任何收件人。 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["了解如何操作"]。
 
 
 
