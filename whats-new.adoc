@@ -285,13 +285,13 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["�
 
 ==== 能够在"受限"模式下将数据从Cloud Volumes ONTAP 系统备份到云
 
-现在、您可以在"受限"模式下备份AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统中的数据。这要求您首先在"受限"商业区域安装Connector。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
+现在、您可以在"受限"模式下备份AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统中的数据。这要求您首先在"受限"商业区域安装Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["详细了解BlueXP部署模式"^]。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
 
 
 
 ==== 可以使用API将内部ONTAP 卷备份到ONTAP S3
 
-通过API中的新功能、您可以使用BlueXP云备份将卷快照备份到ONTAP S3。此功能目前仅适用于内部ONTAP 系统。有关详细说明、请参见博客 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["与ONTAP S3作为目标集成(使用REST API)"^]。
+通过API中的新功能、您可以使用BlueXP云备份将卷快照备份到ONTAP S3。此功能目前仅适用于内部部署的ONTAP 系统。有关详细说明、请参见博客 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId--846533830["与ONTAP S3集成作为目标"^]。
 
 
 
@@ -400,7 +400,7 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-==== 现在、您可以使用独立脚本测试Linux系统是否符合安装Data sense的条件
+==== 现在、您可以使用独立脚本在安装Data sense之前对Linux系统进行资格认定
 
 如果您要在运行Data sense安装的情况下验证Linux系统是否满足所有前提条件、您可以下载一个单独的脚本、该脚本仅用于测试这些前提条件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["了解如何检查Linux主机是否已准备好安装Data sense"]。
 
@@ -852,7 +852,7 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 | https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
 |===
-请查看的完整端点列表 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
+请查看的完整端点列表 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
 
 
 
@@ -860,9 +860,27 @@ Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
+=== 2023年4月4日
+
+从Cloud Volumes ONTAP 9.12.1 GA开始、AWS现在支持中国地区、如下所示。
+
+* 支持单节点系统。
+* 支持直接从 NetApp 购买的许可证。
+
+
+有关区域可用性、请参见 link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
+
+
+
 === 2023年4月3日
 
 连接器3.9.28版引入了以下更改。
+
+
+
+==== 现在、在Google Cloud中支持都灵地区
+
+现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector均支持都灵地区。
 
 
 
@@ -884,7 +902,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 现在、BlueXP对Cloud Volumes ONTAP 概述、卷和聚合页面的用户界面进行了重新设计。基于区块的设计可在每个区块中提供更全面的信息、从而提供更好的用户体验。
 
-image:screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONTAP 概述页面上经过重新设计的BlueXP用户界面。各种图块显示了存储效率、版本、容量分布、有关Cloud Volumes ONTAP 部署的信息、卷、聚合、复制和备份。"]
 
 
 
@@ -895,7 +913,7 @@ image:screenshot-resource-page-rn.png["此屏幕截图显示了Cloud Volumes ONT
 
 NOTE: 目前、您只能在BlueXP下查看现有FlexGroup 卷。在BlueXP中创建FlexGroup 卷的功能不可用、但计划在未来版本中使用。
 
-image:screenshot-show-flexgroup-volume.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["显示FlexGroup 卷图标将文本悬停在卷磁贴下的屏幕截图。"]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["了解有关查看已创建的FlexGroup 卷的更多信息。"^]
 
@@ -915,41 +933,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage
 
 
 有关区域可用性、请参见 link:https://bluexp.netapp.com/cloud-volumes-global-regions["适用于Cloud Volumes ONTAP 的全局区域映射"^]。
-
-
-
-=== 2023年3月5日
-
-连接器3.9.27版引入了以下更改。
-
-
-
-==== Cloud Volumes ONTAP 9.13.0
-
-现在、BlueXP可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.0。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-==== MTEKM许可证
-
-现在、运行9.12.1 GA或更高版本的新Cloud Volumes ONTAP 系统和现有系统都附带了多租户加密密钥管理(MTEKM)许可证。
-
-使用NetApp卷加密时、多租户外部密钥管理可使单个Storage VM (SVM)通过KMIP服务器维护自己的密钥。
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["了解如何使用NetApp加密解决方案对卷进行加密"^]。
-
-
-
-==== 支持无Internet环境 
-
-现在、与Internet完全隔离的任何云环境均支持Cloud Volumes ONTAP。这些环境仅支持基于节点的许可(BYOL)。不支持基于容量的许可。要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将您的BYOL许可证添加到数字电子钱包中、然后部署Cloud Volumes ONTAP。 
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
-
 
 
 
@@ -1023,7 +1006,7 @@ Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并增强�
 
 === 2023年4月2日
 
-新的经济高效服务可识别当前或预测的低容量集群、并为内部AFF 系统提供数据分层或额外容量建议。
+新的经济高效服务可识别当前或预测的低容量存储资产、并为内部AFF 系统提供数据分层或额外容量建议。
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["了解有关此新服务的更多信息"]。
 
