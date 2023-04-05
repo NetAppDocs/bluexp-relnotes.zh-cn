@@ -109,9 +109,7 @@
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">此页面</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">了解Cloud Volumes ONTAP 增强功能</block>
   <block id="f23841b65ba519d2dd6a63a2a3e4de83" category="inline-link-macro">了解有关持续同步设置的更多信息</block>
-  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日(版本1.3.1)</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">已修复的问题</block>
-  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">可从获取适用于1.3.1版的Global File Cache Edge软件<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修复中所述的问题<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
   <block id="1511b856d0328cfba458b8f83c2e94e3" category="section-title">2022年7月3日</block>
   <block id="82e8338c73d6540f48f2e0cc8d035511" category="list-text">马德里(欧洲-西南1)</block>
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">巴黎(欧洲-西部9)</block>
@@ -207,8 +205,6 @@
   <block id="8d9e30572c7be0b05a6e777166ea7d0b" category="summary">了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXP中的最新变更</block>
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXP简介</block>
-  <block id="78d1c9f9c86eecd86f5f568cfe0c0721" category="inline-link">了解有关BlueXP的更多信息</block>
-  <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">Cloud Manager已于2022年11月1日重命名为BlueXP。<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
   <block id="f3630c1c94e3e51aaea5bdd037dc03c9" category="section-title">2022年10月30日</block>
@@ -584,4 +580,7 @@
   <block id="51ad14036a828a2a993258fe95046128" category="list-text">"启用数据源的网络存储配置"的新建议操作可确定是否启用了六项有助于保护数据安全的ONTAP 功能。您应在所有内部ONTAP 和Cloud Volumes ONTAP 系统上启用这些功能。</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">请参见所有建议操作的列表</block>
   <block id="8f0f57a606909986a57f6c9a3dcb68ef" category="paragraph"><block ref="3c293b78d34033676deb7d5c4a97ca37" category="inline-link-rx"></block>。</block>
+  <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">了解有关BlueXP简介的更多信息</block>
+  <block id="3214121f77d11d3720f824f6609986e1" category="paragraph">NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Manager提供的功能。<block ref="f53c3e09f5dc895df05d3b248da7799e" category="inline-link-rx"></block></block>
+  <block id="f25c47eb7d9f3c638d89723bee6d2360" category="paragraph">通过API中的新功能、您可以使用BlueXP云备份将卷快照备份到ONTAP S3。此功能目前仅适用于内部ONTAP 系统。有关详细说明、请参见博客<block ref="50f757899df464a10b489edfac75ae5d" category="inline-link-rx"></block>。</block>
 </blocks>
