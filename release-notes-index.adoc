@@ -47,16 +47,16 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["设置�
 
 == 数据服务
 
-* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["应用程序模板"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["云备份"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["云数据感知"^]
-* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Cloud Sync"^]
-* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["云分层"^]
-* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["计算"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["备份和恢复"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["分类"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["云运营"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["复制和同步"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["数字电子钱包"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["经济效率"^]
-* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["全局文件缓存"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["边缘缓存"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["运营故障恢复能力"^]
 * https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["勒索软件保护"^]
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["修复"^]
 * https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replication"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["分层"^]
 
