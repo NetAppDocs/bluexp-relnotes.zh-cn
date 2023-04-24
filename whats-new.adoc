@@ -33,6 +33,36 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 
 
 
+=== 2023年5月7日
+
+
+
+==== 连接器3.9.29
+
+* 当您从BlueXP或云提供商的市场部署Connector时、Ubuntu 22.04是适用于Connector的新操作系统。
++
+您还可以选择在运行Ubuntu 22.04的自己的Linux主机上手动安装Connector。
+
+* 新的Connector部署不再支持Red Hat Enterprise Linux 8.6和8.7。
++
+新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是Connector所必需的。如果现有Connector运行的是RHEL 8.6或8.7、则NetApp将继续支持您的配置。
+
++
+Red Hat 7.6、7.7、7.8和7.9仍支持新的和现有的连接器。
+
+* 现在、卡塔尔地区的Google Cloud支持Connector。
+* Microsoft Azure中的瑞典中部地区也支持Connector。
++
+https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
+
+* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["了解Cloud Volumes ONTAP 增强功能"^]
+
+
+
+
+
 === 2023年4月4日
 
 
@@ -70,16 +100,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
 
-* 现在、您可以在BlueXP中发现VMware vCenter Server。
-+
-发现在AWS或内部运行的VMware vCenter Server后、您可以打开工作环境以查看与该服务器关联的数据存储库和虚拟机的详细信息。
-
-+
-唯一的要求是连接到运行7.0或更高版本的VMware vCenter Server的Connector。
-
-+
-要开始使用、请选择*添加工作环境*、选择* Amazon Web Services*或*内部部署*、然后选择* VMware vCenter Server*。输入服务器的域名或IP地址、然后输入管理员用户的用户名和密码。
-
 * 现在、您可以管理与您的BlueXP登录关联的用户凭据：ONTAP 凭据和NetApp 支持站点 (NSS)凭据。
 +
 转到*设置>凭据*时、您可以查看凭据、更新凭据并将其删除。例如、如果您更改了这些凭据的密码、则需要在BlueXP中更新此密码。
@@ -96,50 +116,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["了解Cloud Volumes ONTAP 增强功能"^]
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["了解ONTAP 内部集群增强功能"^]
 
-
-
-
-
-
-=== 2023年3月5日
-
-
-
-==== 连接器3.9.27
-
-* 现在、您可以在BlueXP控制台中进行搜索。此时、您可以使用搜索功能来查找BlueXP服务和功能。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["控制台顶部提供的BlueXP搜索的屏幕截图。"]
-
-* 您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["了解如何管理支持案例"]。
-
-* 现在、运行Red Hat Enterprise Linux 8.7的主机支持Connector。
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["查看 Connector 的系统要求"]。
-
-* 现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。您还可以使用BlueXP备份和恢复来备份AWS和Azure商业区域中的Cloud Volumes ONTAP 卷。此类部署不支持任何其他BlueXP服务、但BlueXP电子钱包除外。
-+
-云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
-
-+
-要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将BYOL许可证添加到BlueXP数字钱包中、然后部署Cloud Volumes ONTAP。
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["访问Connector上的BlueXP控制台"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["添加未分配的许可证"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["开始使用Cloud Volumes ONTAP"^]
-
-
-* 现在、您可以通过Connector从BlueXP添加和管理Amazon S3存储分段。
-+
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["了解如何从BlueXP在AWS帐户中添加新的Amazon S3存储分段"^]。
-
-* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["了解Cloud Volumes ONTAP 增强功能"^]
 
 
 
@@ -199,23 +175,23 @@ https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volum
 
 
 
+=== 2023年5月7日
+
+* 创建工作环境时、您现在可以使用BlueXP link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["生成安全组"^] 仅允许选定VPC中的流量。此功能 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["需要其他权限"^]。
+* 您可以选择 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["添加"^] 和 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["修改"^] 用于对卷进行分类的标记。
+
+
+
+
 === 2023年4月2日
 
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["在适用于ONTAP 的FSX上创建FlexGroup"^] 卷、以便在集群中分布卷数据。
-* IOPS限制会增加、以允许手动或自动配置、最高可达160、000次。
-
+IOPS限制会增加、以允许手动或自动配置、最高可达160、000次。
 
 
 
 === 2023年3月5日
 
 文档中对用户界面进行了改进、并更新了屏幕截图。
-
-
-
-=== 2023年1月1日
-
-现在、您可以选择启用 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-working-environment.html#manage-automatic-capacity["自动容量管理"^] 根据需要添加增量存储。自动容量管理会定期轮询集群以评估需求、并自动以10%为增量增加存储容量、最多可增加集群最大容量的80%。
 
 
 
@@ -944,6 +920,30 @@ https://docs.netapp.com/us-en/active-iq/index.html["详细了解BlueXP数字顾�
 
 
 
+=== 2023年5月7日
+
+
+
+==== Google Cloud Private优惠
+
+BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplace订阅、并显示订阅的结束日期和期限。通过此增强功能、您可以验证是否已成功接受此私人优惠并验证其条款。
+
+
+
+==== 充电使用情况细分
+
+现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP数字钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。
+
+* Cloud Volumes ONTAP 软件包使用情况
+* 使用情况概要
+* Storage VM使用情况
+* 卷使用量
+
+
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["管理基于容量的许可证"]。
+
+
+
 === 2023年4月3日
 
 
@@ -975,20 +975,6 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 您的BlueXP PAYGO订阅和年度合同现在可通过BlueXP电子钱包进行查看和管理。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["了解如何管理您的订阅"]。
-
-
-
-=== 2022年9月18日
-
-
-
-==== 优化的I/O和WORM容量
-
-BlueXP数字钱包现在可显示帐户中Cloud Volumes ONTAP 系统的优化I/O许可包和配置WORM容量摘要。
-
-这些详细信息可以帮助您更好地了解如何为您付费以及是否需要购买额外容量。
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
 
 
 
