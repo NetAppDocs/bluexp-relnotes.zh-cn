@@ -213,6 +213,36 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 
 
 
+=== 2023年5月8日
+
+
+
+==== 现在、可以从归档存储和锁定的备份执行文件夹级还原操作
+
+如果已为备份文件配置DataLock和防软件保护、或者备份文件驻留在归档存储中、则现在、如果集群运行的是ONTAP 9.13.1或更高版本、则支持文件夹级还原操作。
+
+
+
+==== 将卷备份到Google Cloud时、支持跨区域和跨项目客户管理的密钥
+
+现在、您可以选择与客户管理的加密密钥(CMDK)项目不同的项目中的存储分段。
+
+
+
+==== 现在、备份文件支持AWS中国地区
+
+现在、如果集群运行的是ONTAP 9.12.1或更高版本、则支持将AWS中国北京(CN-north-1)和宁夏(CN-north-1)区域作为备份文件的目标。
+
+请注意、分配给BlueXP Connector的IAM策略需要将All _Resource_部分下的AWS资源名称"arn"从"aws"更改为"AAWS CN"；例如"arn：aws-cn：s3：：：NetApp-backup-*"。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-aws.html["将本地ONTAP 数据备份到Amazon S3"] 了解详细信息。
+
+
+
+==== 作业监控的增强功能
+
+对于运行ONTAP 9.13.1或更高版本的内部ONTAP 系统，系统启动的作业(例如正在进行的备份操作)现在可在*作业监控*选项卡中找到。早期的ONTAP 版本将仅显示用户启动的作业。
+
+
+
 === 2023年4月14日
 
 
@@ -240,7 +270,7 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 
 ==== 针对应用程序的BlueXP备份和恢复增强功能(混合)
 
-* 应用程序的BlueXP备份和恢复(混合)由SaaS控制平台驱动。
+* 适用于应用程序(混合)的BlueXP备份和恢复由SaaS控制平台驱动
 * 修改了混合REST API以与云原生API保持一致。
 * 支持电子邮件通知
 
@@ -253,7 +283,7 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 
 ==== 能够在"受限"模式下将数据从Cloud Volumes ONTAP 系统备份到云
 
-现在、您可以在"受限"模式下备份AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统中的数据。这要求您首先在"受限"商业区域安装Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["详细了解BlueXP部署模式"^]。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
+现在、您可以在"受限模式"下从AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统备份数据。这要求您首先在"受限"商业区域安装Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["详细了解BlueXP部署模式"^]。请参见 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["将 Cloud Volumes ONTAP 数据备份到 Amazon S3"] 和 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["将Cloud Volumes ONTAP 数据备份到Azure Blob"]。
 
 
 
@@ -271,7 +301,7 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 
 ==== 作业监控的增强功能
 
-* 对于运行ONTAP 9.13.1或更高版本的内部ONTAP 系统、用户启动的备份和还原操作以及系统启动的作业(如正在进行的备份操作)现在均可在*作业监控*选项卡中找到。早期的ONTAP 版本将仅显示用户启动的作业。
+* 对于运行ONTAP 9.13.0或更高版本的Cloud Volumes ONTAP 系统、用户启动的备份和还原操作以及系统启动的作业(如正在进行的备份操作)现在均可在*作业监控*选项卡中找到。早期的ONTAP 版本将仅显示用户启动的作业。
 * 除了可以下载CSV文件以报告所有作业之外、现在您还可以下载单个作业的JSON文件并查看其详细信息。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["了解更多信息。"]。
 * 添加了两个新的备份作业警报："Scheduled job failure"和"Restore job completes but with warnings"。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["查看BlueXP备份和恢复可以发送的所有警报"]。
 
@@ -299,52 +329,6 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 * 作业监控页面添加了高级筛选功能、因此您可以按时间、工作负载(卷、应用程序、虚拟机或Kubernetes)搜索备份和还原作业。 作业类型、状态、工作环境和Storage VM。您还可以输入自由文本来搜索任何资源、例如"application_3"。  https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["请参见如何使用高级筛选器"]。
 * 对于运行ONTAP 9.13.0或更高版本的Cloud Volumes ONTAP 系统、用户启动的备份和还原操作以及系统启动的作业(如正在进行的备份操作)现在均可在*作业监控*选项卡中找到。早期版本的Cloud Volumes ONTAP 系统和内部ONTAP 系统此时将仅显示用户启动的作业。
 
-
-
-
-=== 2023年2月6日
-
-
-
-==== 能够将旧备份文件从StorageGRID 系统移动到Azure归档存储
-
-现在、您可以将旧备份文件从StorageGRID 系统分层到Azure中的归档存储。这样、您就可以释放StorageGRID 系统上的空间、并通过对旧备份文件使用成本低廉的存储类节省资金。
-
-如果您的内部集群使用的是ONTAP 9.12.1或更高版本、而StorageGRID 系统使用的是11.4或更高版本、则可以使用此功能。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["单击此处了解更多信息"^]。
-
-
-
-==== 可以为Azure Blob中的备份文件配置DataLock和勒索软件保护
-
-现在、存储在Azure Blob中的备份文件支持DataLock和勒索软件保护。如果您的Cloud Volumes ONTAP 或内部ONTAP 系统运行的是ONTAP 9.12.1或更高版本、现在您可以锁定备份文件并对其进行扫描、以检测可能的勒索软件。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-cloud-backup-policies.html#datalock-and-ransomware-protection["详细了解如何使用DataLock和勒索软件保护来保护备份"^]。
-
-
-
-==== 备份和还原FlexGroup 卷增强功能
-
-* 现在、您可以在还原FlexGroup 卷时选择多个聚合。在上一版本中、您只能选择一个聚合。
-* 现在、Cloud Volumes ONTAP 系统支持FlexGroup 卷还原。在上一个版本中、您只能还原到内部ONTAP 系统。
-
-
-
-
-==== Cloud Volumes ONTAP 系统可以将较早的备份移动到Google归档存储
-
-备份文件最初是在Google标准存储类中创建的。现在、您可以使用BlueXP备份和恢复功能将旧备份分层到Google Archive存储、以进一步优化成本。上一版本仅在内部ONTAP 集群中支持此功能—现在支持在Google Cloud中部署的Cloud Volumes ONTAP 系统。
-
-
-
-==== 现在、您可以通过卷还原操作选择要还原卷数据的SVM
-
-现在、您可以将卷数据还原到ONTAP 集群中的不同Storage VM。过去无法选择Storage VM。
-
-
-
-==== 增强了对MetroCluster 配置中卷的支持
-
-现在、如果使用的是ONTAP 9.12.1 GA或更高版本、则在MetroCluster 配置中连接到主系统时、支持备份。整个备份配置将传输到二级系统、以便在切换后自动继续备份到云。
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#backup-limitations["有关详细信息、请参见备份限制"]。
 
 
 
@@ -633,6 +617,42 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-compute/main/me
 
 
 
+=== 2023年5月8日
+
+
+
+==== 硬链接功能
+
+现在、用户可以为涉及不安全的NFS到NFS关系的同步添加硬链接。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关文件类型设置的更多信息"]。
+
+
+
+==== 能够为安全NFS关系中的数据代理添加用户证书
+
+现在、用户可以在创建安全NFS关系时为目标数据代理设置自己的证书。他们需要设置服务器名称并提供专用密钥和证书ID。此功能可用于所有数据代理。
+
+
+
+==== 最近修改的文件的排除期限延长
+
+现在、用户可以排除在计划同步前最长365天修改过的文件。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关最近修改的文件设置的更多信息"]。
+
+
+
+==== 按关系ID筛选UI中的关系
+
+现在、使用RESTful API的用户可以使用关系ID筛选关系。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/api-sync.html["详细了解如何将RESTful API与BlueXP副本和同步结合使用"]。
+
+https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关排除目录设置的更多信息"]。
+
+
+
 === 2023年4月2日
 
 
@@ -668,264 +688,6 @@ https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.htm
 现在、您可以使用帐户中的KMS密钥对AWS数据代理卷进行加密。
 
 https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#creating-the-data-broker["了解有关在AWS中创建数据代理的更多信息"]。
-
-
-
-=== 2023年2月5日
-
-
-
-==== 对Azure数据湖存储第2代、ONTAP S3存储和NFS的其他支持
-
-Cloud Sync 现在支持为ONTAP S3存储和NFS建立其他同步关系：
-
-* ONTAP S3存储到NFS
-* NFS到ONTAP S3存储
-
-
-Cloud Sync 还支持将Azure数据湖存储第2代作为源和目标、以便：
-
-* NFS 服务器
-* SMB 服务器
-* ONTAP S3 存储
-* StorageGRID
-* IBM 云对象存储
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["了解有关支持的同步关系的更多信息"]。
-
-
-
-==== 升级到Amazon Web Services数据代理操作系统
-
-AWS数据代理的操作系统已升级到Amazon Linux 2022。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-aws.html#details-about-the-data-broker-instance["详细了解AWS中的数据代理实例"]。
-
-
-
-=== 2023年1月3日
-
-
-
-==== 在UI上显示数据代理本地配置
-
-现在有一个*显示配置*选项、可用于使用户在用户界面上查看每个数据代理的本地配置。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-data-brokers.html["了解有关管理数据代理组的更多信息"]。
-
-
-
-==== 升级到Azure和Google Cloud数据代理操作系统
-
-Azure和Google Cloud中的数据代理操作系统已升级到Rocky Linux 9.0。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-azure.html#details-about-the-data-broker-vm["详细了解Azure中的数据代理实例"]。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-installing-gcp.html#details-about-the-data-broker-vm-instance["详细了解Google Cloud中的数据代理实例"]。
-
-
-
-=== 2022年12月11日
-
-
-
-==== 按名称筛选目录
-
-现在、可以为同步关系使用一个新的*排除目录名称*设置。用户最多可以从其同步中筛选出15个目录名称。默认情况下、不包括.copy-ofovert、.snapshot、~snapshot目录。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关排除目录名称设置的更多信息"]。
-
-
-
-==== 其他Amazon S3和ONTAP S3存储支持
-
-Cloud Sync 现在支持AWS S3和ONTAP S3存储的其他同步关系：
-
-* AWS S3到ONTAP S3存储
-* ONTAP S3存储到AWS S3
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["了解有关支持的同步关系的更多信息"]。
-
-
-
-=== 2022年10月30日
-
-
-
-==== 从Microsoft Azure持续同步
-
-现在、支持使用Azure数据代理从源Azure存储分段到云存储的持续同步设置。
-
-初始数据同步后、Cloud Sync 将侦听源Azure存储分段上的更改、并在发生更改时持续同步目标。从Azure存储分段同步到Azure Blob存储、CIFS、Google云存储、IBM云对象存储、NFS和StorageGRID 时、可以使用此设置。
-
-要使用此设置、Azure数据代理需要一个自定义角色和以下权限：
-
-[source, json]
-----
-'Microsoft.Storage/storageAccounts/read',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/write',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/read',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/delete',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/getFullUrl/action',
-'Microsoft.EventGrid/systemTopics/eventSubscriptions/getDeliveryAttributes/action',
-'Microsoft.EventGrid/systemTopics/read',
-'Microsoft.EventGrid/systemTopics/write',
-'Microsoft.EventGrid/systemTopics/delete',
-'Microsoft.EventGrid/eventSubscriptions/write',
-'Microsoft.Storage/storageAccounts/write'
-----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
-
-
-
-=== 2022年9月4日
-
-
-
-==== 其他Google Drive支持
-
-* Cloud Sync 现在支持Google Drive的其他同步关系：
-+
-** Google Drive到NFS服务器
-** Google Drive到SMB服务器
-
-
-* 您还可以为包含Google Drive的同步关系生成报告。
-+
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-reports.html["了解有关报告的更多信息"]。
-
-
-
-
-
-==== 持续同步增强功能
-
-现在、您可以对以下类型的同步关系启用持续同步设置：
-
-* S3存储分段到NFS服务器
-* 将Google Cloud Storage迁移到NFS服务器
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
-
-
-
-==== 电子邮件通知
-
-现在、您可以通过电子邮件接收Cloud Sync 通知。
-
-要通过电子邮件接收通知、您需要在同步关系上启用*通知*设置、然后在BlueXP中配置警报和通知设置。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/task-managing-relationships.html#setting-up-notifications["了解如何设置通知"]。
-
-
-
-=== 2022年7月31日
-
-
-
-==== Google Drive
-
-现在、您可以将NFS服务器或SMB服务器中的数据同步到Google Drive。支持将"我的驱动器"和"共享驱动器"作为目标。
-
-在创建包含Google Drive的同步关系之前、您需要设置一个具有所需权限和私钥的服务帐户。 https://docs.netapp.com/us-en/cloud-manager-sync/reference-requirements.html#google-drive["了解有关Google Drive要求的更多信息"]。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
-
-
-
-==== 其他Azure Data Lake支持
-
-Cloud Sync 现在支持Azure数据湖存储第2代的其他同步关系：
-
-* Amazon S3到Azure数据湖存储第2代
-* IBM Cloud Object Storage到Azure Data Lake Storage Gen2
-* StorageGRID 到Azure数据湖存储第2代
-
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
-
-
-
-==== 设置同步关系的新方法
-
-我们添加了更多直接从BlueXP的Canvas设置同步关系的方法。
-
-
-
-===== 拖放
-
-现在、您可以通过将一个工作环境拖放到另一个工作环境之上、从Canvas设置同步关系。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-drag-and-drop.png["显示BlueXP中通知中心的屏幕截图。"]
-
-
-
-===== 右侧面板设置
-
-现在、您可以通过从"画布"中选择工作环境、然后从右侧面板中选择同步选项、为Azure Blob存储或Google Cloud存储设置同步关系。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-sync/main/media/screenshot-enable-panel.png["显示BlueXP中通知中心的屏幕截图。"]
-
-
-
-=== 2022年7月3日
-
-
-
-==== 支持Azure Data Lake存储第2代
-
-现在、您可以将NFS服务器或SMB服务器中的数据同步到Azure Data Lake Storage Gen2。
-
-在创建包含Azure数据湖的同步关系时、您需要为Cloud Sync 提供存储帐户连接字符串。它必须是常规连接字符串、而不是共享访问签名(SAS)。
-
-https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["查看支持的同步关系列表"]。
-
-
-
-==== 从Google Cloud Storage持续同步
-
-现在支持从源Google Cloud Storage存储分段到云存储目标的持续同步设置。
-
-初始数据同步后、Cloud Sync 将侦听源Google Cloud存储分段上的更改、并在发生更改时持续同步目标。从Google Cloud存储分段同步到S3、Google Cloud Storage、Azure Blob存储、StorageGRID 或IBM存储时、可以使用此设置。
-
-要使用此设置、与数据代理关联的服务帐户需要以下权限：
-
-[source, json]
-----
-- pubsub.subscriptions.consume
-- pubsub.subscriptions.create
-- pubsub.subscriptions.delete
-- pubsub.subscriptions.list
-- pubsub.topics.attachSubscription
-- pubsub.topics.create
-- pubsub.topics.delete
-- pubsub.topics.list
-- pubsub.topics.setIamPolicy
-- storage.buckets.update
-----
-https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html#settings["了解有关持续同步设置的更多信息"]。
-
-
-
-==== 全新Google Cloud区域支持
-
-Cloud Sync 数据代理现在在以下Google Cloud地区受支持：
-
-* 哥伦布(美国-东5)
-* 达拉斯(美国-南1)
-* 马德里(欧洲-西南1)
-* 米兰(欧洲-西部8)
-* 巴黎(欧洲-西部9)
-
-
-
-
-==== 新的Google Cloud计算机类型
-
-Google Cloud中数据代理的默认计算机类型现在为n2-standard-4。
 
 
 
@@ -1425,13 +1187,13 @@ SnapCenter 服务已于2022年11月1日停用。
 
 ==== 已删除许可选项卡
 
-已从BlueXP分层界面中删除许可选项卡。所有按需购买(PAYGO)订阅的许可现在均可从BlueXP分层内部信息板访问。此外、还提供了一个从该页面到BlueXP数字钱包的链接、可用于查看和管理任何BlueXP分层自带许可证(BYOL)。
+已从BlueXP分层界面中删除许可选项卡。现在、您可以从BlueXP分层内部部署信息板访问按需购买(PAYGO)订阅的所有许可。此外、还提供了一个从该页面到BlueXP数字钱包的链接、可用于查看和管理任何BlueXP分层自带许可证(BYOL)。
 
 
 
 ==== 分层选项卡已重命名并更新了内容
 
-"集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。
+"集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部部署信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。
 
 
 
