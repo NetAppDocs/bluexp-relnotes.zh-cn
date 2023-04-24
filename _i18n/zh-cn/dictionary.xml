@@ -62,7 +62,6 @@
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="f1f7e50301c1e57e30e795fa8928ee8f" category="section-title">现在，您可以构建一个模板来查找特定的现有卷，然后启用 Cloud Backup</block>
   <block id="98b343467576e58f6658965bc67f83c1" category="paragraph">使用新的 " 查找资源 " 操作，您可以确定要启用 Cloud Backup 的所有卷，然后使用 Cloud Backup 操作在这些卷上启用备份。</block>
-  <block id="8b4368f9c9aad8f44dd1b5ba1d4d746a" category="paragraph">目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。<block ref="f7210026d1a7cf546c7270b9d8e104cc" category="inline-link-rx"></block>。</block>
   <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">现在，您可以标记同步关系，以便对其进行分组或分类，以便于访问</block>
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">了解有关资源标记的更多信息</block>
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
@@ -604,4 +603,11 @@
   <block id="a109e3cb0dd9ad8fb1c83a4902e1c322" category="paragraph">已从BlueXP分层界面中删除许可选项卡。所有按需购买(PAYGO)订阅的许可现在均可从BlueXP分层内部信息板访问。此外、还提供了一个从该页面到BlueXP数字钱包的链接、可用于查看和管理任何BlueXP分层自带许可证(BYOL)。</block>
   <block id="35083b11acbb58293019b38b8f232a5a" category="paragraph">您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。BlueXP分层会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>。</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">由于BlueXP分层发生了变化、您需要更改以下连接器端点才能成功执行BlueXP分层操作：</block>
+  <block id="d128bda2634e1051cc984231da065144" category="list-text">BlueXP电子钱包现在支持电子邮件通知。</block>
+  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。您还可以使用BlueXP备份和恢复来备份AWS和Azure商业区域中的Cloud Volumes ONTAP 卷。此类部署不支持任何其他BlueXP服务、但BlueXP电子钱包除外。</block>
+  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将BYOL许可证添加到BlueXP数字钱包中、然后部署Cloud Volumes ONTAP。</block>
+  <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。</block>
+  <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">您的BlueXP PAYGO订阅和年度合同现在可通过BlueXP电子钱包进行查看和管理。</block>
+  <block id="dfc3d3012360c41f119ce032ebb3ed8b" category="paragraph">BlueXP数字钱包现在可显示帐户中Cloud Volumes ONTAP 系统的优化I/O许可包和配置WORM容量摘要。</block>
+  <block id="12c7b4f361520fac32769892a3adb104" category="paragraph">目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。<block ref="cf92aa38511759ce0275086447e2bfa9" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -59,7 +59,7 @@ NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可�
 
 ==== 连接器3.9.28
 
-* d128bda2634e1051cc984231da065144
+* BlueXP电子钱包现在支持电子邮件通知。
 +
 如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。
 
@@ -119,12 +119,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["查看 Connector 的系统要求"]。
 
-* d2792d178cbdf6c41f2b8f2ae64424ed
+* 现在、任何与Internet完全隔离的云环境都支持Connector。然后、您可以使用Connector上运行的BlueXP控制台将Cloud Volumes ONTAP 部署在同一位置、并发现内部ONTAP 集群(如果您已从云环境连接到内部环境)。您还可以使用BlueXP备份和恢复来备份AWS和Azure商业区域中的Cloud Volumes ONTAP 卷。此类部署不支持任何其他BlueXP服务、但BlueXP电子钱包除外。
 +
 云区域可以是AWS C2S/SC2S、Azure IL6等美国安全机构或任何商业区域的区域。
 
 +
-75327cdc175eca204abf0a4aa66413b3
+要开始使用、请手动安装Connector软件、登录到在Connector上运行的BlueXP控制台、将BYOL许可证添加到BlueXP数字钱包中、然后部署Cloud Volumes ONTAP。
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["将连接器安装在无法访问Internet的位置"^]
@@ -936,6 +936,8 @@ Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并提供�
 
 当您访问BlueXP数字顾问时、系统会提示您输入NetApp 支持站点 凭据、以便您可以查看与系统相关的数据。您登录时使用的NSS帐户仅与您的用户登录关联。它不会与您的NetApp帐户中的任何其他用户关联。
 
+https://docs.netapp.com/us-en/active-iq/index.html["详细了解BlueXP数字顾问"^]
+
 
 
 == 数字电子钱包
@@ -948,7 +950,7 @@ Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并提供�
 
 ==== 电子邮件通知
 
-d128bda2634e1051cc984231da065144
+BlueXP电子钱包现在支持电子邮件通知。
 
 如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。
 
@@ -958,7 +960,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 
 ==== 市场订阅的许可容量
 
-016c818ed3128119f94a31cbec32bf1f
+查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
 
@@ -970,7 +972,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 ==== 订阅和年度合同
 
-b3e680bd6b6b80e2fd4f5bd19f3ad015
+您的BlueXP PAYGO订阅和年度合同现在可通过BlueXP电子钱包进行查看和管理。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["了解如何管理您的订阅"]。
 
@@ -982,17 +984,11 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.ht
 
 ==== 优化的I/O和WORM容量
 
-dfc3d3012360c41f119ce032ebb3ed8b
+BlueXP数字钱包现在可显示帐户中Cloud Volumes ONTAP 系统的优化I/O许可包和配置WORM容量摘要。
 
 这些详细信息可以帮助您更好地了解如何为您付费以及是否需要购买额外容量。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
-
-
-
-== 经济效率
-
-https://docs.netapp.com/us-en/active-iq/index.html["详细了解BlueXP数字顾问"^]
 
 
 
@@ -1324,7 +1320,7 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 
 使用新的 " 查找资源 " 操作，您可以确定要启用 Cloud Backup 的所有卷，然后使用 Cloud Backup 操作在这些卷上启用备份。
 
-目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup["有关详细信息，请访问此处"]。
+目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。 https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["有关详细信息，请访问此处"]。
 
 
 
