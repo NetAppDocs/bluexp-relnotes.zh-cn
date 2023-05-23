@@ -225,7 +225,7 @@ IOPS限制会增加、以允许手动或自动配置、最高可达160、000次�
 
 ==== 将卷备份到Google Cloud时、支持跨区域和跨项目客户管理的密钥
 
-现在、您可以选择与客户管理的加密密钥(CMDK)项目不同的项目中的存储分段。
+现在、您可以选择与客户管理的加密密钥(CMDK)项目不同的项目中的存储分段。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["详细了解如何设置您自己的客户管理加密密钥"]。
 
 
 
@@ -528,9 +528,9 @@ Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA�
 
 
 
-==== 数字电子钱包增强功能
+==== BlueXP数字钱包增强功能
 
-现在、"数字电子钱包"将显示您随Marketplace Private优惠购买的许可容量。
+BlueXP数字钱包现在可显示您通过Marketplace Private Offers购买的许可容量。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"^]。
 
@@ -923,6 +923,25 @@ https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信
 
 
 
+=== 2023年5月4日
+
+
+
+==== 启用BlueXP备份和恢复
+
+从ONTAP 9.13.1开始、如果您使用连接器发现集群、则可以使用System Manager (高级视图)启用BlueXP备份和恢复。 link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["了解有关启用BlueXP备份和恢复的更多信息"^]
+
+
+
+==== 升级ONTAP 版本映像和硬件固件
+
+从ONTAP 9.10.1开始、您可以使用System Manager (高级视图)升级ONTAP 版本映像和硬件固件。您可以选择接收自动升级以保持最新、也可以从本地计算机或可使用BlueXP访问的服务器进行手动更新。 link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["了解有关升级ONTAP 和固件的更多信息"^]
+
+
+NOTE: 如果您没有Connector、则无法从本地计算机进行更新、只能从可使用BlueXP访问的服务器进行更新。
+
+
+
 === 2023年4月3日
 
 
@@ -951,57 +970,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 ==== 保存ONTAP 凭据
 
-当您打开在未使用连接器的情况下直接发现的内部ONTAP 工作环境时、现在可以选择保存ONTAP 集群凭据、这样您就无需在每次打开工作环境时都输入这些凭据。
+当您打开在不使用连接器的情况下直接发现的内部ONTAP 工作环境时、现在可以选择保存ONTAP 集群凭据、这样您就无需在每次打开该工作环境时都输入这些凭据。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-direct.html["了解有关此选项的更多信息。"]
-
-
-
-=== 2022年12月4日
-
-连接器3.9.24版引入了以下更改。
-
-
-
-==== 发现内部ONTAP 集群的新方式
-
-现在、您无需使用Connector即可直接发现内部ONTAP 集群。此选项仅支持通过System Manager进行集群管理。您无法在此类工作环境中启用任何BlueXP数据服务。
-
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["详细了解此发现和管理选项"]。
-
-
-
-==== FlexGroup 卷
-
-对于通过连接器发现的内部ONTAP 集群、BlueXP中的标准视图现在会显示通过System Manager或ONTAP 命令行界面创建的FlexGroup 卷。您还可以通过克隆这些卷、编辑其设置、删除这些卷等方式来管理这些卷。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-flexgroup-volumes.png["在内部ONTAP 集群的卷页面上显示FlexGroup 卷的屏幕截图。"]
-
-BlueXP不支持创建FlexGroup 卷。您需要继续使用System Manager或命令行界面创建FlexGroup 卷。
-
-
-
-=== 2022年9月18日
-
-连接器3.9.22版引入了以下更改。
-
-
-
-==== 新的"概述"页面
-
-我们引入了一个新的"概述"页面、用于提供有关内部ONTAP 集群的关键详细信息。例如、您现在可以查看存储效率、容量分布和系统信息等详细信息。
-
-您还可以查看有关与其他BlueXP服务集成的详细信息、这些服务可实现数据分层、数据复制和备份。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-overview.png["显示内部ONTAP 集群的\"概述\"页面的屏幕截图。"]
-
-
-
-==== 重新设计的卷页面
-
-我们重新设计了卷页面、以提供集群上卷的摘要。此摘要将显示卷的总数、已配置容量、已用容量和预留容量以及分层数据的数量。
-
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/main/media/screenshot-volumes.png["显示内部ONTAP 集群的卷页面的屏幕截图。"]
 
 
 
