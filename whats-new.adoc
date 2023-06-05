@@ -497,44 +497,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-=== 2023年2月5日(版本1.20)
-
-
-
-==== 能够将基于策略的通知电子邮件发送到任何电子邮件地址
-
-在早期版本的BlueXP分类中、当某些关键策略返回结果时、您可以向帐户中的BlueXP用户发送电子邮件警报。通过此功能、您可以在未联机时收到通知以保护数据。现在、您还可以将策略中的电子邮件警报发送给不在您的BlueXP帐户中的任何其他用户、最多20个电子邮件地址。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["了解有关根据策略结果发送电子邮件警报的更多信息"]。
-
-
-
-==== 现在、您可以从BlueXP分类UI添加个人模式
-
-BlueXP分类可以添加BlueXP分类在未来一段时间内将识别的自定义"个人数据"。但是、您需要登录到BlueXP classification Linux主机并使用命令行添加自定义模式。在此版本中、BlueXP分类UI中提供了使用正则表达式添加个人模式的功能、因此可以轻松添加和编辑这些自定义模式。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["从BlueXP分类UI中了解有关添加自定义模式的更多信息"^]。
-
-
-
-==== 能够使用BlueXP分类移动1、500万个文件
-
-过去、您可以让BlueXP分类将最多100、000个源文件移动到任何NFS共享。现在、一次最多可以移动1500万个文件。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["了解有关使用BlueXP分类移动源文件的更多信息"]。
-
-
-
-==== 能够查看有权访问SharePoint Online文件的用户数量
-
-筛选器"可访问的用户数"现在支持存储在SharePoint Online存储库中的文件。过去仅支持CIFS共享上的文件。请注意、目前不会在此筛选器中计入非基于Active Directory的SharePoint组。
-
-
-
-==== 已将新的"部分成功"状态添加到"操作状态"面板中
-
-新的"部分成功"状态表示BlueXP分类操作已完成、某些项目失败、而某些项目成功、例如、当您移动或删除100个文件时。此外、"已完成"状态已重命名为"成功"。过去、"已完成"状态可能会列出成功和失败的操作。现在、"成功"状态意味着对所有项目执行的所有操作都成功。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["请参见如何查看操作状态面板"]。
-
-
-
 == Cloud Volumes ONTAP
 
 
