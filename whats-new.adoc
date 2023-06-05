@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年6月11日
+
+
+
+==== 支持按分钟自动中止
+
+现在，可以使用*Sync Timeout*功能在15分钟后中止尚未完成的活动同步。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关同步超时设置的更多信息"]。
+
+
+
+==== 复制访问时间元数据
+
+在包括文件系统的关系中，*复制对象*功能现在复制访问时间元数据。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关复制对象设置的更多信息"]。
+
+
+
 === 2023年5月8日
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 除了按名称筛选目录之外、您现在还可以按目录的完整路径进行筛选。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关排除目录设置的更多信息"]。
-
-
-
-=== 2023年3月7日
-
-
-
-==== 用于AWS数据代理的EBS加密
-
-现在、您可以使用帐户中的KMS密钥对AWS数据代理卷进行加密。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["了解有关在AWS中创建数据代理的更多信息"]。
 
 
 
