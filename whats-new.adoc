@@ -33,6 +33,36 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 
 
 
+=== 2023年7月2日
+
+
+
+==== 连接器3.9.31
+
+* 现在、您可以从*我的资产*选项卡(以前称为*我的商机*)中发现内部ONTAP集群
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["从我的资产页面了解如何发现集群"]。
+
+* 如果您在Azure政府区域中使用Connector、则应确保Connector可以联系以下端点：
++
+\https://occmclientinfragov.azurecr.us
+
++
+要手动安装Connector以及升级Connector及其Docker组件、需要使用此端点。
+
++
+由于此更改、Azure政府区域中的Connector不再与以下端点联系：
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+请注意、所有其他受限模式配置和标准模式仍需要此端点。
+
+
+
+
+
 === 2023年6月4日
 
 
@@ -116,26 +146,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的�
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["了解Cloud Volumes ONTAP 增强功能"^]
 
 
-
-
-
-=== 2023年4月4日
-
-
-
-==== 部署模式
-
-借助BlueXP _deployment modes_、您可以根据业务和安全要求使用BlueXP。您可以选择三种模式：
-
-* 标准模式
-* 受限模式
-* 私有模式
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["详细了解这些部署模式"]。
-
-
-NOTE: 受限模式的引入取代了启用或禁用SaaS平台的选项。您可以在创建帐户时启用受限模式。稍后无法启用或禁用它。
 
 
 
