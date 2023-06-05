@@ -521,7 +521,6 @@
   <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">现在、在响应数据主体访问请求(Data Subject Access Request、DSAR)搜索主体名称时、可以输入日语名称。您可以生成<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 以及生成的信息。您也可以在中输入日语名称<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> 标识包含主题名称的文件。</block>
   <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntu现在是一个受支持的Linux分发版、您可以在其中安装BlueXP分类</block>
   <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">了解如何在安装了Ubuntu的主机上安装BlueXP分类</block>
-  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网络中的Ubuntu Linux主机或云中的Linux主机上安装BlueXP分类。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新的BlueXP分类安装不再支持Red Hat Enterprise Linux 8.6和8.7</block>
   <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是前提条件。如果现有BlueXP分类计算机运行RHEL 8.6或8.7、则NetApp将继续支持您的配置。</block>
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">可以将BlueXP分类配置为FPolicy收集器、以便从ONTAP系统接收FPolicy事件</block>
@@ -545,4 +544,8 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">详细了解BlueXP卷缓存</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">现在、您可以通过Connector从BlueXP添加和管理Azure存储帐户。</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">了解如何从BlueXP在Azure订阅中添加新的Azure存储帐户</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>。</block>
+  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网络中的Ubuntu Linux主机上安装BlueXP分类、也可以在云中的Linux主机上安装(如果使用的是1.23版安装程序)。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
 </blocks>

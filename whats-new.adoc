@@ -53,6 +53,10 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["控制台顶部提供的BlueXP搜索的屏幕截图。"]
 
+* 现在、您可以通过Connector从BlueXP添加和管理Azure存储帐户。
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["了解如何从BlueXP在Azure订阅中添加新的Azure存储帐户"^]。
+
 * 现在、以下AWS地区支持此连接器：
 +
 ** (ap-s南部-2)
@@ -390,7 +394,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 ==== Ubuntu现在是一个受支持的Linux分发版、您可以在其中安装BlueXP分类
 
-Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网络中的Ubuntu Linux主机或云中的Linux主机上安装BlueXP分类。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["了解如何在安装了Ubuntu的主机上安装BlueXP分类"]。
+Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网络中的Ubuntu Linux主机上安装BlueXP分类、也可以在云中的Linux主机上安装(如果使用的是1.23版安装程序)。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["了解如何在安装了Ubuntu的主机上安装BlueXP分类"]。
 
 
 
