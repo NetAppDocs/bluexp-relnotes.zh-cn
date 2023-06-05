@@ -259,6 +259,46 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2023年7月4日
+
+
+
+==== 增强了适用于应用程序的BlueXP备份和恢复功能(云原生)
+
+* SAP HANA系统
++
+** 支持对具有Azure NetApp Files二级保护的非数据卷和全局非数据卷进行连接和副本还原
+
+
+* Oracle数据库
++
+** 支持将Azure NetApp Files上的Oracle数据库还原到备用位置
+** 支持在Azure NetApp Files上为Oracle数据库备份编制Oracle恢复管理器(RMAN)目录
+** 用于将数据库主机置于维护模式以执行维护任务
+
+
+
+
+
+
+==== 针对应用程序的BlueXP备份和恢复增强功能(混合)
+
+* 支持还原到备用位置
+* 用于挂载Oracle数据库备份
+* 支持将备份从GCP移至归档层
+
+
+
+
+==== 虚拟机BlueXP备份和恢复增强功能(混合)
+
+* 支持保护NFS和VMFS类型的数据存储库
+* 允许您取消注册适用于VMware vSphere的SnapCenter插件主机
+* 支持刷新和发现最新数据存储库和备份
+
+
+
+
 === 2023年6月5日
 
 
@@ -1198,6 +1238,24 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 
 
 
+=== 2023年7月4日
+
+
+
+==== 现在、您可以调整用于将非活动数据上传到对象存储的带宽
+
+激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["了解更多信息。"]。
+
+
+
+==== "低层"的层事件将显示在通知中心中
+
+现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群<name>分层到对象存储以提高存储效率"将显示为通知。
+
+此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接 https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP分层总拥有成本和节省量计算器"^] 以帮助您计算成本节省。
+
+
+
 === 2023年4月3日
 
 
@@ -1221,28 +1279,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 ==== 现在、您可以为卷生成分层报告
 
 您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。BlueXP分层会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["请参见如何下载分层报告"]。
-
-
-
-=== 2022年12月6日
-
-
-
-==== 连接器出站Internet访问端点更改
-
-由于BlueXP分层发生了变化、您需要更改以下连接器端点才能成功执行BlueXP分层操作：
-
-[cols="50,50"]
-|===
-| 旧端点 | 新端点 
-
-
-| https://cloudmanager.cloud.netapp.com | https://api.bluexp.netapp.com 
-
-
-| https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
-|===
-请查看的完整端点列表 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure 酒店"^] 云环境。
 
 
 

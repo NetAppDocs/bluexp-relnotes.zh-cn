@@ -123,24 +123,13 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXP索引</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">了解有关支持的同步关系的更多信息</block>
-  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">旧端点</block>
-  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">新端点</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="cell">https://*.api.bluexp.netapp.com</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure 酒店</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">能够定义策略来确定您认为业务关键型的数据</block>
   <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">了解有关业务关键型数据页面的更多信息</block>
   <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">现在、您可以从BlueXP左侧导航菜单中选择*监管&gt;勒索软件保护*来访问此服务。</block>
   <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">此版本的连接器包含Cloud Volumes ONTAP 增强功能。</block>
-  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">连接器出站Internet访问端点更改</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 针对每个服务。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">2023年3月5日</block>
@@ -283,7 +272,6 @@
   <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">BlueXP勒索软件保护新增了一个业务关键型数据页面。通过此页面、您可以查看BlueXP分类中定义的所有策略。您可以选择确定对您的业务至关重要的数据的策略、以便BlueXP勒索软件保护信息板和其他勒索软件面板根据您最重要的数据反映潜在问题。</block>
   <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">如果您尚未为BlueXP勒索软件保护服务激活任何策略、"建议操作"面板将显示一个名为"配置业务关键型数据"的新建议操作。</block>
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">BlueXP勒索软件保护已从"保护"类别移至"监管"类别</block>
-  <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">由于BlueXP分层发生了变化、您需要更改以下连接器端点才能成功执行BlueXP分层操作：</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">BlueXP电子钱包现在支持电子邮件通知。</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。</block>
   <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">您的BlueXP PAYGO订阅和年度合同现在可通过BlueXP电子钱包进行查看和管理。</block>
@@ -414,7 +402,6 @@
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>。</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>。</block>
   <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。BlueXP分层会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>。</block>
-  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">请查看的完整端点列表<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>，<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>或<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> 云环境。</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Azure Blb存储</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">迁移报告</block>
@@ -548,4 +535,24 @@
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">由于此更改、Azure政府区域中的Connector不再与以下端点联系：</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">请注意、所有其他受限模式配置和标准模式仍需要此端点。</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">2023年7月4日</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">SAP HANA系统</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">支持对具有Azure NetApp Files二级保护的非数据卷和全局非数据卷进行连接和副本还原</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">支持将Azure NetApp Files上的Oracle数据库还原到备用位置</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">支持在Azure NetApp Files上为Oracle数据库备份编制Oracle恢复管理器(RMAN)目录</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">用于将数据库主机置于维护模式以执行维护任务</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">支持还原到备用位置</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">用于挂载Oracle数据库备份</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">支持将备份从GCP移至归档层</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">虚拟机BlueXP备份和恢复增强功能(混合)</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">支持保护NFS和VMFS类型的数据存储库</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">允许您取消注册适用于VMware vSphere的SnapCenter插件主机</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">支持刷新和发现最新数据存储库和备份</block>
+  <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
+  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">现在、您可以调整用于将非活动数据上传到对象存储的带宽</block>
+  <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
+  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">"低层"的层事件将显示在通知中心中</block>
+  <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群&lt;name&gt;分层到对象存储以提高存储效率"将显示为通知。</block>
+  <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP分层总拥有成本和节省量计算器</block>
+  <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> 以帮助您计算成本节省。</block>
 </blocks>
