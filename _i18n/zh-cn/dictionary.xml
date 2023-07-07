@@ -155,7 +155,6 @@
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">了解如何添加新的Amazon S3存储分段</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">将 Cloud Volumes ONTAP 数据备份到 Amazon S3</block>
-  <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">将Cloud Volumes ONTAP 数据备份到Azure Blob</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">了解如何设置电子邮件通知</block>
@@ -185,11 +184,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">卸载Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">已删除许可选项卡</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">分层选项卡已重命名并更新了内容</block>
-  <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">2023年4月4日</block>
-  <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">能够在"受限"模式下将数据从Cloud Volumes ONTAP 系统备份到云</block>
-  <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">可以使用API将内部ONTAP 卷备份到ONTAP S3</block>
-  <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">可以将Azure存储帐户的分区冗余方面从LRS更改为ZRS</block>
-  <block id="95fa16fe802a71eca4c0ade2049c7325" category="inline-link">更改存储帐户的复制方式</block>
   <block id="a7393f4b2940dc4b2ad20a62564d25be" category="section-title">作业监控的增强功能</block>
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023年4月3日(1.22版)</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新的数据发现评估报告</block>
@@ -205,8 +199,6 @@
   <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">设置向导和GFC配置UI已进行了增强、可执行NetApp许可证注册</block>
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">优化的PSM-用于配置Edge Sync功能</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。</block>
-  <block id="42d7d856cc8f6a2f82ed10cd8356e7d2" category="inline-link">详细了解BlueXP部署模式</block>
-  <block id="d7cfe6967f3004ef3386a27fe99a4610" category="inline-link">与ONTAP S3集成作为目标</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">设置和管理</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">数字电子钱包</block>
@@ -226,21 +218,9 @@
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">勒索软件保护</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修复</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">分层</block>
-  <block id="256c6643ca1c733f72685d5a161161f5" category="section-title">2023年4月14日</block>
   <block id="197747cde80c31576877de78be696240" category="section-title">增强了适用于应用程序的BlueXP备份和恢复功能(云原生)</block>
-  <block id="0a286ad90f3a25f45e443367036a8789" category="list-text">SAP HANA数据库</block>
-  <block id="c0c906f83c940d4d16ffb433d7a368ca" category="list-text">支持基于脚本的系统刷新</block>
-  <block id="b53bbb0902c6b7a25e7c1ac484d9fec2" category="list-text">如果配置了Azure NetApp Files 备份、则支持单文件Snapshot还原</block>
-  <block id="14860ef57cb4190ea449b13f7f0c8ea1" category="list-text">支持插件升级</block>
   <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracle数据库</block>
-  <block id="b24979dddd1ccc913b0f29f30c981677" category="list-text">通过简化非root sudo用户配置增强了插件部署</block>
-  <block id="ab5eec0b36e1c0d7a8538ce2f367515c" category="list-text">支持对Azure NetApp Files 上的Oracle数据库进行自动发现和策略驱动型保护</block>
-  <block id="d21798a5d9e370e5fbb0150023dfaa38" category="list-text">支持通过粒度恢复将Oracle数据库还原到原始位置</block>
   <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">针对应用程序的BlueXP备份和恢复增强功能(混合)</block>
-  <block id="abfdb85669faee0a0fe78a3ddd25158b" category="list-text">修改了混合REST API以与云原生API保持一致。</block>
-  <block id="91dd9ae8b3342cf7e40f497897ce70d7" category="list-text">支持电子邮件通知</block>
-  <block id="ef08fc33d8b9b410529dc05986b2e248" category="paragraph">通过API中的新功能、您可以使用BlueXP备份和恢复功能将卷快照备份到ONTAP S3。此功能目前仅适用于内部部署的ONTAP 系统。有关详细说明、请参见博客<block ref="8bfab3c14784f20047e4459b814ebfe4" category="inline-link-rx"></block>。</block>
-  <block id="bcd4bdef20ff7dec0587f35facdeb7be" category="paragraph">默认情况下、在从Cloud Volumes ONTAP 系统创建到Azure存储的备份时、BlueXP备份和恢复会为Blob容器配置本地冗余(LRS)以实现成本优化。如果要在不同分区之间复制数据、可以将此设置更改为区域冗余(ZRS)。请参见的Microsoft说明<block ref="c549763665cfbb93dbccfdbf667aa0f2" category="inline-link-rx"></block>。</block>
   <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">查看BlueXP备份和恢复可以发送的所有警报</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">能够在云中的较小实例上部署BlueXP分类</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">现在、可以使用独立脚本在安装BlueXP分类之前对Linux系统进行资格认定</block>
@@ -316,7 +296,6 @@
   <block id="679a2d98f8c7c05c4944b0d161a6d567" category="section-title">现在、备份文件支持AWS中国地区</block>
   <block id="aad236ec8e2b61a79fb4bb3a416a2e06" category="paragraph">现在、如果集群运行的是ONTAP 9.12.1或更高版本、则支持将AWS中国北京(CN-north-1)和宁夏(CN-north-1)区域作为备份文件的目标。</block>
   <block id="c93bfe725726f47fe3bfcc0e95f8ec7d" category="inline-link">将本地ONTAP 数据备份到Amazon S3</block>
-  <block id="4d5789e8f025b3895d94f1b6a7225e4a" category="list-text">适用于应用程序(混合)的BlueXP备份和恢复由SaaS控制平台驱动</block>
   <block id="2652537da62e22a06b22374119e6c40f" category="section-title">硬链接功能</block>
   <block id="74b59acd161d1704c8c78879dc8fba01" category="paragraph">现在、用户可以为涉及不安全的NFS到NFS关系的同步添加硬链接。</block>
   <block id="689dbd8363b6599ce07ff94a27510e99" category="inline-link">了解有关文件类型设置的更多信息</block>
@@ -367,8 +346,6 @@
   <block id="46ce6a634ad58fa667690e7f5c151b26" category="list-text">您可以选择 <block ref="2af1713063b9a7e50c1f5e13c7671bae" category="inline-link-macro-rx"></block> 和 <block ref="013335dc35ce07c311c673e8a99c88f9" category="inline-link-macro-rx"></block> 用于对卷进行分类的标记。</block>
   <block id="c55a4ed0f55f8209574960c04bd36597" category="paragraph">现在、您可以选择与客户管理的加密密钥(CMDK)项目不同的项目中的存储分段。<block ref="2425c9129a22c7135ee8a04ae0dae970" category="inline-link-rx"></block>。</block>
   <block id="cfc826b330f7a25cc3c4e115a9fcca13" category="paragraph">请注意、分配给BlueXP Connector的IAM策略需要将All _Resource_部分下的AWS资源名称"arn"从"aws"更改为"AAWS CN"；例如"arn：aws-cn：s3：：：NetApp-backup-*"。请参见<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> 和<block ref="bb86d78b7593b3e1252f277b7dd6e017" category="inline-link-rx"></block> 了解详细信息。</block>
-  <block id="3f95b7ff004c9ea7ba2c076aa81ddbd8" category="list-text">除了可以下载CSV文件以报告所有作业之外、现在您还可以下载单个作业的JSON文件并查看其详细信息。<block ref="c5e8ac86e60de65889ee067b8ca8ac22" category="inline-link-rx"></block>。</block>
-  <block id="aca6a48e798dafa8a873544468b60e06" category="list-text">添加了两个新的备份作业警报："Scheduled job failure"和"Restore job completes but with warnings"。<block ref="a4848a9ae757d04f84e693376feb04c0" category="inline-link-rx"></block>。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">数据发现评估报告对扫描环境进行了深入分析、以突出显示系统的发现结果、并显示关注领域和可能的修复步骤。本报告的目标是提高对数据治理问题、数据安全风险以及数据集数据合规性差距的认识。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">在AWS环境中从BlueXP Connector部署BlueXP分类时、现在您可以从两种比默认实例更小的实例类型中进行选择。如果您要扫描小型环境、这可以帮助您节省云成本。但是、使用较小的实例时会存在一些限制。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">如果要独立于运行BlueXP分类安装来验证Linux系统是否满足所有前提条件、您可以下载一个单独的脚本、该脚本仅测试前提条件。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
@@ -459,8 +436,6 @@
   <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>。</block>
   <block id="5a4b2cac486281ad2280371043da8170" category="section-title">自动备份非公开站点中的关键BlueXP备份和恢复文件</block>
   <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">在无法访问Internet的站点(称为"专用模式"部署)中使用BlueXP备份和恢复时、BlueXP备份和恢复信息仅存储在本地连接器系统上。这一新功能会自动将关键的BlueXP备份和恢复数据备份到已连接StorageGRID系统上的存储分段中、以便您可以在必要时将这些数据恢复到新的连接器上。<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
-  <block id="813935edc5ac8e9f2c18c722e28dddf8" category="paragraph">现在、您可以在"受限模式"下从AWS、Azure和GCP商业区域中安装的Cloud Volumes ONTAP 系统备份数据。这要求您首先在"受限"商业区域安装Connector。<block ref="0eb8533d49e65dbfdd979d6ceb88ebff" category="inline-link-rx"></block>。请参见<block ref="17dde2a04d27e7ad2a9f0a451a7a0e90" category="inline-link-rx"></block> 和<block ref="e88a100423dadabfc9781439f925633d" category="inline-link-rx"></block>。</block>
-  <block id="f1a109ae8d953da8e05cf5534df6b22b" category="list-text">对于运行ONTAP 9.13.0或更高版本的Cloud Volumes ONTAP 系统、用户启动的备份和还原操作以及系统启动的作业(如正在进行的备份操作)现在均可在*作业监控*选项卡中找到。早期的ONTAP 版本将仅显示用户启动的作业。</block>
   <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">2023年6月6日(版本1.23)</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">现在、搜索数据主题名称时支持日语</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link">数据主体访问请求报告</block>
@@ -555,4 +530,20 @@
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群&lt;name&gt;分层到对象存储以提高存储效率"将显示为通知。</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP分层总拥有成本和节省量计算器</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> 以帮助您计算成本节省。</block>
+  <block id="f717b8ed4d751174af9f9438951b9a4f" category="section-title">2023年7月6日</block>
+  <block id="10ffd42b58d1ced7127bffaff7185e32" category="section-title">BlueXP备份和恢复现在可以计划和创建Snapshot副本以及复制的卷</block>
+  <block id="a2e06093d677add4ecd73d26ade99d66" category="paragraph">BlueXP备份和恢复现在支持您实施3-2-1策略、在2个不同的存储系统上拥有3个源数据副本、在云中拥有1个副本。激活后、您将获得：</block>
+  <block id="4dfb74d83687d8ca40ab05bac1885b0a" category="list-text">源系统上卷的Snapshot副本</block>
+  <block id="00b4fe156d0b170f5196995dd8889b0d" category="list-text">复制的卷位于其他存储系统上</block>
+  <block id="809b026ec469d1b8bfa79721e15f539b" category="list-text">备份对象存储中的卷</block>
+  <block id="4ae5ef4008b68e98ae1878294a66c9d1" category="inline-link">详细了解全新的全频谱备份和还原功能</block>
+  <block id="e1ddbe5fcbded46fffd577b7a64c82ef" category="paragraph"><block ref="c0ade183535ec842bf30c511bd86bbf6" category="inline-link-rx"></block>。</block>
+  <block id="1afa76124f2d71427832cd0846eefa31" category="paragraph">这一新功能也是适用场景恢复操作。您可以从Snapshot副本、复制的卷或云中的备份文件执行还原操作。这样、您可以灵活地选择满足恢复要求的备份文件、包括恢复成本和速度。</block>
+  <block id="6d50e6cd9c195849ff4bcb523527fb42" category="paragraph">请注意、只有运行ONTAP 9.8或更高版本的集群才支持此新功能和用户界面。如果集群使用的是早期版本的软件、则可以继续使用先前版本的BlueXP备份和恢复。但是、我们建议您升级到受支持的ONTAP版本、以获得最新特性和功能。要继续使用旧版软件、请执行以下步骤：</block>
+  <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">从 * 卷 * 选项卡中，选择 * 备份设置 * 。</block>
+  <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">在_Backup Settings_页面中，单击*显示先前BlueXP备份和恢复版本*的单选按钮。</block>
+  <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">然后、您可以使用先前版本的软件管理旧集群。</block>
+  <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">能够创建存储分段以备份到对象存储</block>
+  <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。</block>
+  <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。</block>
 </blocks>
