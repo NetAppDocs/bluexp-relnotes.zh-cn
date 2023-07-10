@@ -136,16 +136,6 @@
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">现在、您可以为卷生成分层报告</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">请参见如何下载分层报告</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">BlueXP中的Kubernetes现在支持Astra Trident 23.01。</block>
-  <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日(1.21版)</block>
-  <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">预定义的类别</block>
-  <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="list-text">博茨瓦纳身份卡(Omang)编号</block>
-  <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="list-text">博茨瓦纳的护照编号</block>
-  <block id="ff3bab043a00af2e37e7dcaf393aea61" category="list-text">新加坡国家注册身份卡(NRIC)</block>
-  <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">更新了目录的功能</block>
-  <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">现在、数据调查报告的"轻型CSV报告"选项包括目录中的信息。</block>
-  <block id="b2755be94249995adeed2a28b31a7393" category="list-text">"上次访问"时间筛选器现在可显示文件和目录的上次访问时间。</block>
-  <block id="013efea19f002683e016d90789038d6e" category="section-title">安装增强功能</block>
-  <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">安装审核日志文件现已保存；它们将写入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023年3月7日</block>
   <block id="b20988b483bceb3fb63077025a07d023" category="section-title">新增了一个勒索软件恢复信息板、可帮助您的系统从攻击中恢复</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3存储</block>
@@ -218,18 +208,8 @@
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">能够在云中的较小实例上部署BlueXP分类</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">现在、可以使用独立脚本在安装BlueXP分类之前对Linux系统进行资格认定</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">请参见How to check if your Linux host is ready to install BlueXP classification</block>
-  <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="section-title">新增了一项功能、可从BlueXP分类UI添加您自己的自定义类别</block>
-  <block id="bca8069b731ea966c03da0cea318f9d1" category="section-title">现在、您可以从BlueXP分类UI添加自定义关键字</block>
-  <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">BlueXP分类可以添加BlueXP分类在未来扫描中识别的自定义关键字。但是、您需要登录到BlueXP classification Linux主机并使用命令行界面添加关键字。在此版本中、BlueXP分类UI中提供了添加自定义关键字的功能、因此可以轻松添加和编辑这些关键字。</block>
-  <block id="bb81f229fc6d121a288d657aea60262e" category="inline-link">了解有关从BlueXP分类UI添加自定义关键字的更多信息</block>
-  <block id="7e5ec3b51659d16db2e72438a8ca680a" category="section-title">当"上次访问时间"将被更改时、BlueXP分类*不*扫描文件的功能</block>
-  <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">默认情况下、如果BlueXP分类没有足够的"写入"权限、则系统不会扫描卷中的文件、因为BlueXP分类无法将"上次访问时间"还原为原始时间戳。但是、如果您不在乎文件中的上次访问时间是否重置为原始时间、则可以在配置页面中覆盖此行为、以便BlueXP分类将扫描卷、而不管权限如何。</block>
-  <block id="61d99226273ea30523883fe7209399c2" category="paragraph">与此功能结合使用时、添加了名为"扫描分析事件"的新筛选器、因此您可以查看因BlueXP分类无法还原上次访问时间而未进行分类的文件、或者即使BlueXP分类无法还原上次访问时间也进行分类的文件。</block>
-  <block id="bf8521a1bd91dd809d1d007594f22498" category="inline-link">了解有关"上次访问时间时间戳"和BlueXP分类所需权限的更多信息</block>
-  <block id="9422d01ffeaf90b54d512834d7e52972" category="section-title">BlueXP分类标识了三种新类型的个人数据</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP分类可以标识包含以下类型数据的文件并对其进行分类：</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">查看BlueXP分类可在您的数据中识别的所有个人数据类型</block>
-  <block id="27bfd524829d2f58c611b9380403face" category="list-text">现在、不能访问Internet的站点(非公开站点)的BlueXP分类安装程序会执行预检查、以确保您的系统和网络要求已满足、以便成功安装。</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">数字顾问</block>
   <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并提供增强的登录体验。</block>
   <block id="bde16c93c046fa9870a736978717607f" category="paragraph">当您访问BlueXP数字顾问时、系统会提示您输入NetApp 支持站点 凭据、以便您可以查看与系统相关的数据。您登录时使用的NSS帐户仅与您的用户登录关联。它不会与您的NetApp帐户中的任何其他用户关联。</block>
@@ -342,10 +322,6 @@
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">数据发现评估报告对扫描环境进行了深入分析、以突出显示系统的发现结果、并显示关注领域和可能的修复步骤。本报告的目标是提高对数据治理问题、数据安全风险以及数据集数据合规性差距的认识。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">在AWS环境中从BlueXP Connector部署BlueXP分类时、现在您可以从两种比默认实例更小的实例类型中进行选择。如果您要扫描小型环境、这可以帮助您节省云成本。但是、使用较小的实例时会存在一些限制。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">如果要独立于运行BlueXP分类安装来验证Linux系统是否满足所有前提条件、您可以下载一个单独的脚本、该脚本仅测试前提条件。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
-  <block id="75e47d62ba360614f8cdea86c229c321" category="paragraph">现在、您可以通过BlueXP分类添加自己的自定义类别、以便BlueXP分类能够识别适合这些类别的文件。BlueXP分类有很多<block ref="7587255274ad12f237a14fbd5f47a14a" category="inline-link-rx"></block>、因此、您可以通过此功能添加自定义类别、以确定您的组织独有的信息在您的数据中的位置。</block>
-  <block id="740f66f04097135a7846557949061bf8" category="paragraph"><block ref="e14cfeac39419a4a8a842fd3611a27db" category="inline-link-rx"></block>。</block>
-  <block id="8f031c80211d08a2fc3d24c73c826e4b" category="paragraph"><block ref="d597807e5ef4bec605cdd823cfc707e7" category="inline-link-rx"></block>。</block>
-  <block id="b81005c38cb0963c694c4f17fdffdda5" category="paragraph"><block ref="6a34fff85e918ca0361628bb33e44cc4" category="inline-link-rx"></block>。</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
   <block id="06765567af68358bde181ef7ae8a31b0" category="paragraph">有关详细信息，请参见 <block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
@@ -535,8 +511,6 @@
   <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">从 * 卷 * 选项卡中，选择 * 备份设置 * 。</block>
   <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">在_Backup Settings_页面中，单击*显示先前BlueXP备份和恢复版本*的单选按钮。</block>
   <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">然后、您可以使用先前版本的软件管理旧集群。</block>
-  <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">能够创建存储分段以备份到对象存储</block>
-  <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud 存储</block>
   <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
@@ -555,4 +529,19 @@
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">可以通过BlueXP添加新存储分段并管理现有存储分段</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">了解如何添加新的Google Cloud存储分段</block>
   <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
+  <block id="e2f760131280f3fd361a50b428c7b92d" category="section-title">能够创建用于备份到对象存储的存储容器</block>
+  <block id="414c40dd827c6738286ee0b333e39456" category="inline-link">了解如何创建对象存储分段</block>
+  <block id="debda728f2e9b255111b127aed9dc8fd" category="paragraph">在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。<block ref="2d2a00fa0eeaa888f8c689ec67e16ffe" category="inline-link-rx"></block>。</block>
+  <block id="0494d69152dc144f6691315fabf9af4d" category="section-title">2023年7月17日(版本1.24)</block>
+  <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">两种新类型的德国个人数据通过BlueXP分类来识别</block>
+  <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">德语ID (Personalausweisnummer)</block>
+  <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">德国社会保障号码(Sozialversicherungsnummer)</block>
+  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">现在、落基Linux 9是一个受支持的Linux分发版、您可以在其中安装BlueXP分类</block>
+  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">了解如何在安装了Rocky Linux的主机上安装BlueXP分类</block>
+  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">对于BlueXP分类、落基Linux 9 (9.0、9.1和9.2)已被认定为受支持的操作系统。您可以在网络中的Rocky Linux主机上安装BlueXP分类、如果使用1.24版安装程序、也可以在云中的Linux主机上安装BlueXP分类。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
+  <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">在受限模式和专用模式下完全支持BlueXP分类</block>
+  <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">详细了解连接器的BlueXP部署模式</block>
+  <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">现在、在没有Internet访问(专用模式)和出站Internet访问受限(受限模式)的站点中、完全支持BlueXP分类。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
+  <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">升级BlueXP分类的私有模式安装时可以跳过版本</block>
+  <block id="241957d9f6c696915858d43476112454" category="paragraph">现在、您可以升级到较新版本的BlueXP分类、即使它不是按顺序进行的。这意味着不再需要一次升级一个版本的BlueXP分类的当前限制。从1.24版开始、此功能是相关的。</block>
 </blocks>
