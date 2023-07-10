@@ -33,6 +33,32 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 
 
 
+=== 7月30日
+
+
+
+==== 连接器3.9.32
+
+* 现在、您可以使用BlueXP审核服务API导出审核日志。
++
+审核服务记录有关BlueXP服务执行的操作的信息。这包括源IP地址、工作空间、使用的连接器以及其他遥测数据。您可以使用此数据来确定执行了哪些操作、执行了哪些操作以及何时执行了这些操作。
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["详细了解如何使用审核服务API"^]
+
++
+请注意、此链接也可从BlueXP用户界面的Timeline页面访问。
+
+* 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["了解Cloud Volumes ONTAP 增强功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["了解ONTAP 内部集群增强功能"^]
+
+
+
+
+
+
 === 2023年7月2日
 
 
@@ -114,36 +140,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["�
 
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
-
-
-
-
-=== 2023年5月7日
-
-
-
-==== 连接器3.9.29
-
-* 当您从BlueXP或云提供商的市场部署Connector时、Ubuntu 22.04是适用于Connector的新操作系统。
-+
-您还可以选择在运行Ubuntu 22.04的自己的Linux主机上手动安装Connector。
-
-* 新的Connector部署不再支持Red Hat Enterprise Linux 8.6和8.7。
-+
-新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是Connector所必需的。如果现有Connector运行的是RHEL 8.6或8.7、则NetApp将继续支持您的配置。
-
-+
-Red Hat 7.6、7.7、7.8和7.9仍支持新的和现有的连接器。
-
-* 现在、卡塔尔地区的Google Cloud支持Connector。
-* Microsoft Azure中的瑞典中部地区也支持Connector。
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["查看支持的区域的完整列表"^]
-
-* 此版本的连接器包含Cloud Volumes ONTAP 增强功能。
-+
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["了解Cloud Volumes ONTAP 增强功能"^]
 
 
 
@@ -499,6 +495,58 @@ Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网�
 
 
 
+=== 2023年7月30日
+
+以下更改是在连接器3.9.32版本中推出的。
+
+
+
+==== Google Cloud支持Flash Cache和高写入速度
+
+在适用于Cloud Volumes ONTAP 9.13.1及更高版本的Google Cloud中、可以单独启用Flash Cache和高写入速度。所有受支持的实例类型均支持高写入速度。以下实例类型支持Flash Cache：
+
+* N2-standard-16
+* N2-standard-32
+* N2-standard-48
+* N2-standard-64
+
+
+您可以在单节点部署和高可用性对部署中单独使用或同时使用这些功能。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["在Google Cloud中启动Cloud Volumes ONTAP"]
+
+
+
+==== 使用情况报告增强功能
+
+现在、对使用情况报告中显示的信息进行了各种改进。以下是使用情况报告的增强功能：
+
+* 此时、TiB单元将包含在列名称中。
+* 现在、系统会为序列号添加一个新的"节点"字段。
+* 现在、Storage VM使用情况报告下会包含一个新的"Workload Type"列。
+* 工作环境名称现在包含在Storage VM和卷使用情况报告中。
+* 卷类型"file"现在标记为"Primary (Read/Write)"。
+* 卷类型"Secondary (DP)"现在标记为"Secondary (Secondary (DP))"。
+
+
+有关使用情况报告的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"^]。
+
+
+
+=== 2023年7月26日
+
+在3.9.31版本的连接器中引入了以下更改。
+
+
+
+==== Cloud Volumes ONTAP 9.13.1 GA
+
+BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1正式发布版。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
 === 2023年7月2日
 
 在3.9.31版本的连接器中引入了以下更改。
@@ -510,86 +558,6 @@ Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网�
 对于Cloud Volumes ONTAP 9.12.1 GA及更高版本、Azure中的日本东部和韩国中部现在支持HA多可用性区域部署。
 
 有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
-
-
-
-==== 自主防兰森保护支持
-
-Cloud Volumes ONTAP现在支持自动防兰软件保护(ARP)。Cloud Volumes ONTAP 9.12.1及更高版本支持ARP。
-
-要了解有关ARP与Cloud Volumes ONTAP的更多信息、请参见 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["自主勒索软件保护"]。
-
-
-
-=== 2023年6月26日
-
-以下更改是在3.9.30版的连接器中推出的。
-
-
-
-==== Cloud Volumes ONTAP 9.13.1 RC1
-
-BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1。
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-=== 2023年6月4日
-
-以下更改是在3.9.30版的连接器中推出的。
-
-
-
-==== Cloud Volumes ONTAP升级版本选择器更新
-
-现在、您可以通过Upgrade Cloud Volumes ONTAP页面选择升级到最新可用的Cloud Volumes ONTAP版本或更早版本。
-
-要了解有关通过BlueXP升级Cloud Volumes ONTAP的更多信息、请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["升级 Cloud Volumes ONTAP"^]。
-
-
-
-=== 2023年5月7日
-
-以下更改是在连接器3.9.29版中推出的。
-
-
-
-==== 现在、Google Cloud支持卡塔尔地区
-
-现在、适用于Cloud Volumes ONTAP 的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持卡塔尔地区。
-
-
-
-==== 现在、Azure支持瑞典中部地区
-
-现在、适用于Cloud Volumes ONTAP 的Azure和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持瑞典中部地区。
-
-
-
-==== 支持在Azure澳大利亚东部部署HA多可用性区域
-
-Azure中的澳大利亚东部地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署HA多可用性区域。
-
-
-
-==== 充电使用情况细分
-
-现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP中的电子钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。
-
-* Cloud Volumes ONTAP 软件包使用情况
-* 使用情况概要
-* Storage VM使用情况
-* 卷使用量
-
-
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^]。
-
-
-
-==== 现在、在访问BlueXP而未订阅商城时会显示通知
-
-现在、只要您在BlueXP中访问Cloud Volumes ONTAP 而没有市场订阅、就会显示一条通知。通知中指出："需要在此工作环境下进行商城订阅、以符合Cloud Volumes ONTAP 条款和条件。"
 
 
 
@@ -747,6 +715,26 @@ https://docs.netapp.com/us-en/active-iq/index.html["详细了解BlueXP数字顾�
 
 
 
+=== 2023年7月30日
+
+
+
+==== 使用情况报告增强功能
+
+Cloud Volumes ONTAP使用情况报告现已有多项改进：
+
+* 此时、TiB单元将包含在列名称中。
+* 现在、包含了一个用于序列号的新_node (s)_字段。
+* 现在、Storage VM使用情况报告下会包含一个新的_Workload Type_列。
+* 现在、工作环境名称会包含在Storage VM和卷使用情况报告中。
+* 卷类型_file_现在标记为_Primary (Read/Write)_。
+* 卷类型_Secondary (DP)_现在标记为_Secondary (DP)_。
+
+
+有关使用情况报告的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"]。
+
+
+
 === 2023年5月7日
 
 
@@ -767,7 +755,7 @@ BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplac
 * 卷使用量
 
 
-有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["管理基于容量的许可证"]。
+有关使用情况报告的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"]。
 
 
 
@@ -790,18 +778,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html
 查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["了解如何查看帐户中的已用容量"]。
-
-
-
-=== 2022年11月6日
-
-
-
-==== 订阅和年度合同
-
-您的BlueXP PAYGO订阅和年度合同现在可通过BlueXP电子钱包进行查看和管理。
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["了解如何管理您的订阅"]。
 
 
 
@@ -979,6 +955,20 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["详细
 
 
 
+=== 2023年7月30日
+
+
+
+==== 创建 FlexGroup 卷
+
+如果您要使用Connector管理集群、现在可以使用BlueXP API创建FlexGroup卷。
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["了解如何创建FlexGroup卷"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["了解什么是FlexGroup卷"^]
+
+
+
+
 === 2023年7月2日
 
 
@@ -1007,28 +997,6 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#ad
 
 
 NOTE: 如果您没有Connector、则无法从本地计算机进行更新、只能从可使用BlueXP访问的服务器进行更新。
-
-
-
-=== 2023年4月3日
-
-
-
-==== 通过BlueXP控制台提供一个发现选项
-
-当您从BlueXP控制台发现内部ONTAP 集群时、您将看到一个选项：
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["屏幕截图显示了在创建工作环境时可用的发现内部部署ONTAP 选项"]
-
-以前、直接发现和使用Connector进行发现都有单独的流。这两个选项仍然可用、但会合并到一个流程中。
-
-启动发现过程时、BlueXP将按如下所示发现集群：
-
-* 如果您的活动连接器已连接到ONTAP 集群、则BlueXP将使用此连接器发现和管理集群。
-* 如果您没有连接器、或者您的连接器没有连接到ONTAP 集群、则BlueXP将自动使用直接发现和管理选项。
-
-
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["详细了解发现和管理选项"]。
 
 
 
