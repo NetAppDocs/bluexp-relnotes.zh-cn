@@ -39,6 +39,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["设置和管理
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["适用于 Google Cloud 的 Cloud Volumes Service"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["E系列系统"^]
+* https://docs.netapp.com/us-en/bluexp-google-cloud-storage/whats-new.html["Google Cloud 存储"^]
 * https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Kubernetes 集群"^]
 * https://docs.netapp.com/us-en/bluexp-reports/release-notes/whats-new.html["迁移报告"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["内部 ONTAP 集群"^]

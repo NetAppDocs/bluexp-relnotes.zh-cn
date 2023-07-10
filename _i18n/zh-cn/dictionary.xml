@@ -123,7 +123,6 @@
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">BlueXP索引</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文档</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">2022年11月6日</block>
-  <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">了解有关支持的同步关系的更多信息</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023年2月5日</block>
   <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">能够定义策略来确定您认为业务关键型的数据</block>
@@ -173,12 +172,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">运营故障恢复能力</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
-  <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2023年4月2日</block>
-  <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">对Azure Data Lake Storage Gen2关系的其他支持</block>
-  <block id="61babc330ca2ea0af752965dd3965d41" category="paragraph">现在、您可以使用Azure Data Lake Storage Gen2作为源和目标创建同步关系、其中包括以下内容：</block>
-  <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">内部ONTAP</block>
-  <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">按完整路径筛选目录</block>
-  <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">除了按名称筛选目录之外、您现在还可以按目录的完整路径进行筛选。</block>
   <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">了解有关排除目录设置的更多信息</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">了解如何查看帐户中的已用容量</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">卸载Astra Trident</block>
@@ -361,7 +354,6 @@
   <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>。</block>
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>。</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>。</block>
-  <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>。</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">此版本提供了以下列出的新功能。此外、它还修复了中所述的问题<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。可从获取更新的软件包<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>。</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">此版本提供了以下列出的新功能。此外、它还修复了中所述的问题<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。</block>
@@ -546,4 +538,21 @@
   <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">能够创建存储分段以备份到对象存储</block>
   <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud 存储</block>
+  <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
+  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">2023年7月9日</block>
+  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">一次删除多个同步关系</block>
+  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">现在、用户可以在用户界面中一次删除多个同步关系。</block>
+  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">了解有关删除同步关系的更多信息。</block>
+  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
+  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">仅复制ACL</block>
+  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">现在、用户可以通过其他选项在CIFS和NFS关系中复制ACL信息。创建或管理同步关系时、您只能复制文件、仅复制ACL信息或复制文件和ACL信息。</block>
+  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">了解有关复制ACL的更多信息。</block>
+  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
+  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">已更新为Node.js 20</block>
+  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">复制和同步已更新为Node.js 20。所有可用的数据代理都将更新。无法安装与此更新不兼容的操作系统、不兼容的现有系统可能会出现性能问题。</block>
+  <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
+  <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">可以通过BlueXP添加新存储分段并管理现有存储分段</block>
+  <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">了解如何添加新的Google Cloud存储分段</block>
+  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
 </blocks>
