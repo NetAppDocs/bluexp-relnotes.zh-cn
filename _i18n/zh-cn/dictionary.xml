@@ -467,8 +467,6 @@
   <block id="e1203bb3756aaddbc1d40b7033d44bd1" category="paragraph">请参见 <block ref="2ffac1c1fc93e8203aa3ebf9b3a6ff2d" category="inline-link-macro-rx"></block> 了解完整详细信息。</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP分类API现已推出</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">通过BlueXP分类API、您可以执行操作、创建查询以及导出有关正在扫描的数据的信息。可使用Swagger获取交互式文档。文档分为多个类别、包括调查、合规性、监管和配置。每个类别都是BlueXP分类UI中各个选项卡的参考。</block>
-  <block id="af16b996606b35cb0f77fe07ba2e556a" category="paragraph">要进入Swagger、您需要BlueXP分类实例的IP地址。对于云部署、您将使用公共IP地址。然后、您需要进入此端点：</block>
-  <block id="254092d1402121eb76375744912fcb31" category="paragraph"><block ref="76abae69818f3dbdee10e3bc86ddf426" category="inline-link-rx"></block></block>
   <block id="a57bb636c3624bebb972f007b21fd8fb" category="section-title">2023年8月6日</block>
   <block id="56a559acc9f9bd2fc9cf51154aef7ce5" category="section-title">创建数据代理时使用现有Azure安全组</block>
   <block id="bf4bc301ccb8b2b21ef394a22e4afef6" category="paragraph">现在、用户可以选择在创建数据代理时使用现有Azure安全组。</block>
@@ -491,4 +489,69 @@
   <block id="2d81e61b650e87c484f1701ff4c00053" category="section-title">在所有BlueXP连接器中搜索集群</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">如果使用多个连接器管理环境中的所有存储系统、则要实施分层的某些集群可能位于不同的连接器中。如果您不确定是哪个Connector管理某个集群、可以使用BlueXP分层跨所有连接器进行搜索。<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>。</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">审核服务记录有关BlueXP服务执行的操作的信息。其中包括工作区、使用的连接器和其他遥测数据。您可以使用此数据来确定执行了哪些操作、执行了哪些操作以及何时执行了这些操作。</block>
+  <block id="ca8395d0f02816c74d48e7e263466096" category="section-title">2023年8月1日</block>
+  <block id="94798620994cb827b675957027c80437" category="paragraph">由于增强了安全性、您的Connector现在需要通过出站Internet访问其他端点、以便在公有云环境中管理备份和恢复资源。如果此端点尚未添加到防火墙的"允许"列表中、您将在UI中看到有关"服务不可用"或"无法确定服务状态"的错误：</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
+  <block id="e752fa0925615f823987d88e457d59fd" category="section-title">添加了将卷备份到S3配置的ONTAP系统上的分段的支持</block>
+  <block id="2f90f6337bfaddfb7cef01155147c18e" category="paragraph">现在、您可以使用已配置简单存储服务(S3)的ONTAP系统将卷备份到对象存储。内部ONTAP系统和Cloud Volumes ONTAP系统均支持此功能。在云部署和不能访问Internet的内部位置("私有"模式部署)支持此配置。</block>
+  <block id="d93a426929555b449107b332f0c5df78" category="paragraph"><block ref="2d1eb9b9d1143acaa6fbfc289c32041b" category="inline-link-rx"></block>。</block>
+  <block id="70fbb23fd6cfcbe729580a8c7071730a" category="section-title">现在、您可以将受保护卷中的现有Snapshot包含在备份文件中</block>
+  <block id="7c312a822a10d6845bb9cf257a3b41f5" category="paragraph">过去、您可以将读写卷中的现有Snapshot副本包含在初始备份文件中并存储到对象存储中(而不是从最新的Snapshot副本开始)。只读卷(数据保护卷)中的现有Snapshot副本不包含在此备份文件中。现在、您可以选择在"DP"卷的备份文件中包含较早的Snapshot副本。</block>
+  <block id="a52e9db6c55aaea07e1f222122cf9475" category="paragraph">备份向导会在备份步骤结束时显示一条提示、您可以在其中选择这些"现有快照"。</block>
+  <block id="6136d2619abda8ba9c4b9f6c76f6d430" category="section-title">BlueXP备份和恢复不再支持对未来添加的卷进行自动备份</block>
+  <block id="3b17b8ee7680ecdabf14e962be98ba50" category="paragraph">以前、您可以选中备份向导中的复选框、将选定备份策略应用于添加到集群中的所有未来卷。根据用户反馈以及未使用此功能、此功能已被删除。您需要手动为添加到集群中的任何新卷启用备份。</block>
+  <block id="0420a611a93fd8e2b4b4669f2533284c" category="section-title">"作业监控"页面已更新、新增了一些功能</block>
+  <block id="99e43b54749f1014f6aeb5b8c1c56742" category="paragraph">现在、"作业监控"页面提供了与3-2-1备份策略相关的详细信息。该服务还提供与备份策略相关的其他警报通知。</block>
+  <block id="04afa98530b9fa98eb8d1adf9da08f7f" category="paragraph">"备份生命周期"类型筛选器已重命名为"保留"。使用此筛选器可跟踪备份生命周期并确定所有备份副本的到期日期。"保留"作业类型会捕获在受BlueXP备份和恢复保护的卷上启动的所有Snapshot删除作业。</block>
+  <block id="751f8afbc94898745cc6e2ea8a5ccd4c" category="inline-link">了解有关更新的作业监控器的更多信息</block>
+  <block id="bf6c8f020a512a9accf77240c1333a16" category="paragraph"><block ref="f412c2e0203811d72b16f88cf9eb5d19" category="inline-link-rx"></block>。</block>
+  <block id="f717b8ed4d751174af9f9438951b9a4f" category="section-title">2023年7月6日</block>
+  <block id="10ffd42b58d1ced7127bffaff7185e32" category="section-title">BlueXP备份和恢复现在可以计划和创建Snapshot副本以及复制的卷</block>
+  <block id="a2e06093d677add4ecd73d26ade99d66" category="paragraph">BlueXP备份和恢复现在支持您实施3-2-1策略、在2个不同的存储系统上拥有3个源数据副本、在云中拥有1个副本。激活后、您将获得：</block>
+  <block id="4dfb74d83687d8ca40ab05bac1885b0a" category="list-text">源系统上卷的Snapshot副本</block>
+  <block id="00b4fe156d0b170f5196995dd8889b0d" category="list-text">复制的卷位于其他存储系统上</block>
+  <block id="809b026ec469d1b8bfa79721e15f539b" category="list-text">备份对象存储中的卷</block>
+  <block id="4ae5ef4008b68e98ae1878294a66c9d1" category="inline-link">详细了解全新的全频谱备份和还原功能</block>
+  <block id="e1ddbe5fcbded46fffd577b7a64c82ef" category="paragraph"><block ref="c0ade183535ec842bf30c511bd86bbf6" category="inline-link-rx"></block>。</block>
+  <block id="1afa76124f2d71427832cd0846eefa31" category="paragraph">这一新功能也是适用场景恢复操作。您可以从Snapshot副本、复制的卷或云中的备份文件执行还原操作。这样、您可以灵活地选择满足恢复要求的备份文件、包括恢复成本和速度。</block>
+  <block id="6d50e6cd9c195849ff4bcb523527fb42" category="paragraph">请注意、只有运行ONTAP 9.8或更高版本的集群才支持此新功能和用户界面。如果集群使用的是早期版本的软件、则可以继续使用先前版本的BlueXP备份和恢复。但是、我们建议您升级到受支持的ONTAP版本、以获得最新特性和功能。要继续使用旧版软件、请执行以下步骤：</block>
+  <block id="fb74ece6972051de48e476af9e1e3b61" category="list-text">从 * 卷 * 选项卡中，选择 * 备份设置 * 。</block>
+  <block id="cbce457a0f1d693a7ec8fdef080284e8" category="list-text">在_Backup Settings_页面中，单击*显示先前BlueXP备份和恢复版本*的单选按钮。</block>
+  <block id="6ad80584a8fba3d1fc876fd412e2b184" category="paragraph">然后、您可以使用先前版本的软件管理旧集群。</block>
+  <block id="e2f760131280f3fd361a50b428c7b92d" category="section-title">能够创建用于备份到对象存储的存储容器</block>
+  <block id="414c40dd827c6738286ee0b333e39456" category="inline-link">了解如何创建对象存储分段</block>
+  <block id="debda728f2e9b255111b127aed9dc8fd" category="paragraph">在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。<block ref="2d2a00fa0eeaa888f8c689ec67e16ffe" category="inline-link-rx"></block>。</block>
+  <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">2023年7月4日</block>
+  <block id="197747cde80c31576877de78be696240" category="section-title">增强了适用于应用程序的BlueXP备份和恢复功能(云原生)</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">SAP HANA系统</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">支持对具有Azure NetApp Files二级保护的非数据卷和全局非数据卷进行连接和副本还原</block>
+  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Oracle数据库</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">支持将Azure NetApp Files上的Oracle数据库还原到备用位置</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">支持在Azure NetApp Files上为Oracle数据库备份编制Oracle恢复管理器(RMAN)目录</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">用于将数据库主机置于维护模式以执行维护任务</block>
+  <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">针对应用程序的BlueXP备份和恢复增强功能(混合)</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">支持还原到备用位置</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">用于挂载Oracle数据库备份</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">支持将备份从GCP移至归档层</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">虚拟机BlueXP备份和恢复增强功能(混合)</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">支持保护NFS和VMFS类型的数据存储库</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">允许您取消注册适用于VMware vSphere的SnapCenter插件主机</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">支持刷新和发现最新数据存储库和备份</block>
+  <block id="47cb625c2251a650ce99bc5010f839ac" category="section-title">FlexGroup卷可以使用DataLock和防软件保护进行备份和保护</block>
+  <block id="ea9b647c4b660963890b981cadc4c22f" category="paragraph">现在、当集群运行ONTAP 9.13.1或更高版本时、FlexGroup卷的备份策略可以使用DataLock和防软件保护。</block>
+  <block id="f6477043c28067a4e579493c6cbb2e5f" category="section-title">新增报告功能</block>
+  <block id="7423bbe1d34880696cfb7dd51492349f" category="inline-link">关于数据保护覆盖范围的报告</block>
+  <block id="90c3582e59f2cb06c1d746e0f983ffde" category="paragraph">现在、您可以通过报告选项卡生成备份清单报告、其中包括特定帐户、工作环境或SVM清单的所有备份。您还可以创建数据保护作业活动报告、该报告提供有关Snapshot、备份、克隆和还原操作的信息、这些信息有助于您监控服务级别协议。请参见<block ref="76fbdf5883fabf4a66bc2a9d2bdc8b58" category="inline-link-rx"></block>。</block>
+  <block id="5cc0a3c2b0d184efdd93deba5120c0b4" category="section-title">作业监视器增强功能</block>
+  <block id="8931c68a06f64c8d4063f2e9132e3258" category="inline-link">监控备份和还原作业的状态</block>
+  <block id="c17e5b19576d968cb68cb76a1904afca" category="paragraph">现在、您可以在"作业监控"页面上将_backup生命周期_作为作业类型进行查看、以帮助您跟踪整个备份生命周期。您还可以在BlueXP时间线上查看所有操作的详细信息。请参见<block ref="757859ff46183d1407cb40e64e39a313" category="inline-link-rx"></block>。</block>
+  <block id="e5d5b752cdb14505ba3ec9b2bd2be013" category="section-title">针对不匹配的策略标签的附加通知警报</block>
+  <block id="92c58fc811dad1461929803e5f5d9205" category="paragraph">添加了一个新的备份警报："由于Snapshot策略标签不匹配、未创建备份文件"。如果备份策略中定义的_label_在Snapshot策略中没有匹配的_label_、则不会创建任何备份文件。您需要使用System Manager或ONTAP命令行界面将缺少的标签添加到卷Snapshot策略中。</block>
+  <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">查看BlueXP备份和恢复可以发送的所有警报</block>
+  <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>。</block>
+  <block id="5a4b2cac486281ad2280371043da8170" category="section-title">自动备份非公开站点中的关键BlueXP备份和恢复文件</block>
+  <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">在无法访问Internet的站点(称为"专用模式"部署)中使用BlueXP备份和恢复时、BlueXP备份和恢复信息仅存储在本地连接器系统上。这一新功能会自动将关键的BlueXP备份和恢复数据备份到已连接StorageGRID系统上的存储分段中、以便您可以在必要时将这些数据恢复到新的连接器上。<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
+  <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">详细了解BlueXP分类API</block>
+  <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -255,6 +255,161 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2023年8月1日
+
+[IMPORTANT]
+====
+由于增强了安全性、您的Connector现在需要通过出站Internet访问其他端点、以便在公有云环境中管理备份和恢复资源。如果此端点尚未添加到防火墙的"允许"列表中、您将在UI中看到有关"服务不可用"或"无法确定服务状态"的错误：
+
+\https://netapp-cloud-account.auth0.com
+
+====
+
+
+==== 添加了将卷备份到S3配置的ONTAP系统上的分段的支持
+
+现在、您可以使用已配置简单存储服务(S3)的ONTAP系统将卷备份到对象存储。内部ONTAP系统和Cloud Volumes ONTAP系统均支持此功能。在云部署和不能访问Internet的内部位置("私有"模式部署)支持此配置。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["了解更多信息。"]。
+
+
+
+==== 现在、您可以将受保护卷中的现有Snapshot包含在备份文件中
+
+过去、您可以将读写卷中的现有Snapshot副本包含在初始备份文件中并存储到对象存储中(而不是从最新的Snapshot副本开始)。只读卷(数据保护卷)中的现有Snapshot副本不包含在此备份文件中。现在、您可以选择在"DP"卷的备份文件中包含较早的Snapshot副本。
+
+备份向导会在备份步骤结束时显示一条提示、您可以在其中选择这些"现有快照"。
+
+
+
+==== BlueXP备份和恢复不再支持对未来添加的卷进行自动备份
+
+以前、您可以选中备份向导中的复选框、将选定备份策略应用于添加到集群中的所有未来卷。根据用户反馈以及未使用此功能、此功能已被删除。您需要手动为添加到集群中的任何新卷启用备份。
+
+
+
+==== "作业监控"页面已更新、新增了一些功能
+
+现在、"作业监控"页面提供了与3-2-1备份策略相关的详细信息。该服务还提供与备份策略相关的其他警报通知。
+
+"备份生命周期"类型筛选器已重命名为"保留"。使用此筛选器可跟踪备份生命周期并确定所有备份副本的到期日期。"保留"作业类型会捕获在受BlueXP备份和恢复保护的卷上启动的所有Snapshot删除作业。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["了解有关更新的作业监控器的更多信息"]。
+
+
+
+=== 2023年7月6日
+
+
+
+==== BlueXP备份和恢复现在可以计划和创建Snapshot副本以及复制的卷
+
+BlueXP备份和恢复现在支持您实施3-2-1策略、在2个不同的存储系统上拥有3个源数据副本、在云中拥有1个副本。激活后、您将获得：
+
+* 源系统上卷的Snapshot副本
+* 复制的卷位于其他存储系统上
+* 备份对象存储中的卷
+
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["详细了解全新的全频谱备份和还原功能"]。
+
+这一新功能也是适用场景恢复操作。您可以从Snapshot副本、复制的卷或云中的备份文件执行还原操作。这样、您可以灵活地选择满足恢复要求的备份文件、包括恢复成本和速度。
+
+请注意、只有运行ONTAP 9.8或更高版本的集群才支持此新功能和用户界面。如果集群使用的是早期版本的软件、则可以继续使用先前版本的BlueXP备份和恢复。但是、我们建议您升级到受支持的ONTAP版本、以获得最新特性和功能。要继续使用旧版软件、请执行以下步骤：
+
+. 从 * 卷 * 选项卡中，选择 * 备份设置 * 。
+. 在_Backup Settings_页面中，单击*显示先前BlueXP备份和恢复版本*的单选按钮。
++
+然后、您可以使用先前版本的软件管理旧集群。
+
+
+
+
+
+==== 能够创建用于备份到对象存储的存储容器
+
+在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["了解如何创建对象存储分段"]。
+
+在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。
+
+
+
+=== 2023年7月4日
+
+
+
+==== 增强了适用于应用程序的BlueXP备份和恢复功能(云原生)
+
+* SAP HANA系统
++
+** 支持对具有Azure NetApp Files二级保护的非数据卷和全局非数据卷进行连接和副本还原
+
+
+* Oracle数据库
++
+** 支持将Azure NetApp Files上的Oracle数据库还原到备用位置
+** 支持在Azure NetApp Files上为Oracle数据库备份编制Oracle恢复管理器(RMAN)目录
+** 用于将数据库主机置于维护模式以执行维护任务
+
+
+
+
+
+
+==== 针对应用程序的BlueXP备份和恢复增强功能(混合)
+
+* 支持还原到备用位置
+* 用于挂载Oracle数据库备份
+* 支持将备份从GCP移至归档层
+
+
+
+
+==== 虚拟机BlueXP备份和恢复增强功能(混合)
+
+* 支持保护NFS和VMFS类型的数据存储库
+* 允许您取消注册适用于VMware vSphere的SnapCenter插件主机
+* 支持刷新和发现最新数据存储库和备份
+
+
+
+
+=== 2023年6月5日
+
+
+
+==== FlexGroup卷可以使用DataLock和防软件保护进行备份和保护
+
+现在、当集群运行ONTAP 9.13.1或更高版本时、FlexGroup卷的备份策略可以使用DataLock和防软件保护。
+
+
+
+==== 新增报告功能
+
+现在、您可以通过报告选项卡生成备份清单报告、其中包括特定帐户、工作环境或SVM清单的所有备份。您还可以创建数据保护作业活动报告、该报告提供有关Snapshot、备份、克隆和还原操作的信息、这些信息有助于您监控服务级别协议。请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["关于数据保护覆盖范围的报告"]。
+
+
+
+==== 作业监视器增强功能
+
+现在、您可以在"作业监控"页面上将_backup生命周期_作为作业类型进行查看、以帮助您跟踪整个备份生命周期。您还可以在BlueXP时间线上查看所有操作的详细信息。请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["监控备份和还原作业的状态"]。
+
+
+
+==== 针对不匹配的策略标签的附加通知警报
+
+添加了一个新的备份警报："由于Snapshot策略标签不匹配、未创建备份文件"。如果备份策略中定义的_label_在Snapshot策略中没有匹配的_label_、则不会创建任何备份文件。您需要使用System Manager或ONTAP命令行界面将缺少的标签添加到卷Snapshot策略中。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["查看BlueXP备份和恢复可以发送的所有警报"]。
+
+
+
+==== 自动备份非公开站点中的关键BlueXP备份和恢复文件
+
+在无法访问Internet的站点(称为"专用模式"部署)中使用BlueXP备份和恢复时、BlueXP备份和恢复信息仅存储在本地连接器系统上。这一新功能会自动将关键的BlueXP备份和恢复数据备份到已连接StorageGRID系统上的存储分段中、以便您可以在必要时将这些数据恢复到新的连接器上。 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["了解更多信息。"]
+
+
+
 == 分类
 
 
@@ -297,9 +452,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 通过BlueXP分类API、您可以执行操作、创建查询以及导出有关正在扫描的数据的信息。可使用Swagger获取交互式文档。文档分为多个类别、包括调查、合规性、监管和配置。每个类别都是BlueXP分类UI中各个选项卡的参考。
 
-要进入Swagger、您需要BlueXP分类实例的IP地址。对于云部署、您将使用公共IP地址。然后、您需要进入此端点：
-
-https://<classification_ip>/documentation[]
+https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["详细了解BlueXP分类API"]。
 
 
 
