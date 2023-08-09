@@ -213,6 +213,14 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2023年7月30日
+
+现在、客户可以在以下三个新AWS地区为NetApp ONTAP文件系统创建Amazon FSx：欧洲(苏黎世)、欧洲(西班牙)和亚太地区(亚马逊河)。
+
+请参见 link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx for NetApp ONTAP现已在另外三个地区推出"^] 了解完整详细信息。
+
+
+
 === 2023年7月2日
 
 * 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["添加Storage VM"] 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。
@@ -225,14 +233,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 * 时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
 * 时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
-
-
-
-
-=== 2023年5月7日
-
-* 创建工作环境时、您现在可以使用BlueXP link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["生成安全组"^] 仅允许选定VPC中的流量。此功能 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["需要其他权限"^]。
-* 您可以选择 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["添加"^] 和 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["修改"^] 用于对卷进行分类的标记。
 
 
 
@@ -435,6 +435,16 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
+==== BlueXP分类API现已推出
+
+通过BlueXP分类API、您可以执行操作、创建查询以及导出有关正在扫描的数据的信息。可使用Swagger获取交互式文档。文档分为多个类别、包括调查、合规性、监管和配置。每个类别都是BlueXP分类UI中各个选项卡的参考。
+
+要进入Swagger、您需要BlueXP分类实例的IP地址。对于云部署、您将使用公共IP地址。然后、您需要进入此端点：
+
+https://<classification_ip>/documentation[]
+
+
+
 === 2023年6月6日(版本1.23)
 
 
@@ -615,6 +625,38 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年8月6日
+
+
+
+==== 创建数据代理时使用现有Azure安全组
+
+现在、用户可以选择在创建数据代理时使用现有Azure安全组。
+
+创建数据代理时使用的服务帐户必须具有以下权限：
+
+* " Microsoft.Network/networkSecurityGroups/securityRules/read"
+* " Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["详细了解如何在Azure中创建数据代理。"]
+
+
+
+==== 同步到Google存储时对数据进行加密
+
+现在、用户可以选择在创建以Google存储分段为目标的同步关系时指定由客户管理的加密密钥。您可以手动输入密钥、也可以从单个区域的密钥列表中进行选择。
+
+创建数据代理时使用的服务帐户必须具有以下权限：
+
+* 云公里。cryptoKeys.list
+* 云公里.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["详细了解Google Cloud Storage存储分段要求。"]
+
+
+
 === 2023年7月9日
 
 
@@ -658,42 +700,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 在包括文件系统的关系中，*复制对象*功能现在复制访问时间元数据。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关复制对象设置的更多信息"]。
-
-
-
-=== 2023年5月8日
-
-
-
-==== 硬链接功能
-
-现在、用户可以为涉及不安全的NFS到NFS关系的同步添加硬链接。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关文件类型设置的更多信息"]。
-
-
-
-==== 能够为安全NFS关系中的数据代理添加用户证书
-
-现在、用户可以在创建安全NFS关系时为目标数据代理设置自己的证书。他们需要设置服务器名称并提供专用密钥和证书ID。此功能可用于所有数据代理。
-
-
-
-==== 最近修改的文件的排除期限延长
-
-现在、用户可以排除在计划同步前最长365天修改过的文件。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关最近修改的文件设置的更多信息"]。
-
-
-
-==== 按关系ID筛选UI中的关系
-
-现在、使用RESTful API的用户可以使用关系ID筛选关系。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["详细了解如何将RESTful API与BlueXP副本和同步结合使用"]。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关排除目录设置的更多信息"]。
 
 
 
@@ -811,9 +817,15 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 2023年8月1日(2.3版)
+
+此版本可修复中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
+
+
+
 === 2023年4月5日(2.2版)
 
-此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
+此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。
 
 
 
@@ -862,38 +874,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 
 ==== 增强了Optimus UI (边缘配置)中的Edge Sync功能、可显示所有已连接的客户端
-
-
-
-=== 2022年7月25日(2.0版)
-
-此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。
-
-
-
-==== 通过Azure Marketplace为全局文件缓存提供基于容量的新许可模式
-
-新的"Edge Cache"许可证具有与"CVO专业版"许可证相同的功能、但也支持全局文件缓存。在Azure中部署新Cloud Volumes ONTAP 系统时、您将看到此选项。您有权为Cloud Volumes ONTAP 系统上配置的每个3 TiB容量部署一个全局文件缓存边缘系统。应至少配置30 TiB。GFC License Manager服务已得到增强、可提供基于容量的许可。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["了解有关Edge Cache许可证包的更多信息。"]
-
-
-
-==== 现在、全局文件缓存已与Cloud Insights 集成
-
-NetApp Cloud Insights (CI)可全面了解您的基础架构和应用程序。现在、全局文件缓存已与CI集成在一起、可全面查看所有边缘和核心；监控实例上运行的进程。将各种全局文件缓存指标推送到CI、以便在CI信息板上提供完整的概述。请参见中的第11章 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]
-
-https://cloud.netapp.com/cloud-insights["了解有关Cloud Insights 的更多信息。"]
-
-
-
-==== 许可证管理服务器已进行了增强、可在限制性极高的环境中运行
-
-在许可证配置期间、许可证管理服务器(LMS)应能够访问Internet、以便从NetApp/Zuora收集许可详细信息。配置成功后、尽管环境受限、但LMS仍可继续在脱机模式下工作并提供许可功能。
-
-
-
-==== Optimus中的Edge Sync UI已进行了增强、可在协调者Edge上显示已连接客户端的列表
 
 
 
@@ -1166,6 +1146,22 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 
 
 
+=== 2023年8月9日
+
+
+
+==== 使用自定义前缀作为存储分层数据的分段名称
+
+过去、在定义存储分段名称时、您需要使用默认的"光纤 池"前缀、例如_Fabric池bucket1_。现在、您可以在为存储分段命名时使用自定义前缀。只有在将数据层到Amazon S3时、此功能才可用。 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["了解更多信息。"]。
+
+
+
+==== 在所有BlueXP连接器中搜索集群
+
+如果使用多个连接器管理环境中的所有存储系统、则要实施分层的某些集群可能位于不同的连接器中。如果您不确定是哪个Connector管理某个集群、可以使用BlueXP分层跨所有连接器进行搜索。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["了解更多信息。"]。
+
+
+
 === 2023年7月4日
 
 
@@ -1197,16 +1193,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 ==== 分层选项卡已重命名并更新了内容
 
 "集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部部署信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。
-
-
-
-=== 2023年3月5日
-
-
-
-==== 现在、您可以为卷生成分层报告
-
-您可以从"层卷"页面下载报告、以便查看所管理集群上所有卷的分层状态。BlueXP分层会生成一个.CSV文件、您可以根据需要查看此文件并将其发送给公司中的其他人员。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["请参见如何下载分层报告"]。
 
 
 
