@@ -96,7 +96,6 @@
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXP中的最新变更</block>
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">BlueXP简介</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">2022年11月1日</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：</block>
   <block id="534171d3771a50398027a07275778b3e" category="paragraph">现在、您可以直接从BlueXP发现E系列存储系统。通过发现E系列系统、您可以全面了解混合多云中的数据。</block>
   <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">2022年10月24日(2.1版)</block>
@@ -159,7 +158,6 @@
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">设置和管理</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">数字电子钱包</block>
   <block id="1d56c7b4c7e2384a1f75532fbd18626d" category="list-text"><block ref="1d56c7b4c7e2384a1f75532fbd18626d" category="inline-link-rx"></block></block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">数字电子钱包</block>
   <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">市场订阅的许可容量</block>
   <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block>。</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">备份和恢复</block>
@@ -176,10 +174,6 @@
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP分类可以标识包含以下类型数据的文件并对其进行分类：</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">查看BlueXP分类可在您的数据中识别的所有个人数据类型</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">数字顾问</block>
-  <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并提供增强的登录体验。</block>
-  <block id="bde16c93c046fa9870a736978717607f" category="paragraph">当您访问BlueXP数字顾问时、系统会提示您输入NetApp 支持站点 凭据、以便您可以查看与系统相关的数据。您登录时使用的NSS帐户仅与您的用户登录关联。它不会与您的NetApp帐户中的任何其他用户关联。</block>
-  <block id="e1a4f9c5e73602864d1ef18966b243f2" category="inline-link">详细了解BlueXP数字顾问</block>
-  <block id="829877d29208a3548ee11017a15158af" category="paragraph"><block ref="829877d29208a3548ee11017a15158af" category="inline-link-rx"></block></block>
   <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">全新的BlueXP经济高效服务可识别当前或预测的低容量存储资产、并为内部AFF 系统提供数据层或额外容量建议。</block>
   <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">详细了解BlueXP的经济效益</block>
   <block id="838d01d8bf08e23ff670a400ad2cb368" category="paragraph"><block ref="c4b58b1c24fbcd13ec6df8ee9e6c3a23" category="inline-link-macro-rx"></block>。</block>
@@ -572,4 +566,16 @@
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023年5月18日</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">这是BlueXP灾难恢复的初始版本。</block>
   <block id="1ba37effd0ce32bb6cfe5ede3a761ee2" category="paragraph">BlueXP灾难恢复是一种基于云的灾难恢复服务、可自动执行灾难恢复工作流。最初、借助BlueXP灾难恢复测试版、您可以使用Amazon FSx for ONTAP保护在AWS上运行NetApp存储到VMware Cloud (VMC)的基于NFS的内部VMware工作负载。</block>
+  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">2023年7月16日</block>
+  <block id="91b681e174a782226d26fb4056e14081" category="section-title">存储效率</block>
+  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">显示效率比率的标签*存储效率*已重命名为*数据精简*。</block>
+  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">标签*存储效率节省的数据*已重命名为*数据精简节省*。</block>
+  <block id="2a88859b894ead28756789553bc66754" category="list-text">切换*不使用Snapshot备份时节省空间*将重命名为*使用Snapshot副本*并对其功能进行了更改。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
+  <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability信息板</block>
+  <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Sustainability信息板可提供有关存储系统环境可持续性的宝贵见解。您可以查看诸如可持续性得分、碳缓解百分比、预计电力使用量、直接碳和热量等信息。您可以调整特定站点的碳缓解百分比。您还可以查看集群级别的可持续性得分。通过评估可持续发展得分、您可以评估存储系统的整体效率、并将其与NetApp为增强可持续性而建议的操作保持一致。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
+  <block id="7002d0318dc4f195c464ca83f3d2ca86" category="section-title">2023年2月22日</block>
+  <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">性能图表</block>
+  <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">您可以在卷IOPS图表中查看平均读取、写入和其他操作。</block>
+  <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">SAN和NAS存储效率可在节点级别提供给ONTAP 系统、包括AFF A系列、AFF C190、全SAN阵列和运行ONTAP 9.10及更高版本的FAS500。</block>
 </blocks>

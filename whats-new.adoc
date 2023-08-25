@@ -718,13 +718,42 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
-=== 2022年11月1日
+=== 2023年7月16日
 
-Digital Advisor (以前称为Active IQ)现已与BlueXP完全集成、并提供增强的登录体验。
 
-当您访问BlueXP数字顾问时、系统会提示您输入NetApp 支持站点 凭据、以便您可以查看与系统相关的数据。您登录时使用的NSS帐户仅与您的用户登录关联。它不会与您的NetApp帐户中的任何其他用户关联。
 
-https://docs.netapp.com/us-en/active-iq/index.html["详细了解BlueXP数字顾问"^]
+==== 存储效率
+
+* 显示效率比率的标签*存储效率*已重命名为*数据精简*。
+* 标签*存储效率节省的数据*已重命名为*数据精简节省*。
+* 切换*不使用Snapshot备份时节省空间*将重命名为*使用Snapshot副本*并对其功能进行了更改。 link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["了解更多信息。"]。
+
+
+
+
+=== 2023年6月21日
+
+
+
+==== Sustainability信息板
+
+Sustainability信息板可提供有关存储系统环境可持续性的宝贵见解。您可以查看诸如可持续性得分、碳缓解百分比、预计电力使用量、直接碳和热量等信息。您可以调整特定站点的碳缓解百分比。您还可以查看集群级别的可持续性得分。通过评估可持续发展得分、您可以评估存储系统的整体效率、并将其与NetApp为增强可持续性而建议的操作保持一致。 link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["了解更多信息。"]。
+
+
+
+=== 2023年2月22日
+
+
+
+==== 性能图表
+
+您可以在卷IOPS图表中查看平均读取、写入和其他操作。
+
+
+
+==== 存储效率
+
+SAN和NAS存储效率可在节点级别提供给ONTAP 系统、包括AFF A系列、AFF C190、全SAN阵列和运行ONTAP 9.10及更高版本的FAS500。
 
 
 
