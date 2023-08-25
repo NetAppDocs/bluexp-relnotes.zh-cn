@@ -33,7 +33,22 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 
 
 
-=== 7月30日
+=== 2023年9月10日
+
+
+
+==== 连接器3.9.33
+
+* 现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。"]
+
+* 此更新还包括错误修复。
+
+
+
+
+=== 2023年7月30日
 
 
 
@@ -414,6 +429,22 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 9月5日(版本1.25)
+
+
+
+==== 在"调查结果"页面中对多达100、000个商品应用标记
+
+过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。  https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["了解如何操作"]。
+
+
+
+==== 确定文件大小至少为1 MB的重复文件
+
+BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现在、可以识别从1 MB开始的重复文件。您可以使用"调查"页面筛选"文件大小"和"重复项"、查看环境中具有特定大小的文件的重复项。
+
+
+
 === 2023年7月17日(版本1.24)
 
 
@@ -487,28 +518,6 @@ Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网�
 ==== 现在、非公开站点支持Data sense BYOL许可证
 
 现在、您可以将Data Sense BYOL许可证上传到非公开站点的BlueXP数字钱包中、以便在许可证不足时收到通知。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["了解如何获取和上传Data sense BYOL许可证"]。
-
-
-
-=== 2023年4月3日(1.22版)
-
-
-
-==== 新的数据发现评估报告
-
-数据发现评估报告对扫描环境进行了深入分析、以突出显示系统的发现结果、并显示关注领域和可能的修复步骤。本报告的目标是提高对数据治理问题、数据安全风险以及数据集数据合规性差距的认识。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["请参见如何生成和使用数据发现评估报告"]。
-
-
-
-==== 能够在云中的较小实例上部署BlueXP分类
-
-在AWS环境中从BlueXP Connector部署BlueXP分类时、现在您可以从两种比默认实例更小的实例类型中进行选择。如果您要扫描小型环境、这可以帮助您节省云成本。但是、使用较小的实例时会存在一些限制。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["请参见可用的实例类型和限制"]。
-
-
-
-==== 现在、可以使用独立脚本在安装BlueXP分类之前对Linux系统进行资格认定
-
-如果要独立于运行BlueXP分类安装来验证Linux系统是否满足所有前提条件、您可以下载一个单独的脚本、该脚本仅测试前提条件。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["请参见How to check if your Linux host is ready to install BlueXP classification"]。
 
 
 
@@ -633,6 +642,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 == 复制和同步
+
+
+
+=== 2023年9月3日
+
+
+
+==== 按正则表达式排除文件
+
+用户现在可以选择使用正则表达式排除文件。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["了解有关*排除文件扩展名*功能的更多信息。"]
+
+
+
+==== 创建Azure数据代理时添加S3密钥
+
+现在、用户可以在创建Azure数据代理时添加AWS S3访问密钥和机密密钥。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["详细了解如何在Azure中创建数据代理。"]
 
 
 
@@ -991,6 +1020,12 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#
 
 
 == 迁移报告
+
+
+
+=== 2023年9月3日
+
+更新后的BlueXP迁移报告服务可更新报告数据。报告现在包括已分配的容量。
 
 
 
