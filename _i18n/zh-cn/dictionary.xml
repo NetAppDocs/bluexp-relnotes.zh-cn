@@ -508,10 +508,6 @@
   <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability信息板</block>
   <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Sustainability信息板可提供有关存储系统环境可持续性的宝贵见解。您可以查看诸如可持续性得分、碳缓解百分比、预计电力使用量、直接碳和热量等信息。您可以调整特定站点的碳缓解百分比。您还可以查看集群级别的可持续性得分。通过评估可持续发展得分、您可以评估存储系统的整体效率、并将其与NetApp为增强可持续性而建议的操作保持一致。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
-  <block id="7002d0318dc4f195c464ca83f3d2ca86" category="section-title">2023年2月22日</block>
-  <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">性能图表</block>
-  <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">您可以在卷IOPS图表中查看平均读取、写入和其他操作。</block>
-  <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">SAN和NAS存储效率可在节点级别提供给ONTAP 系统、包括AFF A系列、AFF C190、全SAN阵列和运行ONTAP 9.10及更高版本的FAS500。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">连接器3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。</block>
@@ -556,4 +552,10 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">中小型部署暂时不可用</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">在AWS中部署BlueXP分类实例时、选择*部署&gt;配置*并选择小型或中型实例的选项目前不可用。您仍然可以通过选择*Deploy &gt; DEPLE*来使用较大实例大小来部署实例。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
+  <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor</block>
+  <block id="ca6933ae0f261efa98f09526aba05bf1" category="paragraph">您可以使用访问默认监视列表或信息板的Upgrade Advisor页面 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> 链接。如果您没有默认监视列表或信息板、单击此链接将重定向到"搜索"页面。</block>
+  <block id="9622c46ac664d07f743905654edd5f26" category="section-title">升级计划</block>
+  <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">使用升级计划升级ONTAP版本</block>
+  <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">升级计划已进行优化、可删除冗余升级步骤、修改信息和警告并简化回退计划。集群中所有节点上的通用步骤均已整合、并可在常规信息部分下找到。要查看改进后的计划、请使用中所述的步骤生成升级计划 <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>。</block>
 </blocks>
