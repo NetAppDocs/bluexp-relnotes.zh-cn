@@ -270,6 +270,34 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2023年9月11日
+
+
+
+==== 为ONTAP数据提供新的策略管理
+
+此版本支持在用户界面中创建自定义Snapshot策略、复制策略以及用于将ONTAP数据备份到对象存储的策略。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["详细了解策略"]。
+
+
+
+==== 支持从ONTAP S3对象存储中的卷还原文件和文件夹
+
+以前、如果将卷备份到ONTAP S3对象存储、则无法使用"浏览和还原"功能还原文件和文件夹。此版本取消了此限制。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关还原数据的更多信息"]。
+
+
+
+==== 为备份和还原SnapLock卷提供了更多支持
+
+现在、备份和恢复可以备份使用SnapLock合规性或SnapLock企业保护模式配置的FlexVol和FlexGroup卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["了解有关保护ONTAP数据的更多信息"]。
+
+
+
 === 2023年8月1日
 
 [IMPORTANT]
@@ -346,82 +374,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 在对象存储中创建备份文件时、默认情况下、备份和恢复服务会在对象存储中为您创建分段。如果要使用特定名称或分配特殊属性、您可以自行创建分段。如果要创建自己的存储分段、必须在启动激活向导之前创建它。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["了解如何创建对象存储分段"]。
 
 在将备份文件创建备份到StorageGRID系统时、当前不支持此功能。
-
-
-
-=== 2023年7月4日
-
-
-
-==== 增强了适用于应用程序的BlueXP备份和恢复功能(云原生)
-
-* SAP HANA系统
-+
-** 支持对具有Azure NetApp Files二级保护的非数据卷和全局非数据卷进行连接和副本还原
-
-
-* Oracle数据库
-+
-** 支持将Azure NetApp Files上的Oracle数据库还原到备用位置
-** 支持在Azure NetApp Files上为Oracle数据库备份编制Oracle恢复管理器(RMAN)目录
-** 用于将数据库主机置于维护模式以执行维护任务
-
-
-
-
-
-
-==== 针对应用程序的BlueXP备份和恢复增强功能(混合)
-
-* 支持还原到备用位置
-* 用于挂载Oracle数据库备份
-* 支持将备份从GCP移至归档层
-
-
-
-
-==== 虚拟机BlueXP备份和恢复增强功能(混合)
-
-* 支持保护NFS和VMFS类型的数据存储库
-* 允许您取消注册适用于VMware vSphere的SnapCenter插件主机
-* 支持刷新和发现最新数据存储库和备份
-
-
-
-
-=== 2023年6月5日
-
-
-
-==== FlexGroup卷可以使用DataLock和防软件保护进行备份和保护
-
-现在、当集群运行ONTAP 9.13.1或更高版本时、FlexGroup卷的备份策略可以使用DataLock和防软件保护。
-
-
-
-==== 新增报告功能
-
-现在、您可以通过报告选项卡生成备份清单报告、其中包括特定帐户、工作环境或SVM清单的所有备份。您还可以创建数据保护作业活动报告、该报告提供有关Snapshot、备份、克隆和还原操作的信息、这些信息有助于您监控服务级别协议。请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["关于数据保护覆盖范围的报告"]。
-
-
-
-==== 作业监视器增强功能
-
-现在、您可以在"作业监控"页面上将_backup生命周期_作为作业类型进行查看、以帮助您跟踪整个备份生命周期。您还可以在BlueXP时间线上查看所有操作的详细信息。请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["监控备份和还原作业的状态"]。
-
-
-
-==== 针对不匹配的策略标签的附加通知警报
-
-添加了一个新的备份警报："由于Snapshot策略标签不匹配、未创建备份文件"。如果备份策略中定义的_label_在Snapshot策略中没有匹配的_label_、则不会创建任何备份文件。您需要使用System Manager或ONTAP命令行界面将缺少的标签添加到卷Snapshot策略中。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["查看BlueXP备份和恢复可以发送的所有警报"]。
-
-
-
-==== 自动备份非公开站点中的关键BlueXP备份和恢复文件
-
-在无法访问Internet的站点(称为"专用模式"部署)中使用BlueXP备份和恢复时、BlueXP备份和恢复信息仅存储在本地连接器系统上。这一新功能会自动将关键的BlueXP备份和恢复数据备份到已连接StorageGRID系统上的存储分段中、以便您可以在必要时将这些数据恢复到新的连接器上。 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["了解更多信息。"]
 
 
 
@@ -525,6 +477,21 @@ Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网�
 
 
 
+=== 2023年9月10日
+
+在3.1.33版的连接器中引入了以下更改。
+
+
+
+==== 支持Azure中的Lsv3系列VM
+
+从9.13.1版本开始、Azure中的Cloud Volumes ONTAP现在支持L48s_v3和L64s_v3实例类型、用于在单个和多个可用性区域中使用共享托管磁盘进行单节点和高可用性对部署。这些实例类型支持Flash Cache。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["查看Azure中支持的Cloud Volumes ONTAP配置"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["查看Azure中Cloud Volumes ONTAP的存储限制"]
+
+
+
 === 2023年7月30日
 
 以下更改是在连接器3.9.32版本中推出的。
@@ -574,20 +541,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1正式发布版。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-=== 2023年7月2日
-
-在3.9.31版本的连接器中引入了以下更改。
-
-
-
-==== 支持在Azure中部署HA多可用性区域
-
-对于Cloud Volumes ONTAP 9.12.1 GA及更高版本、Azure中的日本东部和韩国中部现在支持HA多可用性区域部署。
-
-有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
@@ -1099,54 +1052,6 @@ NOTE: 如果您没有Connector、则无法从本地计算机进行更新、只�
 运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["详细了解BlueXP操作故障恢复能力"]。
-
-
-
-== 勒索软件保护
-
-
-
-=== 2023年4月3日
-
-
-
-==== 为帮助保护您的数据免受勒索软件攻击而建议的新操作
-
-* "备份数据源中的业务关键型文件"的新建议操作确定了如何通过使用BlueXP备份和恢复来备份卷来保护最重要的数据类别。如果您因勒索软件攻击而需要恢复任何数据、这一点非常重要。此建议会将您重定向到BlueXP备份和恢复界面、以便在必要的卷上启用备份。
-* "启用数据源的网络存储配置"的新建议操作可确定是否启用了六项有助于保护数据安全的ONTAP 功能。您应在所有内部ONTAP 和Cloud Volumes ONTAP 系统上启用这些功能。
-
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-analyze-ransomware-data.html#list-of-recommended-actions["请参见所有建议操作的列表"]。
-
-
-
-=== 2023年3月7日
-
-
-
-==== 新增了一个勒索软件恢复信息板、可帮助您的系统从攻击中恢复
-
-勒索软件恢复信息板提供了用于恢复可能已被勒索软件感染的数据的选项。这有助于您快速备份和运行系统。此时、您可以通过恢复操作将损坏的卷替换为未受勒索软件影响的Snapshot副本。 https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-ransomware-recovery.html["了解更多信息。"]。
-
-
-
-=== 2023年2月5日
-
-
-
-==== 能够定义策略来确定您认为业务关键型的数据
-
-BlueXP勒索软件保护新增了一个业务关键型数据页面。通过此页面、您可以查看BlueXP分类中定义的所有策略。您可以选择确定对您的业务至关重要的数据的策略、以便BlueXP勒索软件保护信息板和其他勒索软件面板根据您最重要的数据反映潜在问题。
-
-如果您尚未为BlueXP勒索软件保护服务激活任何策略、"建议操作"面板将显示一个名为"配置业务关键型数据"的新建议操作。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-critical-policies.html["了解有关业务关键型数据页面的更多信息"^]。
-
-
-
-==== BlueXP勒索软件保护已从"保护"类别移至"监管"类别
-
-现在、您可以从BlueXP左侧导航菜单中选择*监管>勒索软件保护*来访问此服务。
 
 
 
