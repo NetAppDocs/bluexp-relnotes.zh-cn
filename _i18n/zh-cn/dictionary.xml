@@ -346,9 +346,6 @@
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">两种新类型的德国个人数据通过BlueXP分类来识别</block>
   <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">德语ID (Personalausweisnummer)</block>
   <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">德国社会保障号码(Sozialversicherungsnummer)</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">现在、落基Linux 9是一个受支持的Linux分发版、您可以在其中安装BlueXP分类</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">了解如何在安装了Rocky Linux的主机上安装BlueXP分类</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">对于BlueXP分类、落基Linux 9 (9.0、9.1和9.2)已被认定为受支持的操作系统。您可以在网络中的Rocky Linux主机上安装BlueXP分类、如果使用1.24版安装程序、也可以在云中的Linux主机上安装BlueXP分类。<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>。</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">在受限模式和专用模式下完全支持BlueXP分类</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">详细了解连接器的BlueXP部署模式</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">现在、在没有Internet访问(专用模式)和出站Internet访问受限(受限模式)的站点中、完全支持BlueXP分类。<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>。</block>
@@ -524,7 +521,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9月5日(版本1.25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">在"调查结果"页面中对多达100、000个商品应用标记</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">了解如何操作</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。 <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">确定文件大小至少为1 MB的重复文件</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现在、可以识别从1 MB开始的重复文件。您可以使用"调查"页面筛选"文件大小"和"重复项"、查看环境中具有特定大小的文件的重复项。</block>
   <block id="18cf4605db6670514e116119da7de0a0" category="section-title">2023年9月3日</block>
@@ -557,4 +553,7 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">查看Azure中Cloud Volumes ONTAP的存储限制</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">中小型部署暂时不可用</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">在AWS中部署BlueXP分类实例时、选择*部署&gt;配置*并选择小型或中型实例的选项目前不可用。您仍然可以通过选择*Deploy &gt; DEPLE*来使用较大实例大小来部署实例。</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
 </blocks>
