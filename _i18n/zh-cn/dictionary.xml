@@ -287,7 +287,6 @@
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">您现在可以： <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
-  <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">在3.9.31版本的连接器中引入了以下更改。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">了解此版本 Cloud Volumes ONTAP 中的新增功能</block>
   <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">从我的资产中发现集群</block>
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">现在、您可以通过*画布&gt;我的资产*发现内部ONTAP集群、方法是根据与您的BlueXP登录电子邮件地址关联的ONTAP集群选择BlueXP预先发现的集群。</block>
@@ -364,9 +363,6 @@
   <block id="b259e22e76e27ad956b503941804b4c6" category="list-text">卷类型"Secondary (DP)"现在标记为"Secondary (Secondary (DP))"。</block>
   <block id="37532cd27e3c53471b1caed0ba1f90ed" category="inline-link-macro">下载使用情况报告</block>
   <block id="a8c4bf4701c4d99d778be1176c8c8616" category="paragraph">有关使用情况报告的详细信息、请参见 <block ref="b9c4007084372a89d5df93919658aa73" category="inline-link-macro-rx"></block>。</block>
-  <block id="8ccf37f65f5b32ae30e20faafe7dd9ba" category="section-title">2023年7月26日</block>
-  <block id="eccfb2b7d21b722b7e6659bf39e0f295" category="section-title">Cloud Volumes ONTAP 9.13.1 GA</block>
-  <block id="64118c9781a8b98caa35463a68a24220" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.13.1正式发布版。</block>
   <block id="c2282365523aa8fbb305c5432e90d5d7" category="paragraph"><block ref="6f9b2ccd962907ef2c43f6fa9517a053" category="inline-link-macro-rx"></block>。</block>
   <block id="c1ab40aac4724ff5a3b9540c19eed579" category="paragraph">Cloud Volumes ONTAP使用情况报告现已有多项改进：</block>
   <block id="c352c835cf612ee328fb7dba772bce4d" category="list-text">现在、包含了一个用于序列号的新_node (s)_字段。</block>
@@ -490,7 +486,6 @@
   <block id="2a88859b894ead28756789553bc66754" category="list-text">切换*不使用Snapshot备份时节省空间*将重命名为*使用Snapshot副本*并对其功能进行了更改。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
   <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">2023年6月21日</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability信息板</block>
-  <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">Sustainability信息板可提供有关存储系统环境可持续性的宝贵见解。您可以查看诸如可持续性得分、碳缓解百分比、预计电力使用量、直接碳和热量等信息。您可以调整特定站点的碳缓解百分比。您还可以查看集群级别的可持续性得分。通过评估可持续发展得分、您可以评估存储系统的整体效率、并将其与NetApp为增强可持续性而建议的操作保持一致。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">连接器3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。</block>
@@ -537,14 +532,20 @@
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
   <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">2023年9月27日</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor</block>
-  <block id="ca6933ae0f261efa98f09526aba05bf1" category="paragraph">您可以使用访问默认监视列表或信息板的Upgrade Advisor页面 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> 链接。如果您没有默认监视列表或信息板、单击此链接将重定向到"搜索"页面。</block>
-  <block id="9622c46ac664d07f743905654edd5f26" category="section-title">升级计划</block>
-  <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">使用升级计划升级ONTAP版本</block>
-  <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">升级计划已进行优化、可删除冗余升级步骤、修改信息和警告并简化回退计划。集群中所有节点上的通用步骤均已整合、并可在常规信息部分下找到。要查看改进后的计划、请使用中所述的步骤生成升级计划 <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>。</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10月4日(版本1.26)</block>
   <block id="620a73262e6956695319caae21506289" category="section-title">支持使用RHEL版本9进行内部安装</block>
   <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linux版本8和9不支持Docker引擎、而这是BlueXP分类安装所必需的。现在、我们支持在使用Podman版本4或更高版本作为容器基础架构的RHEL 9.0、9.1和9.2上进行安装。如果您的环境要求使用最新版本的RHEL、现在可以在使用Podman时安装BlueXP分类(1.26或更高版本)。</block>
   <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">目前、我们不支持非公开站点安装或分布式扫描环境(使用主扫描程序节点和远程扫描程序节点)。</block>
   <block id="db5b005cbaaba7a23899858892848a77" category="section-title">现在、除了项目总数之外、调查页面结果还会显示总大小</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">现在、"调查"页面中经过筛选的结果除了显示文件总数之外、还会显示项目的总大小。这有助于移动文件、删除文件等。</block>
+  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">2023年10月6日</block>
+  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">连接器3.9.34</block>
+  <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">此版本包含一些小改进和错误修复。</block>
+  <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
+  <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
+  <block id="c5fa627d231c9a8813c9a2421d86136f" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.0正式发布版。</block>
+  <block id="f32be3299de249a0d2ea856582aaf567" category="list-text">您可以使用访问默认监视列表的Upgrade Advisor页面 <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> 链接。</block>
+  <block id="d733f1a5970e5ea99d583388ac25e9cf" category="inline-link-macro">了解如何生成和查看升级计划</block>
+  <block id="b01f37f1151c1eda43d977dc266311ad" category="list-text">升级计划经过优化、可消除冗余升级步骤并简化回退计划。集群中所有节点上的通用步骤均已整合、可在升级计划的"常规信息"部分下找到。 <block ref="818a7808067ecc2956de5a6af27e7278" category="inline-link-macro-rx"></block>。</block>
+  <block id="728961fac8324355b6e6e72caa3fcab4" category="paragraph">Sustainability信息板可提供有关存储系统环境可持续性的宝贵见解。您可以查看诸如可持续性得分、碳缓解百分比、预计电力使用量、直接碳和热量等信息。您可以调整特定站点的碳缓解百分比。您还可以查看集群级别的可持续性得分。根据可持续发展得分、您可以评估存储系统的整体效率、并将其与NetApp为增强可持续性而建议的操作保持一致。 <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
