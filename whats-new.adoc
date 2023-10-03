@@ -381,6 +381,24 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 
+=== 10月4日(版本1.26)
+
+
+
+==== 支持使用RHEL版本9进行内部安装
+
+Red Hat Enterprise Linux版本8和9不支持Docker引擎、而这是BlueXP分类安装所必需的。现在、我们支持在使用Podman版本4或更高版本作为容器基础架构的RHEL 9.0、9.1和9.2上进行安装。如果您的环境要求使用最新版本的RHEL、现在可以在使用Podman时安装BlueXP分类(1.26或更高版本)。
+
+目前、我们不支持非公开站点安装或分布式扫描环境(使用主扫描程序节点和远程扫描程序节点)。
+
+
+
+==== 现在、除了项目总数之外、调查页面结果还会显示总大小
+
+现在、"调查"页面中经过筛选的结果除了显示文件总数之外、还会显示项目的总大小。这有助于移动文件、删除文件等。
+
+
+
 === 9月5日(版本1.25)
 
 
@@ -436,40 +454,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 通过BlueXP分类API、您可以执行操作、创建查询以及导出有关正在扫描的数据的信息。可使用Swagger获取交互式文档。文档分为多个类别、包括调查、合规性、监管和配置。每个类别都是BlueXP分类UI中各个选项卡的参考。
 
 https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["详细了解BlueXP分类API"]。
-
-
-
-=== 2023年6月6日(版本1.23)
-
-
-
-==== 现在、搜索数据主题名称时支持日语
-
-现在、在响应数据主体访问请求(Data Subject Access Request、DSAR)搜索主体名称时、可以输入日语名称。您可以生成 https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["数据主体访问请求报告"] 以及生成的信息。您也可以在中输入日语名称 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content[""数据调查"页面中的"数据主题"筛选器"] 标识包含主题名称的文件。
-
-
-
-==== Ubuntu现在是一个受支持的Linux分发版、您可以在其中安装BlueXP分类
-
-Ubuntu 22.04已被认定为BlueXP分类支持的操作系统。您可以在网络中的Ubuntu Linux主机上安装BlueXP分类、也可以在云中的Linux主机上安装(如果使用的是1.23版安装程序)。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["了解如何在安装了Ubuntu的主机上安装BlueXP分类"]。
-
-
-
-==== 新的BlueXP分类安装不再支持Red Hat Enterprise Linux 8.6和8.7
-
-新部署不支持这些版本、因为Red Hat不再支持Docker、而Docker是前提条件。如果现有BlueXP分类计算机运行RHEL 8.6或8.7、则NetApp将继续支持您的配置。
-
-
-
-==== 可以将BlueXP分类配置为FPolicy收集器、以便从ONTAP系统接收FPolicy事件
-
-您可以在BlueXP分类系统上为工作环境中的卷上检测到的文件访问事件收集文件访问审核日志。BlueXP分类可以捕获以下类型的FPolicy事件以及对文件执行操作的用户：创建、读取、写入、删除、重命名、 Change owner/permissions和Change SACL/DACL。 https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["请参见如何监控和管理文件访问事件"]。
-
-
-
-==== 现在、非公开站点支持Data sense BYOL许可证
-
-现在、您可以将Data Sense BYOL许可证上传到非公开站点的BlueXP数字钱包中、以便在许可证不足时收到通知。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["了解如何获取和上传Data sense BYOL许可证"]。
 
 
 
