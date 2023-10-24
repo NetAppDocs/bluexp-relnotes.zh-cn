@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+* 您可以使用访问默认监视列表的Upgrade Advisor页面 link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] 链接。
+* 升级计划经过优化、可消除冗余升级步骤并简化回退计划。集群中所有节点上的通用步骤均已整合、可在升级计划的"常规信息"部分下找到。 link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["了解如何生成和查看升级计划"]。
+

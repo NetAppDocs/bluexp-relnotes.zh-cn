@@ -1,0 +1,11 @@
+= 支持在RHEL版本9上进行BlueXP分类的内部安装
+:allow-uri-read: 
+
+
+
+
+=== 支持在RHEL版本9上进行BlueXP分类的内部安装
+
+Red Hat Enterprise Linux版本8和9不支持Docker引擎；BlueXP分类安装需要此引擎。现在、我们支持在使用Podman版本4或更高版本作为容器基础架构的RHEL 9.0、9.1和9.2上安装BlueXP分类。如果您的环境要求使用最新版本的RHEL、现在可以在使用Podman时安装BlueXP分类(1.26或更高版本)。
+
+目前、在使用RHEL 9.x时、我们不支持非公开站点安装或分布式扫描环境(使用主扫描程序节点和远程扫描程序节点)

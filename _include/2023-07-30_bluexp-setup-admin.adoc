@@ -1,0 +1,25 @@
+= 连接器3.9.32
+:allow-uri-read: 
+
+
+
+
+=== 连接器3.9.32
+
+* 现在、您可以使用BlueXP审核服务API导出审核日志。
++
+审核服务记录有关BlueXP服务执行的操作的信息。其中包括工作区、使用的连接器和其他遥测数据。您可以使用此数据来确定执行了哪些操作、执行了哪些操作以及何时执行了这些操作。
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["详细了解如何使用审核服务API"^]
+
++
+请注意、此链接也可从BlueXP用户界面的Timeline页面访问。
+
+* 此版本的Connector还包括Cloud Volumes ONTAP 增强功能和内部ONTAP 集群增强功能。
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["了解Cloud Volumes ONTAP 增强功能"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["了解ONTAP 内部集群增强功能"^]
+
+
+

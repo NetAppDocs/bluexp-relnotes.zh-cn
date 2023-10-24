@@ -1,0 +1,33 @@
+= 为ONTAP数据提供新的策略管理
+:allow-uri-read: 
+
+
+
+
+=== 为ONTAP数据提供新的策略管理
+
+此版本支持在用户界面中创建自定义Snapshot策略、复制策略以及用于将ONTAP数据备份到对象存储的策略。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["详细了解策略"]。
+
+
+
+=== 支持从ONTAP S3对象存储中的卷还原文件和文件夹
+
+以前、如果将卷备份到ONTAP S3对象存储、则无法使用"浏览和还原"功能还原文件和文件夹。此版本取消了此限制。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关还原数据的更多信息"]。
+
+
+
+=== 能够立即归档备份数据、而不是先写入标准存储
+
+现在、您可以立即将备份文件发送到归档存储、而无需将数据写入标准云存储。对于很少需要从云备份访问数据的用户或要将备份替换为磁带环境的用户来说、这一点尤其有用。
+
+
+
+=== 为备份和还原SnapLock卷提供了更多支持
+
+现在、备份和恢复可以备份使用SnapLock合规性或SnapLock企业保护模式配置的FlexVol和FlexGroup卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["了解有关保护ONTAP数据的更多信息"]。

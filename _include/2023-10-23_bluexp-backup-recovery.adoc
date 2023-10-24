@@ -1,0 +1,21 @@
+= 在备份激活期间创建3-2-1备份策略
+:allow-uri-read: 
+
+
+
+
+=== 在备份激活期间创建3-2-1备份策略
+
+以前、必须在启动Snapshot、复制或备份之前创建自定义策略。现在、您可以使用BlueXP备份和恢复UI在备份激活过程中创建策略。
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["详细了解策略"]。
+
+
+
+=== 支持按需快速还原ONTAP卷
+
+现在、通过BlueXP备份和恢复、可以将卷从云存储"快速还原"到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原会将元数据从备份文件还原到卷、而不是还原整个备份文件。
+
+Cloud Volumes ONTAP目标系统必须运行ONTAP 9.13.0或更高版本。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关还原数据的更多信息"]。
+
+BlueXP备份和恢复作业监控器还会显示有关快速恢复作业进度的信息。

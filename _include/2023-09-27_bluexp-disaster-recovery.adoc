@@ -1,0 +1,38 @@
+= 
+:allow-uri-read: 
+
+
+此BlueXP灾难恢复预览版包括以下更新：
+
+* *信息板更新*：现在您可以单击信息板上的选项、以便于快速查看信息。此外、信息板现在还会显示故障转移和迁移的状态。
++
+请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["在信息板上查看灾难恢复计划的运行状况"]。
+
+* *复制计划更新*：
++
+** *RPO *：现在可以在复制计划的数据存储库部分中输入恢复点目标(RPO)和保留计数。这表示必须存在的数据量、这些数据量不应早于设置的时间。例如、如果您将其设置为5分钟、则在发生灾难时、系统可能会丢失长达5分钟的数据、而不会影响业务关键型需求。
++
+请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
+
+** *网络增强功能*：在复制计划的虚拟机部分中映射源位置和目标位置之间的网络时、BlueXP灾难恢复现在提供两个选项：DHCP或静态IP。以前仅支持DHCP。对于静态IP、您需要配置子网、网关和DNS服务器。此外、您现在还可以输入虚拟机的凭据。
++
+请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
+
+** *编辑计划*：现在可以更新复制计划计划。
++
+请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理资源"]。
+
+** *SnapMirror自动化*：在此版本中创建复制计划时，可以在以下配置之一中定义源卷和目标卷之间的SnapMirror关系：
++
+*** 1比1
+*** 在扇出架构中排名第一
+*** 多对一作为一致性组
+*** 多对多
++
+请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
+
+
+
+
+
+

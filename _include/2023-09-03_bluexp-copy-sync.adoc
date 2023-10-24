@@ -1,0 +1,19 @@
+= 按正则表达式排除文件
+:allow-uri-read: 
+
+
+
+
+=== 按正则表达式排除文件
+
+用户现在可以选择使用正则表达式排除文件。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["了解有关*排除文件扩展名*功能的更多信息。"]
+
+
+
+=== 创建Azure数据代理时添加S3密钥
+
+现在、用户可以在创建Azure数据代理时添加AWS S3访问密钥和机密密钥。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["详细了解如何在Azure中创建数据代理。"]

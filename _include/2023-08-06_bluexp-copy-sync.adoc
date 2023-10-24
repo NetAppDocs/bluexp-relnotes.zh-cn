@@ -1,0 +1,31 @@
+= 创建数据代理时使用现有Azure安全组
+:allow-uri-read: 
+
+
+
+
+=== 创建数据代理时使用现有Azure安全组
+
+现在、用户可以选择在创建数据代理时使用现有Azure安全组。
+
+创建数据代理时使用的服务帐户必须具有以下权限：
+
+* " Microsoft.Network/networkSecurityGroups/securityRules/read"
+* " Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["详细了解如何在Azure中创建数据代理。"]
+
+
+
+=== 同步到Google存储时对数据进行加密
+
+现在、用户可以选择在创建以Google存储分段为目标的同步关系时指定由客户管理的加密密钥。您可以手动输入密钥、也可以从单个区域的密钥列表中进行选择。
+
+创建数据代理时使用的服务帐户必须具有以下权限：
+
+* 云公里。cryptoKeys.list
+* 云公里.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["详细了解Google Cloud Storage存储分段要求。"]

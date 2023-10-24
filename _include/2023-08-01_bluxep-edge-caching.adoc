@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+此版本可修复中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
