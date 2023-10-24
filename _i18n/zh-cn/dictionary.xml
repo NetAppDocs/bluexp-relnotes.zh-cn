@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">2023年11月8日</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">此版本的BlueXP经济高效功能提供了一个新选项、可用于评估您的资产并确定是否建议进行技术更新。此服务包括左侧导航栏中的新技术更新选项、可用于评估当前工作负载和资产的新页面以及可为您提供建议的报告。</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">支持在作业监控器中计划作业</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">BlueXP备份和恢复作业监控器以前会监控计划的卷到对象存储备份和还原作业、但不会监控通过UI或API计划的本地Snapshot、复制、备份和还原作业。</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">BlueXP备份和恢复作业监控器现在包括本地快照、复制以及对象存储备份的计划作业。</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">现在、您可以为使用SMB/CCIFS协议的卷创建报告。</block>
 </blocks>
