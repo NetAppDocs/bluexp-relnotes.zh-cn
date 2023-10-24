@@ -372,6 +372,34 @@ BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现
 
 
 
+=== 2023年11月10日
+
+以下更改是在连接器3.9.35版本中推出的。
+
+
+
+==== 现在、Google Cloud支持柏林地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
+
+
+
+=== 2023年11月8日
+
+以下更改是在连接器3.9.35版本中推出的。
+
+
+
+==== 现在、AWS支持特拉维夫地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持特拉维夫地区。
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+
+
+
 === 2023年11月1日
 
 以下更改是在连接器3.9.34版本中推出的。
@@ -383,44 +411,6 @@ BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现
 现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。
 
 有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
-
-
-
-=== 2023年10月23日
-
-以下更改是在连接器3.9.34版本中推出的。
-
-
-
-==== Azure中的HA多可用性区域部署支持新区域
-
-Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署高可用性多可用性区域：
-
-* 澳大利亚东部
-* 东亚
-* 法国中部
-* 北欧
-* 卡塔尔中部
-* 瑞典中部
-* 西欧
-* 美国西部 2.
-
-
-有关支持多个可用性区域的所有区域的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
-
-
-
-=== 2023年10月6日
-
-以下更改是在连接器3.9.34版本中推出的。
-
-
-
-==== Cloud Volumes ONTAP 9.14.0
-
-BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.0正式发布版。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
 
 
@@ -785,6 +775,12 @@ link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro
 
 
 == 经济效率
+
+
+
+=== 2023年11月8日
+
+此版本的BlueXP经济高效功能提供了一个新选项、可用于评估您的资产并确定是否建议进行技术更新。此服务包括左侧导航栏中的新技术更新选项、可用于评估当前工作负载和资产的新页面以及可为您提供建议的报告。
 
 
 

@@ -538,5 +538,15 @@
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud下的全球区域地图</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">有关所有地区的列表、请参见<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
-  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Azure中的以下地区现在支持在Cloud Volumes ONTAP 9.12.1 GA及更高版本中部署高可用性多可用性区域：</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023年11月10日</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">以下更改是在连接器3.9.35版本中推出的。</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">现在、Google Cloud支持柏林地区</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">现在、AWS支持特拉维夫地区</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持特拉维夫地区。</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS下的全球区域图</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表、请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
+  <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">2023年11月8日</block>
+  <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">此版本的BlueXP经济高效功能提供了一个新选项、可用于评估您的资产并确定是否建议进行技术更新。此服务包括左侧导航栏中的新技术更新选项、可用于评估当前工作负载和资产的新页面以及可为您提供建议的报告。</block>
 </blocks>
