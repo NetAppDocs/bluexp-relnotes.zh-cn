@@ -1,10 +1,6 @@
-= 连接器3.9.33
+= 
 :allow-uri-read: 
 
-
-
-
-=== 连接器3.9.33
 
 * 现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。
 +
