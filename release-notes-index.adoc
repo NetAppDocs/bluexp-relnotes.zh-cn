@@ -5,15 +5,12 @@ keywords: release notes
 summary: 查看每个服务的完整发行说明。 
 ---
 = 发行说明索引
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

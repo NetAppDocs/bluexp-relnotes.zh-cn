@@ -6,14 +6,11 @@ lead: These release notes describe recent enhancements to the cloud services tha
 summary: 本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。 
 ---
 = BlueXP发行说明
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
