@@ -504,20 +504,12 @@
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">此版本已修复以下问题</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">修复了在信息板中显示系统扫描的文件数时出现的不一致问题。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">通过处理和报告名称和元数据中包含特殊字符的文件和目录、改进了扫描行为。</block>
-  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">2023年11月1日</block>
-  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">现在、Google Cloud支持沙特阿拉伯地区</block>
-  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">现在、适用于Cloud Volumes ONTAP的Google Cloud和适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Connector支持沙特阿拉伯地区。</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Google Cloud下的全球区域地图</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">有关所有地区的列表、请参见<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>。</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">2023年11月10日</block>
   <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">以下更改是在连接器3.9.35版本中推出的。</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">现在、Google Cloud支持柏林地区</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud支持柏林地区。</block>
-  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">现在、AWS支持特拉维夫地区</block>
-  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持特拉维夫地区。</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS下的全球区域图</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表、请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
-  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">以下更改是在连接器3.9.34版本中推出的。</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">2023年11月8日</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">此版本的BlueXP经济高效功能提供了一个新选项、可用于评估您的资产并确定是否建议进行技术更新。此服务包括左侧导航栏中的新技术更新选项、可用于评估当前工作负载和资产的新页面以及可为您提供建议的报告。</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">支持在作业监控器中计划作业</block>
@@ -553,4 +545,22 @@
   <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">现在、监视列表、站点和组信息板中提供了技术更新建议。</block>
   <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">现在、当技术更新建议计数为零时、您可以查看潜在的技术更新候选项。</block>
   <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">客户级别信息板的规划小工具中包含技术更新建议计数。这些建议有助于在硬件停止支持或即将停止支持时规划硬件技术更新活动。</block>
+  <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">2023年12月6日</block>
+  <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1.</block>
+  <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1。</block>
+  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">引入了以下更改。</block>
+  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Azure中的新区域支持</block>
+  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">单一可用性区域区域支持</block>
+  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">现在、以下地区支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性单可用性区域：</block>
+  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">特拉维夫</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">米兰</block>
+  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">多可用性区域区域支持</block>
+  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性多可用性区域：</block>
+  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">印度中部</block>
+  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">挪威东部</block>
+  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">瑞士北部</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南非北部</block>
+  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">阿拉伯联合酋长国北部</block>
+  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">中国北部3.</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">有关所有地区的列表、请参见<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
 </blocks>
