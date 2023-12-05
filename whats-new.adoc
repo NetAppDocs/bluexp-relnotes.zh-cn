@@ -30,6 +30,23 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 
 
 
+=== 2023年12月5日
+
+
+
+==== 私有模式释放
+
+BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版以及截至2023年10月私有模式支持的BlueXP服务版本。
+
+此新版本可从NetApp 支持站点 下载。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["了解专用模式附带的BlueXP服务"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 === 2023年11月8日
 
 
@@ -47,21 +64,6 @@ NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Man
 ==== 连接器3.9.34
 
 此版本包含一些小改进和错误修复。
-
-
-
-=== 2023年9月10日
-
-
-
-==== 连接器3.9.33
-
-* 现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。"]
-
-* 此更新还包括错误修复。
-
 
 
 
@@ -475,6 +477,32 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2023年11月26日
+
+
+
+==== Azure Blb的冷存储类支持
+
+现在、在创建同步关系时、可以使用冷存储Azure Blb层。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["了解有关创建同步关系的更多信息。"]
+
+
+
+==== 在AWS数据代理中支持特拉维夫地区
+
+现在、在AWS中创建数据代理时、特拉维夫已成为受支持的区域。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["了解有关在AWS中创建数据代理的更多信息"]。
+
+
+
+==== 更新到数据代理的节点版本
+
+现在、所有新数据代理都将使用节点版本21.2.0。与此更新不兼容的数据代理(例如CentOS 7.0和Ubuntu Server 18.0)将不再使用BlueXP副本和同步。
+
+
+
 === 2023年9月3日
 
 
@@ -527,53 +555,25 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== 2023年7月9日
-
-
-
-==== 一次删除多个同步关系
-
-现在、用户可以在用户界面中一次删除多个同步关系。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["了解有关删除同步关系的更多信息。"]
-
-
-
-==== 仅复制ACL
-
-现在、用户可以通过其他选项在CIFS和NFS关系中复制ACL信息。创建或管理同步关系时、您只能复制文件、仅复制ACL信息或复制文件和ACL信息。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["了解有关复制ACL的更多信息。"]
-
-
-
-==== 已更新为Node.js 20
-
-复制和同步已更新为Node.js 20。所有可用的数据代理都将更新。无法安装与此更新不兼容的操作系统、不兼容的现有系统可能会出现性能问题。
-
-
-
-=== 2023年6月11日
-
-
-
-==== 支持按分钟自动中止
-
-现在，可以使用*Sync Timeout*功能在15分钟后中止尚未完成的活动同步。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关同步超时设置的更多信息"]。
-
-
-
-==== 复制访问时间元数据
-
-在包括文件系统的关系中，*复制对象*功能现在复制访问时间元数据。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["了解有关复制对象设置的更多信息"]。
-
-
-
 == 数字顾问
+
+
+
+=== 2023年11月16日
+
+
+
+=== 监视列表
+
+现在、您最多可以创建100个监视列表。
+
+
+
+==== 规划小工具
+
+* 现在、监视列表、站点和组信息板中提供了技术更新建议。
+* 现在、当技术更新建议计数为零时、您可以查看潜在的技术更新候选项。
+
 
 
 
@@ -595,19 +595,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 * 您可以使用访问默认监视列表的Upgrade Advisor页面 link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] 链接。
 * 升级计划经过优化、可消除冗余升级步骤并简化回退计划。集群中所有节点上的通用步骤均已整合、可在升级计划的"常规信息"部分下找到。 link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["了解如何生成和查看升级计划"]。
-
-
-
-
-=== 2023年7月16日
-
-
-
-==== 存储效率
-
-* 显示效率比率的标签*存储效率*已重命名为*数据精简*。
-* 标签*存储效率节省的数据*已重命名为*数据精简节省*。
-* 切换*不使用Snapshot备份时节省空间*将重命名为*使用Snapshot副本*并对其功能进行了更改。 link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["了解更多信息。"]。
 
 
 

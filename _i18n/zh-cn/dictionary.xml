@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="ad49677f8bac8ede065e8839632b6f38" category="doc">发行说明索引</block>
-  <block id="58c23c6ea3bae0f0d75bd2cd80d15108" category="paragraph">查看每个服务的完整发行说明。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="section-title">存储</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">适用于 ONTAP 的 Amazon FSX</block>
@@ -236,15 +235,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">详细了解BlueXP卷缓存</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
-  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">2023年6月11日</block>
-  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">支持按分钟自动中止</block>
-  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">现在，可以使用*Sync Timeout*功能在15分钟后中止尚未完成的活动同步。</block>
-  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">了解有关同步超时设置的更多信息</block>
-  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>。</block>
-  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">复制访问时间元数据</block>
-  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">在包括文件系统的关系中，*复制对象*功能现在复制访问时间元数据。</block>
-  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">了解有关复制对象设置的更多信息</block>
-  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>。</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">2023年7月2日</block>
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">添加Storage VM</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">您现在可以： <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</block>
@@ -264,17 +254,6 @@
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> 以帮助您计算成本节省。</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud 存储</block>
   <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
-  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">2023年7月9日</block>
-  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">一次删除多个同步关系</block>
-  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">现在、用户可以在用户界面中一次删除多个同步关系。</block>
-  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">了解有关删除同步关系的更多信息。</block>
-  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
-  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">仅复制ACL</block>
-  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">现在、用户可以通过其他选项在CIFS和NFS关系中复制ACL信息。创建或管理同步关系时、您只能复制文件、仅复制ACL信息或复制文件和ACL信息。</block>
-  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">了解有关复制ACL的更多信息。</block>
-  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
-  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">已更新为Node.js 20</block>
-  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">复制和同步已更新为Node.js 20。所有可用的数据代理都将更新。无法安装与此更新不兼容的操作系统、不兼容的现有系统可能会出现性能问题。</block>
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">可以通过BlueXP添加新存储分段并管理现有存储分段</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">了解如何添加新的Google Cloud存储分段</block>
@@ -394,13 +373,6 @@
   <block id="8454892d6268011bb79d98eedd4f8afb" category="paragraph"><block ref="10a687fb14a41a274bb5d883fcf5c124" category="inline-link-macro-rx"></block>。</block>
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">2023年5月18日</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">这是BlueXP灾难恢复的初始版本。</block>
-  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">2023年7月16日</block>
-  <block id="91b681e174a782226d26fb4056e14081" category="section-title">存储效率</block>
-  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">显示效率比率的标签*存储效率*已重命名为*数据精简*。</block>
-  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">标签*存储效率节省的数据*已重命名为*数据精简节省*。</block>
-  <block id="2a88859b894ead28756789553bc66754" category="list-text">切换*不使用Snapshot备份时节省空间*将重命名为*使用Snapshot副本*并对其功能进行了更改。 <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>。</block>
-  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">2023年9月10日</block>
-  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">连接器3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">现在、在从BlueXP在AWS中创建Connector时、您可以在Key Pair字段中进行搜索、以便更轻松地找到要用于Connector实例的密钥对。</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">从BlueXP在AWS中创建连接器时、网络页面上显示的密钥对字段中的搜索选项的屏幕截图。</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -495,7 +467,6 @@
 <block ref="c6a2e575c9cd7913e0bdc96abdd66269" category="inline-link-macro-rx"></block></block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
   <block id="ec795e7f7ea26d9d59bc0e1e031d4234" category="section-title">规划小工具</block>
-  <block id="cf75b31aeb339e309fa309a49a276a28" category="paragraph">客户级别信息板的规划小工具中包含技术更新建议计数。这些建议有助于在硬件停止支持或即将停止支持时规划硬件技术更新活动。</block>
   <block id="2971377ab46c11db3998ef23731b52cf" category="section-title">2023年10月20日</block>
   <block id="b56e223e6fc7ca1dfacb6233ed47b35e" category="paragraph">此BlueXP灾难恢复预览版包含以下更新。</block>
   <block id="af242308972c98cd4207cc26ee6edaa9" category="paragraph">现在、借助BlueXP灾难恢复功能、您可以保护基于NFS的内部VMware工作负载、使其免受灾难影响、而灾难又发生在公共云之外的另一个基于NFS的内部VMware环境中。BlueXP灾难恢复可安排灾难恢复计划的完成。</block>
@@ -554,4 +525,32 @@
   <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">BlueXP备份和恢复作业监控器现在包括本地快照、复制以及对象存储备份的计划作业。</block>
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">现在、您可以为使用SMB/CCIFS协议的卷创建报告。</block>
+  <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">查看每个BlueXP服务的完整发行说明。</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">2023年12月5日</block>
+  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">私有模式释放</block>
+  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版以及截至2023年10月私有模式支持的BlueXP服务版本。</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">此新版本可从NetApp 支持站点 下载。</block>
+  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">了解专用模式附带的BlueXP服务</block>
+  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">了解如何在私有模式下开始使用BlueXP</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">了解如何在使用私有模式时升级连接器</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023年11月26日</block>
+  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blb的冷存储类支持</block>
+  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">现在、在创建同步关系时、可以使用冷存储Azure Blb层。</block>
+  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">了解有关创建同步关系的更多信息。</block>
+  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
+  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">在AWS数据代理中支持特拉维夫地区</block>
+  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">现在、在AWS中创建数据代理时、特拉维夫已成为受支持的区域。</block>
+  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">了解有关在AWS中创建数据代理的更多信息</block>
+  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>。</block>
+  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">更新到数据代理的节点版本</block>
+  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">现在、所有新数据代理都将使用节点版本21.2.0。与此更新不兼容的数据代理(例如CentOS 7.0和Ubuntu Server 18.0)将不再使用BlueXP副本和同步。</block>
+  <block id="20cc757c4cb0c9b6153ae0f56705ae36" category="section-title">2023年11月16日</block>
+  <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">监视列表</block>
+  <block id="20015eaa9dc8feb8cbf1eaadb95c6b20" category="paragraph">现在、您最多可以创建100个监视列表。</block>
+  <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">现在、监视列表、站点和组信息板中提供了技术更新建议。</block>
+  <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">现在、当技术更新建议计数为零时、您可以查看潜在的技术更新候选项。</block>
+  <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">客户级别信息板的规划小工具中包含技术更新建议计数。这些建议有助于在硬件停止支持或即将停止支持时规划硬件技术更新活动。</block>
 </blocks>
