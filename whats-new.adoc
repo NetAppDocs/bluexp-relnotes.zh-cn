@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
-=== Upgrade Advisor
+==== Upgrade Advisor
 
 Upgrade Advisor经过增强、可为单个集群和多个集群提供自动化无中断升级计划。您只能查看单个集群的升级建议、其中包括风险摘要、升级前检查报告以及有关新功能和增强功能的信息。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["了解如何查看升级建议并生成升级计划。"]
 
@@ -576,7 +576,7 @@ Upgrade Advisor经过增强、可为单个集群和多个集群提供自动化�
 
 
 
-=== 监视列表
+==== 监视列表
 
 现在、您最多可以创建100个监视列表。
 
