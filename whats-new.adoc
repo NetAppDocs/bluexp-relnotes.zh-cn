@@ -308,7 +308,7 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 ==== 将其他组ID配置为"对组织开放"
 
-现在、您可以将NFS中的组ID配置为直接在BlueXP分类中被视为"对组织开放"(如果最初未使用该权限进行设置)。请参见操作说明 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["将其他组ID添加为"对组织开放""]。
+现在、您可以在NFS中将组ID配置为直接从BlueXP分类中视为"对组织开放"(如果组最初未设置该权限)。附加了这些组ID的所有文件和文件夹将在"调查详细信息"页面中显示为"开放给组织"。请参见操作说明 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["将其他组ID添加为"对组织开放""]。
 
 
 
@@ -362,6 +362,18 @@ BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现
 
 
 
+=== 2024年1月16日
+
+
+
+==== BlueXP中的修补程序版本
+
+BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["升级 Cloud Volumes ONTAP"^]
+
+
+
 === 2024年1月8日
 
 
@@ -387,42 +399,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 ==== Cloud Volumes ONTAP 9.14.1 RC1.
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1。
-
-
-
-=== 2023年12月5日
-
-引入了以下更改。
-
-
-
-==== Azure中的新区域支持
-
-
-
-===== 单一可用性区域区域支持
-
-现在、以下地区支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性单可用性区域：
-
-* 特拉维夫
-* 米兰
-
-
-
-
-===== 多可用性区域区域支持
-
-以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署高可用性多可用性区域：
-
-* 印度中部
-* 挪威东部
-* 瑞士北部
-* 南非北部
-* 阿拉伯联合酋长国北部
-* 中国北部3.
-
-
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
