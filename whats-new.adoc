@@ -175,6 +175,18 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2024年2月1日
+
+
+
+==== 对虚拟机的BlueXP备份和恢复进行了增强
+
+* 支持将虚拟机还原到备用位置
+* 支持取消数据存储库保护
+
+
+
+
 === 2023年12月15日
 
 
@@ -230,14 +242,6 @@ BlueXP备份和恢复作业监控器还会显示有关快速恢复作业进度�
 
 
 
-==== 将内部ONTAP数据备份到StorageGRID存储分段的保留时间有所增加
-
-StorageGRID现在可以在一个存储分段中保留BlueXP备份和恢复中多达30个内部ONTAP数据备份。以前、一个存储分段中最多可有7个备份。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["了解有关将内部ONTAP 数据备份到StorageGRID 的更多信息"]。
-
-
-
 ==== 支持在作业监控器中计划作业
 
 BlueXP备份和恢复作业监控器以前会监控计划的卷到对象存储备份和还原作业、但不会监控通过UI或API计划的本地Snapshot、复制、备份和还原作业。
@@ -245,44 +249,6 @@ BlueXP备份和恢复作业监控器以前会监控计划的卷到对象存储�
 BlueXP备份和恢复作业监控器现在包括本地快照、复制以及对象存储备份的计划作业。
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["了解有关更新的作业监控器的更多信息"]。
-
-
-
-=== 2023年10月13日
-
-
-
-==== 增强了适用于应用程序的BlueXP备份和恢复功能(云原生)
-
-* Microsoft SQL Server数据库
-+
-** 支持备份、还原和恢复Amazon FSx for NetApp ONTAP上的Microsoft SQL Server数据库
-** 只有通过REST API才支持所有操作。
-
-
-* SAP HANA系统
-+
-** 在系统刷新期间、系统会使用工作流(而不是脚本)自动挂载和卸载卷
-** 支持添加、删除、编辑、删除、维护、 并使用UI升级插件主机
-
-
-
-
-
-
-==== 针对应用程序的BlueXP备份和恢复增强功能(混合)
-
-* 支持数据锁定和勒索软件保护
-* 支持将备份从StorageGRID移至归档层
-* 支持将MongoDB、MySQL和PostgreSQL应用程序数据从内部ONTAP系统备份到Amazon Web Services、Microsoft Azure、Google云平台和StorageGRID。您可以根据需要还原数据。
-
-
-
-
-==== 对虚拟机的BlueXP备份和恢复进行了增强
-
-* 支持Connector代理部署模式
-
 
 
 
@@ -334,6 +300,26 @@ Red Hat Enterprise Linux版本8和9不支持Docker引擎；BlueXP分类安装需
 
 
 
+=== 2024年2月2日
+
+
+
+==== 支持Azure中的Edv5系列VM
+
+从9.14.1版开始、Cloud Volumes ONTAP现在支持以下Edv5系列VM。
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
+
+
+
 === 2024年1月16日
 
 
@@ -361,16 +347,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-onta
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
-
-
-
-=== 2023年12月6日
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 RC1.
-
-BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1。
 
 
 
