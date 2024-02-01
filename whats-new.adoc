@@ -18,12 +18,6 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关�
 
 
 
-== BlueXP简介
-
-NetApp BlueXP于2022年11月1日推出。BlueXP扩展并增强了通过Cloud Manager提供的功能。 https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["了解有关BlueXP简介的更多信息"^]
-
-
-
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
@@ -333,28 +327,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 Red Hat Enterprise Linux版本8和9不支持Docker引擎；BlueXP分类安装需要此引擎。现在、我们支持在使用Podman版本4或更高版本作为容器基础架构的RHEL 9.0、9.1和9.2上安装BlueXP分类。如果您的环境要求使用最新版本的RHEL、现在可以在使用Podman时安装BlueXP分类(1.26或更高版本)。
 
 目前、在使用RHEL 9.x时、我们不支持非公开站点安装或分布式扫描环境(使用主扫描程序节点和远程扫描程序节点)
-
-
-
-=== 9月5日(版本1.25)
-
-
-
-==== 中小型部署暂时不可用
-
-在AWS中部署BlueXP分类实例时、选择*部署>配置*并选择小型或中型实例的选项目前不可用。您仍然可以通过选择*Deploy > DEPLE*来使用较大实例大小来部署实例。
-
-
-
-==== 在"调查结果"页面中对多达100、000个商品应用标记
-
-过去、您一次只能在调查结果页面(20个项目)中对单个页面应用标记。现在、您可以在调查结果页面中选择*所有*项目、并将标记应用于所有项目-一次最多10万个项目。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["了解如何操作"]。
-
-
-
-==== 确定文件大小至少为1 MB的重复文件
-
-BlueXP分类、用于仅在文件大于或等于50 MB时识别重复文件。现在、可以识别从1 MB开始的重复文件。您可以使用"调查"页面筛选"文件大小"和"重复项"、查看环境中具有特定大小的文件的重复项。
 
 
 
