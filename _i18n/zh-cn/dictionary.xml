@@ -568,10 +568,6 @@
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">屏幕截图、显示了在用户设置下编辑您的姓名的功能。</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。</block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">EC2实例的IMDSv1要求</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">请注意、在AWS中手动安装Connector软件之前、Amazon EC2实例需要使用实例元数据服务版本1 (IMDSv1)。</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link">详细了解AWS中的IMDSv1要求</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>。</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日(版本1.29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">现在、您可以排除驻留在特定数据源目录中的扫描数据</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">如果希望BlueXP分类排除驻留在特定数据源目录中的扫描数据、则可以将这些目录名称添加到BlueXP分类处理的配置文件中。通过此功能、您可以避免扫描不必要的目录或可能导致返回误报的个人数据结果的目录。</block>
@@ -656,4 +652,33 @@
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">通过还原数据并确保存储的数据不会再次感染、从勒索软件事件中智能恢复。</block>
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">2024年3月8日</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">连接器3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">支持IMDSv2</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">从AWS安全博客了解有关IMDSv2的更多信息</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Terraform脚本</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">适用于BlueXP、AWS Marketplace或使用的新Connector部署<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>默认情况下，EC2实例上会启用IMDSv2。</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">了解如何在现有实例上配置IMDSv2</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>。</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">AWS权限更新</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">查看Connector的AWS权限</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>。</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">代理设置和Cloud Volumes ONTAP设置</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">现在，可从*Manage Connectors*页面(标准模式)或*Edit Connectors*页面(受限模式和专用模式)访问连接器的代理服务器设置。</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">了解如何配置Connector以使用代理服务器</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>。</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">此外，我们将“*连接器设置*”页重命名为“* Cloud Volumes ONTAP设置*”。</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">屏幕截图、显示"设置"菜单中的Cloud Volumes ONTAP设置选项。</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">超大型实例支持现已通过认证</block>
+  <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">如果您需要BlueXP分类来扫描超过2.5亿个文件、则可以在云部署或内部安装中使用一个超大实例。此类系统最多可扫描5亿个文件。</block>
+  <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>。</block>
 </blocks>
