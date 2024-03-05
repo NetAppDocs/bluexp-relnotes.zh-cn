@@ -48,7 +48,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 * 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["了解如何在现有实例上配置IMDSv2"]。
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["了解如何在现有实例上配置IMDSv2"]。
 
 
 
@@ -105,33 +105,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 * AWS的以色列(特拉维夫)地区
 * Google Cloud中的沙特阿拉伯地区
 
-
-
-
-=== 2023年12月5日
-
-
-
-==== 私有模式释放
-
-BlueXP现已推出新的专用模式版本。此版本包含连接器3.9.35版以及截至2023年10月私有模式支持的BlueXP服务版本。
-
-此新版本可从NetApp 支持站点 下载。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["了解专用模式附带的BlueXP服务"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
-
-
-
-
-=== 2023年11月8日
-
-
-
-==== 连接器3.9.35
-
-此版本包含一些小的安全性改进和错误修复。
 
 
 
