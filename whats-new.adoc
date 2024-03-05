@@ -24,6 +24,48 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关�
 
 
 
+=== 2024年3月26日
+
+
+
+==== 专用模式版本(3.9.38)
+
+BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务版本、这些版本支持专用模式。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.38 
+
+
+| 备份和恢复 | 2024年3月12日 
+
+
+| 分类 | 2024年3月4日 
+
+
+| Cloud Volumes ONTAP管理 | 2024年3月8日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2023年7月30日 
+
+
+| Replication | 2022年9月18日 
+|===
+此新版本可从NetApp 支持站点 下载。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 === 2024年3月8日
 
 
@@ -91,20 +133,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["屏幕截图、显示了在用户设置下编辑您的姓名的功能。"]
 
 如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。
-
-
-
-=== 2024年1月11日
-
-
-
-==== 连接器3.9.36
-
-此版本包括一些小改进、错误修复以及对以下云区域中的Connector的支持：
-
-* AWS的以色列(特拉维夫)地区
-* Google Cloud中的沙特阿拉伯地区
-
 
 
 
@@ -215,6 +243,30 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 == 备份和恢复
+
+
+
+=== 2024年3月12日
+
+
+
+==== 能够从云备份"快速还原"到内部ONTAP卷
+
+现在、您可以将卷从云存储快速还原到内部ONTAP目标卷。以前、您只能快速还原到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原比完整卷还原速度快得多；它会将元数据从云快照还原到ONTAP目标卷。源可能来自AWS S3、Azure Blb、Google云服务或NetApp StorageGRID。
+
+内部ONTAP目标系统必须运行ONTAP 9.14.1或更高版本。
+
+您可以使用浏览和还原过程执行此操作、而不是使用搜索和还原过程。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["从备份文件还原ONTAP数据"]。
+
+
+
+==== 能够从Snapshot和复制副本还原文件和文件夹
+
+以前、您只能从AWS、Azure和Google Cloud Services中的备份副本还原文件和文件夹。现在、您可以从本地Snapshot副本和复制副本还原文件和文件夹。
+
+您可以使用搜索和还原过程执行此功能、而不是使用浏览和还原过程。
 
 
 
@@ -510,6 +562,34 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 
 
 
+=== 2024年3月15日
+
+
+
+==== 健康
+
+* 健康度工作流现在包括Sustainability小工具、可提供客户、监视列表、站点和组级别的建议操作计数。您可以在Sustainability信息板上单击操作数以查看这些建议操作的详细视图。要了解更多信息、请参见 link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["分析存储系统的可持续性"]。
+* 健康工作流中的"安全漏洞"和"防兰索防"小工具组合到一个小工具中、该小工具现在称为"安全和防兰索防"。
+
+
+
+
+==== 运行状况检查信息板
+
+技术案例的时间表已得到改进、可查看6或12个月的完整案例历史记录。
+
+
+
+=== 2024年2月29日
+
+
+
+==== 监视列表
+
+现在、您可以根据Keystone订阅编号创建监视列表、并使用订阅编号或监视列表名称的前三个字符搜索Keystone订阅。
+
+
+
 === 2024年2月8日
 
 
@@ -523,44 +603,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 ==== 集群查看器
 
 现在、您可以在"Storage (存储)"选项卡和"ClusterViewer Reports (集群查看器报告)"中的"Disk Summary (磁盘摘要)"部分中查看磁盘RPM信息。
-
-
-
-=== 2024年1月3日
-
-
-
-==== Upgrade Advisor
-
-Upgrade Advisor经过增强、可为单个集群和多个集群提供自动化无中断升级计划。您只能查看单个集群的升级建议、其中包括风险摘要、升级前检查报告以及有关新功能和增强功能的信息。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["了解如何查看升级建议并生成升级计划。"]
-
-
-
-=== 2023年11月16日
-
-
-
-==== 监视列表
-
-现在、您最多可以创建100个监视列表。
-
-
-
-==== 规划小工具
-
-* 现在、监视列表、站点和组信息板中提供了技术更新建议。
-* 现在、当技术更新建议计数为零时、您可以查看潜在的技术更新候选项。
-
-
-
-
-=== 2023年10月4日
-
-
-
-==== 规划小工具
-
-客户级别信息板的规划小工具中包含技术更新建议计数。这些建议有助于在硬件停止支持或即将停止支持时规划硬件技术更新活动。
 
 
 
@@ -747,6 +789,20 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 
 == 经济效率
+
+
+
+=== 2024年3月14日
+
+如果您已有资产、并且希望确定是否需要更新某项技术、则可以使用BlueXP经济高效技术更新选项。您可以查看当前工作负载的简短评估并获取建议、或者如果您在过去90天内将AutoSupport日志发送给NetApp、则该服务现在可以提供工作负载模拟、以查看工作负载在新硬件上的运行情况。
+
+您还可以添加工作负载并从模拟中排除现有工作负载。
+
+以前、您只能对资产进行评估、并确定是否建议进行技术更新。
+
+此功能现在是左侧导航栏中技术更新选项的一部分。
+
+详细了解 link:../use/tech-refresh.html["评估技术更新"]。
 
 
 
