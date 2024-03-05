@@ -352,6 +352,18 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
+=== 2024年3月8日
+
+
+
+==== Amazon Instant Metadata"服务v2支持
+
+在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
+
+如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["用于管理现有连接器的BlueXP设置和管理文档"^]。
+
+
+
 === 2024年3月5日
 
 
@@ -379,18 +391,6 @@ BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes O
 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
-
-
-
-=== 2024年1月16日
-
-
-
-==== BlueXP中的修补程序版本
-
-BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["升级 Cloud Volumes ONTAP"^]
 
 
 

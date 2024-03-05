@@ -529,11 +529,6 @@
   <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">了解如何查看升级建议并生成升级计划。</block>
   <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor经过增强、可为单个集群和多个集群提供自动化无中断升级计划。您只能查看单个集群的升级建议、其中包括风险摘要、升级前检查报告以及有关新功能和增强功能的信息。 <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">现在、您可以在NFS中将组ID配置为直接从BlueXP分类中视为"对组织开放"(如果组最初未设置该权限)。附加了这些组ID的所有文件和文件夹将在"调查详细信息"页面中显示为"开放给组织"。请参见操作说明<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
-  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">2024年1月16日</block>
-  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">BlueXP中的修补程序版本</block>
-  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">BlueXP中仅提供最新三个Cloud Volumes ONTAP版本的修补程序版本。</block>
-  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link-macro">升级 Cloud Volumes ONTAP</block>
-  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">2024年2月1日</block>
   <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">支持将虚拟机还原到备用位置</block>
   <block id="9c75b0f26dddf07ed827e32aaf28bee9" category="list-text">支持取消数据存储库保护</block>
@@ -668,4 +663,8 @@
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">如果您需要BlueXP分类来扫描超过2.5亿个文件、则可以在云部署或内部安装中使用一个超大实例。此类系统最多可扫描5亿个文件。</block>
   <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>。</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>。</block>
+  <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Amazon Instant Metadata"服务v2支持</block>
+  <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</block>
+  <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">用于管理现有连接器的BlueXP设置和管理文档</block>
+  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>。</block>
 </blocks>
