@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>BlueXP中的最新变更 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="BlueXP中的最新变更 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html" />
+	<meta property="og:description" content="了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/bluexp-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。">
+  <meta name="keywords" content=" what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/bluexp-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/bluexp-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/bluexp-relnotes/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-cn/bluexp-relnotes/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/bluexp-relnotes/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-relnotes/whats-new.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-relnotes/whats-new.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/bluexp-relnotes/js/na-search.js'></script><script src='/zh-cn/bluexp-relnotes/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-cn/bluexp-relnotes/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/bluexp-relnotes/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/bluexp-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/bluexp-relnotes/js/jszip.min.js'></script><script src='/zh-cn/bluexp-relnotes/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-cn/bluexp-relnotes/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/cn">
+                <image id="ie-header-logo" src="/zh-cn/bluexp-relnotes/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文档</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-cn/bluexp-relnotes/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">简体中文</span>
+                    <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-relnotes/whats-new.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-cn/bluexp-relnotes/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">全部来自 NetApp</span>
+                    <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支持</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知识库</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/zh-hans/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">训练</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-relnotes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-cn/bluexp-relnotes/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文档</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">云文档</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/zh-cn/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-cn/bluexp-relnotes/">-->
+      Release Notes
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-cn/bluexp-relnotes/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-cn/bluexp-relnotes/search.html" 
+        data-type="widget"
+        data-placeholder="搜索文档"
+        data-no-results-found="未找到 {query} 的相关结果"
+        data-did-you-mean="搜索 {suggestion}。"
+        data-no-results-found-did-you-mean="未找到 {query} 的相关结果。您是指 {suggestion}？"
+        data-results-found="找到 {hitCount} 个结果"
+        data-error-message="发生错误。请重试。"
+        data-error-reset="重置搜索"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP发行说明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-relnotes/index.html">
+        BlueXP发行说明
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="最近更改"
+      data-li-level="1#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-relnotes/whats-new.html">
+        最近更改
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="发行说明索引"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/release-notes-index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-relnotes/release-notes-index.html">
+        发行说明索引
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律声明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/whats-new.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/bluexp-relnotes/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-cn/bluexp-relnotes"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-cn/bluexp-relnotes"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-cn/bluexp-relnotes/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">BlueXP中的最新变更</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-26 16:36:07 +0000">03/26/2024</time>
+        
+    
+    
+        <span>贡献者
+        </span>
+    
+    
+        <a target="_blank" class="ext-link-indicator" href="/zh-cn/bluexp-relnotes/feed.xml"><img width="21" height="21" src="/zh-cn/bluexp-relnotes/images/rss-button.png" alt="RSS" title="订阅此页面的 RSS 更新" /></a>
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-cn/bluexp-relnotes/images/discuss-sm.svg" alt="" class="github-icon" />建议更改</span>
+        <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-relnotes.zh-cn/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-cn/bluexp-relnotes/whats-new.html&page-title=BlueXP中的最新变更" class="page-nav-contribute-link" role="button">请求文档更改</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-relnotes/blob/main/whats-new.adoc" class="page-nav-contribute-link" role="button">编辑此页面</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >了解如何贡献</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-cn/bluexp-relnotes/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-cn/bluexp-relnotes/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-cn/bluexp-relnotes/pdfs/fullsite-sidebar/BlueXP发行说明.pdf" >
+                    <img src="/zh-cn/bluexp-relnotes/images/pdf-icon.png" alt="" width="16" height="16"/>本文档站点的 PDF</a>
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-cn/bluexp-relnotes/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>单独 PDF 文档的收集<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到 <a href="release-notes-index.html">"完整的发行说明"</a> 针对每个服务。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="管理功能">管理功能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</p>
+</div>
+<div class="sect2">
+<h3 id="2024年3月26日">2024年3月26日</h3>
+<div class="sect3">
+<h4 id="专用模式版本3-9-38">专用模式版本(3.9.38)</h4>
+<div class="paragraph">
+<p>BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务版本、这些版本支持专用模式。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">服务</th>
+<th class="tableblock halign-left valign-top">包含版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">连接器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.9.38</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">备份和恢复</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024年3月12日</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">分类</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024年3月4日</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP管理</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024年3月8日</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">数字电子钱包</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023年7月30日</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">内部ONTAP集群管理</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2023年7月30日</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022年9月18日</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>此新版本可从NetApp 支持站点 下载。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html">"了解私有模式"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">"了解如何在私有模式下开始使用BlueXP"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode">"了解如何在使用私有模式时升级连接器"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年3月8日">2024年3月8日</h3>
+<div class="sect3">
+<h4 id="连接器3-9-38">连接器3.9.38</h4>
+<div class="paragraph">
+<p>目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。</p>
+</div>
+<div class="sect4">
+<h5 id="支持imdsv2">支持IMDSv2</h5>
+<div class="paragraph">
+<p>现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/" target="_blank" rel="noopener">"从AWS安全博客了解有关IMDSv2的更多信息"</a></p>
+</div>
+<div class="paragraph">
+<p>在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>适用于BlueXP、AWS Marketplace或使用的新Connector部署 <a href="https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html" target="_blank" rel="noopener">"Terraform脚本"</a>默认情况下，EC2实例上会启用IMDSv2。</p>
+</li>
+<li>
+<p>如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。</p>
+</li>
+<li>
+<p>对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。</p>
+</li>
+<li>
+<p>对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances">"了解如何在现有实例上配置IMDSv2"</a>。</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="aws权限更新">AWS权限更新</h5>
+<div class="paragraph">
+<p>我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html">"查看Connector的AWS权限"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="代理设置和cloud-volumes-ontap设置">代理设置和Cloud Volumes ONTAP设置</h4>
+<div class="paragraph">
+<p>现在，可从*Manage Connectors*页面(标准模式)或*Edit Connectors*页面(受限模式和专用模式)访问连接器的代理服务器设置。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html">"了解如何配置Connector以使用代理服务器"</a>。</p>
+</div>
+<div class="paragraph">
+<p>此外，我们将“<strong>连接器设置</strong>”页重命名为“* Cloud Volumes ONTAP设置*”。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png" alt="屏幕截图、显示&quot;设置&quot;菜单中的Cloud Volumes ONTAP设置选项。"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月15日">2024年2月15日</h3>
+<div class="sect3">
+<h4 id="连接器3-9-37">连接器3.9.37</h4>
+<div class="paragraph">
+<p>此版本的BlueXP Connector包括一些小的安全改进和错误修复。</p>
+</div>
+<div class="paragraph">
+<p>目前、3.9.37版本可用于标准模式和受限模式。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="编辑名称">编辑名称</h4>
+<div class="paragraph">
+<p>如果您使用NetApp云凭据登录到BlueXP、现在可以在*用户设置*中编辑您的名称。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png" alt="屏幕截图、显示了在用户设置下编辑您的姓名的功能。"></span></p>
+</div>
+<div class="paragraph">
+<p>如果您使用联合连接或NetApp 支持站点 帐户登录、则不支持编辑您的名称。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="azure-blb存储">Azure Blb存储</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年6月5日">2023年6月5日</h3>
+<div class="sect3">
+<h4 id="能够从bluexp添加新存储帐户">能够从BlueXP添加新存储帐户</h4>
+<div class="paragraph">
+<p>您已有一段时间可以在BlueXP Canvs上查看Azure Blb Storage了。现在、您可以直接从BlueXP添加新存储帐户并更改现有存储帐户的属性。 <a href="https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html" target="_blank" rel="noopener">"了解如何添加新的Azure Blb存储帐户"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="azure-netapp-files">Azure NetApp Files</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2021-年-4-月-11-日">2021 年 4 月 11 日</h3>
+<div class="sect3">
+<h4 id="支持卷模板">支持卷模板</h4>
+<div class="paragraph">
+<p>通过新的应用程序模板服务，您可以为 Azure NetApp Files 设置卷模板。此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如，容量池，大小，协议，卷应驻留的 vNet 和子网等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html" target="_blank" rel="noopener">"了解应用程序模板以及如何在环境中使用这些模板"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html">"了解如何使用模板创建 Azure NetApp Files 卷"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2021-年-3-月-8-日">2021 年 3 月 8 日</h3>
+<div class="sect3">
+<h4 id="动态更改服务级别">动态更改服务级别</h4>
+<div class="paragraph">
+<p>现在，您可以动态更改卷的服务级别，以满足工作负载需求并优化成本。此卷将移至另一个容量池，而不会对该卷产生任何影响。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level">"了解如何更改卷的服务级别"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2020-年-8-月-3-日">2020 年 8 月 3 日</h3>
+<div class="sect3">
+<h4 id="azure-netapp-files-设置和管理">Azure NetApp Files 设置和管理</h4>
+<div class="paragraph">
+<p>直接从 Cloud Manager 设置和管理 Azure NetApp Files 。创建 Azure NetApp Files 工作环境后，您可以完成以下任务：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>创建 NFS 和 SMB 卷。</p>
+</li>
+<li>
+<p>管理容量池和卷快照</p>
+<div class="paragraph">
+<p>您可以使用 Cloud Manager 创建，删除和还原卷快照。您还可以创建新的容量池并指定其服务级别。</p>
+</div>
+</li>
+<li>
+<p>通过更改卷大小和管理标记来编辑卷。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>直接从 Cloud Manager 创建和管理 Azure NetApp Files 的功能取代了以前的数据迁移功能。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="适用于-ontap-的-amazon-fsx">适用于 ONTAP 的 Amazon FSX</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年7月30日">2023年7月30日</h3>
+<div class="paragraph">
+<p>现在、客户可以在以下三个新AWS地区为NetApp ONTAP文件系统创建Amazon FSx：欧洲(苏黎世)、欧洲(西班牙)和亚太地区(亚马逊河)。</p>
+</div>
+<div class="paragraph">
+<p>请参见 <a href="https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud" target="_blank" rel="noopener">"Amazon FSx for NetApp ONTAP现已在另外三个地区推出"</a> 了解完整详细信息。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年7月2日">2023年7月2日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>您现在可以： <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html">"添加Storage VM"</a> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</p>
+</li>
+<li>
+<p>“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年6月4日">2023年6月4日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>时间 <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment">"创建工作环境"</a>，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。</p>
+</li>
+<li>
+<p>时间 <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">"创建卷"</a>，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="amazon-s3存储">Amazon S3存储</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年3月5日">2023年3月5日</h3>
+<div class="sect3">
+<h4 id="能够从bluexp添加新存储分段">能够从BlueXP添加新存储分段</h4>
+<div class="paragraph">
+<p>您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。 <a href="https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html" target="_blank" rel="noopener">"了解如何添加新的Amazon S3存储分段"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="备份和恢复">备份和恢复</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月12日">2024年3月12日</h3>
+<div class="sect3">
+<h4 id="能够从云备份快速还原到内部ontap卷">能够从云备份"快速还原"到内部ONTAP卷</h4>
+<div class="paragraph">
+<p>现在、您可以将卷从云存储快速还原到内部ONTAP目标卷。以前、您只能快速还原到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原比完整卷还原速度快得多；它会将元数据从云快照还原到ONTAP目标卷。源可能来自AWS S3、Azure Blb、Google云服务或NetApp StorageGRID。</p>
+</div>
+<div class="paragraph">
+<p>内部ONTAP目标系统必须运行ONTAP 9.14.1或更高版本。</p>
+</div>
+<div class="paragraph">
+<p>您可以使用浏览和还原过程执行此操作、而不是使用搜索和还原过程。</p>
+</div>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html">"从备份文件还原ONTAP数据"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="能够从snapshot和复制副本还原文件和文件夹">能够从Snapshot和复制副本还原文件和文件夹</h4>
+<div class="paragraph">
+<p>以前、您只能从AWS、Azure和Google Cloud Services中的备份副本还原文件和文件夹。现在、您可以从本地Snapshot副本和复制副本还原文件和文件夹。</p>
+</div>
+<div class="paragraph">
+<p>您可以使用搜索和还原过程执行此功能、而不是使用浏览和还原过程。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月1日">2024年2月1日</h3>
+<div class="sect3">
+<h4 id="对虚拟机的bluexp备份和恢复进行了增强">对虚拟机的BlueXP备份和恢复进行了增强</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>支持将虚拟机还原到备用位置</p>
+</li>
+<li>
+<p>支持取消数据存储库保护</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年12月15日">2023年12月15日</h3>
+<div class="sect3">
+<h4 id="可用于本地snapshot和复制snapshot副本的报告">可用于本地Snapshot和复制Snapshot副本的报告</h4>
+<div class="paragraph">
+<p>以前、您只能对备份副本生成报告。现在、您还可以创建有关本地Snapshot副本和复制Snapshot副本的报告。</p>
+</div>
+<div class="paragraph">
+<p>通过这些报告、您可以执行以下操作：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>确保根据组织策略保护关键数据。</p>
+</li>
+<li>
+<p>确保一组卷的备份运行顺畅。</p>
+</li>
+<li>
+<p>为生产数据提供保护证明。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>请参见 <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html">"关于数据保护覆盖范围的报告"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="卷上提供了自定义标记用于排序和筛选">卷上提供了自定义标记、用于排序和筛选</h4>
+<div class="paragraph">
+<p>现在、您可以从ONTAP 9.13.1开始为卷添加自定义标记、以便可以在工作环境内和工作环境之间将卷分组在一起。这样、您就可以在BlueXP备份和恢复UI页面中对卷进行排序并在报告中进行筛选。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="目录备份保留30天">目录备份保留30天</h4>
+<div class="paragraph">
+<p>以前、Catalog.zip备份会保留7天。现在、它们会保留30天。</p>
+</div>
+<div class="paragraph">
+<p>请参见 <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html">"在非公开站点中还原BlueXP备份和恢复数据"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年10月23日">2023年10月23日</h3>
+<div class="sect3">
+<h4 id="在备份激活期间创建3-2-1备份策略">在备份激活期间创建3-2-1备份策略</h4>
+<div class="paragraph">
+<p>以前、必须在启动Snapshot、复制或备份之前创建自定义策略。现在、您可以使用BlueXP备份和恢复UI在备份激活过程中创建策略。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html">"详细了解策略"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="支持按需快速还原ontap卷">支持按需快速还原ONTAP卷</h4>
+<div class="paragraph">
+<p>现在、通过BlueXP备份和恢复、可以将卷从云存储"快速还原"到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原会将元数据从备份文件还原到卷、而不是还原整个备份文件。</p>
+</div>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP目标系统必须运行ONTAP 9.13.0或更高版本。 <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html">"了解有关还原数据的更多信息"</a>。</p>
+</div>
+<div class="paragraph">
+<p>BlueXP备份和恢复作业监控器还会显示有关快速恢复作业进度的信息。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="支持在作业监控器中计划作业">支持在作业监控器中计划作业</h4>
+<div class="paragraph">
+<p>BlueXP备份和恢复作业监控器以前会监控计划的卷到对象存储备份和还原作业、但不会监控通过UI或API计划的本地Snapshot、复制、备份和还原作业。</p>
+</div>
+<div class="paragraph">
+<p>BlueXP备份和恢复作业监控器现在包括本地快照、复制以及对象存储备份的计划作业。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html">"了解有关更新的作业监控器的更多信息"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="分类">分类</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月4日版本1-29">2024年3月4日(版本1.29)</h3>
+<div class="sect3">
+<h4 id="现在您可以排除驻留在特定数据源目录中的扫描数据">现在、您可以排除驻留在特定数据源目录中的扫描数据</h4>
+<div class="paragraph">
+<p>如果希望BlueXP分类排除驻留在特定数据源目录中的扫描数据、则可以将这些目录名称添加到BlueXP分类处理的配置文件中。通过此功能、您可以避免扫描不必要的目录或可能导致返回误报的个人数据结果的目录。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html">"了解更多信息。"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="超大型实例支持现已通过认证">超大型实例支持现已通过认证</h4>
+<div class="paragraph">
+<p>如果您需要BlueXP分类来扫描超过2.5亿个文件、则可以在云部署或内部安装中使用一个超大实例。此类系统最多可扫描5亿个文件。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type">"了解更多信息。"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年1月10日版本1-27">2024年1月10日(版本1.27)</h3>
+<div class="sect3">
+<h4 id="现在除了项目总数之外调查页面结果还会显示总大小">现在、除了项目总数之外、调查页面结果还会显示总大小</h4>
+<div class="paragraph">
+<p>现在、"调查"页面中经过筛选的结果除了显示文件总数之外、还会显示项目的总大小。这有助于移动文件、删除文件等。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="将其他组id配置为对组织开放">将其他组ID配置为"对组织开放"</h4>
+<div class="paragraph">
+<p>现在、您可以在NFS中将组ID配置为直接从BlueXP分类中视为"对组织开放"(如果组最初未设置该权限)。附加了这些组ID的所有文件和文件夹将在"调查详细信息"页面中显示为"开放给组织"。请参见操作说明 <a href="https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html">"将其他组ID添加为"对组织开放""</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年12月14日版本1-26-6">2023年12月14日(版本1.26.6)</h3>
+<div class="paragraph">
+<p>此版本包含一些小的增强功能。</p>
+</div>
+<div class="paragraph">
+<p>此版本还暂时删除了以下选项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>已禁用用于激活审核日志收集的选项。请参见 <a href="task-manage-file-access-events.html">"监控和管理文件访问事件"</a>。</p>
+</li>
+<li>
+<p>在目录调查期间、无法使用按目录计算个人身份信息(Personal可识别信息、个人身份信息、Personal可识别信息、请参见 <a href="task-investigate-data.html#filter-data-by-sensitivity-and-content">"调查存储在组织中的数据"</a>。</p>
+</li>
+<li>
+<p>已禁用使用Azure信息保护(AIP)标签集成数据的选项。请参见 <a href="task-org-private-data.html">"组织您的私有数据"</a>。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月8日-2">2024年3月8日</h3>
+<div class="sect3">
+<h4 id="amazon-instant-metadata服务v2支持">Amazon Instant Metadata"服务v2支持</h4>
+<div class="paragraph">
+<p>在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。</p>
+</div>
+<div class="paragraph">
+<p>如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances" target="_blank" rel="noopener">"用于管理现有连接器的BlueXP设置和管理文档"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年3月5日">2024年3月5日</h3>
+<div class="sect3">
+<h4 id="cloud-volumes-ontap-9-14-1-ga">Cloud Volumes ONTAP 9.14.1 GA</h4>
+<div class="paragraph">
+<p>BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月2日">2024年2月2日</h3>
+<div class="sect3">
+<h4 id="支持azure中的edv5系列vm">支持Azure中的Edv5系列VM</h4>
+<div class="paragraph">
+<p>从9.14.1版开始、Cloud Volumes ONTAP现在支持以下Edv5系列VM。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>E4ds_v5</p>
+</li>
+<li>
+<p>E8ds_v5</p>
+</li>
+<li>
+<p>E20s_v5</p>
+</li>
+<li>
+<p>E32ds_v5</p>
+</li>
+<li>
+<p>E48ds_v5</p>
+</li>
+<li>
+<p>E64ds_v5</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html" target="_blank" rel="noopener">"Azure 中支持的配置"</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="适用于-google-cloud-的-cloud-volumes-service">适用于 Google Cloud 的 Cloud Volumes Service</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2020-年-9-月-9-日">2020 年 9 月 9 日</h3>
+<div class="sect3">
+<h4 id="支持适用于-google-cloud-的-cloud-volumes-service">支持适用于 Google Cloud 的 Cloud Volumes Service</h4>
+<div class="paragraph">
+<p>现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>设置和创建工作环境</p>
+</li>
+<li>
+<p>为 Linux 和 UNIX 客户端创建和管理 NFSv3 和 NFSv4.1 卷</p>
+</li>
+<li>
+<p>为 Windows 客户端创建和管理 SMB 3.x 卷</p>
+</li>
+<li>
+<p>创建，删除和还原卷快照</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="云运营">云运营</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2020-年-12-月-7-日">2020 年 12 月 7 日</h3>
+<div class="sect3">
+<h4 id="在-cloud-manager-和-spot-之间导航">在 Cloud Manager 和 Spot 之间导航</h4>
+<div class="paragraph">
+<p>现在，您可以更轻松地在 Cloud Manager 和 Spot 之间导航。</p>
+</div>
+<div class="paragraph">
+<p>通过 Spot 中的一个新的 * 存储操作 * 部分，您可以直接导航到 Cloud Manager 。完成后，您可以从 Cloud Manager 中的 * 计算 * 选项卡返回到 Spot 。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2020-年-10-月-18-日">2020 年 10 月 18 日</h3>
+<div class="sect3">
+<h4 id="计算服务简介">计算服务简介</h4>
+<div class="paragraph">
+<p>利用 <a href="https://spot.io/products/cloud-analyzer/" target="_blank" rel="noopener">"Spot 的 Cloud Analyzer"</a>， Cloud Manager 现在可以对您的云计算支出进行高级别的成本分析，并确定潜在的节省量。此信息可从 Cloud Manager 中的 * 计算 * 服务获得。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-ops/concept-compute.html">"了解有关计算服务的更多信息"</a>。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/screenshot_compute_dashboard.gif" alt="显示 Cloud Manager 中 &quot; 成本分析 &quot; 页面的屏幕截图。"></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="复制和同步">复制和同步</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年2月11日">2024年2月11日</h3>
+<div class="sect3">
+<h4 id="按正则表达式筛选目录">按正则表达式筛选目录</h4>
+<div class="paragraph">
+<p>现在、用户可以选择使用正则表达式筛选目录。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships">"了解有关*排除目录*功能的更多信息。"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年11月26日">2023年11月26日</h3>
+<div class="sect3">
+<h4 id="azure-blb的冷存储类支持">Azure Blb的冷存储类支持</h4>
+<div class="paragraph">
+<p>现在、在创建同步关系时、可以使用冷存储Azure Blb层。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html">"了解有关创建同步关系的更多信息。"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="在aws数据代理中支持特拉维夫地区">在AWS数据代理中支持特拉维夫地区</h4>
+<div class="paragraph">
+<p>现在、在AWS中创建数据代理时、特拉维夫已成为受支持的区域。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker">"了解有关在AWS中创建数据代理的更多信息"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="更新到数据代理的节点版本">更新到数据代理的节点版本</h4>
+<div class="paragraph">
+<p>现在、所有新数据代理都将使用节点版本21.2.0。与此更新不兼容的数据代理(例如CentOS 7.0和Ubuntu Server 18.0)将不再使用BlueXP副本和同步。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年9月3日">2023年9月3日</h3>
+<div class="sect3">
+<h4 id="按正则表达式排除文件">按正则表达式排除文件</h4>
+<div class="paragraph">
+<p>用户现在可以选择使用正则表达式排除文件。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships">"了解有关*排除文件扩展名*功能的更多信息。"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="创建azure数据代理时添加s3密钥">创建Azure数据代理时添加S3密钥</h4>
+<div class="paragraph">
+<p>现在、用户可以在创建Azure数据代理时添加AWS S3访问密钥和机密密钥。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker">"详细了解如何在Azure中创建数据代理。"</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="数字顾问">数字顾问</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月15日">2024年3月15日</h3>
+<div class="sect3">
+<h4 id="健康">健康</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>健康度工作流现在包括Sustainability小工具、可提供客户、监视列表、站点和组级别的建议操作计数。您可以在Sustainability信息板上单击操作数以查看这些建议操作的详细视图。要了解更多信息、请参见 <a href="https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html">"分析存储系统的可持续性"</a>。</p>
+</li>
+<li>
+<p>健康工作流中的"安全漏洞"和"防兰索防"小工具组合到一个小工具中、该小工具现在称为"安全和防兰索防"。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="运行状况检查信息板">运行状况检查信息板</h4>
+<div class="paragraph">
+<p>技术案例的时间表已得到改进、可查看6或12个月的完整案例历史记录。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月29日">2024年2月29日</h3>
+<div class="sect3">
+<h4 id="监视列表">监视列表</h4>
+<div class="paragraph">
+<p>现在、您可以根据Keystone订阅编号创建监视列表、并使用订阅编号或监视列表名称的前三个字符搜索Keystone订阅。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月8日">2024年2月8日</h3>
+<div class="sect3">
+<h4 id="sustainability信息板">Sustainability信息板</h4>
+<div class="paragraph">
+<p>现在、您可以使用直接访问默认信息板或监视列表的可持续性指标 <a href="https://activeiq.netapp.com/redirect/sustainability" target="_blank" rel="noopener">"Sustainability信息板"</a> 链接。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="集群查看器">集群查看器</h4>
+<div class="paragraph">
+<p>现在、您可以在"Storage (存储)"选项卡和"ClusterViewer Reports (集群查看器报告)"中的"Disk Summary (磁盘摘要)"部分中查看磁盘RPM信息。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="数字电子钱包">数字电子钱包</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月5日-2">2024年3月5日</h3>
+<div class="sect3">
+<h4 id="bluexp灾难恢复">BlueXP灾难恢复</h4>
+<div class="paragraph">
+<p>BlueXP数字钱包现在可用于管理BlueXP灾难恢复的许可证。您可以添加许可证、更新许可证以及查看有关已许可容量的详细信息。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html">"了解如何管理BlueXP数据服务的许可证"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年7月30日-2">2023年7月30日</h3>
+<div class="sect3">
+<h4 id="使用情况报告增强功能">使用情况报告增强功能</h4>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP使用情况报告现已有多项改进：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>此时、TiB单元将包含在列名称中。</p>
+</li>
+<li>
+<p>现在、包含了一个用于序列号的新_node (s)_字段。</p>
+</li>
+<li>
+<p>现在、Storage VM使用情况报告下会包含一个新的_Workload Type_列。</p>
+</li>
+<li>
+<p>现在、工作环境名称会包含在Storage VM和卷使用情况报告中。</p>
+</li>
+<li>
+<p>卷类型_file_现在标记为_Primary (Read/Write)_。</p>
+</li>
+<li>
+<p>卷类型_Secondary (DP)<em>现在标记为_Secondary (DP)</em>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>有关使用情况报告的详细信息、请参见 <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports">"下载使用情况报告"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年5月7日">2023年5月7日</h3>
+<div class="sect3">
+<h4 id="google-cloud-private优惠">Google Cloud Private优惠</h4>
+<div class="paragraph">
+<p>BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplace订阅、并显示订阅的结束日期和期限。通过此增强功能、您可以验证是否已成功接受此私人优惠并验证其条款。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="充电使用情况细分">充电使用情况细分</h4>
+<div class="paragraph">
+<p>现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP数字钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP 软件包使用情况</p>
+</li>
+<li>
+<p>使用情况概要</p>
+</li>
+<li>
+<p>Storage VM使用情况</p>
+</li>
+<li>
+<p>卷使用量</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>有关使用情况报告的详细信息、请参见 <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports">"下载使用情况报告"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年4月3日">2023年4月3日</h3>
+<div class="sect3">
+<h4 id="电子邮件通知">电子邮件通知</h4>
+<div class="paragraph">
+<p>BlueXP电子钱包现在支持电子邮件通知。</p>
+</div>
+<div class="paragraph">
+<p>如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html" target="_blank" rel="noopener">"了解如何设置电子邮件通知"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="市场订阅的许可容量">市场订阅的许可容量</h4>
+<div class="paragraph">
+<p>查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html">"了解如何查看帐户中的已用容量"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="灾难恢复">灾难恢复</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月5日-3">2024年3月5日</h3>
+<div class="paragraph">
+<p>这是BlueXP灾难恢复的正式发布版本、其中包括以下更新。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>许可更新</strong>：借助BlueXP灾难恢复、您可以注册90天免费试用或自带许可证(自带许可证、BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。BlueXP灾难恢复费用基于数据存储库的已配置容量计算。</p>
+<div class="paragraph">
+<p>有关为BlueXP灾难恢复设置许可的详细信息、请参阅 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html">"设置许可"</a>。</p>
+</div>
+<div class="paragraph">
+<p>有关管理*all* BlueXP服务许可证的详细信息，请参阅 <a href="https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html" target="_blank" rel="noopener">"管理所有BlueXP服务的许可证"</a>。</p>
+</div>
+</li>
+<li>
+<p><strong>编辑计划</strong>：在此版本中，您现在可以设置测试合规性和故障转移测试的计划，以确保这些计划在您需要时可以正常工作。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年2月1日-2">2024年2月1日</h3>
+<div class="paragraph">
+<p>此BlueXP灾难恢复预览版包括以下更新：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>网络增强功能</strong>：在此版本中，您现在可以调整VM CPU和RAM值的大小。现在、您还可以为虚拟机选择网络DHCP或静态IP地址。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DHCP：如果选择此选项、则需要提供VM的凭据。</p>
+</li>
+<li>
+<p>静态IP：您可以从源VM选择相同或不同的信息。如果选择与源相同的、则无需输入凭据。另一方面、如果选择使用与源不同的信息、则可以提供凭据、IP地址、子网掩码、DNS和网关信息。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>*自定义脚本*现在可作为故障转移后的过程包含在内。通过自定义脚本、您可以在故障转移过程之后让BlueXP灾难恢复运行脚本。例如、您可以使用自定义脚本在故障转移完成后恢复所有数据库事务。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html">"故障转移到远程站点"</a>。</p>
+</div>
+</li>
+<li>
+<p><strong>SnapMirror关系</strong>：现在可以在制定复制计划时创建SnapMirror关系。以前、您必须在BlueXP灾难恢复之外创建此关系。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+<li>
+<p><strong>一致性组</strong>：创建复制计划时、可以包括来自不同卷和不同SVM的VM。BlueXP灾难恢复可通过包含所有卷来创建一致性组快照、并更新所有二级位置。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+<li>
+<p><strong>VM启动延迟选项</strong>：创建复制计划时，可以将VM添加到资源组。使用资源组、您可以在每个VM上设置延迟、以便它们按延迟顺序启动。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+<li>
+<p><strong>应用程序一致的Snapshot副本</strong>：您可以指定创建应用程序一致的Snapshot副本。该服务将使应用程序处于静修状态、然后创建Snapshot以获得一致的应用程序状态。</p>
+<div class="paragraph">
+<p>有关详细信息，请参见 <a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html">"创建复制计划"</a>。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2024年1月11日">2024年1月11日</h3>
+<div class="paragraph">
+<p>此BlueXP灾难恢复预览版包括以下更新：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在此版本中、您可以更快速地从信息板访问其他页面上的信息。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html">"了解BlueXP灾难恢复"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年10月20日">2023年10月20日</h3>
+<div class="paragraph">
+<p>此BlueXP灾难恢复预览版包含以下更新。</p>
+</div>
+<div class="paragraph">
+<p>现在、借助BlueXP灾难恢复功能、您可以保护基于NFS的内部VMware工作负载、使其免受灾难影响、而灾难又发生在公共云之外的另一个基于NFS的内部VMware环境中。BlueXP灾难恢复可安排灾难恢复计划的完成。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-relnotes/images/note.svg" alt="备注">
+</td>
+<td class="content">
+对于此预览版产品、NetApp保留在正式发布之前修改产品详细信息、内容和时间表的权利。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html">"详细了解BlueXP灾难恢复"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="e系列系统">E系列系统</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2022年9月18日">2022年9月18日</h3>
+<div class="sect3">
+<h4 id="支持e系列">支持E系列</h4>
+<div class="paragraph">
+<p>现在、您可以直接从BlueXP发现E系列系统。通过发现E系列系统、您可以全面了解混合多云中的数据。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="经济效率">经济效率</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月14日">2024年3月14日</h3>
+<div class="paragraph">
+<p>如果您已有资产、并且希望确定是否需要更新某项技术、则可以使用BlueXP经济高效技术更新选项。您可以查看当前工作负载的简短评估并获取建议、或者如果您在过去90天内将AutoSupport日志发送给NetApp、则该服务现在可以提供工作负载模拟、以查看工作负载在新硬件上的运行情况。</p>
+</div>
+<div class="paragraph">
+<p>您还可以添加工作负载并从模拟中排除现有工作负载。</p>
+</div>
+<div class="paragraph">
+<p>以前、您只能对资产进行评估、并确定是否建议进行技术更新。</p>
+</div>
+<div class="paragraph">
+<p>此功能现在是左侧导航栏中技术更新选项的一部分。</p>
+</div>
+<div class="paragraph">
+<p>详细了解 <a href="../use/tech-refresh.html">"评估技术更新"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年11月8日">2023年11月8日</h3>
+<div class="paragraph">
+<p>此版本的BlueXP经济高效功能提供了一个新选项、可用于评估您的资产并确定是否建议进行技术更新。此服务包括左侧导航栏中的新技术更新选项、可用于评估当前工作负载和资产的新页面以及可为您提供建议的报告。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年4月2日">2023年4月2日</h3>
+<div class="paragraph">
+<p>全新的BlueXP经济高效服务可识别当前或预测的低容量存储资产、并为内部AFF 系统提供数据层或额外容量建议。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html">"详细了解BlueXP的经济效益"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="边缘缓存">边缘缓存</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年8月1日2-3版">2023年8月1日(2.3版)</h3>
+<div class="paragraph">
+<p>此版本可修复中所述的问题 <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"已修复的问题"</a>。可从获取更新的软件包 <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources">"此页面"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年4月5日2-2版">2023年4月5日(2.2版)</h3>
+<div class="paragraph">
+<p>此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"已修复的问题"</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="支持在google-cloud中部署的cloud-volumes-ontap-系统上使用全局文件缓存">支持在Google Cloud中部署的Cloud Volumes ONTAP 系统上使用全局文件缓存</h4>
+<div class="paragraph">
+<p>在Google Cloud中部署Cloud Volumes ONTAP 系统时、可以使用新的"Edge Cache"许可证。您有权为Cloud Volumes ONTAP 系统上购买的每3 TiB容量部署一个全局文件缓存边缘系统。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages">"了解有关Edge Cache许可证包的更多信息。"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="设置向导和gfc配置ui已进行了增强可执行netapp许可证注册">设置向导和GFC配置UI已进行了增强、可执行NetApp许可证注册</h4>
+
+</div>
+<div class="sect3">
+<h4 id="优化的psm-用于配置edge-sync功能">优化的PSM-用于配置Edge Sync功能</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022年10月24日2-1版">2022年10月24日(2.1版)</h3>
+<div class="paragraph">
+<p>此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html">"已修复的问题"</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="全局文件缓存现在可用于任意数量的许可证">全局文件缓存现在可用于任意数量的许可证</h4>
+<div class="paragraph">
+<p>之前至少需要10个许可证或30 TB的存储空间、但这一要求已被删除。每3 TB存储将颁发一个全局文件缓存许可证。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="添加了对使用脱机许可证管理服务器的支持">添加了对使用脱机许可证管理服务器的支持</h4>
+<div class="paragraph">
+<p>如果LMS没有Internet连接、无法使用许可证源验证许可证、则脱机或非公开站点的许可证管理服务器(License Management Server、LMS)最有用。在初始配置期间、需要Internet连接和许可证源连接。配置后、LMS实例可能会变暗。所有边缘/核心都应与LMS建立连接、以便持续验证许可证。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="边缘实例可以支持其他并发用户">边缘实例可以支持其他并发用户</h4>
+<div class="paragraph">
+<p>一个全局文件缓存边缘实例可以为每个专用物理边缘实例最多500个用户提供服务、而对于专用虚拟部署、最多可为300个用户提供服务。过去、最大用户数分别为400和200。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="经过增强的optimus-psms可配置云许可">经过增强的Optimus PSMs可配置云许可</h4>
+
+</div>
+<div class="sect3">
+<h4 id="增强了optimus-ui-边缘配置中的edge-sync功能可显示所有已连接的客户端">增强了Optimus UI (边缘配置)中的Edge Sync功能、可显示所有已连接的客户端</h4>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="google-cloud-存储">Google Cloud 存储</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年7月10日">2023年7月10日</h3>
+<div class="sect3">
+<h4 id="可以通过bluexp添加新存储分段并管理现有存储分段">可以通过BlueXP添加新存储分段并管理现有存储分段</h4>
+<div class="paragraph">
+<p>您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。 <a href="https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html" target="_blank" rel="noopener">"了解如何添加新的Google Cloud存储分段"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kubernetes">Kubernetes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年4月2日-2">2023年4月2日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>您现在可以： <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html">"卸载Astra Trident"</a> 使用Trident操作员或BlueXP安装的。</p>
+</li>
+<li>
+<p>文档中对用户界面进行了改进、并更新了屏幕截图。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年3月5日-2">2023年3月5日</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>BlueXP中的Kubernetes现在支持Astra Trident 23.01。</p>
+</li>
+<li>
+<p>文档中对用户界面进行了改进、并更新了屏幕截图。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022年11月6日">2022年11月6日</h3>
+<div class="paragraph">
+<p>时间 <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes">"定义存储类"</a>、现在、您可以为块或文件系统存储启用存储类经济性。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="迁移报告">迁移报告</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年11月13日">2023年11月13日</h3>
+<div class="paragraph">
+<p>现在、您可以为使用SMB/CCIFS协议的卷创建报告。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年9月3日-2">2023年9月3日</h3>
+<div class="paragraph">
+<p>更新后的BlueXP迁移报告服务可更新报告数据。报告现在包括已分配的容量。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年6月2日">2023年6月2日</h3>
+<div class="paragraph">
+<p>借助全新的BlueXP迁移报告服务、您可以快速确定存储环境中的文件、目录、符号链接、硬链接、文件系统树的深度和广度、最大文件等数量。</p>
+</div>
+<div class="paragraph">
+<p>有了这些信息、您就会事先知道、您想要使用的流程可以高效成功地处理您的库存。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html">"详细了解BlueXP迁移报告"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="内部-ontap-集群">内部 ONTAP 集群</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年7月30日-3">2023年7月30日</h3>
+<div class="sect3">
+<h4 id="创建-flexgroup-卷">创建 FlexGroup 卷</h4>
+<div class="paragraph">
+<p>如果您要使用Connector管理集群、现在可以使用BlueXP API创建FlexGroup卷。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html" target="_blank" rel="noopener">"了解如何创建FlexGroup卷"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html" target="_blank" rel="noopener">"了解什么是FlexGroup卷"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年7月2日-2">2023年7月2日</h3>
+<div class="sect3">
+<h4 id="从我的资产中发现集群">从我的资产中发现集群</h4>
+<div class="paragraph">
+<p>现在、您可以通过*画布&gt;我的资产*发现内部ONTAP集群、方法是根据与您的BlueXP登录电子邮件地址关联的ONTAP集群选择BlueXP预先发现的集群。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster">"从我的资产页面了解如何发现集群"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年5月4日">2023年5月4日</h3>
+<div class="sect3">
+<h4 id="启用bluexp备份和恢复">启用BlueXP备份和恢复</h4>
+<div class="paragraph">
+<p>从ONTAP 9.13.1开始、如果您使用连接器发现集群、则可以使用System Manager (高级视图)启用BlueXP备份和恢复。 <a href="https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html" target="_blank" rel="noopener">"了解有关启用BlueXP备份和恢复的更多信息"</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="升级ontap-版本映像和硬件固件">升级ONTAP 版本映像和硬件固件</h4>
+<div class="paragraph">
+<p>从ONTAP 9.10.1开始、您可以使用System Manager (高级视图)升级ONTAP 版本映像和硬件固件。您可以选择接收自动升级以保持最新、也可以从本地计算机或可使用BlueXP访问的服务器进行手动更新。 <a href="https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update" target="_blank" rel="noopener">"了解有关升级ONTAP 和固件的更多信息"</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-relnotes/images/note.svg" alt="备注">
+</td>
+<td class="content">
+如果您没有Connector、则无法从本地计算机进行更新、只能从可使用BlueXP访问的服务器进行更新。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="运营故障恢复能力">运营故障恢复能力</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年4月2日-3">2023年4月2日</h3>
+<div class="paragraph">
+<p>通过使用新的BlueXP操作故障恢复能力服务及其自动化IT操作风险修复建议、您可以在发生中断或故障之前实施建议的修复措施。</p>
+</div>
+<div class="paragraph">
+<p>运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html">"详细了解BlueXP操作故障恢复能力"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="勒索软件保护">勒索软件保护</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2024年3月5日-4">2024年3月5日</h3>
+<div class="paragraph">
+<p>此预览版BlueXP勒索软件保护包括以下更新：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>保护策略管理</strong>：除了使用预定义策略之外，您现在还可以创建、更改和删除策略。 <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html">"了解有关管理策略的更多信息"</a>。</p>
+</li>
+<li>
+<p><strong>二级存储上的不可更改性(DataLock)</strong>：现在、您可以在对象存储中使用NetApp DataLock技术使备份在二级存储上不可更改。 <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html">"了解有关创建保护策略的更多信息"</a>。</p>
+</li>
+<li>
+<p><strong>自动备份到AWS</strong>：除了使用NetApp StorageGRID之外、您现在还可以选择StorageGRID作为备份目标。 <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html">"了解有关配置备份目标的更多信息"</a>。</p>
+</li>
+<li>
+<p><strong>用于调查潜在攻击的其他功能</strong>：您现在可以查看更多取证详细信息来调查检测到的潜在攻击。 <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html">"详细了解如何响应检测到的勒索软件警报"</a>。</p>
+</li>
+<li>
+<p><strong>恢复过程</strong>。恢复过程得到了改进。现在、您可以在一个工作流中逐个卷、恢复工作负载的所有卷、甚至恢复卷中的几个文件。 <a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html">"详细了解如何从勒索软件攻击中恢复(在消除意外事件后)"</a>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html">"了解BlueXP勒索软件保护"</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年10月6日">2023年10月6日</h3>
+<div class="paragraph">
+<p>BlueXP勒索软件保护服务是一种SaaS解决方案、用于保护数据、检测潜在攻击以及从勒索软件攻击中恢复数据。</p>
+</div>
+<div class="paragraph">
+<p>对于预览版、该服务可保护各个BlueXP帐户之间基于应用程序的Oracle、MySQL、VM数据存储库和内部NAS存储上的文件共享以及AWS上的Cloud Volumes ONTAP (使用NFS协议)工作负载、并将数据备份到Amazon Web Services云存储。</p>
+</div>
+<div class="paragraph">
+<p>BlueXP勒索软件保护服务可充分利用多种NetApp技术、以便您的数据安全管理员或安全运营工程师可以实现以下目标：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>一目了然地查看所有工作负载上的勒索软件保护。</p>
+</li>
+<li>
+<p>深入了解勒索软件保护建议</p>
+</li>
+<li>
+<p>根据BlueXP勒索软件保护建议改善保护状况。</p>
+</li>
+<li>
+<p>分配勒索软件保护策略、以保护您的首要工作负载和高风险数据免受勒索软件攻击。</p>
+</li>
+<li>
+<p>监控工作负载的运行状况、防止勒索软件攻击发现数据异常。</p>
+</li>
+<li>
+<p>快速评估勒索软件事件对工作负载的影响。</p>
+</li>
+<li>
+<p>通过还原数据并确保存储的数据不会再次感染、从勒索软件事件中智能恢复。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html">"了解BlueXP勒索软件保护"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="修复">修复</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2022-年-3-月-3-日">2022 年 3 月 3 日</h3>
+<div class="sect3">
+<h4 id="现在您可以构建一个模板来查找特定的工作环境">现在，您可以构建一个模板来查找特定的工作环境</h4>
+<div class="paragraph">
+<p>使用 " 查找现有资源 " 操作，您可以确定工作环境，然后使用其他模板操作（例如创建卷）轻松对现有工作环境执行操作。 <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates">"有关详细信息，请访问此处"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="能够在-aws-中创建-cloud-volumes-ontap-ha-工作环境">能够在 AWS 中创建 Cloud Volumes ONTAP HA 工作环境</h4>
+<div class="paragraph">
+<p>现有的 Cloud Volumes ONTAP AWS 工作环境创建支持范围已得到扩展，除了创建单节点系统之外，还可以创建高可用性系统。 <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment">"请参见如何为 Cloud Volumes ONTAP 工作环境创建模板"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022-年-2-月-9-日">2022 年 2 月 9 日</h3>
+<div class="sect3">
+<h4 id="现在您可以构建一个模板来查找特定的现有卷然后启用-cloud-backup">现在，您可以构建一个模板来查找特定的现有卷，然后启用 Cloud Backup</h4>
+<div class="paragraph">
+<p>使用新的 " 查找资源 " 操作，您可以确定要启用 Cloud Backup 的所有卷，然后使用 Cloud Backup 操作在这些卷上启用备份。</p>
+</div>
+<div class="paragraph">
+<p>目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。 <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery">"有关详细信息，请访问此处"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2021-年-10-月-31-日">2021 年 10 月 31 日</h3>
+<div class="sect3">
+<h4 id="现在您可以标记同步关系以便对其进行分组或分类以便于访问">现在，您可以标记同步关系，以便对其进行分组或分类，以便于访问</h4>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html">"了解有关资源标记的更多信息"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="replication">Replication</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2022年9月18日-2">2022年9月18日</h3>
+<div class="sect3">
+<h4 id="适用于ontap-到cloud-volumes-ontap-的fsx">适用于ONTAP 到Cloud Volumes ONTAP 的FSX</h4>
+<div class="paragraph">
+<p>现在、您可以将适用于ONTAP 的Amazon FSx文件系统中的数据复制到Cloud Volumes ONTAP。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"了解如何设置数据复制"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2022年7月31日">2022年7月31日</h3>
+<div class="sect3">
+<h4 id="fsx-for-ontap-作为数据源">FSX for ONTAP 作为数据源</h4>
+<div class="paragraph">
+<p>现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>适用于 ONTAP 的 Amazon FSX</p>
+</li>
+<li>
+<p>内部 ONTAP 集群</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"了解如何设置数据复制"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2021-年-9-月-2-日">2021 年 9 月 2 日</h3>
+<div class="sect3">
+<h4 id="支持适用于-ontap-的-amazon-fsx">支持适用于 ONTAP 的 Amazon FSX</h4>
+<div class="paragraph">
+<p>现在，您可以将数据从 Cloud Volumes ONTAP 系统或内部 ONTAP 集群复制到适用于 ONTAP 的 Amazon FSX 文件系统。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html">"了解如何设置数据复制"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="storagegrid">StorageGRID</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2022年9月18日-3">2022年9月18日</h3>
+<div class="sect3">
+<h4 id="支持storagegrid">支持StorageGRID</h4>
+<div class="paragraph">
+<p>现在、您可以直接从BlueXP发现StorageGRID 系统。通过发现StorageGRID 、您可以全面了解混合多云中的数据。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="分层">分层</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年8月9日">2023年8月9日</h3>
+<div class="sect3">
+<h4 id="使用自定义前缀作为存储分层数据的分段名称">使用自定义前缀作为存储分层数据的分段名称</h4>
+<div class="paragraph">
+<p>过去、在定义存储分段名称时、您需要使用默认的"光纤 池"前缀、例如_Fabric池bucket1_。现在、您可以在为存储分段命名时使用自定义前缀。只有在将数据层到Amazon S3时、此功能才可用。 <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment">"了解更多信息。"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="在所有bluexp连接器中搜索集群">在所有BlueXP连接器中搜索集群</h4>
+<div class="paragraph">
+<p>如果使用多个连接器管理环境中的所有存储系统、则要实施分层的某些集群可能位于不同的连接器中。如果您不确定是哪个Connector管理某个集群、可以使用BlueXP分层跨所有连接器进行搜索。 <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors">"了解更多信息。"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年7月4日">2023年7月4日</h3>
+<div class="sect3">
+<h4 id="现在您可以调整用于将非活动数据上传到对象存储的带宽">现在、您可以调整用于将非活动数据上传到对象存储的带宽</h4>
+<div class="paragraph">
+<p>激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。 <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage">"了解更多信息。"</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="低层的层事件将显示在通知中心中">"低层"的层事件将显示在通知中心中</h4>
+<div class="paragraph">
+<p>现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群&lt;name&gt;分层到对象存储以提高存储效率"将显示为通知。</p>
+</div>
+<div class="paragraph">
+<p>此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接 <a href="https://bluexp.netapp.com/cloud-tiering-service-tco" target="_blank" rel="noopener">"BlueXP分层总拥有成本和节省量计算器"</a> 以帮助您计算成本节省。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="2023年4月3日-2">2023年4月3日</h3>
+<div class="sect3">
+<h4 id="已删除许可选项卡">已删除许可选项卡</h4>
+<div class="paragraph">
+<p>已从BlueXP分层界面中删除许可选项卡。现在、您可以从BlueXP分层内部部署信息板访问按需购买(PAYGO)订阅的所有许可。此外、还提供了一个从该页面到BlueXP数字钱包的链接、可用于查看和管理任何BlueXP分层自带许可证(BYOL)。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="分层选项卡已重命名并更新了内容">分层选项卡已重命名并更新了内容</h4>
+<div class="paragraph">
+<p>"集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部部署信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="卷缓存">卷缓存</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="2023年6月4日-2">2023年6月4日</h3>
+<div class="paragraph">
+<p>卷缓存是ONTAP 9软件的一项功能、它是一项远程缓存功能、可简化文件分发、通过使资源更靠近用户和计算资源所在位置来减少WAN延迟、并降低WAN带宽成本。卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。</p>
+</div>
+<div class="paragraph">
+<p>借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html">"详细了解BlueXP卷缓存"</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-cn/bluexp-relnotes/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-cn/bluexp-relnotes/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本页面中</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用条款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私策略</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">请发送有关此页面的反馈</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/bluexp-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/bluexp-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/bluexp-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/bluexp-relnotes/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-cn/bluexp-relnotes/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
