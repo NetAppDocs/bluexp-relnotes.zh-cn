@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关详细信息，请转到每个服务的完整发行说明。 
 ---
 = BlueXP中的最新变更
@@ -351,6 +351,40 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 2024年4月1日(版本1.3)
+
+
+
+==== 增加了对RHEL v8.8和v9.3 BlueXP分类的支持
+
+除了先前支持的9.x (需要Podman、而不是Docker引擎)之外、此版本还支持Red Hat Enterprise Linux v8.8和v9.3。这适用于BlueXP分类的任何手动内部安装。
+
+以下操作系统要求使用Podman容器引擎、并要求BlueXP分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2和9.3。
+
+了解更多信息 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP分类部署概述"]。
+
+
+
+==== 删除了用于激活审核日志收集的选项
+
+已禁用用于激活审核日志收集的选项。
+
+
+
+==== 扫描速度提高
+
+二级扫描程序节点上的扫描性能已提高。如果您需要更多的扫描处理能力、可以添加更多的扫描程序节点。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可访问Internet的主机上安装BlueXP分类"]。
+
+
+
+==== 自动升级
+
+如果您在可访问Internet的系统上部署了BlueXP分类、则系统将自动升级。以前、升级发生在自上次用户活动以来经过的特定时间之后。在此版本中、如果本地时间介于1：00 AM到5：00 AM之间、BlueXP分类会自动升级。如果本地时间不在这些时间内、则升级将在自上次用户活动后经过一段特定时间后进行。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可访问Internet的Linux主机上安装"]。
+
+如果您部署的BlueXP分类不能访问Internet、则需要手动升级。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["在无法访问Internet的Linux主机上安装BlueXP分类"]。
+
+
+
 === 2024年3月4日(版本1.29)
 
 
@@ -384,19 +418,6 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 ==== 将其他组ID配置为"对组织开放"
 
 现在、您可以在NFS中将组ID配置为直接从BlueXP分类中视为"对组织开放"(如果组最初未设置该权限)。附加了这些组ID的所有文件和文件夹将在"调查详细信息"页面中显示为"开放给组织"。请参见操作说明 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["将其他组ID添加为"对组织开放""]。
-
-
-
-=== 2023年12月14日(版本1.26.6)
-
-此版本包含一些小的增强功能。
-
-此版本还暂时删除了以下选项：
-
-* 已禁用用于激活审核日志收集的选项。请参见 link:task-manage-file-access-events.html["监控和管理文件访问事件"]。
-* 在目录调查期间、无法使用按目录计算个人身份信息(Personal可识别信息、个人身份信息、Personal可识别信息、请参见 link:task-investigate-data.html#filter-data-by-sensitivity-and-content["调查存储在组织中的数据"]。
-* 已禁用使用Azure信息保护(AIP)标签集成数据的选项。请参见 link:task-org-private-data.html["组织您的私有数据"]。
-
 
 
 
@@ -500,6 +521,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年4月8日
+
+
+
+==== 支持RHEL 8.9
+
+现在、运行Red Hat Enterprise Linux 8.9的主机支持数据代理。
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["查看Linux主机要求"]。
+
+
+
 === 2024年2月11日
 
 
@@ -538,27 +571,17 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating
 
 
 
-=== 2023年9月3日
-
-
-
-==== 按正则表达式排除文件
-
-用户现在可以选择使用正则表达式排除文件。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["了解有关*排除文件扩展名*功能的更多信息。"]
-
-
-
-==== 创建Azure数据代理时添加S3密钥
-
-现在、用户可以在创建Azure数据代理时添加AWS S3访问密钥和机密密钥。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["详细了解如何在Azure中创建数据代理。"]
-
-
-
 == 数字顾问
+
+
+
+=== 2024年3月28日
+
+
+
+==== Upgrade Advisor
+
+旧版本的Upgrade Advisor现已弃用。您可以使用增强版的Upgrade Advisor为单个集群和多个集群生成升级计划。 link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["了解如何查看升级建议和生成升级计划。"]
 
 
 
@@ -587,22 +610,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 ==== 监视列表
 
 现在、您可以根据Keystone订阅编号创建监视列表、并使用订阅编号或监视列表名称的前三个字符搜索Keystone订阅。
-
-
-
-=== 2024年2月8日
-
-
-
-==== Sustainability信息板
-
-现在、您可以使用直接访问默认信息板或监视列表的可持续性指标 link:https://activeiq.netapp.com/redirect/sustainability["Sustainability信息板"^] 链接。
-
-
-
-==== 集群查看器
-
-现在、您可以在"Storage (存储)"选项卡和"ClusterViewer Reports (集群查看器报告)"中的"Disk Summary (磁盘摘要)"部分中查看磁盘RPM信息。
 
 
 
