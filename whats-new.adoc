@@ -128,6 +128,16 @@ BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务�
 
 
 
+=== 2024年4月22日
+
+
+
+==== 不再支持卷模板
+
+您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。
+
+
+
 === 2021 年 4 月 11 日
 
 
@@ -151,26 +161,6 @@ BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务�
 现在，您可以动态更改卷的服务级别，以满足工作负载需求并优化成本。此卷将移至另一个容量池，而不会对该卷产生任何影响。
 
 https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["了解如何更改卷的服务级别"]。
-
-
-
-=== 2020 年 8 月 3 日
-
-
-
-==== Azure NetApp Files 设置和管理
-
-直接从 Cloud Manager 设置和管理 Azure NetApp Files 。创建 Azure NetApp Files 工作环境后，您可以完成以下任务：
-
-* 创建 NFS 和 SMB 卷。
-* 管理容量池和卷快照
-+
-您可以使用 Cloud Manager 创建，删除和还原卷快照。您还可以创建新的容量池并指定其服务级别。
-
-* 通过更改卷大小和管理标记来编辑卷。
-
-
-直接从 Cloud Manager 创建和管理 Azure NetApp Files 的功能取代了以前的数据迁移功能。
 
 
 
@@ -353,6 +343,40 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
+=== 2024年4月23日
+
+
+
+==== Azure中的多可用性区域部署支持新区域
+
+以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：
+
+* 德国中西部
+* 波兰中部
+* 美国西部3.
+* 以色列中部
+* 意大利北部
+* 加拿大中部
+
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
+
+
+
+==== 现在、Google Cloud支持约翰内斯堡地区
+
+约翰内斯堡地区 (`africa-south1` 适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud现在支持此功能。
+
+有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
+
+
+
+==== 不再支持卷模板和标记
+
+您不能再使用模板创建卷、也不能编辑卷的标记。这些操作与BlueXP修复服务相关联、该服务不再可用。
+
+
+
 === 2024年3月8日
 
 
@@ -372,26 +396,6 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 ==== Cloud Volumes ONTAP 9.14.1 GA
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。
-
-
-
-=== 2024年2月2日
-
-
-
-==== 支持Azure中的Edv5系列VM
-
-从9.14.1版开始、Cloud Volumes ONTAP现在支持以下Edv5系列VM。
-
-* E4ds_v5
-* E8ds_v5
-* E20s_v5
-* E32ds_v5
-* E48ds_v5
-* E64ds_v5
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
 
 
 
@@ -889,6 +893,16 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["详细
 
 
 
+=== 2024年4月22日
+
+
+
+==== 不再支持卷模板
+
+您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。
+
+
+
 === 2023年7月30日
 
 
@@ -912,25 +926,6 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["详细
 现在、您可以通过*画布>我的资产*发现内部ONTAP集群、方法是根据与您的BlueXP登录电子邮件地址关联的ONTAP集群选择BlueXP预先发现的集群。
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["从我的资产页面了解如何发现集群"]。
-
-
-
-=== 2023年5月4日
-
-
-
-==== 启用BlueXP备份和恢复
-
-从ONTAP 9.13.1开始、如果您使用连接器发现集群、则可以使用System Manager (高级视图)启用BlueXP备份和恢复。 link:https://docs.netapp.com/us-en/ontap/task_cloud_backup_data_using_cbs.html["了解有关启用BlueXP备份和恢复的更多信息"^]
-
-
-
-==== 升级ONTAP 版本映像和硬件固件
-
-从ONTAP 9.10.1开始、您可以使用System Manager (高级视图)升级ONTAP 版本映像和硬件固件。您可以选择接收自动升级以保持最新、也可以从本地计算机或可使用BlueXP访问的服务器进行手动更新。 link:https://docs.netapp.com/us-en/ontap/task_admin_update_firmware.html#prepare-for-firmware-update["了解有关升级ONTAP 和固件的更多信息"^]
-
-
-NOTE: 如果您没有Connector、则无法从本地计算机进行更新、只能从可使用BlueXP访问的服务器进行更新。
 
 
 
