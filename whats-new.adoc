@@ -24,6 +24,38 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关�
 
 
 
+=== 2024年4月22日
+
+
+
+==== 连接器3.9.39
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.39版本可用于标准模式和受限模式。
+
+
+
+==== 用于创建Connector的AWS权限
+
+现在、要从BlueXP在AWS中创建Connector、需要两个额外的权限：
+
+[source, json]
+----
+"ec2:DescribeLaunchTemplates",
+"ec2:CreateLaunchTemplate",
+----
+要在EC2实例上为连接器启用IMDSv2、需要具备这些权限。
+
+我们已将这些权限包括在创建Connector时BlueXP用户界面中显示的策略中、以及文档中提供的同一策略中。
+
+
+NOTE: 此策略仅包含从BlueXP在AWS中启动Connector实例所需的权限。分配给连接器实例的策略不同。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["了解如何设置AWS权限以从AWS创建Connector"]。
+
+
+
 === 2024年4月11日
 
 
@@ -75,54 +107,6 @@ BlueXP现已推出新的专用模式版本。此版本包含以下BlueXP服务�
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["了解如何在使用私有模式时升级连接器"]
 
-
-
-
-=== 2024年3月8日
-
-
-
-==== 连接器3.9.38
-
-目前、3.9.38版本可用于标准模式和受限模式。此版本支持AWS中的IMDSv2和AWS权限更新。
-
-
-
-===== 支持IMDSv2
-
-现在、BlueXP可通过连接器实例和Cloud Volumes ONTAP实例支持Amazon EC2实例元数据服务版本2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
-
-https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["从AWS安全博客了解有关IMDSv2的更多信息"^]
-
-在EC2实例上、实例元数据服务(IMDS)已启用、如下所示：
-
-* 适用于从BlueXP或使用进行的新Connector部署 https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Terraform脚本"^]默认情况下，EC2实例上会启用IMDSv2。
-* 如果在AWS中启动新的EC2实例、然后手动安装Connector软件、则默认情况下IMDSv2也会处于启用状态。
-* 对于现有连接器、仍然支持IMDSv1、但您可以根据需要在EC2实例上手动配置IMDSv2。
-* 对于Cloud Volumes ONTAP、默认情况下、在新实例和现有实例上会启用IMDSv1。您可以根据需要在EC2实例上手动配置IMDSv2。
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["了解如何在现有实例上配置IMDSv2"]。
-
-
-
-===== AWS权限更新
-
-我们更新了适用于AWS的Connector策略、以包括"EC2：可说明可用性Zones"权限。即将发布的版本需要此权限。发行说明发布后、我们将更新发行说明以提供更多详细信息。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["查看Connector的AWS权限"]。
-
-
-
-==== 代理设置和Cloud Volumes ONTAP设置
-
-现在，可从*Manage Connectors*页面(标准模式)或*Edit Connectors*页面(受限模式和专用模式)访问连接器的代理服务器设置。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["了解如何配置Connector以使用代理服务器"]。
-
-此外，我们将“*连接器设置*”页重命名为“* Cloud Volumes ONTAP设置*”。
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["屏幕截图、显示\"设置\"菜单中的Cloud Volumes ONTAP设置选项。"]
 
 
 
@@ -236,6 +220,25 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2024年4月4日
+
+
+
+==== 能够启用或禁用勒索软件扫描
+
+以前、如果在备份策略中启用了勒索软件检测、则在创建第一个备份和还原备份时会自动进行扫描。以前、该服务会扫描所有Snapshot副本、您无法禁用这些扫描。
+
+在此版本中、您现在可以使用"高级设置"页面上的选项对最新Snapshot副本启用或禁用勒索软件扫描。如果启用此功能、则默认情况下每周执行一次扫描。
+
+有关详细信息、请参见以下信息：
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["管理备份设置"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["管理ONTAP卷的策略"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["备份到对象策略设置"]
+
+
+
+
 === 2024年3月12日
 
 
@@ -269,71 +272,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 * 支持将虚拟机还原到备用位置
 * 支持取消数据存储库保护
 
-
-
-
-=== 2023年12月15日
-
-
-
-==== 可用于本地Snapshot和复制Snapshot副本的报告
-
-以前、您只能对备份副本生成报告。现在、您还可以创建有关本地Snapshot副本和复制Snapshot副本的报告。
-
-通过这些报告、您可以执行以下操作：
-
-* 确保根据组织策略保护关键数据。
-* 确保一组卷的备份运行顺畅。
-* 为生产数据提供保护证明。
-
-
-请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["关于数据保护覆盖范围的报告"]。
-
-
-
-==== 卷上提供了自定义标记、用于排序和筛选
-
-现在、您可以从ONTAP 9.13.1开始为卷添加自定义标记、以便可以在工作环境内和工作环境之间将卷分组在一起。这样、您就可以在BlueXP备份和恢复UI页面中对卷进行排序并在报告中进行筛选。
-
-
-
-==== 目录备份保留30天
-
-以前、Catalog.zip备份会保留7天。现在、它们会保留30天。
-
-请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["在非公开站点中还原BlueXP备份和恢复数据"]。
-
-
-
-=== 2023年10月23日
-
-
-
-==== 在备份激活期间创建3-2-1备份策略
-
-以前、必须在启动Snapshot、复制或备份之前创建自定义策略。现在、您可以使用BlueXP备份和恢复UI在备份激活过程中创建策略。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["详细了解策略"]。
-
-
-
-==== 支持按需快速还原ONTAP卷
-
-现在、通过BlueXP备份和恢复、可以将卷从云存储"快速还原"到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原会将元数据从备份文件还原到卷、而不是还原整个备份文件。
-
-Cloud Volumes ONTAP目标系统必须运行ONTAP 9.13.0或更高版本。 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关还原数据的更多信息"]。
-
-BlueXP备份和恢复作业监控器还会显示有关快速恢复作业进度的信息。
-
-
-
-==== 支持在作业监控器中计划作业
-
-BlueXP备份和恢复作业监控器以前会监控计划的卷到对象存储备份和还原作业、但不会监控通过UI或API计划的本地Snapshot、复制、备份和还原作业。
-
-BlueXP备份和恢复作业监控器现在包括本地快照、复制以及对象存储备份的计划作业。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["了解有关更新的作业监控器的更多信息"]。
 
 
 
@@ -1054,43 +992,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 == 修复
 
-
-
-=== 2022 年 3 月 3 日
-
-
-
-==== 现在，您可以构建一个模板来查找特定的工作环境
-
-使用 " 查找现有资源 " 操作，您可以确定工作环境，然后使用其他模板操作（例如创建卷）轻松对现有工作环境执行操作。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["有关详细信息，请访问此处"]。
-
-
-
-==== 能够在 AWS 中创建 Cloud Volumes ONTAP HA 工作环境
-
-现有的 Cloud Volumes ONTAP AWS 工作环境创建支持范围已得到扩展，除了创建单节点系统之外，还可以创建高可用性系统。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["请参见如何为 Cloud Volumes ONTAP 工作环境创建模板"]。
-
-
-
-=== 2022 年 2 月 9 日
-
-
-
-==== 现在，您可以构建一个模板来查找特定的现有卷，然后启用 Cloud Backup
-
-使用新的 " 查找资源 " 操作，您可以确定要启用 Cloud Backup 的所有卷，然后使用 Cloud Backup 操作在这些卷上启用备份。
-
-目前支持 Cloud Volumes ONTAP 和内部 ONTAP 系统上的卷。 https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["有关详细信息，请访问此处"]。
-
-
-
-=== 2021 年 10 月 31 日
-
-
-
-==== 现在，您可以标记同步关系，以便对其进行分组或分类，以便于访问
-
-https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html["了解有关资源标记的更多信息"]。
+BlueXP修复服务已于2024年4月22日删除。
 
 
 
