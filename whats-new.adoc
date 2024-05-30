@@ -85,7 +85,7 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。有关�
 
 ===== 支持RHEL 8和9
 
-现在、在运行以下版本的Red Hat Enterprise Linux (安装了_new_ Connector)的主机上支持Connector：
+现在、如果在标准模式或受限模式下使用BlueXP、则在运行具有_new_ Connector安装的以下Red Hat Enterprise Linux版本的主机上支持Connector：
 
 * 8.6至8.9
 * 9.1至9.3
@@ -345,6 +345,48 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2024年6月5日(版本1.32)
+
+此版本包含以下更新。
+
+
+
+==== 映射扫描可收集元数据
+
+以下元数据在映射扫描期间从文件中提取、并显示在"监管"、"合规性"和"调查"信息板上：
+
+* Working environment
+* Working environment type
+* 存储库
+* 文件类型
+* Used capacity
+* 文件数
+* 文件大小
+* 文件创建
+* 文件上次访问
+* 文件上次修改时间
+* 文件发现时间
+* 权限提取
+
+
+
+
+==== 信息板中的其他数据
+
+此版本更新了映射扫描期间显示在"监管"、"合规性"和"调查"信息板中的数据。
+
+有关详细信息、请参见 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["映射扫描与分类扫描之间有何区别"]
+
+
+
+==== 配置页面中的新建映射状态列
+
+此版本现在会在配置页面中显示一个新的映射状态列。新列可帮助您确定映射正在运行、已排队、已暂停还是更多。
+
+有关状态的说明，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["更改扫描设置"]。
+
+
+
 === 2024年5月15日(版本1.31)
 
 
@@ -390,26 +432,6 @@ link:reference-free-paid.html["详细了解已弃用的功能"]。
 如果您在可访问Internet的系统上部署了BlueXP分类、则系统将自动升级。以前、升级发生在自上次用户活动以来经过的特定时间之后。在此版本中、如果本地时间介于1：00 AM到5：00 AM之间、BlueXP分类会自动升级。如果本地时间不在这些时间内、则升级将在自上次用户活动后经过一段特定时间后进行。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可访问Internet的Linux主机上安装"]。
 
 如果您部署的BlueXP分类不能访问Internet、则需要手动升级。有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["在无法访问Internet的Linux主机上安装BlueXP分类"]。
-
-
-
-=== 2024年3月4日(版本1.29)
-
-
-
-==== 现在、您可以排除驻留在特定数据源目录中的扫描数据
-
-如果希望BlueXP分类排除驻留在特定数据源目录中的扫描数据、则可以将这些目录名称添加到BlueXP分类处理的配置文件中。通过此功能、您可以避免扫描不必要的目录或可能导致返回误报的个人数据结果的目录。
-
-https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["了解更多信息。"]。
-
-
-
-==== 超大型实例支持现已通过认证
-
-如果您需要BlueXP分类来扫描超过2.5亿个文件、则可以在云部署或内部安装中使用一个超大实例。此类系统最多可扫描5亿个文件。
-
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["了解更多信息。"]。
 
 
 
@@ -563,6 +585,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 == 数字顾问
+
+
+
+=== 2024年5月15日
+
+
+
+==== Sustainability信息板
+
+E系列和StorageGRID系统现在支持Sustainability。您可以从这些系统的可持续性信息板中查看建议的操作和环境指标列表、这些操作和指标会显示功率、直接碳用量和热量的预测。要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainability信息板概述"^]。
 
 
 
