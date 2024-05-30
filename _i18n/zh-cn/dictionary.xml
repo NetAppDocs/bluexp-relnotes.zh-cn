@@ -51,7 +51,6 @@
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">已修复的问题</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">2022年7月31日</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">了解更多信息。</block>
-  <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">了解有关Edge Cache许可证包的更多信息。</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">定义存储类</block>
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">FSX for ONTAP 作为数据源</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：</block>
@@ -91,11 +90,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">卸载Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">已删除许可选项卡</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">分层选项卡已重命名并更新了内容</block>
-  <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">2023年4月5日(2.2版)</block>
-  <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">支持在Google Cloud中部署的Cloud Volumes ONTAP 系统上使用全局文件缓存</block>
-  <block id="a92c52030822934c670502facf8a8f31" category="paragraph">在Google Cloud中部署Cloud Volumes ONTAP 系统时、可以使用新的"Edge Cache"许可证。您有权为Cloud Volumes ONTAP 系统上购买的每3 TiB容量部署一个全局文件缓存边缘系统。</block>
-  <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">设置向导和GFC配置UI已进行了增强、可执行NetApp许可证注册</block>
-  <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">优化的PSM-用于配置Edge Sync功能</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">设置和管理</block>
@@ -151,8 +145,6 @@
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>。</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>。</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
-  <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">此版本提供了以下列出的新功能。此外、它还修复了中所述的问题<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>。</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">您现在可以： <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> 使用Trident操作员或BlueXP安装的。</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">时间 <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>、现在、您可以为块或文件系统存储启用存储类经济性。</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>。</block>
@@ -431,17 +423,6 @@
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">2023年11月13日</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">现在、您可以为使用SMB/CCIFS协议的卷创建报告。</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">查看每个BlueXP服务的完整发行说明。</block>
-  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">2023年11月26日</block>
-  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Azure Blb的冷存储类支持</block>
-  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">现在、在创建同步关系时、可以使用冷存储Azure Blb层。</block>
-  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">了解有关创建同步关系的更多信息。</block>
-  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
-  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">在AWS数据代理中支持特拉维夫地区</block>
-  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">现在、在AWS中创建数据代理时、特拉维夫已成为受支持的区域。</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">了解有关在AWS中创建数据代理的更多信息</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>。</block>
-  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">更新到数据代理的节点版本</block>
-  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">现在、所有新数据代理都将使用节点版本21.2.0。与此更新不兼容的数据代理(例如CentOS 7.0和Ubuntu Server 18.0)将不再使用BlueXP副本和同步。</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">监视列表</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024年3月4日(版本1.29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">现在、您可以排除驻留在特定数据源目录中的扫描数据</block>
@@ -698,4 +679,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2024年6月2日</block>
+  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。</block>
+  <block id="fc31bdab270f34f9dbc1c826f879ec7a" category="section-title">2024年5月31日</block>
+  <block id="a38c9755f3e363e5fcc012f982f27744" category="paragraph">NetApp已宣布NetApp全局文件缓存的终止可用性(EOA)将于2024年5月31日结束。EOA会影响所有NetApp全局文件缓存产品、包括独立的全局文件缓存软件订阅以及与NetApp Cloud Volumes ONTAP捆绑的全局文件缓存解决方案(称为NetApp Cloud Volumes Edge Cache)。</block>
+  <block id="fe85d677b887f84abb319ef4415495b6" category="inline-link">有关NetApp全局文件缓存终止提供的详细信息、请参见</block>
+  <block id="84037427a2c8d669a1e7b95e23492189" category="paragraph">NetApp将继续为现有客户提供这些产品的支持、至少为期3年。<block ref="c260bd0a32453373dfa997871e7c7312" category="inline-link-rx"></block>。</block>
+  <block id="ce6cf9ea6138c79aab74ff110d376b23" category="paragraph">此外、还删除了从BlueXP用户界面启用、部署和管理全局文件缓存组件的功能。</block>
 </blocks>

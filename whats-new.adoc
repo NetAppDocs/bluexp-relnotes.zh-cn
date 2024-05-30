@@ -482,6 +482,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年6月2日
+
+BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。
+
+
+
 === 2024年4月8日
 
 
@@ -503,32 +509,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 现在、用户可以选择使用正则表达式筛选目录。
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["了解有关*排除目录*功能的更多信息。"]
-
-
-
-=== 2023年11月26日
-
-
-
-==== Azure Blb的冷存储类支持
-
-现在、在创建同步关系时、可以使用冷存储Azure Blb层。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["了解有关创建同步关系的更多信息。"]
-
-
-
-==== 在AWS数据代理中支持特拉维夫地区
-
-现在、在AWS中创建数据代理时、特拉维夫已成为受支持的区域。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["了解有关在AWS中创建数据代理的更多信息"]。
-
-
-
-==== 更新到数据代理的节点版本
-
-现在、所有新数据代理都将使用节点版本21.2.0。与此更新不兼容的数据代理(例如CentOS 7.0和Ubuntu Server 18.0)将不再使用BlueXP副本和同步。
 
 
 
@@ -783,6 +763,16 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 2024年5月31日
+
+NetApp已宣布NetApp全局文件缓存的终止可用性(EOA)将于2024年5月31日结束。EOA会影响所有NetApp全局文件缓存产品、包括独立的全局文件缓存软件订阅以及与NetApp Cloud Volumes ONTAP捆绑的全局文件缓存解决方案(称为NetApp Cloud Volumes Edge Cache)。
+
+NetApp将继续为现有客户提供这些产品的支持、至少为期3年。 https://mysupport.netapp.com/info/communications/CPC-00578.html["有关NetApp全局文件缓存终止提供的详细信息、请参见"^]。
+
+此外、还删除了从BlueXP用户界面启用、部署和管理全局文件缓存组件的功能。
+
+
+
 === 2024年5月6日(2.4版)
 
 此版本可修复一些小问题。更新的软件包位于 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
@@ -792,28 +782,6 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 === 2023年8月1日(2.3版)
 
 此版本可修复中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
-
-
-
-=== 2023年4月5日(2.2版)
-
-此版本提供了以下列出的新功能。此外、它还修复了中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。
-
-
-
-==== 支持在Google Cloud中部署的Cloud Volumes ONTAP 系统上使用全局文件缓存
-
-在Google Cloud中部署Cloud Volumes ONTAP 系统时、可以使用新的"Edge Cache"许可证。您有权为Cloud Volumes ONTAP 系统上购买的每3 TiB容量部署一个全局文件缓存边缘系统。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["了解有关Edge Cache许可证包的更多信息。"]
-
-
-
-==== 设置向导和GFC配置UI已进行了增强、可执行NetApp许可证注册
-
-
-
-==== 优化的PSM-用于配置Edge Sync功能
 
 
 
