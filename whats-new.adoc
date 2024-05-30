@@ -214,6 +214,24 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2024年5月17日
+
+
+
+==== 对内部连接器使用RHEL 8和RHEL 9时的限制
+
+对于在RHEL 8或9主机上手动安装Connector软件的任何操作、BlueXP Connector 3.9.40支持Red Hat Enterprise Linux版本8和9的某些版本、而不考虑中所述的操作系统位于何处 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["主机要求"^]。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。目前、使用Podman引擎时、BlueXP备份和恢复存在两个限制。
+
+请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["备份和还原限制"] 了解详细信息。
+
+以下过程包括新的Podman说明：
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["重新启动BlueXP备份和恢复"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["在非公开站点中还原BlueXP备份和恢复数据"]
+
+
+
+
 === 2024年4月30日
 
 
@@ -280,6 +298,18 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 
 
 
+=== 2024年5月15日(版本1.31)
+
+
+
+==== 分类可作为BlueXP中的核心服务提供
+
+BlueXP分类现已作为BlueXP中的核心功能提供、无需额外付费即可处理高达500 TiB的扫描数据。不需要分类许可证或付费订阅。由于我们将BlueXP分类功能的重点放在扫描具有此新版本的NetApp存储系统上、因此、某些原有功能仅供以前已支付许可证费用的客户使用。这些原有功能的使用将在已支付合同到期后过期。
+
+link:reference-free-paid.html["详细了解已弃用的功能"]。
+
+
+
 === 2024年4月1日(版本1.3)
 
 
@@ -291,6 +321,8 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html
 以下操作系统要求使用Podman容器引擎、并要求BlueXP分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2和9.3。
 
 了解更多信息 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP分类部署概述"]。
+
+如果在内部的RHEL 8或9主机上安装Connector、则支持BlueXP分类。如果RHEL 8或9主机位于AWS、Azure或Google Cloud中、则不支持此功能。
 
 
 
@@ -334,23 +366,19 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 
 
 
-=== 2024年1月10日(版本1.27)
-
-
-
-==== 现在、除了项目总数之外、调查页面结果还会显示总大小
-
-现在、"调查"页面中经过筛选的结果除了显示文件总数之外、还会显示项目的总大小。这有助于移动文件、删除文件等。
-
-
-
-==== 将其他组ID配置为"对组织开放"
-
-现在、您可以在NFS中将组ID配置为直接从BlueXP分类中视为"对组织开放"(如果组最初未设置该权限)。附加了这些组ID的所有文件和文件夹将在"调查详细信息"页面中显示为"开放给组织"。请参见操作说明 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["将其他组ID添加为"对组织开放""]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年5月17日
+
+
+
+==== Amazon Web Services Local Zones支持
+
+现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。
+
+有关采用HA部署的AWS本地区域的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
 
 
 
@@ -397,16 +425,6 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 在AWS中、Cloud Volumes ONTAP调解器和连接器现在支持对所有功能使用Amazon即时元数据服务v2 (IMDSv2)。IMDSv2可提供更强的漏洞防护。以前仅支持IMDSv1。
 
 如果安全策略要求、您可以将EC2实例配置为使用IMDSv2。有关说明，请参见 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["用于管理现有连接器的BlueXP设置和管理文档"^]。
-
-
-
-=== 2024年3月5日
-
-
-
-==== Cloud Volumes ONTAP 9.14.1 GA
-
-BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.14.1正式发布版。
 
 
 
@@ -642,6 +660,21 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 2024年5月15日
+
+此BlueXP灾难恢复版本包括以下更新：
+
+* *将VMware工作负载从内部复制到内部*现已作为正式发布功能发布。以前、它是功能有限的技术预览版。
+* *许可更新*： 借助BlueXP灾难恢复、您可以注册90天免费试用、在Amazon Marketplace购买按需购买(PAYGO)订阅、或自带许可证(BYOL)、这是您从NetApp销售代表或NetApp 支持站点(NSS)获取的NetApp许可证文件(NLL)。
++
+有关为BlueXP灾难恢复设置许可的详细信息、请参阅 link:../get-started/dr-licensing.html["设置许可"]。
+
+
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["详细了解BlueXP灾难恢复"]。
+
+
+
 === 2024年3月5日
 
 这是BlueXP灾难恢复的正式发布版本、其中包括以下更新。
@@ -697,30 +730,6 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
 
 
-
-
-
-=== 2024年1月11日
-
-此BlueXP灾难恢复预览版包括以下更新：
-
-* 在此版本中、您可以更快速地从信息板访问其他页面上的信息。
-
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["了解BlueXP灾难恢复"]。
-
-
-
-=== 2023年10月20日
-
-此BlueXP灾难恢复预览版包含以下更新。
-
-现在、借助BlueXP灾难恢复功能、您可以保护基于NFS的内部VMware工作负载、使其免受灾难影响、而灾难又发生在公共云之外的另一个基于NFS的内部VMware环境中。BlueXP灾难恢复可安排灾难恢复计划的完成。
-
-
-NOTE: 对于此预览版产品、NetApp保留在正式发布之前修改产品详细信息、内容和时间表的权利。
-
-https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["详细了解BlueXP灾难恢复"]。
 
 
 
