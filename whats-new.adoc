@@ -453,6 +453,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年7月14日
+
+我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。
+
+
+
 === 2024年6月2日
 
 BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。
