@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。 
 ---
 = BlueXP中的最新变更
@@ -21,6 +21,73 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2024年7月31日
+
+
+
+==== 专用模式版本(3.9.42)
+
+现在可以从NetApp 支持站点 下载新的专用模式版本。
+
+
+
+===== 支持RHEL 8和9
+
+此版本支持在专用模式下使用BlueXP时在Red Hat Enterprise Linux 8或9主机上安装Connector。支持以下RHEL版本：
+
+* 8.6 到 8.10
+* 9.1 到 9.3
+
+
+这些操作系统需要使用Podman作为容器流程编排工具。
+
+您应了解Podman的要求、已知限制、操作系统支持摘要、拥有RHEL 7主机时应采取的措施、如何入门等。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+===== 此版本中包含的版本
+
+此版本包含以下BlueXP服务版本、这些版本支持专用模式。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.42 
+
+
+| 备份和恢复 | 2024年7月18日 
+
+
+| 分类 | 2024年7月1日(版本1.33) 
+
+
+| Cloud Volumes ONTAP管理 | 2024年6月10日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2023年7月30日 
+
+
+| Replication | 2022年9月18日 
+|===
+要详细了解这些BlueXP服务版本中包含的内容、请参阅每个BlueXP服务的发行说明。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["了解BlueXP备份和恢复的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["了解BlueXP分类的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解BlueXP中Cloud Volumes ONTAP管理的新增功能"^]
+
 
 
 
@@ -47,34 +114,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-s
 此版本对AWS加拿大西部(卡尔加里)地区的Connector进行了一些小改进、并提供了一些错误修复和支持。
 
 3.9.42版本适用于标准模式和受限模式。
-
-
-
-==== 更新了Docker引擎要求
-
-在Ubuntu主机上安装Connector后、支持的Docker引擎最低版本为23.0.6。它以前是9.3.1。
-
-支持的最大版本仍为21.0.5。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"]。
-
-
-
-==== 现在需要电子邮件验证
-
-现在、注册BlueXP的新用户需要先验证其电子邮件地址、然后才能登录。
-
-
-
-=== 2024年6月12日
-
-
-
-==== 连接器3.9.41
-
-此版本的BlueXP Connector包括一些小的安全改进和错误修复。
-
-3.9.41版本适用于标准模式和受限模式。
 
 
 
@@ -184,6 +223,48 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2024年7月22日
+
+
+
+==== 还原小于1 GB的卷
+
+在此版本中、您现在可以还原在ONTAP中创建的小于1 GB的卷。可以使用ONTAP创建的最小卷大小为20 MB。
+
+
+
+==== 有关如何降低DataLock成本的提示
+
+DataLock功能可保护备份文件、使其在指定时间段内不会被修改或删除。这有助于保护文件免受勒索软件攻击。
+
+有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见 link:concept-cloud-backup-policies.html["备份到对象策略设置"]。
+
+
+
+==== AWS IAM角色无处不在集成
+
+通过Amazon Web Services (AWS)身份和访问管理(IAM)角色无处不在服务、您可以对AWS的_Outside _工作负载使用IAM角色和短期凭据来安全地访问AWS API、就像对Workloads_on_ AWS使用IAM角色一样。当您在任意位置使用IAM角色时、私有密钥基础架构和AWS令牌不需要长期AWS访问密钥和机密密钥。这样、您可以更频繁地轮换凭据、从而提高安全性。
+
+在此版本中、对AWS IAM角色无处不在服务的支持只是一项技术预览。
+
+这适用于备份 link:task-backup-to-s3.html["将Cloud Volumes ONTAP备份到AWS"] 和 link:task-backup-onprem-to-aws.html["将内部ONTAP数据备份到AWS"]。
+
+请参阅 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
+
+
+
+==== FlexGroup文件夹或目录还原现在可用
+
+以前、可以还原FlexVol卷、但无法还原FlexGroup文件夹或目录。对于ONTAP 9.15.1P2、您可以使用浏览并还原选项还原FlexGroup文件夹。
+
+在此版本中、对FlexGroup文件夹还原的支持是一项技术预览。
+
+有关详细信息，请参见 link:task-restore-backups-ontap.html#restore-folders-and-files-using-browse-restore["使用浏览和还原还原文件夹和文件()"]。
+
+有关手动启用的详细信息，请参见 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
+
+
+
 === 2024年5月17日
 
 
@@ -265,6 +346,20 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 == 分类
+
+
+
+=== 2024年8月5日(版本1.34)
+
+此BlueXP  分类版本包含以下更新。
+
+
+
+==== 从CentOS更改为Ubuntu
+
+BlueXP  Classification已将适用于Microsoft Azure和Google Cloud Platform (GCP)的Linux操作系统从CentOS 7.9更新为Ubuntu 22.04。
+
+有关部署的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["在可访问Internet的Linux主机上安装并准备Linux主机系统"]。
 
 
 
@@ -609,6 +704,60 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 2024 年 8 月 2 日
+
+此BlueXP灾难恢复版本包括以下更新：
+
+* *支持使用FC*从内部到内部的VMware VMFS数据存储库：此版本包含一个_technology preview_支持在VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM、以便将FC保护到内部存储。以前、该服务提供了一个技术预览版、支持将VMFS数据存储库用于iSCSI。
++
+
+NOTE: NetApp不会对任何预览的工作负载容量收取任何费用。
+
+* *作业取消*：在此版本中、您现在可以在作业监控器UI中取消作业。
++
+请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["监控作业"]。
+
+
+
+
+
+=== 2024年7月17日
+
+此BlueXP灾难恢复版本包括以下更新：
+
+* *故障转移测试计划*：此版本包括故障转移测试计划结构的更新，支持每日和每周计划需要更新。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。
++
+方法如下：
+
++
+.. 从顶部菜单中选择*复制计划*。
+.. 选择一个计划、然后选择操作图标以显示下拉菜单。
+.. 选择 * 禁用 * 。
+.. 几分钟后，选择*Enable*。
+
+
+* *复制计划更新*：此版本包含对复制计划数据的更新，可解决"未找到快照"问题。这要求您将所有复制计划中的保留数量更改为1、然后启动按需快照。此过程将创建一个新备份并删除所有较早的备份。
++
+方法如下：
+
++
+.. 从顶部菜单中选择*复制计划*。
+.. 选择复制计划，单击*故障转移映射*选项卡，然后单击*编辑*铅笔图标。
+.. 单击*数据存储库*箭头将其展开。
++
+image:use/dr-plan-failover-edit.png["编辑故障转移映射页面"]
+
+.. 记下复制计划中的保留计数值。完成这些步骤后、您需要恢复此原始值。
+.. 将此计数减少为1。
+.. 启动按需快照。为此，请在复制计划页面上，选择该计划，单击操作图标，然后选择*立即创建快照*。
+.. 成功完成快照作业后、将复制计划中的计数增加回您在第一步中记下的原始值。
+.. 对所有现有复制计划重复上述步骤。
+
+
+
+
+
+
 === 2024年7月5日
 
 此BlueXP灾难恢复版本包括以下更新：
@@ -621,10 +770,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 NOTE: NetApp不会对任何预览的工作负载容量收取任何费用。
 
-* *复制计划更新*：您可以通过以下方式更轻松地添加复制计划：在"Applications"页面上按数据存储库筛选VM、并在"Resource Mapping "页面上选择更多目标详细信息。
-+
-请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
+* *复制计划更新*：您可以通过在“应用程序”页面上按数据存储库筛选VM并选择//来更轻松地添加复制计划 link:../use/drplan-create.html["创建复制计划"]。请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。 NG资源映射页面上的更多目标详细信息。
 * *编辑复制计划*：此版本增强了故障转移映射页面，以使其更清晰。
 +
 请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理计划"]。
@@ -661,27 +807,6 @@ NOTE: NetApp不会对任何预览的工作负载容量收取任何费用。
 
 
 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["详细了解BlueXP灾难恢复"]。
-
-
-
-=== 2024年3月5日
-
-这是BlueXP灾难恢复的正式发布版本、其中包括以下更新。
-
-* *许可更新*：借助BlueXP灾难恢复、您可以注册90天免费试用或自带许可证(自带许可证、BYOL)、这是您从NetApp销售代表处获得的NetApp许可证文件(NLL)您可以使用许可证序列号在BlueXP电子钱包中激活BYOL。BlueXP灾难恢复费用基于数据存储库的已配置容量计算。
-+
-有关为BlueXP灾难恢复设置许可的详细信息、请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["设置许可"]。
-
-+
-有关管理*all* BlueXP服务许可证的详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["管理所有BlueXP服务的许可证"^]。
-
-
-
-* *编辑计划*：在此版本中，您现在可以设置测试合规性和故障转移测试的计划，以确保这些计划在您需要时可以正常工作。
-+
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
 
 
 
@@ -733,27 +858,7 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 == 边缘缓存
 
-
-
-=== 2024年5月31日
-
-NetApp已宣布NetApp全局文件缓存的终止可用性(EOA)将于2024年5月31日结束。EOA会影响所有NetApp全局文件缓存产品、包括独立的全局文件缓存软件订阅以及与NetApp Cloud Volumes ONTAP捆绑的全局文件缓存解决方案(称为NetApp Cloud Volumes Edge Cache)。
-
-NetApp将继续为现有客户提供这些产品的支持、至少为期3年。 https://mysupport.netapp.com/info/communications/CPC-00578.html["有关NetApp全局文件缓存终止提供的详细信息、请参见"^]。
-
-此外、还删除了从BlueXP用户界面启用、部署和管理全局文件缓存组件的功能。
-
-
-
-=== 2024年5月6日(2.4版)
-
-此版本可修复一些小问题。更新的软件包位于 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
-
-
-
-=== 2023年8月1日(2.3版)
-
-此版本可修复中所述的问题 https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["已修复的问题"]。可从获取更新的软件包 https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["此页面"]。
+BlueXP  边缘缓存服务已于2024年8月7日被删除。
 
 
 
@@ -773,53 +878,13 @@ NetApp将继续为现有客户提供这些产品的支持、至少为期3年。 
 
 == Kubernetes
 
-
-
-=== 2023年4月2日
-
-* 您现在可以： link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-trident.html["卸载Astra Trident"] 使用Trident操作员或BlueXP安装的。
-* 文档中对用户界面进行了改进、并更新了屏幕截图。
-
-
-
-
-=== 2023年3月5日
-
-* BlueXP中的Kubernetes现在支持Astra Trident 23.01。
-* 文档中对用户界面进行了改进、并更新了屏幕截图。
-
-
-
-
-=== 2022年11月6日
-
-时间 link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes["定义存储类"]、现在、您可以为块或文件系统存储启用存储类经济性。
+2024年8月7日、不再支持发现和管理Kubbernetes集群。
 
 
 
 == 迁移报告
 
-
-
-=== 2023年11月13日
-
-现在、您可以为使用SMB/CCIFS协议的卷创建报告。
-
-
-
-=== 2023年9月3日
-
-更新后的BlueXP迁移报告服务可更新报告数据。报告现在包括已分配的容量。
-
-
-
-=== 2023年6月2日
-
-借助全新的BlueXP迁移报告服务、您可以快速确定存储环境中的文件、目录、符号链接、硬链接、文件系统树的深度和广度、最大文件等数量。
-
-有了这些信息、您就会事先知道、您想要使用的流程可以高效成功地处理您的库存。
-
-link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["详细了解BlueXP迁移报告"]。
+BlueXP  迁移报告服务已于2024年8月7日删除。
 
 
 
@@ -881,7 +946,21 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024 年 8 月 5 日
+
+此版本的BlueXP  勒索软件保护包括以下更新。
+
+* *使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
+
+
+
+
+
 === 2024年7月1日
+
+此版本的BlueXP勒索软件保护包括以下更新：
 
 * *自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)
 +
@@ -927,59 +1006,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 * *已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["详细了解如何配置保护设置"](英文)
-
-
-
-
-
-=== 2024年5月14日
-
-此版本是BlueXP勒索软件保护的正式发布版本。其中包括以下更新：
-
-* *许可更新*：您可以注册90天免费试用。很快、您将能够通过亚马逊网络服务商城购买按需购买订阅或自带NetApp许可证。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["了解有关设置许可的更多信息"]。
-
-* *CIFS协议*：该服务现在支持在使用NFS和CIFS协议的AWS工作环境中使用内部ONTAP和Cloud Volumes ONTAP。先前版本仅支持NFS协议。
-* *工作负载详细信息*：此版本现在可在"保护"和"其他"页面中的工作负载信息中提供更多详细信息、以改进工作负载保护评估。您可以通过工作负载详细信息查看当前分配的策略以及配置的备份目标。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["有关查看工作负载详细信息的更多信息、请参见保护页面"]。
-
-* *应用程序一致和VM一致的保护和恢复*：现在、您可以使用NetApp SnapCenter软件执行应用程序一致的保护、并使用适用于VMware vSphere的SnapCenter插件执行VM一致的保护、从而实现稳定一致的状态、以避免日后需要恢复时可能丢失数据。如果需要恢复、您可以将应用程序或VM还原回先前可用的任何状态。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载的更多信息"]。
-
-* *勒索软件保护策略*：如果工作负载上不存在Snapshot或备份策略、您可以创建勒索软件保护策略、其中可包括在此服务中创建的以下策略：
-+
-** 快照策略
-** 备份策略
-** 检测策略
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载的更多信息"]。
-
-
-
-* *启用威胁检测*现在可使用第三方安全和事件管理(SIEM)系统。现在、信息板会显示一个新的"启用威胁检测"建议、您可以在"设置"页面上配置该建议。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置设置选项的更多信息"]。
-
-* *消除误报警报*：从"警报"选项卡中、您现在可以消除误报或决定立即恢复数据。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["了解有关响应勒索软件警报的更多信息"](英文)
-
-* *新检测状态*将显示在"保护"页面上、其中显示应用于工作负载的勒索软件检测的状态。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和查看保护状态的更多信息"]。
-
-* *从保护、警报和恢复页面下载CSV文件*。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["了解有关从信息板和其他页面下载CSV文件的更多信息"]。
-
-* 现在，用户界面中包含*查看文档*链接。您可以从信息板垂直*操作*选项访问此文档 image:button-actions-vertical.png["垂直操作选项"] 。选择*新增功能*以查看发行说明中的详细信息、或者选择*文档*以查看BlueXP勒索软件保护文档主页。
-* *BlueXP备份和恢复*：不再需要在工作环境中启用BlueXP备份和恢复服务。请参见 link:rp-start-prerequisites.html["前提条件"]。BlueXP勒索软件保护服务有助于通过设置选项配置备份目标。请参见 link:rp-use-settings.html["配置设置"]。
-* *设置选项*：您现在可以在BlueXP勒索软件保护设置中设置备份目标。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置设置选项的更多信息"]。
 
 
 
@@ -1036,6 +1062,26 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 
 
 == StorageGRID
+
+
+
+=== 2024 年 8 月 7 日
+
+
+
+==== 新的高级视图
+
+从StorageGRID 11.8开始、您可以使用熟悉的网格管理器界面从BlueXP  管理StorageGRID系统。
+
+https://docs.netapp.com/us-en/bluexp-storagegrid/task-administer-storagegrid.html["了解如何使用高级视图管理StorageGRID"](英文)
+
+
+
+==== 能够审核和批准StorageGRID管理接口证书
+
+现在、您可以在从BlueXP  发现StorageGRID系统时查看和批准StorageGRID管理接口证书。您还可以在发现的网格上查看和批准最新的StorageGRID管理接口证书。
+
+https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["了解如何在系统发现期间查看和批准服务器证书。"]
 
 
 
