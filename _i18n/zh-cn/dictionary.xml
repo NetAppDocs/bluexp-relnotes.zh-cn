@@ -468,10 +468,6 @@
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXP分类现已作为BlueXP中的核心功能提供、无需额外付费即可处理高达500 TiB的扫描数据。不需要分类许可证或付费订阅。由于我们将BlueXP分类功能的重点放在扫描具有此新版本的NetApp存储系统上、因此、某些原有功能仅供以前已支付许可证费用的客户使用。这些原有功能的使用将在已支付合同到期后过期。</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">详细了解已弃用的功能</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>。</block>
-  <block id="b3e67e9d7f5be7902fd87917d0acb3e0" category="section-title">Amazon Web Services Local Zones支持</block>
-  <block id="6f9fa4d02a6081aa6d33b131d8532328" category="paragraph">现在、Cloud Volumes ONTAP HA部署可支持AWS本地区域。AWS本地区域是一种基础架构部署、其中存储、计算、数据库和其他精选AWS服务位于靠近大城市和行业区域的位置。</block>
-  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWS本地区域</block>
-  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">有关采用HA部署的AWS本地区域的详细信息、请参见 <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">此BlueXP灾难恢复版本包括以下更新：</block>
   <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">*将VMware工作负载从内部复制到内部*现已作为正式发布功能发布。以前、它是功能有限的技术预览版。</block>
@@ -485,7 +481,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2024年6月2日</block>
   <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。</block>
-  <block id="d4cffcdfb4fe4fc69dc234950d0f4151" category="admonition">在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。</block>
   <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">2024年6月5日(版本1.32)</block>
   <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">此版本包含以下更新。</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">映射扫描可收集元数据</block>
@@ -700,15 +695,10 @@
   <block id="e84c1e70dc9a2186ec21e22a3e9cbda0" category="section-title">已弃用Edge Cache许可软件包</block>
   <block id="882b50ca44d46bfb8d9502390cfeaf96" category="paragraph">Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许可包。但是、您可以使用此API来使用此功能。</block>
   <block id="a5729938408dc232ea97fb5d7d00b71c" category="section-title">Azure上Flash Cache支持的最低ONTAP版本</block>
-  <block id="9eed4224485f0ec8f22ac2ca0b031514" category="paragraph">在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。只能使用ONTAP 9.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash Cache。</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Azure 中支持的配置</block>
   <block id="2936dc7efe93e6248aca38d21b92cc62" category="paragraph">有关支持的配置，请参见<block ref="10c1bb30d666a83202b9e687d7b06d1b" category="inline-link-rx"></block>。</block>
   <block id="bc5af032a5cd69ef4ac57b8c2cd1f1d6" category="section-title">免费试用商城订阅已弃用</block>
   <block id="860dc5e7395e0f2c15a42ffdef98eca4" category="paragraph">在云提供商的市场中、30天自动免费试用按需购买订阅将不再适用于Cloud Volumes ONTAP。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。</block>
-  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">现在、AWS支持加拿大西部地区</block>
-  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS下的全球区域图</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表，请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="d6b2c344cefb2303b488f51358e47bad" category="section-title">2024年8月7日</block>
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">ONTAP更新</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">BlueXP  软件更新服务通过降低风险并确保客户能够充分利用ONTAP功能、为用户提供无缝的更新体验。</block>
@@ -716,4 +706,22 @@
   <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">详细了解 <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>。</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">2024 年 8 月 11 日</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.54。</block>
+  <block id="22e645000db07af6682e1c6517a3c82a" category="section-title">2024年8月22日</block>
+  <block id="335b63351c39337de35ede84c3852d4d" category="section-title">连接器3.9.43修补程序</block>
+  <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">我们更新了连接器以支持Cloud Volumes ONTAP 9.151版本。</block>
+  <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">此版本支持对适用于Azure的Connector策略进行更新。现在、此策略包含以下权限：</block>
+  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有连接器、并且要使用此新功能、则需要将这些权限添加到与您的Azure凭据关联的自定义角色。</block>
+  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">了解Cloud Volumes ONTAP对虚拟机扩展集的支持</block>
+  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
+  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">查看Connector的Azure权限</block>
+  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>(英文)</block>
+  <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">2024 年 8 月 22 日</block>
+  <block id="cf153c7d2cb432b6e772832926525a09" category="section-title">Cloud Volumes ONTAP 9.15.1 GA</block>
+  <block id="ffa2c93a775db2cb6243bf2a224cf240" category="paragraph">BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.15.1正式发布版。</block>
+  <block id="5e5a8323b53f79c61a277215cb801b01" category="paragraph">在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。</block>
+  <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">2024年8月21日</block>
+  <block id="c91c7b93c28cd18741b71f727ee81ee3" category="section-title">报告</block>
+  <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">软件版本支持</block>
+  <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">升级在7-模式下运行的Data ONTAP存储系统</block>
+  <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">由于7-模式系统已停止有限支持，因此不再提供*7-Mode Upgrade Advisor Plans (7-模式升级顾问计划)*报告。有关详细信息，请参见 <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>。详细了解 <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>。</block>
 </blocks>
