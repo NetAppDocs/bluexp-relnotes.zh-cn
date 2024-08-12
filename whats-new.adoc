@@ -24,6 +24,49 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024 年 8 月 8 日
+
+
+
+==== 连接器3.9.43
+
+此版本包含一些小改进、错误修复以及对新Azure权限的要求。
+
+3.9.43版本适用于标准模式和受限模式。
+
+
+
+==== 更新了CPU和RAM要求
+
+为了提高BlueXP  和连接器的可靠性并提高其性能、我们现在需要为连接器虚拟机增加CPU和RAM：
+
+* CPU：8个核心或8个vCPU (以前需要4个)
+* RAM：32 GB (先前要求为14 GB)
+
+
+由于此更改、从BlueXP  或云提供商的市场部署连接器时的默认VM实例类型如下所示：
+
+* AWS：t3.2倍大
+* Azure：standard_D8s_v3
+* Google Cloud：n2-standard-8
+
+
+此要求适用于新连接器和现有连接器。
+
+
+
+==== 在RHEL 8.10中支持Podman 4.9.4
+
+在Red Hat Enterprise Linux 8.10主机上安装Connector时、现在支持Podman版本4.9.4。
+
+
+
+==== 身份联合的用户验证
+
+如果将身份联合与BlueXP  结合使用、则首次登录到BlueXP  的每个用户都需要填写一个快速表单来验证其身份。
+
+
+
 === 2024年7月31日
 
 
@@ -433,6 +476,38 @@ link:reference-free-paid.html["详细了解已弃用的功能"]。
 
 
 
+=== 2024 年 8 月 8 日
+
+
+
+==== 已弃用Edge Cache许可软件包
+
+Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许可包。但是、您可以使用此API来使用此功能。
+
+
+
+==== Azure上Flash Cache支持的最低ONTAP版本
+
+在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。只能使用ONTAP 9.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash Cache。
+
+有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
+
+
+
+==== 免费试用商城订阅已弃用
+
+在云提供商的市场中、30天自动免费试用按需购买订阅将不再适用于Cloud Volumes ONTAP。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。
+
+
+
+==== 现在、AWS支持加拿大西部地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
+
+有关所有地区的列表，请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
+
+
+
 === 2024年6月10日
 
 
@@ -457,40 +532,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版�
 NOTE: 在标准模式下使用BlueXP时、支持AWS本地区域。目前、在受限模式或专用模式下使用BlueXP时、不支持AWS本地区域。
 
 有关采用HA部署的AWS本地区域的详细信息、请参见 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
-
-
-
-=== 2024年4月23日
-
-
-
-==== Azure中的多可用性区域部署支持新区域
-
-以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：
-
-* 德国中西部
-* 波兰中部
-* 美国西部3.
-* 以色列中部
-* 意大利北部
-* 加拿大中部
-
-
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
-
-
-
-==== 现在、Google Cloud支持约翰内斯堡地区
-
-约翰内斯堡地区 (`africa-south1` 适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Google Cloud现在支持此功能。
-
-有关所有地区的列表、请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["Google Cloud下的全球区域地图"^]。
-
-
-
-==== 不再支持卷模板和标记
-
-您不能再使用模板创建卷、也不能编辑卷的标记。这些操作与BlueXP修复服务相关联、该服务不再可用。
 
 
 
@@ -1058,6 +1099,22 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了
 现在，您可以将数据从 Cloud Volumes ONTAP 系统或内部 ONTAP 集群复制到适用于 ONTAP 的 Amazon FSX 文件系统。
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["了解如何设置数据复制"]。
+
+
+
+== 软件更新
+
+
+
+=== 2024年8月7日
+
+
+
+==== ONTAP更新
+
+BlueXP  软件更新服务通过降低风险并确保客户能够充分利用ONTAP功能、为用户提供无缝的更新体验。
+
+详细了解 link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["BlueXP  软件更新"^]。
 
 
 
