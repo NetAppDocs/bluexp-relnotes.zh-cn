@@ -42,7 +42,7 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 ----
 Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有连接器、并且要使用此新功能、则需要将这些权限添加到与您的Azure凭据关联的自定义角色。
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解Cloud Volumes ONTAP对虚拟机扩展集的支持"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解Cloud Volumes ONTAP 9.151版本"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"](英文)
 
 
@@ -497,6 +497,18 @@ link:reference-free-paid.html["详细了解已弃用的功能"]。
 
 
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年8月23日
+
+
+
+==== 现在、AWS支持加拿大西部地区
+
+现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
+
+有关所有地区的列表，请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
 
 
 
