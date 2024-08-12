@@ -589,6 +589,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024 年 8 月 11 日
+
+我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.54。
+
+
+
 === 2024年7月14日
 
 我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。
@@ -598,30 +604,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 === 2024年6月2日
 
 BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。
-
-
-
-=== 2024年4月8日
-
-
-
-==== 支持RHEL 8.9
-
-现在、运行Red Hat Enterprise Linux 8.9的主机支持数据代理。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["查看Linux主机要求"]。
-
-
-
-=== 2024年2月11日
-
-
-
-==== 按正则表达式筛选目录
-
-现在、用户可以选择使用正则表达式筛选目录。
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["了解有关*排除目录*功能的更多信息。"]
 
 
 
