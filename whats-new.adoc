@@ -24,7 +24,79 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
-=== 2024年8月22日
+=== 2024年9月9日
+
+
+
+==== 连接器3.9.44
+
+此版本支持Docker引擎26、SSL证书增强功能以及错误修复。
+
+3.9.44版本适用于标准模式和受限模式。
+
+
+
+===== f258c97f55e85bfbd607e70e86d840dc
+
+5c968eab53d6065ccf63e9766935cb7b
+
+0e80b6146d7736683cb1292a9c1ba4af
+
+395f31b2f1bc9cb3993acbb14cf4fb1f
+
+
+
+===== 已更新用于本地UI访问的SSL证书
+
+当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。
+
+在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：
+
+* 此时、证书的公用名将与短主机名匹配
+* 证书使用者替代名称是主机的完全限定域名(FQDN)
+
+
+
+
+==== 支持RHEL 9.4
+
+现在、在标准模式或受限模式下使用BlueXP  时、BlueXP  支持在Red Hat Enterprise Linux 9.4主机上安装连接器。
+
+从连接器3.9.40版开始支持RHEL 9.4。
+
+标准模式和受限模式支持的RHEL版本更新列表现在包括以下内容：
+
+* 8.6 到 8.10
+* 9.1 到 9.4
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+==== 所有RHEL版本均支持Podman 4.9.4
+
+现在、所有受支持的Red Hat Enterprise Linux版本均支持Podman 4.9.4。以前、版本4.9.4仅支持RHEL 8.10。
+
+更新后的Podman版本列表包括Red Hat Enterprise Linux主机支持的4.6.1和4.9.4版本。
+
+从连接器3.9.40版开始、RHEL主机需要使用Podman。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
+
+
+
+==== 已更新AWS和Azure权限
+
+我们更新了Connector的AWS和Azure策略、以删除不再需要的权限。这些权限与BlueXP  边缘缓存以及Kubbernetes集群的发现和管理相关、自2024年8月起不再支持这些功能。
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["了解AWS策略发生了哪些变化"](英文)
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["了解Azure策略中发生的变化"](英文)
+
+
+
+
+=== 2024 年 8 月 22 日
 
 
 
@@ -54,7 +126,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 
 ==== 连接器3.9.43
 
-此版本包含一些小改进、错误修复以及对新Azure权限的要求。
+此版本提供了一些小改进和错误修复。
 
 3.9.43版本适用于标准模式和受限模式。
 
@@ -75,7 +147,7 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 * Google Cloud：n2-standard-8
 
 
-此要求适用于新连接器和现有连接器。
+更新后的CPU和RAM要求适用于所有新连接器。对于现有连接器、建议增加CPU和RAM、以提高性能和可靠性。
 
 
 
@@ -416,6 +488,20 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 
 
+=== 2024年9月2日(版本1.31)
+
+此BlueXP  分类版本包含以下更新。
+
+
+
+==== 扫描StorageGRID数据
+
+BlueXP  分类现在可以在StorageGRID中扫描数据。
+
+有关详细信息，请参见 link:task-scanning-storagegrid.html["扫描StorageGRID数据"]。
+
+
+
 === 2024年8月5日(版本1.34)
 
 此BlueXP  分类版本包含以下更新。
@@ -470,33 +556,30 @@ BlueXP  Classification已将适用于Microsoft Azure和Google Cloud Platform (G
 
 
 
-=== 2024年6月5日(版本1.32)
-
-此版本包含以下更新。
-
-
-
-==== 配置页面中的新建映射状态列
-
-此版本现在会在配置页面中显示一个新的映射状态列。新列可帮助您确定映射正在运行、已排队、已暂停还是更多。
-
-有关状态的说明，请参见 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["更改扫描设置"]。
-
-
-
-=== 2024年5月15日(版本1.31)
-
-
-
-==== 分类可作为BlueXP中的核心服务提供
-
-BlueXP分类现已作为BlueXP中的核心功能提供、无需额外付费即可处理高达500 TiB的扫描数据。不需要分类许可证或付费订阅。由于我们将BlueXP分类功能的重点放在扫描具有此新版本的NetApp存储系统上、因此、某些原有功能仅供以前已支付许可证费用的客户使用。这些原有功能的使用将在已支付合同到期后过期。
-
-link:reference-free-paid.html["详细了解已弃用的功能"]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2024年9月9日
+
+
+
+==== WORm和ARP功能不再收费
+
+WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。
+
+简化的定价为您带来以下优势：
+
+* 当前包含WORM和ARP的帐户将不再为这些功能产生费用。接下来、您的计费将仅对容量使用量收费、就像此次更改之前一样。WORm和ARP将不再包含在您的未来账单中。
+* 如果您的当前帐户不包含这些功能、您现在可以选择WORM和ARP、无需额外费用。
+* 所有新客户的Cloud Volumes ONTAP产品均不包括WORM和ARP费用。
+
+
+详细了解这些功能：
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM存储"^]
+
 
 
 
@@ -519,42 +602,6 @@ link:reference-free-paid.html["详细了解已弃用的功能"]。
 ==== Cloud Volumes ONTAP 9.15.1 GA
 
 BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.15.1正式发布版。
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-=== 2024 年 8 月 8 日
-
-
-
-==== 已弃用Edge Cache许可软件包
-
-Cloud Volumes ONTAP的未来部署将不再提供基于边缘缓存容量的许可包。但是、您可以使用此API来使用此功能。
-
-
-
-==== Azure上Flash Cache支持的最低ONTAP版本
-
-在Azure上配置Flash Cache所需的最低ONTAP版本为9.13.1GA。您只能使用.13.1GA及更高版本在适用于Azure的Cloud Volumes ONTAP系统上部署Flash ONTAP 9。
-
-有关支持的配置，请参见 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Azure 中支持的配置"^]。
-
-
-
-==== 免费试用商城订阅已弃用
-
-在云提供商的市场中、30天自动免费试用按需购买订阅将不再适用于Cloud Volumes ONTAP。任何类型的商城订阅(PAYGO或年度合同)的收费将从首次使用时起激活、没有任何免费试用期。
-
-
-
-=== 2024年6月10日
-
-
-
-==== Cloud Volumes ONTAP 9.12.1.
-
-BlueXP现在可以在AWS、Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.12.09。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
 
@@ -614,6 +661,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 577f5f9474f1f4f6f56c1fb216328baf
+
+bc2c6ba9505b9e6d38d9f10c18186d1c
+
+
+
 === 2024 年 8 月 11 日
 
 我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.54。
@@ -623,12 +676,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 === 2024年7月14日
 
 我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。
-
-
-
-=== 2024年6月2日
-
-BlueXP复制和同步服务已更新、以修复一些错误。数据代理也进行了更新、以应用安全更新。新的数据代理版本为1.0.52。
 
 
 
@@ -762,6 +809,24 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== eaecda6db64f5346d5c63bfe0094e040
+
+ee811bd919a27bd2eb705f65ed45e4f6
+
+* b077aa4f9a421cc2e2782608fb5caf4f
++
+0eb65976c0b0c5ffa90b07d4a062e509
+
++
+** d671bd2f503deef1e03581ce8d516507
+** cf1967c6d778937fae37b9e43582b1b6
+** f3a37c3560d0027bc0f49abfab4ab0e3
+
+
+
+
+
+
 === 2024 年 8 月 2 日
 
 此BlueXP灾难恢复版本包括以下更新：
@@ -886,6 +951,16 @@ https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html
 
 
 
+=== 2024年5月15日
+
+BlueXP  的一些经济效益功能已暂时禁用：
+
+* 技术更新
+* 添加容量
+
+
+
+
 === 2024年3月14日
 
 如果您已有资产、并且希望确定是否需要更新某项技术、则可以使用BlueXP经济高效技术更新选项。您可以查看当前工作负载的简短评估并获取建议、或者如果您在过去90天内将AutoSupport日志发送给NetApp、则该服务现在可以提供工作负载模拟、以查看工作负载在新硬件上的运行情况。
@@ -1004,6 +1079,30 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024年9月2日
+
+此版本的BlueXP  勒索软件保护包括以下更新。
+
+* *数字顾问提供的安全风险评估*：BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群<name>上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。
++
+请参阅 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
+
+* *备份到Google Cloud Platform*：在此版本中、您可以将备份目标位置设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
+
+* *支持Google Cloud Platform*：该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件保护以及支持的数据源、备份目标和工作环境"](英文)
+
+* *基于角色的访问控制*：您现在可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。
++
+有关每个角色可以执行的操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["基于角色的访问控制Privileges"]。
+
+
+
+
+
 === 2024 年 8 月 5 日
 
 此版本的BlueXP  勒索软件保护包括以下更新。
@@ -1039,31 +1138,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 * *删除保护计划*：在此版本中、您现在可以删除勒索软件保护策略。
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["了解有关保护工作负载和管理勒索软件保护策略的更多信息"](英文)
-
-
-
-
-
-=== 2024年6月10日
-
-此版本的BlueXP勒索软件保护包括以下更新：
-
-* *主存储上的Snapshot副本锁定*：启用此选项可锁定主存储上的Snapshot副本、以便在一段时间内无法修改或删除这些副本、即使勒索软件攻击设法到达备份存储目标也是如此。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中保护工作负载和启用备份锁定"](英文)
-
-* *此版本除了支持适用于AWS的Cloud Volumes ONTAP和内部ONTAP NAS之外、还支持将适用于Microsoft Azure"的Cloud Volumes ONTAP用作工作环境。
-+
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html["在 Azure 中快速启动 Cloud Volumes ONTAP"^]
-
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP勒索软件保护"]。
-
-
-
-* *已将Microsoft Azure添加为备份目标*。现在、您可以将Microsoft Azure与AWS和NetApp StorageGRID一起添加为备份目标。
-+
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["详细了解如何配置保护设置"](英文)
 
 
 
