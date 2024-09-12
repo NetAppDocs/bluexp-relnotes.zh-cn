@@ -24,6 +24,61 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024年9月30日
+
+
+
+==== 专用模式版本(3.9.44)
+
+现在可以从NetApp 支持站点 下载新的专用模式版本。
+
+此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。
+
+[cols="2*"]
+|===
+| 服务 | 包含版本 
+
+
+| 连接器 | 3.9.44 
+
+
+| 备份和恢复 | 2024年9月27日 
+
+
+| 分类 | 2024年5月15日(版本1.31) 
+
+
+| Cloud Volumes ONTAP管理 | 2024年9月9日 
+
+
+| 数字电子钱包 | 2023年7月30日 
+
+
+| 内部ONTAP集群管理 | 2024年4月22日 
+
+
+| Replication | 2022年9月18日 
+|===
+对于Connector、3.9.44专用模式版本包括2024年8月和2024年9月版本中推出的更新。最值得注意的是、支持Red Hat Enterprise Linux 9.4。
+
+要详细了解这些BlueXP  组件和服务版本中包含的内容、请参阅每个BlueXP  服务的发行说明：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["2024年9月版连接器中的新增功能"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["2024年8月版连接器中的新增功能"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类的新增功能"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP  中Cloud Volumes ONTAP管理的新增功能"^]
+
+
+有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
+
+
+
+
 === 2024年9月9日
 
 
@@ -117,142 +172,6 @@ Cloud Volumes ONTAP支持虚拟机扩展集需要这些权限。如果您已有�
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["了解Cloud Volumes ONTAP 9.151版本"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["查看Connector的Azure权限"](英文)
 
-
-
-
-=== 2024 年 8 月 8 日
-
-
-
-==== 连接器3.9.43
-
-此版本提供了一些小改进和错误修复。
-
-3.9.43版本适用于标准模式和受限模式。
-
-
-
-==== 更新了CPU和RAM要求
-
-为了提高BlueXP  和连接器的可靠性并提高其性能、我们现在需要为连接器虚拟机增加CPU和RAM：
-
-* CPU：8个核心或8个vCPU (以前需要4个)
-* RAM：32 GB (先前要求为14 GB)
-
-
-由于此更改、从BlueXP  或云提供商的市场部署连接器时的默认VM实例类型如下所示：
-
-* AWS：t3.2倍大
-* Azure：standard_D8s_v3
-* Google Cloud：n2-standard-8
-
-
-更新后的CPU和RAM要求适用于所有新连接器。对于现有连接器、建议增加CPU和RAM、以提高性能和可靠性。
-
-
-
-==== 在RHEL 8.10中支持Podman 4.9.4
-
-在Red Hat Enterprise Linux 8.10主机上安装Connector时、现在支持Podman版本4.9.4。
-
-
-
-==== 身份联合的用户验证
-
-如果将身份联合与BlueXP  结合使用、则首次登录到BlueXP  的每个用户都需要填写一个快速表单来验证其身份。
-
-
-
-=== 2024年7月31日
-
-
-
-==== 专用模式版本(3.9.42)
-
-现在可以从NetApp 支持站点 下载新的专用模式版本。
-
-
-
-===== 支持RHEL 8和9
-
-此版本支持在专用模式下使用BlueXP时在Red Hat Enterprise Linux 8或9主机上安装Connector。支持以下RHEL版本：
-
-* 8.6 到 8.10
-* 9.1 到 9.3
-
-
-这些操作系统需要使用Podman作为容器流程编排工具。
-
-您应了解Podman的要求、已知限制、操作系统支持摘要、拥有RHEL 7主机时应采取的措施、如何入门等。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
-
-
-
-===== 此版本中包含的版本
-
-此版本包含以下BlueXP服务版本、这些版本支持专用模式。
-
-[cols="2*"]
-|===
-| 服务 | 包含版本 
-
-
-| 连接器 | 3.9.42 
-
-
-| 备份和恢复 | 2024年7月18日 
-
-
-| 分类 | 2024年7月1日(版本1.33) 
-
-
-| Cloud Volumes ONTAP管理 | 2024年6月10日 
-
-
-| 数字电子钱包 | 2023年7月30日 
-
-
-| 内部ONTAP集群管理 | 2023年7月30日 
-
-
-| Replication | 2022年9月18日 
-|===
-要详细了解这些BlueXP服务版本中包含的内容、请参阅每个BlueXP服务的发行说明。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["了解BlueXP备份和恢复的新增功能"^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["了解BlueXP分类的新增功能"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["了解BlueXP中Cloud Volumes ONTAP管理的新增功能"^]
-
-
-
-
-=== 2024年7月15日
-
-
-
-==== 支持RHEL 8.10
-
-现在、BlueXP支持在使用标准模式或受限模式的Red Hat Enterprise Linux 8.10主机上安装Connector。
-
-从连接器3.9.40版开始支持RHEL 8.10。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
-
-
-
-=== 2024年7月8日
-
-
-
-==== 连接器3.9.42
-
-此版本对AWS加拿大西部(卡尔加里)地区的Connector进行了一些小改进、并提供了一些错误修复和支持。
-
-3.9.42版本适用于标准模式和受限模式。
 
 
 
@@ -362,6 +281,28 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2024年9月27日
+
+
+
+==== RHEL 8或9上的Podman支持以及浏览和还原功能
+
+BlueXP  备份和恢复现在支持使用Podman引擎在Red Hat Enterprise Linux (RHEL) 8和9上还原文件和文件夹。这适用于BlueXP  备份和恢复浏览和还原方法。
+
+BlueXP  Connector 3.9.40支持在RHEL 8或9主机上手动安装某些版本的Red Hat Enterprise Linux版本8和9，而不考虑位置以及中提到的操作系统 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["主机要求"^]。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。以前、使用Podman引擎时、BlueXP  备份和恢复有两个限制。已删除这些限制。
+
+https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
+
+
+
+==== 加快目录索引编制速度可改进搜索和还原功能
+
+此版本改进了目录索引功能、可以更快地完成基线索引编制。通过加快索引编制速度、您可以更快地使用搜索和还原功能。
+
+https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
+
+
+
 === 2024年7月22日
 
 
@@ -419,68 +360,6 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["重新启动BlueXP备份和恢复"]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["在非公开站点中还原BlueXP备份和恢复数据"]
 
-
-
-
-=== 2024年4月30日
-
-
-
-==== 能够启用或禁用计划内勒索软件扫描
-
-以前、您可以启用或禁用勒索软件扫描、但无法对计划扫描执行此操作。
-
-在此版本中、您现在可以使用"高级设置"页面上的选项对最新Snapshot副本启用或禁用计划内勒索软件扫描。如果启用此功能、则默认情况下每周执行一次扫描。您可以将该计划更改为天数或周数、也可以将其禁用、从而节省成本。
-
-有关详细信息、请参见以下信息：
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["管理备份设置"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["管理ONTAP卷的策略"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["备份到对象策略设置"]
-
-
-
-
-=== 2024年4月4日
-
-
-
-==== 能够启用或禁用勒索软件扫描
-
-以前、如果在备份策略中启用了勒索软件检测、则在创建第一个备份和还原备份时会自动进行扫描。以前、该服务会扫描所有Snapshot副本、您无法禁用这些扫描。
-
-在此版本中、您现在可以使用"高级设置"页面上的选项对最新Snapshot副本启用或禁用勒索软件扫描。如果启用此功能、则默认情况下每周执行一次扫描。
-
-有关详细信息、请参见以下信息：
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["管理备份设置"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["管理ONTAP卷的策略"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["备份到对象策略设置"]
-
-
-
-
-=== 2024年3月12日
-
-
-
-==== 能够从云备份"快速还原"到内部ONTAP卷
-
-现在、您可以将卷从云存储快速还原到内部ONTAP目标卷。以前、您只能快速还原到Cloud Volumes ONTAP系统。快速还原非常适合需要尽快提供对卷的访问权限的灾难恢复情形。快速还原比完整卷还原速度快得多；它会将元数据从云快照还原到ONTAP目标卷。源可能来自AWS S3、Azure Blb、Google云服务或NetApp StorageGRID。
-
-内部ONTAP目标系统必须运行ONTAP 9.14.1或更高版本。
-
-您可以使用浏览和还原过程执行此操作、而不是使用搜索和还原过程。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["从备份文件还原ONTAP数据"]。
-
-
-
-==== 能够从Snapshot和复制副本还原文件和文件夹
-
-以前、您只能从AWS、Azure和Google Cloud Services中的备份副本还原文件和文件夹。现在、您可以从本地Snapshot副本和复制副本还原文件和文件夹。
-
-您可以使用搜索和还原过程执行此功能、而不是使用浏览和还原过程。
 
 
 
@@ -809,18 +688,18 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
-=== eaecda6db64f5346d5c63bfe0094e040
+=== 2024年9月20日
 
-ee811bd919a27bd2eb705f65ed45e4f6
+此BlueXP  灾难恢复版本包含以下更新。
 
-* b077aa4f9a421cc2e2782608fb5caf4f
+* *支持从内部到内部的VMware VMFS数据存储库*：此版本支持在VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM、以便将iSCSI和FC保护到内部存储。以前、该服务提供了一个_technology preview_、支持iSCSI和FC的VMFS数据存储库。
 +
-0eb65976c0b0c5ffa90b07d4a062e509
+以下是有关iSCSI和FC协议的一些其他注意事项：
 
 +
-** d671bd2f503deef1e03581ce8d516507
-** cf1967c6d778937fae37b9e43582b1b6
-** f3a37c3560d0027bc0f49abfab4ab0e3
+** FC支持的是客户端前端协议、而不是复制协议。
+** BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。
+** 对于任何复制计划、目标ONTAP卷应使用与托管受保护VM的源ONTAP卷相同的协议。例如、如果源使用FC协议、则目标也应使用FC。
 
 
 
@@ -1076,6 +955,15 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == 勒索软件保护
+
+
+
+=== 2024年9月30日
+
+此版本的BlueXP  勒索软件保护包括以下更新。
+
+* *自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)
+
 
 
 
