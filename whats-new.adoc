@@ -970,7 +970,7 @@ BlueXP  迁移报告服务已于2024年8月7日删除。
 
 ==== 支持ASA R2系统
 
-现在、如果在标准模式或专用模式下使用BlueXP 、则可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。
+现在、如果在标准模式或受限模式下使用BlueXP 、则可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。
 
 ASA R2系统没有其他可用的管理选项。您不能使用标准视图、也不能启用BlueXP服务。
 
@@ -1217,7 +1217,7 @@ https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[
 
 
 
-==== 使用自定义前缀作为存储分层数据的分段名称
+==== 使用自定义前缀作为分段名称
 
 过去、在定义存储分段名称时、您需要使用默认的"光纤 池"前缀、例如_Fabric池bucket1_。现在、您可以在为存储分段命名时使用自定义前缀。只有在将数据层到Amazon S3时、此功能才可用。 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["了解更多信息。"]。
 
@@ -1233,13 +1233,13 @@ https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[
 
 
 
-==== 现在、您可以调整用于将非活动数据上传到对象存储的带宽
+==== 调整带宽以传输非活动数据
 
 激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["了解更多信息。"]。
 
 
 
-==== "低层"的层事件将显示在通知中心中
+==== 通知中心中显示的层事件
 
 现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群<name>分层到对象存储以提高存储效率"将显示为通知。
 
@@ -1257,7 +1257,7 @@ https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[
 
 
 
-==== 分层选项卡已重命名并更新了内容
+==== 分层选项卡已重命名和更新
 
 "集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部部署信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。
 

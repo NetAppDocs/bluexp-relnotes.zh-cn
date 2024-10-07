@@ -78,7 +78,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">运营故障恢复能力</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">了解如何查看帐户中的已用容量</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">已删除许可选项卡</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">分层选项卡已重命名并更新了内容</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">设置和管理</block>
@@ -163,9 +162,7 @@
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">从我的资产页面了解如何发现集群</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">现在、您可以调整用于将非活动数据上传到对象存储的带宽</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">"低层"的层事件将显示在通知中心中</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群&lt;name&gt;分层到对象存储以提高存储效率"将显示为通知。</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP分层总拥有成本和节省量计算器</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">此通知是一个"建议"、可帮助您提高系统效率并节省存储成本。它提供了指向的链接<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> 以帮助您计算成本节省。</block>
@@ -756,8 +753,12 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">详细了解<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">提高了扫描性能</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">此版本可提高扫描性能。</block>
-  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">现在、如果在标准模式或专用模式下使用BlueXP 、则可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">在专用模式下使用BlueXP  时、不支持发现ASA R2系统。</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">了解BlueXP部署模式</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">现在、如果在标准模式或受限模式下使用BlueXP 、则可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="section-title">使用自定义前缀作为分段名称</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">调整带宽以传输非活动数据</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">通知中心中显示的层事件</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">分层选项卡已重命名和更新</block>
 </blocks>
