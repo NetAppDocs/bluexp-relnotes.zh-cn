@@ -970,11 +970,15 @@ BlueXP  迁移报告服务已于2024年8月7日删除。
 
 ==== 支持ASA R2系统
 
-现在、您可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。
+现在、如果在标准模式或专用模式下使用BlueXP 、则可以在BlueXP  中发现NetApp ASA R2系统。发现NetApp ASA R2系统并打开工作环境后、您将直接转到System Manager。
 
 ASA R2系统没有其他可用的管理选项。您不能使用标准视图、也不能启用BlueXP服务。
 
-https://docs.netapp.com/us-en/asa-r2/index.html["详细了解ASA R2系统"^]
+在专用模式下使用BlueXP  时、不支持发现ASA R2系统。
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["详细了解ASA R2系统"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解BlueXP部署模式"^]
+
 
 
 
