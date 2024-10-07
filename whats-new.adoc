@@ -63,7 +63,7 @@ BlueXP  IAM提供更精细的资源和权限管理：
 * 在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能
 
 
-image:screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
 
 请注意以下事项：
 
@@ -89,8 +89,8 @@ image:screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从�
 
 ===== 下一步行动
 
-* link:concept-identity-and-access-management.html["了解BlueXP  IAM"]
-* link:task-iam-get-started.html["开始使用BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["了解BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["开始使用BlueXP  IAM"]
 
 
 
@@ -383,7 +383,7 @@ BlueXP  备份和恢复现在支持使用Podman引擎在Red Hat Enterprise Linu
 
 BlueXP  Connector 3.9.40支持在RHEL 8或9主机上手动安装某些版本的Red Hat Enterprise Linux版本8和9，而不考虑位置以及中提到的操作系统 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["主机要求"^]。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。以前、使用Podman引擎时、BlueXP  备份和恢复有两个限制。已删除这些限制。
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
 
 
 
@@ -391,7 +391,7 @@ https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restor
 
 此版本改进了目录索引功能、可以更快地完成基线索引编制。通过加快索引编制速度、您可以更快地使用搜索和还原功能。
 
-https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
 
 
 
@@ -409,7 +409,7 @@ https://review.docs.netapp.com/us-en/bluexp-backup-recovery_br-se-ja/task-restor
 
 DataLock功能可保护备份文件、使其在指定时间段内不会被修改或删除。这有助于保护文件免受勒索软件攻击。
 
-有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见 link:concept-cloud-backup-policies.html["备份到对象策略设置"]。
+有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["备份到对象策略设置"]。
 
 
 
@@ -429,7 +429,7 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 在此版本中、对FlexGroup文件夹还原的支持是一项技术预览。
 
-有关详细信息，请参见 link:task-restore-backups-ontap.html#restore-folders-and-files-using-browse-restore["使用浏览和还原还原文件夹和文件()"]。
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["使用浏览和还原还原文件夹和文件()"]。
 
 有关手动启用的详细信息，请参见 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
 
