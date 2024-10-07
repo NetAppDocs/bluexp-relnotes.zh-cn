@@ -24,6 +24,16 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024年10月10日
+
+
+
+==== 连接器3.9.45修补程序
+
+此修补程序包含错误修复。
+
+
+
 === 2024年10月7日
 
 
@@ -174,78 +184,6 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-
-
-
-
-=== 2024年9月9日
-
-
-
-==== 连接器3.9.44
-
-此版本支持Docker引擎26、SSL证书增强功能以及错误修复。
-
-3.9.44版本适用于标准模式和受限模式。
-
-
-
-===== 支持在全新安装中使用Docker Engine 26
-
-从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。
-
-如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["详细了解Docker引擎要求"](英文)
-
-
-
-===== 已更新用于本地UI访问的SSL证书
-
-当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。
-
-在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：
-
-* 此时、证书的公用名将与短主机名匹配
-* 证书使用者替代名称是主机的完全限定域名(FQDN)
-
-
-
-
-==== 支持RHEL 9.4
-
-现在、在标准模式或受限模式下使用BlueXP  时、BlueXP  支持在Red Hat Enterprise Linux 9.4主机上安装连接器。
-
-从连接器3.9.40版开始支持RHEL 9.4。
-
-标准模式和受限模式支持的RHEL版本更新列表现在包括以下内容：
-
-* 8.6 到 8.10
-* 9.1 到 9.4
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
-
-
-
-==== 所有RHEL版本均支持Podman 4.9.4
-
-现在、所有受支持的Red Hat Enterprise Linux版本均支持Podman 4.9.4。以前、版本4.9.4仅支持RHEL 8.10。
-
-更新后的Podman版本列表包括Red Hat Enterprise Linux主机支持的4.6.1和4.9.4版本。
-
-从连接器3.9.40版开始、RHEL主机需要使用Podman。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["了解连接器对RHEL 8和9的支持"]。
-
-
-
-==== 已更新AWS和Azure权限
-
-我们更新了Connector的AWS和Azure策略、以删除不再需要的权限。这些权限与BlueXP  边缘缓存以及Kubbernetes集群的发现和管理相关、自2024年8月起不再支持这些功能。
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["了解AWS策略发生了哪些变化"](英文)
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["了解Azure策略中发生的变化"](英文)
 
 
 
@@ -454,6 +392,28 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 
 == 分类
+
+
+
+=== 2024年10月10日(版本1.36)
+
+此BlueXP  分类版本包含以下更新。
+
+
+
+==== 支持RHEL 9.4
+
+除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.4。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。
+
+以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2、9.3和9.4。
+
+详细了解 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP分类部署概述"]。
+
+
+
+==== 提高了扫描性能
+
+此版本可提高扫描性能。
 
 
 

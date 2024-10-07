@@ -423,8 +423,6 @@
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">了解作为BlueXP平台一部分的云服务的最新变更。有关完整的版本历史记录、请转到 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 针对每个服务。</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
-  <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">了解连接器对RHEL 8和9的支持</block>
-  <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>。</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">了解有关设置许可的更多信息</block>
   <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>。</block>
   <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">对内部连接器使用RHEL 8和RHEL 9时的限制</block>
@@ -517,7 +515,6 @@
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">现在可以从NetApp 支持站点 下载新的专用模式版本。</block>
-  <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6 到 8.10</block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服务</block>
   <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">包含版本</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">连接器</block>
@@ -609,29 +606,7 @@
   <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS下的全球区域图</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表，请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
-  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">连接器3.9.44</block>
-  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">此版本支持Docker引擎26、SSL证书增强功能以及错误修复。</block>
-  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">3.9.44版本适用于标准模式和受限模式。</block>
-  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">已更新用于本地UI访问的SSL证书</block>
-  <block id="b96edd49155123375756b26e44b38121" category="paragraph">当您在受限模式或私有模式下使用BlueXP  时、可以从云区域或内部部署的Connector虚拟机访问用户界面。默认情况下、BlueXP  使用自签名SSL证书为连接器上运行的基于Web的控制台提供安全的HTTPS访问。</block>
-  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">在此版本中、我们对新连接器和现有连接器的SSL证书进行了更改：</block>
-  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">此时、证书的公用名将与短主机名匹配</block>
-  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">证书使用者替代名称是主机的完全限定域名(FQDN)</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">支持RHEL 9.4</block>
-  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">现在、在标准模式或受限模式下使用BlueXP  时、BlueXP  支持在Red Hat Enterprise Linux 9.4主机上安装连接器。</block>
-  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">从连接器3.9.40版开始支持RHEL 9.4。</block>
-  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">标准模式和受限模式支持的RHEL版本更新列表现在包括以下内容：</block>
-  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">9.1 到 9.4</block>
-  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">所有RHEL版本均支持Podman 4.9.4</block>
-  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">现在、所有受支持的Red Hat Enterprise Linux版本均支持Podman 4.9.4。以前、版本4.9.4仅支持RHEL 8.10。</block>
-  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">更新后的Podman版本列表包括Red Hat Enterprise Linux主机支持的4.6.1和4.9.4版本。</block>
-  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">从连接器3.9.40版开始、RHEL主机需要使用Podman。</block>
-  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">已更新AWS和Azure权限</block>
-  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">我们更新了Connector的AWS和Azure策略、以删除不再需要的权限。这些权限与BlueXP  边缘缓存以及Kubbernetes集群的发现和管理相关、自2024年8月起不再支持这些功能。</block>
-  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">了解AWS策略发生了哪些变化</block>
-  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>(英文)</block>
-  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">了解Azure策略中发生的变化</block>
-  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>(英文)</block>
   <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日(版本1.31)</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">扫描StorageGRID数据</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分类现在可以在StorageGRID中扫描数据。</block>
@@ -662,11 +637,6 @@
   <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*基于角色的访问控制*：您现在可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">基于角色的访问控制Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">有关每个角色可以执行的操作的详细信息，请参见<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
-  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">支持在全新安装中使用Docker Engine 26</block>
-  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">从3.9.44版本的连接器开始、Docker引擎26现在支持在Ubuntu主机上安装_new_连接器。</block>
-  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">如果您在3.9.44版本之前创建了现有连接器、则Docker 25.0.5仍是Ubuntu主机上支持的最大版本。</block>
-  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">详细了解Docker引擎要求</block>
-  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>(英文)</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.55。</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
@@ -776,4 +746,15 @@
   <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>(英文)</block>
   <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>。</block>
   <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">有关详细信息，请参见<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>。</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">连接器3.9.45修补程序</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修补程序包含错误修复。</block>
+  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">2024年10月10日(版本1.36)</block>
+  <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
+  <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.4。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
+  <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2、9.3和9.4。</block>
+  <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link">BlueXP分类部署概述</block>
+  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">详细了解<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
+  <block id="7062dd46798946172bc9078744756dfc" category="section-title">提高了扫描性能</block>
+  <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">此版本可提高扫描性能。</block>
 </blocks>
