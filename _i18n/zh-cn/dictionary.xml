@@ -430,9 +430,6 @@
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
   <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">此BlueXP灾难恢复版本包括以下更新：</block>
-  <block id="7f1d1e9df7ef6953a6e373e29826ca55" category="list-text">*将VMware工作负载从内部复制到内部*现已作为正式发布功能发布。以前、它是功能有限的技术预览版。</block>
-  <block id="b7005516f0c1f875afae2146a2fb3617" category="list-text">*许可更新*： 借助BlueXP灾难恢复、您可以注册90天免费试用、在Amazon Marketplace购买按需购买(PAYGO)订阅、或自带许可证(BYOL)、这是您从NetApp销售代表或NetApp 支持站点(NSS)获取的NetApp许可证文件(NLL)。</block>
-  <block id="eb9506998f4dca4bcb82fe962448b79b" category="paragraph">有关为BlueXP灾难恢复设置许可的详细信息、请参阅 <block ref="eaa54a57026891d12cbf928afd176564" category="inline-link-macro-rx"></block>。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">发行说明（按服务）</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
@@ -475,23 +472,9 @@
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">2024年7月4日</block>
   <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">通过环境指标深入了解存储系统的环境运行状况、现在可以根据高级预测模型提供更精确的预计用电量、直接碳用量和热量排放值。要了解更多信息，请参阅 <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>。</block>
   <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">E系列和StorageGRID系统现在支持Sustainability。您可以从这些系统的可持续性信息板中查看建议的操作和环境指标列表、这些操作和指标会显示功率、直接碳用量和热量的预测。要了解更多信息，请参阅 <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>。</block>
-  <block id="d8e45589bc9d86b39aed3bcde52935ac" category="section-title">2024年7月5日</block>
-  <block id="7ee40b46e664d0d7baaad4da422c7457" category="list-text">*支持AFF A系列*：此版本支持NetApp AFF A系列硬件平台。</block>
-  <block id="a1961f9eb07acee12f93a3f0b929745e" category="list-text">*支持从内部到内部的VMware VMFS数据存储库*：此版本包括对受内部存储保护的VMware vSphere虚拟机文件系统(VMFS)数据存储库上装载的VM的_技术预览_支持。在此版本中、支持通过技术预览将内部VMware工作负载灾难恢复到具有VMFS数据存储库的内部VMware环境。</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp不会对任何预览的工作负载容量收取任何费用。</block>
-  <block id="a1975f713c38b2cbf1c095ed7dbadabe" category="list-text">*编辑复制计划*：此版本增强了故障转移映射页面，以使其更清晰。</block>
-  <block id="e9558a079e21d43034f54a99b19f2ad7" category="inline-link">管理计划</block>
-  <block id="583edef1d12ac8fcf925b864da2d76c6" category="paragraph">请参阅<block ref="a8a4a23c947d3e2e3dc169027b7cac12" category="inline-link-rx"></block>。</block>
-  <block id="2343906acc207119786e118da0bbadf7" category="list-text">*编辑虚拟机*：在此版本中，在计划中编辑虚拟机的过程包括一些小的UI改进。</block>
-  <block id="5f1df9fa6d6ce95c36680ae870250af7" category="inline-link">管理VM</block>
-  <block id="f7e4cafc0e54e03cc0ff738b39e333cb" category="paragraph">请参阅<block ref="1d44a072309f2a4f38fd6e17ed7eb631" category="inline-link-rx"></block>。</block>
-  <block id="51c73608632a284eecfb3fce29106b26" category="list-text">*故障转移更新*：在启动故障转移之前，您现在可以确定VM的状态以及它们是否已启动。现在、您可以通过故障转移过程立即创建快照或选择快照。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">将应用程序故障转移到远程站点</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">请参阅<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="66dacd6d538323484187ed3f8c9ef650" category="list-text">*故障转移测试计划*：您现在可以编辑故障转移测试并为故障转移测试设置每日、每周和每月计划。</block>
-  <block id="42b40c3ce2e25adae8327795c655116d" category="list-text">*前提条件信息更新*：BlueXP灾难恢复前提条件信息已更新。</block>
-  <block id="ccf3c2f4a4ab48adb4cc5352e480655c" category="inline-link">BlueXP灾难恢复前提条件</block>
-  <block id="8a62eb7f743049ce2523fe7eb67fb48f" category="paragraph">请参阅<block ref="dfd63f4ad4adb15a66b44e212e2488b7" category="inline-link-rx"></block>。</block>
   <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
   <block id="fdb1f5ab91dd63ebda3ff72247aa7b2b" category="list-text">*自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)</block>
   <block id="0c379e4399020bc48ac7da5510998e1a" category="list-text">*在文件级别恢复应用程序工作负载*：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
@@ -544,24 +527,11 @@
   <block id="b9dbe1e85847c069664ebe888e76d35c" category="list-text">*作业取消*：在此版本中、您现在可以在作业监控器UI中取消作业。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">监控作业</block>
   <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">请参阅<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
-  <block id="f4c84d2d214fb7f3e3cae921398c8e4a" category="section-title">2024年7月17日</block>
-  <block id="e96e73e43a84335e9de1d02f80f7d655" category="list-text">*故障转移测试计划*：此版本包括故障转移测试计划结构的更新，支持每日和每周计划需要更新。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">方法如下：</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">从顶部菜单中选择*复制计划*。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">选择一个计划、然后选择操作图标以显示下拉菜单。</block>
   <block id="dbf8ea65a71d9e2042b03a97a0da4095" category="list-text">选择 * 禁用 * 。</block>
   <block id="9ffe587f372d96c9b0db66cfe333c0cf" category="list-text">几分钟后，选择*Enable*。</block>
-  <block id="dc6efda4f2a86706d886df508f873039" category="list-text">*复制计划更新*：此版本包含对复制计划数据的更新，可解决"未找到快照"问题。这要求您将所有复制计划中的保留数量更改为1、然后启动按需快照。此过程将创建一个新备份并删除所有较早的备份。</block>
-  <block id="3d3e2652059a9417e7a9b8801e83b99d" category="list-text">选择复制计划，单击*故障转移映射*选项卡，然后单击*编辑*铅笔图标。</block>
-  <block id="f05351f8a712da4ff1e724d342c4670b" category="list-text">单击*数据存储库*箭头将其展开。</block>
-  <block id="ee9e0fb0a09a468f33fa6f2dabc4ff49" category="inline-image-macro">编辑故障转移映射页面</block>
-  <block id="7cbc4647aa042fa4dbc711ee9aa94612" category="paragraph"><block ref="7cbc4647aa042fa4dbc711ee9aa94612" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0d59b78804ed5feec9399254629a60f1" category="list-text">记下复制计划中的保留计数值。完成这些步骤后、您需要恢复此原始值。</block>
-  <block id="e9c686cd7f0fc0f9a24375142cf2639b" category="list-text">将此计数减少为1。</block>
-  <block id="94eec0eecc897e0613b4dca05f1db3b5" category="list-text">启动按需快照。为此，请在复制计划页面上，选择该计划，单击操作图标，然后选择*立即创建快照*。</block>
-  <block id="4be920e5d3a5c6a1a13e6a9ed1ea0d96" category="list-text">成功完成快照作业后、将复制计划中的计数增加回您在第一步中记下的原始值。</block>
-  <block id="fcf0bc475de9e6576c18ef6dcf5d7506" category="list-text">对所有现有复制计划重复上述步骤。</block>
-  <block id="7967654ba38c10467e0d83677de0e180" category="list-text">*复制计划更新*：您可以通过在“应用程序”页面上按数据存储库筛选VM并选择//来更轻松地添加复制计划 <block ref="8aa3c94c171b2c9d7252afb28ee019a7" category="inline-link-macro-rx"></block>。请参阅<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。 NG资源映射页面上的更多目标详细信息。</block>
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  边缘缓存服务已于2024年8月7日被删除。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">2024年8月7日、不再支持发现和管理Kubbernetes集群。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  迁移报告服务已于2024年8月7日删除。</block>
@@ -775,4 +745,23 @@
   <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">在受限模式下使用BlueXP  时、不支持AWS本地区域。</block>
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWS本地区域</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">有关采用HA部署的AWS本地区域的详细信息，请参见<block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
+  <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
+  <block id="51ca1579fc5d4f066bdbf640a4814d76" category="list-text">*报告*：在此版本中，您现在可以生成和下载报告，以帮助您分析环境。预先设计的报告汇总故障转移和故障恢复、显示所有站点上的复制详细信息、并显示过去七天的作业详细信息。</block>
+  <block id="054b753af44fc4eeee43c9ba6037caaa" category="inline-link">创建灾难恢复报告</block>
+  <block id="023cf8170104660fc796a64fdad98afa" category="paragraph">请参阅<block ref="cca93cc3cfc082fe882eefc731706487" category="inline-link-rx"></block>。</block>
+  <block id="978337672bd8dff65bfbecb42cf21f9d" category="list-text">*30天免费试用*：在此版本中，您现在可以注册30天免费试用BlueXP  灾难恢复。以前、免费试用期限为90天。</block>
+  <block id="1cb57fbf1f1452e87f62dd668ea03759" category="paragraph">请参阅<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
+  <block id="7c63c33c2146d3ce95c7487c1ebbe27e" category="list-text">*禁用和启用复制计划*：先前版本对故障转移测试计划结构进行了更新，这是支持每日和每周计划所必需的。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。</block>
+  <block id="128ecd2ba12e92192724c8e3ed360ffc" category="list-text">*文件夹映射*：创建复制计划并映射计算资源时，现在可以映射文件夹，以便将VM恢复到为数据中心、集群和主机指定的文件夹中。</block>
+  <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">有关详细信息，请参见<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="b7d245c9fa7100d1b04bb8e37530f630" category="list-text">*可用于故障转移、故障恢复和测试故障转移的VM详细信息*：发生故障时、如果您要启动故障转移、执行故障恢复或测试故障转移、现在可以查看VM的详细信息并确定哪些VM未重新启动。</block>
+  <block id="5b7e4b08598b495e5e802015cfda0817" category="list-text">*按顺序启动的虚拟机启动延迟*：创建复制计划时，现在可以为计划中的每个虚拟机设置启动延迟。这样、您就可以设置VM的启动顺序、以确保优先级为一个的所有VM在后续优先级的VM启动之前都处于运行状态。</block>
+  <block id="6bf75b2b973c4e4b2e97cb286b4a0b22" category="list-text">*VM操作系统信息*：创建复制计划时，您现在可以看到该计划中每个VM的操作系统。这有助于确定如何将虚拟机分组到一个资源组中。</block>
+  <block id="c216ae779db45238ce5f187a4e9efc0e" category="list-text">*虚拟机名称别名*：创建复制计划时、现在可以在灾难恢复SIT上的虚拟机名称中添加前缀和后缀。这样、您就可以为计划中的VM使用一个更具描述性的名称。</block>
+  <block id="0b0c4a58a22974b8eb46383cdfabf354" category="list-text">*清理旧快照*：在此版本中、您可以删除超出指定保留数量的不再需要的任何快照。降低快照保留数量后、快照可能会逐渐累积、您现在可以将其删除以释放空间。您可以随时按需执行此操作、也可以在删除复制计划时执行此操作。</block>
+  <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">管理站点、资源组、复制计划、数据存储库和虚拟机信息</block>
+  <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">有关详细信息，请参见<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>。</block>
+  <block id="718c1087c683dccc1ea79ed6fa0fd10b" category="list-text">*同步快照*：在此版本中、您现在可以同步源和目标之间不同步的快照。如果在BlueXP  灾难恢复之外的目标上删除了快照、则可能会发生这种情况。该服务会每24小时自动删除一次源上的快照。但是、您可以按需执行此操作。通过此功能、您可以确保快照在所有站点之间保持一致。</block>
+  <block id="07851e0287e57a794c18de627c09e0e7" category="inline-link">管理复制计划</block>
+  <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">有关详细信息，请参见<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
 </blocks>
