@@ -127,7 +127,11 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.
 
 从标准模式和受限模式的3.9.40版本开始支持SELinux、而专用模式的3.9.42版本开始支持SELinux。
 
-BlueXP  不支持对Ubuntu主机使用SELinux。
+请注意以下限制：
+
+* BlueXP  不支持对Ubuntu主机使用SELinux。
+* 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
+
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["了解有关SELinux的更多信息"^]
 
@@ -198,7 +202,7 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 * * BlueXP  警报列表页面*：您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。
 * *警报详细信息*：您可以深入了解警报详细信息并查找建议。
-* *查看链接到System Manager*的集群详细信息：通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到NetApp System Manager的详细信息。
+* *查看链接到System Manager*的集群详细信息：通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP System Manager的详细信息。
 
 
 https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  警报"](英文)
@@ -211,6 +215,10 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 
 === 2023年7月30日
 
+
+
+==== 支持另外三个区域
+
 现在、客户可以在以下三个新AWS地区为NetApp ONTAP文件系统创建Amazon FSx：欧洲(苏黎世)、欧洲(西班牙)和亚太地区(亚马逊河)。
 
 请参见 link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx for NetApp ONTAP现已在另外三个地区推出"^] 了解完整详细信息。
@@ -219,17 +227,33 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 
 === 2023年7月2日
 
-* 您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["添加Storage VM"] 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。
-* “我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。
 
+
+==== 添加Storage VM
+
+您现在可以： link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["添加Storage VM"] 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。
+
+
+
+==== **我的商机**选项卡现在是**我的资产**
+
+“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。
 
 
 
 === 2023年6月4日
 
-* 时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
-* 时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
 
+
+==== 维护窗口开始时间
+
+时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
+
+
+
+==== 使用FlexGroup分发卷数据
+
+时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
 
 
 
@@ -489,6 +513,29 @@ BlueXP  Classification已将适用于Microsoft Azure和Google Cloud Platform (G
 
 
 
+=== 2024年10月25日
+
+
+
+==== N1系列机器无法在BlueXP  上选择
+
+在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud 支持的配置"^](英文)
+
+
+
+==== 本地区域支持在私有模式下使用Amazon Web Services
+
+现在、BlueXP  支持在私有模式下使用AWS本地区域进行Cloud Volumes ONTAP高可用性(HA)部署。以前仅限于标准模式的支持现已扩展为包括专用模式。
+
+
+NOTE: 在受限模式下使用BlueXP  时、不支持AWS本地区域。
+
+有关采用HA部署的AWS本地区域的详细信息，请参见link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
+
+
+
 === 2024年10月7日
 
 
@@ -521,18 +568,6 @@ WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数�
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM存储"^]
 
-
-
-
-=== 2024年8月23日
-
-
-
-==== 现在、AWS支持加拿大西部地区
-
-现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。
-
-有关所有地区的列表，请参见 https://bluexp.netapp.com/cloud-volumes-global-regions["AWS下的全球区域图"^]。
 
 
 

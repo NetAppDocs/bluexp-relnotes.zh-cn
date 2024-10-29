@@ -26,16 +26,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["设置和管理
 
 == 存储
 
-* https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Azure Blb存储"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/bluexp-fsx-ontap/whats-new.html["适用于 ONTAP 的 Amazon FSX"^]
 * https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Amazon S3存储"^]
-* Cloud Volumes ONTAP
-+
-** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP 发行说明"^]
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["《BlueXP中的Cloud Volumes ONTAP 管理发行说明》"^]
-
-
+* https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Azure Blb存储"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP  中的Cloud Volumes ONTAP管理"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["适用于 Google Cloud 的 Cloud Volumes Service"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["E系列系统"^]
 * https://docs.netapp.com/us-en/bluexp-google-cloud-storage/whats-new.html["Google Cloud 存储"^]
@@ -48,10 +44,12 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["设置和管理
 == 数据服务
 
 * https://docs.netapp.com/us-en/bluexp-alerts/whats-new.html["警报"^]
+* https://docs.netapp.com/us-en/netapp-automation/about/whats-new.html["自动化目录"^]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["备份和恢复"^]
 * https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["分类"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-ops/whats-new.html["云运营"^]
 * https://docs.netapp.com/us-en/bluexp-copy-sync/whats-new.html["复制和同步"^]
+* https://docs.netapp.com/us-en/active-iq/reference_new_activeiq.html["数字顾问"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["数字电子钱包"^]
 * https://docs.netapp.com/us-en/bluexp-disaster-recovery/release-notes/dr-whats-new.html["灾难恢复"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/release-notes/whats-new.html["经济效率"^]

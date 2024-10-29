@@ -14,8 +14,6 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">管理功能</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">最近更改</block>
-  <block id="f7d121e2a54c62002dd74f6b9dac8069" category="inline-link">Cloud Volumes ONTAP 发行说明</block>
-  <block id="ca138f4890a80dcb981add74fa328598" category="list-text"><block ref="ca138f4890a80dcb981add74fa328598" category="inline-link-rx"></block></block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">2021 年 4 月 11 日</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">支持卷模板</block>
   <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">通过新的应用程序模板服务，您可以为 Azure NetApp Files 设置卷模板。此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如，容量池，大小，协议，卷应驻留的 vNet 和子网等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。</block>
@@ -59,7 +57,6 @@
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">支持E系列</block>
   <block id="dc8bb8905a6984d0c45a4ada9e618ace" category="section-title">支持StorageGRID</block>
   <block id="db502201c33ba3b3f867c8360cce228a" category="doc">BlueXP发行说明</block>
-  <block id="5bffab86d093605978b7c1efd3c0d337" category="inline-link">《BlueXP中的Cloud Volumes ONTAP 管理发行说明》</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXP中的最新变更</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：</block>
@@ -115,7 +112,6 @@
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
   <block id="0ce55dbe491d96365e2c6abd492cbf95" category="list-text"><block ref="0ce55dbe491d96365e2c6abd492cbf95" category="inline-link-rx"></block></block>
   <block id="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="list-text"><block ref="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="inline-link-rx"></block></block>
-  <block id="1f3e69b8c3c594d1f0dafae12df4c312" category="list-text"><block ref="1f3e69b8c3c594d1f0dafae12df4c312" category="inline-link-rx"></block></block>
   <block id="18c372e7815b508eb4ff2301938c4f7b" category="list-text"><block ref="18c372e7815b508eb4ff2301938c4f7b" category="inline-link-rx"></block></block>
   <block id="b46ed1f8a8d612b4083a72f6247afc99" category="list-text"><block ref="b46ed1f8a8d612b4083a72f6247afc99" category="inline-link-rx"></block></block>
   <block id="6631ed7abd96469c08f3809e6a47378b" category="list-text"><block ref="6631ed7abd96469c08f3809e6a47378b" category="inline-link-rx"></block></block>
@@ -597,11 +593,6 @@
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">软件版本支持</block>
   <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">升级在7-模式下运行的Data ONTAP存储系统</block>
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">由于7-模式系统已停止有限支持，因此不再提供*7-Mode Upgrade Advisor Plans (7-模式升级顾问计划)*报告。有关详细信息，请参见 <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>。详细了解 <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>。</block>
-  <block id="caf47538a5b97cacf4aba3098b6f9924" category="section-title">2024年8月23日</block>
-  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">现在、AWS支持加拿大西部地区</block>
-  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">现在、适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的AWS支持加拿大西部地区。</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">AWS下的全球区域图</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">有关所有地区的列表，请参见<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">支持RHEL 9.4</block>
   <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日(版本1.31)</block>
@@ -726,9 +717,7 @@
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link">警报</block>
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
   <block id="32981b0c6558eec412787b4c28c9f7a5" category="paragraph">此初始版本的BlueXP  警报包括以下功能：</block>
-  <block id="d75b9d6acc7b490b5df3a8425ace3e5a" category="list-text">* BlueXP  警报列表页面*：您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。</block>
   <block id="335c0f5b63e966d180738ce07c85dc3f" category="list-text">*警报详细信息*：您可以深入了解警报详细信息并查找建议。</block>
-  <block id="963a0580f34d0876630a188f398484de" category="list-text">*查看链接到System Manager*的集群详细信息：通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到NetApp System Manager的详细信息。</block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">了解BlueXP  警报</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>(英文)</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">增强了选择升级版本的用户体验</block>
@@ -761,4 +750,29 @@
   <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">调整带宽以传输非活动数据</block>
   <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">通知中心中显示的层事件</block>
   <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">分层选项卡已重命名和更新</block>
+  <block id="d5cf0012c1559cd0fc39cf41bafb6cd2" category="list-text"><block ref="d5cf0012c1559cd0fc39cf41bafb6cd2" category="inline-link-rx"></block></block>
+  <block id="85c278d276efbdfebd873e93e881e42d" category="inline-link">BlueXP  中的Cloud Volumes ONTAP管理</block>
+  <block id="a34dda22ffea87f7068da01b5dd851c0" category="list-text"><block ref="a34dda22ffea87f7068da01b5dd851c0" category="inline-link-rx"></block></block>
+  <block id="d7a02621d52c29a3c5f7895e817cba5b" category="inline-link">自动化目录</block>
+  <block id="4201d45b889a30d645c44cd087e150b0" category="list-text"><block ref="4201d45b889a30d645c44cd087e150b0" category="inline-link-rx"></block></block>
+  <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
+  <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">请注意以下限制：</block>
+  <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。</block>
+  <block id="221e1ce85a4c0e9e170e711608695972" category="list-text">* BlueXP  警报列表页面*：您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。</block>
+  <block id="584c54dd31b512867535ecfbc6397a6f" category="list-text">*查看链接到System Manager*的集群详细信息：通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP System Manager的详细信息。</block>
+  <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">支持另外三个区域</block>
+  <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">添加Storage VM</block>
+  <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**我的商机**选项卡现在是**我的资产**</block>
+  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="section-title">维护窗口开始时间</block>
+  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">使用FlexGroup分发卷数据</block>
+  <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
+  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1系列机器无法在BlueXP  上选择</block>
+  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。</block>
+  <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link">Google Cloud 支持的配置</block>
+  <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>(英文)</block>
+  <block id="e8ae21b110baed89680dca18585c158c" category="section-title">本地区域支持在私有模式下使用Amazon Web Services</block>
+  <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">现在、BlueXP  支持在私有模式下使用AWS本地区域进行Cloud Volumes ONTAP高可用性(HA)部署。以前仅限于标准模式的支持现已扩展为包括专用模式。</block>
+  <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">在受限模式下使用BlueXP  时、不支持AWS本地区域。</block>
+  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWS本地区域</block>
+  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">有关采用HA部署的AWS本地区域的详细信息，请参见<block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
