@@ -47,7 +47,6 @@
   <block id="b42dff6de52c55fe0d6831817d6b309d" category="section-title">FSX for ONTAP 作为数据源</block>
   <block id="0f8ffeac5211fc4e0dfb43c430753ef2" category="paragraph">现在、您可以将数据从适用于ONTAP 的Amazon FSX文件系统复制到以下目标：</block>
   <block id="0ef90fde5440e5fbd859cb4d59f76f2c" category="list-text">内部 ONTAP 集群</block>
-  <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">电子邮件通知</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="392d70ca39f31f10bd637936769788df" category="inline-link">StorageGRID</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
@@ -66,22 +65,16 @@
   <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">能够从BlueXP添加新存储分段</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">了解如何添加新的Amazon S3存储分段</block>
-  <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>。</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
-  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">如果您配置了通知设置、则在BYOL许可证即将过期("警告"通知)或已过期("错误"通知)时、您可以收到电子邮件通知。</block>
-  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">了解如何设置电子邮件通知</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">经济效率</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">2023年4月2日</block>
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">运营故障恢复能力</block>
-  <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">了解如何查看帐户中的已用容量</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">已删除许可选项卡</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">运营故障恢复能力是一项服务、可帮助您分析警报和事件、以保持服务和解决方案的运行状况、正常运行时间和性能。</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">设置和管理</block>
   <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="inline-link">数字电子钱包</block>
   <block id="1d56c7b4c7e2384a1f75532fbd18626d" category="list-text"><block ref="1d56c7b4c7e2384a1f75532fbd18626d" category="inline-link-rx"></block></block>
-  <block id="164bf9dea8d8396a2e7501258b908616" category="section-title">市场订阅的许可容量</block>
-  <block id="1e9f781ad3dabc2f942313854ce94883" category="paragraph"><block ref="bcd8bf14da5e102dbc4b48dd0870869e" category="inline-link-rx"></block>。</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">备份和恢复</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">分类</block>
   <block id="5b942e8f71976a7f4120006aa3ac54cc" category="inline-link">云运营</block>
@@ -90,14 +83,9 @@
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">修复</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">分层</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">数字顾问</block>
-  <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">全新的BlueXP经济高效服务可识别当前或预测的低容量存储资产、并为内部AFF 系统提供数据层或额外容量建议。</block>
-  <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">详细了解BlueXP的经济效益</block>
-  <block id="838d01d8bf08e23ff670a400ad2cb368" category="paragraph"><block ref="c4b58b1c24fbcd13ec6df8ee9e6c3a23" category="inline-link-macro-rx"></block>。</block>
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">通过使用新的BlueXP操作故障恢复能力服务及其自动化IT操作风险修复建议、您可以在发生中断或故障之前实施建议的修复措施。</block>
   <block id="070849913b65c4cb130cf632f0ac2008" category="inline-link-macro">详细了解BlueXP操作故障恢复能力</block>
   <block id="6bea546ba36c0c8c8bed5d22ed6af63d" category="paragraph"><block ref="d51dda3e944cc19bf96c07e1874304d0" category="inline-link-macro-rx"></block>。</block>
-  <block id="d128bda2634e1051cc984231da065144" category="list-text">BlueXP电子钱包现在支持电子邮件通知。</block>
-  <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">查看Cloud Volumes ONTAP 基于容量的许可时、BlueXP数字钱包现在会显示您通过Marketplace Private Offers购买的许可容量。</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
   <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloud Private优惠</block>
   <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplace订阅、并显示订阅的结束日期和期限。通过此增强功能、您可以验证是否已成功接受此私人优惠并验证其条款。</block>
@@ -136,13 +124,11 @@
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">能够从BlueXP添加新存储帐户</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">了解如何添加新的Azure Blb存储帐户</block>
-  <block id="34738f8a469a7971575b53ff1435539f" category="paragraph">您已有一段时间可以在BlueXP Canvs上查看Azure Blb Storage了。现在、您可以直接从BlueXP添加新存储帐户并更改现有存储帐户的属性。<block ref="7f415337c5df45cbb7bfeb019667a476" category="inline-link-rx"></block>。</block>
   <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023年6月4日</block>
   <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">创建工作环境</block>
   <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">时间 <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。</block>
   <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">创建卷</block>
   <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">时间 <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。</block>
-  <block id="6908c55ed2597c0891f949ee4c49f1df" category="paragraph"><block ref="6908c55ed2597c0891f949ee4c49f1df" category="inline-link-rx"></block></block>
   <block id="8f47a476ee12f068a45739014a319a65" category="paragraph">卷缓存是ONTAP 9软件的一项功能、它是一项远程缓存功能、可简化文件分发、通过使资源更靠近用户和计算资源所在位置来减少WAN延迟、并降低WAN带宽成本。卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。</block>
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">详细了解BlueXP卷缓存</block>
@@ -151,12 +137,7 @@
   <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">添加Storage VM</block>
   <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">您现在可以： <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。</block>
-  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2023年7月2日</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">了解此版本 Cloud Volumes ONTAP 中的新增功能</block>
-  <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">从我的资产中发现集群</block>
-  <block id="4573c689742769edc01e3f45205fd784" category="paragraph">现在、您可以通过*画布&gt;我的资产*发现内部ONTAP集群、方法是根据与您的BlueXP登录电子邮件地址关联的ONTAP集群选择BlueXP预先发现的集群。</block>
-  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">从我的资产页面了解如何发现集群</block>
-  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">激活BlueXP分层后、ONTAP可以使用无限的网络带宽将非活动数据从集群中的卷传输到对象存储。如果您发现分层流量正在影响正常用户工作负载、则可以限制传输期间可使用的带宽量。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">现在、如果集群对其冷数据(包括未分层任何数据的集群)的分层不足20%、则分层事件"将其他数据从集群&lt;name&gt;分层到对象存储以提高存储效率"将显示为通知。</block>
@@ -167,7 +148,6 @@
   <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">2023年7月10日</block>
   <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">可以通过BlueXP添加新存储分段并管理现有存储分段</block>
   <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">了解如何添加新的Google Cloud存储分段</block>
-  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP添加新存储分段并更改现有存储分段的属性。<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>。</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">现在、您可以使用BlueXP审核服务API导出审核日志。</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">详细了解如何使用审核服务API</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
@@ -405,10 +385,6 @@
   <block id="7aea075f0d949c2526cea755a2dee13f" category="paragraph">以前、您只能对资产进行评估、并确定是否建议进行技术更新。</block>
   <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">此功能现在是左侧导航栏中技术更新选项的一部分。</block>
   <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">评估技术更新</block>
-  <block id="914b4ad9ada7977f36d427a9664a4235" category="paragraph">详细了解 <block ref="4305c0855ed1712385868c1ca4414cc5" category="inline-link-macro-rx"></block>。</block>
-  <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">2024年3月28日</block>
-  <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">了解如何查看升级建议和生成升级计划。</block>
-  <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">旧版本的Upgrade Advisor现已弃用。您可以使用增强版的Upgrade Advisor为单个集群和多个集群生成升级计划。 <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
   <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">2024年4月22日</block>
   <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">备份到对象策略设置</block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">BlueXP修复服务已于2024年4月22日删除。</block>
@@ -416,8 +392,6 @@
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">了解作为BlueXP平台一部分的云服务的最新变更。有关完整的版本历史记录、请转到 <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> 针对每个服务。</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">2024年5月17日</block>
-  <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">了解有关设置许可的更多信息</block>
-  <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>。</block>
   <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">对内部连接器使用RHEL 8和RHEL 9时的限制</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">主机要求</block>
   <block id="6aa3862f9073595cb60208eb918da431" category="paragraph">对于在RHEL 8或9主机上手动安装Connector软件的任何操作、BlueXP Connector 3.9.40支持Red Hat Enterprise Linux版本8和9的某些版本、而不考虑中所述的操作系统位于何处<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。目前、使用Podman引擎时、BlueXP备份和恢复存在两个限制。</block>
@@ -429,32 +403,12 @@
   <block id="5e8c098d325749413b23d5eba5837aad" category="inline-link">在非公开站点中还原BlueXP备份和恢复数据</block>
   <block id="b682afa0ff8a1d136b51d3115421ac1b" category="list-text"><block ref="b682afa0ff8a1d136b51d3115421ac1b" category="inline-link-rx"></block></block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
-  <block id="9df62cb4d6f151b560e84723841bd523" category="paragraph">此BlueXP灾难恢复版本包括以下更新：</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">发行说明（按服务）</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
-  <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">此版本包含以下更新。</block>
-  <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">映射扫描可收集元数据</block>
-  <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">以下元数据在映射扫描期间从文件中提取、并显示在"监管"、"合规性"和"调查"信息板上：</block>
-  <block id="16627cf42947f5240556f0586110db9b" category="list-text">Working environment</block>
-  <block id="6c63358fa61dbacebcb3b3cabf06b4f3" category="list-text">Working environment type</block>
-  <block id="8e1608d6951087912c426bcb53d12280" category="list-text">存储库</block>
-  <block id="6622c14ce91b6b9683505626a5eebdd2" category="list-text">文件类型</block>
-  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">Used capacity</block>
-  <block id="18de356008c3efffac62590fd7849509" category="list-text">文件数</block>
-  <block id="1908624a0bca678cd26b99bfd405324e" category="list-text">文件大小</block>
-  <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">文件创建</block>
-  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">文件上次访问</block>
-  <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">文件上次修改时间</block>
-  <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">文件发现时间</block>
-  <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">权限提取</block>
-  <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="section-title">信息板中的其他数据</block>
-  <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">此版本更新了映射扫描期间显示在"监管"、"合规性"和"调查"信息板中的数据。</block>
-  <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">映射扫描与分类扫描之间有何区别</block>
-  <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">有关详细信息、请参见<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability信息板</block>
   <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Sustainability信息板概述</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">了解作为BlueXP平台一部分的云服务的最新变更。</block>
@@ -466,28 +420,12 @@
   <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">如果您当前正在从BlueXP管理Azure NetApp Files、则需要将此权限添加到与先前创建的Microsoft Entra应用程序关联的自定义角色。</block>
   <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">了解如何设置Microsoft Entra应用程序和查看自定义角色权限</block>
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>(英文)</block>
-  <block id="3b08fbca8f3b3deaf466cedfd425cfc6" category="section-title">2024年7月1日(版本1.33)</block>
-  <block id="d61892207457d808cffbfc18b9dcd8ad" category="section-title">支持Ubuntu</block>
-  <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">此版本支持Ubuntu 24.04 Linux平台。</block>
   <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">2024年7月4日</block>
-  <block id="5e63fb298525a46837cedfd7fc3c5002" category="paragraph">通过环境指标深入了解存储系统的环境运行状况、现在可以根据高级预测模型提供更精确的预计用电量、直接碳用量和热量排放值。要了解更多信息，请参阅 <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>。</block>
-  <block id="8352fdd61dbba9f97925bd7797c4eb47" category="paragraph">E系列和StorageGRID系统现在支持Sustainability。您可以从这些系统的可持续性信息板中查看建议的操作和环境指标列表、这些操作和指标会显示功率、直接碳用量和热量的预测。要了解更多信息，请参阅 <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>。</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp不会对任何预览的工作负载容量收取任何费用。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">将应用程序故障转移到远程站点</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">请参阅<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024年7月1日</block>
-  <block id="fdb1f5ab91dd63ebda3ff72247aa7b2b" category="list-text">*自带许可证(BYOL)*：在此版本中，您可以使用BYOL许可证，这是您从NetApp销售代表处获得的NetApp许可证文件(NLF)</block>
-  <block id="0c379e4399020bc48ac7da5510998e1a" category="list-text">*在文件级别恢复应用程序工作负载*：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
-  <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">在此版本中、如果帐户中的所有BlueXP连接器均未使用Podman、则会启用单个文件还原功能。否则、该帐户将被禁用。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">详细了解如何从勒索软件攻击中恢复</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>(英文)</block>
-  <block id="47882b8bc0a2b23d26218cd1691e4099" category="list-text">*在文件级别恢复应用程序工作负载之前，请下载受影响文件的列表*。现在、您可以访问警报页面以下载CSV文件中受影响文件的列表、然后使用恢复页面上传CSV文件。</block>
-  <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">了解有关在还原应用程序之前下载受影响文件的更多信息</block>
-  <block id="2b133b12308ff6cab26bdc5342a3372d" category="paragraph"><block ref="008791716c908b75ddd12a1a3f620fa8" category="inline-link-rx"></block>(英文)</block>
-  <block id="1acc112f7ac5f0e2374f0e20883a6c5a" category="list-text">*删除保护计划*：在此版本中、您现在可以删除勒索软件保护策略。</block>
-  <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">了解有关保护工作负载和管理勒索软件保护策略的更多信息</block>
-  <block id="20eb1918e9de308789133c5a0b0cc2c4" category="paragraph"><block ref="88ddee768f79e382777baf84277fe57c" category="inline-link-rx"></block>(英文)</block>
-  <block id="4c57408166809e028adf9be27b861c0a" category="paragraph">此版本的BlueXP勒索软件保护包括以下更新：</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">现在可以从NetApp 支持站点 下载新的专用模式版本。</block>
@@ -517,14 +455,7 @@
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">在此版本中、对FlexGroup文件夹还原的支持是一项技术预览。</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">使用浏览和还原还原文件夹和文件(&amp;A)</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">有关手动启用的详细信息，请参见<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
-  <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
-  <block id="44a73383773bebac3194e73bd06397a8" category="section-title">从CentOS更改为Ubuntu</block>
-  <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  Classification已将适用于Microsoft Azure和Google Cloud Platform (GCP)的Linux操作系统从CentOS 7.9更新为Ubuntu 22.04。</block>
-  <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">在可访问Internet的Linux主机上安装并准备Linux主机系统</block>
-  <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">有关部署的详细信息，请参见<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>。</block>
   <block id="895b67d31a903fc743f186c56aeecff6" category="section-title">2024 年 8 月 2 日</block>
-  <block id="1ff3f27272f2855394e8e2cf0abfa836" category="list-text">*支持使用FC*从内部到内部的VMware VMFS数据存储库：此版本包含一个_technology preview_支持在VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM、以便将FC保护到内部存储。以前、该服务提供了一个技术预览版、支持将VMFS数据存储库用于iSCSI。</block>
-  <block id="b9dbe1e85847c069664ebe888e76d35c" category="list-text">*作业取消*：在此版本中、您现在可以在作业监控器UI中取消作业。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">监控作业</block>
   <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">请参阅<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">方法如下：</block>
@@ -535,9 +466,7 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  边缘缓存服务已于2024年8月7日被删除。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">2024年8月7日、不再支持发现和管理Kubbernetes集群。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  迁移报告服务已于2024年8月7日删除。</block>
-  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024 年 8 月 5 日</block>
   <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
-  <block id="11f5c2b9557e3c8b41afc65159260e17" category="list-text">*使用Splunk Cloud进行威胁检测*：您可以自动将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。对于先前版本、您只能选择AWS安全中心作为您的SIEM。在此版本中、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
   <block id="43371a1519dc6641cd8852962e536c3e" category="section-title">2024 年 8 月 7 日</block>
@@ -555,7 +484,6 @@
   <block id="a262e6e8b2140ed65b4662f6ea3826e9" category="section-title">ONTAP更新</block>
   <block id="bfcca17c4ea8c7320a1a54960ce35444" category="paragraph">BlueXP  软件更新服务通过降低风险并确保客户能够充分利用ONTAP功能、为用户提供无缝的更新体验。</block>
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  软件更新</block>
-  <block id="3b51dbc206ff39db31b586cff27b62b6" category="paragraph">详细了解 <block ref="5932964ef1a5389f9863c988396d1e93" category="inline-link-macro-rx"></block>。</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">2024 年 8 月 11 日</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.54。</block>
   <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">2024年8月21日</block>
@@ -565,11 +493,9 @@
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">由于7-模式系统已停止有限支持，因此不再提供*7-Mode Upgrade Advisor Plans (7-模式升级顾问计划)*报告。有关详细信息，请参见 <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>。详细了解 <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>。</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">2024年9月9日</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">支持RHEL 9.4</block>
-  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024年9月2日(版本1.31)</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">扫描StorageGRID数据</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分类现在可以在StorageGRID中扫描数据。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">有关详细信息，请参见 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
-  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">2024年8月5日(版本1.34)</block>
   <block id="cdd78645b017b927a25b5449e345f823" category="section-title">WORm和ARP功能不再收费</block>
   <block id="9dab6b96899670128353b1e92c2b8997" category="paragraph">简化的定价为您带来以下优势：</block>
   <block id="000f6c26eec43af35931bc5e6fbf9f49" category="list-text">当前包含WORM和ARP的帐户将不再为这些功能产生费用。接下来、您的计费将仅对容量使用量收费、就像此次更改之前一样。WORm和ARP将不再包含在您的未来账单中。</block>
@@ -577,9 +503,7 @@
   <block id="1974af11cb1ac87d0b58d8696f893e4d" category="list-text">所有新客户的Cloud Volumes ONTAP产品均不包括WORM和ARP费用。</block>
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">详细了解这些功能：</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="inline-link">提高防范勒索软件的能力</block>
-  <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
   <block id="8aca368ccd90320c96e8a69a43545003" category="inline-link">WORM存储</block>
-  <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
   <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">BlueXP  的一些经济效益功能已暂时禁用：</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">技术更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">添加容量</block>
@@ -623,8 +547,6 @@
   <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">加快目录索引编制速度可改进搜索和还原功能</block>
   <block id="9353e94049314c6236b51712848f2572" category="paragraph">此版本改进了目录索引功能、可以更快地完成基线索引编制。通过加快索引编制速度、您可以更快地使用搜索和还原功能。</block>
   <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
-  <block id="ee811bd919a27bd2eb705f65ed45e4f6" category="paragraph">此BlueXP  灾难恢复版本包含以下更新。</block>
-  <block id="b077aa4f9a421cc2e2782608fb5caf4f" category="list-text">*支持从内部到内部的VMware VMFS数据存储库*：此版本支持在VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM、以便将iSCSI和FC保护到内部存储。以前、该服务提供了一个_technology preview_、支持iSCSI和FC的VMFS数据存储库。</block>
   <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">以下是有关iSCSI和FC协议的一些其他注意事项：</block>
   <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FC支持的是客户端前端协议、而不是复制协议。</block>
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。</block>
@@ -678,7 +600,6 @@
   <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">了解有关SELinux的更多信息</block>
   <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
   <block id="67f165f48588df98eb8f59d8a7c512d8" category="section-title">2024年9月23日</block>
-  <block id="6a9f822bb587b015bf3224364464cbed" category="section-title">支持服务</block>
   <block id="65077e068c20e8afeca74c12711e893e" category="paragraph">现在、NetApp SupportEdge Basic服务产品包括SupportEdge Advisor和SupportEdge Expert中提供的所有数字顾问功能、但完整堆栈拓扑(Full-Stack Topology、VMware)除外、即使启用了该功能、也无法显示VMware完整堆栈监控。</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">支持ASA R2系统</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">ASA R2系统没有其他可用的管理选项。您不能使用标准视图、也不能启用BlueXP服务。</block>
@@ -686,14 +607,11 @@
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link">警报</block>
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
-  <block id="32981b0c6558eec412787b4c28c9f7a5" category="paragraph">此初始版本的BlueXP  警报包括以下功能：</block>
-  <block id="335c0f5b63e966d180738ce07c85dc3f" category="list-text">*警报详细信息*：您可以深入了解警报详细信息并查找建议。</block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">了解BlueXP  警报</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>(英文)</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">增强了选择升级版本的用户体验</block>
   <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。</block>
   <block id="2182ff9388484137699eb937c0df0141" category="inline-link">升级 Cloud Volumes ONTAP 软件</block>
-  <block id="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="paragraph"><block ref="c2f5c6d8ccd2cc8bdc92db0ad0c79342" category="inline-link-rx"></block></block>
   <block id="c5686848892b4de33534dcc294c33fff" category="paragraph">WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。</block>
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
@@ -704,7 +622,6 @@
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">连接器3.9.45修补程序</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修补程序包含错误修复。</block>
-  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">2024年10月10日(版本1.36)</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.4。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2、9.3和9.4。</block>
@@ -728,8 +645,6 @@
   <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
   <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">请注意以下限制：</block>
   <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。</block>
-  <block id="221e1ce85a4c0e9e170e711608695972" category="list-text">* BlueXP  警报列表页面*：您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。</block>
-  <block id="584c54dd31b512867535ecfbc6397a6f" category="list-text">*查看链接到System Manager*的集群详细信息：通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP System Manager的详细信息。</block>
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">支持另外三个区域</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">添加Storage VM</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**我的商机**选项卡现在是**我的资产**</block>
@@ -746,22 +661,82 @@
   <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">AWS本地区域</block>
   <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">有关采用HA部署的AWS本地区域的详细信息，请参见<block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>。</block>
   <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
-  <block id="51ca1579fc5d4f066bdbf640a4814d76" category="list-text">*报告*：在此版本中，您现在可以生成和下载报告，以帮助您分析环境。预先设计的报告汇总故障转移和故障恢复、显示所有站点上的复制详细信息、并显示过去七天的作业详细信息。</block>
   <block id="054b753af44fc4eeee43c9ba6037caaa" category="inline-link">创建灾难恢复报告</block>
   <block id="023cf8170104660fc796a64fdad98afa" category="paragraph">请参阅<block ref="cca93cc3cfc082fe882eefc731706487" category="inline-link-rx"></block>。</block>
-  <block id="978337672bd8dff65bfbecb42cf21f9d" category="list-text">*30天免费试用*：在此版本中，您现在可以注册30天免费试用BlueXP  灾难恢复。以前、免费试用期限为90天。</block>
   <block id="1cb57fbf1f1452e87f62dd668ea03759" category="paragraph">请参阅<block ref="7585b54fad00f1219b8233730153156f" category="inline-link-rx"></block>。</block>
-  <block id="7c63c33c2146d3ce95c7487c1ebbe27e" category="list-text">*禁用和启用复制计划*：先前版本对故障转移测试计划结构进行了更新，这是支持每日和每周计划所必需的。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。</block>
-  <block id="128ecd2ba12e92192724c8e3ed360ffc" category="list-text">*文件夹映射*：创建复制计划并映射计算资源时，现在可以映射文件夹，以便将VM恢复到为数据中心、集群和主机指定的文件夹中。</block>
   <block id="1a390a4e18b059462c8f07ea2ea02106" category="paragraph">有关详细信息，请参见<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
-  <block id="b7d245c9fa7100d1b04bb8e37530f630" category="list-text">*可用于故障转移、故障恢复和测试故障转移的VM详细信息*：发生故障时、如果您要启动故障转移、执行故障恢复或测试故障转移、现在可以查看VM的详细信息并确定哪些VM未重新启动。</block>
-  <block id="5b7e4b08598b495e5e802015cfda0817" category="list-text">*按顺序启动的虚拟机启动延迟*：创建复制计划时，现在可以为计划中的每个虚拟机设置启动延迟。这样、您就可以设置VM的启动顺序、以确保优先级为一个的所有VM在后续优先级的VM启动之前都处于运行状态。</block>
-  <block id="6bf75b2b973c4e4b2e97cb286b4a0b22" category="list-text">*VM操作系统信息*：创建复制计划时，您现在可以看到该计划中每个VM的操作系统。这有助于确定如何将虚拟机分组到一个资源组中。</block>
-  <block id="c216ae779db45238ce5f187a4e9efc0e" category="list-text">*虚拟机名称别名*：创建复制计划时、现在可以在灾难恢复SIT上的虚拟机名称中添加前缀和后缀。这样、您就可以为计划中的VM使用一个更具描述性的名称。</block>
-  <block id="0b0c4a58a22974b8eb46383cdfabf354" category="list-text">*清理旧快照*：在此版本中、您可以删除超出指定保留数量的不再需要的任何快照。降低快照保留数量后、快照可能会逐渐累积、您现在可以将其删除以释放空间。您可以随时按需执行此操作、也可以在删除复制计划时执行此操作。</block>
   <block id="3eddfb488d257605e7713c24d210beee" category="inline-link">管理站点、资源组、复制计划、数据存储库和虚拟机信息</block>
   <block id="310c40c0ef022c90f1370d1fe91ca720" category="paragraph">有关详细信息，请参见<block ref="db7c318fcbcad8cfb9a44ac897b870b2" category="inline-link-rx"></block>。</block>
-  <block id="718c1087c683dccc1ea79ed6fa0fd10b" category="list-text">*同步快照*：在此版本中、您现在可以同步源和目标之间不同步的快照。如果在BlueXP  灾难恢复之外的目标上删除了快照、则可能会发生这种情况。该服务会每24小时自动删除一次源上的快照。但是、您可以按需执行此操作。通过此功能、您可以确保快照在所有站点之间保持一致。</block>
   <block id="07851e0287e57a794c18de627c09e0e7" category="inline-link">管理复制计划</block>
   <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">有关详细信息，请参见<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
+  <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">BlueXP  警报列表页面</block>
+  <block id="3108a0619eec0e2ef9c6c5bd796bbf0d" category="paragraph">您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。</block>
+  <block id="907b4f5ff0a11b28375c092b0b876c3e" category="section-title">警报详细信息</block>
+  <block id="2c132bb868e25bdbc509ab83d2436d71" category="paragraph">您可以深入了解警报详细信息并查找建议。</block>
+  <block id="b361027502c50a2e2c7efbe96a5720bf" category="section-title">查看链接到System Manager的集群详细信息</block>
+  <block id="a81101241f6ae4b53dda6f72078e1a84" category="paragraph">通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP系统管理器的详细信息。</block>
+  <block id="7e4353e591e7ee71b0cc70a66b02ee7a" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP  添加新存储分段并更改现有存储分段的属性。<block ref="f5358cf9e8e537088a631ff4313d8401" category="inline-link-rx"></block>(英文)。</block>
+  <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">您已有一段时间可以在BlueXP Canvs上查看Azure Blb Storage了。现在、您可以直接从BlueXP  添加新存储帐户并更改现有存储帐户的属性。<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>(英文)。</block>
+  <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024年11月4日</block>
+  <block id="c1922490c576eff789b323f98c667589" category="section-title">1.37 版</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">支持RHEL 8.10</block>
+  <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v8.10。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
+  <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3和9.4。</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXP分类</block>
+  <block id="2b569c1a8e17ba534c2e1f57f9d1bbe9" category="paragraph">详细了解<block ref="491ed29a13fdb2b66f8e1bbeefef79a5" category="inline-link-rx"></block>。</block>
+  <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">支持NFS v4.1</block>
+  <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">除了先前支持的版本之外、此版本还支持NFS v4.1。</block>
+  <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">1.36 版</block>
+  <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">版本：1.</block>
+  <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
+  <block id="7a73f560e215c4ff952d3384c5435ae9" category="list-text"><block ref="7a73f560e215c4ff952d3384c5435ae9" category="inline-link-rx"></block></block>
+  <block id="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="list-text"><block ref="c8eac8ecc3bb9bb52e4fa6b3d34c3c38" category="inline-link-rx"></block></block>
+  <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">错误修复</block>
+  <block id="cd0b2a52b53e1925d55439a6132bad52" category="section-title">支持服务</block>
+  <block id="38d80ed5e3a33df19ee71c05059b6258" category="paragraph">通过环境指标深入了解存储系统的环境运行状况、现在可以根据高级预测模型提供更精确的预计用电量、直接碳用量和热量排放值。要了解更多信息，请参阅 <block ref="093aadbd7a28ff730cdbe5efbf5b8c02" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5562ce2e22a86c247849904ecef3dc8" category="section-title">报告</block>
+  <block id="5139de9c5a9b2b36569213d7e9b32f21" category="paragraph">现在、您可以生成并下载报告、以帮助您分析环境。预先设计的报告汇总故障转移和故障恢复、显示所有站点上的复制详细信息、并显示过去七天的作业详细信息。</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30天免费试用</block>
+  <block id="7a9cfed0d96577c6b811d11dfc152202" category="paragraph">现在、您可以注册30天免费试用BlueXP  灾难恢复。以前、免费试用期限为90天。</block>
+  <block id="3d1d28bb2a74cb6e16888dd71e05374a" category="section-title">禁用和启用复制计划</block>
+  <block id="6f963c01bb5a207fe21d3d9137892d53" category="paragraph">先前版本对故障转移测试计划结构进行了更新、需要更新以支持每日和每周计划。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。</block>
+  <block id="2c4b676c68e03ba0114109310daeb0bb" category="section-title">文件夹映射</block>
+  <block id="3bdb4d4a16c6f952e581bc706b1882f1" category="paragraph">现在、在创建复制计划并映射计算资源时、您可以映射文件夹、以便在为数据中心、集群和主机指定的文件夹中恢复VM。</block>
+  <block id="ddf914c371b7feb4383b7444a99b5fd7" category="section-title">可用于故障转移、故障恢复和测试故障转移的VM详细信息</block>
+  <block id="363712ac31c5614bfddfdcfad95b6a12" category="paragraph">如果发生故障、并且您正在启动故障转移、执行故障恢复或测试故障转移、现在可以查看VM的详细信息并确定哪些VM未重新启动。</block>
+  <block id="5f20b8908706e397cd745a0bb1264de2" category="section-title">VM启动延迟、按顺序启动</block>
+  <block id="7e15dbae84fa8dee12ba906ffe20a1d1" category="paragraph">现在、在创建复制计划时、您可以为计划中的每个VM设置启动延迟。这样、您就可以设置VM的启动顺序、以确保优先级为一个的所有VM在后续优先级的VM启动之前都处于运行状态。</block>
+  <block id="bb121112267374f0e2c29742b8091ab6" category="section-title">VM操作系统信息</block>
+  <block id="1df70ff252045f8a47784f3a1371818c" category="paragraph">创建复制计划时、您现在可以看到该计划中每个VM的操作系统。这有助于确定如何将虚拟机分组到一个资源组中。</block>
+  <block id="09a63cfb0d6c3a3392c3872099b3fba5" category="section-title">VM名称别名</block>
+  <block id="dcdfd42c566ed1c481f3c772573f39e0" category="paragraph">现在、在创建复制计划时、您可以向灾难恢复SIT上的虚拟机名称添加前缀和后缀。这样、您就可以为计划中的VM使用一个更具描述性的名称。</block>
+  <block id="126e7b7b7fdb43e70f3e1542c1f0b51a" category="section-title">清理旧快照</block>
+  <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">您可以删除超出指定保留数量的不再需要的任何快照。降低快照保留数量后、快照可能会逐渐累积、您现在可以将其删除以释放空间。您可以随时按需执行此操作、也可以在删除复制计划时执行此操作。</block>
+  <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">协调快照</block>
+  <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">现在、您可以协调源和目标之间不同步的快照。如果在BlueXP  灾难恢复之外的目标上删除了快照、则可能会发生这种情况。该服务会每24小时自动删除一次源上的快照。但是、您可以按需执行此操作。通过此功能、您可以确保快照在所有站点之间保持一致。</block>
+  <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">支持从内部到内部的VMware VMFS数据存储库</block>
+  <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">此版本支持在VMware vSphere虚拟机文件系统(Virtual Machine File System、VMFS)数据存储库上挂载的VM、以便将iSCSI和FC保护到内部存储。以前、该服务提供了一个_technology preview_、支持iSCSI和FC的VMFS数据存储库。</block>
+  <block id="b4f4dc0bb14114cf289b66587d52c9a4" category="section-title">支持使用FC从内部到内部的VMware VMFS数据存储库</block>
+  <block id="e0b7491fa7ed8915c350ab7831389ebf" category="paragraph">此版本为VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM提供了一个_technology preview_支持、用于将FC保护到内部存储。以前、该服务提供了一个技术预览版、支持将VMFS数据存储库用于iSCSI。</block>
+  <block id="8b0a520b04093a504975b99493c33a06" category="section-title">作业取消</block>
+  <block id="e37d535f557154a6dd6ed413e0e7782c" category="paragraph">在此版本中、您现在可以在作业监控器UI中取消作业。</block>
+  <block id="ba568c6eda754bba155b9d0f187ee2cd" category="section-title">禁用的功能</block>
+  <block id="6d060bbb2a63ad6b1466ad80fcfc6275" category="section-title">技术更新选项</block>
+  <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">了解有关的更多信息<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>。</block>
+  <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP  添加新存储分段并更改现有存储分段的属性。<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>(英文)。</block>
+  <block id="ee97d7a6f8cd51410930ad6fd6c7d715" category="section-title">BlueXP  操作故障恢复能力服务</block>
+  <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
+  <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
+  <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
+  <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
+  <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP勒索软件保护设置</block>
+  <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
+  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
+  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">使用BlueXP  分类扫描个人身份敏感数据</block>
+  <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>(英文)</block>
+  <block id="41e1ecfc5a85ff11563226784ee15ba6" category="list-text">*在即将推出的预览功能发布前试用*：现在您可以在发布前试用一些标记为"预览"的功能。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
+  <block id="7a5ad35792efc88c3a5c05a313202699" category="list-text">*SIEM与Microsoft Sentinel*的集成：您现在可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
+  <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
+  <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
+  <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">详细了解 <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
 </blocks>

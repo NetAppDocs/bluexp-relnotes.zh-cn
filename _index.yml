@@ -2,7 +2,7 @@
 indexpage:
   title: BlueXP发行说明
   summary: 本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。
-  keywords: release notes, enhancements, cloud services, bluexp
+  keywords: release notes, enhancements, cloud services, bluexp, what's new
   lead: 本发行说明介绍了作为BlueXP一部分的云服务的最新增强功能。可以通过链接访问每个服务的完整发行说明。
   tiles:
   - title: 新增功能
