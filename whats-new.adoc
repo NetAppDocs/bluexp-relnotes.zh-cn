@@ -24,6 +24,46 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024年11月26日
+
+
+
+==== 专用模式版本(3.9.46)
+
+现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
+
+3.9.46版本包括对以下BlueXP  组件和服务的更新。
+
+[cols="3*"]
+|===
+| 组件或服务 | 此版本包含的版本 | 自上一个专用模式版本以来的更改 
+
+
+| 连接器 | 3.9.46 | 少量安全性改进和错误修复 
+
+
+| 备份和恢复 | 2024年11月22日 | 转到 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]、并参考2024年11月版本中包含的更改 
+
+
+| 分类 | 2024年11月4日(版本1.37) | 转到 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]、并参考1.32到1.37版本中包含的更改 
+
+
+| Cloud Volumes ONTAP管理 | 2024年11月11日 | 转到 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP管理页面新增功能"^]、并参考2024年10月和2024年11月版本中包含的变更 
+
+
+| 内部ONTAP集群管理 | 2024年11月26日 | 转到 https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html[""内部ONTAP集群管理新增功能"页面"^]、并参考2024年11月版本中包含的更改 
+|===
+虽然BlueXP  数字钱包和BlueXP  复制也包含在专用模式中、但与先前的专用模式版本相比没有任何变化。
+
+有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]S
+
+
+
+
 === 2024年11月11日
 
 
@@ -51,94 +91,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-project
 ==== 连接器3.9.45修补程序
 
 此修补程序包含错误修复。
-
-
-
-=== 2024年10月7日
-
-
-
-==== BlueXP  身份和访问管理
-
-BlueXP  身份和访问管理(IAM)是一种新的资源和访问管理模式、它取代并增强了BlueXP  帐户在标准模式下使用BlueXP  时以前提供的功能。
-
-BlueXP  IAM提供更精细的资源和权限管理：
-
-* 通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限。
-* _Folders"用于将相关项目分组在一起。
-* 通过增强的资源管理功能、您可以将资源与一个或多个文件夹或项目相关联。
-+
-例如、您可以将一个Cloud Volumes ONTAP系统与多个项目相关联。
-
-* 通过增强的访问管理功能、您可以将角色分配给组织层次结构不同级别的成员。
-
-
-通过这些增强功能、可以更好地控制用户可以执行的操作及其可以访问的资源。
-
-.BlueXP  IAM如何影响现有帐户
-登录到BlueXP  时、您会注意到以下更改：
-
-* 您的_account_现在称为_organퟩ 횯_
-* 您的_workworkse_现在 称为_projects_
-* 用户角色的名称已更改：
-+
-** _Account admin_现在是_Organization admin_
-** _Workspace admin_现在是_Folder或项目admin_
-** _Compliance viewer_现在是_Classification viewer_
-
-
-* 在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能
-
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从\"设置\"菜单访问的身份和访问管理。"]
-
-请注意以下事项：
-
-* 您的现有用户或工作环境不会发生任何变化。
-* 虽然角色名称已更改、但从权限角度来看没有任何区别。用户仍可访问与以前相同的工作环境。
-* 您登录BlueXP  的方式没有变化。BlueXP  IAM可以像BlueXP  帐户一样使用NetApp云登录、NetApp支持站点凭据和联合连接。
-* 如果您有多个BlueXP  帐户、则现在有多个BlueXP  组织。
-
-
-.用于BlueXP  IAM的API
-此更改为BlueXP  IAM引入了一个新的API、但它向后兼容先前的租户API。 https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["了解适用于BlueXP  IAM的API"^]
-
-.支持的部署模式
-在标准模式下使用BlueXP  时、支持BlueXP  IAM。如果您在受限模式或私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。
-
-.下一步行动
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["了解BlueXP  IAM"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["开始使用BlueXP  IAM"]
-
-
-
-
-==== 连接器3.9.45
-
-此版本提供了更广泛的操作系统支持和错误修复。
-
-3.9.45版本适用于标准模式和受限模式。
-
-.支持Ubuntu 24.04 LTS
-从3.9.45版本开始、在标准模式或受限模式下使用BlueXP  时、BlueXP  现在支持在Ubuntu 24.04 LTS主机上全新安装连接器。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["View Connector主机要求"](英文)
-
-
-
-==== 支持在RHEL主机中使用SELinux
-
-现在、对于在强制模式或许可模式下启用了SELinux的Red Hat Enterprise Linux主机、BlueXP  支持Connector。
-
-从标准模式和受限模式的3.9.40版本开始支持SELinux、而专用模式的3.9.42版本开始支持SELinux。
-
-请注意以下限制：
-
-* BlueXP  不支持对Ubuntu主机使用SELinux。
-* 在操作系统上启用了SELinux的连接器不支持管理Cloud Volumes ONTAP系统。
-
-
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["了解有关SELinux的更多信息"^]
 
 
 
@@ -296,7 +248,37 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2024年11月22日
+
+此BlueXP  备份和恢复版本包含以下更新。
+
+
+
+==== SnapLock Compliance和SnapLock Enterprise保护模式
+
+现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。
+
+请参见中支持的卷的完整列表 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["了解有关BlueXP备份和恢复的信息"]。
+
+
+
+==== "卷"页面上的"搜索和还原过程索引"
+
+在使用搜索和还原之前、您需要在要从中还原卷数据的每个源工作环境上启用"索引编制"。这样、"已创建目录"就可以跟踪每个卷的备份文件。此时、卷页面将显示索引编制状态：
+
+* Indexed：卷已编制索引。
+* 进行中
+* 未为其提供过任何服务
+* 索引编制已暂停
+* 错误
+* 未启用
+
+
+
+
 === 2024年9月27日
+
+此BlueXP  备份和恢复版本包含以下更新。
 
 
 
@@ -355,24 +337,6 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["使用浏览和还原还原文件夹和文件()"]。
 
 有关手动启用的详细信息，请参见 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
-
-
-
-=== 2024年5月17日
-
-
-
-==== 对内部连接器使用RHEL 8和RHEL 9时的限制
-
-对于在RHEL 8或9主机上手动安装Connector软件的任何操作、BlueXP Connector 3.9.40支持Red Hat Enterprise Linux版本8和9的某些版本、而不考虑中所述的操作系统位于何处 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["主机要求"^]。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。目前、使用Podman引擎时、BlueXP备份和恢复存在两个限制。
-
-请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-limitations.html["备份和还原限制"] 了解详细信息。
-
-以下过程包括新的Podman说明：
-
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-restart-backup.html["重新启动BlueXP备份和恢复"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["在非公开站点中还原BlueXP备份和恢复数据"]
-
 
 
 
@@ -445,7 +409,7 @@ BlueXP  分类现在可以在StorageGRID中扫描数据。
 
 NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。
 
-对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需PAYGO订阅运行系统、则在EOS日期之前规划您的转换非常重要。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
+对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"^]
 
@@ -485,7 +449,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-az
 
 ==== 部署Cloud Volumes ONTAP后启用WORm
 
-之前、您可以在BlueXP  上创建Cloud Volumes ONTAP工作环境时启用WORM存储。现在、BlueXP  为您提供了在工作环境中启用WORM的选项、即使在创建期间未启用WORM也是如此。启用WORM后、您将无法禁用它。
+现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["在Cloud Volumes ONTAP工作环境中启用WORM"^]
 
@@ -932,6 +896,20 @@ BlueXP  迁移报告服务已于2024年8月7日删除。
 
 
 
+=== 2024年11月26日
+
+
+
+==== 支持使用专用模式的ASA R2系统
+
+现在、在私有模式下使用BlueXP  时、您可以发现NetApp ASA R2系统。从BlueXP  的3.9.46专用模式版本开始、可提供此支持。
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["详细了解ASA R2系统"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解BlueXP部署模式"^]
+
+
+
+
 === 2024年10月7日
 
 
@@ -957,20 +935,6 @@ ASA R2系统没有其他可用的管理选项。您不能使用标准视图、�
 ==== 不再支持卷模板
 
 您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。
-
-
-
-=== 2023年7月30日
-
-
-
-==== 创建 FlexGroup 卷
-
-如果您要使用Connector管理集群、现在可以使用BlueXP API创建FlexGroup卷。
-
-* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["了解如何创建FlexGroup卷"^]
-* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["了解什么是FlexGroup卷"^]
-
 
 
 
