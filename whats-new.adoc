@@ -184,6 +184,10 @@ FSx for ONTAP文件系统管理任务(例如添加卷、扩展文件系统容量
 
 link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["了解BlueXP  工作负载工厂中FSx for ONTAP的功能"^]
 
+如果您正在查找_advancedView选项、该选项可用于使用ONTAP系统管理器管理FSx for ONTAP文件系统、则在选择工作环境后、您可以从BlueXP  画布中找到该选项。
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。"]
+
 
 
 === 2023年7月30日
@@ -459,6 +463,60 @@ BlueXP  分类现在可以在StorageGRID中扫描数据。
 
 
 
+=== 2024年11月11日
+
+
+
+==== 基于节点的许可证终止提供
+
+NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。
+
+对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需PAYGO订阅运行系统、则在EOS日期之前规划您的转换非常重要。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"^]
+
+
+
+==== 从BlueXP  中删除基于节点的部署
+
+BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统的选项。除了少数特殊情况之外、您不能对任何云提供商的Cloud Volumes ONTAP部署使用基于节点的许可证。
+
+NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：
+
+* USPS客户
+* 在私有模式下部署
+* 在AWS中部署Cloud Volumes ONTAP的中国地区
+* 如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^]
+
+
+
+==== 为Azure Blb存储上的Cloud Volumes ONTAP数据添加了一个冷层
+
+现在、您可以通过BlueXP  选择一个冷层、将非活动容量层数据存储在Azure Blb存储上。将冷层添加到现有热层和冷层可为您提供更经济实惠的存储选项并提高成本效益。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Azure 中的数据分层"^]
+
+
+
+==== 用于限制公众对Azure存储帐户的访问的选项
+
+现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["安全组规则"^](英文)
+
+
+
+==== 部署Cloud Volumes ONTAP后启用WORm
+
+之前、您可以在BlueXP  上创建Cloud Volumes ONTAP工作环境时启用WORM存储。现在、BlueXP  为您提供了在工作环境中启用WORM的选项、即使在创建期间未启用WORM也是如此。启用WORM后、您将无法禁用它。
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["在Cloud Volumes ONTAP工作环境中启用WORM"^]
+
+
+
 === 2024年10月25日
 
 
@@ -491,29 +549,6 @@ NOTE: 在受限模式下使用BlueXP  时、不支持AWS本地区域。
 从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["升级 Cloud Volumes ONTAP 软件"]
-
-
-
-=== 2024年9月9日
-
-
-
-==== WORm和ARP功能不再收费
-
-WORM (一次写入、多次读取)和ARP (自动防兰软件保护)的内置数据保护和安全功能将随Cloud Volumes ONTAP许可证一起提供、无需额外费用。新定价模式适用于新订阅和现有订阅AWS、Azure和Google Cloud的BYOL和PAYGO/市场订阅。基于容量的许可证和基于节点的许可证均包含适用于所有配置的ARP和WORM、包括单节点和高可用性(HA)对、无需额外费用。
-
-简化的定价为您带来以下优势：
-
-* 当前包含WORM和ARP的帐户将不再为这些功能产生费用。接下来、您的计费将仅对容量使用量收费、就像此次更改之前一样。WORm和ARP将不再包含在您的未来账单中。
-* 如果您的当前帐户不包含这些功能、您现在可以选择WORM和ARP、无需额外费用。
-* 所有新客户的Cloud Volumes ONTAP产品均不包括WORM和ARP费用。
-
-
-详细了解这些功能：
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["提高防范勒索软件的能力"]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["WORM存储"]
-
 
 
 
