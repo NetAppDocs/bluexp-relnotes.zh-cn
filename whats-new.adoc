@@ -24,6 +24,29 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024年12月9日
+
+
+
+==== 连接器3.9.47
+
+此版本的BlueXP  连接器包含错误修复、并对连接器安装期间所访问的端点进行了更改。
+
+目前、3.9.47版本可用于标准模式和受限模式。
+
+.在安装期间联系NetApp支持的端点
+手动安装连接器时、安装程序将不再与https://support NetApp．com联系。
+
+安装程序仍会与https://mysupport．NetApp．com联系。
+
+
+
+==== BlueXP  身份和访问管理
+
+"Connectors (连接器)"页面仅列出当前可用的连接器。它不再显示您已删除的连接器。
+
+
+
 === 2024年11月26日
 
 
@@ -59,7 +82,7 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]S
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
 
 
 
@@ -81,16 +104,6 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 现在、您可以通过BlueXP  身份和访问管理查看项目的ID。进行API调用时、您可能需要使用此ID。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["了解如何获取项目的ID"](英文)
-
-
-
-=== 2024年10月10日
-
-
-
-==== 连接器3.9.45修补程序
-
-此修补程序包含错误修复。
 
 
 
@@ -401,6 +414,18 @@ BlueXP  分类现在可以在StorageGRID中扫描数据。
 
 
 
+=== 2024年12月9日
+
+
+
+==== 已针对Azure更新受支持的VM列表、以符合最佳实践
+
+在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
+
+
+
 === 2024年11月11日
 
 
@@ -459,7 +484,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabl
 
 
 
-==== N1系列机器无法在BlueXP  上选择
+==== 已针对Google Cloud更新受支持的VM列表、以符合最佳实践
 
 在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。
 
@@ -475,18 +500,6 @@ https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp
 NOTE: 在受限模式下使用BlueXP  时、不支持AWS本地区域。
 
 有关采用HA部署的AWS本地区域的详细信息，请参见link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["AWS本地区域"^]。
-
-
-
-=== 2024年10月7日
-
-
-
-==== 增强了选择升级版本的用户体验
-
-从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["升级 Cloud Volumes ONTAP 软件"]
 
 
 
@@ -968,23 +981,13 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。
 
-部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
-
-BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。
+部署BlueXP  分类的客户通常可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
 
 请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
 
 要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP  分类扫描个人身份敏感数据"](英文)
-
-
-
-==== 在即将推出的预览功能发布之前、请尝试这些功能
-
-现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
 
 
 

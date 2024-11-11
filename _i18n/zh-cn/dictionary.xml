@@ -501,15 +501,10 @@
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">了解BlueXP  警报</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>(英文)</block>
-  <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">增强了选择升级版本的用户体验</block>
-  <block id="76723ae6fdfacae29242fdb7085394b0" category="paragraph">从此版本开始、当您尝试使用BlueXP  通知升级Cloud Volumes ONTAP时、将收到有关要使用的默认版本、最新版本和兼容版本的指导。此外、现在您可以选择与Cloud Volumes ONTAP实例兼容的最新修补程序或主要版本、也可以手动输入要升级的版本。</block>
-  <block id="2182ff9388484137699eb937c0df0141" category="inline-link">升级 Cloud Volumes ONTAP 软件</block>
   <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>(英文)</block>
   <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>。</block>
   <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">有关详细信息，请参见<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>。</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
-  <block id="9071c576479353103106b574601bd920" category="section-title">连接器3.9.45修补程序</block>
-  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">此修补程序包含错误修复。</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.4。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、9.0、9.1、9.2、9.3和9.4。</block>
@@ -535,7 +530,6 @@
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">添加Storage VM</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**我的商机**选项卡现在是**我的资产**</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
-  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1系列机器无法在BlueXP  上选择</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link">Google Cloud 支持的配置</block>
   <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>(英文)</block>
@@ -572,7 +566,6 @@
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">除了先前支持的版本之外、此版本还支持NFS v4.1。</block>
   <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">1.36 版</block>
   <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">版本：1.</block>
-  <block id="448c087351c52cb72f971666e2159491" category="paragraph"><block ref="448c087351c52cb72f971666e2159491" category="inline-link-rx"></block></block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">错误修复</block>
   <block id="cd0b2a52b53e1925d55439a6132bad52" category="section-title">支持服务</block>
   <block id="38d80ed5e3a33df19ee71c05059b6258" category="paragraph">通过环境指标深入了解存储系统的环境运行状况、现在可以根据高级预测模型提供更精确的预计用电量、直接碳用量和热量排放值。要了解更多信息，请参阅 <block ref="093aadbd7a28ff730cdbe5efbf5b8c02" category="inline-link-macro-rx"></block>。</block>
@@ -608,8 +601,6 @@
   <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP  添加新存储分段并更改现有存储分段的属性。<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>(英文)。</block>
   <block id="ee97d7a6f8cd51410930ad6fd6c7d715" category="section-title">BlueXP  操作故障恢复能力服务</block>
   <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
-  <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
-  <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP勒索软件保护设置</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
@@ -667,8 +658,6 @@
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。</block>
   <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="section-title">启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)</block>
   <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
-  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">在即将推出的预览功能发布之前、请尝试这些功能</block>
-  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
   <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">与Microsoft Sentinel的暹粒集成</block>
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">现在30天免费试用</block>
@@ -716,7 +705,6 @@
   <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">了解如何在私有模式下开始使用BlueXP</block>
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">了解如何在使用私有模式时升级连接器</block>
-  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>S</block>
   <block id="3c97d3b45dd14b2958c1e0e304230aa0" category="paragraph">此BlueXP  备份和恢复版本包含以下更新。</block>
   <block id="517624d736bd2a385ee8cda71584112f" category="section-title">SnapLock Compliance和SnapLock Enterprise保护模式</block>
   <block id="139da935670a9f985194d3241917c359" category="paragraph">现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。</block>
@@ -734,4 +722,20 @@
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
   <block id="613fbbb3f2dbf238c8527a537252e8ed" category="section-title">支持使用专用模式的ASA R2系统</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">现在、在私有模式下使用BlueXP  时、您可以发现NetApp ASA R2系统。从BlueXP  的3.9.46专用模式版本开始、可提供此支持。</block>
+  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024年12月9日</block>
+  <block id="7e0cee63c771cb3be42ccae3ca1f4360" category="section-title">连接器3.9.47</block>
+  <block id="ea3677612bfa26ac44a6df6f71a061c7" category="paragraph">此版本的BlueXP  连接器包含错误修复、并对连接器安装期间所访问的端点进行了更改。</block>
+  <block id="ab5ae75402aef055e2d366aca1b4d6b9" category="paragraph">目前、3.9.47版本可用于标准模式和受限模式。</block>
+  <block id="e075de7d507df6ab190b10bc690c9148" category="paragraph-title">在安装期间联系NetApp支持的端点</block>
+  <block id="1aba7245086f9fd7cc09aa3efc3bf6c3" category="paragraph">手动安装连接器时、安装程序将不再与https://support NetApp．com联系。</block>
+  <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">安装程序仍会与https://mysupport．NetApp．com联系。</block>
+  <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  身份和访问管理</block>
+  <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">"Connectors (连接器)"页面仅列出当前可用的连接器。它不再显示您已删除的连接器。</block>
+  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
+  <block id="497e698cad27d6346959de7394ab5df8" category="section-title">已针对Azure更新受支持的VM列表、以符合最佳实践</block>
+  <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。</block>
+  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Azure 中支持的配置</block>
+  <block id="ef57b1c89cee8819c5de2b079e4b0640" category="paragraph"><block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="fa055d94084c7095d6c7ec354ec44857" category="section-title">已针对Google Cloud更新受支持的VM列表、以符合最佳实践</block>
+  <block id="3406306d1e826f71d49547332136491d" category="paragraph">部署BlueXP  分类的客户通常可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
 </blocks>
