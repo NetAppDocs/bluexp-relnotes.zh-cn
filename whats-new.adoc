@@ -24,6 +24,26 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2024年11月11日
+
+
+
+==== 连接器3.9.46
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.46版本可用于标准模式和受限模式。
+
+
+
+==== IAM项目的ID
+
+现在、您可以通过BlueXP  身份和访问管理查看项目的ID。进行API调用时、您可能需要使用此ID。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["了解如何获取项目的ID"](英文)
+
+
+
 === 2024年10月10日
 
 
@@ -122,61 +142,6 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 
 
-=== 2024年9月30日
-
-
-
-==== 专用模式版本(3.9.44)
-
-现在可以从NetApp 支持站点 下载新的专用模式版本。
-
-此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。
-
-[cols="2*"]
-|===
-| 服务 | 包含版本 
-
-
-| 连接器 | 3.9.44 
-
-
-| 备份和恢复 | 2024年9月27日 
-
-
-| 分类 | 2024年5月15日(版本1.31) 
-
-
-| Cloud Volumes ONTAP管理 | 2024年9月9日 
-
-
-| 数字电子钱包 | 2023年7月30日 
-
-
-| 内部ONTAP集群管理 | 2024年4月22日 
-
-
-| Replication | 2022年9月18日 
-|===
-对于Connector、3.9.44专用模式版本包括2024年8月和2024年9月版本中推出的更新。最值得注意的是、支持Red Hat Enterprise Linux 9.4。
-
-要详细了解这些BlueXP  组件和服务版本中包含的内容、请参阅每个BlueXP  服务的发行说明：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["2024年9月版连接器中的新增功能"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["2024年8月版连接器中的新增功能"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复的新增功能"^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类的新增功能"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP  中Cloud Volumes ONTAP管理的新增功能"^]
-
-
-有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-
-
-
-
 == 警报
 
 
@@ -209,6 +174,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 
 
 
+=== 2024年11月11日
+
+
+
+==== FSx for ONTAP与BlueXP  工作负载工厂中的存储集成
+
+FSx for ONTAP文件系统管理任务(例如添加卷、扩展文件系统容量和管理Storage VM)现在可在BlueXP  Workload Factory中进行管理、这是NetApp和Amazon FSx for NetApp ONTAP提供的一项新服务。您可以像以前一样使用现有凭据和权限。不同之处在于、您现在可以从BlueXP  工作负载工厂执行更多操作来管理文件系统。从BlueXP  画布中打开FSx for ONTAP工作环境后、您将直接转到BlueXP  工作负载工厂。
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["了解BlueXP  工作负载工厂中FSx for ONTAP的功能"^]
+
+
+
 === 2023年7月30日
 
 
@@ -234,22 +211,6 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 ==== **我的商机**选项卡现在是**我的资产**
 
 “我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。
-
-
-
-=== 2023年6月4日
-
-
-
-==== 维护窗口开始时间
-
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["创建工作环境"]，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。
-
-
-
-==== 使用FlexGroup分发卷数据
-
-时间 link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["创建卷"]，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。
 
 
 
@@ -328,6 +289,32 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 == 备份和恢复
+
+
+
+=== 2024年11月6日
+
+
+
+==== SnapLock Compliance和SnapLock Enterprise保护模式
+
+现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。
+
+请参见中支持的卷的完整列表 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["了解有关BlueXP备份和恢复的信息"]。
+
+
+
+==== "卷"页面上的"搜索和还原过程索引"
+
+在使用搜索和还原之前、您需要在要从中还原卷数据的每个源工作环境上启用"索引编制"。这样、"已创建目录"就可以跟踪每个卷的备份文件。此时、卷页面将显示索引编制状态：
+
+* Indexed：卷已编制索引。
+* 进行中
+* 未为其提供过任何服务
+* 索引编制已暂停
+* 错误
+* 未启用
+
 
 
 
@@ -1241,3 +1228,19 @@ https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html[
 借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。
 
 link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["详细了解BlueXP卷缓存"]。
+
+
+
+== 工作负载工厂
+
+
+
+=== 2024年11月11日
+
+
+
+==== 工作负载在出厂时集成在BlueXP  控制台中
+
+现在，您可以从使用工作负载工厂link:https://console.bluexp.netapp.com["BlueXP控制台"^]。BlueXP  控制台体验可提供与工作负载出厂控制台相同的功能。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["了解如何从BlueXP  控制台访问工作负载工厂"]

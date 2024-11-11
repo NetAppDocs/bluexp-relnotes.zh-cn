@@ -125,10 +125,6 @@
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">能够从BlueXP添加新存储帐户</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">了解如何添加新的Azure Blb存储帐户</block>
   <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">2023年6月4日</block>
-  <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">创建工作环境</block>
-  <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">时间 <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>，您可以指定每周30分钟维护窗口的开始时间，以确保维护不会与关键业务活动冲突。</block>
-  <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">创建卷</block>
-  <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">时间 <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>，则可以通过创建FlexGroup在卷之间分布数据来启用数据优化。</block>
   <block id="8f47a476ee12f068a45739014a319a65" category="paragraph">卷缓存是ONTAP 9软件的一项功能、它是一项远程缓存功能、可简化文件分发、通过使资源更靠近用户和计算资源所在位置来减少WAN延迟、并降低WAN带宽成本。卷缓存可在远程位置提供永久性可写卷。您可以使用BlueXP卷缓存加快数据访问速度、或者从访问量较多的卷卸载流量。缓存卷非常适合读取密集型工作负载、尤其是客户端需要重复访问相同数据的情况。</block>
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">借助BlueXP卷缓存、您可以缓存云、尤其是Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP以及作为工作环境的内部环境。</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">详细了解BlueXP卷缓存</block>
@@ -428,18 +424,6 @@
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>(英文)</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。</block>
-  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">现在可以从NetApp 支持站点 下载新的专用模式版本。</block>
-  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服务</block>
-  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">包含版本</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">连接器</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Cloud Volumes ONTAP管理</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">内部ONTAP集群管理</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">了解私有模式</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">了解如何在私有模式下开始使用BlueXP</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">了解如何在使用私有模式时升级连接器</block>
-  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">2024年7月22日</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">还原小于1 GB的卷</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">在此版本中、您现在可以还原在ONTAP中创建的小于1 GB的卷。可以使用ONTAP创建的最小卷大小为20 MB。</block>
@@ -522,24 +506,7 @@
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.55。</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
-  <block id="0beb94109608ff82d313b33947162f96" category="section-title">专用模式版本(3.9.44)</block>
-  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">此版本包含以下版本的BlueXP  组件和服务、这些组件和服务支持私有模式。</block>
-  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
   <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">2024年9月27日</block>
-  <block id="918de91f5332dad6620331712ef5c21d" category="cell">2024年5月15日(版本1.31)</block>
-  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">对于Connector、3.9.44专用模式版本包括2024年8月和2024年9月版本中推出的更新。最值得注意的是、支持Red Hat Enterprise Linux 9.4。</block>
-  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">要详细了解这些BlueXP  组件和服务版本中包含的内容、请参阅每个BlueXP  服务的发行说明：</block>
-  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">2024年9月版连接器中的新增功能</block>
-  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
-  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">2024年8月版连接器中的新增功能</block>
-  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
-  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">BlueXP  备份和恢复的新增功能</block>
-  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
-  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">BlueXP  分类的新增功能</block>
-  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
-  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">BlueXP  中Cloud Volumes ONTAP管理的新增功能</block>
-  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
-  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">有关专用模式的更多详细信息、包括如何升级、请参见以下内容：</block>
   <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">RHEL 8或9上的Podman支持以及浏览和还原功能</block>
   <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">BlueXP  备份和恢复现在支持使用Podman引擎在Red Hat Enterprise Linux (RHEL) 8和9上还原文件和文件夹。这适用于BlueXP  备份和恢复浏览和还原方法。</block>
   <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connector 3.9.40支持在RHEL 8或9主机上手动安装某些版本的Red Hat Enterprise Linux版本8和9，而不考虑位置以及中提到的操作系统<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。以前、使用Podman引擎时、BlueXP  备份和恢复有两个限制。已删除这些限制。</block>
@@ -648,8 +615,6 @@
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">支持另外三个区域</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">添加Storage VM</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**我的商机**选项卡现在是**我的资产**</block>
-  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="section-title">维护窗口开始时间</block>
-  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">使用FlexGroup分发卷数据</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">2024年10月25日</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">N1系列机器无法在BlueXP  上选择</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">在Google Cloud中部署新的Cloud Volumes ONTAP实例时、无法再在BlueXP  上选择n1系列计算机。n1系列机器将保留下来、并且仅在旧的现有系统中受支持。只有从9.8版开始、Google Cloud才支持全新部署Cloud Volumes ONTAP。建议您切换到与Cloud Volumes ONTAP 9.8及更高版本兼容的n2系列机器类型。但是、n1系列计算机将可用于通过API执行的新部署。</block>
@@ -739,4 +704,36 @@
   <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
   <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">详细了解 <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">工作负载工厂</block>
+  <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">2024年11月11日</block>
+  <block id="54eca49362b96a7e1899f1d9f7fbdeef" category="section-title">连接器3.9.46</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">此版本的BlueXP Connector包括一些小的安全改进和错误修复。</block>
+  <block id="5b7c2a7de0cce99684e946ddad5735bd" category="paragraph">目前、3.9.46版本可用于标准模式和受限模式。</block>
+  <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">IAM项目的ID</block>
+  <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">现在、您可以通过BlueXP  身份和访问管理查看项目的ID。进行API调用时、您可能需要使用此ID。</block>
+  <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link">了解如何获取项目的ID</block>
+  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>(英文)</block>
+  <block id="844ae8089b7faaed0a2b7abc588969d9" category="section-title">FSx for ONTAP与BlueXP  工作负载工厂中的存储集成</block>
+  <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">FSx for ONTAP文件系统管理任务(例如添加卷、扩展文件系统容量和管理Storage VM)现在可在BlueXP  Workload Factory中进行管理、这是NetApp和Amazon FSx for NetApp ONTAP提供的一项新服务。您可以像以前一样使用现有凭据和权限。不同之处在于、您现在可以从BlueXP  工作负载工厂执行更多操作来管理文件系统。从BlueXP  画布中打开FSx for ONTAP工作环境后、您将直接转到BlueXP  工作负载工厂。</block>
+  <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">了解BlueXP  工作负载工厂中FSx for ONTAP的功能</block>
+  <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
+  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">2024年11月6日</block>
+  <block id="a5fd9c132798873e9eb6aafb58e50034" category="section-title">SnapLock Compliance和SnapLock Enterprise保护模式</block>
+  <block id="139da935670a9f985194d3241917c359" category="paragraph">现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。</block>
+  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">了解有关BlueXP备份和恢复的信息</block>
+  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">请参见中支持的卷的完整列表<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
+  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">"卷"页面上的"搜索和还原过程索引"</block>
+  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">在使用搜索和还原之前、您需要在要从中还原卷数据的每个源工作环境上启用"索引编制"。这样、"已创建目录"就可以跟踪每个卷的备份文件。此时、卷页面将显示索引编制状态：</block>
+  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexed：卷已编制索引。</block>
+  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">进行中</block>
+  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">未为其提供过任何服务</block>
+  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">索引编制已暂停</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">错误</block>
+  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">未启用</block>
+  <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="section-title">工作负载在出厂时集成在BlueXP  控制台中</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP控制台</block>
+  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">现在，您可以从使用工作负载工厂<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>。BlueXP  控制台体验可提供与工作负载出厂控制台相同的功能。</block>
+  <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">了解如何从BlueXP  控制台访问工作负载工厂</block>
+  <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
 </blocks>
