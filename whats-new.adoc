@@ -296,32 +296,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
-=== 2024年11月6日
-
-
-
-==== SnapLock Compliance和SnapLock Enterprise保护模式
-
-现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。
-
-请参见中支持的卷的完整列表 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["了解有关BlueXP备份和恢复的信息"]。
-
-
-
-==== "卷"页面上的"搜索和还原过程索引"
-
-在使用搜索和还原之前、您需要在要从中还原卷数据的每个源工作环境上启用"索引编制"。这样、"已创建目录"就可以跟踪每个卷的备份文件。此时、卷页面将显示索引编制状态：
-
-* Indexed：卷已编制索引。
-* 进行中
-* 未为其提供过任何服务
-* 索引编制已暂停
-* 错误
-* 未启用
-
-
-
-
 === 2024年9月27日
 
 
@@ -483,7 +457,7 @@ BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统�
 
 NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：
 
-* USPS客户
+* 美国公共部门客户
 * 在私有模式下部署
 * 在AWS中部署Cloud Volumes ONTAP的中国地区
 * 如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)
@@ -606,6 +580,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年10月27日
+
+
+
+==== 错误修复
+
+我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。
+
+
+
 === 2024年9月16日
 
 
@@ -623,16 +607,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 ==== 错误修复
 
 我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.54。
-
-
-
-=== 2024年7月14日
-
-
-
-==== 错误修复
-
-我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。
 
 
 
@@ -1024,73 +998,99 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 === 2024年11月7日
 
-此版本的BlueXP  勒索软件保护包括以下更新。
 
-* *启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。
-+
+
+==== 启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)
+
+在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。
+
 部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。
 
-+
 BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。
 
-+
 请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
 
-+
 要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。
 
-+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["使用BlueXP  分类扫描个人身份敏感数据"](英文)
 
-* *在即将推出的预览功能发布前试用*：现在您可以在发布前试用一些标记为"预览"的功能。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。
-+
+
+
+==== 在即将推出的预览功能发布之前、请尝试这些功能
+
+现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
 
-* *SIEM与Microsoft Sentinel*的集成：您现在可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
-+
+
+
+==== 与Microsoft Sentinel的暹粒集成
+
+现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
 
 
 
-* *立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。
-* *在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。
-+
+==== 现在30天免费试用
+
+在此版本中、全新部署的BlueXP  勒索软件保护现在有30天的免费试用时间。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。
+
+
+
+==== 在文件级别恢复Podman的应用程序工作负载
+
+现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复"](英文)
-
-
 
 
 
 === 2024年9月30日
 
-此版本的BlueXP  勒索软件保护包括以下更新。
 
-* *自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)
 
+==== 自定义文件共享工作负载分组
+
+在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)
 
 
 
 === 2024年9月2日
 
-此版本的BlueXP  勒索软件保护包括以下更新。
 
-* *数字顾问提供的安全风险评估*：BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群<name>上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。
-+
+
+==== Digital Advisor的安全风险评估
+
+BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群<name>上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。
+
 请参阅 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
 
-* *备份到Google Cloud Platform*：在此版本中、您可以将备份目标位置设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。
-+
+
+
+==== 备份到Google Cloud Platform
+
+在此版本中、您可以将备份目标设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
 
-* *支持Google Cloud Platform*：该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。
-+
+
+
+==== 支持Google Cloud Platform
+
+该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件保护以及支持的数据源、备份目标和工作环境"](英文)
 
-* *基于角色的访问控制*：您现在可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。
-+
+
+
+==== 基于角色的访问控制
+
+现在、您可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。
+
 有关每个角色可以执行的操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["基于角色的访问控制Privileges"]。
-
-
 
 
 

@@ -420,8 +420,6 @@
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">请参阅<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">详细了解如何从勒索软件攻击中恢复</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>(英文)</block>
-  <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">2024年7月14日</block>
-  <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.53。</block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">2024年7月22日</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">还原小于1 GB的卷</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">在此版本中、您现在可以还原在ONTAP中创建的小于1 GB的卷。可以使用ONTAP创建的最小卷大小为20 MB。</block>
@@ -448,7 +446,6 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  边缘缓存服务已于2024年8月7日被删除。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">2024年8月7日、不再支持发现和管理Kubbernetes集群。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  迁移报告服务已于2024年8月7日删除。</block>
-  <block id="3660cbb805c1bf63e1967ed1339a3bbd" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
   <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
   <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
   <block id="43371a1519dc6641cd8852962e536c3e" category="section-title">2024 年 8 月 7 日</block>
@@ -481,15 +478,10 @@
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">技术更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">添加容量</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
-  <block id="dddaa1ce44a2d4bbebf20d3f4563c0a4" category="paragraph">此版本的BlueXP  勒索软件保护包括以下更新。</block>
-  <block id="8817c21accd9fdcb9207397834af08f6" category="list-text">*数字顾问提供的安全风险评估*：BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群&lt;name&gt;上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Digital Advisor文档</block>
   <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">请参阅<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>。</block>
-  <block id="db99b952c4a66f69627f5f328e20f9d1" category="list-text">*备份到Google Cloud Platform*：在此版本中、您可以将备份目标位置设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。</block>
-  <block id="6296ba9154f4dc4d4403121335c812c9" category="list-text">*支持Google Cloud Platform*：该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。</block>
   <block id="571e1080641fe631491306478d4572a1" category="inline-link">了解BlueXP  勒索软件保护以及支持的数据源、备份目标和工作环境</block>
   <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>(英文)</block>
-  <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*基于角色的访问控制*：您现在可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">基于角色的访问控制Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">有关每个角色可以执行的操作的详细信息，请参见<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>。</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
@@ -508,7 +500,6 @@
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。</block>
   <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">对于任何复制计划、目标ONTAP卷应使用与托管受保护VM的源ONTAP卷相同的协议。例如、如果源使用FC协议、则目标也应使用FC。</block>
   <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组</block>
-  <block id="1784b8aa983497f6e69069b3b862287f" category="list-text">*自定义文件共享工作负载分组*：在此版本中、您现在可以将文件共享分组为组、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。<block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  身份和访问管理</block>
   <block id="cfb96b15394efa48725d4b6de4d3529b" category="paragraph">BlueXP  身份和访问管理(IAM)是一种新的资源和访问管理模式、它取代并增强了BlueXP  帐户在标准模式下使用BlueXP  时以前提供的功能。</block>
@@ -677,7 +668,6 @@
   <block id="4d1dd60706cede8204b5a6edb14f8ff5" category="paragraph">您可以在BlueXP Canvs上查看Google Cloud Storage存储分段已有很长一段时间了。现在、您可以直接从BlueXP  添加新存储分段并更改现有存储分段的属性。<block ref="a727375f2b80e544cee46379a3fbce4b" category="inline-link-rx"></block>(英文)。</block>
   <block id="ee97d7a6f8cd51410930ad6fd6c7d715" category="section-title">BlueXP  操作故障恢复能力服务</block>
   <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
-  <block id="7d02192f3436d747f16f0854f54cd837" category="list-text">*启用数据分类和扫描个人身份信息(Pi)*：在此版本中，您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
   <block id="f3da95789fee3d76f39c270803b7c7df" category="paragraph">部署BlueX分类的客户通常可以在BlueXP  勒索软件保护中扫描可用于此类数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
   <block id="c2cb37c5316be80c5de2706c50799610" category="paragraph">BlueXP  分类也可以作为SaaS模式部署、作为技术预览的一部分。要启用预览功能，请使用BlueXP  勒索软件保护*Settings*选项。如果启用预览、"保护"页面上的*隐私曝光*列旁边将显示一个"预览"标签以及其他位置。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP勒索软件保护设置</block>
@@ -685,10 +675,6 @@
   <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
   <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">使用BlueXP  分类扫描个人身份敏感数据</block>
   <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>(英文)</block>
-  <block id="41e1ecfc5a85ff11563226784ee15ba6" category="list-text">*在即将推出的预览功能发布前试用*：现在您可以在发布前试用一些标记为"预览"的功能。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
-  <block id="7a5ad35792efc88c3a5c05a313202699" category="list-text">*SIEM与Microsoft Sentinel*的集成：您现在可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
-  <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*立即免费试用30天*：在此版本中、全新部署的BlueXP  勒索软件保护现在有30天免费试用。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
-  <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*在文件级别恢复Podman*的应用程序工作负载：在文件级别恢复应用程序工作负载之前，您现在可以查看可能受到攻击影响的文件列表，并确定要恢复的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">详细了解 <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">工作负载工厂</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
@@ -704,19 +690,6 @@
   <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">FSx for ONTAP文件系统管理任务(例如添加卷、扩展文件系统容量和管理Storage VM)现在可在BlueXP  Workload Factory中进行管理、这是NetApp和Amazon FSx for NetApp ONTAP提供的一项新服务。您可以像以前一样使用现有凭据和权限。不同之处在于、您现在可以从BlueXP  工作负载工厂执行更多操作来管理文件系统。从BlueXP  画布中打开FSx for ONTAP工作环境后、您将直接转到BlueXP  工作负载工厂。</block>
   <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">了解BlueXP  工作负载工厂中FSx for ONTAP的功能</block>
   <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
-  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">2024年11月6日</block>
-  <block id="a5fd9c132798873e9eb6aafb58e50034" category="section-title">SnapLock Compliance和SnapLock Enterprise保护模式</block>
-  <block id="139da935670a9f985194d3241917c359" category="paragraph">现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。</block>
-  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">了解有关BlueXP备份和恢复的信息</block>
-  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">请参见中支持的卷的完整列表<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
-  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">"卷"页面上的"搜索和还原过程索引"</block>
-  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">在使用搜索和还原之前、您需要在要从中还原卷数据的每个源工作环境上启用"索引编制"。这样、"已创建目录"就可以跟踪每个卷的备份文件。此时、卷页面将显示索引编制状态：</block>
-  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indexed：卷已编制索引。</block>
-  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">进行中</block>
-  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">未为其提供过任何服务</block>
-  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">索引编制已暂停</block>
-  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">错误</block>
-  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">未启用</block>
   <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="section-title">工作负载在出厂时集成在BlueXP  控制台中</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP控制台</block>
   <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">现在，您可以从使用工作负载工厂<block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>。BlueXP  控制台体验可提供与工作负载出厂控制台相同的功能。</block>
@@ -734,7 +707,6 @@
   <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">从BlueXP  中删除基于节点的部署</block>
   <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统的选项。除了少数特殊情况之外、您不能对任何云提供商的Cloud Volumes ONTAP部署使用基于节点的许可证。</block>
   <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：</block>
-  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">USPS客户</block>
   <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">在私有模式下部署</block>
   <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">在AWS中部署Cloud Volumes ONTAP的中国地区</block>
   <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)</block>
@@ -752,4 +724,28 @@
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在Cloud Volumes ONTAP工作环境中启用WORM</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
   <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">现在、您可以使用BlueXP  将Storage VM添加到Amazon FSx for NetApp ONTAP文件系统中。</block>
+  <block id="500984bae07aedc6c662b31a3039d462" category="list-text">美国公共部门客户</block>
+  <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">2024年10月27日</block>
+  <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。</block>
+  <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="section-title">启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)</block>
+  <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
+  <block id="4d4b17a43409a8c299995a21ddaef39b" category="section-title">在即将推出的预览功能发布之前、请尝试这些功能</block>
+  <block id="c86f9a52cdb00d7109bfa8ee10b48074" category="paragraph">现在、您可以在发布某些标记为"预览"的功能之前试用它们。要执行此操作，请使用*Settings*选项显示这些功能，这些功能带有“预览”标签。</block>
+  <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">与Microsoft Sentinel的暹粒集成</block>
+  <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
+  <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">现在30天免费试用</block>
+  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">在此版本中、全新部署的BlueXP  勒索软件保护现在有30天的免费试用时间。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
+  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">在文件级别恢复Podman的应用程序工作负载</block>
+  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
+  <block id="4d330e714e6183f0c61932d7c00a8ff3" category="section-title">自定义文件共享工作负载分组</block>
+  <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。</block>
+  <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
+  <block id="997bcd377ced78770953e6e3775b8ef8" category="section-title">Digital Advisor的安全风险评估</block>
+  <block id="ca38b24749c1b379aa526166d650709c" category="paragraph">BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群&lt;name&gt;上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。</block>
+  <block id="d6e1df3f33358ae7e917c338cf462ca0" category="section-title">备份到Google Cloud Platform</block>
+  <block id="a789dfb53f35524e96878624b0f44be1" category="paragraph">在此版本中、您可以将备份目标设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。</block>
+  <block id="be2bdfb658850d167c76f763879faa2f" category="section-title">支持Google Cloud Platform</block>
+  <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。</block>
+  <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">基于角色的访问控制</block>
+  <block id="1431c64521322df79808c76466af3b70" category="paragraph">现在、您可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。</block>
 </blocks>
