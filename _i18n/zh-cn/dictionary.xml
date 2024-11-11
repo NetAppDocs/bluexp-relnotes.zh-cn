@@ -130,8 +130,6 @@
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">详细了解BlueXP卷缓存</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>。</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">2023年7月2日</block>
-  <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">添加Storage VM</block>
-  <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">您现在可以： <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> 到使用BlueXP的Amazon FSx for NetApp ONTAP文件系统。</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">了解此版本 Cloud Volumes ONTAP 中的新增功能</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
@@ -753,4 +751,5 @@
   <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">之前、您可以在BlueXP  上创建Cloud Volumes ONTAP工作环境时启用WORM存储。现在、BlueXP  为您提供了在工作环境中启用WORM的选项、即使在创建期间未启用WORM也是如此。启用WORM后、您将无法禁用它。</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在Cloud Volumes ONTAP工作环境中启用WORM</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">现在、您可以使用BlueXP  将Storage VM添加到Amazon FSx for NetApp ONTAP文件系统中。</block>
 </blocks>
