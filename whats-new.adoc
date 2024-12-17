@@ -24,6 +24,40 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2025年1月13日
+
+
+
+==== 连接器3.9.48
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.48版本可用于标准模式和受限模式。
+
+
+
+==== BlueXP  身份和访问管理
+
+* 此时、"ResResResus"页面将显示未发现的资源。未发现资源是BlueXP  已知但您尚未为创建工作环境的存储资源。例如、在Digital Advisor中显示的尚未具有工作环境的资源将在"资源"页面上显示为未发现的资源。
+* Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。
+
+
+
+
+==== 为其他BlueXP  服务创建支持案例
+
+在注册BlueXP  以获得支持后、您可以直接从BlueXP  基于Web的控制台创建支持案例。创建案例时、您需要选择与问题关联的服务。
+
+从此版本开始、您现在可以创建支持案例并将其与其他BlueXP  服务关联起来：
+
+* BlueXP灾难恢复
+* BlueXP勒索软件保护
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["了解有关创建支持案例的更多信息"](英文)
+
+
+
 === 2024年12月16日
 
 
@@ -88,46 +122,6 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
-=== 2024年11月26日
-
-
-
-==== 专用模式版本(3.9.46)
-
-现在、可从下载新的专用模式版本 https://mysupport.netapp.com/site/downloads["NetApp 支持站点"^]
-
-3.9.46版本包括对以下BlueXP  组件和服务的更新。
-
-[cols="3*"]
-|===
-| 组件或服务 | 此版本包含的版本 | 自上一个专用模式版本以来的更改 
-
-
-| 连接器 | 3.9.46 | 少量安全性改进和错误修复 
-
-
-| 备份和恢复 | 2024年11月22日 | 转到 https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["BlueXP  备份和恢复页面中的新增功能"^]、并参考2024年11月版本中包含的更改 
-
-
-| 分类 | 2024年11月4日(版本1.37) | 转到 https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["BlueXP  分类页面中的新增功能"^]、并参考1.32到1.37版本中包含的更改 
-
-
-| Cloud Volumes ONTAP管理 | 2024年11月11日 | 转到 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP管理页面新增功能"^]、并参考2024年10月和2024年11月版本中包含的变更 
-
-
-| 内部ONTAP集群管理 | 2024年11月26日 | 转到 https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html[""内部ONTAP集群管理新增功能"页面"^]、并参考2024年11月版本中包含的更改 
-|===
-虽然BlueXP  数字钱包和BlueXP  复制也包含在专用模式中、但与先前的专用模式版本相比没有任何变化。
-
-有关专用模式的更多详细信息、包括如何升级、请参见以下内容：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-
-
-
-
 == 警报
 
 
@@ -160,6 +154,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 
 
 
+=== 2025年1月6日
+
+
+
+==== NetApp发布了其他CloudFormation资源
+
+NetApp现在可提供CloudFormation资源、使客户能够利用未在AWS控制台中公开的高级ONTAP组件。CloudFormation是适用于AWS的基础架构即代码机制。您将能够创建复制关系、CIFS共享、NFS导出策略、快照等。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx"]
+
+
+
 === 2024年11月11日
 
 
@@ -185,22 +191,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 现在、客户可以在以下三个新AWS地区为NetApp ONTAP文件系统创建Amazon FSx：欧洲(苏黎世)、欧洲(西班牙)和亚太地区(亚马逊河)。
 
 请参见 link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx for NetApp ONTAP现已在另外三个地区推出"^] 了解完整详细信息。
-
-
-
-=== 2023年7月2日
-
-
-
-==== 添加Storage VM
-
-现在、您可以使用BlueXP  将Storage VM添加到Amazon FSx for NetApp ONTAP文件系统中。
-
-
-
-==== **我的商机**选项卡现在是**我的资产**
-
-“我的商机”选项卡现在为“我的资产”。文档已更新、以反映新名称。
 
 
 
@@ -236,6 +226,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/s
 
 
 
+=== 2025年1月13日
+
+
+
+==== BlueXP  现在支持网络功能
+
+现在、从BlueXP  在Azure NetApp Files中配置卷时、您可以指示网络功能。这与本机Azure NetApp Files中提供的功能一致。
+
+
+
 === 2024年6月12日
 
 
@@ -261,20 +261,6 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 ==== 不再支持卷模板
 
 您无法再使用模板创建卷。此操作与BlueXP修复服务关联、此服务不再可用。
-
-
-
-=== 2021 年 4 月 11 日
-
-
-
-==== 支持卷模板
-
-通过新的应用程序模板服务，您可以为 Azure NetApp Files 设置卷模板。此模板应使您的工作更轻松，因为模板中已定义某些卷参数，例如，容量池，大小，协议，卷应驻留的 vNet 和子网等。如果已预定义某个参数，则只需跳到下一个 volume 参数即可。
-
-* https://docs.netapp.com/us-en/bluexp-remediation/concept-resource-templates.html["了解应用程序模板以及如何在环境中使用这些模板"^]
-* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html["了解如何使用模板创建 Azure NetApp Files 卷"]
-
 
 
 
@@ -619,6 +605,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年12月4日
+
+
+
+==== AutoSupport小工具
+
+AutoSupport小工具已添加到主信息板屏幕中、用于提醒客户与AutoSupport状态相关的问题。
+
+
+
 === 2024年9月23日
 
 
@@ -626,16 +622,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 ==== 支持服务
 
 现在、NetApp SupportEdge Basic服务产品包括SupportEdge Advisor和SupportEdge Expert中提供的所有数字顾问功能、但完整堆栈拓扑(Full-Stack Topology、VMware)除外、即使启用了该功能、也无法显示VMware完整堆栈监控。
-
-
-
-=== 2024年8月21日
-
-
-
-==== 报告
-
-由于7-模式系统已停止有限支持，因此不再提供*7-Mode Upgrade Advisor Plans (7-模式升级顾问计划)*报告。有关详细信息，请参见 link:https://mysupport.netapp.com/site/info/version-support["软件版本支持"^]。详细了解 link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["升级在7-模式下运行的Data ONTAP存储系统"^]。
 
 
 
@@ -991,6 +977,35 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2024年12月16日
+
+
+
+==== 使用Data Infrastructure Insight存储工作负载安全性检测异常用户行为
+
+在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["响应检测到的勒索软件警报"]。
+
+在使用数据基础架构洞察存储工作负载安全性检测异常用户行为之前、您需要使用BlueXP  勒索软件保护*设置*选项来配置此选项。
+
+请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["配置BlueXP勒索软件保护设置"]。
+
+
+
+==== 选择要发现和保护的工作负载
+
+在此版本中、您现在可以执行以下操作：
+
+* 在每个Connector中、选择要发现工作负载的工作环境。如果您希望保护环境中的特定工作负载、而不是其他工作负载、则可以从该功能中受益。
+* 在发现工作负载期间、您可以为每个连接器启用工作负载自动发现。通过此功能、您可以选择要保护的工作负载。
+* 发现先前选定工作环境中新创建的工作负载。
+
+
+请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现工作负载"]。
+
+
+
 === 2024年11月7日
 
 
@@ -1040,42 +1055,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["
 在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)
-
-
-
-=== 2024年9月2日
-
-
-
-==== Digital Advisor的安全风险评估
-
-BlueXP  勒索软件防护现在可从NetApp数字顾问收集与集群相关的高安全风险和严重安全风险的信息。如果发现任何风险、BlueXP  勒索软件保护会在信息板的*建议操作*窗格中提供建议："修复集群<name>上的已知安全漏洞。"根据信息板上的建议，单击“*查看并修复”，建议查看Digital Advisor和“常见漏洞与披露”(Common漏洞与披露，CVA)文章以解决安全风险。如果存在多个安全风险、请查看Digital Advisor中的信息。
-
-请参阅 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]。
-
-
-
-==== 备份到Google Cloud Platform
-
-在此版本中、您可以将备份目标设置为Google Cloud Platform存储分段。以前、您只能将备份目标添加到NetApp StorageGRID、Amazon Web Services和Microsoft Azure。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["了解有关配置BlueXP  勒索软件保护设置的更多信息"](英文)
-
-
-
-==== 支持Google Cloud Platform
-
-该服务现在支持Cloud Volumes ONTAP for Google Cloud Platform以实现存储保护。以前、该服务仅支持适用于Amazon Web Services和Microsoft Azure的Cloud Volumes ONTAP以及内部NAS。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["了解BlueXP  勒索软件保护以及支持的数据源、备份目标和工作环境"](英文)
-
-
-
-==== 基于角色的访问控制
-
-现在、您可以使用基于角色的访问控制(Role-Based Access Control、RBAC)限制对特定活动的访问。BlueXP  勒索软件保护使用BlueXP  中的两个角色：BlueXP  帐户管理员和非帐户管理员(查看者)。
-
-有关每个角色可以执行的操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["基于角色的访问控制Privileges"]。
 
 
 
@@ -1252,6 +1231,18 @@ link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro
 
 
 == 工作负载工厂
+
+
+
+=== 2025年1月5日
+
+
+
+==== 支持BlueXP  工作负载工厂中的服务帐户
+
+现在、BlueXP  工作负载工厂支持服务帐户。您可以创建服务帐户、以充当自动化基础架构操作的计算机用户。
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["创建和管理服务帐户"]
 
 
 
