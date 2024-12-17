@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。 
 ---
 = BlueXP中的最新变更
@@ -21,6 +21,47 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2024年12月16日
+
+
+
+==== 用于获取连接器映像的新安全端点
+
+安装Connector或进行自动升级时、Connector会与存储库联系以下载用于安装或升级的映像。默认情况下、Connector始终与以下端点进行联系：
+
+* https://*.blob.core.windows.net
+* https://cloudmanagerinfraprod.azurecr.io
+
+
+第一个端点包含通配符、因为我们无法提供明确的位置。存储库的负载平衡由服务提供商管理、这意味着可以从不同端点进行下载。
+
+为了提高安全性、Connector现在可以从专用端点下载安装和升级映像：
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+建议您从防火墙规则中删除现有端点并允许新端点、以此开始使用这些新端点。
+
+从3.9.47版本的连接器开始、支持这些新端点。与先前版本的Connector没有向后兼容性。
+
+请注意以下事项：
+
+* 现有端点仍受支持。如果不想使用新端点、则无需进行任何更改。
+* 连接器首先连接现有端点。如果这些端点不可访问、Connector会自动联系新端点。
+* 在以下情况下、不支持新端点：
++
+** 如果连接器安装在政府地区。
+** 如果您将Connector与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用。
+
+
++
+对于这两种情形、您都可以继续使用现有端点。
+
+
 
 
 
@@ -84,26 +125,6 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
 
-
-
-
-=== 2024年11月11日
-
-
-
-==== 连接器3.9.46
-
-此版本的BlueXP Connector包括一些小的安全改进和错误修复。
-
-目前、3.9.46版本可用于标准模式和受限模式。
-
-
-
-==== IAM项目的ID
-
-现在、您可以通过BlueXP  身份和访问管理查看项目的ID。进行API调用时、您可能需要使用此ID。
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["了解如何获取项目的ID"](英文)
 
 
 
@@ -357,6 +378,16 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 
 
+=== 2024年12月16日
+
+
+
+==== 1.38 版
+
+此BlueXP  分类版本包括一些常规改进和错误修复。
+
+
+
 === 2024年11月4日
 
 
@@ -394,19 +425,6 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 .提高了扫描性能
 此版本可提高扫描性能。
-
-
-
-=== 2024年9月2日
-
-
-
-==== 版本：1.
-
-.扫描StorageGRID数据
-BlueXP  分类现在可以在StorageGRID中扫描数据。
-
-有关详细信息，请参见 link:task-scanning-storagegrid.html["扫描StorageGRID数据"]。
 
 
 
@@ -591,6 +609,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2024年12月12日
+
+
+
+==== Upgrade Advisor
+
+现在、您可以查看建议进行更新的存储固件、ARP/固 件和自动软件包(Autonomous SP Package、BMC)。link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["了解如何查看固件更新建议"](英文)
+
+
+
 === 2024年9月23日
 
 
@@ -608,16 +636,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 ==== 报告
 
 由于7-模式系统已停止有限支持，因此不再提供*7-Mode Upgrade Advisor Plans (7-模式升级顾问计划)*报告。有关详细信息，请参见 link:https://mysupport.netapp.com/site/info/version-support["软件版本支持"^]。详细了解 link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["升级在7-模式下运行的Data ONTAP存储系统"^]。
-
-
-
-=== 2024年7月4日
-
-
-
-==== Sustainability信息板
-
-通过环境指标深入了解存储系统的环境运行状况、现在可以根据高级预测模型提供更精确的预计用电量、直接碳用量和热量排放值。要了解更多信息，请参阅 link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Sustainability信息板概述"]。
 
 
 
