@@ -796,4 +796,10 @@
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。</block>
   <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">在Azure中支持新西兰北部地区</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">1.41 版</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。它还包括：</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">扫描状态</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">现在、BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">要查看扫描的状态，请导航到BlueXP  分类中的**配置**，然后选择**工作环境配置**。每个卷的进度将以行显示。</block>
 </blocks>
