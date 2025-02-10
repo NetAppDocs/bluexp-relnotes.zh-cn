@@ -536,6 +536,9 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 . 要重试所有失败的扫描，请选择*重试所有扫描*。
 
 
+.提高了分类模型的准确性
+的机器学习模型准确性link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["预定义的类别"]提高了11%。
+
 
 
 === 2025年1月22日
