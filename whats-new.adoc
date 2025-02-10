@@ -24,6 +24,41 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2025年3月6日
+
+
+
+==== 3.9.49更新
+
+
+
+===== BlueXP  使用连接器时的ONTAP System Manager访问权限
+
+BlueXP  管理员(具有组织管理员角色的用户)可以将BlueXP  配置为提示用户输入其ONTAP凭据、以便访问ONTAP System Manager。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。
+
+此功能在Connector 3.9.49及更高版本中可用。link:task-ontap-access-connector.html["了解如何配置凭据设置。"^](英文)
+
+
+
+==== 3.9.48更新
+
+
+
+===== 可以禁用Connector的自动升级设置
+
+您可以禁用Connector的自动升级功能。
+
+在标准模式或受限模式下使用BlueXP  时、只要Connector具有出站Internet访问权限来获取软件更新、BlueXP  就会自动将您的Connector升级到最新版本。如果您需要手动管理连接器的升级时间、现在可以为标准模式或受限模式禁用自动升级。
+
+
+NOTE: 此更改不会影响BlueXP  专用模式、在此模式下、您必须始终自行升级连接器。
+
+此功能在Connector 3.9.48及更高版本中可用。
+
+link:task-upgrade-connector.html["了解如何禁用Connector的自动升级。"^]
+
+
+
 === 2025年2月10日
 
 
@@ -38,7 +73,8 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 ==== BlueXP  身份和访问管理(IAM)
 
-* 支持为用户分配多个角色。
+* 支持为BlueXP  用户分配多个角色。
+* 支持在BlueXP  组织的多个资源(组织/文件夹/项目)上分配角色
 * 现在、角色将与以下两个类别之一相关联：平台和数据服务。
 
 
@@ -132,47 +168,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media
 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["了解有关创建支持案例的更多信息"](英文)
-
-
-
-=== 2024年12月16日
-
-
-
-==== 用于获取连接器映像的新安全端点
-
-安装Connector或进行自动升级时、Connector会与存储库联系以下载用于安装或升级的映像。默认情况下、Connector始终与以下端点进行联系：
-
-* https://*.blob.core.windows.net
-* https://cloudmanagerinfraprod.azurecr.io
-
-
-第一个端点包含通配符、因为我们无法提供明确的位置。存储库的负载平衡由服务提供商管理、这意味着可以从不同端点进行下载。
-
-为了提高安全性、Connector现在可以从专用端点下载安装和升级映像：
-
-* \https://bluexpinfraprod.eastus2.data.azurecr.io
-* \https://bluexpinfraprod.azurecr.io
-
-
-建议您从防火墙规则中删除现有端点并允许新端点、以此开始使用这些新端点。
-
-从3.9.47版本的连接器开始、支持这些新端点。与先前版本的Connector没有向后兼容性。
-
-请注意以下事项：
-
-* 现有端点仍受支持。如果不想使用新端点、则无需进行任何更改。
-* 连接器首先连接现有端点。如果这些端点不可访问、Connector会自动联系新端点。
-* 在以下情况下、不支持新端点：
-+
-** 如果连接器安装在政府地区。
-** 如果您将Connector与BlueXP  备份和恢复或BlueXP  勒索软件保护结合使用。
-
-
-+
-对于这两种情形、您都可以继续使用现有端点。
-
-
 
 
 
@@ -581,11 +576,23 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 
 
 
+=== 2025年3月6日
+
+
+
+==== Cloud Volumes ONTAP 9.16.1 GA
+
+现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
+
+
+
 === 2025 年 3 月 3 日
 
 
 
-==== 现在、新西兰北部地区在Azure中受支持
+==== 在Azure中支持新西兰北部地区
 
 现在、对于Cloud Volumes ONTAP 9.12.1 GA及更高版本的单节点和高可用性(HA)配置、Azure支持新西兰北部地区。请注意、此区域不支持Lsv3实例类型。
 
@@ -604,39 +611,6 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["了解Azure中的Cloud Volumes ONTAP部署选项"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
 
-
-
-
-=== 2025年2月10日
-
-
-
-==== 已启用用户身份验证、可从BlueXP  访问System Manager
-
-现在、作为BlueXP  管理员、您可以为从BlueXP  访问ONTAP系统管理器的ONTAP用户激活身份验证。您可以通过编辑BlueXP  连接器设置来启用此选项。此选项可用于标准模式和专用模式。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用System Manager管理Cloud Volumes ONTAP"^](英文)
-
-
-
-==== BlueXP  高级视图已重命名为System Manager
-
-通过ONTAP系统管理器从BlueXP  高级管理Cloud Volumes ONTAP的选项已从*高级视图*重命名为*系统管理器*。
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["使用System Manager管理Cloud Volumes ONTAP"^](英文)
-
-
-
-==== 利用BlueXP  数字钱包简化许可证管理方式
-
-现在、您可以使用BlueXP  电子钱包中改进的导航点来体验简化的Cloud Volumes ONTAP许可证管理：
-
-* 通过*监管>电子钱包>概述/数据服务许可证*选项卡轻松访问您的Cloud Volumes ONTAP许可证信息。
-* 单击*概述*选项卡中"Cloud Volume ONTAP面板上的*查看*、全面了解基于容量的许可证。通过此高级视图、您可以详细了解许可证和订阅。
-* 如果您更喜欢上一个界面，可以单击*切换到原有视图*按钮按类型查看许可证详细信息，并修改许可证的收费方法。
-
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["管理基于容量的许可证"^](英文)
 
 
 
