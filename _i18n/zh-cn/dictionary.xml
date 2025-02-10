@@ -81,15 +81,6 @@
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">通过使用新的BlueXP操作故障恢复能力服务及其自动化IT操作风险修复建议、您可以在发生中断或故障之前实施建议的修复措施。</block>
   <block id="070849913b65c4cb130cf632f0ac2008" category="inline-link-macro">详细了解BlueXP操作故障恢复能力</block>
   <block id="6bea546ba36c0c8c8bed5d22ed6af63d" category="paragraph"><block ref="d51dda3e944cc19bf96c07e1874304d0" category="inline-link-macro-rx"></block>。</block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">2023年5月7日</block>
-  <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Google Cloud Private优惠</block>
-  <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplace订阅、并显示订阅的结束日期和期限。通过此增强功能、您可以验证是否已成功接受此私人优惠并验证其条款。</block>
-  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">充电使用情况细分</block>
-  <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP数字钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。</block>
-  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Cloud Volumes ONTAP 软件包使用情况</block>
-  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">使用情况概要</block>
-  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Storage VM使用情况</block>
-  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">卷使用量</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">已从BlueXP分层界面中删除许可选项卡。现在、您可以从BlueXP分层内部部署信息板访问按需购买(PAYGO)订阅的所有许可。此外、还提供了一个从该页面到BlueXP数字钱包的链接、可用于查看和管理任何BlueXP分层自带许可证(BYOL)。</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">"集群信息板"选项卡已重命名为"集群"、"内部概述"选项卡已重命名为"内部部署信息板"。这些页面添加了一些信息、可帮助您评估是否可以通过其他分层配置优化存储空间。</block>
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
@@ -793,4 +784,13 @@
   <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">现在、您可以查看BlueXP  工作负载工厂执行各种操作所使用的权限、这些操作从发现存储环境到为GenAI工作负载部署AWS资源(例如存储中的文件系统或知识库)不等。您可以查看存储、数据库、VMware和GenAI工作负载的IAM策略和权限。</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
+  <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP  数字钱包经过重新设计、易于使用、现在可提供额外的订阅和许可证管理。</block>
+  <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">新增了"概述"信息板</block>
+  <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">数字钱包主页提供了一个更新的NetApp许可证和Marketplace订阅信息板、可以深入查看特定服务、许可证类型和所需操作。</block>
+  <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">配置凭据订阅</block>
+  <block id="a2aa4487721a3b63f1893d33bdb67c28" category="paragraph">现在、您可以通过BlueXP  数字钱包为提供商凭据配置订阅。通常、您在首次订阅Marketplace订阅或年度合同时会执行此操作。以前只能在"凭据"页面上更改订阅的凭据。</block>
+  <block id="175fca0ca5f306258c490378dc2367db" category="section-title">将订阅与组织相关联</block>
+  <block id="a5f7678a307b711643d239d80564147c" category="paragraph">现在、您可以直接从数字钱包更新订阅关联到的组织。</block>
+  <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">管理Cloud Volume ONTAP许可证</block>
+  <block id="78ab02ef4a4fa36c21e9d7181ab77517" category="paragraph">现在，您可以通过主页或*数据服务许可证*选项卡管理Cloud Volumes ONTAP许可证。使用*商城订阅*选项卡查看您的订阅信息。</block>
 </blocks>

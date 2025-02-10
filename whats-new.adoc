@@ -733,6 +733,36 @@ AutoSupport小工具已添加到主信息板屏幕中、用于提醒客户与Aut
 
 
 
+=== 2025年2月10日
+
+BlueXP  数字钱包经过重新设计、易于使用、现在可提供额外的订阅和许可证管理。
+
+
+
+==== 新增了"概述"信息板
+
+数字钱包主页提供了一个更新的NetApp许可证和Marketplace订阅信息板、可以深入查看特定服务、许可证类型和所需操作。
+
+
+
+==== 配置凭据订阅
+
+现在、您可以通过BlueXP  数字钱包为提供商凭据配置订阅。通常、您在首次订阅Marketplace订阅或年度合同时会执行此操作。以前只能在"凭据"页面上更改订阅的凭据。
+
+
+
+==== 将订阅与组织相关联
+
+现在、您可以直接从数字钱包更新订阅关联到的组织。
+
+
+
+==== 管理Cloud Volume ONTAP许可证
+
+现在，您可以通过主页或*数据服务许可证*选项卡管理Cloud Volumes ONTAP许可证。使用*商城订阅*选项卡查看您的订阅信息。
+
+
+
 === 2024年3月5日
 
 
@@ -759,30 +789,6 @@ Cloud Volumes ONTAP使用情况报告现已有多项改进：
 * 现在、工作环境名称会包含在Storage VM和卷使用情况报告中。
 * 卷类型_file_现在标记为_Primary (Read/Write)_。
 * 卷类型_Secondary (DP)_现在标记为_Secondary (DP)_。
-
-
-有关使用情况报告的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"]。
-
-
-
-=== 2023年5月7日
-
-
-
-==== Google Cloud Private优惠
-
-BlueXP数字钱包现在可识别与私人优惠相关的Google Cloud Marketplace订阅、并显示订阅的结束日期和期限。通过此增强功能、您可以验证是否已成功接受此私人优惠并验证其条款。
-
-
-
-==== 充电使用情况细分
-
-现在、您可以了解订阅基于容量的许可证时要支付的费用。以下类型的使用情况报告可从BlueXP数字钱包下载。使用情况报告提供了您的订阅的容量详细信息、并告诉您Cloud Volumes ONTAP 订阅中的资源收费情况。可下载的报告可以轻松地与他人共享。
-
-* Cloud Volumes ONTAP 软件包使用情况
-* 使用情况概要
-* Storage VM使用情况
-* 卷使用量
 
 
 有关使用情况报告的详细信息、请参见 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["下载使用情况报告"]。
