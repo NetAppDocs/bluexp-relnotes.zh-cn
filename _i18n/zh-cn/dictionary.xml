@@ -787,4 +787,33 @@
   <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">备份(一致性组)操作、包括SnapMirror自动化</block>
   <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">BlueXP  灾难恢复中对ASA R2的支持使用ONTAP 9.161。</block>
   <block id="60a0836359d058db16981cf45c24594f" category="paragraph">虽然数据存储库可以挂载在ONTAP卷或ASA R2存储单元上、但BlueXP  灾难恢复中的资源组不能同时包含ONTAP和ASA R2中的数据存储库。您可以从资源组中的ONTAP或ASA R2选择数据存储库。</block>
+  <block id="09d7c2dac047caa965175fead07159aa" category="section-title">2025年2月21日</block>
+  <block id="9126fc20b93ed61d342990460cdaaa43" category="section-title">高性能索引编制</block>
+  <block id="c31a2ae5c0b165eb1cee78223b508907" category="paragraph">BlueXP  备份和恢复引入了一项经过更新的索引编制功能、可提高源工作环境中数据的索引编制效率。新的索引编制功能包括更新用户界面、提高搜索和还原数据方法的性能、升级全局搜索功能以及更好的可扩展性。</block>
+  <block id="135dcb5e7fddaabc736ce2d72074e3bf" category="paragraph">以下是改进的细分：</block>
+  <block id="2fd910d863c39557d994a40fedd27b38" category="list-text">*文件夹整合*：更新后的版本使用包含特定标识符的名称将文件夹分组在一起，使索引编制过程更顺畅。</block>
+  <block id="415e39ccfe49c5161a2a27cbc19cbaac" category="list-text">*镶木地板文件缩减*：更新后的版本减少了为每个卷编制索引所使用的文件数量，从而简化了流程，并且不再需要额外的数据库。</block>
+  <block id="c53ca191fcf89c8c42d05fd203ce3d03" category="list-text">*通过更多会话实现横向扩展*：新版本增加了更多会话来处理索引编制任务、从而加快了处理速度。</block>
+  <block id="9ad2108ab54a2f84cdce51c70aedf218" category="list-text">*支持多个索引容器*：新版本使用多个容器来更好地管理和分发索引任务。</block>
+  <block id="4a3dba07ec28235aef40beaad924f29a" category="list-text">*拆分索引工作流*：新版本将索引编制过程分为两部分，提高了效率。</block>
+  <block id="4524da26c6e536d9203dad25cbe67e46" category="list-text">*改进的并发性*：新版本可以同时删除或移动目录，从而加快索引编制过程。</block>
+  <block id="4cd005b9bd7832f2f50d7bfa9ef8c5bd" category="paragraph-title">谁可以从该功能中受益？</block>
+  <block id="c0b0a9d9f7b65ce3e277b13bce1241d3" category="paragraph">所有新客户均可使用新的索引功能。</block>
+  <block id="eb3dc66c3f5547559da4bd69622b70f1" category="paragraph-title">如何启用索引编制？</block>
+  <block id="1928ef25d05266e1052541c930f2737c" category="paragraph">在使用搜索和还原方法还原数据之前、您需要在计划从中还原卷或文件的每个源工作环境上启用"索引编制"。这样、索引目录就可以跟踪每个卷和每个备份文件、从而使搜索快速高效。</block>
+  <block id="d28994d1a9691ce26fcae71b9a05d1bc" category="paragraph">在执行搜索和还原时、通过选择"启用索引"选项、在源工作环境中启用索引。</block>
+  <block id="6b14c6e0d643870ea727335d7739df30" category="inline-link">如何使用搜索和恢复来恢复ONTAP数据(&amp;A)</block>
+  <block id="9031cfd1bcd3de043cd6391f098dc91b" category="paragraph">有关详细信息，请参见文档<block ref="7ae860a58fb7c028461eb3a0f3043711" category="inline-link-rx"></block>。</block>
+  <block id="2d31667baed414ccd330141663dac284" category="paragraph-title">支持的扩展</block>
+  <block id="b2ec30cb49afbacbac6cc89a95133887" category="paragraph">新的索引编制功能支持以下功能：</block>
+  <block id="3201cddda2c272104ed2ef30674f361a" category="list-text">不到3分钟即可实现全局搜索效率</block>
+  <block id="5386e74ecf10139fea9af2308674b2f3" category="list-text">最多50亿个文件</block>
+  <block id="ed6f4100c4fab2301cff975ad76b4882" category="list-text">每个集群最多5000个卷</block>
+  <block id="1154c1f5439a3f20019e89d49f3ba075" category="list-text">每个卷最多10万个快照</block>
+  <block id="bca4b5a9086c6c17f64be092486e45ad" category="list-text">基线索引编制的最长时间不超过7天。实际时间因环境而异。</block>
+  <block id="783d72b35e6b2ea46fd074f6f0960e45" category="section-title">全局搜索性能改进</block>
+  <block id="66fba34c17d26bb2c0e9b396915f9a4f" category="paragraph">此版本还对全局搜索性能进行了增强。现在、您将看到进度指示器和更详细的搜索结果、包括文件计数和搜索所用时间。用于搜索和索引编制的专用容器可确保在五分钟内完成全局搜索。</block>
+  <block id="ba7df4741bd77385c236fcf981dd357a" category="paragraph">请注意以下与全局搜索相关的注意事项：</block>
+  <block id="03602fc4621dad9ee00f9e5d533ff5ea" category="list-text">不会对标记为每小时的快照执行新索引。</block>
+  <block id="2bacd7c8c96302172c5d0324d784cf03" category="list-text">新的索引编制功能仅适用于FlexVol上的快照、不适用于FlexGroup上的快照。</block>
 </blocks>
