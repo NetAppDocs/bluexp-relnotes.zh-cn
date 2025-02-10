@@ -331,7 +331,6 @@
   <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">如果您当前正在从BlueXP管理Azure NetApp Files、则需要将此权限添加到与先前创建的Microsoft Entra应用程序关联的自定义角色。</block>
   <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">了解如何设置Microsoft Entra应用程序和查看自定义角色权限</block>
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>(英文)</block>
-  <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp不会对任何预览的工作负载容量收取任何费用。</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">将应用程序故障转移到远程站点</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">请参阅<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">详细了解如何从勒索软件攻击中恢复</block>
@@ -345,8 +344,6 @@
   <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">在此版本中、对FlexGroup文件夹还原的支持是一项技术预览。</block>
   <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">使用浏览和还原还原文件夹和文件(&amp;A)</block>
   <block id="707304f314bfa71975e8ffb352535092" category="paragraph">有关手动启用的详细信息，请参见<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>。</block>
-  <block id="4639d0e2e2909a747265c2f704128bca" category="inline-link">监控作业</block>
-  <block id="5ef55533619d84d0298304b37a76eeff" category="paragraph">请参阅<block ref="786959fe8223b685d5c08f8e62246672" category="inline-link-rx"></block>。</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">方法如下：</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">从顶部菜单中选择*复制计划*。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">选择一个计划、然后选择操作图标以显示下拉菜单。</block>
@@ -403,13 +400,6 @@
   <block id="9a3a6422d384602f3e19e123263dc99f" category="paragraph">有关详细信息，请参见<block ref="59c3623215c45197e971057378c86d42" category="inline-link-rx"></block>。</block>
   <block id="7e4353e591e7ee71b0cc70a66b02ee7a" category="paragraph">您可以在BlueXP Canvas上查看Amazon S3存储分段已有一段时间了。现在、您可以直接从BlueXP  添加新存储分段并更改现有存储分段的属性。<block ref="f5358cf9e8e537088a631ff4313d8401" category="inline-link-rx"></block>(英文)。</block>
   <block id="3e9d2d36df8c91d7e9151cc5775042a8" category="paragraph">您已有一段时间可以在BlueXP Canvs上查看Azure Blb Storage了。现在、您可以直接从BlueXP  添加新存储帐户并更改现有存储帐户的属性。<block ref="432ae671c636de993f8b5290b51ad53f" category="inline-link-rx"></block>(英文)。</block>
-  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">支持RHEL 8.10</block>
-  <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v8.10。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
-  <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3和9.4。</block>
-  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXP分类</block>
-  <block id="2b569c1a8e17ba534c2e1f57f9d1bbe9" category="paragraph">详细了解<block ref="491ed29a13fdb2b66f8e1bbeefef79a5" category="inline-link-rx"></block>。</block>
-  <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">支持NFS v4.1</block>
-  <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">除了先前支持的版本之外、此版本还支持NFS v4.1。</block>
   <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">了解有关的更多信息<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP勒索软件保护设置</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
@@ -424,23 +414,6 @@
   <block id="622ad6297367666ca450d994236cbc2d" category="paragraph">如果您正在查找_advancedView选项、该选项可用于使用ONTAP系统管理器管理FSx for ONTAP文件系统、则在选择工作环境后、您可以从BlueXP  画布中找到该选项。</block>
   <block id="50a397404296b3dd547fbabeb18e9092" category="inline-image-macro">选择显示BlueXP  Manager选项的工作环境后、System Canvas上右侧面板的屏幕截图。</block>
   <block id="66cff4f3970f46872862ee60b7f0a832" category="paragraph"><block ref="66cff4f3970f46872862ee60b7f0a832" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="73dfeef5d38f87e4c1d9e4b6417db109" category="paragraph">NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。</block>
-  <block id="90df487d076cd9295a7192268b4439ee" category="inline-link">基于节点的许可证终止提供</block>
-  <block id="342dcce6bda294bb4b60fc9333bcafbe" category="inline-link">将基于节点的许可证转换为基于容量的许可证</block>
-  <block id="2293617fe352e42e5a1e5d757463cb39" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="5987d844b1ad687ea551a96a31c7c0df" category="inline-link-rx"></block></block>
-  <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：</block>
-  <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">在私有模式下部署</block>
-  <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">在AWS中部署Cloud Volumes ONTAP的中国地区</block>
-  <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)</block>
-  <block id="677ce77d69762bd9f63d8a2760e6a0c4" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block></block>
-  <block id="b37931f01938eae6736d1bea8fd72fed" category="paragraph">现在、您可以通过BlueXP  选择一个冷层、将非活动容量层数据存储在Azure Blb存储上。将冷层添加到现有热层和冷层可为您提供更经济实惠的存储选项并提高成本效益。</block>
-  <block id="176cd61977ca55fd13eff7c7ba3659f5" category="inline-link">Azure 中的数据分层</block>
-  <block id="2ede20fe3152113b3c27cd841c879ccf" category="paragraph"><block ref="2ede20fe3152113b3c27cd841c879ccf" category="inline-link-rx"></block></block>
-  <block id="390a3dfacd9551e05363b9eb09a0464c" category="inline-link">安全组规则</block>
-  <block id="69e89afe4b2013c34ff51df883ddc022" category="paragraph"><block ref="9064ea2dae3c9dc76b91a834ab88d8bf" category="inline-link-rx"></block>(英文)</block>
-  <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">在Cloud Volumes ONTAP工作环境中启用WORM</block>
-  <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
-  <block id="500984bae07aedc6c662b31a3039d462" category="list-text">美国公共部门客户</block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。</block>
   <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="139da935670a9f985194d3241917c359" category="paragraph">现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。</block>
@@ -452,7 +425,6 @@
   <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">索引编制已暂停</block>
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">错误</block>
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">未启用</block>
-  <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">现在、在私有模式下使用BlueXP  时、您可以发现NetApp ASA R2系统。从BlueXP  的3.9.46专用模式版本开始、可提供此支持。</block>
   <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Azure 中支持的配置</block>
@@ -486,7 +458,6 @@
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>(英文)</block>
   <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx</block>
   <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
-  <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。</block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">响应检测到的勒索软件警报</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">有关详细信息，请参见<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>。</block>
@@ -591,7 +562,6 @@
   <block id="3108a0619eec0e2ef9c6c5bd796bbf0d" category="paragraph">您可以快速识别容量低或性能低的ONTAP集群、评估可用性范围并识别安全风险。您可以查看与容量、性能、保护、可用性、安全性和配置相关的警报。</block>
   <block id="907b4f5ff0a11b28375c092b0b876c3e" category="section-title">警报详细信息</block>
   <block id="2c132bb868e25bdbc509ab83d2436d71" category="paragraph">您可以深入了解警报详细信息并查找建议。</block>
-  <block id="b361027502c50a2e2c7efbe96a5720bf" category="section-title">查看链接到System Manager的集群详细信息</block>
   <block id="a81101241f6ae4b53dda6f72078e1a84" category="paragraph">通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP系统管理器的详细信息。</block>
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
   <block id="8f0b3ce2b96f337852fd1c252724a612" category="section-title">将FSx for ONTAP文件系统与BlueXP  中的工作空间相关联</block>
@@ -638,8 +608,6 @@
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">此BlueXP  分类版本更新了数据调查报告的导出流程。此导出更新适用于对数据执行其他分析、为数据创建其他可视化效果或与他人共享数据调查结果。</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="section-title">1.38 版</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。</block>
-  <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024年11月4日</block>
-  <block id="c1922490c576eff789b323f98c667589" category="section-title">1.37 版</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
   <block id="f196d25aadb7411a1f827c0ca0317cfb" category="section-title">已启用用户身份验证、可从BlueXP  访问System Manager</block>
   <block id="7a44ab81762cf5f3e018d99190cfe8ac" category="paragraph">现在、作为BlueXP  管理员、您可以为从BlueXP  访问ONTAP系统管理器的ONTAP用户激活身份验证。您可以通过编辑BlueXP  连接器设置来启用此选项。此选项可用于标准模式和专用模式。</block>
@@ -649,13 +617,6 @@
   <block id="5fbce01b2fa5bcad467f74186949bef5" category="paragraph">现在、您可以使用BlueXP  电子钱包中改进的导航点来体验简化的Cloud Volumes ONTAP许可证管理：</block>
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">2024年12月9日</block>
   <block id="497e698cad27d6346959de7394ab5df8" category="section-title">已针对Azure更新受支持的VM列表、以符合最佳实践</block>
-  <block id="059b6fdd2ea839d9327c322a4c87e168" category="section-title">基于节点的许可证终止提供</block>
-  <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">从BlueXP  中删除基于节点的部署</block>
-  <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统的选项。除了少数特殊情况之外、您不能对任何云提供商的Cloud Volumes ONTAP部署使用基于节点的许可证。</block>
-  <block id="02077474df02850d5f691ab4c25f3b7c" category="section-title">为Azure Blb存储上的Cloud Volumes ONTAP数据添加了一个冷层</block>
-  <block id="7a315b4592c0ed57964da376a6b04868" category="section-title">用于限制公众对Azure存储帐户的访问的选项</block>
-  <block id="c11ad5eeb4b3088d2c151593e9c1204e" category="paragraph">现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。</block>
-  <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">部署Cloud Volumes ONTAP后启用WORm</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020年9月9日</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支持适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="7ee45649520b61796809750e472a8000" category="section-title">2020年12月7日</block>
@@ -711,11 +672,6 @@
   <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
   <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">支持从内部到内部的VMware VMFS数据存储库</block>
   <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">此版本支持在VMware vSphere虚拟机文件系统(Virtual Machine File System、VMFS)数据存储库上挂载的VM、以便将iSCSI和FC保护到内部存储。以前、该服务提供了一个_technology preview_、支持iSCSI和FC的VMFS数据存储库。</block>
-  <block id="895b67d31a903fc743f186c56aeecff6" category="section-title">2024年8月2日</block>
-  <block id="b4f4dc0bb14114cf289b66587d52c9a4" category="section-title">支持使用FC从内部到内部的VMware VMFS数据存储库</block>
-  <block id="e0b7491fa7ed8915c350ab7831389ebf" category="paragraph">此版本为VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM提供了一个_technology preview_支持、用于将FC保护到内部存储。以前、该服务提供了一个技术预览版、支持将VMFS数据存储库用于iSCSI。</block>
-  <block id="8b0a520b04093a504975b99493c33a06" category="section-title">作业取消</block>
-  <block id="e37d535f557154a6dd6ed413e0e7782c" category="paragraph">在此版本中、您现在可以在作业监控器UI中取消作业。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">支持E系列</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">现在、您可以直接从BlueXP发现E系列系统。通过发现E系列系统、您可以全面了解混合多云中的数据。</block>
@@ -795,4 +751,40 @@
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
   <block id="5baf4417d867f07ce7f16e7810f044d7" category="section-title">支持BlueXP  工作负载工厂中的服务帐户</block>
   <block id="369af9c9eae8f9673850f588a7ed5272" category="paragraph">现在、BlueXP  工作负载工厂支持服务帐户。您可以创建服务帐户、以充当自动化基础架构操作的计算机用户。</block>
+  <block id="9ba3a5a376a4241ee4847ae13742a741" category="section-title">查看链接到ONTAP系统管理器的集群详细信息</block>
+  <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025年2月19日</block>
+  <block id="6b9d9a04ff593ff427731819f0c3618f" category="section-title">1.40 版</block>
+  <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">支持RHEL 9.5</block>
+  <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.5。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
+  <block id="3461c6d70dff5780cf443e0892f0b5af" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3、9.4和9.5。</block>
+  <block id="ce7ca903497eb6081e95129584ddf094" category="paragraph-title">确定扫描优先级</block>
+  <block id="c05a4c0b45b0c78ba3771a3530738f78" category="paragraph">执行仅映射扫描时、您可以确定最重要扫描的优先级。如果您有许多工作环境、并希望确保首先完成高优先级扫描、则此功能会很有帮助。</block>
+  <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">默认情况下、扫描会根据启动顺序进行排队。现在、您可以将扫描移动到队列的前面、从而确定扫描的优先级。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。</block>
+  <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">优先权是一次性授予的。按默认顺序自动重新选择映射数据。</block>
+  <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">仅映射扫描</block>
+  <block id="92fbf5243922258219f1e304b1549560" category="paragraph">优先级限制为<block ref="4fb1432e3e9b17c8a7a21683abcd7d6c" category="inline-link-macro-rx"></block>；它不适用于地图扫描和分类扫描。</block>
+  <block id="42968807986d9cd74ea7703d63bf3408" category="paragraph">要更改优先级：</block>
+  <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">从BlueXP  分类菜单中，选择*Configuration*。</block>
+  <block id="9ad22d134d0b57050c5d4d4a8e861bf9" category="list-text">选择要确定优先级的资源。</block>
+  <block id="dde93fd6ebd9f31996e0ca6a50869101" category="list-text">从操作...选项中，选择*优先 扫描*。</block>
+  <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重试所有扫描</block>
+  <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分类现在支持批量重试所有失败的扫描。</block>
+  <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。</block>
+  <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">重试所有扫描：</block>
+  <block id="8e66898002589c26f968e6fd94a57988" category="list-text">要重试所有失败的扫描，请选择*重试所有扫描*。</block>
+  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
+  <block id="880b804508da0afe757f8198fd3eb1c3" category="section-title">Azure Marketplace Direct部署简介</block>
+  <block id="365aa2bac7413987a05e356d504aee0f" category="paragraph">现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。</block>
+  <block id="f56439b6bdbca147476a375ebacfef1d" category="inline-link">了解Azure中的Cloud Volumes ONTAP部署选项</block>
+  <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
+  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
+  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
+  <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">4.2 版</block>
+  <block id="ca716ff875c64c5d237c8e862b62065c" category="section-title">ASA R2支持VMFS存储上的VM和数据存储库</block>
+  <block id="1979efa5817be86acee4a8fbdf309a1a" category="paragraph">此版本的BlueXP  灾难恢复支持对VMFS存储上的VM和数据存储库使用ASA R2。在ASA R2系统上、ONTAP软件支持基本SAN功能、但会删除SAN环境中不支持的功能。</block>
+  <block id="d154d7f159ffe4fedd65f7894a405e59" category="paragraph">此版本支持ASA R2的以下功能：</block>
+  <block id="38e9022b7f95524a99b3126af89eb640" category="list-text">为主存储配置一致性组(仅限平面一致性组、表示只有一个级别没有分层结构)</block>
+  <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">备份(一致性组)操作、包括SnapMirror自动化</block>
+  <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">BlueXP  灾难恢复中对ASA R2的支持使用ONTAP 9.161。</block>
+  <block id="60a0836359d058db16981cf45c24594f" category="paragraph">虽然数据存储库可以挂载在ONTAP卷或ASA R2存储单元上、但BlueXP  灾难恢复中的资源组不能同时包含ONTAP和ASA R2中的数据存储库。您可以从资源组中的ONTAP或ASA R2选择数据存储库。</block>
 </blocks>

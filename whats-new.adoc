@@ -205,7 +205,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["了解有�
 
 
 
-==== 查看链接到System Manager的集群详细信息
+==== 查看链接到ONTAP系统管理器的集群详细信息
 
 通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP系统管理器的详细信息。
 
@@ -451,6 +451,48 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 
 
+=== 2025年2月19日
+
+
+
+==== 1.40 版
+
+此BlueXP  分类版本包含以下更新。
+
+.支持RHEL 9.5
+除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.5。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。
+
+以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3、9.4和9.5。
+
+.确定扫描优先级
+执行仅映射扫描时、您可以确定最重要扫描的优先级。如果您有许多工作环境、并希望确保首先完成高优先级扫描、则此功能会很有帮助。
+
+默认情况下、扫描会根据启动顺序进行排队。现在、您可以将扫描移动到队列的前面、从而确定扫描的优先级。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。
+
+优先权是一次性授予的。按默认顺序自动重新选择映射数据。
+
+优先级限制为link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["仅映射扫描"]；它不适用于地图扫描和分类扫描。
+
+要更改优先级：
+
+. 从BlueXP  分类菜单中，选择*Configuration*。
+. 选择要确定优先级的资源。
+. 从操作...选项中，选择*优先 扫描*。
+
+
+.重试所有扫描
+BlueXP  分类现在支持批量重试所有失败的扫描。
+
+现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。
+
+重试所有扫描：
+
+. 从BlueXP  分类菜单中，选择*Configuration*。
+. 要重试所有失败的扫描，请选择*重试所有扫描*。
+
+
+
+
 === 2025年1月22日
 
 
@@ -491,29 +533,21 @@ DataLock功能可保护备份文件、使其在指定时间段内不会被修改
 
 
 
-=== 2024年11月4日
-
-
-
-==== 1.37 版
-
-此BlueXP  分类版本包含以下更新。
-
-.支持RHEL 8.10
-除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v8.10。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。
-
-以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3和9.4。
-
-详细了解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"]。
-
-.支持NFS v4.1
-除了先前支持的版本之外、此版本还支持NFS v4.1。
-
-详细了解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP分类"]。
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 2025年2月18日
+
+
+
+==== Azure Marketplace Direct部署简介
+
+现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["了解Azure中的Cloud Volumes ONTAP部署选项"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
+
 
 
 
@@ -559,60 +593,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capaci
 在Azure中部署新的Cloud Volumes ONTAP实例时、不再可在BlueXP  上选择DS_v2和ES_v3计算机系列。这些系列将仅在旧的现有系统中保留和支持。只有从9.12.1版本开始、Azure才支持全新部署Cloud Volumes ONTAP。建议您切换到ES_v4或与Cloud Volumes ONTAP 9.12.1及更高版本兼容的任何其他系列。但是、通过API进行新部署时、可以使用DS_v2和ES_v3系列计算机。
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Azure 中支持的配置"^]
-
-
-
-=== 2024年11月11日
-
-
-
-==== 基于节点的许可证终止提供
-
-NetApp已计划终止基于Cloud Volumes ONTAP节点的许可的可用性(EOA)和支持结束(EOS)。从2024年11月11日开始、基于节点的许可证的有限可用性已终止。基于节点的许可支持将于2024年12月31日结束。在基于节点的许可证EOA之后、您应使用BlueXP  许可证转换工具过渡到基于容量的许可模式。
-
-对于年度或长期承诺、NetApp建议您在EOA日期或许可证到期日期之前联系NetApp代表、以确保满足过渡的前提条件。如果您没有Cloud Volumes ONTAP节点的长期合同、并根据按需按需购买(PAYGO)订阅运行系统、则必须在EOS日期之前规划您的转换。对于长期合同和PAYGO订阅、您可以使用BlueXP  许可证转换工具进行无缝转换。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["将基于节点的许可证转换为基于容量的许可证"^]
-
-
-
-==== 从BlueXP  中删除基于节点的部署
-
-BlueXP  已弃用使用基于节点的许可证部署Cloud Volumes ONTAP系统的选项。除了少数特殊情况之外、您不能对任何云提供商的Cloud Volumes ONTAP部署使用基于节点的许可证。
-
-NetApp认识到以下独特的许可要求符合合同义务和运营需求、并将在这些情况下继续支持基于节点的许可证：
-
-* 美国公共部门客户
-* 在私有模式下部署
-* 在AWS中部署Cloud Volumes ONTAP的中国地区
-* 如果您拥有有效且未过期的By-Node自带许可证(BYOL许可证)
-
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["基于节点的许可证终止提供"^]
-
-
-
-==== 为Azure Blb存储上的Cloud Volumes ONTAP数据添加了一个冷层
-
-现在、您可以通过BlueXP  选择一个冷层、将非活动容量层数据存储在Azure Blb存储上。将冷层添加到现有热层和冷层可为您提供更经济实惠的存储选项并提高成本效益。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Azure 中的数据分层"^]
-
-
-
-==== 用于限制公众对Azure存储帐户的访问的选项
-
-现在、您可以选择限制对Azure上Cloud Volumes ONTAP系统的存储帐户的公开访问。通过禁用访问、您可以确保您的专用IP地址不会被泄露、即使在同一个vNet中也是如此、只要您需要遵守组织的安全策略即可。此选项还会为Cloud Volumes ONTAP系统禁用数据分层、并适用于单节点和高可用性对。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["安全组规则"^](英文)
-
-
-
-==== 部署Cloud Volumes ONTAP后启用WORm
-
-现在、您可以使用BlueXP  在现有Cloud Volumes ONTAP系统上激活一次写入、多次读取(Write On一次 读取、Read M众多、WORM)存储。通过此功能、您可以灵活地在工作环境中启用WORM、即使在创建WORM期间未启用WORM也是如此。启用后、您将无法禁用WORM。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["在Cloud Volumes ONTAP工作环境中启用WORM"^]
 
 
 
@@ -806,6 +786,28 @@ Cloud Volumes ONTAP使用情况报告现已有多项改进：
 
 
 
+=== 2025年2月19日
+
+4.2 版
+
+
+
+==== ASA R2支持VMFS存储上的VM和数据存储库
+
+此版本的BlueXP  灾难恢复支持对VMFS存储上的VM和数据存储库使用ASA R2。在ASA R2系统上、ONTAP软件支持基本SAN功能、但会删除SAN环境中不支持的功能。
+
+此版本支持ASA R2的以下功能：
+
+* 为主存储配置一致性组(仅限平面一致性组、表示只有一个级别没有分层结构)
+* 备份(一致性组)操作、包括SnapMirror自动化
+
+
+BlueXP  灾难恢复中对ASA R2的支持使用ONTAP 9.161。
+
+虽然数据存储库可以挂载在ONTAP卷或ASA R2存储单元上、但BlueXP  灾难恢复中的资源组不能同时包含ONTAP和ASA R2中的数据存储库。您可以从资源组中的ONTAP或ASA R2选择数据存储库。
+
+
+
 === 2024年10月30日
 
 
@@ -910,27 +912,6 @@ Cloud Volumes ONTAP使用情况报告现已有多项改进：
 * BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。
 * 对于任何复制计划、目标ONTAP卷应使用与托管受保护VM的源ONTAP卷相同的协议。例如、如果源使用FC协议、则目标也应使用FC。
 
-
-
-
-=== 2024年8月2日
-
-
-
-==== 支持使用FC从内部到内部的VMware VMFS数据存储库
-
-此版本为VMware vSphere虚拟机文件系统(VMFS)数据存储库上挂载的VM提供了一个_technology preview_支持、用于将FC保护到内部存储。以前、该服务提供了一个技术预览版、支持将VMFS数据存储库用于iSCSI。
-
-
-NOTE: NetApp不会对任何预览的工作负载容量收取任何费用。
-
-
-
-==== 作业取消
-
-在此版本中、您现在可以在作业监控器UI中取消作业。
-
-请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["监控作业"]。
 
 
 
