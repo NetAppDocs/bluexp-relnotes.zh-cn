@@ -28,7 +28,7 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
-==== 23b3b711859803a815b81aca1cc4811c
+==== 连接器3.9.50
 
 此版本的BlueXP Connector包括一些小的安全改进和错误修复。
 
@@ -609,19 +609,19 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 
 
 
-=== 0de5f5ade75808b90faefd69873b4b3c
+=== 2025年3月12日
 
 
 
-==== a2fefc65df2136938b995f8abbe643c2
+==== Azure中的多可用性区域部署支持新区域
 
-0cc914ed23f0f7d6bc902ae731843213
+以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：
 
-* 2e168141b8f719cbd37e6beec663b599
-* 7a6df46ff8e25ac610f60f312512afa4
+* 位于美国中部
+* 美国弗吉尼亚州政府(美国政府区域-弗吉尼亚州)
 
 
-91aba3afcaafb3ecbed8f358c30b8a7a
+有关所有地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
 
 
 
