@@ -1148,31 +1148,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-==== ad84f24c65dd6930a049e0903256dc97
+==== 模拟攻击并做出响应
 
-6cadf1d9d5289622136d042488809e73
+在此版本中、模拟勒索软件攻击以测试您对勒索软件警报的响应。此功能通过测试警报通知、响应和恢复过程、帮助您了解在发生实际勒索软件攻击时您已做好准备。
 
-9b1eb2dbe181e9f7b73db8a0785c0419
-
-
-
-==== d36ca1f9466b055dd6adb80de5cce7d4
-
-61541c0b99aec5f11fccef5bcb3fe5a1
-
-* cb3c0a83218c46d38ab0842ce49a7e6e
-* 6a4c9cc76f7f432efa274c3ff0dae3dd
-* 3b7810e8427f006590b006af43d016ef
-* 28573ff4f820730a3eeae9cdd51b54d4
-
-
-98e6e30b63e5242616c686684a17c03b
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["进行勒索软件攻击准备演练"]。
 
 
 
-==== d957d0c80017f235b131c557ae0876b1
+==== 发现过程的增强功能
 
-8c8c1a747835015c86248b11a2097c02
+此版本对选择性发现和重新发现过程进行了增强：
+
+* 在此版本中、您可以发现添加到先前选定工作环境中的新创建工作负载。
+* 您也可以在此版本中选择_new_工作环境。此功能可帮助您保护添加到环境中的新工作负载。
+* 如果要选择所有已发现的工作负载，可以使用*全选*选项。
+* 您可以在最初的发现过程中或在设置选项中执行这些发现过程。
+
+
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["发现先前选定工作环境中新创建的工作负载"]和 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["使用设置选项配置提取"]。
+
+
+
+==== 检测到高加密时引发警报
+
+在此版本中、即使文件扩展名未更改、您也可以在工作负载上检测到高加密时查看警报。此功能使用ONTAP自动勒索软件保护(ARP) AI、可帮助您识别面临勒索软件攻击风险的工作负载。使用此功能并下载受影响文件的完整列表(无论是否更改扩展名)。
 
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["响应检测到的勒索软件警报"]。
 
