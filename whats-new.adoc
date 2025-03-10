@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。 
 ---
 = BlueXP中的最新变更
@@ -21,6 +21,24 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 == 管理功能
 
 本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。
+
+
+
+=== 2025年3月10日
+
+
+
+==== 23b3b711859803a815b81aca1cc4811c
+
+此版本的BlueXP Connector包括一些小的安全改进和错误修复。
+
+目前、3.9.50版本可用于标准模式和受限模式。
+
+
+
+==== BlueXP  提供NetApp Keystone测试版
+
+NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。
 
 
 
@@ -591,6 +609,34 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 
 
 
+=== 0de5f5ade75808b90faefd69873b4b3c
+
+
+
+==== a2fefc65df2136938b995f8abbe643c2
+
+0cc914ed23f0f7d6bc902ae731843213
+
+* 2e168141b8f719cbd37e6beec663b599
+* 7a6df46ff8e25ac610f60f312512afa4
+
+
+91aba3afcaafb3ecbed8f358c30b8a7a
+
+
+
+=== 2025年3月10日
+
+
+
+==== 322a339b221056f32120ffd18077d44d
+
+aa1c2167957b1092da7e43e77867748c
+
+5fc68a139fdd05790792b12eb853e84d
+
+
+
 === 2025年3月6日
 
 
@@ -600,32 +646,6 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["了解此版本 Cloud Volumes ONTAP 中的新增功能"^]。
-
-
-
-=== 2025 年 3 月 3 日
-
-
-
-==== 在Azure中支持新西兰北部地区
-
-现在、对于Cloud Volumes ONTAP 9.12.1 GA及更高版本的单节点和高可用性(HA)配置、Azure支持新西兰北部地区。请注意、此区域不支持Lsv3实例类型。
-
-有关所有受支持地区的列表，请参阅 https://bluexp.netapp.com/cloud-volumes-global-regions["Azure下的全局区域映射"^]。
-
-
-
-=== 2025年2月18日
-
-
-
-==== Azure Marketplace Direct部署简介
-
-现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["了解Azure中的Cloud Volumes ONTAP部署选项"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
-
 
 
 
@@ -750,6 +770,22 @@ AutoSupport小工具已添加到主信息板屏幕中、用于提醒客户与Aut
 
 
 == 数字电子钱包
+
+
+
+=== 2025年3月10日
+
+
+
+==== 删除订阅的功能
+
+如果您取消订阅、现在可以从电子钱包中删除订阅。
+
+
+
+==== 查看Marketplace订阅的已用容量
+
+现在、在查看PAYGO订阅时、您可以查看此订阅的已用容量。
 
 
 
@@ -1108,6 +1144,40 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 2025年3月10日
+
+
+
+==== ad84f24c65dd6930a049e0903256dc97
+
+6cadf1d9d5289622136d042488809e73
+
+9b1eb2dbe181e9f7b73db8a0785c0419
+
+
+
+==== d36ca1f9466b055dd6adb80de5cce7d4
+
+61541c0b99aec5f11fccef5bcb3fe5a1
+
+* cb3c0a83218c46d38ab0842ce49a7e6e
+* 6a4c9cc76f7f432efa274c3ff0dae3dd
+* 3b7810e8427f006590b006af43d016ef
+* 28573ff4f820730a3eeae9cdd51b54d4
+
+
+98e6e30b63e5242616c686684a17c03b
+
+
+
+==== d957d0c80017f235b131c557ae0876b1
+
+8c8c1a747835015c86248b11a2097c02
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["响应检测到的勒索软件警报"]。
+
+
+
 === 2024年12月16日
 
 
@@ -1174,18 +1244,6 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["详细了解如何从勒索软件攻击中恢复"](英文)
-
-
-
-=== 2024年9月30日
-
-
-
-==== 自定义文件共享工作负载分组
-
-在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组"](英文)
 
 
 

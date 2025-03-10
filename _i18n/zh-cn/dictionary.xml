@@ -369,7 +369,6 @@
   <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FC支持的是客户端前端协议、而不是复制协议。</block>
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。</block>
   <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">对于任何复制计划、目标ONTAP卷应使用与托管受保护VM的源ONTAP卷相同的协议。例如、如果源使用FC协议、则目标也应使用FC。</block>
-  <block id="a1c75029051cebc5ca5ea85a84cfc065" category="inline-link">详细了解如何在勒索软件保护策略中对文件共享工作负载进行分组</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">ASA R2系统没有其他可用的管理选项。您不能使用标准视图、也不能启用BlueXP服务。</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">详细了解ASA R2系统</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -410,7 +409,6 @@
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">工作负载工厂</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。</block>
-  <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>(英文)</block>
   <block id="139da935670a9f985194d3241917c359" category="paragraph">现在、BlueXP  备份和恢复可以备份使用SnapLock Compliance或SnapLock Enterprise保护模式配置的FlexVol和FlexGroup内部卷。要获得此支持、集群必须运行ONTAP 9.14或更高版本。从ONTAP 9.11.1版开始、支持使用SnapLock企业模式备份FlexVol卷。早期版本的ONTAP不支持备份SnapLock保护卷。</block>
   <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">了解有关BlueXP备份和恢复的信息</block>
   <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">请参见中支持的卷的完整列表<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block>。</block>
@@ -658,9 +656,6 @@
   <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">在此版本中、全新部署的BlueXP  勒索软件保护现在有30天的免费试用时间。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
   <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">在文件级别恢复Podman的应用程序工作负载</block>
   <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
-  <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">2024年9月30日</block>
-  <block id="4d330e714e6183f0c61932d7c00a8ff3" category="section-title">自定义文件共享工作负载分组</block>
-  <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">在此版本中、您现在可以将文件共享分组到多个组中、以便更轻松地保护数据资产。该服务可以同时保护组中的所有卷。以前、您需要单独保护每个卷。</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="section-title">修复</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">适用于ONTAP 到Cloud Volumes ONTAP 的FSX</block>
@@ -724,13 +719,6 @@
   <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">重试所有扫描：</block>
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">要重试所有失败的扫描，请选择*重试所有扫描*。</block>
-  <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">2025年2月18日</block>
-  <block id="880b804508da0afe757f8198fd3eb1c3" category="section-title">Azure Marketplace Direct部署简介</block>
-  <block id="365aa2bac7413987a05e356d504aee0f" category="paragraph">现在、您可以利用Azure Marketplace直接部署功能直接从Azure Marketplace轻松快速地部署Cloud Volumes ONTAP。通过这种简化的方法、您可以探索环境中Cloud Volumes ONTAP的核心特性和功能、而无需设置BlueXP  连接器或满足通过BlueXP  部署Cloud Volumes ONTAP所需的其他入门标准。</block>
-  <block id="f56439b6bdbca147476a375ebacfef1d" category="inline-link">了解Azure中的Cloud Volumes ONTAP部署选项</block>
-  <block id="29a97b99a51928e5b93f84b989f0c2a0" category="list-text"><block ref="29a97b99a51928e5b93f84b989f0c2a0" category="inline-link-rx"></block></block>
-  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
-  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="list-text"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
   <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">4.2 版</block>
   <block id="ca716ff875c64c5d237c8e862b62065c" category="section-title">ASA R2支持VMFS存储上的VM和数据存储库</block>
   <block id="1979efa5817be86acee4a8fbdf309a1a" category="paragraph">此版本的BlueXP  灾难恢复支持对VMFS存储上的VM和数据存储库使用ASA R2。在ASA R2系统上、ONTAP软件支持基本SAN功能、但会删除SAN环境中不支持的功能。</block>
@@ -774,9 +762,6 @@
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Tracker中的CloudShell事件</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">无论何时使用CloudShell从BlueXP  工作负载执行FSx for ONTAP操作、事件都会显示在Tracker中。</block>
-  <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 3 日</block>
-  <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">现在、对于Cloud Volumes ONTAP 9.12.1 GA及更高版本的单节点和高可用性(HA)配置、Azure支持新西兰北部地区。请注意、此区域不支持Lsv3实例类型。</block>
-  <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">有关所有受支持地区的列表，请参阅<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
   <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">3.9.49更新</block>
   <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  使用连接器时的ONTAP System Manager访问权限</block>
@@ -795,11 +780,17 @@
   <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">支持在BlueXP  组织的多个资源(组织/文件夹/项目)上分配角色</block>
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">现在、您可以使用BlueXP  在Azure和Google Cloud中部署和管理Cloud Volumes ONTAP 9.16.1正式发布版。但是、此版本不可在AWS中部署和升级。</block>
-  <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">在Azure中支持新西兰北部地区</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">1.41 版</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。它还包括：</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">扫描状态</block>
   <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">现在、BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">要查看扫描的状态，请导航到BlueXP  分类中的**配置**，然后选择**工作环境配置**。每个卷的进度将以行显示。</block>
+  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、3.9.50版本可用于标准模式和受限模式。</block>
+  <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">BlueXP  提供NetApp Keystone测试版</block>
+  <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
+  <block id="626a42c4b175379d9d0e723ada0cf740" category="section-title">删除订阅的功能</block>
+  <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">如果您取消订阅、现在可以从电子钱包中删除订阅。</block>
+  <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">查看Marketplace订阅的已用容量</block>
+  <block id="0a85a2f78dadf31d5b3bcc7353bae9d1" category="paragraph">现在、在查看PAYGO订阅时、您可以查看此订阅的已用容量。</block>
 </blocks>
