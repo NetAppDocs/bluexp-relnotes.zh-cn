@@ -355,6 +355,36 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2025年3月17日
+
+此BlueXP  备份和恢复版本包含以下更新。
+
+
+
+==== SMB快照浏览
+
+此BlueXP  备份和恢复更新解决了客户无法在SMB环境中浏览本地快照的问题。
+
+
+
+==== AWS GovCloud环境更新
+
+此BlueXP  备份和恢复更新修复了由于TLS证书错误而导致UI无法连接到AWS GovCloud环境的问题。已使用BlueXP  连接器主机名而非IP地址解决此问题。
+
+
+
+==== 备份策略保留限制
+
+以前、BlueXP  备份和恢复用户界面会将备份限制为999个副本、而命令行界面则允许更多副本。现在、您最多可以将4、000个卷连接到一个备份策略、并将1、018个未连接到备份策略的卷包括在内。此更新包含可防止超过这些限制的其他验证。
+
+
+
+==== SnapMirror云重新同步
+
+此更新可确保在删除SnapMirror关系后、无法从不受支持的ONTAP版本的BlueXP  备份和恢复启动SnapMirror云重新同步。
+
+
+
 === 2025年2月21日
 
 此BlueXP  备份和恢复版本包含以下更新。
@@ -434,70 +464,6 @@ BlueXP  备份和恢复引入了一项经过更新的索引编制功能、可�
 * 错误
 * 未启用
 
-
-
-
-=== 2024年9月27日
-
-此BlueXP  备份和恢复版本包含以下更新。
-
-
-
-==== RHEL 8或9上的Podman支持以及浏览和还原功能
-
-BlueXP  备份和恢复现在支持使用Podman引擎在Red Hat Enterprise Linux (RHEL) 8和9上还原文件和文件夹。这适用于BlueXP  备份和恢复浏览和还原方法。
-
-BlueXP  Connector 3.9.40支持在RHEL 8或9主机上手动安装某些版本的Red Hat Enterprise Linux版本8和9，而不考虑位置以及中提到的操作系统 https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html#step-3-review-host-requirements["主机要求"^]。这些较新的RHEL版本需要使用Podman引擎、而不是Docker引擎。以前、使用Podman引擎时、BlueXP  备份和恢复有两个限制。已删除这些限制。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
-
-
-
-==== 加快目录索引编制速度可改进搜索和还原功能
-
-此版本改进了目录索引功能、可以更快地完成基线索引编制。通过加快索引编制速度、您可以更快地使用搜索和还原功能。
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["了解有关从备份文件还原ONTAP数据的更多信息"](英文)
-
-
-
-=== 2024年7月22日
-
-
-
-==== 还原小于1 GB的卷
-
-在此版本中、您现在可以还原在ONTAP中创建的小于1 GB的卷。可以使用ONTAP创建的最小卷大小为20 MB。
-
-
-
-==== 有关如何降低DataLock成本的提示
-
-DataLock功能可保护备份文件、使其在指定时间段内不会被修改或删除。这有助于保护文件免受勒索软件攻击。
-
-有关DataLock的详细信息以及有关如何降低相关成本的提示，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["备份到对象策略设置"]。
-
-
-
-==== AWS IAM角色无处不在集成
-
-通过Amazon Web Services (AWS)身份和访问管理(IAM)角色无处不在服务、您可以对AWS的_Outside _工作负载使用IAM角色和短期凭据来安全地访问AWS API、就像对Workloads_on_ AWS使用IAM角色一样。当您在任意位置使用IAM角色时、私有密钥基础架构和AWS令牌不需要长期AWS访问密钥和机密密钥。这样、您可以更频繁地轮换凭据、从而提高安全性。
-
-在此版本中、对AWS IAM角色无处不在服务的支持只是一项技术预览。
-
-请参阅 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
-
-
-
-==== FlexGroup文件夹或目录还原现在可用
-
-以前、可以还原FlexVol卷、但无法还原FlexGroup文件夹或目录。对于ONTAP 9.15.1P2、您可以使用浏览并还原选项还原FlexGroup文件夹。
-
-在此版本中、对FlexGroup文件夹还原的支持是一项技术预览。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-browse-restore["使用浏览和还原还原文件夹和文件()"]。
-
-有关手动启用的详细信息，请参见 https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["BlueXP备份和恢复2024年7月发布博客"]。
 
 
 
@@ -629,11 +595,11 @@ BlueXP  分类现在支持批量重试所有失败的扫描。
 
 
 
-==== 322a339b221056f32120ffd18077d44d
+==== 通过Azure中的API自动创建Storage VM
 
-aa1c2167957b1092da7e43e77867748c
+现在、您可以使用BlueXP  API为Azure中的Cloud Volumes ONTAP创建、重命名和删除其他提供数据的Storage VM。如果您需要使用Storage VM进行管理、则使用API可以自动执行Storage VM创建过程、包括配置所需的网络接口、LIF和管理LIF。
 
-5fc68a139fdd05790792b12eb853e84d
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["在 Azure 中为 Cloud Volumes ONTAP 创建提供数据的 Storage VM"^]
 
 
 
@@ -1162,7 +1128,6 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 * 在此版本中、您可以发现添加到先前选定工作环境中的新创建工作负载。
 * 您也可以在此版本中选择_new_工作环境。此功能可帮助您保护添加到环境中的新工作负载。
-* 如果要选择所有已发现的工作负载，可以使用*全选*选项。
 * 您可以在最初的发现过程中或在设置选项中执行这些发现过程。
 
 
