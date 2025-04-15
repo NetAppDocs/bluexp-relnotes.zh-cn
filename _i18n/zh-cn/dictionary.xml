@@ -869,4 +869,33 @@
   <block id="a104b856c104ac1d20a94ca4ed8ba3f8" category="paragraph">如果选择此选项、则BlueXP  灾难恢复不会配置备份计划。但是、您仍需要配置保留计划、因为仍可能会为测试、故障转移和故障恢复操作创建快照。</block>
   <block id="84c71600543673f6d7dd403d3e7a164a" category="paragraph">配置此功能后、该服务不会定期创建任何计划的快照、而是依靠外部实体创建和更新这些快照。</block>
   <block id="05861d9bf485f3b7dc6f56871ad28892" category="paragraph">有关在复制计划中使用外部快照解决方案的详细信息，请参见<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
+  <block id="89f166f25960d4442ee3cf41fb712de0" category="section-title">SnapMirror到云重新同步以进行卷迁移</block>
+  <block id="f3afa2391337e5c71f0a9b02dedc2753" category="paragraph">SnapMirror到云重新同步功能可简化NetApp环境中卷迁移期间的数据保护和连续性。使用SnapMirror逻辑复制(LRSE)将卷迁移到内部NetApp部署或Cloud Volumes ONTAP或Cloud Volumes Service等基于云的解决方案时、SnapMirror到云重新同步可确保现有云备份保持完好且正常运行。</block>
+  <block id="9de9a72e99be1fee8dc0790411738dd4" category="paragraph">此功能无需执行耗时且资源密集型的重新基线操作、从而可以在迁移后继续执行备份操作。此功能在工作负载迁移方案中非常有用、可同时支持FlexVol和FlexGroup、并可从ONTAP 9.161版开始使用。</block>
+  <block id="9c69774894ac0ae0f2bbae9b12964cfe" category="paragraph">通过在不同环境之间保持备份连续性、SnapMirror到云重新同步可提高运营效率、并降低混合云和多云数据管理的复杂性。</block>
+  <block id="5746bb5eeaa153936151cb52823109e6" category="inline-link">使用SnapMirror迁移卷到云重新同步</block>
+  <block id="3a55cfa97f4682f930352f0f81220899" category="paragraph">有关如何执行重新同步操作的详细信息，请参见<block ref="207dcf1aaf014b22c1836348f392f25c" category="inline-link-rx"></block>。</block>
+  <block id="d7aa9347c7a241e0b5959147e0834507" category="section-title">支持第三方MinIO对象存储(预览)</block>
+  <block id="74f850f0e7d77a9dfb658a6664c11580" category="paragraph">BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、并主要侧重于MinIO。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。</block>
+  <block id="fba2533d6fb852f662ab27cb8831c6c2" category="paragraph">在此预览版本中、我们希望确保在推出完整功能之前与第三方对象存储实现强大集成。我们鼓励您探索这项新功能、并提供反馈以帮助改进服务。</block>
+  <block id="3d1e2e322f867e2abdc8070d562a4fe2" category="admonition">此功能不应在生产环境中使用。</block>
+  <block id="992cf3dc32e72bdb90286b4c5941d343" category="paragraph">*预览模式限制*</block>
+  <block id="252d166070160d49f855fee5ec9639fc" category="paragraph">在预览此功能时、存在一些限制：</block>
+  <block id="2a42543b31a44385d9801b2e6d715417" category="list-text">不支持在策略中启用DataLock。</block>
+  <block id="bd38f0d8ed5d82f6a34eef6f60e82afc" category="list-text">不支持在策略中启用归位模式。</block>
+  <block id="7f4d22b3de45045172408ddd711a85a1" category="paragraph">* 入门 *</block>
+  <block id="5955ccac697a810563b00d68d2e643a8" category="paragraph">要开始使用此预览功能、您必须在BlueXP  连接器上启用一个标志。然后、您可以通过在备份部分中选择*第三方兼容*对象存储、在保护工作流中输入您的Minio第三方对象存储的连接详细信息。</block>
+  <block id="3e49d780723839a4238980f0ed8f0e54" category="inline-link">在BlueXP  备份和恢复中启用预览功能</block>
+  <block id="e4d99443f32762da8fffc177c52518aa" category="paragraph">有关如何启用预览功能的说明，请参阅<block ref="918e5958ca0f0d47162ab1a4f8ffabd1" category="inline-link-rx"></block>。</block>
+  <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="section-title">报告BlueXP  勒索软件保护中不受支持的工作环境</block>
+  <block id="b42180eb0fa303da5a11adbc08be431f" category="paragraph">在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解为什么某些工作负载或工作环境不属于信息板或不受勒索软件保护服务管理。BlueXP  勒索软件保护服务目前不支持以下工作环境。</block>
+  <block id="200b74de2e12f861dad63aa0de84ec6c" category="list-text">Cloud Volumes Service</block>
+  <block id="c8e90ee73047c3063b54a44eae9d4af6" category="list-text">E系列</block>
+  <block id="8496bc8fa09162b4a1d6b5482545d7e5" category="list-text">Google Cloud Platform （ GCP ）</block>
+  <block id="48b747470192bb1f3eb893cd89cddb83" category="list-text">9.11.1 9.11.1及更早版本</block>
+  <block id="9b705ea007b3ac220c55a333054a1e7c" category="list-text">不受BlueXP  连接器管理的ONTAP直接内部部署集群</block>
+  <block id="579848aa0d8bdd4f7904793483675637" category="paragraph">您可以在初始发现期间及以后通过设置页面中的*工作负载发现*选项查看不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。</block>
+  <block id="4c47a495695584c11b9bc39a46126b3f" category="paragraph">您可以在发现后下载发现过程的结果。</block>
+  <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="inline-link">在BlueXP勒索软件保护中发现工作负载</block>
+  <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">有关详细信息，请参见<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block>。</block>
 </blocks>

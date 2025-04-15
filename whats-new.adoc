@@ -274,6 +274,53 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 
 
 
+=== 2025年5月13日
+
+此BlueXP  备份和恢复版本包含以下更新。
+
+
+
+==== SnapMirror到云重新同步以进行卷迁移
+
+SnapMirror到云重新同步功能可简化NetApp环境中卷迁移期间的数据保护和连续性。使用SnapMirror逻辑复制(LRSE)将卷迁移到内部NetApp部署或Cloud Volumes ONTAP或Cloud Volumes Service等基于云的解决方案时、SnapMirror到云重新同步可确保现有云备份保持完好且正常运行。
+
+此功能无需执行耗时且资源密集型的重新基线操作、从而可以在迁移后继续执行备份操作。此功能在工作负载迁移方案中非常有用、可同时支持FlexVol和FlexGroup、并可从ONTAP 9.161版开始使用。
+
+通过在不同环境之间保持备份连续性、SnapMirror到云重新同步可提高运营效率、并降低混合云和多云数据管理的复杂性。
+
+有关如何执行重新同步操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-migrate-volumes-snapmirror-cloud-resync.html["使用SnapMirror迁移卷到云重新同步"]。
+
+
+
+==== 支持第三方MinIO对象存储(预览)
+
+BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、并主要侧重于MinIO。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。
+
+在此预览版本中、我们希望确保在推出完整功能之前与第三方对象存储实现强大集成。我们鼓励您探索这项新功能、并提供反馈以帮助改进服务。
+
+
+IMPORTANT: 此功能不应在生产环境中使用。
+
+*预览模式限制*
+
+在预览此功能时、存在一些限制：
+
+* 不支持自带存储分段(BYOB)。
+* 不支持在策略中启用DataLock。
+* 不支持在策略中启用归位模式。
+* 仅支持内部ONTAP环境。
+* 不支持MetroCluster。
+* 不支持用于启用存储分段级别加密的选项。
+
+
+* 入门 *
+
+要开始使用此预览功能、您必须在BlueXP  连接器上启用一个标志。然后、您可以通过在备份部分中选择*第三方兼容*对象存储、在保护工作流中输入您的Minio第三方对象存储的连接详细信息。
+
+有关如何启用预览功能的说明，请参阅 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-preview-enable.html["在BlueXP  备份和恢复中启用预览功能"]。
+
+
+
 === 2025年4月16日
 
 此BlueXP  备份和恢复版本包含以下更新。
@@ -1218,6 +1265,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == 勒索软件保护
+
+
+
+=== 2025年5月13日
+
+
+
+==== 报告BlueXP  勒索软件保护中不受支持的工作环境
+
+在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解为什么某些工作负载或工作环境不属于信息板或不受勒索软件保护服务管理。BlueXP  勒索软件保护服务目前不支持以下工作环境。
+
+* Azure NetApp Files
+* Cloud Volumes Service
+* E系列
+* Google Cloud Platform （ GCP ）
+* 9.11.1 9.11.1及更早版本
+* 不受BlueXP  连接器管理的ONTAP直接内部部署集群
+* StorageGRID
+
+
+您可以在初始发现期间及以后通过设置页面中的*工作负载发现*选项查看不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。
+
+您可以在发现后下载发现过程的结果。
+
+有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["在BlueXP勒索软件保护中发现工作负载"]。
 
 
 
