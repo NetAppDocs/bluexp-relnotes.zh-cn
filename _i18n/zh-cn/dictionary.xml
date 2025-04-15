@@ -642,11 +642,6 @@
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">检测到高加密时引发警报</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">在此版本中、即使文件扩展名未更改、您也可以在工作负载上检测到高加密时查看警报。此功能使用ONTAP自动勒索软件保护(ARP) AI、可帮助您识别面临勒索软件攻击风险的工作负载。使用此功能并下载受影响文件的完整列表(无论是否更改扩展名)。</block>
   <block id="23b3b711859803a815b81aca1cc4811c" category="section-title">连接器3.9.50</block>
-  <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">2025年3月12日</block>
-  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Azure中的多可用性区域部署支持新区域</block>
-  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">以下地区现在支持在适用于Cloud Volumes ONTAP 9.12.1 GA及更高版本的Azure中部署HA多可用性区域：</block>
-  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">位于美国中部</block>
-  <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">美国弗吉尼亚州政府(美国政府区域-弗吉尼亚州)</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">有关所有地区的列表，请参阅<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">2025年3月17日</block>
   <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">SMB快照浏览</block>
@@ -681,9 +676,6 @@
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">了解如何在使用私有模式时升级连接器</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="c00e1d18d877d030ee92aec3422b1aeb" category="paragraph">优先级限制为<block ref="377ae34afcc76614c5602798befc8a4b" category="inline-link-macro-rx"></block>；它不适用于地图扫描和分类扫描。</block>
-  <block id="5920daf334ecef8057dd1e1d15f6124e" category="section-title">为Cloud Volumes ONTAP 9.14.1启用了专用模式部署</block>
-  <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.14.1。Cloud Volumes ONTAP 9.14.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
-  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">有关私有模式部署的详细信息，请参见<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
   <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">2025年3月5日</block>
   <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">现在、您可以使用磁盘认证包(DQP)根据预定义的运行状况和性能标准自动更新磁盘控制器和存储设备固件。这样可以减少潜在故障并提高整体系统可靠性。</block>
   <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">引入了时区数据库(DB)、用于自动保持系统与最新时区定义保持一致。这样可以确保即使时区规则发生更改、依赖时间的操作也能顺利进行。</block>
@@ -765,7 +757,6 @@
   <block id="e933dec5f784259760ab3c9400fb8e0b" category="section-title">支持第三方芥末对象存储(预览)</block>
   <block id="57a83bf4b6d8f755d141ebf2bb282ed3" category="paragraph">BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、主要侧重于芥末。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。</block>
   <block id="da21b58c44ce1975cb8550ec689df5b3" category="section-title">开始使用芥末</block>
-  <block id="f3afa8b48aa14a1da6a21d82ad964f5d" category="paragraph">要开始使用此功能、您必须在BlueXP  UI中启用一个标志。然后、您可以输入第三方对象存储的连接详细信息、并将其集成到备份和恢复工作流中。</block>
   <block id="9b6d9b582a741bc832b2557c16d31b09" category="section-title">预览模式限制</block>
   <block id="fdf10a1d090d444123d00414152f7943" category="paragraph">在预览此功能时、请考虑以下限制：</block>
   <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">不支持自带存储分段(BYOB)。</block>
@@ -775,4 +766,40 @@
   <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">不支持MetroCluster。</block>
   <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">不支持用于启用存储分段级别加密的选项。</block>
   <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">在此预览期间、我们建议您探索这一新功能、并在推出完整功能之前提供有关与第三方对象存储集成的反馈。</block>
+  <block id="490e13bea5876f4583d326593619ee16" category="list-text">现在、在操作系统上启用了SELinux的连接器支持Cloud Volumes ONTAP系统的管理。</block>
+  <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">了解有关SELinux的更多信息</block>
+  <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
+  <block id="0c9e9a971e295d08b39001ef71ddfca9" category="paragraph">要开始使用第三方存储作为对象存储、必须在BlueXP  连接器中启用一个标志。然后、您可以输入第三方对象存储的连接详细信息、并将其集成到备份和恢复工作流中。</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
+  <block id="09c224692df6f6a3d6045847d63b5e86" category="list-text">通过SSH连接到您的连接器。</block>
+  <block id="d4abc9f6a0f7759f15272b587badc33b" category="list-text">转到BlueXP  备份和恢复CBS服务器容器：</block>
+  <block id="e5b842eef10876fd5aec5be48ecec9b3" category="list-text">通过VIM或任何其他编辑器打开<block ref="a4f5e59b80d929d30eba10ee00d7450d" prefix=" " category="inline-code"></block>文件夹中的文件<block ref="2245023265ae4cf87d02c8b6ba991139" prefix=" " category="inline-code"></block>：</block>
+  <block id="14ee6952f3be48ef4395f003ecfdac2c" category="list-text">修改<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>：false到<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>：true。</block>
+  <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">保存更改。</block>
+  <block id="4b891dca63ef1ab4f9daab8d3bd76368" category="list-text">退出容器。</block>
+  <block id="3dc3e984a5412f225aea00167c9309bf" category="list-text">重新启动BlueXP  备份和恢复CBS服务器容器。</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
+  <block id="15c66d710af89e601163f082e2d62e63" category="paragraph">重新打开容器后、打开BlueXP  备份和恢复UI。启动备份或编辑备份策略时、您将看到新的提供程序"S3兼容"与AWS、Microsoft Azure、Google Cloud、StorageGRID和ONTAP S3的其他备份提供程序一起列出。</block>
+  <block id="aa3bf76b3589430467bef386eaec9486" category="section-title">Azure中支持的新区域</block>
+  <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">现在、您可以在以下地区的Azure中的单个和多个可用性区域中部署Cloud Volumes ONTAP 9.12.1 GA及更高版本。其中包括支持单节点和高可用性(HA)部署。</block>
+  <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">西班牙中部</block>
+  <block id="ef87967149148a309569bd7d04467de6" category="list-text">墨西哥中部</block>
+  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025年4月3日</block>
+  <block id="b77891a5294c25aca8a6fda943805ecf" category="section-title">支持在AWS中使用Cloud Volumes ONTAP 9.13.1.</block>
+  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">现在、您可以在中国地区的AWS中部署Cloud Volumes ONTAP 9.13.1.其中包括支持单节点和高可用性(HA)部署。部署Cloud Volumes ONTAP 9.13.1.后、您可以将其升级到更高版本。仅支持直接从NetApp购买的许可证。</block>
+  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">适用于Cloud Volumes ONTAP 的全局区域映射</block>
+  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">有关地区可用性，请参阅<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>。</block>
+  <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">2025年4月29日</block>
+  <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">支持适用于NetApp ONTAP 的Amazon FSX</block>
+  <block id="24964ea0918b681c02283685b1da1438" category="paragraph">此版本支持Amazon FSx for NetApp ONTAP。此功能可帮助您通过BlueXP  勒索软件保护来保护FSx for ONTAP工作负载。</block>
+  <block id="1e2a1ff777d742c50d6c64a6b6350f90" category="paragraph">FSx for ONTAP是一项完全托管的服务、可在云中提供NetApp ONTAP存储的强大功能。它可提供与内部环境相同的特性、性能和管理功能、并具有原生AWS服务的灵活性和可扩展性。</block>
+  <block id="4fc90f7d90d19ba5f3581d326200a5f1" category="paragraph">对BlueXP  勒索软件保护工作流进行了以下更改：</block>
+  <block id="65053514fea19aa395ec9799580be143" category="list-text">发现功能包括FSx for ONTAP 9.15工作环境中的工作负载。</block>
+  <block id="6ea987783dda6093154792926d8e285c" category="list-text">"保护"选项卡显示FSx for ONTAP环境中的工作负载。在此环境中、您应使用FSx for ONTAP备份服务执行备份操作。您可以使用BlueXP  勒索软件保护快照还原这些工作负载。</block>
+  <block id="2e09d92e8822f80e9aac61fdb75fa3c8" category="admonition">无法在BlueXP  中为在FSx for ONTAP上运行的工作负载设置备份策略。在Amazon FSx for NetApp ONTAP中设置的任何现有备份策略保持不变。</block>
+  <block id="97c627f1fcd3a299ac19157a8f566694" category="list-text">警报事件显示了适用于ONTAP的新FSx工作环境。</block>
+  <block id="1d40c591d842224b16a448bc26a6bfab" category="inline-link">了解BlueXP  勒索软件防护和工作环境</block>
+  <block id="280931b406a1e00d83a4a8faa2e537a0" category="paragraph">有关详细信息，请参见<block ref="4517bbdfa51110822f93ef44df6a4f92" category="inline-link-rx"></block>。</block>
+  <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">BlueXP  勒索软件保护限制</block>
+  <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">有关支持的选项的信息，请参阅<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block>。</block>
 </blocks>
