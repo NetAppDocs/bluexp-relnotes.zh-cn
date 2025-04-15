@@ -340,10 +340,6 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">BlueXP  软件更新</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">技术更新</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">添加容量</block>
-  <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">以下是有关iSCSI和FC协议的一些其他注意事项：</block>
-  <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">FC支持的是客户端前端协议、而不是复制协议。</block>
-  <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">BlueXP  灾难恢复仅支持每个ONTAP卷具有一个LUN。此卷不应具有多个LUN。</block>
-  <block id="f3a37c3560d0027bc0f49abfab4ab0e3" category="list-text">对于任何复制计划、目标ONTAP卷应使用与托管受保护VM的源ONTAP卷相同的协议。例如、如果源使用FC协议、则目标也应使用FC。</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">ASA R2系统没有其他可用的管理选项。您不能使用标准视图、也不能启用BlueXP服务。</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">详细了解ASA R2系统</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -510,9 +506,6 @@
   <block id="61a7f53a93554e648fe2eb9ad8dd6468" category="paragraph">您可以删除超出指定保留数量的不再需要的任何快照。降低快照保留数量后、快照可能会逐渐累积、您现在可以将其删除以释放空间。您可以随时按需执行此操作、也可以在删除复制计划时执行此操作。</block>
   <block id="8cd43e146a4fc163d690bdc8bdc47fc6" category="section-title">协调快照</block>
   <block id="4472d2b5ab8a2ba1ff5429790d72930f" category="paragraph">现在、您可以协调源和目标之间不同步的快照。如果在BlueXP  灾难恢复之外的目标上删除了快照、则可能会发生这种情况。该服务会每24小时自动删除一次源上的快照。但是、您可以按需执行此操作。通过此功能、您可以确保快照在所有站点之间保持一致。</block>
-  <block id="eaecda6db64f5346d5c63bfe0094e040" category="section-title">2024年9月20日</block>
-  <block id="5d95f17e7ddbf703465910039fd80c35" category="section-title">支持从内部到内部的VMware VMFS数据存储库</block>
-  <block id="089160f6b14935d2f39adf9a95c5da5a" category="paragraph">此版本支持在VMware vSphere虚拟机文件系统(Virtual Machine File System、VMFS)数据存储库上挂载的VM、以便将iSCSI和FC保护到内部存储。以前、该服务提供了一个_technology preview_、支持iSCSI和FC的VMFS数据存储库。</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">2022年9月18日</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">支持E系列</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">现在、您可以直接从BlueXP发现E系列系统。通过发现E系列系统、您可以全面了解混合多云中的数据。</block>
@@ -718,7 +711,6 @@
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">连接器3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、3.9.51版本可用于标准模式和受限模式。</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身份和访问管理(IAM)</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配勒索软件保护角色、才能访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配Keystone角色、才能访问Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">了解访问角色。</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
@@ -757,4 +749,21 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">2025年4月2日</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">已缓解风险</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">现在、您可以在BlueXP  软件更新的摘要部分中查看操作系统更新可缓解的风险总数。这样、用户就可以评估其安装基础上的安全性和稳定性改进。</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">不具有组织管理员、文件夹或项目管理员的用户必须分配一个防反向程序保护角色、才能访问防反向程序保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
+  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
+  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">4.3 版</block>
+  <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">按计划发现VM</block>
+  <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">BlueXP  灾难恢复每24小时执行一次发现。在此版本中、您现在可以自定义发现计划以满足您的需求、并在需要时减少对性能的影响。例如、如果VM数量很多、则可以将发现计划设置为每48小时运行一次。如果VM数量较少、则可以将发现计划设置为每12小时运行一次。</block>
+  <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">如果您不想计划发现、则可以禁用计划的发现选项、并随时手动刷新发现。</block>
+  <block id="d04fa3ae362a3ea46fde26bdba81b204" category="inline-link">添加vCenter Server站点</block>
+  <block id="0002b275859484d6cdca867fbab8e165" category="paragraph">有关详细信息，请参见<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
+  <block id="84307a139104b06aba6c6de9c728b2ff" category="section-title">资源组数据存储库支持</block>
+  <block id="ed0d134f0d7b751b80633ad848722c7a" category="paragraph">以前、您只能按VM创建资源组。在此版本中、您可以按数据存储库创建资源组。在创建复制计划并为该计划创建资源组时、将列出数据存储库中的所有VM。如果您有大量VM并希望按数据存储库对其进行分组、则此功能非常有用。</block>
+  <block id="84ae8aaf40a4b59fed9a4fa741ccf225" category="paragraph">您可以通过以下方式使用数据存储库创建资源组：</block>
+  <block id="ee64b17e5379b689c5eb4ab50027f625" category="list-text">使用数据存储库添加资源组时、您可以看到数据存储库列表。您可以选择一个或多个数据存储库来创建资源组。</block>
+  <block id="3043e1ee38988e4248b9d1966e6dd1a4" category="list-text">在创建复制计划并在此计划中创建资源组时、您可以看到数据存储库中的VM。</block>
+  <block id="f7a1d657a7b8993c917f63602c0774a1" category="section-title">免费试用或许可证到期通知</block>
+  <block id="38a9b45e86982c8330edcb875da55284" category="paragraph">此版本会通知您免费试用版将在60天后过期、以确保您有时间获取许可证。此版本还会在许可证到期当天发出通知。</block>
+  <block id="5d940e67e8d433508306c751ff0ea678" category="section-title">服务更新通知</block>
+  <block id="9bdd52eb995b6f47a02ffa6aa4318399" category="paragraph">在此版本中、顶部会显示一个横幅、指示服务正在升级、并且此服务处于维护模式。升级服务时会显示此横幅、升级完成后此横幅将消失。虽然升级期间您可以继续在UI中工作、但无法提交新作业。计划作业将在更新完成且服务返回到生产模式后运行。</block>
 </blocks>
