@@ -1274,20 +1274,11 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== 报告BlueXP  勒索软件保护中不受支持的工作环境
 
-在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解为什么某些工作负载或工作环境不属于信息板或不受勒索软件保护服务管理。BlueXP  勒索软件保护服务目前不支持以下工作环境。
+在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解BlueXP  勒索软件保护服务未发现某些工作负载的原因。
 
-* Azure NetApp Files
-* Cloud Volumes Service
-* E系列
-* Google Cloud Platform （ GCP ）
-* 9.11.1 9.11.1及更早版本
-* 不受BlueXP  连接器管理的ONTAP直接内部部署集群
-* StorageGRID
+服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。
 
-
-您可以在初始发现期间及以后通过设置页面中的*工作负载发现*选项查看不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。
-
-您可以在发现后下载发现过程的结果。
+您可以在初始发现期间查看不受支持的工作环境、也可以从中下载结果。您还可以通过设置页面中的*工作负载发现*选项查看发现结果。
 
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["在BlueXP勒索软件保护中发现工作负载"]。
 

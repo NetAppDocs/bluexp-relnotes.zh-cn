@@ -888,14 +888,9 @@
   <block id="3e49d780723839a4238980f0ed8f0e54" category="inline-link">在BlueXP  备份和恢复中启用预览功能</block>
   <block id="e4d99443f32762da8fffc177c52518aa" category="paragraph">有关如何启用预览功能的说明，请参阅<block ref="918e5958ca0f0d47162ab1a4f8ffabd1" category="inline-link-rx"></block>。</block>
   <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="section-title">报告BlueXP  勒索软件保护中不受支持的工作环境</block>
-  <block id="b42180eb0fa303da5a11adbc08be431f" category="paragraph">在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解为什么某些工作负载或工作环境不属于信息板或不受勒索软件保护服务管理。BlueXP  勒索软件保护服务目前不支持以下工作环境。</block>
-  <block id="200b74de2e12f861dad63aa0de84ec6c" category="list-text">Cloud Volumes Service</block>
-  <block id="c8e90ee73047c3063b54a44eae9d4af6" category="list-text">E系列</block>
-  <block id="8496bc8fa09162b4a1d6b5482545d7e5" category="list-text">Google Cloud Platform （ GCP ）</block>
-  <block id="48b747470192bb1f3eb893cd89cddb83" category="list-text">9.11.1 9.11.1及更早版本</block>
-  <block id="9b705ea007b3ac220c55a333054a1e7c" category="list-text">不受BlueXP  连接器管理的ONTAP直接内部部署集群</block>
-  <block id="579848aa0d8bdd4f7904793483675637" category="paragraph">您可以在初始发现期间及以后通过设置页面中的*工作负载发现*选项查看不受支持的工作环境。服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。</block>
-  <block id="4c47a495695584c11b9bc39a46126b3f" category="paragraph">您可以在发现后下载发现过程的结果。</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="inline-link">在BlueXP勒索软件保护中发现工作负载</block>
   <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">有关详细信息，请参见<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block>。</block>
+  <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解BlueXP  勒索软件保护服务未发现某些工作负载的原因。</block>
+  <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。</block>
+  <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">您可以在初始发现期间查看不受支持的工作环境、也可以从中下载结果。您还可以通过设置页面中的*工作负载发现*选项查看发现结果。</block>
 </blocks>
