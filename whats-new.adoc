@@ -464,8 +464,8 @@ BlueXP  分类现在支持对地图和分类扫描进行自定义分类。通�
 .已保存搜索选项卡
 **策略**选项卡已重命名xref:task-using-policies.html[**保存的搜索**]。功能相同。
 
-.将扫描事件发送到审核日志
-现在，可以将BlueXP  扫描事件发送到xref:task-audit-data-sense-actions.html[审核日志]。BlueXP  分类还支持将分类事件(扫描启动和结束时)发送到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  时间表"^]。只有工作环境才支持将分类扫描事件发送到BlueXP  时间线。
+.将扫描事件发送到BlueXP  时间线
+BlueXP  分类现在支持将分类事件(扫描启动和结束时)发送到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  时间表"^]。
 
 .安全更新
 * Keras软件包已更新、可缓解漏洞(BDSA-2025-0107和BDSA-2025-1984)。
