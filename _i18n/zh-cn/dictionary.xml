@@ -606,9 +606,6 @@
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">扫描状态</block>
   <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">现在、BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">要查看扫描的状态，请导航到BlueXP  分类中的**配置**，然后选择**工作环境配置**。每个卷的进度将以行显示。</block>
-  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">目前、3.9.50版本可用于标准模式和受限模式。</block>
-  <block id="3f45680fc0523f726aa3afe05af65c63" category="section-title">BlueXP  提供NetApp Keystone测试版</block>
-  <block id="6bcb702faf24747c517b58ba5f3b8a99" category="paragraph">NetApp Keystone很快将从BlueXP  发布、目前处于测试阶段。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
   <block id="626a42c4b175379d9d0e723ada0cf740" category="section-title">删除订阅的功能</block>
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">如果您取消订阅、现在可以从电子钱包中删除订阅。</block>
   <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">查看Marketplace订阅的已用容量</block>
@@ -625,7 +622,6 @@
   <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">发现先前选定工作环境中新创建的工作负载</block>
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">检测到高加密时引发警报</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">在此版本中、即使文件扩展名未更改、您也可以在工作负载上检测到高加密时查看警报。此功能使用ONTAP自动勒索软件保护(ARP) AI、可帮助您识别面临勒索软件攻击风险的工作负载。使用此功能并下载受影响文件的完整列表(无论是否更改扩展名)。</block>
-  <block id="23b3b711859803a815b81aca1cc4811c" category="section-title">连接器3.9.50</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">有关所有地区的列表，请参阅<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>。</block>
   <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">2025年3月17日</block>
   <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">SMB快照浏览</block>
@@ -749,9 +745,6 @@
   <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">不支持MetroCluster。</block>
   <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">不支持用于启用存储分段级别加密的选项。</block>
   <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">在此预览期间、我们建议您探索这一新功能、并在推出完整功能之前提供有关与第三方对象存储集成的反馈。</block>
-  <block id="490e13bea5876f4583d326593619ee16" category="list-text">现在、在操作系统上启用了SELinux的连接器支持Cloud Volumes ONTAP系统的管理。</block>
-  <block id="a86bab47fe0d1d4772388e14bf7532a0" category="inline-link">了解有关SELinux的更多信息</block>
-  <block id="612eef26819f532944539f99d535f8c6" category="paragraph"><block ref="612eef26819f532944539f99d535f8c6" category="inline-link-rx"></block></block>
   <block id="0c9e9a971e295d08b39001ef71ddfca9" category="paragraph">要开始使用第三方存储作为对象存储、必须在BlueXP  连接器中启用一个标志。然后、您可以输入第三方对象存储的连接详细信息、并将其集成到备份和恢复工作流中。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="09c224692df6f6a3d6045847d63b5e86" category="list-text">通过SSH连接到您的连接器。</block>
@@ -845,4 +838,35 @@
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用BlueXP  Workload Factory CloudShell时、您可以开始键入命令、然后按Tab键查看可用选项。如果存在多种可能、命令行界面将显示建议列表。此功能可最大限度地减少错误并加快命令执行速度、从而提高工作效率。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">将扫描事件发送到BlueXP  时间线</block>
   <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">BlueXP  分类现在支持将分类事件(扫描启动和结束时)发送到<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="section-title">连接器3.9.52</block>
+  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及一些附加更新。</block>
+  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">目前、3.9.52版本可用于标准模式和受限模式。</block>
+  <block id="66b821747bf772a5a92a60270143558a" category="section-title">支持Docker 27和Docker 28</block>
+  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">连接器现在支持Docker 27和Docker 28。</block>
+  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Keystone管理可在BlueXP  中使用</block>
+  <block id="4359bea5882e2896e306955792589a33" category="paragraph">BlueXP  中的NetApp Keystone测试版增加了对Keystone管理的访问权限。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。</block>
+  <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">2025年5月13日</block>
+  <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">4.2.3版</block>
+  <block id="c362166d3b35c5afaa0ddfbe7e69494b" category="section-title">子网映射</block>
+  <block id="2418e16fab8ca1ca0d50d0811f88b6eb" category="paragraph">在此版本中、您可以使用子网映射在故障转移时以新的方式管理IP地址、从而可以为每个vCenter添加子网。执行此操作时、需要为每个虚拟网络定义IPv4 CIDR、默认网关和DNS。</block>
+  <block id="eb784040bffb80024e0c56694e09283d" category="paragraph">故障转移后、BlueXP  灾难恢复会通过查看为映射的虚拟网络提供的CIDR来确定每个vNIC的适当IP地址、并使用它来派生新的IP地址。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
+  <block id="7f1dd179b7af043e895b4af287c713da" category="list-text">网络A = 10.1.0/24</block>
+  <block id="130ee01552bdfbbae122682d96ada96f" category="list-text">网络B = 192.168.1.0/24</block>
+  <block id="c8512209d54525f96f71aef40bda4d89" category="paragraph">VM1具有一个连接到网络A的vNIC (10.1.1.50)。网络A会在复制计划设置中映射到网络B。</block>
+  <block id="54f173771463f16f3b7367756ee8a6df" category="paragraph">故障转移时、BlueXP  灾难恢复将替换原始IP地址(10.1.1)的网络部分、并保留原始IP地址(10.1.1.50)的主机地址(.50)。对于VM1、BlueXP  灾难恢复会查看网络B的CIDR设置、并使用该网络B网络192.168.1、同时保留主机部分(.50)为VM1创建新的IP地址。新IP变为192.168.1.50。</block>
+  <block id="726a53952ba1f868d3ec9d1d32a62b2e" category="paragraph">总之、主机地址保持不变、而网络地址将替换为站点子网映射中配置的任何内容。这样、您就可以更轻松地在故障转移时管理IP地址重新分配、尤其是在需要管理数百个网络和数千个VM的情况下。</block>
+  <block id="e28871dd1f9f31bb54d653e42ab61487" category="paragraph">有关在站点中包含子网映射的详细信息，请参见<block ref="54555db921feb31b73553520fa282341" category="inline-link-rx"></block>。</block>
+  <block id="a16eb72c6e9708bc4bdfd310db9a1760" category="section-title">跳过保护</block>
+  <block id="18a26d8a69342321f82f23b0b9667a2b" category="paragraph">现在、您可以跳过保护、这样、在复制计划故障转移之后、服务就不会自动创建反向保护关系。如果要在BlueXP  灾难恢复中将已还原站点恢复联机之前对其执行其他操作、则此功能非常有用。</block>
+  <block id="83f2c5047d69bb49c6372714354b223e" category="paragraph">在您启动故障转移时、如果原始源站点处于联机状态、则默认情况下、该服务会自动为复制计划中的每个卷创建一个反向保护关系。这意味着、该服务将创建从目标站点返回源站点的SnapMirror关系。在您启动故障恢复时、该服务还会自动反转SnapMirror关系。</block>
+  <block id="39adaab4c8da99c378ac7814cd837b82" category="paragraph">启动故障转移时，您现在可以选择*Skip protection (跳过保护)*选项。这样、该服务不会自动反转SnapMirror关系。而是将可写卷保留在复制计划的两端。</block>
+  <block id="0ed1a7f2cfa308cb3f608d5a24b47b8f" category="paragraph">初始源站点恢复联机后，您可以从“复制计划操作”菜单中选择*Protect Res才 可建立反向保护。此操作会尝试为计划中的每个卷创建反向复制关系。您可以重复运行此作业、直到保护还原为止。恢复保护后、您可以按常规方式启动故障恢复。</block>
+  <block id="981aed0e5104e08339386a1c5379d13f" category="paragraph">有关跳过保护的详细信息，请参见<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
+  <block id="bc1bbd522e7b060cf5530955a21a60e0" category="section-title">复制计划中的SnapMirror计划更新</block>
+  <block id="c8c9a99c726a6f5a1158a1753fb72b2a" category="paragraph">BlueXP  灾难恢复现在支持使用外部快照管理解决方案、例如本机ONTAP SnapMirror策略计划程序或与ONTAP的第三方集成。如果复制计划中的每个数据存储库(卷)都已具有在其他位置管理的SnapMirror关系、则可以在BlueXP  灾难恢复中使用这些快照作为恢复点。</block>
+  <block id="51b94dd4c3836facc3789590ed219960" category="paragraph">要进行配置、请在复制计划&gt;资源映射部分中、在配置数据存储库映射时选中*使用平台管理的备份和保留计划*复选框。</block>
+  <block id="a104b856c104ac1d20a94ca4ed8ba3f8" category="paragraph">如果选择此选项、则BlueXP  灾难恢复不会配置备份计划。但是、您仍需要配置保留计划、因为仍可能会为测试、故障转移和故障恢复操作创建快照。</block>
+  <block id="84c71600543673f6d7dd403d3e7a164a" category="paragraph">配置此功能后、该服务不会定期创建任何计划的快照、而是依靠外部实体创建和更新这些快照。</block>
+  <block id="05861d9bf485f3b7dc6f56871ad28892" category="paragraph">有关在复制计划中使用外部快照解决方案的详细信息，请参见<block ref="5cf2140f2775e5f1ccc24bb836a069a3" category="inline-link-rx"></block>。</block>
 </blocks>
