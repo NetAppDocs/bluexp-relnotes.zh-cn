@@ -323,8 +323,6 @@
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>(英文)</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">将应用程序故障转移到远程站点</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">请参阅<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>。</block>
-  <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">详细了解如何从勒索软件攻击中恢复</block>
-  <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>(英文)</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">方法如下：</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">从顶部菜单中选择*复制计划*。</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">选择一个计划、然后选择操作图标以显示下拉菜单。</block>
@@ -333,8 +331,6 @@
   <block id="9b4b29c7522dc70822a6513f530beb14" category="paragraph">BlueXP  边缘缓存服务已于2024年8月7日被删除。</block>
   <block id="4ac75c7e9ef3301446bb1108a0761fd8" category="paragraph">2024年8月7日、不再支持发现和管理Kubbernetes集群。</block>
   <block id="2476ee901bdc6e29b6118470b13e2339" category="paragraph">BlueXP  迁移报告服务已于2024年8月7日删除。</block>
-  <block id="0d0fda3a15e7f6f6406a0dde3997c91f" category="inline-link">了解有关配置BlueXP  勒索软件保护设置的更多信息</block>
-  <block id="5b0f75e0c31233c18e6f9318b8569cf7" category="paragraph"><block ref="25291e882ba76639fccc7a13f1838641" category="inline-link-rx"></block>(英文)</block>
   <block id="af7b48fef3ac95547bce2972839785af" category="inline-link">了解如何使用高级视图管理StorageGRID</block>
   <block id="71bde38d3a1a0761ad0419a2db79d0c4" category="paragraph"><block ref="bcae03490ee8ad952aee993e2ae5e7eb" category="inline-link-rx"></block>(英文)</block>
   <block id="4a314d3b77101d6faf44fa4063c45276" category="inline-link">了解如何在系统发现期间查看和批准服务器证书。</block>
@@ -378,9 +374,6 @@
   <block id="bff48bc8f1cd9f08f36e8d0c4fa810ff" category="paragraph">了解有关的更多信息<block ref="a53ad2061326060987afe3d1fd22d00d" category="inline-link-rx"></block>。</block>
   <block id="006f40c12cb6b543cd40a6cd5a750b98" category="inline-link">配置BlueXP勒索软件保护设置</block>
   <block id="14712989ac072dc4b44e9acf1def5f1f" category="paragraph">请参阅<block ref="a5026777e609bf5c1f12922a89f75f5b" category="inline-link-rx"></block>。</block>
-  <block id="dc2ee5afb67051a37353df40cc16729a" category="paragraph">要启动扫描，请在“保护”页面上，单击“隐私暴露”列中的*识别曝光*。</block>
-  <block id="e7d05f872780d58e08011a44ce4be77b" category="inline-link">使用BlueXP  分类扫描个人身份敏感数据</block>
-  <block id="4dc0491313939f9597e6bce367054443" category="paragraph"><block ref="0e7ea879583dcbdf58a2050df8592221" category="inline-link-rx"></block>(英文)</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">详细了解 <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>。</block>
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">工作负载工厂</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
@@ -395,20 +388,8 @@
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">错误</block>
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">未启用</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">现在、在私有模式下使用BlueXP  时、您可以发现NetApp ASA R2系统。从BlueXP  的3.9.46专用模式版本开始、可提供此支持。</block>
-  <block id="3406306d1e826f71d49547332136491d" category="paragraph">部署BlueXP  分类的客户通常可以在BlueXP  勒索软件保护中扫描数据。BlueXP  分类可作为BlueXP  平台的一部分免费提供、并且可以部署在内部环境或客户云中。</block>
-  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">请注意以下事项：</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">了解如何查看固件更新建议</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">此版本的BlueXP Connector包括一些小的安全改进和错误修复。</block>
-  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">目前、3.9.48版本可用于标准模式和受限模式。</block>
-  <block id="a8afa3393166930c13f7426758547bca" category="list-text">此时、"ResResResus"页面将显示未发现的资源。未发现资源是BlueXP  已知但您尚未为创建工作环境的存储资源。例如、在Digital Advisor中显示的尚未具有工作环境的资源将在"资源"页面上显示为未发现的资源。</block>
-  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Amazon FSx for NetApp ONTAP资源不会显示在IAM资源页面上、因为您无法将其与IAM角色关联。您可以在相应的画布上或从工作负载中查看这些资源。</block>
-  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">在注册BlueXP  以获得支持后、您可以直接从BlueXP  基于Web的控制台创建支持案例。创建案例时、您需要选择与问题关联的服务。</block>
-  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">从此版本开始、您现在可以创建支持案例并将其与其他BlueXP  服务关联起来：</block>
-  <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">BlueXP勒索软件保护</block>
-  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">了解有关创建支持案例的更多信息</block>
-  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>(英文)</block>
-  <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">使用CloudFormation管理适用于NetApp ONTAP文件系统的Amazon FSx</block>
-  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">在此版本中、您可以使用Data Infrastructure Insight存储工作负载安全性来检测存储工作负载中的异常用户行为。此功能可帮助您识别潜在的安全威胁并阻止潜在的恶意用户来保护您的数据。</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">响应检测到的勒索软件警报</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">有关详细信息，请参见<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>。</block>
@@ -420,43 +401,6 @@
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">发现工作负载</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">请参阅<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
-  <block id="8e64dfb0168516c0e7f7880ae745072a" category="section-title">连接器3.9.49</block>
-  <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">目前、3.9.49版本可用于标准模式和受限模式。</block>
-  <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">BlueXP  身份和访问管理(IAM)</block>
-  <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">BlueXP  身份和访问管理(IAM)现在在受限模式下使用。</block>
-  <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  身份和访问管理(IAM)是一种资源和访问管理模式、它可以取代和增强BlueXP  帐户在标准和受限模式下使用BlueXP  时先前提供的功能。</block>
-  <block id="30f60d67f457bb040dffde52197a54da" category="list-title">相关信息</block>
-  <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link">了解BlueXP  IAM</block>
-  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
-  <block id="c12e8c3134a6d5ff2ec2657f6357e8ec" category="inline-link">开始使用BlueXP  IAM</block>
-  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
-  <block id="3a3009b65a0b76e5f313a7be507a533e" category="paragraph">BlueXP  IAM提供更精细的资源和权限管理：</block>
-  <block id="97bcbb158b23b5f59aa77340528d8c84" category="list-text">通过顶级_organ组织_、您可以管理各个_projects_之间的访问权限。</block>
-  <block id="9b574c17fafa6f5e59e653eedc50bdfa" category="list-text">_Folders"用于将相关项目分组在一起。</block>
-  <block id="0c2ed2a0d470adb6e0ba50cfe426d09a" category="list-text">通过增强的资源管理功能、您可以将资源与一个或多个文件夹或项目相关联。</block>
-  <block id="5b61ed8de2f8ed0eccd9e6f8653cc6aa" category="paragraph">例如、您可以将一个Cloud Volumes ONTAP系统与多个项目相关联。</block>
-  <block id="8113bddacffcd2a7f7d52f8c0403f7fc" category="list-text">通过增强的访问管理功能、您可以将角色分配给组织层次结构不同级别的成员。</block>
-  <block id="a1bd1f0136afa3d8ee4ccdec799667f8" category="paragraph">通过这些增强功能、可以更好地控制用户可以执行的操作及其可以访问的资源。</block>
-  <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">BlueXP  IAM如何影响受限模式下的现有帐户</block>
-  <block id="18b2a40b23f88190866bbbf028cac95c" category="paragraph">登录到BlueXP  时、您会注意到以下更改：</block>
-  <block id="33d31192b5c1247904766afc81b1ef60" category="list-text">您的_account_现在称为_organퟩ 횯_</block>
-  <block id="2a235898ea8ace7ac6030edb3a2e88de" category="list-text">您的_workworkse_现在 称为_projects_</block>
-  <block id="ba6e308134546bb71f87228ecaaef82c" category="list-text">用户角色的名称已更改：</block>
-  <block id="b8c7132579d69d219fb874942670a635" category="list-text">_Account admin_现在是_Organization admin_</block>
-  <block id="27fd174b0e5c48a667a61eb059ff2ad8" category="list-text">_Workspace admin_现在是_Folder或项目admin_</block>
-  <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_Compliance viewer_现在是_Classification viewer_</block>
-  <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">在"设置"下、您可以访问BlueXP  身份和访问管理以利用这些增强功能</block>
-  <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">BlueXP  的屏幕截图、显示可从界面顶部选择的组织和项目以及可从"设置"菜单访问的身份和访问管理。</block>
-  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">您的现有用户或工作环境不会发生任何变化。</block>
-  <block id="31243c2d285073a1e31df388c65d726f" category="list-text">虽然角色名称已更改、但从权限角度来看没有任何区别。用户仍可访问与以前相同的工作环境。</block>
-  <block id="694ce83c478c161c3ac05490450e107e" category="list-text">您登录BlueXP  的方式没有变化。BlueXP  IAM可以像BlueXP  帐户一样使用NetApp云登录、NetApp支持站点凭据和联合连接。</block>
-  <block id="dfc4954338c7ff2d3998dbe991b1e115" category="list-text">如果您有多个BlueXP  帐户、则现在有多个BlueXP  组织。</block>
-  <block id="733cd47965367380792385cdc0bf4492" category="paragraph-title">用于BlueXP  IAM的API</block>
-  <block id="2047b2bd03a68b861064ed837a1828ad" category="inline-link">了解适用于BlueXP  IAM的API</block>
-  <block id="ed819704d51143ca1736581a234a1365" category="paragraph">此更改为BlueXP  IAM引入了一个新的API、但它向后兼容先前的租户API。<block ref="100827e03f9a10b65527b59fa5323ff6" category="inline-link-rx"></block></block>
-  <block id="8e3876adf8f21b1509ebcb0486d5bc9c" category="paragraph-title">支持的部署模式</block>
-  <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">在标准和受限模式下使用BlueXP  时、支持BlueXP  IAM。如果您在私有模式下使用BlueXP 、则可以继续使用BlueXP _account_来管理工作空间、用户和资源。</block>
   <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">向NetApp支持部门创建案例</block>
   <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">如果您现有的FSx for ONTAP文件系统未与工作空间关联、我们将帮助您将其与BlueXP  中的工作空间关联。您可以<block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>从BlueXP  控制台中执行此操作。选择*Workload Factory作为服务。</block>
   <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">了解如何在BlueXP  中从工作空间中删除FSx for ONTAP文件系统</block>
@@ -485,12 +429,7 @@
   <block id="ca475a2b63c70fedcf8f6650024d480b" category="section-title">BlueXP  工作负载出厂权限</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP  数字钱包经过重新设计、易于使用、现在可提供额外的订阅和许可证管理。</block>
-  <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">现在、角色将与以下两个类别之一相关联：平台和数据服务。</block>
-  <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">受限模式现在使用BlueXP  IAM</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
-  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="section-title">连接器3.9.48</block>
-  <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">BlueXP  身份和访问管理</block>
-  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">为其他BlueXP  服务创建支持案例</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">2024年10月7日</block>
   <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">BlueXP  警报列表页面</block>
@@ -506,9 +445,6 @@
   <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">跟踪器可用于监控和跟踪操作</block>
   <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">追踪器是一项新的监控功能、可在BlueXP  Amazon FSx for NetApp ONTAP中使用。您可以使用Tracker监控和跟踪凭据、存储和链接操作的进度和状态、查看操作任务和子任务的详细信息、诊断任何问题或故障、编辑失败操作的参数以及重试失败操作。</block>
   <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">BlueXP  工作负载中提供了CloudShell</block>
-  <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025年1月6日</block>
-  <block id="16e305f77c7a0272aceac8c95312d98a" category="section-title">NetApp发布了其他CloudFormation资源</block>
-  <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp现在可提供CloudFormation资源、使客户能够利用未在AWS控制台中公开的高级ONTAP组件。CloudFormation是适用于AWS的基础架构即代码机制。您将能够创建复制关系、CIFS共享、NFS导出策略、快照等。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">能够从BlueXP添加新存储分段</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
@@ -551,7 +487,6 @@
   <block id="175fca0ca5f306258c490378dc2367db" category="section-title">将订阅与组织相关联</block>
   <block id="a5f7678a307b711643d239d80564147c" category="paragraph">现在、您可以直接从数字钱包更新订阅关联到的组织。</block>
   <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">管理Cloud Volume ONTAP许可证</block>
-  <block id="78ab02ef4a4fa36c21e9d7181ab77517" category="paragraph">现在，您可以通过主页或*数据服务许可证*选项卡管理Cloud Volumes ONTAP许可证。使用*商城订阅*选项卡查看您的订阅信息。</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">2024年3月5日</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">2023年7月30日</block>
   <block id="1992f2f9fa5c0cbd3b61255b9dd507bd" category="section-title">2024年10月30日</block>
@@ -603,15 +538,6 @@
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">通过使用新的BlueXP操作故障恢复能力服务及其自动化IT操作风险修复建议、您可以在发生中断或故障之前实施建议的修复措施。</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="section-title">使用Data Infrastructure Insight存储工作负载安全性检测异常用户行为</block>
   <block id="ae65c0d044427130470e493bcfa5e9a3" category="section-title">选择要发现和保护的工作负载</block>
-  <block id="21e938043b4ef6be41f16e95f7f5aaaa" category="section-title">2024年11月7日</block>
-  <block id="86510b95a05ce4c22c6d48d2fd9228a9" category="section-title">启用数据分类并扫描个人身份信息(个人身份信息、个人身份信息)</block>
-  <block id="d599e3d1b6a5137e404ea89f314a22e4" category="paragraph">在此版本中、您可以启用BlueXP  分类(BlueXP  系列的核心组件)来扫描文件共享工作负载中的数据并对其进行分类。对数据进行分类有助于确定您的数据包含个人信息还是私人信息、这会增加安全风险。此过程还会影响工作负载的重要性、并帮助您确保以适当的保护级别保护工作负载。</block>
-  <block id="a2c442ceb4053f2fbfe23023529b9acb" category="section-title">与Microsoft Sentinel的暹粒集成</block>
-  <block id="5148a0988dead45b54188f22121bb178" category="paragraph">现在、您可以使用Microsoft Sentinel将数据发送到安全和事件管理系统(SIEM)、以进行威胁分析和检测。以前、您可以选择AWS安全中心或Splunk Cloud作为您的SIEM。</block>
-  <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">现在30天免费试用</block>
-  <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">在此版本中、全新部署的BlueXP  勒索软件保护现在有30天的免费试用时间。以前、BlueXP  勒索软件防护提供90天免费试用。如果您已获得90天免费试用、此优惠将持续90天。</block>
-  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">在文件级别恢复Podman的应用程序工作负载</block>
-  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">现在、在文件级别还原应用程序工作负载之前、您可以查看可能受攻击影响的文件列表、并确定要还原的文件。以前、如果组织(以前称为帐户)中的BlueXP  连接器使用的是Podman、则此功能已禁用。现在已为Podman启用此功能。您可以让BlueXP勒索软件保护选择要还原的文件、也可以上传CSV文件以列出受警报影响的所有文件、或者手动确定要还原的文件。</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="section-title">修复</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">2022年9月18日</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">适用于ONTAP 到Cloud Volumes ONTAP 的FSX</block>
@@ -658,14 +584,10 @@
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.5。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
   <block id="3461c6d70dff5780cf443e0892f0b5af" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3、9.4和9.5。</block>
   <block id="ce7ca903497eb6081e95129584ddf094" category="paragraph-title">确定扫描优先级</block>
-  <block id="c05a4c0b45b0c78ba3771a3530738f78" category="paragraph">执行仅映射扫描时、您可以确定最重要扫描的优先级。如果您有许多工作环境、并希望确保首先完成高优先级扫描、则此功能会很有帮助。</block>
   <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">默认情况下、扫描会根据启动顺序进行排队。现在、您可以将扫描移动到队列的前面、从而确定扫描的优先级。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">优先权是一次性授予的。按默认顺序自动重新选择映射数据。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">仅映射扫描</block>
-  <block id="42968807986d9cd74ea7703d63bf3408" category="paragraph">要更改优先级：</block>
   <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">从BlueXP  分类菜单中，选择*Configuration*。</block>
-  <block id="9ad22d134d0b57050c5d4d4a8e861bf9" category="list-text">选择要确定优先级的资源。</block>
-  <block id="dde93fd6ebd9f31996e0ca6a50869101" category="list-text">从操作...选项中，选择*优先 扫描*。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重试所有扫描</block>
   <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分类现在支持批量重试所有失败的扫描。</block>
   <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。</block>
@@ -714,22 +636,6 @@
   <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">2025年3月2日</block>
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Tracker中的CloudShell事件</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">无论何时使用CloudShell从BlueXP  工作负载执行FSx for ONTAP操作、事件都会显示在Tracker中。</block>
-  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">2025年3月6日</block>
-  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">3.9.49更新</block>
-  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">BlueXP  使用连接器时的ONTAP System Manager访问权限</block>
-  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">BlueXP  管理员(具有组织管理员角色的用户)可以将BlueXP  配置为提示用户输入其ONTAP凭据、以便访问ONTAP System Manager。启用此设置后、用户每次都需要输入其ONTAP凭据、因为它们不会存储在BlueXP  中。</block>
-  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">了解如何配置凭据设置。</block>
-  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">此功能在Connector 3.9.49及更高版本中可用。<block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">3.9.48更新</block>
-  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">可以禁用Connector的自动升级设置</block>
-  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">您可以禁用Connector的自动升级功能。</block>
-  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">在标准模式或受限模式下使用BlueXP  时、只要Connector具有出站Internet访问权限来获取软件更新、BlueXP  就会自动将您的Connector升级到最新版本。如果您需要手动管理连接器的升级时间、现在可以为标准模式或受限模式禁用自动升级。</block>
-  <block id="01d6125faf020265bf432216c335698c" category="admonition">此更改不会影响BlueXP  专用模式、在此模式下、您必须始终自行升级连接器。</block>
-  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">此功能在Connector 3.9.48及更高版本中可用。</block>
-  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">了解如何禁用Connector的自动升级。</block>
-  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
-  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">支持为BlueXP  用户分配多个角色。</block>
-  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">支持在BlueXP  组织的多个资源(组织/文件夹/项目)上分配角色</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025年3月10日</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">1.41 版</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。它还包括：</block>
@@ -771,8 +677,6 @@
   <block id="7937af8bb9aecdab11a666bfc7946c61" category="paragraph">以前、BlueXP  备份和恢复用户界面会将备份限制为999个副本、而命令行界面则允许更多副本。现在、您最多可以将4、000个卷连接到一个备份策略、并将1、018个未连接到备份策略的卷包括在内。此更新包含可防止超过这些限制的其他验证。</block>
   <block id="d5479e738a91b3a64956ed9f9e81bc5a" category="section-title">SnapMirror云重新同步</block>
   <block id="06476618a5631fabf79c4d5ebe8b60b0" category="paragraph">此更新可确保在删除SnapMirror关系后、无法从不受支持的ONTAP版本的BlueXP  备份和恢复启动SnapMirror云重新同步。</block>
-  <block id="322a339b221056f32120ffd18077d44d" category="section-title">通过Azure中的API自动创建Storage VM</block>
-  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">现在、您可以使用BlueXP  API为Azure中的Cloud Volumes ONTAP创建、重命名和删除其他提供数据的Storage VM。如果您需要使用Storage VM进行管理、则使用API可以自动执行Storage VM创建过程、包括配置所需的网络接口、LIF和管理LIF。</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">2025年3月28日</block>
   <block id="4da9a5d0cff1ab5f795fbdd68c2eedc2" category="section-title">专用模式版本(3.9.50)</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支持站点</block>
@@ -784,7 +688,6 @@
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">连接器</block>
   <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3.9.50 3.9.49</block>
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">BlueXP  连接器页面中的新增功能</block>
-  <block id="e411690e8dc95cbf79272f1e53cce845" category="cell">GTO到<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>、并参阅3.9.50和3.9.49中包含的更改。</block>
   <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  备份和恢复页面中的新增功能</block>
   <block id="0e231d3391a335865e696150143618bc" category="cell">转到<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>、并参考2024年3月版本中包含的更改。</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">2025年3月10日(版本1.41)</block>
@@ -801,9 +704,6 @@
   <block id="5920daf334ecef8057dd1e1d15f6124e" category="section-title">为Cloud Volumes ONTAP 9.14.1启用了专用模式部署</block>
   <block id="f2035db09bb2be2db0508915fa584149" category="paragraph">现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.14.1。Cloud Volumes ONTAP 9.14.1的单节点和高可用性(HA)部署均启用了专用模式。</block>
   <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">有关私有模式部署的详细信息，请参见<block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>。</block>
-  <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">在Azure中管理为Cloud Volumes ONTAP提供数据的Storage VM</block>
-  <block id="efef8f9f364ee7668a530080a3464383" category="paragraph"><block ref="efef8f9f364ee7668a530080a3464383" category="inline-link-rx"></block></block>
-  <block id="3bc16ca089e94f59f68f327af0c3b646" category="paragraph">&lt;stdin&gt;中未解析的指令-包括：：https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/whats-new.adoc[tag=whats-new,leveloffset=+1]</block>
   <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">2025年3月5日</block>
   <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">现在、您可以使用磁盘认证包(DQP)根据预定义的运行状况和性能标准自动更新磁盘控制器和存储设备固件。这样可以减少潜在故障并提高整体系统可靠性。</block>
   <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">引入了时区数据库(DB)、用于自动保持系统与最新时区定义保持一致。这样可以确保即使时区规则发生更改、依赖时间的操作也能顺利进行。</block>
@@ -814,4 +714,47 @@
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">使用CloudShell时、每次发出ONTAP命令行界面命令并出现错误时、您都可以获得AI生成的错误响应、其中包括故障说明、故障原因和详细解决方案。</block>
   <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">IAM：SimulatePermission Policy权限更新</block>
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">现在、当您添加其他AWS帐户凭据或添加新工作负载功能(例如GenAI工作负载)时、您可以从工作负载出厂控制台管理此<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>权限。</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025年4月14日</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">连接器3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">目前、3.9.51版本可用于标准模式和受限模式。</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">BlueXP  身份和访问管理(IAM)</block>
+  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配勒索软件保护角色、才能访问勒索软件保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
+  <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">没有组织管理员、文件夹管理员或项目管理员的用户必须分配Keystone角色、才能访问Keystone。您可以为用户分配以下两个角色之一：Keystone管理员或Keystone查看器。</block>
+  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">了解访问角色。</block>
+  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">如果您具有组织管理员、文件夹或项目管理员角色、则现在可以将Keystone订阅与IAM项目相关联。通过将Keystone订阅与IAM项目关联起来、您可以在BlueXP  中控制对Keystone的访问。</block>
+  <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">转到<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>、并参阅3.9.50和3.9.49中包含的更改。</block>
+  <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">现在、当您添加其他AWS帐户凭据或添加新工作负载功能(例如GenAI工作负载)时、您可以从BlueXP  控制台管理此<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>权限。</block>
+  <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
+  <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">1.42 版</block>
+  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此BlueXP  分类版本包括：</block>
+  <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">针对工作环境进行批量扫描</block>
+  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  分类现在支持对工作环境执行批量操作。您可以选择启用映射扫描、启用映射和分类扫描、禁用扫描或跨工作环境中的卷创建自定义配置。如果您为单个卷进行选择、则会覆盖批量选择。要执行批量操作，请导航到**配置**页并进行选择。</block>
+  <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">在本地下载调查报告</block>
+  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中查看。如果您选择本地选项、则数据调查仅以CSV格式提供、并且仅显示前10、000行数据。</block>
+  <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">根据BlueXP  分类调查存储在您的组织中的数据</block>
+  <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">有关详细信息，请参见 <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
+  <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">确定仅映射扫描的优先级</block>
+  <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">执行仅映射扫描时、您可以确定最重要扫描的优先级。如果您有许多工作环境、并希望确保首先完成高优先级扫描、则此功能会很有帮助。</block>
+  <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">有关详细信息，请参见 <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
+  <block id="d0ae6326de6f7742cd369aae9832406f" category="section-title">通过Google Cloud中的API自动创建Storage VM</block>
+  <block id="1bf898a189d08a92d24b9432b7db4ed0" category="paragraph">现在、您可以使用BlueXP  API在Google Cloud中自动创建Storage VM。您一直在Cloud Volumes ONTAP高可用性(HA)配置中使用此功能、现在也可以在单节点部署中使用此功能。通过使用BlueXP  API、您可以轻松地在Google Cloud环境中创建、重命名和删除其他提供数据的Storage VM、而无需手动配置所需的网络接口、LUN和管理LUN。这种自动化可简化Storage VM的管理过程。</block>
+  <block id="914fe95f5aa6c2bb4ed60cded696ac13" category="inline-link">在Google Cloud中管理为Cloud Volumes ONTAP提供数据的Storage VM</block>
+  <block id="cb90b26778c86b6622460939076514de" category="paragraph"><block ref="cb90b26778c86b6622460939076514de" category="inline-link-rx"></block></block>
+  <block id="0bc14678dfe9cde6019256774c92b34e" category="paragraph">现在，您可以通过主页或*直接许可证*选项卡管理Cloud Volumes ONTAP许可证。使用*商城订阅*选项卡查看您的订阅信息。</block>
+  <block id="4fe331eaa4881ca37fd2ff947e6b8bec" category="section-title">就绪演练报告</block>
+  <block id="e78c37e0abce1f032a2a34eda9e02a54" category="paragraph">在此版本中、您可以查看勒索软件攻击就绪演练报告。通过准备工作演练、您可以模拟对新创建的示例工作负载的勒索软件攻击。然后、调查模拟的攻击并恢复示例工作负载。此功能通过测试警报通知、响应和恢复过程、帮助您了解在发生实际勒索软件攻击时您已做好准备。</block>
+  <block id="cc61bd0d76dc349aa4d70e26ca03704d" category="section-title">新的基于角色的访问控制角色和权限</block>
+  <block id="a9e4a39d54899a1c668bdab8048e1dc5" category="paragraph">以前、您可以根据用户的职责为其分配角色和权限、这有助于您管理用户对BlueXP  勒索软件保护的访问。在此版本中、BlueXP  勒索软件保护新增了两个角色、并更新了权限。新角色包括：</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="list-text">勒索软件保护管理员</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="list-text">勒索软件保护查看器</block>
+  <block id="51871ed75f741b0dab90d2d1612f6499" category="inline-link">BlueXP  勒索软件保护基于角色的功能访问</block>
+  <block id="b42fe8f702412cfa14541d3fab58efa6" category="paragraph">有关权限的详细信息，请参见<block ref="01046b99aab91b10679a0fac299864df" category="inline-link-rx"></block>。</block>
+  <block id="25ccc48b022e2433d5b379cc51530139" category="section-title">付款改进</block>
+  <block id="a3d54846581a4bb8314f87602a4ba2c0" category="paragraph">此版本对付款流程进行了多项改进。</block>
+  <block id="7ffb0c59c068d14b0ee6581cde479463" category="inline-link">设置许可和付款选项</block>
+  <block id="52a7f2b6af87f28195cf6badbad6c667" category="paragraph">有关详细信息，请参见<block ref="a8b1ada7f83ee5659f868a512032628f" category="inline-link-rx"></block>。</block>
+  <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">2025年4月2日</block>
+  <block id="f50a226c5a51111405309ae78236d95d" category="section-title">已缓解风险</block>
+  <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">现在、您可以在BlueXP  软件更新的摘要部分中查看操作系统更新可缓解的风险总数。这样、用户就可以评估其安装基础上的安全性和稳定性改进。</block>
 </blocks>
