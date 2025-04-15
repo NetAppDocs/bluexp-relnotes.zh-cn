@@ -388,15 +388,9 @@
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">发现工作负载</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">请参阅<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>。</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
-  <block id="4716735cca1c0ec4ab6acb97d14dcaa7" category="inline-link-macro">向NetApp支持部门创建案例</block>
-  <block id="f0100d47b49cbe11e6a325bdee8db6ff" category="paragraph">如果您现有的FSx for ONTAP文件系统未与工作空间关联、我们将帮助您将其与BlueXP  中的工作空间关联。您可以<block ref="d0e0ce62131d959daa6f062d97c0d6a8" category="inline-link-macro-rx"></block>从BlueXP  控制台中执行此操作。选择*Workload Factory作为服务。</block>
-  <block id="181840612e9e637bf9dbbc740a738a45" category="inline-link-macro">了解如何在BlueXP  中从工作空间中删除FSx for ONTAP文件系统</block>
-  <block id="e3d09410dae9543aebfcc83b7bceebc5" category="paragraph"><block ref="e3d09410dae9543aebfcc83b7bceebc5" category="inline-link-macro-rx"></block></block>
   <block id="0672b60d374d87a810fa73810e4a0a82" category="inline-link-macro">了解如何在BlueXP  中监控和跟踪FSx for ONTAP操作</block>
   <block id="d3626ed21f71a99d578970f5e4960cdc" category="paragraph"><block ref="d3626ed21f71a99d578970f5e4960cdc" category="inline-link-macro-rx"></block></block>
-  <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">当您在BlueXP  控制台中的BlueXP  工作负载中时、可以使用CloudShell。通过CloudShell、您可以使用在BlueXP  帐户中提供的AWS和ONTAP凭据、并在类似于Shell的环境中执行AWS命令行界面命令或ONTAP命令行界面命令。</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">使用CloudShell</block>
-  <block id="03efd4c623255859d8f24cea1414ca80" category="paragraph"><block ref="03efd4c623255859d8f24cea1414ca80" category="inline-link-macro-rx"></block></block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">以前、数据调查报告导出限制为10、000行。此版本已删除限制、您可以导出所有数据。通过此更改、您可以从数据调查报告导出更多数据、从而提高数据分析的灵活性。</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">您可以选择工作环境、卷、目标文件夹以及JSON或CSV格式。导出的文件名包含一个时间戳、可帮助您确定数据的导出时间。</block>
   <block id="7afa5ec6a3f715e47b3c6fa2655f18b0" category="paragraph">支持的工作环境包括：</block>
@@ -413,8 +407,6 @@
   <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
   <block id="6cff628e35cc5d429a57e4a125a0bf6b" category="inline-link-macro">权限引用更改日志</block>
   <block id="86fbb6c90e401f3291e15bdc1398509c" category="paragraph"><block ref="86fbb6c90e401f3291e15bdc1398509c" category="inline-link-macro-rx"></block></block>
-  <block id="ca475a2b63c70fedcf8f6650024d480b" category="section-title">BlueXP  工作负载出厂权限</block>
-  <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">BlueXP  数字钱包经过重新设计、易于使用、现在可提供额外的订阅和许可证管理。</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">2025年1月13日</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024年12月16日</block>
@@ -425,13 +417,6 @@
   <block id="2c132bb868e25bdbc509ab83d2436d71" category="paragraph">您可以深入了解警报详细信息并查找建议。</block>
   <block id="a81101241f6ae4b53dda6f72078e1a84" category="paragraph">通过BlueXP  警报、您可以查看与ONTAP存储环境关联的警报、并深入查看链接到ONTAP系统管理器的详细信息。</block>
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">2025年2月2日</block>
-  <block id="8f0b3ce2b96f337852fd1c252724a612" category="section-title">将FSx for ONTAP文件系统与BlueXP  中的工作空间相关联</block>
-  <block id="da3003c64aba681511ac42ea840639fa" category="paragraph">在2024年11月集成BlueXP  后、新创建的适用于ONTAP文件系统的FSx未与BlueXP  中的一个工作空间关联。现在、当您创建或发现FSx for ONTAP文件系统时、这些文件系统将与BlueXP  帐户中的一个工作空间相关联。</block>
-  <block id="ca67d4d470c8d498e9ac0294cf4f7805" category="section-title">从BlueXP  画布中删除文件系统</block>
-  <block id="b93cfe5d8c5b8d31c6e277f9086d4e40" category="paragraph">现在、您可以从BlueXP  画布中的工作空间中删除FSx for ONTAP文件系统。此操作会将文件系统与一个工作空间解除关联、以便您可以将其与同一BlueXP  帐户中的另一个工作空间相关联。</block>
-  <block id="ea3d4df6f8aff21b2dfe549c5ecf9775" category="section-title">跟踪器可用于监控和跟踪操作</block>
-  <block id="ce9be95deabee3be9356a5b5de8e7b0b" category="paragraph">追踪器是一项新的监控功能、可在BlueXP  Amazon FSx for NetApp ONTAP中使用。您可以使用Tracker监控和跟踪凭据、存储和链接操作的进度和状态、查看操作任务和子任务的详细信息、诊断任何问题或故障、编辑失败操作的参数以及重试失败操作。</block>
-  <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">BlueXP  工作负载中提供了CloudShell</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">能够从BlueXP添加新存储分段</block>
   <block id="3bec690d07df1a3a36c8a3122654fc24" category="section-title">2023年6月5日</block>
@@ -556,7 +541,6 @@
   <block id="7f1ab9d2ad99562dfd8cff4cb4c70b29" category="paragraph">您可以从BlueXP  工作负载出厂控制台中的任何位置访问CloudShell。通过CloudShell、您可以使用在BlueXP  帐户中提供的AWS和ONTAP凭据、并在类似于Shell的环境中执行AWS命令行界面命令或ONTAP命令行界面命令。</block>
   <block id="f3a98886e89c22ab1a8df16ff87d5b3c" category="section-title">更新数据库的权限</block>
   <block id="0d8e78270e3796caacf42c07616b7e32" category="paragraph">现在，以下权限在_read_模式下可用于数据库：<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>。</block>
-  <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">现在、您可以查看BlueXP  工作负载工厂执行各种操作所使用的权限、这些操作从发现存储环境到为GenAI工作负载部署AWS资源(例如存储中的文件系统或知识库)不等。您可以查看存储、数据库、VMware和GenAI工作负载的IAM策略和权限。</block>
   <block id="9ba3a5a376a4241ee4847ae13742a741" category="section-title">查看链接到ONTAP系统管理器的集群详细信息</block>
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025年2月19日</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="section-title">1.40 版</block>
@@ -730,7 +714,6 @@
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">现在、您可以在BlueXP  软件更新的摘要部分中查看操作系统更新可缓解的风险总数。这样、用户就可以评估其安装基础上的安全性和稳定性改进。</block>
   <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">不具有组织管理员、文件夹或项目管理员的用户必须分配一个防反向程序保护角色、才能访问防反向程序保护。您可以为用户分配以下两个角色之一：勒索软件保护管理员或勒索软件保护查看器。</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
-  <block id="e1b61136672bccd13e6828fe7987e4f6" category="paragraph">4.3 版</block>
   <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">按计划发现VM</block>
   <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">BlueXP  灾难恢复每24小时执行一次发现。在此版本中、您现在可以自定义发现计划以满足您的需求、并在需要时减少对性能的影响。例如、如果VM数量很多、则可以将发现计划设置为每48小时运行一次。如果VM数量较少、则可以将发现计划设置为每12小时运行一次。</block>
   <block id="7e2d4377602fe8c7a718d5ef8759c008" category="paragraph">如果您不想计划发现、则可以禁用计划的发现选项、并随时手动刷新发现。</block>
@@ -784,11 +767,6 @@
   <block id="c1ad65632774d8f35681af3ad68ef48e" category="paragraph">现在、您可以在以下地区的Azure中的单个和多个可用性区域中部署Cloud Volumes ONTAP 9.12.1 GA及更高版本。其中包括支持单节点和高可用性(HA)部署。</block>
   <block id="db0cdd3af654aa7b69312d9b6154a9de" category="list-text">西班牙中部</block>
   <block id="ef87967149148a309569bd7d04467de6" category="list-text">墨西哥中部</block>
-  <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">2025年4月3日</block>
-  <block id="b77891a5294c25aca8a6fda943805ecf" category="section-title">支持在AWS中使用Cloud Volumes ONTAP 9.13.1.</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">现在、您可以在中国地区的AWS中部署Cloud Volumes ONTAP 9.13.1.其中包括支持单节点和高可用性(HA)部署。部署Cloud Volumes ONTAP 9.13.1.后、您可以将其升级到更高版本。仅支持直接从NetApp购买的许可证。</block>
-  <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">适用于Cloud Volumes ONTAP 的全局区域映射</block>
-  <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">有关地区可用性，请参阅<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>。</block>
   <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">2025年4月29日</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">支持适用于NetApp ONTAP 的Amazon FSX</block>
   <block id="24964ea0918b681c02283685b1da1438" category="paragraph">此版本支持Amazon FSx for NetApp ONTAP。此功能可帮助您通过BlueXP  勒索软件保护来保护FSx for ONTAP工作负载。</block>
@@ -802,4 +780,70 @@
   <block id="280931b406a1e00d83a4a8faa2e537a0" category="paragraph">有关详细信息，请参见<block ref="4517bbdfa51110822f93ef44df6a4f92" category="inline-link-rx"></block>。</block>
   <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">BlueXP  勒索软件保护限制</block>
   <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">有关支持的选项的信息，请参阅<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block>。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
+  <block id="e740d5331c1318c8aeedd3bc928fee0f" category="section-title">跟踪器响应支持</block>
+  <block id="afa647328e65fc54651ec9202e08f684" category="paragraph">Tracker现在提供API响应、以便您可以查看与任务相关的REST API输出。</block>
+  <block id="7dc7c15512069d38e071e0b7f2eb0075" category="section-title">支持对AWS专有信息管理器进行链接身份验证</block>
+  <block id="73ecd40a86b02acff9f56b3a1ac74d7f" category="paragraph">现在、您可以选择使用AWS机密管理器中的密钥对链接进行身份验证、这样就不必使用存储在BlueXP  工作负载中的凭据。</block>
+  <block id="37b002845528ac0296b86d28bb71e5a5" category="inline-link-macro">使用Lamba链接连接到FSx for ONTAP文件系统</block>
+  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
+  <block id="b4650b4ce326d6a3b7fad5e98b1b29d3" category="section-title">为FSx for ONTAP文件系统实施最佳实践</block>
+  <block id="bf66fc8532837c2f341b98d92d40bd27" category="paragraph">BlueXP  工作负载提供了一个信息板、您可以在其中查看文件系统配置的架构良好状态。您可以利用此分析为FSx for ONTAP文件系统实施最佳实践。文件系统配置分析包括以下配置：SSD容量阈值、计划的本地快照、计划的ONTAP备份FSx、数据分层和远程数据复制。</block>
+  <block id="20c1cdeb819f1a107044754c5b7cd16d" category="inline-link-macro">了解对文件系统配置进行精心设计的分析</block>
+  <block id="f85ae2c7c8690dad4aad4469edd0d4d1" category="list-text"><block ref="f85ae2c7c8690dad4aad4469edd0d4d1" category="inline-link-macro-rx"></block></block>
+  <block id="ee8bd13e9852f521384a9366f9fddac8" category="inline-link-macro">为文件系统实施最佳实践</block>
+  <block id="a04ab86f504e47221c279d8c74e9697c" category="list-text"><block ref="a04ab86f504e47221c279d8c74e9697c" category="inline-link-macro-rx"></block></block>
+  <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">针对文件系统问题设计合理的通知</block>
+  <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">现在、在BlueXP  控制台中、对于架构良好的文件系统、FSx for ONTAP文件系统会在"画布"中显示一条通知、指示何时文件系统存在问题需要修复。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
+  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">1.43 版</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">确定分类扫描的优先级</block>
+  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">现在、BlueXP  分类除了支持仅映射扫描之外、还支持划分地图和分类扫描的优先级、使您能够选择首先完成哪些扫描。在扫描开始期间和之前、支持对映射和分类扫描进行优先排序。如果您选择在扫描过程中确定扫描优先级、则映射扫描和分类扫描都将确定优先级。</block>
+  <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支持加拿大个人身份信息(个人身份信息、个人身份信息)数据类别</block>
+  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分类扫描现在可识别加拿大所有省份和地区的银行信息、护照号码、社会保险号、驾驶证号和健康卡号的个人身份信息数据类别。</block>
+  <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">个人数据类别</block>
+  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">有关详细信息，请参见<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自定义分类(预览)</block>
+  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分类现在支持对地图和分类扫描进行自定义分类。通过自定义分类、您可以定制BlueXP  扫描以捕获组织特定的数据、以确保符合正则表达式。此功能当前处于预览状态。</block>
+  <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">添加自定义分类</block>
+  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">有关详细信息，请参见 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">已保存搜索选项卡</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**保存的搜索**</block>
+  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">**策略**选项卡已重命名<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>。功能相同。</block>
+  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">将扫描事件发送到审核日志</block>
+  <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  时间表</block>
+  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">审核日志</block>
+  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">现在，可以将BlueXP  扫描事件发送到<block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>。BlueXP  分类还支持将分类事件(扫描启动和结束时)发送到<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。只有工作环境才支持将分类扫描事件发送到BlueXP  时间线。</block>
+  <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">安全更新</block>
+  <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras软件包已更新、可缓解漏洞(BDSA-2025-0107和BDSA-2025-1984)。</block>
+  <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">已更新Docker容器配置。容器无法再访问主机的网络接口来创建原始网络数据包。通过减少不必要的访问、此更新可缓解潜在的安全风险。</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">性能增强</block>
+  <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">已实施代码增强功能、以减少RAM使用量并提高BlueXP  分类的整体性能。</block>
+  <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">已修复导致StorageGRID扫描失败、无法加载调查页面筛选器选项以及无法下载数据发现评估进行高容量评估的错误。</block>
+  <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="section-title">发现通过BlueXP  中的Azure Marketplace进行的部署</block>
+  <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  现在可以直接通过Azure市场发现部署的Cloud Volumes ONTAP系统。这意味着、您现在可以像添加任何其他Cloud Volumes ONTAP系统一样、在BlueXP  中将这些系统作为工作环境进行添加和管理。</block>
+  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
+  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="paragraph"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
+  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">能够为Azure租户分层数据</block>
+  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">现在、在Cloud Volumes ONTAP工作环境由一个租户创建而BlueXP  连接器由另一个租户创建的情况下、您可以为Azure租户启用分层。通过使用此功能、您可以使用同一个Connector为多个Azure租户分层数据。</block>
+  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">为Azure租户分层数据的要求</block>
+  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
+  <block id="848964f0743e2416b5d061a5e088ca73" category="paragraph">4.2.2版</block>
+  <block id="ae493f6fb938d3c8c6db8b5a9e623794" category="paragraph">4.2.1版</block>
+  <block id="78e5de64c036a105265b3f447a5fbbca" category="section-title">智能代理支持</block>
+  <block id="12430fc7d9e2c156fb2dc1af2bf60126" category="paragraph">BlueXP  连接器支持智能代理。智能代理是一种将内部环境连接到BlueXP  服务的轻型、安全且高效的方式。它可以在您的环境和BlueXP  服务之间提供安全连接、而无需VPN或直接Internet访问。这种经过优化的代理实施可卸载本地网络中的API流量。</block>
+  <block id="2baae43f4fa62104c66585e956c51e1e" category="paragraph">配置代理后、BlueXP  灾难恢复会尝试直接与VMware或ONTAP进行通信、如果直接通信失败、则会使用配置的代理。</block>
+  <block id="a115e6ab8acfcda534f22a18d1d6940d" category="paragraph">实施BlueXP  灾难恢复代理需要使用HTTPS协议在Connector与任何vCenter Server和ONTAP阵列之间进行端口443通信。在执行任何操作时、连接器中的BlueXP  灾难恢复代理会直接与VMware vSphere、VC或ONTAP进行通信。</block>
+  <block id="7297a33a5c9a50db535ceb180e4e6c29" category="inline-link">为BlueXP灾难恢复设置基础架构</block>
+  <block id="a7a0475144b255eccfff4d2ee3e7a5c4" category="paragraph">有关用于BlueXP  灾难恢复的智能代理的详细信息，请参见<block ref="bf1bf7a536149f2406a2eab17db3a297" category="inline-link-rx"></block>。</block>
+  <block id="146adb7944757e88795676b780c31811" category="inline-link">配置Connector以使用代理服务器</block>
+  <block id="635abfb2f80497d39998f2a81dfecd7e" category="paragraph">有关在BlueXP  中设置常规代理的详细信息，请参见<block ref="4d83a369cd8d5456206d71335578eaaa" category="inline-link-rx"></block>。</block>
+  <block id="7469dc0d82ce9411c03b852f2163d515" category="section-title">随时结束免费试用</block>
+  <block id="38567a6024618c3687de90b3e2cff86e" category="paragraph">您可以在任意时间停止免费试用、也可以等到免费试用过期。</block>
+  <block id="8d4d6551ee286317b2a4f297766952f5" category="inline-link">结束免费试用</block>
+  <block id="b618f30aeca114d464120de119b19ced" category="paragraph">请参阅。<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block></block>
+  <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShell自动完成支持</block>
+  <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用BlueXP  Workload Factory CloudShell时、您可以开始键入命令、然后按Tab键查看可用选项。如果存在多种可能、命令行界面将显示建议列表。此功能可最大限度地减少错误并加快命令执行速度、从而提高工作效率。</block>
 </blocks>
