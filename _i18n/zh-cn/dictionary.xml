@@ -445,9 +445,6 @@
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.55。</block>
   <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">2024年12月12日</block>
   <block id="af79dd5dc56c84e383198dba47e6f6fe" category="paragraph">现在、您可以查看建议进行更新的存储固件、ARP/固 件和自动软件包(Autonomous SP Package、BMC)。<block ref="bb189956f648b21665d5198deffedcc8" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="4b546cad2ee01a6cbf9ccc96b97242b6" category="section-title">2024年12月4日</block>
-  <block id="998e01ff2383d2b9e06b55738a27346b" category="section-title">AutoSupport小工具</block>
-  <block id="526c3ba007bad7c7b6408ba4672f5f6e" category="paragraph">AutoSupport小工具已添加到主信息板屏幕中、用于提醒客户与AutoSupport状态相关的问题。</block>
   <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">新增了"概述"信息板</block>
   <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">数字钱包主页提供了一个更新的NetApp许可证和Marketplace订阅信息板、可以深入查看特定服务、许可证类型和所需操作。</block>
   <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">配置凭据订阅</block>
@@ -548,13 +545,10 @@
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">除了先前支持的版本之外、此版本还支持Red Hat Enterprise Linux v9.5。这适用于BlueXP  分类的任何手动内部安装、包括非公开站点部署。</block>
   <block id="3461c6d70dff5780cf443e0892f0b5af" category="paragraph">以下操作系统要求使用Podman容器引擎、并要求使用BlueXP  分类版本1.3或更高版本：Red Hat Enterprise Linux版本8.8、8.10、9.0、9.1、9.2、9.3、9.4和9.5。</block>
   <block id="ce7ca903497eb6081e95129584ddf094" category="paragraph-title">确定扫描优先级</block>
-  <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">默认情况下、扫描会根据启动顺序进行排队。现在、您可以将扫描移动到队列的前面、从而确定扫描的优先级。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">优先权是一次性授予的。按默认顺序自动重新选择映射数据。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">仅映射扫描</block>
   <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">从BlueXP  分类菜单中，选择*Configuration*。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重试所有扫描</block>
-  <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分类现在支持批量重试所有失败的扫描。</block>
-  <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">重试所有扫描：</block>
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">要重试所有失败的扫描，请选择*重试所有扫描*。</block>
   <block id="c3687f641cfdd19b41b8fe6f7cb68897" category="paragraph">4.2 版</block>
@@ -604,7 +598,6 @@
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">1.41 版</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。它还包括：</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">扫描状态</block>
-  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">现在、BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">要查看扫描的状态，请导航到BlueXP  分类中的**配置**，然后选择**工作环境配置**。每个卷的进度将以行显示。</block>
   <block id="626a42c4b175379d9d0e723ada0cf740" category="section-title">删除订阅的功能</block>
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">如果您取消订阅、现在可以从电子钱包中删除订阅。</block>
@@ -680,9 +673,7 @@
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">1.42 版</block>
   <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此BlueXP  分类版本包括：</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">针对工作环境进行批量扫描</block>
-  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  分类现在支持对工作环境执行批量操作。您可以选择启用映射扫描、启用映射和分类扫描、禁用扫描或跨工作环境中的卷创建自定义配置。如果您为单个卷进行选择、则会覆盖批量选择。要执行批量操作，请导航到**配置**页并进行选择。</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">在本地下载调查报告</block>
-  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中查看。如果您选择本地选项、则数据调查仅以CSV格式提供、并且仅显示前10、000行数据。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">根据BlueXP  分类调查存储在您的组织中的数据</block>
   <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">有关详细信息，请参见 <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">确定仅映射扫描的优先级</block>
@@ -793,13 +784,9 @@
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">1.43 版</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">确定分类扫描的优先级</block>
-  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">现在、BlueXP  分类除了支持仅映射扫描之外、还支持划分地图和分类扫描的优先级、使您能够选择首先完成哪些扫描。在扫描开始期间和之前、支持对映射和分类扫描进行优先排序。如果您选择在扫描过程中确定扫描优先级、则映射扫描和分类扫描都将确定优先级。</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支持加拿大个人身份信息(个人身份信息、个人身份信息)数据类别</block>
-  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分类扫描现在可识别加拿大所有省份和地区的银行信息、护照号码、社会保险号、驾驶证号和健康卡号的个人身份信息数据类别。</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">个人数据类别</block>
-  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">有关详细信息，请参见<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自定义分类(预览)</block>
-  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分类现在支持对地图和分类扫描进行自定义分类。通过自定义分类、您可以定制BlueXP  扫描以捕获组织特定的数据、以确保符合正则表达式。此功能当前处于预览状态。</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">添加自定义分类</block>
   <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">有关详细信息，请参见 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">已保存搜索选项卡</block>
@@ -837,7 +824,6 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShell自动完成支持</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用BlueXP  Workload Factory CloudShell时、您可以开始键入命令、然后按Tab键查看可用选项。如果存在多种可能、命令行界面将显示建议列表。此功能可最大限度地减少错误并加快命令执行速度、从而提高工作效率。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">将扫描事件发送到BlueXP  时间线</block>
-  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">BlueXP  分类现在支持将分类事件(扫描启动和结束时)发送到<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
   <block id="f4136fdf902ca32b4530c7a614c0ed71" category="section-title">连接器3.9.52</block>
   <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及一些附加更新。</block>
   <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">目前、3.9.52版本可用于标准模式和受限模式。</block>
@@ -893,4 +879,25 @@
   <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">在发现工作流期间、将鼠标悬停在支持或不支持的工作负载上时、BlueXP  勒索软件保护会报告更多详细信息。这将有助于您了解BlueXP  勒索软件保护服务未发现某些工作负载的原因。</block>
   <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">服务不支持工作环境的原因有很多、例如、工作环境中的ONTAP版本可能低于所需版本。将鼠标悬停在不受支持的工作环境上时、工具提示会显示原因。</block>
   <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">您可以在初始发现期间查看不受支持的工作环境、也可以从中下载结果。您还可以通过设置页面中的*工作负载发现*选项查看发现结果。</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">用于Connector下载的安全端点现在支持备份和恢复以及防兰软件保护</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">了解用于Connector下载的安全端点。</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">如果您使用的是备份和恢复或防兰软件保护、则现在可以使用安全端点进行Connector下载。 <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
+  <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">除了仅映射扫描之外、BlueXP  分类还支持划分地图和分类扫描的优先级、使您能够选择首先完成哪些扫描。在扫描开始期间和之前、支持对映射和分类扫描进行优先排序。如果您选择在扫描过程中确定扫描优先级、则映射扫描和分类扫描都将确定优先级。</block>
+  <block id="162e654adac435300128c485423d9e97" category="paragraph">BlueXP  分类扫描可识别加拿大的可识别身份信息数据类别。这些类别包括加拿大所有省份和地区的银行信息、护照号码、社会保险号码、驾驶执照号码和健康卡号码。</block>
+  <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">有关详细信息，请参见 <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="779a8744af84c09c0b82c029307690b7" category="paragraph">BlueXP  分类支持对映射和分类扫描进行自定义分类。通过自定义分类、您可以定制BlueXP  扫描、以便使用正则表达式捕获特定于您的组织的数据。此功能当前处于预览状态。</block>
+  <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分类支持将分类事件(扫描启动和结束时)发送到<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
+  <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP  分类支持对工作环境执行批量操作。您可以选择启用映射扫描、启用映射和分类扫描、禁用扫描或跨工作环境中的卷创建自定义配置。如果您为单个卷进行选择、则会覆盖批量选择。要执行批量操作，请导航到**配置**页并进行选择。</block>
+  <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分类支持在本地下载数据调查报告以在浏览器中查看。如果您选择本地选项、则数据调查仅以CSV格式提供、并且仅显示前10、000行数据。</block>
+  <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。</block>
+  <block id="cb79cf2c786ed3992ebf9c4489793af5" category="paragraph">默认情况下、扫描会根据启动顺序进行排队。通过确定扫描优先级的功能、您可以将扫描移动到队列的前端。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。</block>
+  <block id="fc758db0d443b9a8e3de231c43de89d5" category="paragraph">BlueXP  分类支持批量重试所有失败的扫描。</block>
+  <block id="ce19c0b7b750b810547f423b2290cfd8" category="paragraph">可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。</block>
+  <block id="9b6594622a22e82296250ca296e7a0b3" category="section-title">2025年5月8日</block>
+  <block id="4503a1a889a3b7c3dc4f3af490b089c6" category="section-title">AutoSupport小工具</block>
+  <block id="41e1c349288a8b454c83244a4a28b8f7" category="paragraph">AutoSupport小工具已进行了增强、其中包含一个弹出窗口、可提供有关已停止发送AutoSupport数据的系统的详细信息。启用AutoSupport可降低停机风险、并支持主动式系统运行状况管理。</block>
+  <block id="dc82c5b795e4118bc2472e86475bf5da" category="section-title">支持合同报告</block>
+  <block id="6877ece75d4d613c107eed29f14b3975" category="paragraph">支持合同报告已得到增强、可包括新的asp/LSG标志字段。使用此字段可以筛选和标识授权支持合作伙伴(也称为生命周期服务认证)所涵盖的系统。</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Sustainability信息板</block>
+  <block id="80604874cd369ef578265c67a223d997" category="paragraph">现在、您可以使用Sustainability演示文稿中的链接启动Sustainability信息板。</block>
 </blocks>

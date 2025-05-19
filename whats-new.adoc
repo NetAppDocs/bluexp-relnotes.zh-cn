@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam, recovery' 
 summary: 了解作为BlueXP平台一部分的云服务的最新变更。 
 ---
 = BlueXP中的最新变更
@@ -57,6 +57,12 @@ BlueXP  中的NetApp Keystone测试版增加了对Keystone管理的访问权限
 此版本的BlueXP Connector包括一些小的安全改进和错误修复。
 
 目前、3.9.51版本可用于标准模式和受限模式。
+
+
+
+===== 用于Connector下载的安全端点现在支持备份和恢复以及防兰软件保护
+
+如果您使用的是备份和恢复或防兰软件保护、则现在可以使用安全端点进行Connector下载。 link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["了解用于Connector下载的安全端点。"^]
 
 
 
@@ -494,17 +500,17 @@ BlueXP  备份和恢复引入了一项经过更新的索引编制功能、可�
 此BlueXP  分类版本包括：
 
 .确定分类扫描的优先级
-现在、BlueXP  分类除了支持仅映射扫描之外、还支持划分地图和分类扫描的优先级、使您能够选择首先完成哪些扫描。在扫描开始期间和之前、支持对映射和分类扫描进行优先排序。如果您选择在扫描过程中确定扫描优先级、则映射扫描和分类扫描都将确定优先级。
+除了仅映射扫描之外、BlueXP  分类还支持划分地图和分类扫描的优先级、使您能够选择首先完成哪些扫描。在扫描开始期间和之前、支持对映射和分类扫描进行优先排序。如果您选择在扫描过程中确定扫描优先级、则映射扫描和分类扫描都将确定优先级。
 
 有关详细信息，请参见 link:task-managing-repo-scanning.html#prioritize-scans["确定扫描优先级"]。
 
 .支持加拿大个人身份信息(个人身份信息、个人身份信息)数据类别
-BlueXP  分类扫描现在可识别加拿大所有省份和地区的银行信息、护照号码、社会保险号、驾驶证号和健康卡号的个人身份信息数据类别。
+BlueXP  分类扫描可识别加拿大的可识别身份信息数据类别。这些类别包括加拿大所有省份和地区的银行信息、护照号码、社会保险号码、驾驶执照号码和健康卡号码。
 
-有关详细信息，请参见xref:reference-private-data-categories.adoc#types-of-personal-data[个人数据类别]。
+有关详细信息，请参见 xref:reference-private-data-categories.adoc#types-of-personal-data[个人数据类别]。
 
 .自定义分类(预览)
-BlueXP  分类现在支持对地图和分类扫描进行自定义分类。通过自定义分类、您可以定制BlueXP  扫描以捕获组织特定的数据、以确保符合正则表达式。此功能当前处于预览状态。
+BlueXP  分类支持对映射和分类扫描进行自定义分类。通过自定义分类、您可以定制BlueXP  扫描、以便使用正则表达式捕获特定于您的组织的数据。此功能当前处于预览状态。
 
 有关详细信息，请参见 xref:task-custom-classification.adoc[添加自定义分类]。
 
@@ -512,7 +518,7 @@ BlueXP  分类现在支持对地图和分类扫描进行自定义分类。通�
 **策略**选项卡已重命名xref:task-using-policies.html[**保存的搜索**]。功能相同。
 
 .将扫描事件发送到BlueXP  时间线
-BlueXP  分类现在支持将分类事件(扫描启动和结束时)发送到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  时间表"^]。
+BlueXP  分类支持将分类事件(扫描启动和结束时)发送到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  时间表"^]。
 
 .安全更新
 * Keras软件包已更新、可缓解漏洞(BDSA-2025-0107和BDSA-2025-1984)。
@@ -536,10 +542,10 @@ BlueXP  分类现在支持将分类事件(扫描启动和结束时)发送到lin
 此BlueXP  分类版本包括：
 
 .针对工作环境进行批量扫描
-BlueXP  分类现在支持对工作环境执行批量操作。您可以选择启用映射扫描、启用映射和分类扫描、禁用扫描或跨工作环境中的卷创建自定义配置。如果您为单个卷进行选择、则会覆盖批量选择。要执行批量操作，请导航到**配置**页并进行选择。
+BlueXP  分类支持对工作环境执行批量操作。您可以选择启用映射扫描、启用映射和分类扫描、禁用扫描或跨工作环境中的卷创建自定义配置。如果您为单个卷进行选择、则会覆盖批量选择。要执行批量操作，请导航到**配置**页并进行选择。
 
 .在本地下载调查报告
-BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中查看。如果您选择本地选项、则数据调查仅以CSV格式提供、并且仅显示前10、000行数据。
+BlueXP  分类支持在本地下载数据调查报告以在浏览器中查看。如果您选择本地选项、则数据调查仅以CSV格式提供、并且仅显示前10、000行数据。
 
 有关详细信息，请参见 link:task-investigate-data.html#create-the-data-investigation-report["根据BlueXP  分类调查存储在您的组织中的数据"]。
 
@@ -554,7 +560,7 @@ BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中�
 此BlueXP  分类版本包括一些常规改进和错误修复。它还包括：
 
 .扫描状态
-现在、BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。
+BlueXP  分类可跟踪卷上_initial-_映射和分类扫描的实时进度。单独的渐进式条可跟踪映射和分类扫描、显示扫描总文件的百分比。您也可以将鼠标悬停在进度条上以查看扫描的文件数和总文件数。跟踪扫描状态可更深入地了解扫描进度、使您能够更好地规划扫描并了解资源分配。
 
 要查看扫描的状态，请导航到BlueXP  分类中的**配置**，然后选择**工作环境配置**。每个卷的进度将以行显示。
 
@@ -576,7 +582,7 @@ BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中�
 .确定仅映射扫描的优先级
 执行仅映射扫描时、您可以确定最重要扫描的优先级。如果您有许多工作环境、并希望确保首先完成高优先级扫描、则此功能会很有帮助。
 
-默认情况下、扫描会根据启动顺序进行排队。现在、您可以将扫描移动到队列的前面、从而确定扫描的优先级。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。
+默认情况下、扫描会根据启动顺序进行排队。通过确定扫描优先级的功能、您可以将扫描移动到队列的前端。可以确定多个扫描的优先级。优先级按先入先出的顺序指定、这意味着您优先处理的第一个扫描将移至队列的前端；您优先处理的第二个扫描将成为队列中的第二个扫描、依此类推。
 
 优先权是一次性授予的。按默认顺序自动重新选择映射数据。
 
@@ -585,9 +591,9 @@ BlueXP  分类现在支持在本地下载数据调查报告以在浏览器中�
 有关详细信息，请参见 link:task-managing-repo-scanning.html#prioritize-scans["确定扫描优先级"]。
 
 .重试所有扫描
-BlueXP  分类现在支持批量重试所有失败的扫描。
+BlueXP  分类支持批量重试所有失败的扫描。
 
-现在可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。
+可以使用**重试全部**功能在批处理操作中重新尝试扫描。如果分类扫描因网络中断等临时问题而失败、您可以使用一个按钮同时重试所有扫描、而不是逐个重试。可以根据需要多次重试扫描。
 
 重试所有扫描：
 
@@ -752,6 +758,28 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 
 
 
+=== 2025年5月8日
+
+
+
+==== AutoSupport小工具
+
+AutoSupport小工具已进行了增强、其中包含一个弹出窗口、可提供有关已停止发送AutoSupport数据的系统的详细信息。启用AutoSupport可降低停机风险、并支持主动式系统运行状况管理。
+
+
+
+==== 支持合同报告
+
+支持合同报告已得到增强、可包括新的asp/LSG标志字段。使用此字段可以筛选和标识授权支持合作伙伴(也称为生命周期服务认证)所涵盖的系统。
+
+
+
+==== Sustainability信息板
+
+现在、您可以使用Sustainability演示文稿中的链接启动Sustainability信息板。
+
+
+
 === 2025年3月5日
 
 
@@ -771,16 +799,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 ==== Upgrade Advisor
 
 现在、您可以查看建议进行更新的存储固件、ARP/固 件和自动软件包(Autonomous SP Package、BMC)。link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["了解如何查看固件更新建议"](英文)
-
-
-
-=== 2024年12月4日
-
-
-
-==== AutoSupport小工具
-
-AutoSupport小工具已添加到主信息板屏幕中、用于提醒客户与AutoSupport状态相关的问题。
 
 
 
