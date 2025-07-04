@@ -206,6 +206,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 
 
 
+=== 2025年7月14日
+
+
+
+==== 支持在两个 FSx for ONTAP 文件系统之间复制数据
+
+现在可以通过 BlueXP 控制台在两个 FSx for ONTAP 文件系统之间进行数据复制。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["复制数据"]
+
+
+
 === 2025年6月29日
 
 
@@ -215,14 +227,6 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["了解BlueXP  
 为 FSx for ONTAP 文件系统设置凭据和权限后，您将被重定向到 BlueXP 凭据页面。在此页面，您可以重命名或删除 FSx for ONTAP 凭据。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["设置 FSx for ONTAP 文件系统的权限"]
-
-
-
-==== 支持在两个 FSx for ONTAP 文件系统之间复制数据
-
-现在可以通过 BlueXP 控制台在两个 FSx for ONTAP 文件系统之间进行数据复制。
-
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["复制数据"]
 
 
 
@@ -263,18 +267,6 @@ BlueXP  工作负载提供了一个信息板、您可以在其中查看文件�
 ==== 更新了权限术语
 
 工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。
-
-
-
-=== 2025年3月30日
-
-
-
-==== IAM：SimulatePermission Policy权限更新
-
-现在、当您添加其他AWS帐户凭据或添加新工作负载功能(例如GenAI工作负载)时、您可以从BlueXP  控制台管理此 `iam:SimulatePrincipalPolicy`权限。
-
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["权限引用更改日志"^]
 
 
 
@@ -1354,21 +1346,21 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== 改进的工作负载保护
 
-此版本改进了保护工作负载的工作流程，无论是否启用数据保护。如果您使用其他NetApp数据保护工具（例如SnapCenter或BlueXP backup and recovery）来处理快照或备份， BlueXP ransomware protection会发现这些工具，并允许您保留控制这些工具的策略。在此版本中，您可以将这些策略替换为BlueXP ransomware protection策略，也可以继续使用现有策略。
+此版本改进了使用其他NetApp工具（例如SnapCenter或BlueXP backup and recovery）的快照和备份策略的工作负载的配置流程。在之前的版本中， BlueXP ransomware protection会发现其他工具的策略，因此您只能更改检测策略。在此版本中，您现在可以将快照和备份策略替换为BlueXP ransomware protection策略，也可以继续使用其他工具的策略。
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保护工作负载"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["保护工作负载"]。
 
 
 
 ==== 电子邮件通知
 
-如果BlueXP ransomware protection检测到可能的攻击， BlueXP通知中将显示一条通知，并向您配置的电子邮件地址发送电子邮件。该服务还会立即启动快照。
+如果BlueXP ransomware protection检测到可能的攻击， BlueXP通知中会出现通知，并且会向您配置的电子邮件地址发送电子邮件。
 
-此时，您应该查看电子邮件，其中列出了严重性和受影响的资源，并查看BlueXP ransomware protection*警报* 选项卡中的潜在风险。
+该电子邮件包含有关严重程度、受影响工作负载的信息，以及指向BlueXP ransomware protection“警报”选项卡中警报的链接。
 
-如果您在BlueXP ransomware protection中配置了安全和事件管理 (SIEM)，该服务会向您的 SIEM 系统发送警报详细信息。
+如果您在BlueXP ransomware protection中配置了安全和事件管理 (SIEM) 系统，该服务会向您的 SIEM 系统发送警报详细信息。
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["处理检测到的勒索软件警报"]。
+有关详细信息，请参见 link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["处理检测到的勒索软件警报"]。
 
 
 
