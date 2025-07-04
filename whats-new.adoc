@@ -24,6 +24,31 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2025年7月21日
+
+
+
+==== 支持Google Cloud NetApp Volumes
+
+您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["了解有关Google Cloud NetApp Volumes 的更多信息。"]
+
+
+
+==== BlueXP  身份和访问管理(IAM)
+
+
+
+===== Google Cloud NetApp Volumes的新访问角色
+
+BlueXP现在支持对以下存储系统使用访问角色：
+
+* Google Cloud NetApp卷
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
+
+
+
 === 2025年7月14日
 
 
@@ -404,13 +429,13 @@ NOTE: 本文档是关于保护微软 SQL SERVER 工作负载的，作为技术�
 
 索引目录可以跟踪每个卷和备份文件，使您的搜索快速而高效。
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["如何使用搜索和恢复来恢复ONTAP数据()"]。
+有关详细信息，请参阅 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-restore.html["启用搜索和还原索引"]。
 
 
 
 ==== Azure 专用链接终结点和服务终结点
 
-通常，BlueXP 备份和恢复会与云提供商建立私有端点，以处理各种保护任务。此版本引入了一项可选设置，可让您启用或禁用 BlueXP 备份和恢复自动创建私有端点的功能。如果您希望更好地控制私有端点的创建过程，这项设置可能会对您有所帮助。
+通常， BlueXP backup and recovery会与云提供商建立一个私有端点来处理保护任务。此版本引入了一项可选设置，可让您启用或禁用 BlueXP 备份和恢复自动创建私有端点的功能。如果您希望更好地控制私有端点的创建过程，这项设置可能会对您有所帮助。
 
 您可以在启用保护或开始恢复过程时启用或禁用此选项。
 
@@ -428,7 +453,7 @@ NOTE: 本文档是关于保护微软 SQL SERVER 工作负载的，作为技术�
 
 当您在对象存储中为工作环境创建备份文件时，BlueXP 备份和恢复功能会默认在您配置的对象存储帐户中为备份文件创建容器（存储桶或存储帐户）。之前，您可以覆盖此设置，并为 Amazon S3、Azure Blob Storage 和 Google Cloud Storage 指定您自己的容器。在此版本中，您现在可以自带 StorageGRID 对象存储容器。
 
-请参阅。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["创建您自己的对象存储容器"]
+请参阅。 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["创建您自己的对象存储容器"]
 
 
 
@@ -446,7 +471,7 @@ SnapMirror到云重新同步功能可简化NetApp环境中卷迁移期间的数�
 
 通过在不同环境之间保持备份连续性、SnapMirror到云重新同步可提高运营效率、并降低混合云和多云数据管理的复杂性。
 
-有关如何执行重新同步操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-migrate-volumes-snapmirror-cloud-resync.html["使用SnapMirror迁移卷到云重新同步"]。
+有关如何执行重新同步操作的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["使用SnapMirror迁移卷到云重新同步"]。
 
 
 
@@ -474,84 +499,6 @@ IMPORTANT: 此功能不应在生产环境中使用。
 * 入门 *
 
 要开始使用此预览功能、您必须在BlueXP  连接器上启用一个标志。然后、您可以通过在备份部分中选择*第三方兼容*对象存储、在保护工作流中输入您的Minio第三方对象存储的连接详细信息。
-
-有关如何启用预览功能的说明，请参阅 https://docs.netapp.com/us-en/bluexp-backup-recovery/task-preview-enable.html["在BlueXP  备份和恢复中启用预览功能"]。
-
-
-
-=== 2025年4月16日
-
-此BlueXP  备份和恢复版本包含以下更新。
-
-
-
-==== UI改进
-
-此版本通过简化界面增强了用户体验：
-
-* 在V2信息板的卷表中、从卷表中删除聚合列以及Snapshot策略、备份策略和复制策略列后、布局将更加简化。
-* 从下拉列表中排除未激活的工作环境可减少界面的干扰、提高导航效率并加快加载速度。
-* 禁用标记列排序后、您仍可查看标记、以确保重要信息始终易于访问。
-* 去除保护图标上的标签有助于使外观更清晰、并减少加载时间。
-* 在工作环境激活过程中、对话框会显示一个加载图标、以提供反馈、直到发现过程完成、从而提高系统操作的透明度和可信度。
-
-
-
-
-==== 增强的卷信息板(预览)
-
-现在、卷信息板加载时间不到10秒、从而提供了一个速度更快、效率更高的界面。此预览版可供部分客户使用、让他们可以及早了解这些改进。
-
-
-
-==== 支持第三方芥末对象存储(预览)
-
-BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、主要侧重于芥末。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。
-
-
-
-===== 开始使用芥末
-
-要开始使用第三方存储作为对象存储、必须在BlueXP  连接器中启用一个标志。然后、您可以输入第三方对象存储的连接详细信息、并将其集成到备份和恢复工作流中。
-
-.步骤
-. 通过SSH连接到您的连接器。
-. 转到BlueXP  备份和恢复CBS服务器容器：
-+
-[listing]
-----
-docker exec -it cloudmanager_cbs sh
-----
-. 通过VIM或任何其他编辑器打开 `default.json`文件夹中的文件 `config`：
-+
-[listing]
-----
-vi default.json
-----
-. 修改 `allow-s3-compatible`：false到 `allow-s3-compatible`：true。
-. 保存更改。
-. 退出容器。
-. 重新启动BlueXP  备份和恢复CBS服务器容器。
-
-
-.结果
-重新打开容器后、打开BlueXP  备份和恢复UI。启动备份或编辑备份策略时、您将看到新的提供程序"S3兼容"与AWS、Microsoft Azure、Google Cloud、StorageGRID和ONTAP S3的其他备份提供程序一起列出。
-
-
-
-===== 预览模式限制
-
-在预览此功能时、请考虑以下限制：
-
-* 不支持自带存储分段(BYOB)。
-* 不支持在策略中启用DataLock。
-* 不支持在策略中启用归份模式。
-* 仅支持内部ONTAP环境。
-* 不支持MetroCluster。
-* 不支持用于启用存储分段级别加密的选项。
-
-
-在此预览期间、我们建议您探索这一新功能、并在推出完整功能之前提供有关与第三方对象存储集成的反馈。
 
 
 
@@ -916,6 +863,24 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 
 
 
+=== 2025年7月9日
+
+
+
+==== Upgrade Advisor
+
+* 升级顾问计划新增了多格式下载选项，以简化ONTAP升级规划并解决潜在的阻碍或警告。现在，您可以下载 Excel、PDF 和 JSON 格式的升级顾问计划。
+* 在升级顾问计划的 Excel 格式中，进行了以下增强：
++
+** 您可以查看在集群上执行的预检查，并使用“通过”、“失败”或“跳过”等指示标记结果。这可确保集群处于最佳状态，以完成ONTAP升级。
+** 您可以查看适用于集群的推荐最新固件更新，以及ONTAP目标版本附带的版本。
+** 新增了一个选项卡，用于检查 SAN 集群的互操作性。该选项卡可显示所选目标ONTAP版本支持的主机操作系统版本。
+
+
+
+
+
+
 === 2025年5月8日
 
 
@@ -947,16 +912,6 @@ AutoSupport小工具已进行了增强、其中包含一个弹出窗口、可提
 * 现在、您可以使用磁盘认证包(DQP)根据预定义的运行状况和性能标准自动更新磁盘控制器和存储设备固件。这样可以减少潜在故障并提高整体系统可靠性。
 * 引入了时区数据库(DB)、用于自动保持系统与最新时区定义保持一致。这样可以确保即使时区规则发生更改、依赖时间的操作也能顺利进行。
 
-
-
-
-=== 2024年12月12日
-
-
-
-==== Upgrade Advisor
-
-现在、您可以查看建议进行更新的存储固件、ARP/固 件和自动软件包(Autonomous SP Package、BMC)。link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["了解如何查看固件更新建议"](英文)
 
 
 

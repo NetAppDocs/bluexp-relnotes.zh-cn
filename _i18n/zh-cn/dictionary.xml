@@ -358,7 +358,6 @@
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.56。</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">现在、在私有模式下使用BlueXP  时、您可以发现NetApp ASA R2系统。从BlueXP  的3.9.46专用模式版本开始、可提供此支持。</block>
-  <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">了解如何查看固件更新建议</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">2025年2月10日</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">使用CloudShell</block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">以前、数据调查报告导出限制为10、000行。此版本已删除限制、您可以导出所有数据。通过此更改、您可以从数据调查报告导出更多数据、从而提高数据分析的灵活性。</block>
@@ -413,8 +412,6 @@
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">错误修复</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">2024年9月16日</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">我们更新了BlueXP复制和同步服务以及数据代理以修复一些错误。新的数据代理版本为1.0.55。</block>
-  <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">2024年12月12日</block>
-  <block id="af79dd5dc56c84e383198dba47e6f6fe" category="paragraph">现在、您可以查看建议进行更新的存储固件、ARP/固 件和自动软件包(Autonomous SP Package、BMC)。<block ref="bb189956f648b21665d5198deffedcc8" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">新增了"概述"信息板</block>
   <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">数字钱包主页提供了一个更新的NetApp许可证和Marketplace订阅信息板、可以深入查看特定服务、许可证类型和所需操作。</block>
   <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">配置凭据订阅</block>
@@ -499,7 +496,6 @@
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">重试所有扫描：</block>
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">要重试所有失败的扫描，请选择*重试所有扫描*。</block>
   <block id="eb3dc66c3f5547559da4bd69622b70f1" category="paragraph-title">如何启用索引编制？</block>
-  <block id="6b14c6e0d643870ea727335d7739df30" category="inline-link">如何使用搜索和恢复来恢复ONTAP数据(&amp;A)</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">提高了分类模型的准确性</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">预定义的类别</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">的机器学习模型准确性<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>提高了11%。</block>
@@ -564,39 +560,10 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">2025年4月2日</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">已缓解风险</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">现在、您可以在BlueXP  软件更新的摘要部分中查看操作系统更新可缓解的风险总数。这样、用户就可以评估其安装基础上的安全性和稳定性改进。</block>
-  <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">2025年4月16日</block>
-  <block id="46c8a90c914cf567466d573545fb57d9" category="section-title">增强的卷信息板(预览)</block>
-  <block id="d4400da5c041019019538ea47e6a4d7e" category="paragraph">现在、卷信息板加载时间不到10秒、从而提供了一个速度更快、效率更高的界面。此预览版可供部分客户使用、让他们可以及早了解这些改进。</block>
-  <block id="a43e01afb7862afba8cef123bb022bd8" category="section-title">UI改进</block>
-  <block id="d631beb153bc97ac47e69041180f2bda" category="paragraph">此版本通过简化界面增强了用户体验：</block>
-  <block id="7945214ab9edda2604c048e3254b6820" category="list-text">在V2信息板的卷表中、从卷表中删除聚合列以及Snapshot策略、备份策略和复制策略列后、布局将更加简化。</block>
-  <block id="1f4ea4d0a55155c1ea9271081e2e118f" category="list-text">从下拉列表中排除未激活的工作环境可减少界面的干扰、提高导航效率并加快加载速度。</block>
-  <block id="c42ae4d1274def078f227f6b5526ed38" category="list-text">禁用标记列排序后、您仍可查看标记、以确保重要信息始终易于访问。</block>
-  <block id="ee5a89c90c463c21f6188d8945b6a165" category="list-text">去除保护图标上的标签有助于使外观更清晰、并减少加载时间。</block>
-  <block id="4deca0db77c0cb1d491b7636aff218c4" category="list-text">在工作环境激活过程中、对话框会显示一个加载图标、以提供反馈、直到发现过程完成、从而提高系统操作的透明度和可信度。</block>
-  <block id="e933dec5f784259760ab3c9400fb8e0b" category="section-title">支持第三方芥末对象存储(预览)</block>
-  <block id="57a83bf4b6d8f755d141ebf2bb282ed3" category="paragraph">BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、主要侧重于芥末。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。</block>
-  <block id="da21b58c44ce1975cb8550ec689df5b3" category="section-title">开始使用芥末</block>
-  <block id="9b6d9b582a741bc832b2557c16d31b09" category="section-title">预览模式限制</block>
-  <block id="fdf10a1d090d444123d00414152f7943" category="paragraph">在预览此功能时、请考虑以下限制：</block>
   <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">不支持自带存储分段(BYOB)。</block>
-  <block id="1361fc3308297e6892c65225fef43d57" category="list-text">不支持在策略中启用DataLock。</block>
-  <block id="250e26d77f45f9c60f2e7d28e0011265" category="list-text">不支持在策略中启用归份模式。</block>
   <block id="b86033acef55ce16df9b8accc019fc9d" category="list-text">仅支持内部ONTAP环境。</block>
   <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">不支持MetroCluster。</block>
   <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">不支持用于启用存储分段级别加密的选项。</block>
-  <block id="f98d5407ffd34a829996a4bb36d6e582" category="paragraph">在此预览期间、我们建议您探索这一新功能、并在推出完整功能之前提供有关与第三方对象存储集成的反馈。</block>
-  <block id="0c9e9a971e295d08b39001ef71ddfca9" category="paragraph">要开始使用第三方存储作为对象存储、必须在BlueXP  连接器中启用一个标志。然后、您可以输入第三方对象存储的连接详细信息、并将其集成到备份和恢复工作流中。</block>
-  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
-  <block id="09c224692df6f6a3d6045847d63b5e86" category="list-text">通过SSH连接到您的连接器。</block>
-  <block id="d4abc9f6a0f7759f15272b587badc33b" category="list-text">转到BlueXP  备份和恢复CBS服务器容器：</block>
-  <block id="e5b842eef10876fd5aec5be48ecec9b3" category="list-text">通过VIM或任何其他编辑器打开<block ref="a4f5e59b80d929d30eba10ee00d7450d" prefix=" " category="inline-code"></block>文件夹中的文件<block ref="2245023265ae4cf87d02c8b6ba991139" prefix=" " category="inline-code"></block>：</block>
-  <block id="14ee6952f3be48ef4395f003ecfdac2c" category="list-text">修改<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>：false到<block ref="05e4358c747c33d991f9217e4b509fcc" prefix=" " category="inline-code"></block>：true。</block>
-  <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">保存更改。</block>
-  <block id="4b891dca63ef1ab4f9daab8d3bd76368" category="list-text">退出容器。</block>
-  <block id="3dc3e984a5412f225aea00167c9309bf" category="list-text">重新启动BlueXP  备份和恢复CBS服务器容器。</block>
-  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">结果</block>
-  <block id="15c66d710af89e601163f082e2d62e63" category="paragraph">重新打开容器后、打开BlueXP  备份和恢复UI。启动备份或编辑备份策略时、您将看到新的提供程序"S3兼容"与AWS、Microsoft Azure、Google Cloud、StorageGRID和ONTAP S3的其他备份提供程序一起列出。</block>
   <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">2025年4月29日</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">支持适用于NetApp ONTAP 的Amazon FSX</block>
   <block id="24964ea0918b681c02283685b1da1438" category="paragraph">此版本支持Amazon FSx for NetApp ONTAP。此功能可帮助您通过BlueXP  勒索软件保护来保护FSx for ONTAP工作负载。</block>
@@ -659,7 +626,6 @@
   <block id="9de9a72e99be1fee8dc0790411738dd4" category="paragraph">此功能无需执行耗时且资源密集型的重新基线操作、从而可以在迁移后继续执行备份操作。此功能在工作负载迁移方案中非常有用、可同时支持FlexVol和FlexGroup、并可从ONTAP 9.161版开始使用。</block>
   <block id="9c69774894ac0ae0f2bbae9b12964cfe" category="paragraph">通过在不同环境之间保持备份连续性、SnapMirror到云重新同步可提高运营效率、并降低混合云和多云数据管理的复杂性。</block>
   <block id="5746bb5eeaa153936151cb52823109e6" category="inline-link">使用SnapMirror迁移卷到云重新同步</block>
-  <block id="3a55cfa97f4682f930352f0f81220899" category="paragraph">有关如何执行重新同步操作的详细信息，请参见<block ref="207dcf1aaf014b22c1836348f392f25c" category="inline-link-rx"></block>。</block>
   <block id="d7aa9347c7a241e0b5959147e0834507" category="section-title">支持第三方MinIO对象存储(预览)</block>
   <block id="74f850f0e7d77a9dfb658a6664c11580" category="paragraph">BlueXP  备份和恢复现在将其支持扩展到第三方对象存储、并主要侧重于MinIO。通过这一新的预览功能、您可以利用任何与S3兼容的对象存储来满足备份和恢复需求。</block>
   <block id="fba2533d6fb852f662ab27cb8831c6c2" category="paragraph">在此预览版本中、我们希望确保在推出完整功能之前与第三方对象存储实现强大集成。我们鼓励您探索这项新功能、并提供反馈以帮助改进服务。</block>
@@ -670,8 +636,6 @@
   <block id="bd38f0d8ed5d82f6a34eef6f60e82afc" category="list-text">不支持在策略中启用归位模式。</block>
   <block id="7f4d22b3de45045172408ddd711a85a1" category="paragraph">* 入门 *</block>
   <block id="5955ccac697a810563b00d68d2e643a8" category="paragraph">要开始使用此预览功能、您必须在BlueXP  连接器上启用一个标志。然后、您可以通过在备份部分中选择*第三方兼容*对象存储、在保护工作流中输入您的Minio第三方对象存储的连接详细信息。</block>
-  <block id="3e49d780723839a4238980f0ed8f0e54" category="inline-link">在BlueXP  备份和恢复中启用预览功能</block>
-  <block id="e4d99443f32762da8fffc177c52518aa" category="paragraph">有关如何启用预览功能的说明，请参阅<block ref="918e5958ca0f0d47162ab1a4f8ffabd1" category="inline-link-rx"></block>。</block>
   <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="section-title">报告BlueXP  勒索软件保护中不受支持的工作环境</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="inline-link">在BlueXP勒索软件保护中发现工作负载</block>
   <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">有关详细信息，请参见<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block>。</block>
@@ -740,17 +704,13 @@
   <block id="109a536d105313ba22a3a245fbe42d66" category="paragraph">如果您是新客户，所有新环境均默认启用索引目录 v2。如果您是现有客户，您可以重新索引您的环境以利用索引目录 v2。</block>
   <block id="ed568c90c2ab6e924749399e3a2572f7" category="paragraph">在使用搜索和还原方法还原数据之前、您需要在计划从中还原卷或文件的每个源工作环境上启用"索引编制"。执行搜索和恢复时，选择“*启用索引*”选项。</block>
   <block id="53b903d5c7d704138f78087fb044d909" category="paragraph">索引目录可以跟踪每个卷和备份文件，使您的搜索快速而高效。</block>
-  <block id="b135d75112998c5959ea2e656baaca04" category="paragraph">有关详细信息，请参见<block ref="7ae860a58fb7c028461eb3a0f3043711" category="inline-link-rx"></block>。</block>
   <block id="a5e1a06a60e331b5d516136e96719929" category="section-title">Azure 专用链接终结点和服务终结点</block>
-  <block id="a6f1ad5d9fc5adf781d978f4d43bae4c" category="paragraph">通常，BlueXP 备份和恢复会与云提供商建立私有端点，以处理各种保护任务。此版本引入了一项可选设置，可让您启用或禁用 BlueXP 备份和恢复自动创建私有端点的功能。如果您希望更好地控制私有端点的创建过程，这项设置可能会对您有所帮助。</block>
-  <block id="0a849c115a4741e75692ddd548e07b4d" category="paragraph">您可以在启用保护或开始恢复过程时启用或禁用此选项。</block>
   <block id="8ee64b87fd8e5fd67f5f38194c7faf59" category="paragraph">如果禁用此设置，则必须手动创建专用端点，以确保 BlueXP 备份和恢复功能正常运行。如果没有正确的连接，您可能无法成功执行备份和恢复任务。</block>
   <block id="fad4c67d1d97874133e7a367fe5038fd" category="section-title">ONTAP S3 上支持 SnapMirror 到云重新同步</block>
   <block id="8e0a943cdbcd7f9c7f29128489119715" category="paragraph">上一版本引入了对 SnapMirror 到云重新同步 (SM-C Resync) 的支持。该功能简化了 NetApp 环境中卷迁移期间的数据保护。此版本增加了对 ONTAP S3 以及其他兼容 S3 的提供商（例如 Wasabi 和 MinIO）上的 SM-C Resync 的支持。</block>
   <block id="fa551b5810fe894fcd21bf7c8ffc98d1" category="section-title">为 StorageGRID 带来您自己的存储桶</block>
   <block id="f2ff9aeba193e347e07d88061902be70" category="paragraph">当您在对象存储中为工作环境创建备份文件时，BlueXP 备份和恢复功能会默认在您配置的对象存储帐户中为备份文件创建容器（存储桶或存储帐户）。之前，您可以覆盖此设置，并为 Amazon S3、Azure Blob Storage 和 Google Cloud Storage 指定您自己的容器。在此版本中，您现在可以自带 StorageGRID 对象存储容器。</block>
   <block id="e6e5a011626c6db86099687e0a358c1f" category="inline-link">创建您自己的对象存储容器</block>
-  <block id="68c8f46b97e6aeb1e429ccce285cfda1" category="paragraph">请参阅。<block ref="7a95086a5f98875b2249d837314b5c45" category="inline-link-rx"></block></block>
   <block id="1c4322a2b157ac1326426ebdbd680c74" category="section-title">1.44 版</block>
   <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">改进了治理仪表板的更新时间</block>
   <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">治理仪表板各个组件的更新时间已得到改进。下表显示了每个组件的更新频率。</block>
@@ -958,4 +918,23 @@
   <block id="bc3b495f0e6ccbb6814f27f401bf0cfd" category="paragraph">该电子邮件包含有关严重程度、受影响工作负载的信息，以及指向BlueXP ransomware protection“警报”选项卡中警报的链接。</block>
   <block id="a10971f24efc7a9c00402bf3e28fa1f0" category="paragraph">如果您在BlueXP ransomware protection中配置了安全和事件管理 (SIEM) 系统，该服务会向您的 SIEM 系统发送警报详细信息。</block>
   <block id="473c570ea2acf44ac968aff271fe6ce8" category="paragraph">有关详细信息，请参见 <block ref="8a71d50b7ca933f633225cea05d9764f" category="inline-link-macro-rx"></block>。</block>
+  <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="section-title">支持Google Cloud NetApp Volumes</block>
+  <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有关Google Cloud NetApp Volumes 的更多信息。</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
+  <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新访问角色</block>
+  <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP现在支持对以下存储系统使用访问角色：</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp卷</block>
+  <block id="4818e0e89efe2955c1288f2df1d064bb" category="inline-link">启用搜索和还原索引</block>
+  <block id="48fe5c0defd01f149e20ad998ea50bc8" category="paragraph">有关详细信息，请参阅<block ref="08c33d3978c0be0f60606e54818e9704" category="inline-link-rx"></block>。</block>
+  <block id="39b551835fb0f105ce0b01ab6a4b0330" category="paragraph">通常， BlueXP backup and recovery会与云提供商建立一个私有端点来处理保护任务。此版本引入了一项可选设置，可让您启用或禁用 BlueXP 备份和恢复自动创建私有端点的功能。如果您希望更好地控制私有端点的创建过程，这项设置可能会对您有所帮助。</block>
+  <block id="2211c8a4939111428200ceec5f271f42" category="paragraph">您可以在启用保护或开始恢复过程时启用或禁用此选项。</block>
+  <block id="030908b5781e3d39669f22cf9e8c02c4" category="paragraph">请参阅。<block ref="f1ca93d1640a6fbcba487063d3fdcf11" category="inline-link-rx"></block></block>
+  <block id="3363af40fef96c985a6160ac6cebf40f" category="paragraph">有关如何执行重新同步操作的详细信息，请参见<block ref="26011448910fe4558756af892237733b" category="inline-link-rx"></block>。</block>
+  <block id="be5dc5f5e2d7e93e1002f9bc9daa9179" category="section-title">2025年7月9日</block>
+  <block id="e0feed907f4bf22cc0b1ffa18048f926" category="list-text">升级顾问计划新增了多格式下载选项，以简化ONTAP升级规划并解决潜在的阻碍或警告。现在，您可以下载 Excel、PDF 和 JSON 格式的升级顾问计划。</block>
+  <block id="e78e85c2863b9ed09c47dacdcfda2a1d" category="list-text">在升级顾问计划的 Excel 格式中，进行了以下增强：</block>
+  <block id="24a524d6161aca2fe5398b80dd9fa10c" category="list-text">您可以查看在集群上执行的预检查，并使用“通过”、“失败”或“跳过”等指示标记结果。这可确保集群处于最佳状态，以完成ONTAP升级。</block>
+  <block id="081533dbbdd673ebb2632d92a90a4a77" category="list-text">您可以查看适用于集群的推荐最新固件更新，以及ONTAP目标版本附带的版本。</block>
+  <block id="6276222a738837860023343f423eb60c" category="list-text">新增了一个选项卡，用于检查 SAN 集群的互操作性。该选项卡可显示所选目标ONTAP版本支持的主机操作系统版本。</block>
 </blocks>
