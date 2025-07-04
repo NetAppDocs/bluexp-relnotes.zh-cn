@@ -24,6 +24,74 @@ summary: 了解作为BlueXP平台一部分的云服务的最新变更。
 
 
 
+=== 2025年7月14日
+
+
+
+==== 连接器3.9.54
+
+此版本的BlueXP Connector 包括安全性改进、错误修复以及以下新功能：
+
+* 支持专用于支持Cloud Volumes ONTAP服务的连接器的透明代理。 link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["了解有关配置透明代理的更多信息。"]
+* 当连接器部署在 Google Cloud 环境中时，能够使用网络标签来帮助路由连接器流量。
+* 用于连接器健康监控的附加产品内通知，包括 CPU 和 RAM 使用情况。
+
+
+目前、3.9.54版本可用于标准模式和受限模式。
+
+
+
+==== BlueXP  身份和访问管理(IAM)
+
+BlueXP中的身份和访问管理现在提供以下功能：
+
+* 支持私有模式下的 IAM，允许您管理BlueXP服务和应用程序的用户访问和权限。
+* 简化身份联合的管理，包括更轻松的导航、更清晰的联合连接配置选项以及更好的现有联合的可见性。
+* 访问BlueXP backup and recovery、 BlueXP disaster recovery和联合管理的角色。
+
+
+
+
+===== 支持私有模式下的 IAM
+
+BlueXP现已支持私有模式下的 IAM，让您能够管理BlueXP服务和应用程序的用户访问和权限。此项增强功能使私有模式客户能够利用基于角色的访问控制 (RBAC) 来提高安全性和合规性。
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["了解有关BlueXP中的 IAM 的更多信息。"]
+
+
+
+===== 简化身份联合管理
+
+BlueXP现在提供更直观的身份联合管理界面。这包括更便捷的导航、更清晰的联合连接配置选项，以及更强大的现有联合可见性。
+
+通过身份联合启用单点登录 (SSO)，用户可以使用其公司凭证登录BlueXP 。这提高了安全性，减少了密码使用量，并简化了用户入职流程。
+
+系统将提示您将所有现有的联合连接导入新界面，以获取新的管理功能。这样，您无需重新创建联合连接即可充分利用最新的增强功能。 link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["了解有关将现有联合连接导入BlueXP 的更多信息。"]
+
+改进的联合管理允许您：
+
+* 将多个已验证的域添加到联合连接，允许您将多个域与同一个身份提供商 (IdP) 一起使用。
+* 在需要时禁用或删除联合连接，让您控制用户访问和安全。
+* 使用 IAM 角色控制对联合管理的访问。
+
+
+link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["了解有关BlueXP中的身份联合的更多信息。"]
+
+
+
+===== BlueXP backup and recovery、 BlueXP disaster recovery和联合管理的新访问角色
+
+BlueXP现在支持使用 IAM 角色实现以下功能和数据服务：
+
+* BlueXP备份和恢复
+* BlueXP灾难恢复
+* 联邦
+
+
+link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
+
+
+
 === 2025年6月9日
 
 
@@ -62,7 +130,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["了解 BlueXP 中�
 
 ===== 多因素身份验证（ MFA ）
 
-非联合用户现在可以为其 BlueXP 帐户启用多重身份验证 (MFA)，从而增强帐户安全性。BlueXP管理员可以管理用户的 MFA 设置，并根据需要为各个用户重置或禁用 MFA。这仅在标准模式下受支持。
+非联合用户可以为其BlueXP帐户启用 MFA 以提高安全性。管理员可以管理 MFA 设置，包括根据需要为用户重置或禁用 MFA。这仅在标准模式下受支持。
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["了解如何为自己设置多重身份验证。"^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["了解如何为用户管理多重身份验证。"^]
 
@@ -102,83 +170,6 @@ link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#ta
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解私有模式"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["了解如何在私有模式下开始使用BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["了解如何在使用私有模式时升级连接器"]
-
-
-
-
-=== 2025年5月12日
-
-
-
-==== 连接器3.9.52
-
-此版本的BlueXP  连接器提供了一些小的安全改进和错误修复、以及一些附加更新。
-
-目前、3.9.52版本可用于标准模式和受限模式。
-
-
-
-===== 支持Docker 27和Docker 28
-
-连接器现在支持Docker 27和Docker 28。
-
-
-
-===== Cloud Volumes ONTAP
-
-当连接器不合规或停机超过 14 天时，Cloud Volumes ONTAP 节点将不再关闭。当 Cloud Volumes ONTAP 失去对连接器的访问权限时，它仍会发送事件管理消息。此更改是为了确保即使连接器长时间停机，Cloud Volumes ONTAP 也能继续运行。此更改不会改变连接器的合规性要求。
-
-
-
-==== Keystone管理可在BlueXP  中使用
-
-BlueXP  中的NetApp Keystone测试版增加了对Keystone管理的访问权限。您可以从BlueXP  的左侧导航栏访问NetApp Keystone测试版的注册页面。
-
-
-
-==== BlueXP  身份和访问管理(IAM)
-
-
-
-===== 新的存储管理角色
-
-存储管理员、系统健康专家和存储查看器角色可用，可以分配给用户。
-
-这些角色使您能够管理组织中的谁可以发现和管理存储资源，以及查看存储健康信息和执行软件更新。
-
-这些角色支持控制对以下存储资源的访问：
-
-* E系列系统
-* StorageGRID 系统
-* 内部部署 ONTAP 系统
-
-
-您还可以使用这些角色来控制对以下 BlueXP 服务的访问：
-
-* 软件更新
-* 数字顾问
-* 运营故障恢复能力
-* 经济效率
-* 可持续性
-
-
-已添加以下角色：
-
-* *存储管理员*
-+
-管理组织中存储资源的存储运行状况、治理和发现。此角色还可以对存储资源执行软件更新。
-
-* *系统健康专家*
-+
-管理组织中存储资源的存储运行状况和治理。此角色还可以对存储资源执行软件更新。此角色无法修改或删除工作环境。
-
-* *存储查看器*
-+
-查看存储健康信息和治理数据。
-
-+
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解访问角色。"^]
-
 
 
 
@@ -1726,6 +1717,16 @@ BlueXP  软件更新服务通过降低风险并确保客户能够充分利用ON
 
 
 == StorageGRID
+
+
+
+=== 2025年5月12日
+
+
+
+==== 需要BlueXP访问角色
+
+现在，您需要以下访问角色之一来查看、发现或管理BlueXP中的StorageGRID ：*组织管理员*、*文件夹或项目管理员*、*存储管理员*或*存储健康专家*。 link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["了解 BlueXP 访问角色。"^]
 
 
 
