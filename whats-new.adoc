@@ -524,6 +524,26 @@ vi default.json
 
 
 
+=== 2025年7月14日
+
+
+
+==== 1.45 版
+
+此BlueXP classification版本包括优化资源利用率的代码更改以及：
+
+.改进了添加文件共享进行扫描的工作流程
+将文件共享添加到文件共享组的工作流程已简化。该流程现在还根据身份验证类型（Kerberos 或 NTLM）区分 CIFS 协议支持。
+
+有关详细信息，请参见 xref:task-scanning-file-shares.html[扫描文件共享]。
+
+.增强文件所有者信息
+现在，您可以查看“调查”选项卡中捕获文件的文件所有者的更多信息。在“调查”选项卡中查看文件的元数据时，找到文件所有者，然后选择“查看详细信息”即可查看用户名、电子邮件和 SAM 帐户名。您还可以查看此用户拥有的其他项目。此功能仅适用于具有 Active Directory 的工作环境。
+
+有关详细信息，请参见 xref:task-investigate-data.html[调查存储在组织中的数据]。
+
+
+
 === 2025年6月10日
 
 
@@ -982,6 +1002,59 @@ Cloud Volumes ONTAP使用情况报告现已有多项改进：
 
 
 
+=== 2025年7月14日
+
+4.2.5版
+
+
+
+==== BlueXP disaster recovery中的用户角色
+
+BlueXP disaster recovery现在采用角色来管理每个用户对特定功能和操作的访问权限。
+
+该服务使用特定于BlueXP disaster recovery的以下角色。
+
+* *灾难恢复管理员*：在BlueXP disaster recovery中执行任何操作。
+* *灾难恢复故障转移管理*：在BlueXP disaster recovery中执行故障转移和迁移操作。
+* *灾难恢复应用程序管理员*：创建和修改复制计划并启动测试故障转移。
+* *灾难恢复查看器*：查看BlueXP disaster recovery中的信息，但不能执行任何操作。
+
+
+如果您单击BlueXP disaster recovery服务并首次对其进行配置，则必须具有 *SnapCenterAdmin* 权限或具有 *Organization Admin* 角色。
+
+有关详细信息，请参见  https://docs.netapp.com/us-en/bluexp-disaster-recovery/reference/dr-reference-roles.html["BlueXP disaster recovery中的用户角色和权限"]。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服务的 BlueXP 访问角色"^](英文)
+
+
+
+==== BlueXP disaster recovery中的其他更新
+
+* 增强网络发现
+* 可扩展性改进：
++
+** 过滤所需的元数据而不是所有细节
+** 发现改进，可以更快地检索和更新虚拟机资源
+** 数据检索和数据更新的内存优化和性能优化
+** vCenter SDK 客户端创建和池管理改进
+
+
+* 下次计划或手动发现时的陈旧数据管理：
++
+** 当在 vCenter 中删除虚拟机时， BlueXP disaster recovery现在会自动将其从复制计划中删除。
+** 当 vCenter 中删除数据存储区或网络时， BlueXP disaster recovery现在会将其从复制计划和资源组中删除。
+** 当在 vCenter 中删除集群、主机或数据中心时， BlueXP disaster recovery现在会将其从复制计划和资源组中删除。
+
+
+* 现在，您可以在浏览器的隐身模式下访问 Swagger 文档。您可以在BlueXP disaster recovery中通过“设置”选项 > “API 文档”访问它，也可以在浏览器的隐身模式下直接通过以下 URL 访问它：  https://snapcenter.cloudmanager.cloud.netapp.com/api/api-doc/draas["Swagger 文档"^] 。
+* 在某些情况下，故障回复操作完成后，iGroup 会被遗留。如果 iGroup 已过期，此更新会将其移除。
+* 如果复制计划中使用了 NFS FQDN， BlueXP disaster recovery现在会将其解析为 IP 地址。如果灾难恢复站点无法解析 FQDN，则此更新非常有用。
+* UI 对齐改进
+* 成功发现后，记录捕获 vCenter 大小详细信息的日志改进
+
+
+
+
 === 2025年6月30日
 
 版本4.2.4P2
@@ -1019,244 +1092,6 @@ Windows 本地管理员密码解决方案 (Windows LAPS) 是一项 Windows 功�
 现在，您可以通过提供域控制器详细信息来选择子网映射选项并检查 LAPS 选项。使用此选项，您无需为每个虚拟机提供密码。
 
 有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-=== 2025年5月13日
-
-4.2.3版
-
-
-
-==== 子网映射
-
-在此版本中、您可以使用子网映射在故障转移时以新的方式管理IP地址、从而可以为每个vCenter添加子网。执行此操作时、需要为每个虚拟网络定义IPv4 CIDR、默认网关和DNS。
-
-故障转移后、BlueXP  灾难恢复会通过查看为映射的虚拟网络提供的CIDR来确定每个vNIC的适当IP地址、并使用它来派生新的IP地址。
-
-例如：
-
-* 网络A = 10.1.0/24
-* 网络B = 192.168.1.0/24
-
-
-VM1具有一个连接到网络A的vNIC (10.1.1.50)。网络A会在复制计划设置中映射到网络B。
-
-故障转移时、BlueXP  灾难恢复将替换原始IP地址(10.1.1)的网络部分、并保留原始IP地址(10.1.1.50)的主机地址(.50)。对于VM1、BlueXP  灾难恢复会查看网络B的CIDR设置、并使用该网络B网络192.168.1、同时保留主机部分(.50)为VM1创建新的IP地址。新IP变为192.168.1.50。
-
-总之、主机地址保持不变、而网络地址将替换为站点子网映射中配置的任何内容。这样、您就可以更轻松地在故障转移时管理IP地址重新分配、尤其是在需要管理数百个网络和数千个VM的情况下。
-
-有关在站点中包含子网映射的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["添加vCenter Server站点"]。
-
-
-
-==== 跳过保护
-
-现在、您可以跳过保护、这样、在复制计划故障转移之后、服务就不会自动创建反向保护关系。如果要在BlueXP  灾难恢复中将已还原站点恢复联机之前对其执行其他操作、则此功能非常有用。
-
-在您启动故障转移时、如果原始源站点处于联机状态、则默认情况下、该服务会自动为复制计划中的每个卷创建一个反向保护关系。这意味着、该服务将创建从目标站点返回源站点的SnapMirror关系。在您启动故障恢复时、该服务还会自动反转SnapMirror关系。
-
-启动故障转移时，您现在可以选择*Skip protection (跳过保护)*选项。这样、该服务不会自动反转SnapMirror关系。而是将可写卷保留在复制计划的两端。
-
-初始源站点恢复联机后，您可以从“复制计划操作”菜单中选择*Protect Res才 可建立反向保护。此操作会尝试为计划中的每个卷创建反向复制关系。您可以重复运行此作业、直到保护还原为止。恢复保护后、您可以按常规方式启动故障恢复。
-
-有关跳过保护的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["将应用程序故障转移到远程站点"]。
-
-
-
-==== 复制计划中的SnapMirror计划更新
-
-BlueXP  灾难恢复现在支持使用外部快照管理解决方案、例如本机ONTAP SnapMirror策略计划程序或与ONTAP的第三方集成。如果复制计划中的每个数据存储库(卷)都已具有在其他位置管理的SnapMirror关系、则可以在BlueXP  灾难恢复中使用这些快照作为恢复点。
-
-要进行配置、请在复制计划>资源映射部分中、在配置数据存储库映射时选中*使用平台管理的备份和保留计划*复选框。
-
-如果选择此选项、则BlueXP  灾难恢复不会配置备份计划。但是、您仍需要配置保留计划、因为仍可能会为测试、故障转移和故障恢复操作创建快照。
-
-配置此功能后、该服务不会定期创建任何计划的快照、而是依靠外部实体创建和更新这些快照。
-
-有关在复制计划中使用外部快照解决方案的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-=== 2025年4月16日
-
-4.2.2版
-
-
-
-==== 按计划发现VM
-
-BlueXP  灾难恢复每24小时执行一次发现。在此版本中、您现在可以自定义发现计划以满足您的需求、并在需要时减少对性能的影响。例如、如果VM数量很多、则可以将发现计划设置为每48小时运行一次。如果VM数量较少、则可以将发现计划设置为每12小时运行一次。
-
-如果您不想计划发现、则可以禁用计划的发现选项、并随时手动刷新发现。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["添加vCenter Server站点"]。
-
-
-
-==== 资源组数据存储库支持
-
-以前、您只能按VM创建资源组。在此版本中、您可以按数据存储库创建资源组。在创建复制计划并为该计划创建资源组时、将列出数据存储库中的所有VM。如果您有大量VM并希望按数据存储库对其进行分组、则此功能非常有用。
-
-您可以通过以下方式使用数据存储库创建资源组：
-
-* 使用数据存储库添加资源组时、您可以看到数据存储库列表。您可以选择一个或多个数据存储库来创建资源组。
-* 在创建复制计划并在此计划中创建资源组时、您可以看到数据存储库中的VM。
-
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-==== 免费试用或许可证到期通知
-
-此版本会通知您免费试用版将在60天后过期、以确保您有时间获取许可证。此版本还会在许可证到期当天发出通知。
-
-
-
-==== 服务更新通知
-
-在此版本中、顶部会显示一个横幅、指示服务正在升级、并且此服务处于维护模式。升级服务时会显示此横幅、升级完成后此横幅将消失。虽然升级期间您可以继续在UI中工作、但无法提交新作业。计划作业将在更新完成且服务返回到生产模式后运行。
-
-
-
-=== 2025年3月10日
-
-4.2.1版
-
-
-
-==== 智能代理支持
-
-BlueXP  连接器支持智能代理。智能代理是一种将内部环境连接到BlueXP  服务的轻型、安全且高效的方式。它可以在您的环境和BlueXP  服务之间提供安全连接、而无需VPN或直接Internet访问。这种经过优化的代理实施可卸载本地网络中的API流量。
-
-配置代理后、BlueXP  灾难恢复会尝试直接与VMware或ONTAP进行通信、如果直接通信失败、则会使用配置的代理。
-
-实施BlueXP  灾难恢复代理需要使用HTTPS协议在Connector与任何vCenter Server和ONTAP阵列之间进行端口443通信。在执行任何操作时、连接器中的BlueXP  灾难恢复代理会直接与VMware vSphere、VC或ONTAP进行通信。
-
-有关用于BlueXP  灾难恢复的智能代理的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-setup.html["为BlueXP灾难恢复设置基础架构"]。
-
-有关在BlueXP  中设置常规代理的详细信息，请参见 https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["配置Connector以使用代理服务器"^]。
-
-
-
-==== 随时结束免费试用
-
-您可以在任意时间停止免费试用、也可以等到免费试用过期。
-
-请参阅。 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html#end-the-free-trial["结束免费试用"]
-
-
-
-=== 2025年2月19日
-
-4.2 版
-
-
-
-==== ASA R2支持VMFS存储上的VM和数据存储库
-
-此版本的BlueXP  灾难恢复支持对VMFS存储上的VM和数据存储库使用ASA R2。在ASA R2系统上、ONTAP软件支持基本SAN功能、但会删除SAN环境中不支持的功能。
-
-此版本支持ASA R2的以下功能：
-
-* 为主存储配置一致性组(仅限平面一致性组、表示只有一个级别没有分层结构)
-* 备份(一致性组)操作、包括SnapMirror自动化
-
-
-BlueXP  灾难恢复中对ASA R2的支持使用ONTAP 9.161。
-
-虽然数据存储库可以挂载在ONTAP卷或ASA R2存储单元上、但BlueXP  灾难恢复中的资源组不能同时包含ONTAP和ASA R2中的数据存储库。您可以从资源组中的ONTAP或ASA R2选择数据存储库。
-
-
-
-=== 2024年10月30日
-
-
-
-==== 报告
-
-现在、您可以生成并下载报告、以帮助您分析环境。预先设计的报告汇总故障转移和故障恢复、显示所有站点上的复制详细信息、并显示过去七天的作业详细信息。
-
-请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/reports.html["创建灾难恢复报告"]。
-
-
-
-==== 30天免费试用
-
-现在、您可以注册30天免费试用BlueXP  灾难恢复。以前、免费试用期限为90天。
-
-请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["设置许可"]。
-
-
-
-==== 禁用和启用复制计划
-
-先前版本对故障转移测试计划结构进行了更新、需要更新以支持每日和每周计划。此更新要求您禁用并重新启用所有现有复制计划、以便能够使用新的每日和每周故障转移测试计划。这是一次性要求。
-
-方法如下：
-
-. 从顶部菜单中选择*复制计划*。
-. 选择一个计划、然后选择操作图标以显示下拉菜单。
-. 选择 * 禁用 * 。
-. 几分钟后，选择*Enable*。
-
-
-
-
-==== 文件夹映射
-
-现在、在创建复制计划并映射计算资源时、您可以映射文件夹、以便在为数据中心、集群和主机指定的文件夹中恢复VM。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-==== 可用于故障转移、故障恢复和测试故障转移的VM详细信息
-
-如果发生故障、并且您正在启动故障转移、执行故障恢复或测试故障转移、现在可以查看VM的详细信息并确定哪些VM未重新启动。
-
-请参阅 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["将应用程序故障转移到远程站点"]。
-
-
-
-==== VM启动延迟、按顺序启动
-
-现在、在创建复制计划时、您可以为计划中的每个VM设置启动延迟。这样、您就可以设置VM的启动顺序、以确保优先级为一个的所有VM在后续优先级的VM启动之前都处于运行状态。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-==== VM操作系统信息
-
-创建复制计划时、您现在可以看到该计划中每个VM的操作系统。这有助于确定如何将虚拟机分组到一个资源组中。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-==== VM名称别名
-
-现在、在创建复制计划时、您可以向灾难恢复SIT上的虚拟机名称添加前缀和后缀。这样、您就可以为计划中的VM使用一个更具描述性的名称。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["创建复制计划"]。
-
-
-
-==== 清理旧快照
-
-您可以删除超出指定保留数量的不再需要的任何快照。降低快照保留数量后、快照可能会逐渐累积、您现在可以将其删除以释放空间。您可以随时按需执行此操作、也可以在删除复制计划时执行此操作。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理站点、资源组、复制计划、数据存储库和虚拟机信息"]。
-
-
-
-==== 协调快照
-
-现在、您可以协调源和目标之间不同步的快照。如果在BlueXP  灾难恢复之外的目标上删除了快照、则可能会发生这种情况。该服务会每24小时自动删除一次源上的快照。但是、您可以按需执行此操作。通过此功能、您可以确保快照在所有站点之间保持一致。
-
-有关详细信息，请参见 https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["管理复制计划"]。
 
 
 
