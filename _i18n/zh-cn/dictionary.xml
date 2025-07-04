@@ -870,7 +870,6 @@
   <block id="f7b353257b71afef5402701e6c93dc8a" category="section-title">连接器3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">此版本的BlueXP Connector 包括安全性改进、错误修复以及以下新功能：</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">了解有关配置透明代理的更多信息。</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">支持专用于支持Cloud Volumes ONTAP服务的连接器的透明代理。 <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">当连接器部署在 Google Cloud 环境中时，能够使用网络标签来帮助路由连接器流量。</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">用于连接器健康监控的附加产品内通知，包括 CPU 和 RAM 使用情况。</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">目前、3.9.54版本可用于标准模式和受限模式。</block>
@@ -886,19 +885,16 @@
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP现在提供更直观的身份联合管理界面。这包括更便捷的导航、更清晰的联合连接配置选项，以及更强大的现有联合可见性。</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">通过身份联合启用单点登录 (SSO)，用户可以使用其公司凭证登录BlueXP 。这提高了安全性，减少了密码使用量，并简化了用户入职流程。</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">了解有关将现有联合连接导入BlueXP 的更多信息。</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">系统将提示您将所有现有的联合连接导入新界面，以获取新的管理功能。这样，您无需重新创建联合连接即可充分利用最新的增强功能。 <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">改进的联合管理允许您：</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">将多个已验证的域添加到联合连接，允许您将多个域与同一个身份提供商 (IdP) 一起使用。</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">在需要时禁用或删除联合连接，让您控制用户访问和安全。</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">使用 IAM 角色控制对联合管理的访问。</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">了解有关BlueXP中的身份联合的更多信息。</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">BlueXP backup and recovery、 BlueXP disaster recovery和联合管理的新访问角色</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXP现在支持使用 IAM 角色实现以下功能和数据服务：</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">BlueXP备份和恢复</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">联邦</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">了解有关使用访问角色的更多信息。</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">非联合用户可以为其BlueXP帐户启用 MFA 以提高安全性。管理员可以管理 MFA 设置，包括根据需要为用户重置或禁用 MFA。这仅在标准模式下受支持。</block>
   <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">需要BlueXP访问角色</block>
   <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">现在，您需要以下访问角色之一来查看、发现或管理BlueXP中的StorageGRID ：*组织管理员*、*文件夹或项目管理员*、*存储管理员*或*存储健康专家*。 <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
@@ -940,4 +936,8 @@
   <block id="3a92c0f069a6fb7a0d4811f90afdd47c" category="list-text">如果复制计划中使用了 NFS FQDN， BlueXP disaster recovery现在会将其解析为 IP 地址。如果灾难恢复站点无法解析 FQDN，则此更新非常有用。</block>
   <block id="bd9a0211a986e2ba720cbe54530cd5c5" category="list-text">UI 对齐改进</block>
   <block id="5c7dbecd0837cce38502f147b31156bc" category="list-text">成功发现后，记录捕获 vCenter 大小详细信息的日志改进</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">支持专用于支持Cloud Volumes ONTAP服务的连接器的透明代理。 <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">系统将提示您将所有现有的联合连接导入新界面，以获取新的管理功能。这样，您无需重新创建联合连接即可充分利用最新的增强功能。 <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
 </blocks>
