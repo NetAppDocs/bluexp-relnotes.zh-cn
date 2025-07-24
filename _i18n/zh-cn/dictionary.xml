@@ -609,14 +609,6 @@
   <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">性能增强</block>
   <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">已实施代码增强功能、以减少RAM使用量并提高BlueXP  分类的整体性能。</block>
   <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">已修复导致StorageGRID扫描失败、无法加载调查页面筛选器选项以及无法下载数据发现评估进行高容量评估的错误。</block>
-  <block id="462848e89fbcd7fc117ed7c36b47f6f3" category="section-title">发现通过BlueXP  中的Azure Marketplace进行的部署</block>
-  <block id="cb52ca43108f98673f7dcc6c4bc528f6" category="paragraph">BlueXP  现在可以直接通过Azure市场发现部署的Cloud Volumes ONTAP系统。这意味着、您现在可以像添加任何其他Cloud Volumes ONTAP系统一样、在BlueXP  中将这些系统作为工作环境进行添加和管理。</block>
-  <block id="e94250a733abb8fd0b0ca35ccdcc534f" category="inline-link">从Azure Marketplace部署Cloud Volumes ONTAP</block>
-  <block id="2f3a59a024a5fa5e6d9049c44506f8b0" category="paragraph"><block ref="2f3a59a024a5fa5e6d9049c44506f8b0" category="inline-link-rx"></block></block>
-  <block id="d2e69d0efb90eba181fe1aff16489eba" category="section-title">能够为Azure租户分层数据</block>
-  <block id="6a86c1cc6c3338bb337a5e643e80da8e" category="paragraph">现在、在Cloud Volumes ONTAP工作环境由一个租户创建而BlueXP  连接器由另一个租户创建的情况下、您可以为Azure租户启用分层。通过使用此功能、您可以使用同一个Connector为多个Azure租户分层数据。</block>
-  <block id="879e91c0a0fa09577c58d0330291ff06" category="inline-link">为Azure租户分层数据的要求</block>
-  <block id="215678b43321c729a07cabb64971f83c" category="paragraph"><block ref="215678b43321c729a07cabb64971f83c" category="inline-link-rx"></block></block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">CloudShell自动完成支持</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">使用BlueXP  Workload Factory CloudShell时、您可以开始键入命令、然后按Tab键查看可用选项。如果存在多种可能、命令行界面将显示建议列表。此功能可最大限度地减少错误并加快命令执行速度、从而提高工作效率。</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">将扫描事件发送到BlueXP  时间线</block>
@@ -867,7 +859,6 @@
   <block id="312aa67cbd2d7a037dd47a1f882d9f0d" category="paragraph">此版本的BlueXP backup and recovery提供了更新的用户界面，使您能够使用BlueXP backup and recovery服务中熟悉的 3-2-1 保护策略来管理 Microsoft SQL Server 工作负载。使用此新版本，您可以将这些工作负载备份到主存储，复制到辅助存储，然后备份到云对象存储。</block>
   <block id="b8307a4d76527581a7b59e0e8b710824" category="inline-link">预览注册表</block>
   <block id="240b59983b641b146915b794a0fa4966" category="paragraph">您可以通过完成此步骤注册预览<block ref="b33811e9e55ab63ce9fecada8cb8558a" category="inline-link-rx"></block> 。</block>
-  <block id="0aa114cf5979a3879018cab8149d4fc8" category="admonition">本文档是关于保护微软 SQL SERVER 工作负载的，作为技术预览提供。对于此预览版产品、NetApp保留在正式发布之前修改产品详细信息、内容和时间表的权利。</block>
   <block id="55305f14da02876048cbec8f433b6e31" category="paragraph">此版本的BlueXP backup and recovery包括以下更新：</block>
   <block id="14c22a8793139c8c0e5b2ca06437ae76" category="list-text">*3-2-1 备份功能*：此版本集成了SnapCenter功能，使您能够通过BlueXP backup and recovery用户界面使用 3-2-1 数据保护策略来管理和保护您的SnapCenter资源。</block>
   <block id="ad80e2efcb583c36651da40966b7c8aa" category="list-text">*从SnapCenter导入*：您可以将SnapCenter备份数据和策略导入BlueXP backup and recovery。</block>
@@ -937,4 +928,12 @@
   <block id="24a524d6161aca2fe5398b80dd9fa10c" category="list-text">您可以查看在集群上执行的预检查，并使用“通过”、“失败”或“跳过”等指示标记结果。这可确保集群处于最佳状态，以完成ONTAP升级。</block>
   <block id="081533dbbdd673ebb2632d92a90a4a77" category="list-text">您可以查看适用于集群的推荐最新固件更新，以及ONTAP目标版本附带的版本。</block>
   <block id="6276222a738837860023343f423eb60c" category="list-text">新增了一个选项卡，用于检查 SAN 集群的互操作性。该选项卡可显示所选目标ONTAP版本支持的主机操作系统版本。</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
+  <block id="6e23fbb0baad6a7a72bd41e60b71f566" category="admonition">本文档旨在介绍如何保护 Microsoft SQL Server 工作负载，目前仅提供技术预览版。NetAppNetApp在正式发布之前修改此预览版产品详细信息、内容和时间表的权利。</block>
+  <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">2025年6月25日</block>
+  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="section-title">Cloud Volumes ONTAP的 BYOL 许可可用性受限</block>
+  <block id="94aa7f0bf110a253866678fe039b7133" category="paragraph">自 2025 年 6 月 25 日起， NetApp已限制Cloud Volumes ONTAP的自带许可证 (BYOL) 许可模式。此限制适用于 AWS、Azure 和 Google Cloud 中的所有客户和Cloud Volumes ONTAP部署。唯一的例外是美国公共部门客户和中国区域部署。</block>
+  <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">NetApp支持和服务将持续到您的 BYOL 合同到期，但已过期的许可证将无法续订或延长。BYOL许可证到期后，您必须将其替换为通过云市场订阅购买的基于容量的许可证。通过超大规模市场购买的基于容量的许可模式可以简化许可体验并带来更大的业务优势。请联系您的NetApp客户团队或客户成功代表，讨论您的转换方案。</block>
+  <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661： Cloud Volumes ONTAP BYOL 政策变更</block>
+  <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">欲了解更多信息，请参阅此客户公报： <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> 。</block>
 </blocks>

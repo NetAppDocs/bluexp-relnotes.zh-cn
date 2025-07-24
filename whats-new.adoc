@@ -45,7 +45,7 @@ BlueXP现在支持对以下存储系统使用访问角色：
 * Google Cloud NetApp卷
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解有关使用访问角色的更多信息。"]
 
 
 
@@ -394,7 +394,7 @@ https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-set-up-azure-ad.htm
 您可以通过完成此步骤注册预览 https://forms.office.com/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOojtBW63mDRDv3ZK50MaTlJUNjdENllaVTRTVFJGSDQ2MFJIREcxN0EwQi4u&route=shorturl["预览注册表"^] 。
 
 
-NOTE: 本文档是关于保护微软 SQL SERVER 工作负载的，作为技术预览提供。对于此预览版产品、NetApp保留在正式发布之前修改产品详细信息、内容和时间表的权利。
+NOTE: 本文档旨在介绍如何保护 Microsoft SQL Server 工作负载，目前仅提供技术预览版。NetAppNetApp在正式发布之前修改此预览版产品详细信息、内容和时间表的权利。
 
 此版本的BlueXP backup and recovery包括以下更新：
 
@@ -771,6 +771,20 @@ BlueXP  分类支持批量重试所有失败的扫描。
 
 
 
+=== 2025年6月25日
+
+
+
+==== Cloud Volumes ONTAP的 BYOL 许可可用性受限
+
+自 2025 年 6 月 25 日起， NetApp已限制Cloud Volumes ONTAP的自带许可证 (BYOL) 许可模式。此限制适用于 AWS、Azure 和 Google Cloud 中的所有客户和Cloud Volumes ONTAP部署。唯一的例外是美国公共部门客户和中国区域部署。
+
+NetApp支持和服务将持续到您的 BYOL 合同到期，但已过期的许可证将无法续订或延长。BYOL许可证到期后，您必须将其替换为通过云市场订阅购买的基于容量的许可证。通过超大规模市场购买的基于容量的许可模式可以简化许可体验并带来更大的业务优势。请联系您的NetApp客户团队或客户成功代表，讨论您的转换方案。
+
+欲了解更多信息，请参阅此客户公报：  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661： Cloud Volumes ONTAP BYOL 政策变更"^] 。
+
+
+
 === 2025年5月29日
 
 
@@ -780,26 +794,6 @@ BlueXP  分类支持批量重试所有失败的扫描。
 现在、您可以在AWS、Azure和Google Cloud中以私有模式部署Cloud Volumes ONTAP 9.15.1。Cloud Volumes ONTAP 9.15.1的单节点和高可用性(HA)部署均启用了专用模式。
 
 有关私有模式部署的详细信息，请参见https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["了解BlueXP部署模式"^]。
-
-
-
-=== 2025年5月12日
-
-
-
-==== 发现通过BlueXP  中的Azure Marketplace进行的部署
-
-BlueXP  现在可以直接通过Azure市场发现部署的Cloud Volumes ONTAP系统。这意味着、您现在可以像添加任何其他Cloud Volumes ONTAP系统一样、在BlueXP  中将这些系统作为工作环境进行添加和管理。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["从Azure Marketplace部署Cloud Volumes ONTAP"^]
-
-
-
-==== 能够为Azure租户分层数据
-
-现在、在Cloud Volumes ONTAP工作环境由一个租户创建而BlueXP  连接器由另一个租户创建的情况下、您可以为Azure租户启用分层。通过使用此功能、您可以使用同一个Connector为多个Azure租户分层数据。
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["为Azure租户分层数据的要求"^]
 
 
 
