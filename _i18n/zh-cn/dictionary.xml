@@ -5,7 +5,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">适用于 ONTAP 的 Amazon FSX</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link">适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="d0f1687c68ee0f0d9bac765716d18923" category="inline-link">内部 ONTAP 集群</block>
   <block id="43bc868f42929fd56604f4d757ff55ae" category="section-title">数据服务</block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">Replication</block>
@@ -13,10 +12,6 @@
   <block id="06ec635aca479394e3f10f59b57ce807" category="inline-link-macro">完整的发行说明</block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">管理功能</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">最近更改</block>
-  <block id="69a622f3bb660c4a470d3d96f19e20be" category="list-text">设置和创建工作环境</block>
-  <block id="bd596d5c57d76a146d26208cd81913fb" category="list-text">为 Linux 和 UNIX 客户端创建和管理 NFSv3 和 NFSv4.1 卷</block>
-  <block id="104e3ba4c577e4723ae2db3aaab91044" category="list-text">为 Windows 客户端创建和管理 SMB 3.x 卷</block>
-  <block id="f3f6d908876888ed386cf496a0f26e7c" category="list-text">创建，删除和还原卷快照</block>
   <block id="40f78d193b858589ad7df4dd4ce61ad6" category="inline-link">了解如何设置数据复制</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">此页面</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">了解Cloud Volumes ONTAP 增强功能</block>
@@ -28,7 +23,6 @@
   <block id="db502201c33ba3b3f867c8360cce228a" category="doc">BlueXP发行说明</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">BlueXP中的最新变更</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">本节介绍与BlueXP管理功能相关的新功能：帐户、连接器、云提供商凭据等。</block>
-  <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">现在、您可以直接从BlueXP管理适用于Google Cloud的Cloud Volumes Service ：</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Amazon S3存储</block>
   <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">了解如何添加新的Amazon S3存储分段</block>
@@ -50,7 +44,6 @@
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
   <block id="0ce55dbe491d96365e2c6abd492cbf95" category="list-text"><block ref="0ce55dbe491d96365e2c6abd492cbf95" category="inline-link-rx"></block></block>
   <block id="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="list-text"><block ref="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="inline-link-rx"></block></block>
-  <block id="18c372e7815b508eb4ff2301938c4f7b" category="list-text"><block ref="18c372e7815b508eb4ff2301938c4f7b" category="inline-link-rx"></block></block>
   <block id="b46ed1f8a8d612b4083a72f6247afc99" category="list-text"><block ref="b46ed1f8a8d612b4083a72f6247afc99" category="inline-link-rx"></block></block>
   <block id="6631ed7abd96469c08f3809e6a47378b" category="list-text"><block ref="6631ed7abd96469c08f3809e6a47378b" category="inline-link-rx"></block></block>
   <block id="3cedba5ad56ab686cb35903bf92a53df" category="list-text"><block ref="3cedba5ad56ab686cb35903bf92a53df" category="inline-link-rx"></block></block>
@@ -403,8 +396,6 @@
   <block id="5ae300808387123005a76abbd5a99f46" category="section-title">1.38 版</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">此BlueXP  分类版本包括一些常规改进和错误修复。</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP  分类版本包含以下更新。</block>
-  <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">2020年9月9日</block>
-  <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">支持适用于 Google Cloud 的 Cloud Volumes Service</block>
   <block id="723559e2f2e86e612c412da00a435eea" category="section-title">2025年2月2日</block>
   <block id="83f73c94bb5f748ce272fa98b9d62582" category="section-title">为数据代理提供了新的操作系统支持</block>
   <block id="726c1f4efc6286c68c0e686bb97c19c5" category="paragraph">现在、运行Red Hat Enterprise 9.4、Ubuntu 23.04和Ubuntu 24.04的主机支持数据代理。</block>
@@ -516,10 +507,8 @@
   <block id="2f9dd95401f68032a97298d35b87f433" category="cell">此版本包含的版本</block>
   <block id="5431c829b8b64da3908e102d64527909" category="cell">自上一个专用模式版本以来的更改</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">连接器</block>
-  <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">BlueXP  连接器页面中的新增功能</block>
   <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">BlueXP  备份和恢复页面中的新增功能</block>
   <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">BlueXP  分类页面中的新增功能</block>
-  <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">转到<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>、并参阅1.38 1.371.41版本中包含的更改。</block>
   <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">有关专用模式的更多详细信息、包括如何升级、请参见以下内容：</block>
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">了解私有模式</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
@@ -574,20 +563,6 @@
   <block id="08ceca9f9a853977a5c71c8c66b68b55" category="inline-link">BlueXP  勒索软件保护限制</block>
   <block id="eb745462fc54b055b8087d694fb01b5f" category="paragraph">有关支持的选项的信息，请参阅<block ref="875047b763859105fc2c6e622181cfbb" category="inline-link-rx"></block>。</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025年5月4日</block>
-  <block id="e740d5331c1318c8aeedd3bc928fee0f" category="section-title">跟踪器响应支持</block>
-  <block id="afa647328e65fc54651ec9202e08f684" category="paragraph">Tracker现在提供API响应、以便您可以查看与任务相关的REST API输出。</block>
-  <block id="7dc7c15512069d38e071e0b7f2eb0075" category="section-title">支持对AWS专有信息管理器进行链接身份验证</block>
-  <block id="73ecd40a86b02acff9f56b3a1ac74d7f" category="paragraph">现在、您可以选择使用AWS机密管理器中的密钥对链接进行身份验证、这样就不必使用存储在BlueXP  工作负载中的凭据。</block>
-  <block id="37b002845528ac0296b86d28bb71e5a5" category="inline-link-macro">使用Lamba链接连接到FSx for ONTAP文件系统</block>
-  <block id="bdd7f454c54673987f53c40f8e5b8072" category="paragraph"><block ref="bdd7f454c54673987f53c40f8e5b8072" category="inline-link-macro-rx"></block></block>
-  <block id="b4650b4ce326d6a3b7fad5e98b1b29d3" category="section-title">为FSx for ONTAP文件系统实施最佳实践</block>
-  <block id="bf66fc8532837c2f341b98d92d40bd27" category="paragraph">BlueXP  工作负载提供了一个信息板、您可以在其中查看文件系统配置的架构良好状态。您可以利用此分析为FSx for ONTAP文件系统实施最佳实践。文件系统配置分析包括以下配置：SSD容量阈值、计划的本地快照、计划的ONTAP备份FSx、数据分层和远程数据复制。</block>
-  <block id="20c1cdeb819f1a107044754c5b7cd16d" category="inline-link-macro">了解对文件系统配置进行精心设计的分析</block>
-  <block id="f85ae2c7c8690dad4aad4469edd0d4d1" category="list-text"><block ref="f85ae2c7c8690dad4aad4469edd0d4d1" category="inline-link-macro-rx"></block></block>
-  <block id="ee8bd13e9852f521384a9366f9fddac8" category="inline-link-macro">为文件系统实施最佳实践</block>
-  <block id="a04ab86f504e47221c279d8c74e9697c" category="list-text"><block ref="a04ab86f504e47221c279d8c74e9697c" category="inline-link-macro-rx"></block></block>
-  <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">针对文件系统问题设计合理的通知</block>
-  <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">现在、在BlueXP  控制台中、对于架构良好的文件系统、FSx for ONTAP文件系统会在"画布"中显示一条通知、指示何时文件系统存在问题需要修复。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025年5月12日</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">1.43 版</block>
@@ -655,19 +630,12 @@
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">您现在可以从 BlueXP 中的凭证页面查看和删除 Amazon FSx for NetApp ONTAP 凭证。</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">2025年5月29日</block>
-  <block id="5aac456da49390227897f1fa93e12f80" category="section-title">专用模式版本(3.9.52)</block>
-  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">3.9.52版本包括对以下BlueXP  组件和服务的更新。</block>
-  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52 3.9.51</block>
-  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">转到<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block>、并参阅3.9.52和3.9.50中包含的更改。</block>
-  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>并参考 2025 年 5 月版本中包含的更改。</block>
-  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">2025 年 5 月 12 日（版本 1.43）</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">2025年6月29日</block>
   <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">凭证更新</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">为 FSx for ONTAP 文件系统设置凭据和权限后，您将被重定向到 BlueXP 凭据页面。在此页面，您可以重命名或删除 FSx for ONTAP 凭据。</block>
   <block id="66985acac7963e5883cef62664b25696" category="inline-link-macro">设置 FSx for ONTAP 文件系统的权限</block>
   <block id="2c546aeb894a7ee538c66b6d3f2cdba7" category="paragraph"><block ref="2c546aeb894a7ee538c66b6d3f2cdba7" category="inline-link-macro-rx"></block></block>
   <block id="374920fe25826b7adee398c37f9fc3ed" category="section-title">支持在两个 FSx for ONTAP 文件系统之间复制数据</block>
-  <block id="0d0e1a3896ef0e1ad8e89dad08261572" category="paragraph">现在可以通过 BlueXP 控制台在两个 FSx for ONTAP 文件系统之间进行数据复制。</block>
   <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link-macro">复制数据</block>
   <block id="12bcd6a565798d844427c95531c1c0ec" category="paragraph"><block ref="12bcd6a565798d844427c95531c1c0ec" category="inline-link-macro-rx"></block></block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
@@ -726,15 +694,6 @@
   <block id="1da5a40083bd16c3443e7eda42875506" category="section-title">需要 BlueXP 访问角色</block>
   <block id="fd3b9b6f969e334605ecb2deacbd84cc" category="inline-link">了解 BlueXP 访问角色。</block>
   <block id="0366ff255ad441b45d52df443a7b3b55" category="paragraph">现在，您需要以下访问角色之一来查看、发现或管理 BlueXP 中的 E 系列：组织管理员、文件夹或项目管理员、存储管理员或系统健康专家。 <block ref="0b85dd2db07f757bcca365b0bb453a52" category="inline-link-rx"></block></block>
-  <block id="273397c35cb726b0eb4cc33e4cf912da" category="section-title">2025年6月19日</block>
-  <block id="670c77e2582c40bc8d1e05c864358472" category="section-title">BlueXP 中的 Keystone 仪表板</block>
-  <block id="e744c3c411bd8cdf2a7a6125d745261e" category="paragraph">您现在可以直接从 BlueXP 访问 Keystone 仪表板。此集成让您可以在一个位置监控、管理和跟踪所有 Keystone 订阅以及其他 NetApp 服务。</block>
-  <block id="802724fb3733677d2773f639b1c2c227" category="paragraph">使用 BlueXP 中的 Keystone 仪表板，您可以：</block>
-  <block id="7fdbb259eae173e23f83dbc4823d28da" category="list-text">在一个地方查看所有订阅详细信息、容量使用情况和资产。</block>
-  <block id="4cc15c3d51785ada1c6ba9fa1e1e13b0" category="list-text">轻松管理订阅并随着需求的变化请求更改。</block>
-  <block id="c946fc133c6959483805e8ee848d8d3c" category="list-text">随时了解有关您的存储环境的最新信息。</block>
-  <block id="f2af179f8c68993abbce1b8a7a711b38" category="inline-link-macro">Keystone信息板概述</block>
-  <block id="e4662d7ea2c66dc53eb2e68d2bceffac" category="paragraph">首先，转到 BlueXP 左侧导航菜单中的 *存储 &gt; Keystone*。要了解更多信息，请参阅 <block ref="d1eddf69542d0beadf02459455377203" category="inline-link-macro-rx"></block>。</block>
   <block id="7e80dfbc882bf899ca8e80bc9729e4b5" category="paragraph">现在，您需要以下访问角色之一来查看、发现或管理本地 ONTAP 集群：组织管理员、文件夹或项目管理员、存储管理员或系统健康专家。 <block ref="5f4605f8f9a6dca73fc40e564cf6fcbc" category="inline-link-macro-rx"></block></block>
   <block id="07008bfe30be6fadcf287348a234142c" category="section-title">着陆页更新</block>
   <block id="1f054df4aa4b46ec1a714386afb99b06" category="paragraph">此版本包括对 BlueXP 勒索软件保护登陆页面的更新，使得开始免费试用和发现更加容易。</block>
@@ -893,7 +852,6 @@
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">2025年7月21日</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="section-title">支持Google Cloud NetApp Volumes</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">了解有关Google Cloud NetApp Volumes 的更多信息。</block>
-  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。 <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Google Cloud NetApp Volumes的新访问角色</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP现在支持对以下存储系统使用访问角色：</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp卷</block>
@@ -928,4 +886,29 @@
   <block id="87418d35e5df78aab70f2540a73bdaf6" category="list-text">使用执行挂钩和模板创建应用程序一致的备份。</block>
   <block id="c3c3199204503d3bbd5d4dce7eabf238" category="inline-link">保护 Kubernetes 工作负载概述</block>
   <block id="f4270282e09abd3774ba339dc49af208" category="paragraph">有关保护 Kubernetes 工作负载的详细信息，请参阅<block ref="44b634c6507d9116150094fb69849fd2" category="inline-link-rx"></block> 。</block>
+  <block id="290a831f279e7ad05727a7231e4bfb76" category="list-text"><block ref="290a831f279e7ad05727a7231e4bfb76" category="inline-link-rx"></block></block>
+  <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">2025年7月31日</block>
+  <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="section-title">私人模式发布（3.9.54）</block>
+  <block id="e57098a6bb00611fdfd163e39e3448e8" category="paragraph">3.9.54 版本包括以下BlueXP组件和服务的更新。</block>
+  <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
+  <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">BlueXP页面中的新功能</block>
+  <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">前往<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block>并参考版本 3.9.54 和 3.9.53 所包含的更改。</block>
+  <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">前往<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block>并参考 2025 年 7 月版本中包含的更改。</block>
+  <block id="9285fd96738351d44da30f801dea109b" category="cell">2025 年 7 月 14 日（版本 1.45）</block>
+  <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">前往<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block>。</block>
+  <block id="639e89a5be71c4602c59d165b598d738" category="paragraph">您现在可以在BlueXP中查看Google Cloud NetApp Volumes 。<block ref="dbbb7a4d531819b88c662793ae2a1ef8" category="inline-link-macro-rx"></block></block>
+  <block id="613abd0d9da6f7ee37d283174e11fcaf" category="section-title">2025年8月3日</block>
+  <block id="6a6ae8005c209a1567f9003ea9e5cebe" category="section-title">复制关系选项卡的增强功能</block>
+  <block id="c6a6fda1561189188099a8444886e4b7" category="paragraph">我们在复制关系表中添加了几个新列，以便在“复制关系”选项卡中为您提供有关复制关系的更多信息。该表现在包含以下列：</block>
+  <block id="932acf34d9bec3ecdd131ec5df85300a" category="list-text">SnapMirror 策略</block>
+  <block id="7d93b9eb1786d863bc7d27df5febb919" category="list-text">源文件系统</block>
+  <block id="144b2facd92022aa813f8fba914dfa05" category="list-text">目标文件系统</block>
+  <block id="e56f83171e12921713ed939e1572ddaf" category="list-text">关系状态</block>
+  <block id="f1b110a50dd5467d821019e318f363a2" category="list-text">上次转乘时间</block>
+  <block id="26beedda3c932bb48fc93a722d410ff6" category="paragraph">现在可以从BlueXP控制台中的画布在两个 FSx for ONTAP文件系统之间进行数据复制。</block>
+  <block id="15852e1f2315b78020ed52abc1c41404" category="paragraph">&lt;stdin&gt; 中未解析的指令 - 包括:: https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc [tag=whats-new,leveloffset=+1]</block>
+  <block id="5e7c6c3c4a3f1109745fdf45ec1f1b45" category="section-title">2025年8月5日</block>
+  <block id="c1682b4af830f8e1dcda8da16400f7e1" category="section-title">查看实例级别消耗数据</block>
+  <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">查看Keystone订阅的消耗情况</block>
+  <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">您可以通过BlueXP中的Keystone仪表板查看每个性能服务级别实例的当前消耗和历史数据。如果您拥有Keystone版本 3 (v3) 订阅，此功能适用于具有多个实例的性能服务级别。要了解更多信息，请参阅<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block>。</block>
 </blocks>
