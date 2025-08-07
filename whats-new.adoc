@@ -870,7 +870,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 
 ==== 支持授权开关
 
-ef3139c75debdd9ee259a4ea386083d3
+您现在可以查看有关有权获得支持的Brocade光纤通道 SAN 交换机的信息。这包括有关交换机型号、序列号和支持状态的详细信息。link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["了解如何查看支持授权开关"] 。
 
 
 
@@ -1216,7 +1216,16 @@ BlueXP  边缘缓存服务已于2024年8月7日被删除。
 
 === 2025年7月21日
 
-未解决的指令 https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc[]- 包括::../_whatsnew/2025-07-14.adoc[]
+
+
+==== BlueXP支持Google Cloud NetApp Volumes
+
+您现在可以直接从BlueXP管理Google Cloud NetApp Volumes ：
+
+* 添加工作环境。
+* 查看您的卷。
+* 删除您的工作环境。
+
 
 
 
